@@ -1,0 +1,79 @@
+.Button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  background-color: transparent;
+  padding: 0;
+}
+.BuyTab, .SellTab{
+  width: 50%;
+  border-radius: 8px 8px 0 0;
+  padding:  20px 0 25px;
+  background-color: #f3ecf3;
+  color: #912d87;
+  font-weight: 700;
+  font-size: 14px;
+}
+.BuyTabActive, .SellTabActive{
+  background-color: #fff;
+}
+.BtnCoin{
+  width: 100%;
+  padding: 0 0 5px;
+  background-color: transparent;
+  border-radius: 25px;
+  color: #555;
+  box-shadow: 0 5px 10px 0 #eee;
+  border: 2px solid transparent;
+  position: relative;
+}
+.BtnCoin > img{
+  height: 25px;
+  transform: translateY(5px);
+}
+.BtnCoin span{
+  padding-left: 10px;
+}
+.BtnCoin:hover, .BtnCoinChecked{
+  border-color: #912d87;
+}
+.BtnCoinChecked > div{
+  display: block;
+}
+.SwitchBtn{
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+}
+.SwitchBtn > img{
+  width: 100%;
+}
+.BuyBtn{
+  background: linear-gradient(90deg, #53236d, #e12b82);
+  width: 70%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.BuyBtn::before{
+  content: attr(before-content);
+  display: block;
+  box-sizing: border-box;
+  padding-top: 15px;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  opacity: 0;
+  background: linear-gradient(90deg, #e12b82, #53236d);
+}
+.BuyBtn:hover::before{
+  opacity: 1;
+}

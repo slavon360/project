@@ -1,0 +1,35 @@
+.Input{
+  outline: none;
+  border: none;
+}
+.InputBuySell{
+  border-bottom: 2px solid #d192c7;
+  padding-bottom: 5px;
+  font-size: 17px;
+  width: 100%;
+  color: #d192c7;
+}
+.InputBuySell::-webkit-input-placeholder{
+  color: #d192c7;
+}
+.AmountWrp{
+  display: inline-block;
+}
+.AmountWrpLeft, .AmountWrpRight{
+  width: calc(100% - 50% - 45px);
+  position: relative;
+}
+.AmountWrpLeft{
+  float: left;
+}
+.AmountWrpRight{
+  float: right;
+}
+.AmountLabel{
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+}
