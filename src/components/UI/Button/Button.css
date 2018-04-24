@@ -79,6 +79,7 @@
   opacity: 1;
 }
 .DropdownButtonPeriod, .BtnPeriod{
+  text-transform: capitalize;
   text-align: center;
   padding: 8px 0 7px;
   font-size: 12px;

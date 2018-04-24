@@ -19,7 +19,8 @@ const chartComponent = props => {
                                       activeBtn="ActivePeriod"
                                       inactiveBtn="InactivePeriod" /> : <Button
                                                                             key={period.title}
-                                                                            btnClasses={btnClasses}>
+                                                                            btnClasses={btnClasses}
+                                                                            clicked={() => {props.setPeriod(period.title)}}>
                                                                             {period.title}
                                                                         </Button>;
         return val;

@@ -1,4 +1,10 @@
 .BuySellWrp{
   background-color: #f8f8f8;
   height: 100vh;
+  padding: 57px 0 79px 159px;
+}
+@media screen and (min-width: 1920px) {
+  .BuySellWrp{
+    padding: 57px 159px 79px 159px;
+  }
 }

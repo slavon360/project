@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BuySellComponent from '../../components/BuySellComponent';
-//import ChartComponent from '../../components/ChartComponent';
+import ChartComponent from '../../components/ChartComponent';
 import * as actionTypes from '../../store/actions/actionTypes';
 import * as actions from '../../store/actions';
 import Adj from '../../hoc/Adj/AdjComponent';
@@ -17,7 +17,7 @@ class BuySell extends Component {
       chartConfig: {
         periods: [
           {
-            title: 'Min',
+            title: 'min',
             showDpDwn: false,
             drpItems: [
                 {title: '5', checked: false},
@@ -27,7 +27,7 @@ class BuySell extends Component {
               ]
           },
           {
-            title: 'Hour',
+            title: 'hour',
             showDpDwn: false,
             drpItems: [
               {title: '1', checked: false},
@@ -37,8 +37,8 @@ class BuySell extends Component {
               {title: '12', checked: false}
             ]
           },
-          {title: 'Day', checked: true},
-          {title: 'Week', checked: false}
+          {title: 'day', checked: true},
+          {title: 'week', checked: false}
         ]
       }
     }
@@ -54,16 +54,23 @@ class BuySell extends Component {
       let updChartConfig = {...this.state.chartConfig};
       updChartConfig.periods.forEach(period => {
         period.drpItems && period.title !== title && (period.showDpDwn = false);
-        period.drpItems && period.title === title && (period.showDpDwn = true);
+        period.drpItems && period.title === title && (period.showDpDwn = !period.showDpDwn ? true : false);
       })
       this.setState(updChartConfig);
     }
-    hidePeriodDropdown = () => {
+    hidePeriodDropdown = (title) => {
+      console.log(title)
       let updChartConfig = {...this.state.chartConfig};
       updChartConfig.periods.forEach(period => {
-        period.drpItems && (period.showDpDwn = false);
+        period.drpItems && period.title === title && (period.showDpDwn = false);
       });
       this.setState(updChartConfig);
+    }
+    setPeriod = (title) => {
+      let updChartConfig = {...this.state.chartConfig};
+      updChartConfig.periods.forEach(period => {
+        period.title === title && !period.drpItems;
+      });
     }
     render () {
       let content = this.props.error ? 'Cannot load data' : 'loading...';
@@ -77,10 +84,11 @@ class BuySell extends Component {
                         setCurrency={this.props.onSetCurrency}
                         buySellSwitcher={this.buySellSwitcher}
                         currenciesPlaceSwitcher={this.currenciesPlaceSwitcher}/>
-                    {/*<ChartComponent
+                    <ChartComponent
                       chartConfig={this.state.chartConfig}
                       hideShowPeriodDropdown={this.hideShowPeriodDropdown}
-                      hidePeriodDropdown={this.hidePeriodDropdown}/>*/}
+                      hidePeriodDropdown={this.hidePeriodDropdown}
+                      setPeriod={this.setPeriod}/>
                   </Adj>
       }
       return(
