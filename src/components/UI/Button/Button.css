@@ -9,23 +9,24 @@
 .BuyTab, .SellTab{
   width: 50%;
   border-radius: 8px 8px 0 0;
-  padding:  20px 0 25px;
+  padding:  38px 0 32px;
   background-color: #f3ecf3;
-  color: #912d87;
+  color: #922c88;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
 }
 .BuyTabActive, .SellTabActive{
   background-color: #fff;
 }
 .BtnCoin{
   width: 100%;
-  padding: 0 0 5px;
+  padding: 2px 0 8px;
   background-color: transparent;
   border-radius: 25px;
   color: #555;
   box-shadow: 0 5px 10px 0 #eee;
   border: 2px solid transparent;
+  font-size: 16px;
   position: relative;
 }
 .BtnCoin > img{
@@ -36,7 +37,7 @@
   padding-left: 10px;
 }
 .BtnCoin:hover, .BtnCoinChecked{
-  border-color: #912d87;
+  border-color: #922c88;
 }
 .BtnCoinChecked > div{
   display: block;

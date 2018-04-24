@@ -10,6 +10,7 @@ const chartComponent = props => {
         let val = period.drpItems ? <Dropdown
                                       key={period.title}
                                       hideShowDropdown={props.hideShowPeriodDropdown}
+                                      hideDropdown={props.hidePeriodDropdown}
                                       drpWrpClasses={['DropdownPeriodWrp']}
                                       drpContainerClasses={containerClasses}
                                       dropdownButtonClasses={['DropdownButtonPeriod']}

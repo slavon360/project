@@ -12,6 +12,7 @@ const button = (props) => {
                 disabled={props.disabled}
                 className={currentClasses.join(' ')}
                 onClick={props.clicked}
+                onBlur={() => {window.setTimeout(props.blurred, 200)}}
                 before-content={props.beforeContent}>
                 {props.children}
               </button>

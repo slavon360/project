@@ -1,5 +1,10 @@
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: local('SegoeUI'), url(./assets/fonts/segoeui.ttf) format('truetype');
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: SegoeUI;
 }

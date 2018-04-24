@@ -15,7 +15,8 @@ const dropdown = props => {
       <div className={drpWrpClasses.join(' ')}>
         <Button
           btnClasses={props.dropdownButtonClasses}
-          clicked={() => {props.hideShowDropdown(props.dropdownTitle)}}>
+          clicked={() => {props.hideShowDropdown(props.dropdownTitle)}}
+          blurred={props.hideDropdown}>
           {props.dropdownTitle}
         </Button>
         <div className={drpContainerClasses.join(' ')}>

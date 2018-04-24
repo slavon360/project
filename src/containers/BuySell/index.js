@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BuySellComponent from '../../components/BuySellComponent';
-import ChartComponent from '../../components/ChartComponent';
+//import ChartComponent from '../../components/ChartComponent';
 import * as actionTypes from '../../store/actions/actionTypes';
 import * as actions from '../../store/actions';
 import Adj from '../../hoc/Adj/AdjComponent';
@@ -58,6 +58,13 @@ class BuySell extends Component {
       })
       this.setState(updChartConfig);
     }
+    hidePeriodDropdown = () => {
+      let updChartConfig = {...this.state.chartConfig};
+      updChartConfig.periods.forEach(period => {
+        period.drpItems && (period.showDpDwn = false);
+      });
+      this.setState(updChartConfig);
+    }
     render () {
       let content = this.props.error ? 'Cannot load data' : 'loading...';
       if (this.props.coins) {
@@ -70,9 +77,10 @@ class BuySell extends Component {
                         setCurrency={this.props.onSetCurrency}
                         buySellSwitcher={this.buySellSwitcher}
                         currenciesPlaceSwitcher={this.currenciesPlaceSwitcher}/>
-                    <ChartComponent
+                    {/*<ChartComponent
                       chartConfig={this.state.chartConfig}
-                      hideShowPeriodDropdown={this.hideShowPeriodDropdown}/>
+                      hideShowPeriodDropdown={this.hideShowPeriodDropdown}
+                      hidePeriodDropdown={this.hidePeriodDropdown}/>*/}
                   </Adj>
       }
       return(
