@@ -4,17 +4,21 @@ import { setCurrentClasses } from '../../../shared/utility';
 import classes from './Dropdown.css';
 
 const dropdown = props => {
-    let drpWrpClasses = [], drpContainer = [];
+    let drpWrpClasses = [], drpContainerClasses = [];
     drpWrpClasses = setCurrentClasses(props.drpWrpClasses, drpWrpClasses, classes);
-    drpContainer = setCurrentClasses(props.drpContainer, drpContainer, classes);
+    drpContainerClasses = setCurrentClasses(props.drpContainerClasses, drpContainerClasses, classes);
     let buttons = props.dropdownButtons.map(btn => {
-        let btnClass = btn.checked ? classes[props.activeBtn] : classes[props.inactiveBtn];
-        return <Button className={btnClass.join(' ')}>{btn.title}</Button>
+        let btnClass = btn.checked ? [props.activeBtn] : [props.inactiveBtn];
+        return <Button key={btn.title} btnClasses={btnClass}>{btn.title}</Button>
     })
     return (
       <div className={drpWrpClasses.join(' ')}>
-        <Button clicked={}>{props.dropdownTitle}</Button>
-        <div className={drpContainer.join(' ')}>
+        <Button
+          btnClasses={props.dropdownButtonClasses}
+          clicked={() => {props.hideShowDropdown(props.dropdownTitle)}}>
+          {props.dropdownTitle}
+        </Button>
+        <div className={drpContainerClasses.join(' ')}>
           {buttons}
         </div>
       </div>

@@ -1,0 +1,35 @@
+.Show{
+  display: block;
+}
+.Hide{
+  display: none;
+}
+.DropdownPeriodWrp{
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+.DropdownPeriodContainer{
+  position: absolute;
+  width: 100%;
+  margin-top: 4px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.DropdownPeriodContainer > button{
+  display: block;
+  text-align: center;
+  padding: 8px 0 7px;
+  font-size: 12px;
+  width: 100%;
+}
+.DropdownPeriodContainer > button:hover{
+  background-color: #402d71;
+  color: #fff;
+}
+.DropdownPeriodContainer > button:first-child:hover{
+  border-radius: 6px 6px 0 0;
+}
+.DropdownPeriodContainer > button:last-child:hover{
+  border-radius: 0 0 6px 6px;
+}

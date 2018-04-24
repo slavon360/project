@@ -77,3 +77,18 @@
 .BuyBtn:hover::before{
   opacity: 1;
 }
+.DropdownButtonPeriod, .BtnPeriod{
+  text-align: center;
+  padding: 8px 0 7px;
+  font-size: 12px;
+  background-color: #fff;
+  width: 123px;
+  border-radius: 25px;
+}
+.BtnPeriod{
+  margin-right: 10px;
+}
+.DropdownButtonPeriod:hover, .BtnPeriod:hover{
+  background-color: #402d71;
+  color: #fff;
+}

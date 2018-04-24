@@ -16,14 +16,20 @@ class BuySell extends Component {
       switched: false,
       chartConfig: {
         periods: [
-          {title: 'Min', drpItems: [
-              {title: '5', checked: false},
-              {title: '10', checked: false},
-              {title: '15', checked: false},
-              {title: '30', checked: false}
-            ]
+          {
+            title: 'Min',
+            showDpDwn: false,
+            drpItems: [
+                {title: '5', checked: false},
+                {title: '10', checked: false},
+                {title: '15', checked: false},
+                {title: '30', checked: false}
+              ]
           },
-          {title: 'Hour', drpItems: [
+          {
+            title: 'Hour',
+            showDpDwn: false,
+            drpItems: [
               {title: '1', checked: false},
               {title: '2', checked: false},
               {title: '4', checked: false},
@@ -44,6 +50,14 @@ class BuySell extends Component {
         return {switched: !prevState.switched}
       })
     }
+    hideShowPeriodDropdown = (title) => {
+      let updChartConfig = {...this.state.chartConfig};
+      updChartConfig.periods.forEach(period => {
+        period.drpItems && period.title !== title && (period.showDpDwn = false);
+        period.drpItems && period.title === title && (period.showDpDwn = true);
+      })
+      this.setState(updChartConfig);
+    }
     render () {
       let content = this.props.error ? 'Cannot load data' : 'loading...';
       if (this.props.coins) {
@@ -56,7 +70,9 @@ class BuySell extends Component {
                         setCurrency={this.props.onSetCurrency}
                         buySellSwitcher={this.buySellSwitcher}
                         currenciesPlaceSwitcher={this.currenciesPlaceSwitcher}/>
-                    <ChartComponent chartConfig={this.state.chartConfig}/>
+                    <ChartComponent
+                      chartConfig={this.state.chartConfig}
+                      hideShowPeriodDropdown={this.hideShowPeriodDropdown}/>
                   </Adj>
       }
       return(
