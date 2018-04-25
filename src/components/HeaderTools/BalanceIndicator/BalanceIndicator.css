@@ -1,0 +1,16 @@
+.BalanceIndicatorWrp{
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+  margin-right: 49px;
+}
+.BalanceIndicatorWrp::before{
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -18px;
+  background-color: #922c88;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}

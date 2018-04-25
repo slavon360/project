@@ -1,0 +1,90 @@
+.TableWrp{
+  max-width: 600px;
+  max-height: 262px;
+  box-sizing: border-box;
+  padding: 35px 5px 18px 59px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.History{
+  font-size: 18px;
+  font-weight: 700;
+  color: #582871;
+  margin-bottom: 21px;
+  margin-top: 32px;
+  text-transform: uppercase;
+}
+.TableWrp thead th{
+  padding-bottom: 34px !important;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 29px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #922c88;
+  text-transform: uppercase;
+}
+.TableWrp thead th:first-child{
+  text-align: left;
+  width: 155px;
+}
+.TableWrp thead th:nth-child(2){
+  width: 130px;
+}
+.TableWrp thead th:nth-child(3){
+  padding: 0 29px 0 0;
+}
+.TableWrp thead th:last-child{
+  text-align: right;
+}
+.TableWrp thead{
+  box-sizing: border-box;
+  padding-right: 80px;
+}
+.TableWrp thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+.TableWrp tbody{
+  display: block;
+  height: 150px;
+  overflow: auto;
+}
+.TableWrp tbody::-webkit-scrollbar {
+    width: 6px;
+}
+.TableWrp tbody::-webkit-scrollbar-track {
+  margin-right: 5px;
+}
+.TableWrp tbody::-webkit-scrollbar-thumb {
+  background-color: #d192c7;
+  border-radius: 5px;
+}
+.TableWrp tbody tr:first-child td{
+  padding-top: 29px;
+}
+.TableWrp tbody td{
+  font-size: 16px;
+  color: #41424e;
+}
+.TableWrp tbody td:first-child{
+  font-size: 14px;
+  width: 155px;
+}
+.TableWrp tbody td:nth-child(2){
+  padding-left: 48px;
+}
+.TableWrp tbody td:nth-child(3){
+  width: 93px;
+}
+.TableWrp tbody td:nth-child(4){
+  padding-right: 44px;
+}
+.Round{
+  display: inline-block;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #922c88;
+  margin: 0 10px 2px 0;
+}

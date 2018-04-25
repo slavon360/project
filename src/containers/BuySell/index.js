@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BuySellComponent from '../../components/BuySellComponent';
 import ChartComponent from '../../components/ChartComponent';
+import TransactionsHistory from '../../components/TransactionsHistory';
 import * as actionTypes from '../../store/actions/actionTypes';
 import * as actions from '../../store/actions';
 import Adj from '../../hoc/Adj/AdjComponent';
@@ -14,6 +15,17 @@ class BuySell extends Component {
     state = {
       buy: true,
       switched: false,
+      transactions: [
+        {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'},
+        {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'},
+        {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'},
+        {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'},
+        {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'},
+        {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'},
+        {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'},
+        {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'},
+        {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'}
+      ],
       chartConfig: {
         selectedPeriod: null,
         periods: [
@@ -21,21 +33,21 @@ class BuySell extends Component {
             title: 'min',
             showDpDwn: false,
             drpItems: [
-                {type: 'min', title: '5', checked: false},
-                {type: 'min', title: '10', checked: false},
-                {type: 'min', title: '15', checked: false},
-                {type: 'min', title: '30', checked: false}
+                {type: 'min', title: '5', value: '5', checked: false},
+                {type: 'min', title: '10', value: '10', checked: false},
+                {type: 'min', title: '15', value: '15', checked: false},
+                {type: 'min', title: '30', value: '30', checked: false}
               ]
           },
           {
             title: 'hour',
             showDpDwn: false,
             drpItems: [
-              {type: 'hour', title: '1', checked: false},
-              {type: 'hour', title: '2', checked: false},
-              {type: 'hour', title: '4', checked: false},
-              {type: 'hour', title: '6', checked: false},
-              {type: 'hour', title: '12', checked: false}
+              {type: 'hour', title: '1', value: '1', checked: false},
+              {type: 'hour', title: '2', value: '2', checked: false},
+              {type: 'hour', title: '4', value: '4', checked: false},
+              {type: 'hour', title: '6', value: '6', checked: false},
+              {type: 'hour', title: '12', value: '12', checked: false}
             ]
           },
           {title: 'day', type: 'day', value: '1', checked: true},
@@ -54,6 +66,7 @@ class BuySell extends Component {
     hideShowPeriodDropdown = (title) => {
       let updChartConfig = {...this.state.chartConfig};
       updChartConfig.periods.forEach(period => {
+        period.checked && (period.checked = false);
         period.drpItems && period.title !== title && (period.showDpDwn = false);
         period.drpItems && period.title === title && (period.showDpDwn = !period.showDpDwn ? true : false);
       })
@@ -66,11 +79,32 @@ class BuySell extends Component {
       });
       this.setState(updChartConfig);
     }
-    setPeriod = (title) => {
+    setPeriodBtn = (selectedPeriod) => {
       let updChartConfig = {...this.state.chartConfig};
       updChartConfig.periods.forEach(period => {
-        period.title === title && !period.drpItems;
+        if (period.value === selectedPeriod.value && period.type === selectedPeriod.type) {
+          period.checked = true;
+        } else {
+          !period.drpItems && (period.checked = false);
+          period.drpItems && period.drpItems.forEach(p => p.checked = false);
+        }
       });
+      this.setState({chartConfig: updChartConfig});
+    }
+    setPeriodDpDwn = (selectedPeriod) => {
+      let updChartConfig = {...this.state.chartConfig};
+      updChartConfig.periods.forEach(period => {
+        if (period.drpItems) {
+          period.drpItems.forEach(p => {
+            if (p.value === selectedPeriod.value && p.type === selectedPeriod.type) {
+              p.checked = true;
+            } else {
+              p.checked = false;
+            }
+          })
+        }
+      });
+      this.setState({chartConfig: updChartConfig});
     }
     render () {
       let content = this.props.error ? 'Cannot load data' : 'loading...';
@@ -88,7 +122,9 @@ class BuySell extends Component {
                       chartConfig={this.state.chartConfig}
                       hideShowPeriodDropdown={this.hideShowPeriodDropdown}
                       hidePeriodDropdown={this.hidePeriodDropdown}
-                      setPeriod={this.setPeriod}/>
+                      setPeriodBtn={this.setPeriodBtn}
+                      setPeriodDpDwn={this.setPeriodDpDwn}/>
+                    <TransactionsHistory transactions={this.state.transactions}/>
                   </Adj>
       }
       return(

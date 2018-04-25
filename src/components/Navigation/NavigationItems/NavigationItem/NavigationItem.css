@@ -7,7 +7,13 @@
   list-style: none;
   margin-right: 63px;
 }
+.NavigationItem:hover{
+  color: #922c88;
+}
 .NavigationItem > a{
   text-decoration: none;
   color: inherit;
+}
+.active{
+  color: #922c88 !important;
 }
