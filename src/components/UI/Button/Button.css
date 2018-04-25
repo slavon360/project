@@ -90,7 +90,38 @@
 .BtnPeriod{
   margin-right: 10px;
 }
-.DropdownButtonPeriod:hover, .BtnPeriod:hover{
+.DropdownButtonPeriod:hover,
+.BtnPeriod:hover, .DropdownButtonPeriodChecked, .BtnPeriodChecked{
   background-color: #402d71;
   color: #fff;
+}
+.DropdownButtonUser{
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  color: #922c88;
+  height: 35px;
+  padding-left: 22px;
+  padding-right: 20px;
+  border-radius: 25px;
+  display: block;
+  width: 100%;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 10px 0 #e1e1e1;
+  text-align: left;
+}
+.DropdownButtonUser:hover{
+  border-color: #d092c9;
+}
+.DropdownButtonLang{
+  height: 35px;
+  font-size: 14px;
+  background-color: #fff;
+  font-weight: 400;
+  color: #922c88;
+  border-radius: 25px;
+  display: block;
+  width: 100%;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 10px 0 #e1e1e1;
 }

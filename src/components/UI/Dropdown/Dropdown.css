@@ -33,3 +33,49 @@
 .DropdownPeriodContainer > button:last-child:hover{
   border-radius: 0 0 6px 6px;
 }
+.UserDropdownWrp{
+  display: inline-block;
+  width: 142px;
+  position: relative;
+  margin-right: 15px;
+}
+.DropdownUserContainer, .DropdownLangContainer{
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+  top: 12px;
+  padding-top: 25px;
+  box-shadow: 0 4px 18px 0 #e1e1e1;
+}
+.DropdownUserContainer > button{
+  display: block;
+  text-align: left;
+  text-transform: capitalize;
+  height: 42px;
+  padding-left: 22px;
+  font-size: 14px;
+  color: #41424e;
+  width: 100%;
+}
+.DropdownUserContainer > button:hover, .DropdownLangContainer > button:hover{
+  background-color: #f2ddee;
+}
+.LangDropdownWrp{
+  display: inline-block;
+  width: 103px;
+  position: relative;
+}
+.DropdownLangContainer > button{
+  display: block;
+  width: 100%;
+  padding: 0 17px;
+  text-align: left;
+  height: 42px;
+}
+.DropdownLangContainer > button > img{
+  padding-right: 7px;
+}
+.DropdownLangContainer > button > span{
+
+}

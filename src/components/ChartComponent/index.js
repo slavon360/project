@@ -5,6 +5,7 @@ import classes from './ChartComponent.css';
 
 const chartComponent = props => {
     let periods = props.chartConfig.periods.map(period => {
+        let dropdownButtonClasses = period.showDpDwn ? ['DropdownButtonPeriod', 'DropdownButtonPeriodChecked'] : ['DropdownButtonPeriod'];
         let btnClasses = period.checked ? ['BtnPeriod', 'BtnPeriodChecked'] : ['BtnPeriod'];
         let containerClasses = period.showDpDwn ? ['DropdownPeriodContainer', 'Show'] : ['DropdownPeriodContainer', 'Hide'];
         let val = period.drpItems ? <Dropdown
@@ -13,11 +14,11 @@ const chartComponent = props => {
                                       hideDropdown={props.hidePeriodDropdown}
                                       drpWrpClasses={['DropdownPeriodWrp']}
                                       drpContainerClasses={containerClasses}
-                                      dropdownButtonClasses={['DropdownButtonPeriod']}
+                                      dropdownButtonClasses={dropdownButtonClasses}
                                       dropdownTitle={period.title}
                                       dropdownButtons={period.drpItems}
                                       activeBtn="ActivePeriod"
-                                      inactiveBtn="InactivePeriod" /> : <Button
+                                      inactiveBtn="InactivePeriod" >{period.title}</Dropdown> : <Button
                                                                             key={period.title}
                                                                             btnClasses={btnClasses}
                                                                             clicked={() => {props.setPeriod(period.title)}}>

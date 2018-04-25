@@ -1,0 +1,42 @@
+.HeaderToolsWrp{
+  display: inline-block;
+}
+.Help{
+  display: inline-block;
+  margin-right: 19px;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 700;
+  color: #922c88;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px 0 #e1e1e1;
+}
+.Help > a{
+  display: block;
+  text-align: center;
+  line-height: 2.4;
+  background-color: #fff;
+  height: 35px;
+  width: 103px;
+  text-decoration: none;
+  color: inherit;
+}
+.Arrow{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  float: right;
+  transform-origin: 5px 10px;
+  transform: rotate(-90deg);
+}
+.SelectedLanguage .Arrow{
+  transform-origin: -4px 20px;
+}
+.SelectedLanguage{
+  padding: 0 0 0 15px;
+  text-align: left;
+}
+.SelectedLanguage img{
+  padding-right: 7px;
+}

@@ -1,0 +1,17 @@
+.Toolbar{
+  position: relative;
+  z-index: 1;
+  padding: 24px 159px 35px 160px;
+}
+.Logo{
+  display: inline-block;
+  margin-right: 120px;
+}
+.DesktopOnly{
+  display: inline-block;
+}
+@media screen and (max-width: 1023px) {
+  .DesktopOnly{
+    display: none;
+  }
+}

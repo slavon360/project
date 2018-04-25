@@ -15,30 +15,31 @@ class BuySell extends Component {
       buy: true,
       switched: false,
       chartConfig: {
+        selectedPeriod: null,
         periods: [
           {
             title: 'min',
             showDpDwn: false,
             drpItems: [
-                {title: '5', checked: false},
-                {title: '10', checked: false},
-                {title: '15', checked: false},
-                {title: '30', checked: false}
+                {type: 'min', title: '5', checked: false},
+                {type: 'min', title: '10', checked: false},
+                {type: 'min', title: '15', checked: false},
+                {type: 'min', title: '30', checked: false}
               ]
           },
           {
             title: 'hour',
             showDpDwn: false,
             drpItems: [
-              {title: '1', checked: false},
-              {title: '2', checked: false},
-              {title: '4', checked: false},
-              {title: '6', checked: false},
-              {title: '12', checked: false}
+              {type: 'hour', title: '1', checked: false},
+              {type: 'hour', title: '2', checked: false},
+              {type: 'hour', title: '4', checked: false},
+              {type: 'hour', title: '6', checked: false},
+              {type: 'hour', title: '12', checked: false}
             ]
           },
-          {title: 'day', checked: true},
-          {title: 'week', checked: false}
+          {title: 'day', type: 'day', value: '1', checked: true},
+          {title: 'week', type: 'day', value: '7', checked: false}
         ]
       }
     }
@@ -59,7 +60,6 @@ class BuySell extends Component {
       this.setState(updChartConfig);
     }
     hidePeriodDropdown = (title) => {
-      console.log(title)
       let updChartConfig = {...this.state.chartConfig};
       updChartConfig.periods.forEach(period => {
         period.drpItems && period.title === title && (period.showDpDwn = false);

@@ -1,0 +1,13 @@
+.NavigationItem{
+  font-size: 14px;
+  font-weight: 700;
+  color: #41424e;
+  margin-right: 20px;
+  display: inline-block;
+  list-style: none;
+  margin-right: 63px;
+}
+.NavigationItem > a{
+  text-decoration: none;
+  color: inherit;
+}
