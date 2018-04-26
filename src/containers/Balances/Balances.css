@@ -1,0 +1,68 @@
+.BalancesWrp{
+  padding: 51px 340px 146px 340px;
+  background-color: #f8f8f8;
+}
+@media screen and (max-width: 1919px) {
+  .BalancesWrp{
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+.BalancesHead{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.BalancesHead h2{
+  font-size: 24px;
+  font-weight: 700;
+  color: #582871;
+  text-transform: uppercase;
+  margin: 0;
+}
+.LimitsWrp .Limit{
+  padding-right: 60px;
+}
+.Balances{
+  box-shadow: 0 4px 18px 0 #dedede;
+  height: 620px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 36px 75px 63px 80px;
+  box-sizing: border-box;
+}
+.Balances .Head{
+  padding-bottom: 34px;
+  margin-bottom: 42px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e8e8e8;
+  color: #922c88;
+}
+.Balances .Head .Currency,
+.Balances .Head .Balance,
+.Balances .Head .Type,
+.CurrencyTitle, .BalanceValue,
+.FiatValue{
+  display: inline-block;
+}
+.CurrencyTitle img{
+  width: 24px;
+  height: 24px;
+  margin-right: 27px;
+  transform: translateY(5px);
+}
+.Balances .Head .Currency, .CurrencyTitle{
+  width: 28.3%;
+}
+.Balances .Head .Balance, .BalanceValue{
+  width: 16.048%;
+}
+.Balances .Head .Type{
+
+}
+.FiatValue{
+  width: 16.13%;
+}

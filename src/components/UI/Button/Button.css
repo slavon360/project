@@ -125,3 +125,28 @@
   border: 2px solid transparent;
   box-shadow: 0 4px 10px 0 #e1e1e1;
 }
+.DepositBtn{
+  color: #582871;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.DepositBtn:hover{
+  background-color: #582871;
+  color: #fff;
+}
+.WithdrawBtn:hover{
+  background-color: #922c88;
+  color: #fff;
+}
+.WithdrawBtn{
+  color: #99398f;
+}
+.DepositBtn, .WithdrawBtn{
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 4px 13px #eee;
+  width: 160px;
+  height: 40px;
+}
