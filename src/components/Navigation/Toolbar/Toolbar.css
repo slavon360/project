@@ -6,6 +6,8 @@
 .Logo{
   display: inline-block;
   margin-right: 120px;
+  color: #922c88;
+  font-size: 24px;
 }
 .DesktopOnly{
   display: inline-block;

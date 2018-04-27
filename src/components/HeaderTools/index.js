@@ -92,7 +92,7 @@ class HeaderTools extends Component {
             hideDropdown={this.hideLangDropdown}
             setValue={this.selectLanguage}>
               <div className={classes.SelectedLanguage}>
-                <img src={this.state.languages.icon} />
+                <img alt={this.state.languages.title} src={this.state.languages.icon} />
                 <span>{this.state.languages.title}</span>
                 <span className={classes.Arrow}><Arrow/></span>
               </div>
