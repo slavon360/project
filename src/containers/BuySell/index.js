@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BuySellComponent from '../../components/BuySellComponent';
 import ChartComponent from '../../components/ChartComponent';
-import TransactionsHistory from '../../components/TransactionsHistory';
+import Transactions from '../../components/Transactions';
 import * as actionTypes from '../../store/actions/actionTypes';
 import * as actions from '../../store/actions';
 import Adj from '../../hoc/Adj/AdjComponent';
@@ -15,6 +15,7 @@ class BuySell extends Component {
     state = {
       buy: true,
       switched: false,
+      headData: [{title: 'Date'}, {title: 'Price'}, {title: 'Quantity'}, {title: 'Amount'}],
       transactions: [
         {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'},
         {date: '01 Dec 2017  12:27 am', price: '36550', qty: '0.116', amount: '4239.8'},
@@ -124,7 +125,13 @@ class BuySell extends Component {
                       hidePeriodDropdown={this.hidePeriodDropdown}
                       setPeriodBtn={this.setPeriodBtn}
                       setPeriodDpDwn={this.setPeriodDpDwn}/>
-                    <TransactionsHistory transactions={this.state.transactions}/>
+                    <div className={classes.TransactionsWrp}>
+                      <h3 className={classes.History}>History</h3>
+                      <Transactions
+                        propNames={['date', 'price', 'quantity', 'amount']}
+                        headData={this.state.headData}
+                        bodyData={this.state.transactions}/>
+                    </div>
                   </Adj>
       }
       return(
