@@ -10,9 +10,18 @@ const transactions = (props) => {
                                   {trans[current]}
                                 </td>);
                     return result;
-                  }, []);
-      let rowClasses = trans.checked ? [classes.RowChecked] : [classes.RowUnchecked];
-        return (<tr className={rowClasses} onClick={props.showMore} key={index}>
+      }, []);
+      let moreInfo = props.moreInfo.reduce((result, current) => {
+                    result.push(<div className={classes.MoreInfo}>
+                                  <div className={classes.Key}>{current}</div>
+                                  <div className={classes.Value}>{trans[current]}</div>
+                                </div>)
+      }, [])
+      let rowClasses = trans.checked ? [classes.Row, classes.RowChecked] : [classes.Row, classes.RowUnchecked];
+        return (<tr className={rowClasses} onClick={() => {props.showMore(trans)}} key={index}>
+                  <div className={classes.MoreInfo}>
+                    {moreInfo}
+                  </div>
                   {values}
                   {props.showMore ? <td className={classes.AngleWrp}>
                                       <div className={classes.AngleIcon}>\/</div>
