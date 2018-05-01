@@ -11,7 +11,8 @@ const transactions = (props) => {
                                 </td>);
                     return result;
                   }, []);
-        return (<tr key={index}>
+      let rowClasses = trans.checked ? [classes.RowChecked] : [classes.RowUnchecked];
+        return (<tr className={rowClasses} onClick={props.showMore} key={index}>
                   {values}
                   {props.showMore ? <td className={classes.AngleWrp}>
                                       <div className={classes.AngleIcon}>\/</div>

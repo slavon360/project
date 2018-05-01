@@ -12,7 +12,8 @@ class Deposit extends Component{
           amount: '25.365469',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322'
+          xid: '2833739y3844772i20394he3322',
+          checked: false
         },
         {
           status: 'Status',
@@ -20,7 +21,8 @@ class Deposit extends Component{
           amount: '235.974',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322'
+          xid: '2833739y3844772i20394he3322',
+          checked: false
         },
         {
           status: 'Status',
@@ -28,7 +30,8 @@ class Deposit extends Component{
           amount: '1205.00',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322'
+          xid: '2833739y3844772i20394he3322',
+          checked: false
         },
         {
           status: 'Status',
@@ -36,7 +39,8 @@ class Deposit extends Component{
           amount: '25.365469',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322'
+          xid: '2833739y3844772i20394he3322',
+          checked: false
         },
         {
           status: 'Status',
@@ -44,7 +48,8 @@ class Deposit extends Component{
           amount: '25.365469',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322'
+          xid: '2833739y3844772i20394he3322',
+          checked: false
         },
         {
           status: 'Status',
@@ -52,7 +57,8 @@ class Deposit extends Component{
           amount: '25.365469',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322'
+          xid: '2833739y3844772i20394he3322',
+          checked: false
         },
         {
           status: 'Status',
@@ -60,7 +66,8 @@ class Deposit extends Component{
           amount: '25.365469',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322'
+          xid: '2833739y3844772i20394he3322',
+          checked: false
         }
       ]
     }
