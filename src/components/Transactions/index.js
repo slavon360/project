@@ -4,11 +4,18 @@ import classes from './Transactions.css';
 const transactions = (props) => {
     let headData = props.headData.map((head) => <th>{head.title}</th>);
     let bodyData = props.bodyData.map((trans, index) => {
+      let values = props.propNames.reduce((result, current, i) => {
+                    result.push(<td>
+                                  {i === 0 ? <div className={classes.Round}></div> : null}
+                                  {trans[current]}
+                                </td>);
+                    return result;
+                  }, []);
         return (<tr key={index}>
-                  <td><div className={classes.Round}></div>{trans[props.propNames[index]]}</td>
-                  <td>{trans[props.propNames[index]]}</td>
-                  <td>{trans[props.propNames[index]]}</td>
-                  <td>{trans[props.propNames[index]]}</td>
+                  {values}
+                  {props.showMore ? <td className={classes.AngleWrp}>
+                                      <div className={classes.AngleIcon}>\/</div>
+                                    </td> : null}
                 </tr>)
     })
     return (

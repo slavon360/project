@@ -3,6 +3,7 @@ import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import Layout from './hoc/Layout';
 import BuySell from './containers/BuySell';
 import Balances from './containers/Balances';
+import Deposit from './containers/Deposit';
 import './App.css';
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
         <Switch>
           <Route path='/buy-sell' component={BuySell} />
           <Route path='/balances' component={Balances} />
+          <Route path='/deposit' component={Deposit} />
           <Redirect to='/buy-sell' />
         </Switch>
     )
