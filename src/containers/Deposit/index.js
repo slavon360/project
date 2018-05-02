@@ -20,7 +20,7 @@ class Deposit extends Component{
           amount: '235.974',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322',
+          xid: '2833739y3844772i20394he4587',
           checked: false
         },
         {
@@ -29,7 +29,7 @@ class Deposit extends Component{
           amount: '1205.00',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322',
+          xid: '6635d28ca7a425249a7e0acfb3c0ec84fa731ece5067149718a3b962b1fcc3e7',
           checked: false
         },
         {
@@ -38,7 +38,7 @@ class Deposit extends Component{
           amount: '25.365469',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322',
+          xid: '6635d28ca7a425249a7e0acfb3c0ec84fa731ece5067149718a3b962b1fcc3e7',
           checked: false
         },
         {
@@ -47,7 +47,7 @@ class Deposit extends Component{
           amount: '25.365469',
           date: '01 Dec 2017 12:27 am',
           address: 'mdfnf8644herjb3jdp',
-          xid: '2833739y3844772i20394he3322',
+          xid: '6635d28ca7a425249a7e0acfb3c0ec84fa731ece5067149718a3b962b1fcc3e7',
           checked: false
         },
         {

@@ -5,6 +5,7 @@
   cursor: pointer;
 }
 .TableWrp{
+  box-shadow: 0 4px 18px 0 #dedede;
   width: 760px;
   height: 480px;
   padding: 35px 61px 38px 59px;

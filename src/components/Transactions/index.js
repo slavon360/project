@@ -8,7 +8,7 @@ const transactions = (props) => {
     let bodyData = props.bodyData.map((trans, index) => {
       let moreInfo = props.moreInfo ? props.moreInfo.reduce((result, current) => {
                                         result.push(<div key={current} className={classes.MoreInfo}>
-                                                      <div className={classes.Key}>{current}</div>
+                                                      <div className={classes.Key}>{`${current}:`}</div>
                                                       <div className={classes.Value}>{trans[current]}</div>
                                                     </div>);
                                         return result
@@ -17,7 +17,7 @@ const transactions = (props) => {
                     result.push(<td key={current}>
                                   {i === 0 ?  <Adj>
                                                 <div className={classes.Round}></div>
-                                                {moreInfo}
+                                                <div className={classes.MoreInfoWrp}>{moreInfo}</div>
                                               </Adj> : null}
                                   {trans[current]}
                                 </td>);

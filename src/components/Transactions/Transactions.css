@@ -94,12 +94,31 @@
   background-color: #f1dded;
   height: 120px;
 }
-.MoreInfo{
+.MoreInfoWrp{
   position: absolute;
-  top: 20px;
+  top: 45px;
   left: 0;
-  width: 100%;
+  width: 636px;
   height: 100%;
+}
+.MoreInfoWrp .MoreInfo:first-child .Key{
+  text-transform: capitalize;
+}
+.MoreInfo .Key,
+.MoreInfo .Value{
+  display: inline-block;
+}
+.MoreInfo .Value{
+  color: #41424e;
+  font-size: 12px;
+}
+.MoreInfo .Key{
+  font-size: 16px;
+  font-style: Regular;
+  font-weight: 400;
+  color: #922c88;
+  width: 91px;
+  margin-left: 15px;
 }
 .AngleIcon{
   transform-origin: center;
