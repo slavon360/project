@@ -1,11 +1,14 @@
 .DepositWrp{
   background-color: #f8f8f8;
+  margin-right: 40px;
 }
 .DepositWrp tbody tr{
   cursor: pointer;
 }
 .TableWrp{
+  display: inline-block;
   box-shadow: 0 4px 18px 0 #dedede;
+  border-radius: 6px;
   width: 760px;
   height: 480px;
   padding: 35px 61px 38px 59px;

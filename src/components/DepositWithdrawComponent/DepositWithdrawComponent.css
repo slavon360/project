@@ -1,0 +1,15 @@
+.DepositWithdrawWrp{
+  padding: 76px 80px 72px 80px;
+  display: inline-block;
+}
+.DepositWithdrawWrp .Title{
+  font-size: 24px;
+  font-weight: 700;
+  color: #922c88;
+  text-transform: uppercase;
+  width: 800px;
+  height: 760px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 0 8px 8px 8px;
+}

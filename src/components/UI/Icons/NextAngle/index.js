@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './NextAngle.css';
 
 const nextAngle = (props) => (
     <svg

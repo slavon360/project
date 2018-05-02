@@ -1,9 +1,26 @@
 import React, { Component } from 'react';
 import Transactions from '../../components/Transactions';
+import DepositWithdraw from '../../components/DepositWithdrawComponent';
 import classes from './Deposit.css';
 
 class Deposit extends Component{
     state = {
+      depositData: {
+        title: 'Deposit',
+        type: 'Deposits',
+        selectedCurrency: {title: 'ETH Ethereum', balance: '1.210265', icon: require('../../assets/images/coins/ethereum.png')},
+        currencies: [
+          {currency: 'BTC Bitcoin', balance: '1.2102', icon: require('../../assets/images/coins/Bitcoin.svg')},
+          {currency: 'ETH Ethereum', balance: '0.00', icon: require('../../assets/images/coins/ethereum.png')},
+          {currency: 'AUD Australian Dollar', balance: '300256.36', icon: require('../../assets/images/coins/Bitcoin.svg')},
+          {currency: 'XRP Ripple', balance: '23.236547', icon: require('../../assets/images/coins/Ripple-logo.png')},
+          {currency: 'AION Aion', balance: '0.00', icon: require('../../assets/images/coins/AION.jpg')},
+          {currency: 'BNB Binance', balance: '300256.36', icon: require('../../assets/images/coins/binance-coin.svg')},
+          {currency: 'OMG Omise Go', balance: '1.210265', icon: require('../../assets/images/coins/omise-go.png')},
+          {currency: 'QSP Quantstamp', balance: '0.00', icon: require('../../assets/images/coins/quantstamp-logo.jpg')},
+          {currency: 'DOGE Dogecoin', balance: '300256.36', icon: require('../../assets/images/coins/doge.svg')}
+        ]
+      },
       transactions: [
         {
           status: 'Status',
@@ -80,6 +97,7 @@ class Deposit extends Component{
     }
     render(){
       return (<div className={classes.DepositWrp}>
+                <DepositWithdraw data={} />
                 <div className={classes.TableWrp}>
                   <Transactions
                     propNames={['status', 'currency', 'amount', 'date']}
