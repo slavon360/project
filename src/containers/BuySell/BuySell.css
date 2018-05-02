@@ -10,6 +10,14 @@
   margin-top: 32px;
   text-transform: uppercase;
 }
+.TableWrp{
+  max-width: 600px;
+  max-height: 262px;
+  box-sizing: border-box;
+  padding: 35px 5px 18px 59px;
+  background-color: #fff;
+  border-radius: 8px;
+}
 @media screen and (min-width: 1920px) {
   .BuySellWrp{
     padding: 57px 159px 79px 159px;

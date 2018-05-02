@@ -1,12 +1,5 @@
-.TableWrp{
-  max-width: 600px;
-  max-height: 262px;
-  box-sizing: border-box;
-  padding: 35px 5px 18px 59px;
-  background-color: #fff;
-  border-radius: 8px;
-}
-.TableWrp thead th{
+
+.Table thead th{
   padding-bottom: 34px !important;
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 29px;
@@ -15,61 +8,63 @@
   color: #922c88;
   text-transform: uppercase;
 }
-.TableWrp thead th:first-child{
+.Table thead th:first-child{
   text-align: left;
   width: 155px;
 }
-.TableWrp thead th:nth-child(2){
+.Table thead th:nth-child(2){
   width: 130px;
 }
-.TableWrp thead th:nth-child(3){
+.Table thead th:nth-child(3){
   padding: 0 29px 0 0;
 }
-.TableWrp thead th:last-child{
+.Table thead th:last-child{
   text-align: right;
 }
-.TableWrp thead{
+.Table thead{
   box-sizing: border-box;
   padding-right: 80px;
 }
-.TableWrp thead, tbody tr {
+.Table thead, tbody tr {
     display:table;
     width:100%;
     table-layout:fixed;
 }
-.TableWrp tbody{
+.Table tbody{
   display: block;
   height: 150px;
   overflow: auto;
+  padding-top: 29px;
 }
-.TableWrp tbody::-webkit-scrollbar {
+.Table tbody::-webkit-scrollbar {
     width: 6px;
 }
-.TableWrp tbody::-webkit-scrollbar-track {
+.Table tbody::-webkit-scrollbar-track {
   margin-right: 5px;
 }
-.TableWrp tbody::-webkit-scrollbar-thumb {
+.Table tbody::-webkit-scrollbar-thumb {
   background-color: #d192c7;
   border-radius: 5px;
 }
-.TableWrp tbody tr:first-child td{
-  padding-top: 29px;
+.Table tbody tr{
+  padding: 4px 0;
 }
-.TableWrp tbody td{
+.Table tbody td{
+  box-sizing: border-box;
   font-size: 16px;
   color: #41424e;
 }
-.TableWrp tbody td:first-child{
+.Table tbody td:first-child{
   font-size: 14px;
   width: 155px;
 }
-.TableWrp tbody td:nth-child(2){
+.Table tbody td:nth-child(2){
   padding-left: 48px;
 }
-.TableWrp tbody td:nth-child(3){
+.Table tbody td:nth-child(3){
   width: 93px;
 }
-.TableWrp tbody td:nth-child(4){
+.Table tbody td:nth-child(4){
   padding-right: 44px;
 }
 .Round{
@@ -81,16 +76,23 @@
   margin: 0 10px 2px 0;
 }
 .Row{
+  box-sizing: border-box;
+  vertical-align: top;
+  transition: height .5s;
+  overflow: hidden;
+}
+.Row td{
   position: relative;
-  min-height: 20px;
 }
-.RowChecked{
-  background-color: #582871;
-  height: 140px;
+.Table .RowUnchecked{
+  height: 20px;
 }
-.RowChecked .AngleIcon{
-  transform: rotate(180deg);
-  transform-origin: center;
+.Table .RowUnchecked td{
+  box-sizing: inherit;
+}
+.Table .RowChecked{
+  background-color: #f1dded;
+  height: 120px;
 }
 .MoreInfo{
   position: absolute;
@@ -98,4 +100,13 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+.AngleIcon{
+  transform-origin: center;
+}
+.AngleIcon.Up svg{
+  transform: rotate(270deg);
+}
+.AngleIcon.Down svg{
+  transform: rotate(90deg);
 }

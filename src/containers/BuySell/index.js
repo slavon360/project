@@ -127,10 +127,12 @@ class BuySell extends Component {
                       setPeriodDpDwn={this.setPeriodDpDwn}/>
                     <div className={classes.TransactionsWrp}>
                       <h3 className={classes.History}>History</h3>
-                      <Transactions
-                        propNames={['date', 'price', 'quantity', 'amount']}
-                        headData={this.state.headData}
-                        bodyData={this.state.transactions}/>
+                      <div className={classes.TableWrp}>
+                        <Transactions
+                          propNames={['date', 'price', 'quantity', 'amount']}
+                          headData={this.state.headData}
+                          bodyData={this.state.transactions}/>
+                      </div>
                     </div>
                   </Adj>
       }

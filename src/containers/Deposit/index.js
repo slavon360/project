@@ -73,21 +73,23 @@ class Deposit extends Component{
     showMore = (transaction) => {
       let updTransactions = [...this.state.transactions];
       updTransactions = updTransactions.map((trans) => {
-        trans.checked = trans.currency === transaction.currency ? true : false;
+        trans.checked = (trans.currency === transaction.currency && !trans.checked) ? true : false;
         return trans;
       })
       this.setState({transactions: updTransactions});
     }
     render(){
-      <div className={classes.DepositWrp}>
-        <Transactions
-          propNames={['status', 'currency', 'amount', 'date']}
-          moreInfo={['address', 'xid']}
-          headData={['History']}
-          bodyData={this.state.transactions}
-          showMore={this.showMore}
-          />
-      </div>
+      return (<div className={classes.DepositWrp}>
+                <div className={classes.TableWrp}>
+                  <Transactions
+                    propNames={['status', 'currency', 'amount', 'date']}
+                    moreInfo={['address', 'xid']}
+                    headData={[{title: 'History'}]}
+                    bodyData={this.state.transactions}
+                    showMore={this.showMore}
+                    />
+                </div>
+              </div>)
     }
 }
 

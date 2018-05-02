@@ -1,6 +1,52 @@
 .DepositWrp{
-
+  background-color: #f8f8f8;
 }
 .DepositWrp tbody tr{
   cursor: pointer;
+}
+.TableWrp{
+  width: 760px;
+  height: 480px;
+  padding: 35px 61px 38px 59px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.TableWrp table{
+  width: 100%;
+}
+.TableWrp table tbody{
+  height: auto;
+  max-height: 340px;
+}
+.TableWrp table thead{
+  padding-right: 0;
+}
+.TableWrp table thead th:last-child{
+  text-align: left;
+}
+.TableWrp table tbody tr:hover{
+  background-color: #f1dded;
+}
+.TableWrp tbody td:first-child{
+  width: 138px;
+  padding: 0;
+}
+.TableWrp tbody td:nth-child(2){
+  width: 88px;
+  padding: 0;
+}
+.TableWrp tbody td:nth-child(3){
+  width: 200px;
+  padding: 0;
+}
+.TableWrp tbody td:nth-child(4){
+  padding: 0;
+  width: 183px;
+}
+.TableWrp table tbody td,
+.TableWrp table tbody td:first-child{
+  font-size: 16px;
+}
+.TableWrp table tr td:nth-last-child(2){
+  font-size: 14px;
 }
