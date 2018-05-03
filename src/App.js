@@ -4,6 +4,7 @@ import Layout from './hoc/Layout';
 import BuySell from './containers/BuySell';
 import Balances from './containers/Balances';
 import Deposit from './containers/Deposit';
+import Withdraw from './containers/Withdraw';
 import './App.css';
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
           <Route path='/buy-sell' component={BuySell} />
           <Route path='/balances' component={Balances} />
           <Route path='/deposit' component={Deposit} />
+          <Route path='/withdraw' component={Withdraw} />
           <Redirect to='/buy-sell' />
         </Switch>
     )

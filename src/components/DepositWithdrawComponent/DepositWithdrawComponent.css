@@ -1,15 +1,52 @@
 .DepositWithdrawWrp{
   padding: 76px 80px 72px 80px;
   display: inline-block;
+  width: 800px;
+  height: 760px;
+  margin-right: 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+  vertical-align: top;
+  border-radius: 0 8px 8px 8px;
 }
 .DepositWithdrawWrp .Title{
   font-size: 24px;
   font-weight: 700;
   color: #922c88;
   text-transform: uppercase;
-  width: 800px;
-  height: 760px;
+  margin: 0 0 52px 0;
+}
+.DropDwnWrp .SelectCurrency, .DropDwnWrp .Balance{
+  color: #41424e;
+  font-size: 14px;
+}
+.DropDwnWrp .SelectCurrency{
+  margin-bottom: 16px;
+}
+.DropDwnWrp .Balance{
+  margin-top: 11px;
+  text-align: right;
+}
+.SelectedCurrency{
+  height: 48px;
   box-sizing: border-box;
-  background-color: #fff;
-  border-radius: 0 8px 8px 8px;
+  padding: 11px 31px 13px 31px;
+}
+.SelectedCurrency > img{
+  width: 24px;
+  height: 24px;
+}
+.SelectedCurrency .SelectedTitle,
+.SelectedCurrency .Angle{
+  display: inline-block;
+}
+.SelectedCurrency .SelectedTitle{
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 27px;
+  transform: translateY(-5px);
+}
+.SelectedCurrency .Angle{
+  float: right;
+  transform: translateY(2px);
 }

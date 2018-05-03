@@ -73,8 +73,7 @@ class HeaderTools extends Component {
             dropdownButtons={this.state.user.drpItems}
             hideShowDropdown={this.hideShowUserDropdown}
             hideDropdown={this.hideUserDropdown}
-            setValue={this.userParameter}
-            btnClasses={[]}>
+            setValue={this.userParameter}>
             {this.state.user.title}<span className={classes.Arrow}><Arrow/></span>
           </Dropdown>
           <div className={classes.Help}>

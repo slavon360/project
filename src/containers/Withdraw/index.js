@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Transactions from '../../components/Transactions';
 import DepositWithdraw from '../../components/DepositWithdrawComponent';
-import classes from './Deposit.css';
+import classes from './Withdraw.css';
 
-class Deposit extends Component{
+class Withdraw extends Component{
     state = {
-      depositData: {
-        title: 'Deposit',
-        type: 'Deposits',
+      withdrawData: {
+        title: 'Withdraw',
+        type: 'Withdrawal',
         showDpDwn: false,
         selectedCurrency: {title: 'ETH Ethereum', balance: '1.210265', icon: require('../../assets/images/coins/ethereum.png')},
         currencies: [
@@ -97,22 +97,22 @@ class Deposit extends Component{
       this.setState({transactions: updTransactions});
     }
     hideShowCurrencyDropdown = () => {
-      let updDepositData = {...this.state.depositData};
-      updDepositData.showDpDwn = updDepositData.showDpDwn ? false : true;
-      this.setState({depositData: updDepositData});
+      let updwithdrawData = {...this.state.withdrawData};
+      updwithdrawData.showDpDwn = updwithdrawData.showDpDwn ? false : true;
+      this.setState({withdrawData: updwithdrawData});
     }
     hideCurrencyDropdown = () => {
-      let updDepositData = {...this.state.depositData};
-      updDepositData.showDpDwn = false;
-      this.setState({depositData: updDepositData});
+      let updwithdrawData = {...this.state.withdrawData};
+      updwithdrawData.showDpDwn = false;
+      this.setState({withdrawData: updwithdrawData});
     }
     selectCurrency = () => {
 
     }
     render(){
-      return (<div className={classes.DepositWrp}>
+      return (<div className={classes.WithdrawWrp}>
                 <DepositWithdraw
-                  data={this.state.depositData}
+                  data={this.state.withdrawData}
                   hideShowCurrencyDropdown={this.hideShowCurrencyDropdown}
                   hideCurrencyDropdown={this.hideCurrencyDropdown}
                   selectCurrency={this.selectCurrency}/>
@@ -129,4 +129,4 @@ class Deposit extends Component{
     }
 }
 
-export default Deposit;
+export default Withdraw;

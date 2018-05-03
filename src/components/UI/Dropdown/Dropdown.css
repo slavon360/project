@@ -76,6 +76,42 @@
 .DropdownLangContainer > button > img{
   padding-right: 7px;
 }
-.DropdownLangContainer > button > span{
-
+.CurrencyDropdownWrp{
+  position: relative;
+}
+.CurrencyDropdownWrp > button{
+  width: 100%;
+  text-align: left;
+}
+.CurrencyContainerDpDwn{
+  padding-top: 48px;
+  padding-bottom: 25px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 18px 0 #e1e1e1;
+}
+.CurrencyContainerDpDwn > button{
+  width: 100%;
+  text-align: left;
+  display: block;
+  padding: 0 31px;
+  height: 40px;
+  font-size: 16px;
+  color: #41424e;
+}
+.CurrencyContainerDpDwn > button:hover{
+  background-color: #f1dded;
+}
+.CurrencyContainerDpDwn > button > img{
+  transform: translateY(2px);
+  width: 24px;
+  height: 24px;
+}
+.CurrencyContainerDpDwn > button > span{
+  display: inline-block;
+  transform: translateY(-4px);
+  padding-left: 27px;
 }
