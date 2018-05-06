@@ -41,11 +41,10 @@ const buySellComponent = props => {
             </div>
             <div className={classes.InputsWrp}>
               <Input
-                label="USD"
                 wrpClasses={firstInpClasses}
                 labelClasses={['AmountLabel']}
                 inputClasses={['InputBuySell']}
-                elementConfig={{type: 'text', placeholder: '0.00'}}/>
+                elementConfig={{type: 'text', placeholder: '0.00', label: 'USD'}}/>
               <Button
                 btnClasses={['SwitchBtn']}
                 clicked={props.currenciesPlaceSwitcher}
@@ -53,11 +52,10 @@ const buySellComponent = props => {
                 <img alt="switch" src={require(`../../assets/images/icons/switch.png`)} />
               </Button>
               <Input
-                label={props.selectedCrypt.name}
                 wrpClasses={secondInpClasses}
                 labelClasses={['AmountLabel']}
                 inputClasses={['InputBuySell']}
-                elementConfig={{type: 'text', placeholder: '0.00'}}/>
+                elementConfig={{type: 'text', placeholder: '0.00', label: props.selectedCrypt.name}}/>
             </div>
             <div className={classes.TransactionFee}>Transaction Fee: 0.1 {props.selectedCrypt.name}</div>
             <div className={classes.BuyBtnWrp}>

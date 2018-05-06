@@ -1,6 +1,8 @@
 .DepositWrp{
   background-color: #f8f8f8;
   padding: 60px 160px 60px 160px;
+  display: flex;
+  justify-content: space-between;
 }
 .DepositWrp tbody tr{
   cursor: pointer;

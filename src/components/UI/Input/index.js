@@ -47,7 +47,7 @@ const input = props => {
     wrpClasses = setCurrentClasses(props.wrpClasses, wrpClasses, classes);
       return (
           <div className={wrpClasses.join(' ')}>
-            <label className={labelClasses.join(' ')}>{props.label}</label>
+            <label className={labelClasses.join(' ')}>{props.elementConfig.label}</label>
             {inputElement}
           </div>
       )
