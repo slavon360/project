@@ -30,3 +30,39 @@
 .RightSide .Title, .RightSide .WarningInfo{
   margin-bottom: 21px;
 }
+.CopyDepositAddressWrp{
+  width: 100%;
+  text-align: right;
+  padding-top: 12px;
+}
+.CopyDepositAddressWrp > button{
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 48px;
+  border-radius: 25px;
+  background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+.CopyDepositAddressWrp > button::before{
+    content: attr(before-content);
+    display: block;
+    box-sizing: border-box;
+    padding-top: 16px;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    opacity: 0;
+    background: linear-gradient(90deg, #e12b82, #53236d);
+}
+.CopyDepositAddressWrp > button:hover::before{
+  opacity: 1;
+}

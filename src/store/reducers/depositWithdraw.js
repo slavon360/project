@@ -32,7 +32,10 @@ const hideShowCurrencyDropdown = state => {
 const depositSetCryptoAddress = state => {
   const updInteractiveView = {
           interactiveView: [{
+                id: '01',
                 elementType: 'input',
+                classes: ['DepositAddress'],
+                currentKey: 'address',
                 elementConfig: {
                   type: 'text',
                   label: (coin) => {
@@ -44,21 +47,25 @@ const depositSetCryptoAddress = state => {
                 }
               },
               {
+                id: '02',
                 elementType: 'button',
-                elementConfig: {},
+                classes: ['CopyDepositAddressWrp'],
+                elementConfig: {'before-content': 'Copy Address'},
                 text: 'Copy Address'
               }]
             }
   const updSelectedCurrency = updateObject(state.currencyData.selectedCurrency, updInteractiveView);
   const updatedCurrencyData = updateObject(state.currencyData, {selectedCurrency: updSelectedCurrency});
   const updatedState = updateObject(state, {currencyData: updatedCurrencyData});
+  console.log(updatedState)
   return updatedState;
 }
 
 const buildInteractiveView = state => {
   let deposit = state.currencyData.deposit, currencyType = state.currencyData.selectedCurrency.currencyType,
   address = state.currencyData.selectedCurrency.address, amount = state.currencyData.selectedCurrency.amount;
-  if (deposit && currencyType === 'cryptocurrency' && address && address.length >= 34) {
+  console.log(deposit, currencyType, address)
+  if (deposit && currencyType === 'cryptocurrency' && !address) {
     return depositSetCryptoAddress(state);
   }
 }
@@ -72,7 +79,7 @@ const reducer = (state = initialState, action) => {
       case actionTypes.HIDE_SHOW_CURRENCY_DROPDOWN:
         return hideShowCurrencyDropdown(state);
       case actionTypes.BUILD_INTERACTIVE_VIEW:
-        return buildInteractiveView(state, action);
+        return buildInteractiveView(state);
       default: return state;
     }
 }

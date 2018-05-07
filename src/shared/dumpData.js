@@ -9,23 +9,14 @@ export const currencyData = {
       limitInfo: 'Limit 500 USD Lorem ipsum Lorem ipsum!',
       selectedCurrency: {
                           currencyType: 'cryptocurrency',
-                          address: null,
-                          amount: null,
+                          address: '',
+                          amount: '',
                           checked: false,
                           title: 'ETH Ethereum',
                           balance: '1.210265',
                           icon: require('../assets/images/coins/ethereum.png'),
                           shortcut: 'ETH',
-                          interactiveView: [
-                            {
-                              elementType: 'input',
-                              elementConfig: {
-                                type: 'text',
-                                //label: `${currencyData.selectCurrency.shortcut} ${currencyData.deposit ? 'Deposit' : 'Withdrawal'} Address`
-                              },
-                              value: ''
-                            }
-                          ]
+                          interactiveView: null
                         },
       currencies: [
                     {

@@ -95,6 +95,7 @@ class Deposit extends Component{
     }
     componentDidMount(){
       this.props.depositWithdrawSwitch(actionTypes.DEPOSIT);
+      this.props.buildInteractiveView();
     }
     showMore = (transaction) => {
       let updTransactions = [...this.state.transactions];
@@ -146,7 +147,8 @@ const mapDispatchToProps = dispatch => {
     return {
       depositWithdrawSwitch: (value) => dispatch(actions.depositWithdrawSwitch(value)),
       hideShowCurrencyDropdown: () => dispatch(actions.hideShowCurrencyDropdown()),
-      hideCurrencyDropdown: () => dispatch(actions.hideCurrencyDropdown())
+      hideCurrencyDropdown: () => dispatch(actions.hideCurrencyDropdown()),
+      buildInteractiveView: () => dispatch(actions.buildInteractiveView())
     }
 }
 

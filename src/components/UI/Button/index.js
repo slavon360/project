@@ -5,11 +5,11 @@ import classes from './Button.css';
 
 const button = (props) => {
     let currentClasses = [classes.Button];
-    currentClasses = setCurrentClasses(props.btnClasses, currentClasses, classes);
+    currentClasses = props.btnClasses ? setCurrentClasses(props.btnClasses, currentClasses, classes) : null;
     return (
               <button
                 {...props.elementConfig}
-                className={currentClasses.join(' ')}
+                className={currentClasses ? currentClasses.join(' ') : null}
                 onClick={props.clicked}
                 onBlur={() => {window.setTimeout(props.blurred, 200)}}>
                 {props.children}
@@ -18,7 +18,8 @@ const button = (props) => {
 };
 
 button.propTypes = {
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  btnClasses: PropTypes.array
 }
 
 export default button;
