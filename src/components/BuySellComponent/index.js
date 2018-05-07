@@ -13,7 +13,7 @@ const buySellComponent = props => {
           <div key={coin.name} className={classes.CoinWrp}>
             <Button
               clicked={() => {props.setCurrency(coin.name)}}
-              type="button"
+              elementConfig={{type: 'button'}}
               btnClasses={btnCoinClasses}>
               <img alt={coin.name} src={require(`../../assets/images/icons/${coin.name}.png`)}/>
               <span>{coin.name}</span>
@@ -48,7 +48,7 @@ const buySellComponent = props => {
               <Button
                 btnClasses={['SwitchBtn']}
                 clicked={props.currenciesPlaceSwitcher}
-                type="button">
+                elementConfig={{type: 'button'}}>
                 <img alt="switch" src={require(`../../assets/images/icons/switch.png`)} />
               </Button>
               <Input
@@ -60,9 +60,8 @@ const buySellComponent = props => {
             <div className={classes.TransactionFee}>Transaction Fee: 0.1 {props.selectedCrypt.name}</div>
             <div className={classes.BuyBtnWrp}>
               <Button
-                type="submit"
-                btnClasses={['BuyBtn']}
-                beforeContent={`${props.buy ? 'Buy' : 'Sell'} ${props.selectedCrypt.name}`}>
+                elementConfig={{type: 'submit', 'before-content': (props.buy ? 'Buy ' : 'Sell ') + props.selectedCrypt.name}}
+                btnClasses={['BuyBtn']}>
                   {`${props.buy ? 'Buy' : 'Sell'} ${props.selectedCrypt.name}`}
                 </Button>
             </div>

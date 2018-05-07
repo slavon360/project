@@ -8,12 +8,10 @@ const button = (props) => {
     currentClasses = setCurrentClasses(props.btnClasses, currentClasses, classes);
     return (
               <button
-                type={props.type}
-                disabled={props.disabled}
+                {...props.elementConfig}
                 className={currentClasses.join(' ')}
                 onClick={props.clicked}
-                onBlur={() => {window.setTimeout(props.blurred, 200)}}
-                before-content={props.beforeContent}>
+                onBlur={() => {window.setTimeout(props.blurred, 200)}}>
                 {props.children}
               </button>
           )

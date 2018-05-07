@@ -29,6 +29,40 @@ const hideShowCurrencyDropdown = state => {
   return updateObject(state, updatedState);
 }
 
+const depositSetCryptoAddress = state => {
+  const updInteractiveView = {
+          interactiveView: [{
+                elementType: 'input',
+                elementConfig: {
+                  type: 'text',
+                  label: (coin) => {
+                      return `${coin} Deposit Address`;
+                  }
+                },
+                value: (val) => {
+                  return val;
+                }
+              },
+              {
+                elementType: 'button',
+                elementConfig: {},
+                text: 'Copy Address'
+              }]
+            }
+  const updSelectedCurrency = updateObject(state.currencyData.selectedCurrency, updInteractiveView);
+  const updatedCurrencyData = updateObject(state.currencyData, {selectedCurrency: updSelectedCurrency});
+  const updatedState = updateObject(state, {currencyData: updatedCurrencyData});
+  return updatedState;
+}
+
+const buildInteractiveView = state => {
+  let deposit = state.currencyData.deposit, currencyType = state.currencyData.selectedCurrency.currencyType,
+  address = state.currencyData.selectedCurrency.address, amount = state.currencyData.selectedCurrency.amount;
+  if (deposit && currencyType === 'cryptocurrency' && address && address.length >= 34) {
+    return depositSetCryptoAddress(state);
+  }
+}
+
 const reducer = (state = initialState, action) => {
     switch (action.type) {
       case actionTypes.DEPOSIT_WITHDRAW_SWITCH:
@@ -37,6 +71,8 @@ const reducer = (state = initialState, action) => {
         return hideCurrencyDropdown(state);
       case actionTypes.HIDE_SHOW_CURRENCY_DROPDOWN:
         return hideShowCurrencyDropdown(state);
+      case actionTypes.BUILD_INTERACTIVE_VIEW:
+        return buildInteractiveView(state, action);
       default: return state;
     }
 }

@@ -36,17 +36,7 @@ export const currencyData = {
                       balance: '1.2102',
                       icon: require('../assets/images/coins/Bitcoin.svg'),
                       checked: false,
-                      shortcut: 'BTC',
-                      interactiveView: [
-                        {
-                          elementType: 'input',
-                          elementConfig: {
-                            type: 'text',
-                            //label: `${currencyData.selectCurrency.shortcut} ${currencyData.deposit ? 'Deposit' : 'Withdrawal'} Address`
-                          },
-                          value: ''
-                        }
-                      ]
+                      shortcut: 'BTC'
                     },
                     {
                       currencyType: 'cryptocurrency',
@@ -56,17 +46,7 @@ export const currencyData = {
                       balance: '0.00',
                       icon: require('../assets/images/coins/ethereum.png'),
                       checked: false,
-                      shortcut: 'ETH',
-                      interactiveView: [
-                        {
-                          elementType: 'input',
-                          elementConfig: {
-                            type: 'text',
-                            //label: `${currencyData.selectCurrency.shortcut} ${currencyData.deposit ? 'Deposit' : 'Withdrawal'} Address`
-                          },
-                          value: ''
-                        }
-                      ]
+                      shortcut: 'ETH'
                     },
                     {
                       currencyType: 'fiat',
@@ -76,17 +56,7 @@ export const currencyData = {
                       balance: '300256.36',
                       icon: require('../assets/images/coins/Bitcoin.svg'),
                       checked: false,
-                      shortcut: 'AUD',
-                      interactiveView: [
-                        {
-                          elementType: 'input',
-                          elementConfig: {
-                            type: 'text',
-                            //label: `${currencyData.selectCurrency.shortcut} ${currencyData.deposit ? 'Deposit' : 'Withdrawal'} Address`
-                          },
-                          value: ''
-                        }
-                      ]
+                      shortcut: 'AUD'
                     },
                     {
                       currencyType: 'cryptocurrency',
@@ -96,17 +66,7 @@ export const currencyData = {
                       balance: '23.236547',
                       icon: require('../assets/images/coins/Ripple-logo.png'),
                       checked: false,
-                      shortcut: 'XRP',
-                      interactiveView: [
-                        {
-                          elementType: 'input',
-                          elementConfig: {
-                            type: 'text',
-                            //label: `${currencyData.selectCurrency.shortcut} ${currencyData.deposit ? 'Deposit' : 'Withdrawal'} Address`
-                          },
-                          value: ''
-                        }
-                      ]
+                      shortcut: 'XRP'
                     },
                     {
                       currencyType: 'cryptocurrency',
@@ -116,17 +76,7 @@ export const currencyData = {
                       balance: '0.00',
                       icon: require('../assets/images/coins/AION.jpg'),
                       checked: false,
-                      shortcut: 'AION',
-                      interactiveView: [
-                        {
-                          elementType: 'input',
-                          elementConfig: {
-                            type: 'text',
-                            //label: `${currencyData.selectCurrency.shortcut} ${currencyData.deposit ? 'Deposit' : 'Withdrawal'} Address`
-                          },
-                          value: ''
-                        }
-                      ]
+                      shortcut: 'AION'
                     },
                     {
                       currencyType: 'cryptocurrency',
@@ -136,17 +86,7 @@ export const currencyData = {
                       balance: '300256.36',
                       icon: require('../assets/images/coins/binance-coin.svg'),
                       checked: false,
-                      shortcut: 'BNB',
-                      interactiveView: [
-                        {
-                          elementType: 'input',
-                          elementConfig: {
-                            type: 'text',
-                            //label: `${currencyData.selectCurrency.shortcut} ${currencyData.deposit ? 'Deposit' : 'Withdrawal'} Address`
-                          },
-                          value: ''
-                        }
-                      ]
+                      shortcut: 'BNB'
                     },
                     {
                       currencyType: 'cryptocurrency',
@@ -156,17 +96,7 @@ export const currencyData = {
                       balance: '1.210265',
                       icon: require('../assets/images/coins/omise-go.png'),
                       checked: false,
-                      shortcut: 'OMG',
-                      interactiveView: [
-                        {
-                          elementType: 'input',
-                          elementConfig: {
-                            type: 'text',
-                            //label: `${currencyData.selectCurrency.shortcut} ${currencyData.deposit ? 'Deposit' : 'Withdrawal'} Address`
-                          },
-                          value: ''
-                        }
-                      ]
+                      shortcut: 'OMG'
                     },
                     {
                       currencyType: 'cryptocurrency',
@@ -176,17 +106,7 @@ export const currencyData = {
                       balance: '0.00',
                       icon: require('../assets/images/coins/quantstamp-logo.jpg'),
                       checked: false,
-                      shortcut: 'QSP',
-                      interactiveView: [
-                        {
-                          elementType: 'input',
-                          elementConfig: {
-                            type: 'text',
-                            //label: `${currencyData.selectCurrency.shortcut} ${currencyData.deposit ? 'Deposit' : 'Withdrawal'} Address`
-                          },
-                          value: ''
-                        }
-                      ]
+                      shortcut: 'QSP'
                     },
                     {
                       currencyType: 'cryptocurrency',
@@ -196,17 +116,7 @@ export const currencyData = {
                       balance: '300256.35',
                       icon: require('../assets/images/coins/doge.svg'),
                       checked: false,
-                      shortcut: 'DOGE',
-                      interactiveView: [
-                        {
-                          elementType: 'input',
-                          elementConfig: {
-                            type: 'text',
-                            //label: `${currencyData.selectCurrency.shortcut} ${currencyData.deposit ? 'Deposit' : 'Withdrawal'} Address`
-                          },
-                          value: ''
-                        }
-                      ]
+                      shortcut: 'DOGE'
                     }
                   ]
 }

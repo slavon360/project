@@ -18,3 +18,9 @@ export const hideCurrencyDropdown = () => {
         type: actionTypes.HIDE_CURRENCY_DROPDOWN
     }
 }
+
+export const buildInteractiveView = () => {
+    return {
+        type: actionTypes.BUILD_INTERACTIVE_VIEW
+    }
+}
