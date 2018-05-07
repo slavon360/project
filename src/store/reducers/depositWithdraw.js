@@ -29,7 +29,7 @@ const hideShowCurrencyDropdown = state => {
   return updateObject(state, updatedState);
 }
 
-const depositSetCryptoAddress = state => {
+const depositShowCryptoAddress = state => {
   const updInteractiveView = {
           interactiveView: [{
                 id: '01',
@@ -57,17 +57,52 @@ const depositSetCryptoAddress = state => {
   const updSelectedCurrency = updateObject(state.currencyData.selectedCurrency, updInteractiveView);
   const updatedCurrencyData = updateObject(state.currencyData, {selectedCurrency: updSelectedCurrency});
   const updatedState = updateObject(state, {currencyData: updatedCurrencyData});
-  console.log(updatedState)
   return updatedState;
+}
+const depositShowCryptoAmount = state => {
+  const updInteractiveView = {
+            interactiveView: [{
+                  id: '01',
+                  elementType: 'input',
+                  classes: ['DepositAddress'],
+                  currentKey: 'amount',
+                  elementConfig: {
+                    type: 'text',
+                    label: () => {
+                        return `Enter Amount`;
+                    }
+                  },
+                  value: (val) => {
+                    return val;
+                  }
+                },
+                {
+                  id: '02',
+                  elementType: 'button',
+                  classes: ['CopyDepositAddressWrp'],
+                  elementConfig: {'before-content': 'Next'},
+                  text: 'Next'
+                }]
+  }
 }
 
 const buildInteractiveView = state => {
   let deposit = state.currencyData.deposit, currencyType = state.currencyData.selectedCurrency.currencyType,
-  address = state.currencyData.selectedCurrency.address, amount = state.currencyData.selectedCurrency.amount;
-  console.log(deposit, currencyType, address)
-  if (deposit && currencyType === 'cryptocurrency' && !address) {
-    return depositSetCryptoAddress(state);
+  copiedAddress = state.currencyData.selectedCurrency.copiedAddress, amount = state.currencyData.selectedCurrency.amount;
+  if (deposit && currencyType === actionTypes.CRYPTOCURRENCY && !copiedAddress) {
+    return depositShowCryptoAddress(state);
   }
+  if (deposit && currencyType === actionTypes.CRYPTOCURRENCY && copiedAddress ) {
+    return depositShowCryptoAmount(state);
+  }
+}
+const changeInputsValue = (state, action) => {
+    console.log(action)
+    const updatedValue = {[action.key]: action.value};
+    const updSelectedCurrency = updateObject(state.currencyData.selectedCurrency, updatedValue);
+    const updatedCurrencyData = updateObject(state.currencyData, {selectedCurrency: updSelectedCurrency});
+    const updatedState = updateObject(state, {currencyData: updatedCurrencyData});
+    return updatedState;
 }
 
 const reducer = (state = initialState, action) => {
@@ -80,6 +115,8 @@ const reducer = (state = initialState, action) => {
         return hideShowCurrencyDropdown(state);
       case actionTypes.BUILD_INTERACTIVE_VIEW:
         return buildInteractiveView(state);
+      case actionTypes.CHANGE_INPUTS_VALUE:
+        return changeInputsValue(state, action);
       default: return state;
     }
 }

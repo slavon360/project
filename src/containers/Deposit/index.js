@@ -124,7 +124,8 @@ class Deposit extends Component{
                   data={this.props.depositData}
                   hideShowCurrencyDropdown={this.props.hideShowCurrencyDropdown}
                   hideCurrencyDropdown={this.props.hideCurrencyDropdown}
-                  selectCurrency={this.selectCurrency}/>
+                  selectCurrency={this.selectCurrency}
+                  changeInputsValue={this.props.changeInputsValue} />
                 <div className={classes.TableWrp}>
                   <Transactions
                     propNames={['status', 'currency', 'amount', 'date']}
@@ -148,7 +149,8 @@ const mapDispatchToProps = dispatch => {
       depositWithdrawSwitch: (value) => dispatch(actions.depositWithdrawSwitch(value)),
       hideShowCurrencyDropdown: () => dispatch(actions.hideShowCurrencyDropdown()),
       hideCurrencyDropdown: () => dispatch(actions.hideCurrencyDropdown()),
-      buildInteractiveView: () => dispatch(actions.buildInteractiveView())
+      buildInteractiveView: () => dispatch(actions.buildInteractiveView()),
+      changeInputsValue: (event, key) => dispatch(actions.changeInputsValue(event, key))
     }
 }
 

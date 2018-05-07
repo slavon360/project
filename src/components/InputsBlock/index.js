@@ -19,7 +19,8 @@ const inputsBlock = (props) => {
                       wrpClasses={item.classes}
                       key={item.id}
                       elementConfig={updElemConfig}
-                      value={item.value(selectedCurrency[item.currentKey])} />
+                      value={item.value(selectedCurrency[item.currentKey])}
+                      changeValue={(event) => {props.changeInputsValue(event, item.currentKey)}} />
         }
         if (item.elementType === 'button'){
           let btnWrpClasses = setCurrentClasses(item.classes, [], classes);

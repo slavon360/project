@@ -9,7 +9,8 @@ export const currencyData = {
       limitInfo: 'Limit 500 USD Lorem ipsum Lorem ipsum!',
       selectedCurrency: {
                           currencyType: 'cryptocurrency',
-                          address: '',
+                          address: '876trfdcvhi765rfghjio9876trfgvbnj',
+                          copiedAddress: false,
                           amount: '',
                           checked: false,
                           title: 'ETH Ethereum',
@@ -21,7 +22,8 @@ export const currencyData = {
       currencies: [
                     {
                       currencyType: 'cryptocurrency',
-                      address: null,
+                      address: '876trfdc25i765rfghjio9876trfgvbnj',
+                      copiedAddress: false,
                       amount: null,
                       title: 'BTC Bitcoin',
                       balance: '1.2102',
@@ -31,7 +33,8 @@ export const currencyData = {
                     },
                     {
                       currencyType: 'cryptocurrency',
-                      address: null,
+                      address: '126trfdcvhi765rfghjio9876trfgvbnj',
+                      copiedAddress: false,
                       amount: null,
                       title: 'ETH Ethereum',
                       balance: '0.00',
@@ -41,7 +44,6 @@ export const currencyData = {
                     },
                     {
                       currencyType: 'fiat',
-                      address: null,
                       amount: null,
                       title: 'AUD Australian Dollar',
                       balance: '300256.36',
@@ -51,7 +53,8 @@ export const currencyData = {
                     },
                     {
                       currencyType: 'cryptocurrency',
-                      address: null,
+                      address: '876trfdcvhi765rfghjio9876trfgvbnj',
+                      copiedAddress: false,
                       amount: null,
                       title: 'XRP Ripple',
                       balance: '23.236547',
@@ -61,7 +64,8 @@ export const currencyData = {
                     },
                     {
                       currencyType: 'cryptocurrency',
-                      address: null,
+                      address: '806trfdcvhi765rfghjio9876trfgvbnj',
+                      copiedAddress: false,
                       amount: null,
                       title: 'AION Aion',
                       balance: '0.00',
@@ -71,7 +75,8 @@ export const currencyData = {
                     },
                     {
                       currencyType: 'cryptocurrency',
-                      address: null,
+                      address: '876trfdcvhi765rfghjio9876trfgvbnj',
+                      copiedAddress: false,
                       amount: null,
                       title: 'BNB Binance',
                       balance: '300256.36',
@@ -81,7 +86,8 @@ export const currencyData = {
                     },
                     {
                       currencyType: 'cryptocurrency',
-                      address: null,
+                      address: '876trfdcvhi765rfghjio9876trfgvbnj',
+                      copiedAddress: false,
                       amount: null,
                       title: 'OMG Omise Go',
                       balance: '1.210265',
@@ -91,7 +97,8 @@ export const currencyData = {
                     },
                     {
                       currencyType: 'cryptocurrency',
-                      address: null,
+                      address: '876trfdcvhi765rfghjio9876trfgvbnj',
+                      copiedAddress: false,
                       amount: null,
                       title: 'QSP Quantstamp',
                       balance: '0.00',
@@ -101,7 +108,8 @@ export const currencyData = {
                     },
                     {
                       currencyType: 'cryptocurrency',
-                      address: null,
+                      address: '876trfdcvhi765rfghjio9876trfgvbnj',
+                      copiedAddress: false,
                       amount: null,
                       title: 'DOGE Dogecoin',
                       balance: '300256.35',

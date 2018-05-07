@@ -24,3 +24,11 @@ export const buildInteractiveView = () => {
         type: actionTypes.BUILD_INTERACTIVE_VIEW
     }
 }
+
+export const changeInputsValue = (event, key) => {
+    return {
+        type: actionTypes.CHANGE_INPUTS_VALUE,
+        value: event.target.value,
+        key: key
+    }
+}
