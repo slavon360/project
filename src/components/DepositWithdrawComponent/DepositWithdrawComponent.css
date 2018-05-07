@@ -15,6 +15,9 @@
   text-transform: uppercase;
   margin: 0 0 52px 0;
 }
+.DropDwnWrp{
+  margin-bottom: 41px;
+}
 .DropDwnWrp .SelectCurrency, .DropDwnWrp .Balance{
   color: #41424e;
   font-size: 14px;

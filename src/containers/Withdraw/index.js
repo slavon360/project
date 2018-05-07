@@ -1,27 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Transactions from '../../components/Transactions';
 import DepositWithdraw from '../../components/DepositWithdrawComponent';
+import InputsBlock from '../../components/InputsBlock';
+import * as actionTypes from '../../store/actions/actionTypes';
+import * as actions from '../../store/actions';
 import classes from './Withdraw.css';
 
 class Withdraw extends Component{
     state = {
-      withdrawData: {
-        title: 'Withdraw',
-        type: 'Withdrawal',
-        showDpDwn: false,
-        selectedCurrency: {title: 'ETH Ethereum', balance: '1.210265', icon: require('../../assets/images/coins/ethereum.png')},
-        currencies: [
-          {title: 'BTC Bitcoin', balance: '1.2102', icon: require('../../assets/images/coins/Bitcoin.svg'), checked: false},
-          {title: 'ETH Ethereum', balance: '0.00', icon: require('../../assets/images/coins/ethereum.png'), checked: false},
-          {title: 'AUD Australian Dollar', balance: '300256.36', icon: require('../../assets/images/coins/Bitcoin.svg'), checked: false},
-          {title: 'XRP Ripple', balance: '23.236547', icon: require('../../assets/images/coins/Ripple-logo.png'), checked: false},
-          {title: 'AION Aion', balance: '0.00', icon: require('../../assets/images/coins/AION.jpg'), checked: false},
-          {title: 'BNB Binance', balance: '300256.36', icon: require('../../assets/images/coins/binance-coin.svg'), checked: false},
-          {title: 'OMG Omise Go', balance: '1.210265', icon: require('../../assets/images/coins/omise-go.png'), checked: false},
-          {title: 'QSP Quantstamp', balance: '0.00', icon: require('../../assets/images/coins/quantstamp-logo.jpg'), checked: false},
-          {title: 'DOGE Dogecoin', balance: '300256.36', icon: require('../../assets/images/coins/doge.svg'), checked: false}
-        ]
-      },
       transactions: [
         {
           status: 'Status',
@@ -88,6 +75,9 @@ class Withdraw extends Component{
         }
       ]
     }
+    componentDidMount(){
+      this.props.depositWithdrawSwitch(actionTypes.WITHDRAW);
+    }
     showMore = (transaction) => {
       let updTransactions = [...this.state.transactions];
       updTransactions = updTransactions.map((trans) => {
@@ -96,25 +86,16 @@ class Withdraw extends Component{
       })
       this.setState({transactions: updTransactions});
     }
-    hideShowCurrencyDropdown = () => {
-      let updwithdrawData = {...this.state.withdrawData};
-      updwithdrawData.showDpDwn = updwithdrawData.showDpDwn ? false : true;
-      this.setState({withdrawData: updwithdrawData});
-    }
-    hideCurrencyDropdown = () => {
-      let updwithdrawData = {...this.state.withdrawData};
-      updwithdrawData.showDpDwn = false;
-      this.setState({withdrawData: updwithdrawData});
-    }
     selectCurrency = () => {
 
     }
     render(){
+      console.log(this.props.withdrawData.title)
       return (<div className={classes.WithdrawWrp}>
                 <DepositWithdraw
-                  data={this.state.withdrawData}
-                  hideShowCurrencyDropdown={this.hideShowCurrencyDropdown}
-                  hideCurrencyDropdown={this.hideCurrencyDropdown}
+                  data={this.props.withdrawData}
+                  hideShowCurrencyDropdown={this.props.hideShowCurrencyDropdown}
+                  hideCurrencyDropdown={this.props.hideCurrencyDropdown}
                   selectCurrency={this.selectCurrency}/>
                 <div className={classes.TableWrp}>
                   <Transactions
@@ -129,4 +110,17 @@ class Withdraw extends Component{
     }
 }
 
-export default Withdraw;
+const mapStateToProps = state => {
+    return {
+      withdrawData: state.depositWithdraw.currencyData
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+      depositWithdrawSwitch: (value) => dispatch(actions.depositWithdrawSwitch(value)),
+      hideShowCurrencyDropdown: () => dispatch(actions.hideShowCurrencyDropdown()),
+      hideCurrencyDropdown: () => dispatch(actions.hideCurrencyDropdown())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Withdraw);

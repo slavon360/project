@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Transactions from '../../components/Transactions';
 import DepositWithdraw from '../../components/DepositWithdrawComponent';
+import * as actionTypes from '../../store/actions/actionTypes';
+import * as actions from '../../store/actions';
 import classes from './Deposit.css';
 
 class Deposit extends Component{
     state = {
+      /*
       depositData: {
         title: 'Deposit',
         type: 'Deposits',
@@ -22,6 +26,7 @@ class Deposit extends Component{
           {title: 'DOGE Dogecoin', balance: '300256.36', icon: require('../../assets/images/coins/doge.svg'), checked: false}
         ]
       },
+      */
       transactions: [
         {
           status: 'Status',
@@ -88,6 +93,9 @@ class Deposit extends Component{
         }
       ]
     }
+    componentDidMount(){
+      this.props.depositWithdrawSwitch(actionTypes.DEPOSIT);
+    }
     showMore = (transaction) => {
       let updTransactions = [...this.state.transactions];
       updTransactions = updTransactions.map((trans) => {
@@ -112,9 +120,9 @@ class Deposit extends Component{
     render(){
       return (<div className={classes.DepositWrp}>
                 <DepositWithdraw
-                  data={this.state.depositData}
-                  hideShowCurrencyDropdown={this.hideShowCurrencyDropdown}
-                  hideCurrencyDropdown={this.hideCurrencyDropdown}
+                  data={this.props.depositData}
+                  hideShowCurrencyDropdown={this.props.hideShowCurrencyDropdown}
+                  hideCurrencyDropdown={this.props.hideCurrencyDropdown}
                   selectCurrency={this.selectCurrency}/>
                 <div className={classes.TableWrp}>
                   <Transactions
@@ -129,4 +137,17 @@ class Deposit extends Component{
     }
 }
 
-export default Deposit;
+const mapStateToProps = state => {
+    return {
+      depositData: state.depositWithdraw.currencyData
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+      depositWithdrawSwitch: (value) => dispatch(actions.depositWithdrawSwitch(value)),
+      hideShowCurrencyDropdown: () => dispatch(actions.hideShowCurrencyDropdown()),
+      hideCurrencyDropdown: () => dispatch(actions.hideCurrencyDropdown())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Deposit);

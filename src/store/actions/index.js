@@ -1,2 +1,2 @@
 export { fetchCoinsPrices, setCurrency } from './currencies';
-export { depositWithdrawSwitch } from './depositWithdraw';
+export { depositWithdrawSwitch, hideShowCurrencyDropdown, hideCurrencyDropdown } from './depositWithdraw';

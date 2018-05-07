@@ -1,0 +1,32 @@
+.InputsBlockWrp{
+  width: 640px;
+  height: 400px;
+  background-color: rgba(228, 188, 222, .23);
+  padding: 51px 73px 62px 61px;
+  box-sizing: border-box;
+}
+.InputsBlockHead{
+  font-size: 14px;
+  color: #41424e;
+  margin-bottom: 51px;
+}
+.LeftSide, .RightSide{
+  display: inline-block;
+}
+.LeftSide{
+  vertical-align: top;
+}
+.LeftSide img{
+  width: 42px;
+  height: 42px;
+}
+.RightSide{
+  margin-left: 17px;
+  width: calc(100% - 60px);
+}
+.RightSide .Title, .RightSide .LimitInfo{
+  font-weight: 700
+}
+.RightSide .Title, .RightSide .WarningInfo{
+  margin-bottom: 21px;
+}

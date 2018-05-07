@@ -6,3 +6,15 @@ export const depositWithdrawSwitch = value => {
         value: value
     }
 }
+
+export const hideShowCurrencyDropdown = () => {
+    return {
+        type: actionTypes.HIDE_SHOW_CURRENCY_DROPDOWN
+    }
+}
+
+export const hideCurrencyDropdown = () => {
+    return {
+        type: actionTypes.HIDE_CURRENCY_DROPDOWN
+    }
+}

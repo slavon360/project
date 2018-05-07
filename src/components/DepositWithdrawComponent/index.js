@@ -1,6 +1,7 @@
 import React from 'react';
 import Dropdown from '../UI/Dropdown';
 import Angle from '../UI/Icons/NextAngle';
+import InputsBlock from '../InputsBlock';
 import classes from './DepositWithdrawComponent.css';
 
 const depositWithdraw = (props) => {
@@ -29,6 +30,8 @@ const depositWithdraw = (props) => {
             </Dropdown>
           <div className={classes.Balance}>{`Balance: ${props.data.selectedCurrency.balance}`}</div>
         </div>
+        <InputsBlock data={props.data}>
+        </InputsBlock>
       </div>
     )
 }
