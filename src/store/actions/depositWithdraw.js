@@ -32,3 +32,9 @@ export const changeInputsValue = (event, key) => {
         key: key
     }
 }
+
+export const copyAddress = () => {
+    return {
+        type: actionTypes.COPY_ADDRESS
+    }
+}

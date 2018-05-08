@@ -43,13 +43,19 @@ const input = props => {
                 onChange={props.changeValue}/>
 
     }
-    let labelClasses = [], wrpClasses = [];
+    let labelClasses = [], wrpClasses = [], secondLabel, thirdLabel, fourthLabel;
     labelClasses = props.labelClasses ? setCurrentClasses(props.labelClasses, labelClasses, classes) : null;
     wrpClasses = props.wrpClasses ? setCurrentClasses(props.wrpClasses, wrpClasses, classes) : null;
+    secondLabel = props.optionalLabels && props.optionalLabels.second ? props.optionalLabels.second : null;
+    thirdLabel = props.optionalLabels && props.optionalLabels.third ? props.optionalLabels.third : null;
+    fourthLabel = props.optionalLabels && props.optionalLabels.fourth ? props.optionalLabels.fourth : null;
       return (
           <div className={wrpClasses ? wrpClasses.join(' ') : null}>
             <label className={labelClasses ? labelClasses.join(' ') : null}>{props.elementConfig.label}</label>
+            <div className={classes.SecondLabel}>{secondLabel}</div>
             {inputElement}
+            <div className={classes.ThirdLabel}>{thirdLabel}</div>
+            <div className={classes.FourthLabel}>{fourthLabel}</div>
           </div>
       )
 };

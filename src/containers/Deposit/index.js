@@ -125,7 +125,8 @@ class Deposit extends Component{
                   hideShowCurrencyDropdown={this.props.hideShowCurrencyDropdown}
                   hideCurrencyDropdown={this.props.hideCurrencyDropdown}
                   selectCurrency={this.selectCurrency}
-                  changeInputsValue={this.props.changeInputsValue} />
+                  changeInputsValue={this.props.changeInputsValue}
+                  copyAddress={this.props.copyAddress}/>
                 <div className={classes.TableWrp}>
                   <Transactions
                     propNames={['status', 'currency', 'amount', 'date']}
@@ -150,7 +151,11 @@ const mapDispatchToProps = dispatch => {
       hideShowCurrencyDropdown: () => dispatch(actions.hideShowCurrencyDropdown()),
       hideCurrencyDropdown: () => dispatch(actions.hideCurrencyDropdown()),
       buildInteractiveView: () => dispatch(actions.buildInteractiveView()),
-      changeInputsValue: (event, key) => dispatch(actions.changeInputsValue(event, key))
+      changeInputsValue: (event, key) => dispatch(actions.changeInputsValue(event, key)),
+      copyAddress: () => {
+        dispatch(actions.copyAddress());
+        dispatch(actions.buildInteractiveView());
+      }
     }
 }
 

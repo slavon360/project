@@ -50,7 +50,7 @@ const depositShowCryptoAddress = state => {
                 id: '02',
                 elementType: 'button',
                 classes: ['CopyDepositAddressWrp'],
-                elementConfig: {'before-content': 'Copy Address'},
+                elementConfig: {'before-content': 'Copy Address', type: 'button'},
                 text: 'Copy Address'
               }]
             }
@@ -80,10 +80,62 @@ const depositShowCryptoAmount = state => {
                   id: '02',
                   elementType: 'button',
                   classes: ['CopyDepositAddressWrp'],
-                  elementConfig: {'before-content': 'Next'},
+                  elementConfig: {'before-content': 'Next', type: 'button'},
                   text: 'Next'
                 }]
-  }
+              }
+      const updSelectedCurrency = updateObject(state.currencyData.selectedCurrency, updInteractiveView);
+      const updatedCurrencyData = updateObject(state.currencyData, {selectedCurrency: updSelectedCurrency});
+      const updatedState = updateObject(state, {currencyData: updatedCurrencyData});
+      return updatedState;
+}
+const withdrawCryptoAmountAddress = state => {
+  const updInteractiveView = {
+            interactiveView: [{
+                  id: '01',
+                  elementType: 'input',
+                  classes: ['WithdrawAddress'],
+                  currentKey: 'address',
+                  elementConfig: {
+                    type: 'text',
+                    label: (coin) => {
+                        return `${coin} Withdrawal Address`;
+                    }
+                  },
+                  value: (val) => {
+                    return val;
+                  }
+                },
+                {
+                  id: '02',
+                  elementType: 'input',
+                  classes: ['WithdrawAmount'],
+                  currentKey: 'amount',
+                  elementConfig: {
+                    type: 'text',
+                    label: () => {
+                        return `Amount`;
+                    },
+                    placeholder: (balance) => {
+                        return `Available ${balance}`
+                    }
+                  },
+                  value: (val) => {
+                    return val;
+                  }
+                },
+                {
+                  id: '03',
+                  elementType: 'button',
+                  classes: ['SubmitWithdrawAmountWrp'],
+                  elementConfig: {'before-content': 'Submit', type: 'submit'},
+                  text: 'Submit'
+                }]
+              }
+      const updSelectedCurrency = updateObject(state.currencyData.selectedCurrency, updInteractiveView);
+      const updatedCurrencyData = updateObject(state.currencyData, {selectedCurrency: updSelectedCurrency});
+      const updatedState = updateObject(state, {currencyData: updatedCurrencyData});
+      return updatedState;
 }
 
 const buildInteractiveView = state => {
@@ -95,11 +147,20 @@ const buildInteractiveView = state => {
   if (deposit && currencyType === actionTypes.CRYPTOCURRENCY && copiedAddress ) {
     return depositShowCryptoAmount(state);
   }
+  if (!deposit && currencyType === actionTypes.CRYPTOCURRENCY && (!copiedAddress || copiedAddress)) {
+    return withdrawCryptoAmountAddress(state);
+  }
 }
 const changeInputsValue = (state, action) => {
-    console.log(action)
     const updatedValue = {[action.key]: action.value};
     const updSelectedCurrency = updateObject(state.currencyData.selectedCurrency, updatedValue);
+    const updatedCurrencyData = updateObject(state.currencyData, {selectedCurrency: updSelectedCurrency});
+    const updatedState = updateObject(state, {currencyData: updatedCurrencyData});
+    return updatedState;
+}
+const copyAddress = state => {
+    const copiedAddress = {copiedAddress: true};
+    const updSelectedCurrency = updateObject(state.currencyData.selectedCurrency, copiedAddress);
     const updatedCurrencyData = updateObject(state.currencyData, {selectedCurrency: updSelectedCurrency});
     const updatedState = updateObject(state, {currencyData: updatedCurrencyData});
     return updatedState;
@@ -117,6 +178,8 @@ const reducer = (state = initialState, action) => {
         return buildInteractiveView(state);
       case actionTypes.CHANGE_INPUTS_VALUE:
         return changeInputsValue(state, action);
+      case actionTypes.COPY_ADDRESS:
+        return copyAddress(state);
       default: return state;
     }
 }

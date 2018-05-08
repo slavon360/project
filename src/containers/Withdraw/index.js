@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Transactions from '../../components/Transactions';
 import DepositWithdraw from '../../components/DepositWithdrawComponent';
-import InputsBlock from '../../components/InputsBlock';
 import * as actionTypes from '../../store/actions/actionTypes';
 import * as actions from '../../store/actions';
 import classes from './Withdraw.css';
@@ -91,7 +90,6 @@ class Withdraw extends Component{
 
     }
     render(){
-      console.log(this.props.withdrawData.title)
       return (<div className={classes.WithdrawWrp}>
                 <DepositWithdraw
                   data={this.props.withdrawData}

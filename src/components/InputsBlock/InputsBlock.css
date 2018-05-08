@@ -1,6 +1,5 @@
 .InputsBlockWrp{
   width: 640px;
-  height: 400px;
   background-color: rgba(228, 188, 222, .23);
   padding: 51px 73px 62px 61px;
   box-sizing: border-box;
@@ -30,12 +29,15 @@
 .RightSide .Title, .RightSide .WarningInfo{
   margin-bottom: 21px;
 }
-.CopyDepositAddressWrp{
+.CopyDepositAddressWrp, .SubmitWithdrawAmountWrp{
   width: 100%;
   text-align: right;
   padding-top: 12px;
 }
-.CopyDepositAddressWrp > button{
+.SubmitWithdrawAmountWrp{
+  padding-top: 61px;
+}
+.CopyDepositAddressWrp > button, .SubmitWithdrawAmountWrp > button{
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -49,7 +51,7 @@
   font-weight: 700;
   color: #fff;
 }
-.CopyDepositAddressWrp > button::before{
+.CopyDepositAddressWrp > button::before, .SubmitWithdrawAmountWrp > button::before{
     content: attr(before-content);
     display: block;
     box-sizing: border-box;
@@ -63,6 +65,6 @@
     opacity: 0;
     background: linear-gradient(90deg, #e12b82, #53236d);
 }
-.CopyDepositAddressWrp > button:hover::before{
+.CopyDepositAddressWrp > button:hover::before, .SubmitWithdrawAmountWrp > button:hover::before{
   opacity: 1;
 }

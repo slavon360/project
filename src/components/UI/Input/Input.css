@@ -33,10 +33,41 @@
   font-size: 14px;
   font-weight: 700;
 }
-.DepositAddress{
-
+.WithdrawAmount{
+  margin-top: 32px;
 }
-.DepositAddress input{
+.WithdrawAmount .SecondLabel,
+.WithdrawAmount .ThirdLabel,
+.WithdrawAmount .FourthLabel{
+  display: inline-block;
+  color: #41424e;
+}
+.WithdrawAmount .SecondLabel{
+  font-size: 14px;
+  float: right;
+  transform: translateY(3px);
+}
+.WithdrawAmount .ThirdLabel{
+  float: left;
+}
+.WithdrawAmount .ThirdLabel,
+.WithdrawAmount .FourthLabel{
+  font-size: 12px;
+  margin-top: 13px;
+}
+.WithdrawAmount .FourthLabel{
+  float: right;
+}
+.WithdrawAmount input{
+  padding-right: 63px;
+}
+.WithdrawAmount input::-webkit-input-placeholder{
+  font-size: 14px;
+  font-weight: 400;
+  color: #c2c0c1;
+  text-align: right;
+}
+.DepositAddress input, .WithdrawAddress input, .WithdrawAmount input{
   width: 100%;
   height: 48px;
   background-color: #fff;
@@ -48,12 +79,17 @@
   box-sizing: border-box;
   padding-left: 19px;
 }
-.DepositAddress input:hover{
+.DepositAddress input:hover, .WithdrawAddress input:hover, .WithdrawAmount input:hover{
   border-color: #d192c7;
 }
-.DepositAddress label{
+.DepositAddress label, .WithdrawAddress label, .WithdrawAmount label{
   display: block;
   font-size: 14px;
   color: #41424e;
   margin-bottom: 17px;
+}
+.WithdrawAmount label{
+  display: inline-block;
+  color: #41424e;
+  font-weight: 700;
 }

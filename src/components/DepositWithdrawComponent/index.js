@@ -30,7 +30,10 @@ const depositWithdraw = (props) => {
             </Dropdown>
           <div className={classes.Balance}>{`Balance: ${props.data.selectedCurrency.balance}`}</div>
         </div>
-        <InputsBlock data={props.data} changeInputsValue={props.changeInputsValue} >
+        <InputsBlock
+          data={props.data}
+          changeInputsValue={props.changeInputsValue}
+          copyAddress={props.copyAddress} >
         </InputsBlock>
       </div>
     )

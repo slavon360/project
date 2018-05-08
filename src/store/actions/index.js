@@ -4,5 +4,6 @@ export {
         hideShowCurrencyDropdown,
         hideCurrencyDropdown,
         buildInteractiveView,
-        changeInputsValue
+        changeInputsValue,
+        copyAddress
        } from './depositWithdraw';

@@ -2,6 +2,7 @@ export const currencyData = {
       deposit: true,
       title: 'Deposit',
       type: 'Deposits',
+      transactionFee: 0.1,
       showDpDwn: false,
       warningInfo: (val) => {
         return `Send only ${val} to this deposit address. Sending any other currency to this address may result in the loss of your deposit`
