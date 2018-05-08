@@ -78,6 +78,7 @@
 }
 .CurrencyDropdownWrp{
   position: relative;
+  z-index: 2;
 }
 .CurrencyDropdownWrp > button{
   width: 100%;

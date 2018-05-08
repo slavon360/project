@@ -9,12 +9,41 @@ class SendRequest extends Component {
           elementType: 'input',
           elementConfig: {
             type: 'email',
-            placeholder: 'Your email address *'
+            label: 'Your email address *'
           },
           value: '',
           validation: {
             required: true
-          }
+          },
+          valid: false,
+          touched: false
+        },
+        subject: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'text',
+            label: 'Subject *'
+          },
+          value: '',
+          validation: {
+            required: true
+          },
+          valid: false,
+          touched: false
+        },
+        subject: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'text',
+            label: 'Description *',
+            placeholder: 'Please enter the details of the request. Our support staff will respond it as soon as possible.'
+          },
+          value: '',
+          validation: {
+            required: true
+          },
+          valid: false,
+          touched: false
         }
       }
     };
