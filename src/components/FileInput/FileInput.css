@@ -1,0 +1,41 @@
+.FileInputRequestWrp{
+  border: 1px solid #f3ecf3;
+  height: 200px;
+  padding-top: 54px;
+  box-sizing: border-box;
+  margin: 0 0 40px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.FileInputRequestWrp input{
+  display: none;
+
+}
+.FileInputRequestWrp .Label{
+  position: absolute;
+  top: -33px;
+  left: 0;
+  font-size: 14px;
+  color: #9e9fa3;
+}
+.FileInputRequestWrp .Icon{
+  display: inline-block;
+}
+.FileInputRequestWrp .Sentence{
+  color: #9e9fa3;
+  font-size: 14px;
+  margin-top: 7px;
+}
+.FileInputRequestWrp .Sentence > span:first-child{
+  color: #922c88;
+  position: relative;
+}
+.FileInputRequestWrp .Sentence > span:first-child::before{
+  content: '';
+  position: absolute;
+  background-color: #922c88;
+  width: 93%;
+  height: 1px;
+  bottom: 0;
+}

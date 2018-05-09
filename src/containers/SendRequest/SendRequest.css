@@ -10,6 +10,7 @@
   font-weight: 700;
 }
 .RequestContainer{
+  box-sizing: border-box;
   padding: 77px 180px 57px 180px;
   background-color: #fff;
   border-radius: 8px;

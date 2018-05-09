@@ -93,19 +93,6 @@
   color: #41424e;
   font-weight: 700;
 }
-.FileInputRequestWrp{
-  border: 1px solid #f3ecf3;
-  height: 200px;
-  margin: 0 0 40px;
-  position: relative;
-}
-.FileInputRequestWrp label{
-  position: absolute;
-  top: -33px;
-  left: 0;
-  font-size: 14px;
-  color: #9e9fa3;
-}
 .InputRequestWrp{
   margin-bottom: 48px;
   border-bottom: 1px solid #f3ecf3;
@@ -142,7 +129,8 @@
 .InputRequestWrp textarea::-webkit-input-placeholder{
   color: #41424e;
   padding-top: 68px;
-  font-size: 12px;
+  font-size: 11px;
+  font-family: SegoeUI;
 }
 .InputRequestWrp input::-webkit-input-placeholder,
 .InputRequestWrp label{
