@@ -93,3 +93,58 @@
   color: #41424e;
   font-weight: 700;
 }
+.FileInputRequestWrp{
+  border: 1px solid #f3ecf3;
+  height: 200px;
+  margin: 0 0 40px;
+  position: relative;
+}
+.FileInputRequestWrp label{
+  position: absolute;
+  top: -33px;
+  left: 0;
+  font-size: 14px;
+  color: #9e9fa3;
+}
+.InputRequestWrp{
+  margin-bottom: 48px;
+  border-bottom: 1px solid #f3ecf3;
+  box-sizing: border-box;
+  text-align: left;
+}
+.InputRequestWrp:nth-child(3){
+  margin-bottom: 69px;
+}
+.InputRequestWrp:hover{
+  border-bottom: 4px solid #d092c9;
+  margin-bottom: 45px;
+}
+.InputRequestWrp:nth-child(3):hover{
+  margin-bottom: 66px;
+}
+.InputRequestWrp input{
+  height: 19px;
+  padding-bottom: 18px;
+}
+.InputRequestWrp input, .InputRequestWrp textarea{
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.InputRequestWrp textarea{
+  height: 96px;
+  padding: 7px 0 0;
+  box-sizing: border-box;
+  resize: none;
+}
+.InputRequestWrp textarea::-webkit-input-placeholder{
+  color: #41424e;
+  padding-top: 68px;
+  font-size: 12px;
+}
+.InputRequestWrp input::-webkit-input-placeholder,
+.InputRequestWrp label{
+  color: #9e9fa3;
+}

@@ -7,7 +7,6 @@ const input = props => {
     let inputClasses = [classes.Input];
     inputClasses = props.inputClasses ? setCurrentClasses(props.inputClasses, inputClasses, classes) : null;
     let inputElement = null;
-
     switch (props.elementType) {
       case ('input'):
         inputElement = <input
@@ -34,6 +33,13 @@ const input = props => {
                               </option>
                             ))}
                           </select>);
+        break;
+      case ('file'):
+        inputElement = <input
+                          className={inputClasses ? inputClasses.join(' ') : null}
+                          {...props.elementConfig}
+                          onChange={props.changeValue}
+                          />;
         break;
       default:
         inputElement = <input

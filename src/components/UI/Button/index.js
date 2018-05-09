@@ -18,7 +18,7 @@ const button = (props) => {
 };
 
 button.propTypes = {
-  onClick: PropTypes.func,
+  clicked: PropTypes.func,
   btnClasses: PropTypes.array
 }
 

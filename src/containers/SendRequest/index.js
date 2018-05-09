@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Input from '../../components/UI/Input';
+import Button from '../../components/UI/Button';
+import UploadIcon from '../../components/UI/Icons/Upload';
+import { objectIntoArray } from '../../shared/utility';
 import classes from './SendRequest.css';
 
 class SendRequest extends Component {
@@ -9,32 +12,33 @@ class SendRequest extends Component {
           elementType: 'input',
           elementConfig: {
             type: 'email',
-            label: 'Your email address *'
+            placeholder: 'Your email address *'
           },
           value: '',
           validation: {
             required: true
           },
           valid: false,
-          touched: false
+          touched: false,
+          eventHandler: () => { this.changeValue() }
         },
         subject: {
           elementType: 'input',
           elementConfig: {
             type: 'text',
-            label: 'Subject *'
+            placeholder: 'Subject *'
           },
           value: '',
           validation: {
             required: true
           },
           valid: false,
-          touched: false
+          touched: false,
+          eventHandler: () => { this.changeValue() }
         },
-        subject: {
-          elementType: 'input',
+        description: {
+          elementType: 'textarea',
           elementConfig: {
-            type: 'text',
             label: 'Description *',
             placeholder: 'Please enter the details of the request. Our support staff will respond it as soon as possible.'
           },
@@ -43,12 +47,52 @@ class SendRequest extends Component {
             required: true
           },
           valid: false,
-          touched: false
+          touched: false,
+          eventHandler: () => { this.changeValue() }
+        },
+        file: {
+          elementType: 'input',
+          elementConfig: {
+            type: 'file',
+            label: 'Attachments'
+
+          }
         }
       }
     };
-    render () {
+    changeValue = () => {
+      console.log('changeValue');
+    }
+    fileSelectedHandler = () => {
 
+    }
+    render () {
+      let requestFormArr = objectIntoArray(this.state.requestForm);
+      requestFormArr = requestFormArr.map((itemForm, index) => {
+          let content = null;
+          let inputWrpClasses = itemForm.elementConfig.type === 'file' ? ['FileInputRequestWrp'] : ['InputRequestWrp'];
+            content = <Input
+                        key={index}
+                        changeValue={itemForm.eventHandler}
+                        elementType={itemForm.elementType}
+                        wrpClasses={inputWrpClasses}
+                        elementConfig={itemForm.elementConfig}
+                         />
+          return content;
+      })
+      return(
+        <div className={classes.SendRequestWrp}>
+          <h2 className={classes.Title}>SEND REQUEST</h2>
+          <div className={classes.RequestContainer}>
+            {requestFormArr}
+            <Button
+              btnClasses={['SubmitRequestBtn']}
+              elementConfig={{'before-content': 'Submit Request'}}>
+              Submit Request
+            </Button>
+          </div>
+        </div>
+      )
     }
 }
 

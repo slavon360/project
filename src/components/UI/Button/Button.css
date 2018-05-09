@@ -50,7 +50,7 @@
 .SwitchBtn > img{
   width: 100%;
 }
-.BuyBtn{
+.BuyBtn, .SubmitRequestBtn{
   background: linear-gradient(90deg, #53236d, #e12b82);
   width: 240px;
   padding: 15px 0;
@@ -61,7 +61,7 @@
   overflow: hidden;
   position: relative;
 }
-.BuyBtn::before{
+.BuyBtn::before, .SubmitRequestBtn::before{
   content: attr(before-content);
   display: block;
   box-sizing: border-box;
@@ -75,7 +75,7 @@
   opacity: 0;
   background: linear-gradient(90deg, #e12b82, #53236d);
 }
-.BuyBtn:hover::before{
+.BuyBtn:hover::before, .SubmitRequestBtn:hover::before{
   opacity: 1;
 }
 .DropdownButtonPeriod, .BtnPeriod{

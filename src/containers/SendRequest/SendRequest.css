@@ -1,0 +1,20 @@
+.SendRequestWrp{
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: 60px;
+}
+.SendRequestWrp .Title{
+  margin: 0 0 56px;
+  color: #922c88;
+  font-size: 30px;
+  font-weight: 700;
+}
+.RequestContainer{
+  padding: 77px 180px 57px 180px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 18px 0 #dedede;
+  width: 840px;
+  margin-bottom: 60px;
+}
