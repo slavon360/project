@@ -46,7 +46,7 @@ const inputsBlock = (props) => {
       <div className={classes.InputsBlockWrp}>
         <div className={classes.InputsBlockHead}>
           <div className={classes.LeftSide}>
-            <img src={require('../../assets/images/icons/exclamation.png')} alt="exclamation" />
+            <img src={require('../../../assets/images/icons/exclamation.png')} alt="exclamation" />
           </div>
           <div className={classes.RightSide}>
             <div className={classes.Title}>Important!</div>

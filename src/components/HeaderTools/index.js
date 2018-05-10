@@ -19,13 +19,13 @@ class HeaderTools extends Component {
       languages: {
               title: 'Eng',
               showDpDwn: false,
-              icon: require(`../../assets/images/icons/languages/Eng.png`),
+              icon: require(`../../../assets/images/icons/languages/Eng.png`),
               drpItems: [
-                {title: 'Eng', checked: false, icon: require(`../../assets/images/icons/languages/Eng.png`)},
-                {title: 'Esp', checked: false, icon: require(`../../assets/images/icons/languages/Esp.png`)},
-                {title: 'Deu', checked: false, icon: require(`../../assets/images/icons/languages/Deu.png`)},
-                {title: 'Рус', checked: false, icon: require(`../../assets/images/icons/languages/Рус.png`)},
-                {title: 'Укр', checked: false, icon: require(`../../assets/images/icons/languages/Укр.png`)}
+                {title: 'Eng', checked: false, icon: require(`../../../assets/images/icons/languages/Eng.png`)},
+                {title: 'Esp', checked: false, icon: require(`../../../assets/images/icons/languages/Esp.png`)},
+                {title: 'Deu', checked: false, icon: require(`../../../assets/images/icons/languages/Deu.png`)},
+                {title: 'Рус', checked: false, icon: require(`../../../assets/images/icons/languages/Рус.png`)},
+                {title: 'Укр', checked: false, icon: require(`../../../assets/images/icons/languages/Укр.png`)}
               ]
       }
     }

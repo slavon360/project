@@ -16,7 +16,7 @@ export const currencyData = {
                           checked: false,
                           title: 'ETH Ethereum',
                           balance: '1.210265',
-                          icon: require('../assets/images/coins/ethereum.png'),
+                          icon: require('../../assets/images/coins/ethereum.png'),
                           shortcut: 'ETH',
                           interactiveView: null
                         },
@@ -28,7 +28,7 @@ export const currencyData = {
                       amount: null,
                       title: 'BTC Bitcoin',
                       balance: '1.2102',
-                      icon: require('../assets/images/coins/Bitcoin.svg'),
+                      icon: require('../../assets/images/coins/Bitcoin.svg'),
                       checked: false,
                       shortcut: 'BTC'
                     },
@@ -39,7 +39,7 @@ export const currencyData = {
                       amount: null,
                       title: 'ETH Ethereum',
                       balance: '0.00',
-                      icon: require('../assets/images/coins/ethereum.png'),
+                      icon: require('../../assets/images/coins/ethereum.png'),
                       checked: false,
                       shortcut: 'ETH'
                     },
@@ -48,7 +48,7 @@ export const currencyData = {
                       amount: null,
                       title: 'AUD Australian Dollar',
                       balance: '300256.36',
-                      icon: require('../assets/images/coins/Bitcoin.svg'),
+                      icon: require('../../assets/images/coins/Bitcoin.svg'),
                       checked: false,
                       shortcut: 'AUD'
                     },
@@ -59,7 +59,7 @@ export const currencyData = {
                       amount: null,
                       title: 'XRP Ripple',
                       balance: '23.236547',
-                      icon: require('../assets/images/coins/Ripple-logo.png'),
+                      icon: require('../../assets/images/coins/Ripple-logo.png'),
                       checked: false,
                       shortcut: 'XRP'
                     },
@@ -70,7 +70,7 @@ export const currencyData = {
                       amount: null,
                       title: 'AION Aion',
                       balance: '0.00',
-                      icon: require('../assets/images/coins/AION.jpg'),
+                      icon: require('../../assets/images/coins/AION.jpg'),
                       checked: false,
                       shortcut: 'AION'
                     },
@@ -81,7 +81,7 @@ export const currencyData = {
                       amount: null,
                       title: 'BNB Binance',
                       balance: '300256.36',
-                      icon: require('../assets/images/coins/binance-coin.svg'),
+                      icon: require('../../assets/images/coins/binance-coin.svg'),
                       checked: false,
                       shortcut: 'BNB'
                     },
@@ -92,7 +92,7 @@ export const currencyData = {
                       amount: null,
                       title: 'OMG Omise Go',
                       balance: '1.210265',
-                      icon: require('../assets/images/coins/omise-go.png'),
+                      icon: require('../../assets/images/coins/omise-go.png'),
                       checked: false,
                       shortcut: 'OMG'
                     },
@@ -103,7 +103,7 @@ export const currencyData = {
                       amount: null,
                       title: 'QSP Quantstamp',
                       balance: '0.00',
-                      icon: require('../assets/images/coins/quantstamp-logo.jpg'),
+                      icon: require('../../assets/images/coins/quantstamp-logo.jpg'),
                       checked: false,
                       shortcut: 'QSP'
                     },
@@ -114,7 +114,7 @@ export const currencyData = {
                       amount: null,
                       title: 'DOGE Dogecoin',
                       balance: '300256.35',
-                      icon: require('../assets/images/coins/doge.svg'),
+                      icon: require('../../assets/images/coins/doge.svg'),
                       checked: false,
                       shortcut: 'DOGE'
                     }

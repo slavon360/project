@@ -15,9 +15,9 @@ const buySellComponent = props => {
               clicked={() => {props.setCurrency(coin.name)}}
               elementConfig={{type: 'button'}}
               btnClasses={btnCoinClasses}>
-              <img alt={coin.name} src={require(`../../assets/images/icons/${coin.name}.png`)}/>
+              <img alt={coin.name} src={require(`../../../assets/images/icons/${coin.name}.png`)}/>
               <span>{coin.name}</span>
-              <div className={classes.Checked}><img alt="checked" src={require('../../assets/images/icons/checked.png')}/></div>
+              <div className={classes.Checked}><img alt="checked" src={require('../../../assets/images/icons/checked.png')}/></div>
             </Button>
           </div>
         )
@@ -49,7 +49,7 @@ const buySellComponent = props => {
                 btnClasses={['SwitchBtn']}
                 clicked={props.currenciesPlaceSwitcher}
                 elementConfig={{type: 'button'}}>
-                <img alt="switch" src={require(`../../assets/images/icons/switch.png`)} />
+                <img alt="switch" src={require(`../../../assets/images/icons/switch.png`)} />
               </Button>
               <Input
                 wrpClasses={secondInpClasses}
