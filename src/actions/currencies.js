@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes';
-import { objectIntoArray, addObjectName } from '../../shared/utility';
-import axios from '../../requests/axios-coin-prices';
+import { objectIntoArray, addObjectName } from '../shared/utility';
+import axios from '../requests/axios-coin-prices';
 
 const setCoinsPrices = coins => {
     let updatedCoins = objectIntoArray(coins, null, addObjectName);

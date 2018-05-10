@@ -1,4 +1,4 @@
-import * as actionTypes from '../store/actions/actionTypes';
+import * as actionTypes from '../actions/actionTypes';
 import { currencyData } from '../shared/dumpData';
 import { updateObject } from '../shared/utility';
 
