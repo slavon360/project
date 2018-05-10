@@ -120,3 +120,144 @@ export const currencyData = {
                     }
                   ]
 }
+
+export const faq = {
+  selectedSection: null,
+  sections: [
+              {
+                title: 'Category 1',
+                questions: [{
+                    questionTitle: 'Some question',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Withdraw to wrong address',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Cannot receive Email',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Fiat currency',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Forgot or Wrong Tag/Memo/PaymentID',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposited wrong coins',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  }]
+              },
+              {
+                title: '2FA Authentication',
+                questions: [{
+                    questionTitle: 'Lorem ipsum',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'dolor sit amet',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Fiat currency',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Consectetur adipiscing ',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Forgot or Wrong Tag/Memo/PaymentID',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposited wrong coins',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  }]
+              },
+              {
+                title: 'Deposit / Withdraw',
+                questions: [{
+                    questionTitle: 'Cannot receive Email',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Another question',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'In ac ex auctor',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposited wrong coins',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Forgot or Wrong Tag/Memo/PaymentID',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Fiat currency',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  }]
+              },
+              {
+                title: 'Another Section',
+                questions: [{
+                    questionTitle: '202',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: '144',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Cannot receive Email',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Fiat currency',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Forgot or Wrong Tag/Memo/PaymentID',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposited wrong coins',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  }]
+              },
+              {
+                title: 'Account Access',
+                questions: [{
+                    questionTitle: 'Some question',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Forgot or Wrong Tag/Memo/PaymentID',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Cannot receive Email',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Fiat currency',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposit Forgot or Wrong Tag/Memo/PaymentID',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  },
+                  {
+                    questionTitle: 'Deposited wrong coins',
+                    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.'
+                  }]
+              }
+            ]
+}

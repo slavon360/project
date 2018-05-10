@@ -6,7 +6,7 @@ import Balances from './containers/Balances';
 import Deposit from './containers/Deposit';
 import Withdraw from './containers/Withdraw';
 import SendRequest from './containers/SendRequest';
-import Faq from './containers/Faq';
+import Faq from './containers/FAQ';
 import './App.css';
 
 class App extends Component {

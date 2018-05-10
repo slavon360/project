@@ -12,10 +12,10 @@ class Faq extends Component{
           <div className={classes.FaqContainer}>
             <div className={classes.FaqHead}>
               <div className={classes.HaveQuestion}>Have some question?</div>
-              <div className={classes.Submit}>
+              <div className={classes.Submit} before-content="Submit Request">
                 <NavLink
-                  to={props.link}
-                  exact={props.exact}>
+                  to="/send-request"
+                  exact={true}>
                   Submit Request
                 </NavLink>
               </div>
