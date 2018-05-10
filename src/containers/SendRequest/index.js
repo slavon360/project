@@ -67,7 +67,7 @@ class SendRequest extends Component {
       console.log('changeValue');
     }
     fileSelectedHandler = () => {
-
+      console.log('select file')
     }
     render () {
       let requestFormArr = objectIntoArray(this.state.requestForm);
@@ -86,11 +86,12 @@ class SendRequest extends Component {
           return content;
       })
       return(
-        <div className={classes.SendRequestWrp}>
+        <form className={classes.SendRequestWrp}>
           <h2 className={classes.Title}>SEND REQUEST</h2>
           <div className={classes.RequestContainer}>
             {requestFormArr}
             <FileInput
+              fileSelectedHandler={this.fileSelectedHandler}
               wrpClasses={['FileInputRequestWrp']}
               elementConfig={this.state.fileInput.elementConfig}/>
             <Button
@@ -99,7 +100,7 @@ class SendRequest extends Component {
               Submit Request
             </Button>
           </div>
-        </div>
+        </form>
       )
     }
 }

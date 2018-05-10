@@ -6,6 +6,7 @@ import Balances from './containers/Balances';
 import Deposit from './containers/Deposit';
 import Withdraw from './containers/Withdraw';
 import SendRequest from './containers/SendRequest';
+import Faq from './containers/Faq';
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route path='/deposit' component={Deposit} />
           <Route path='/withdraw' component={Withdraw} />
           <Route path='/send-request' component={SendRequest} />
+          <Route path='/help' component={Faq} />
           <Redirect to='/buy-sell' />
         </Switch>
     )

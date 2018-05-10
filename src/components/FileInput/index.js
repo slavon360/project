@@ -16,7 +16,7 @@ class FileInput extends Component{
         <div className={fileInputWrpClasses.join(' ')}>
           {label}
           {icon}
-          <input type="file" />
+          <input type="file" onChange={this.props.fileSelectedHandler}/>
           {sentences}
         </div>
       )
