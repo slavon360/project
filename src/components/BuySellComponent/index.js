@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../UI/Button';
 import Input from '../UI/Input';
-import * as actionTypes from '../../store/actions/actionTypes';
+import * as actionTypes from '../../actions/actionTypes';
 import classes from './BuySellComponent.css';
 
 const buySellComponent = props => {
