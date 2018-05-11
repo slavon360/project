@@ -1,7 +1,7 @@
 import * as actionTypes from '../actions/actionTypes';
 import { currencyData } from '../../shared/dumpData';
 import { updateObject } from '../../shared/utility';
-
+console.log(currencyData)
 const initialState = {
     currencyData
 }
