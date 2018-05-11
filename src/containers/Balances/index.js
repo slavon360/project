@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import Adj from '../../hoc/Adj/AdjComponent';
+import React, { Component, Fragment } from 'react';
 import Button from '../../components/UI/Button';
 import classes from './Balances.css';
 
@@ -20,7 +19,7 @@ class Balances extends Component {
     render() {
       let balances = this.state.balances.map(balance => {
         return (
-                <Adj key={balance.currency}>
+                <Fragment key={balance.currency}>
                   <div className={classes.CurrencyTitle}>
                     <img src={require(`../../../assets/images/coins/${balance.icon}`)} alt={balance.currency} /><span>{balance.currency}</span>
                   </div>
@@ -28,7 +27,7 @@ class Balances extends Component {
                   <div className={classes.FiatValue}>{balance.fiat}</div>
                   <Button btnClasses={['DepositBtn']}>Deposit</Button>
                   <Button btnClasses={['WithdrawBtn']}>Withdraw</Button>
-                </Adj>
+                </Fragment>
               )
       })
       return (

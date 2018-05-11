@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import NextAngle from '../UI/Icons/NextAngle';
-import Adj from '../../hoc/Adj/AdjComponent';
 import classes from './Transactions.css';
 
 const transactions = (props) => {
@@ -15,10 +14,12 @@ const transactions = (props) => {
       }, []) : null
       let values = props.propNames.reduce((result, current, i) => {
                     result.push(<td key={current}>
-                                  {i === 0 ?  <Adj>
-                                                <div className={classes.Round}></div>
-                                                <div className={classes.MoreInfoWrp}>{moreInfo}</div>
-                                              </Adj> : null}
+                                  {i === 0 ?
+                                                <Fragment>
+                                                  <div className={classes.Round}></div>
+                                                  <div className={classes.MoreInfoWrp}>{moreInfo}</div>
+                                                </Fragment>
+                                               : null}
                                   {trans[current]}
                                 </td>);
                     return result;

@@ -5,7 +5,6 @@ import ChartComponent from '../../components/ChartComponent';
 import Transactions from '../../components/Transactions';
 import * as actionTypes from '../../actions/actionTypes';
 import * as actions from '../../actions';
-import Adj from '../../hoc/Adj/AdjComponent';
 import classes from './BuySell.css';
 
 class BuySell extends Component {
@@ -110,7 +109,7 @@ class BuySell extends Component {
     render () {
       let content = this.props.error ? 'Cannot load data' : 'loading...';
       if (this.props.coins) {
-        content = <Adj>
+        content = <Fragment>
                     <BuySellComponent
                         buy={this.state.buy}
                         switched={this.state.switched}
@@ -134,7 +133,7 @@ class BuySell extends Component {
                           bodyData={this.state.transactions}/>
                       </div>
                     </div>
-                  </Adj>
+                  </Fragment>
       }
       return(
         <div className={classes.BuySellWrp}>
