@@ -17,7 +17,7 @@ const initStore = () => {
     reducers,
     composeEnhancers(
       applyMiddleware(
-        thunk,    
+        thunk,
       ),
     ),
   );
