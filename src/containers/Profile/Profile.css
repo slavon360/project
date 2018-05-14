@@ -1,0 +1,85 @@
+.ProfileWrp{
+  background-color: #f8f8f8;
+  padding: 60px 160px 96px 160px;
+}
+.Head{
+  padding-left: 230px;
+  margin-bottom: 60px;
+}
+.Head .UserStatus{
+  margin-right: 139px;
+  display: inline-block;
+}
+.ProfileWrp .Stages{
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 14px;
+}
+.ProfileWrp .Stages > div{
+  margin-right: 129px;
+  position: relative;
+}
+.ProfileWrp .Stages > div::after{
+  content: '';
+  position: absolute;
+  width: 46px;
+  top: 17px;
+  left: 173px;
+  border: 2px dashed #e3e3e3;
+}
+.ProfileWrp .Stages > div:last-child::after{
+  display: none;
+}
+.Balances_InteractiveBlocks_Wrp{
+  display: flex;
+  justify-content: space-between;
+}
+.BalancesWrp{
+  width: 780px;
+  padding: 43px 80px 65px 80px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 18px 0 #dedede;
+  box-sizing: border-box;
+  align-self: flex-start;
+}
+.BalancesWrp table{
+  width: 100%;
+}
+.BalancesWrp table thead{
+  padding-right: 0;
+}
+.BalancesWrp table thead th:last-child{
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 42px !important;
+  margin-bottom: 41px;
+  text-align: left;
+}
+.BalancesWrp table tbody{
+  height: auto;
+}
+.BalancesWrp table tbody td{
+  font-size: 16px;
+}
+.BalancesWrp table tbody tr{
+  padding: 0 0 16px;
+}
+.BalancesWrp table tbody td:first-child{
+  width: 51px;
+}
+.BalancesWrp table tbody td:nth-child(2){
+  padding-left: 0;
+  width: 261px;
+  font-weight: 700;
+}
+.BalancesWrp table tbody td:nth-child(3){
+  width: 158px;
+}
+.BalancesWrp table tbody td:nth-child(4){
+  padding-right: 0;
+}
+.BalancesWrp table tbody td img{
+  width: 24px;
+  height: 24px;
+}

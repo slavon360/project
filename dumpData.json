@@ -1,4 +1,51 @@
 {
+  "userData": {
+    "mail": "johnbravo@mail.com",
+    "progress": 30,
+    "User details": {
+      "status": "Verified",
+      "checked": false
+    },
+    "Address": {
+      "status": "Is being verified",
+      "checked": false
+    },
+    "Bank": {
+      "status": "Not verified",
+      "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.",
+      "checked": true
+    },
+    "twoFactorAuthentication": [
+      [
+        {"type": "icon", "icon": "smartphone.svg"},
+        {"type": "text", "text": "SMS Authentification|Used for withdrawals and security modifications"},
+        {"type": "button", "text": "Enable"}
+      ],
+      [
+        {"type": "icon", "icon": "search.svg"},
+        {"type": "text", "text": "Google Authentification|Used for withdrawals and security modifications"},
+        {"type": "button", "text": "Disable"}
+      ]
+    ],
+    "loginPassword": [
+      [
+        {"type": "icon", "icon": "locked.svg"},
+        {"type": "text", "text": "Login Password|Used for Login"},
+        {"type": "button", "text": "Change"}
+      ]
+    ]
+  },
+  "balances": [
+    {"currency": "BTC Bitcoin", "icon": "Bitcoin.svg", "bal": "1.2102", "fiat": "29 100.36 AUD"},
+    {"currency": "ETH Ethereum", "icon": "ethereum.png", "bal": "0.00", "fiat": "0.00 AUD"},
+    {"currency": "AUD Australian Dollar", "icon": "Bitcoin.svg", "bal": "300256.36", "fiat": "300 256.36 AUD"},
+    {"currency": "XRP Ripple", "icon": "Ripple-logo.png", "bal": "23.236547", "fiat": "455 365.00 AUD"},
+    {"currency": "AION Aion", "icon": "AION.jpg", "bal": "0.00", "fiat": "0.00 AUD"},
+    {"currency": "BNB Binance", "icon": "binance-coin.svg", "bal": "300256.36", "fiat": "300 256.36 AUD"},
+    {"currency": "OMG Omise Go", "icon": "omise-go.png", "bal": "1.210265", "fiat": "29 100.36 AUD"},
+    {"currency": "QSP Quantstamp", "icon": "quantstamp-logo.jpg", "bal": "0.00", "fiat": "0.00 AUD"},
+    {"currency": "DOGE Dogecoin", "icon": "doge.svg", "bal": "300256.36", "fiat": "300 256.36 AUD"}
+  ],
 "currencyData": {
      "deposit": true,
      "title": "deposit",
@@ -11,11 +58,11 @@
                          "currencyType": "cryptocurrency",
                          "address": "876trfdcvhi765rfghjio9876trfgvbnj",
                          "copiedAddress": false,
-                         "amount": null,
+                         "amount": "",
                          "checked": false,
                          "title": "ETH Ethereum",
                          "balance": "1.210265",
-                         "icon": "../assets/images/coins/ethereum.png",
+                         "icon": "/assets/ethereum.png",
                          "shortcut": "ETH",
                          "interactiveView": null
                        },
@@ -24,10 +71,10 @@
                      "currencyType": "cryptocurrency",
                      "address": "876trfdc25i765rfghjio9876trfgvbnj",
                      "copiedAddress": false,
-                     "amount": null,
+                     "amount": "",
                      "title": "BTC Bitcoin",
                      "balance": "1.2102",
-                     "icon": "../assets/images/coins/Bitcoin.svg",
+                     "icon": "/assets/Bitcoin.svg",
                      "checked": false,
                      "shortcut": "BTC"
                    },
@@ -35,19 +82,19 @@
                      "currencyType": "cryptocurrency",
                      "address": "126trfdcvhi765rfghjio9876trfgvbnj",
                      "copiedAddress": false,
-                     "amount": null,
+                     "amount": "",
                      "title": "ETH Ethereum",
                      "balance": "0.00",
-                     "icon": "../assets/images/coins/ethereum.png",
+                     "icon": "/assets/ethereum.png",
                      "checked": false,
                      "shortcut": "ETH"
                    },
                    {
                      "currencyType": "fiat",
-                     "amount": null,
+                     "amount": "",
                      "title": "AUD Australian Dollar",
                      "balance": "300256.36",
-                     "icon": "../assets/images/coins/Bitcoin.svg",
+                     "icon": "/assets/Bitcoin.svg",
                      "checked": false,
                      "shortcut": "AUD"
                    },
@@ -55,10 +102,10 @@
                      "currencyType": "cryptocurrency",
                      "address": "876trfdcvhi765rfghjio9876trfgvbnj",
                      "copiedAddress": false,
-                     "amount": null,
+                     "amount": "",
                      "title": "XRP Ripple",
                      "balance": "23.236547",
-                     "icon": "../assets/images/coins/Ripple-logo.png",
+                     "icon": "/assets/Ripple-logo.png",
                      "checked": false,
                      "shortcut": "XRP"
                    },
@@ -66,10 +113,10 @@
                      "currencyType": "cryptocurrency",
                      "address": "806trfdcvhi765rfghjio9876trfgvbnj",
                      "copiedAddress": false,
-                     "amount": null,
+                     "amount": "",
                      "title": "AION Aion",
                      "balance": "0.00",
-                     "icon": "../assets/images/coins/AION.jpg",
+                     "icon": "/assets/AION.jpg",
                      "checked": false,
                      "shortcut": "AION"
                    },
@@ -77,10 +124,10 @@
                      "currencyType": "cryptocurrency",
                      "address": "876trfdcvhi765rfghjio9876trfgvbnj",
                      "copiedAddress": false,
-                     "amount": null,
+                     "amount": "",
                      "title": "BNB Binance",
                      "balance": "300256.36",
-                     "icon": "../assets/images/coins/binance-coin.svg",
+                     "icon": "/assets/binance-coin.svg",
                      "checked": false,
                      "shortcut": "BNB"
                    },
@@ -88,10 +135,10 @@
                      "currencyType": "cryptocurrency",
                      "address": "876trfdcvhi765rfghjio9876trfgvbnj",
                      "copiedAddress": false,
-                     "amount": null,
+                     "amount": "",
                      "title": "OMG Omise Go",
                      "balance": "1.210265",
-                     "icon": "../assets/images/coins/omise-go.png",
+                     "icon": "/assets/omise-go.png",
                      "checked": false,
                      "shortcut": "OMG"
                    },
@@ -99,10 +146,10 @@
                      "currencyType": "cryptocurrency",
                      "address": "876trfdcvhi765rfghjio9876trfgvbnj",
                      "copiedAddress": false,
-                     "amount": null,
+                     "amount": "",
                      "title": "QSP Quantstamp",
                      "balance": "0.00",
-                     "icon": "../assets/images/coins/quantstamp-logo.jpg",
+                     "icon": "/assets/quantstamp-logo.jpg",
                      "checked": false,
                      "shortcut": "QSP"
                    },
@@ -110,10 +157,10 @@
                      "currencyType": "cryptocurrency",
                      "address": "876trfdcvhi765rfghjio9876trfgvbnj",
                      "copiedAddress": false,
-                     "amount": null,
+                     "amount": "",
                      "title": "DOGE Dogecoin",
                      "balance": "300256.35",
-                     "icon": "../assets/images/coins/doge.svg",
+                     "icon": "/assets/doge.svg",
                      "checked": false,
                      "shortcut": "DOGE"
                    }
@@ -121,150 +168,220 @@
 },
 
 "faq": {
- "selectedSection": null,
+ "selectedSection": {
+                     "checked": true,
+                     "title": "Category 1",
+                     "questions": [
+                       {
+                         "checked": false,
+                         "questionTitle": "Some question",
+                         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+                       },
+                       {
+                         "checked": false,
+                         "questionTitle": "Withdraw to wrong address",
+                         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+                       },
+                       {
+                         "checked": false,
+                         "questionTitle": "Cannot receive Email",
+                         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+                       },
+                       {
+                         "checked": false,
+                         "questionTitle": "Deposit Fiat currency",
+                         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+                       },
+                       {
+                         "checked": false,
+                         "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
+                         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+                       },
+                       {
+                         "checked": false,
+                         "questionTitle": "Deposited wrong coins",
+                         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+                       }
+                     ]
+              },
  "sections": [
    {
+     "checked": true,
      "title": "Category 1",
      "questions": [
        {
+         "checked": false,
          "questionTitle": "Some question",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Withdraw to wrong address",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Cannot receive Email",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposit Fiat currency",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposited wrong coins",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        }
      ]
    },
    {
+     "checked": false,
      "title": "2FA Authentication",
      "questions": [
        {
+         "checked": false,
          "questionTitle": "Lorem ipsum",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "dolor sit amet",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposit Fiat currency",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Consectetur adipiscing ",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposited wrong coins",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        }
      ]
    },
    {
+     "checked": false,
      "title": "Deposit / Withdraw",
      "questions": [
        {
+         "checked": false,
          "questionTitle": "Cannot receive Email",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Another question",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "In ac ex auctor",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposited wrong coins",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposit Fiat currency",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        }
      ]
    },
    {
+     "checked": false,
      "title": "Another Section",
      "questions": [
        {
+         "checked": false,
          "questionTitle": 202,
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": 144,
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Cannot receive Email",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposit Fiat currency",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposited wrong coins",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        }
      ]
    },
    {
+     "checked": false,
      "title": "Account Access",
      "questions": [
        {
+         "checked": false,
          "questionTitle": "Some question",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Cannot receive Email",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposit Fiat currency",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
-         "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "checked": false,
+         "questionTitle": "Deposit Forgot or Wrong Tag/PaymentID",
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
+         "checked": false,
          "questionTitle": "Deposited wrong coins",
-         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
+         "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        }
      ]
    }

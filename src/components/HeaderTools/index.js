@@ -14,7 +14,18 @@ class HeaderTools extends Component {
       user: {
               title: 'John Bravo',
               showDpDwn: false,
-              drpItems: [{title: 'profile', checked: false}, {title: 'verification', checked: false}, {title: 'logout', checked: false}]
+              drpItems: [{
+                            title: <NavLink to="/profile">profile</NavLink>,
+                            checked: false
+                          },
+                          {
+                            title: <NavLink to="/verification">verification</NavLink>,
+                            checked: false
+                          },
+                          {
+                            title: <NavLink to="/logout">logout</NavLink>,
+                            checked: false
+                          }]
             },
       languages: {
               title: 'Eng',

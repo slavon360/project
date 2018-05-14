@@ -2,4 +2,40 @@
   width: 380px;
   margin-right: 20px;
   display: inline-block;
+  vertical-align: top;
+}
+.FAQNavBtn{
+  height: 80px;
+  padding: 30px 0 34px 39px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px 0 #e1e1e1;
+  box-sizing: border-box;
+  text-align: left;
+  cursor: pointer;
+}
+.FAQNavBtn.Active, .FAQNavBtn.Inactive:hover{
+  color: #fefeff;
+  background-color: #922c88;
+}
+.FAQNavBtn.Inactive{
+  background-color: #fff;
+  color: #41424e;
+}
+.VerificationNavBtn{
+  width: 380px;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 18px 0 #dedede;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  height: 96px;
+  box-sizing: border-box;
+  padding: 26px 0 0 40px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.VerificationNavBtn:hover{
+  border-color: #d092c9;
 }

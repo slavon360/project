@@ -46,7 +46,7 @@ const webpackConfig = Object.assign({}, baseConfig, {
       }
     }),
     new ExtractTextPlugin({
-      filename: `styles/[name]-${theme}.css`,
+      filename: `styles/[name].css`,
       allChunks: true,
     }),
     new webpack.optimize.UglifyJsPlugin({

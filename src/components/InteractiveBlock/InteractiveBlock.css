@@ -1,0 +1,63 @@
+.InteractiveBlockWrp{
+  background-color: #fff;
+  padding: 43px 80px 48px 75px;
+  box-sizing: border-box;
+  width: 780px;
+  box-shadow: 0 4px 18px 0 #dedede;
+  border-radius: 8px;
+}
+.TwoFactorAuthentication{
+  margin-bottom: 30px;
+}
+.LoginPassword .Header, .TwoFactorAuthentication .Header{
+  font-size: 18px;
+  color: #922c88;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 51px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.TwoFactorAuthentication .Row:not(:last-child){
+  margin-bottom: 43px;
+}
+.TwoFactorAuthentication .Cell, .LoginPassword .Cell{
+  font-size: 16px;
+  display: inline-block;
+}
+.TwoFactorAuthentication .Cell:first-child, .LoginPassword .Cell:first-child{
+  margin: 4px 18px 0 0;
+  vertical-align: top;
+}
+.TwoFactorAuthentication .Cell:nth-child(2){
+
+}
+.TwoFactorAuthentication .Cell:nth-child(3){
+  vertical-align: top;
+}
+.LoginPassword .Cell:nth-child(3), .TwoFactorAuthentication .Cell:nth-child(3){
+  float: right;
+}
+.TwoFactorAuthentication .Cell img, .LoginPassword .Cell img{
+  width: 24px;
+  height: 24px;
+}
+.TwoFactorAuthentication .Cell .Text:first-child, .LoginPassword .Cell .Text:first-child{
+  font-weight: 700;
+  color: #41424e;
+}
+.TwoFactorAuthentication .Cell .Text:nth-child(2), .LoginPassword .Cell .Text:nth-child(2){
+  color: #83878c;
+}
+.TwoFactorAuthentication .Cell button, .LoginPassword .Cell button{
+  width: 160px;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
