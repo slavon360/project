@@ -4,3 +4,5 @@
 **/webpack/*
 **/node_modules/*
 /src/components/**
+/src/shared/**
+/src/reducers/**
