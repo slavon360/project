@@ -1,0 +1,30 @@
+.UserStageWrp{
+  display: inline-block;
+}
+.UserStageWrp .Number{
+  vertical-align: top;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.9;
+  margin: 4px 20px 0 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #6bcc00;
+  background-color: #fff;
+}
+.UserStageWrp .RightSide, .UserStageWrp .Number{
+  display: inline-block;
+}
+.UserStageWrp .RightSide{
+  height: 32px;
+}
+.UserStageWrp .RightSide .Title{
+  font-size: 16px;
+  color: #41424e;
+  font-weight: 700;
+}
+.UserStageWrp .RightSide .Status{
+  font-size: 14px;
+}

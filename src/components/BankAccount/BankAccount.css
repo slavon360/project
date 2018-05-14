@@ -1,0 +1,33 @@
+.BankAccountWrp{
+  padding: 76px 179px 77px 139px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.BankAccountWrp .Title{
+  font-weight: 700;
+  font-size: 24px;
+  color: #922c88;
+  margin: 0 0 63px;
+  text-transform: uppercase;
+}
+.BankAccountWrp .Note{
+  color: #41424e;
+  font-size: 14px;
+  line-height: 24px;
+}
+.BankAccountWrp .InputsContent{
+  padding: 78px 161px 0 0;
+  text-align: center;
+}
+.BankAccountWrp .InputsContent input{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 19px;
+  font-size: 14px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.BankAccountWrp .InputsContent input::-webkit-input-placeholder{
+  color: #9e9fa3;
+}

@@ -50,7 +50,7 @@ const inputsBlock = (props) => {
           </div>
           <div className={classes.RightSide}>
             <div className={classes.Title}>Important!</div>
-            <div className={classes.WarningInfo}>{props.data.warningInfo(shortcut)}</div>
+            <div className={classes.WarningInfo}>{props.data.warningInfo.replace('${currency}', shortcut)}</div>
             <div className={classes.LimitInfo}>{props.data.limitInfo}</div>
           </div>
         </div>

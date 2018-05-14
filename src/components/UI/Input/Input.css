@@ -140,3 +140,6 @@
 .InputRequestWrp label{
   color: #9e9fa3;
 }
+.BankAccountNickname input{
+  margin-bottom: 39px !important;
+}

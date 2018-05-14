@@ -1,7 +1,53 @@
 .FaqContentWrp{
   width: 1000px;
   border-radius: 8px;
-  height: 520px;
   background-color: #fff;
   display: inline-block;
+  padding: 81px 126px 93px 47px;
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow: 0 4px 10px 0 #e1e1e1;
+}
+.FAQQuestionWrp{
+  margin-bottom: 44px;
+  overflow: hidden;
+  transition: height .4s;
+}
+.FAQQuestionWrp:last-child{
+  margin-bottom: 0;
+}
+.FAQQuestionWrp.Inactive{
+  height: 21px;
+}
+.FAQQuestionWrp.Active{
+  height: 101px;
+}
+.FAQQuestionWrp .Icon, .FAQQuestionWrp .Title, .FAQQuestionWrp .Question{
+  display: inline-block;
+}
+.FAQQuestionWrp .Icon{
+  margin-right: 39px;
+  width: 15px;
+  height: 15px;
+}
+.FAQQuestionWrp.Inactive .Icon > div{
+  transform: rotate(-90deg);
+}
+.FAQQuestionWrp.Active .Icon > div{
+  transform: rotate(90deg);
+}
+.FAQQuestionWrp .Title{
+  font-size: 16px;
+  color: #41424e;
+  font-weight: 700;
+  cursor: pointer;
+}
+.FAQQuestionWrp.Active .Title, .FAQQuestionWrp.Inactive .Title:hover{
+  color: #922c88;
+}
+.FAQQuestionWrp .Answer{
+  margin-top: 23px;
+  margin-left: 54px;
+  font-size: 14px;
+  color: #41424e;
 }

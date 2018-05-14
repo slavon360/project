@@ -129,3 +129,12 @@
 .AngleIcon.Down svg{
   transform: rotate(90deg);
 }
+.ViewAllBtn{
+  text-align: center;
+  margin-top: 16px;
+}
+.ViewAllBtn span{
+  font-size: 16px;
+  color: #922c88;
+  cursor: pointer;
+}

@@ -5,12 +5,16 @@ export const updateObject = (oldObject, updatedProperties) => {
     }
 }
 
-export const propertiesExtractor = (obj, keys, arr) => {
+export const propertiesExtractor = (obj, keys, arr, setTitle) => {
     let updatedObj = {};
     for (let key in obj) {
-        keys.indexOf(key) >= 0 && (updatedObj[key] = obj[key]);
+        if (keys.indexOf(key) >= 0){
+          updatedObj[key] = obj[key];
+          setTitle && (updatedObj[key].title = key);
+          arr && arr.push(updatedObj[key]);
+        }
     }
-    arr && arr.push(updatedObj);
+    if (arr) return arr;
     return updatedObj;
 }
 export const addObjectName = (obj, key, arr) => {

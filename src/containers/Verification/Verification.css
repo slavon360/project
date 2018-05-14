@@ -1,0 +1,68 @@
+.VerificationWrp{
+  padding: 59px 259px 57px 258px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+}
+.NavbarSection{
+  width: 383px;
+}
+.NavbarSection .Title{
+  font-size: 24px;
+  color: #922c88;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 63px;
+}
+.Content{
+  width: 963px;
+}
+.NavBtn{
+}
+.NavBtn > div:nth-child(2), .NavBtn > div:first-child{
+  display: inline-block;
+}
+.NavBtn > div:nth-child(2) > div:first-child{
+  font-size: 16px;
+  font-weight: 700;
+  color: #41424e;
+}
+.NavBtn > div:nth-child(2) > div:nth-child(2){
+  font-size: 14px;
+}
+.NavBtn > div:first-child{
+  vertical-align: top;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.9;
+  margin: 8px 20px 0 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #6bcc00;
+  background-color: #fff;
+}
+.Note{
+  margin-top: 48px;
+}
+.Note .Head img{
+  width: 42px;
+  height: 42px;
+  margin-right: 21px;
+}
+.Note .Head .NoteTitle{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #41424e;
+  text-transform: uppercase;
+  transform: translateY(-15px);
+}
+.Note .Text{
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #41424e;
+}

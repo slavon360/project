@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import NextAngle from '../UI/Icons/NextAngle';
 import classes from './Transactions.css';
 
@@ -14,19 +15,21 @@ const transactions = (props) => {
       }, []) : null
       let values = props.propNames.reduce((result, current, i) => {
                     result.push(<td key={current}>
-                                  {i === 0 ?
+                                  {i === 0 && current !== 'icon' ?
                                                 <Fragment>
                                                   <div className={classes.Round}></div>
                                                   <div className={classes.MoreInfoWrp}>{moreInfo}</div>
                                                 </Fragment>
                                                : null}
-                                  {trans[current]}
+                                  {current !== 'icon' ? trans[current] :
+                                    <img src={require(`../../../assets/images/coins/${trans[current]}`)} />}
                                 </td>);
                     return result;
       }, []);
       let rowClasses = trans.checked ? [classes.Row, classes.RowChecked] : [classes.Row, classes.RowUnchecked];
       let angleClasses = trans.checked ? [classes.AngleIcon, classes.Up] : [classes.AngleIcon, classes.Down];
-        return (<tr className={rowClasses.join(' ')} onClick={() => {props.showMore(trans)}} key={index}>
+      let clickHandler = props.showMore ? {onClick: () => {props.showMore(trans)}} : null;
+        return (<tr className={rowClasses.join(' ')} {...clickHandler} key={index}>
                   {values}
                   {props.showMore ? <td className={classes.AngleWrp}>
                                       <div className={angleClasses.join(' ')}>
@@ -37,17 +40,34 @@ const transactions = (props) => {
                 </tr>)
     })
     return (
-          <table className={classes.Table}>
-            <thead>
-              <tr>
-                {headData}
-              </tr>
-            </thead>
-            <tbody>
-              {bodyData}
-            </tbody>
-          </table>
+          <Fragment>
+            <table className={classes.Table}>
+              <thead>
+                <tr>
+                  {headData}
+                </tr>
+              </thead>
+              <tbody>
+                {bodyData}
+              </tbody>
+            </table>
+            {props.viewAll ? <div className={classes.ViewAllBtn}>
+                              <span onClick={props.viewAll}>
+                                {!props.expanded ? `View all ${props.headData[0].title}` : 'Hide'}
+                              </span>
+                            </div> : null}
+          </Fragment>
     )
 }
 
 export default transactions;
+
+transactions.propTypes = {
+  propNames: PropTypes.array,
+  moreInfo: PropTypes.array,
+  headData: PropTypes.array.isRequired,
+  bodyData: PropTypes.array.isRequired,
+  showMore: PropTypes.func,
+  viewAll: PropTypes.func,
+  expanded: PropTypes.bool
+}

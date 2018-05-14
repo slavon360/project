@@ -7,11 +7,11 @@ const dropdown = props => {
     let drpWrpClasses = [], drpContainerClasses = [];
     drpWrpClasses = setCurrentClasses(props.drpWrpClasses, drpWrpClasses, classes);
     drpContainerClasses = setCurrentClasses(props.drpContainerClasses, drpContainerClasses, classes);
-    let buttons = props.dropdownButtons.map(btn => {
+    let buttons = props.dropdownButtons.map((btn, index) => {
         let btnClass = btn.checked ? [props.activeBtn] : [];
         let icon = btn.icon ? <img alt={btn.title} src={btn.icon} /> : null;
         return <Button
-                  key={btn.title}
+                  key={index}
                   btnClasses={btnClass}
                   clicked={() => {props.setValue(btn)}}>
                   {icon}<span>{btn.title}</span>

@@ -1,20 +1,11 @@
 import React, { Component, Fragment } from 'react';
+import { balances } from '../../../dumpData.json';
 import Button from '../../components/UI/Button';
 import classes from './Balances.css';
 
 class Balances extends Component {
     state = {
-      balances: [
-        {currency: 'BTC Bitcoin', icon: 'Bitcoin.svg', bal: '1.2102', fiat: '29 100.36 AUD'},
-        {currency: 'ETH Ethereum', icon: 'ethereum.png', bal: '0.00', fiat: '0.00 AUD'},
-        {currency: 'AUD Australian Dollar', icon: 'Bitcoin.svg', bal: '300256.36', fiat: '300 256.36 AUD'},
-        {currency: 'XRP Ripple', icon: 'Ripple-logo.png', bal: '23.236547', fiat: '455 365.00 AUD'},
-        {currency: 'AION Aion', icon: 'AION.jpg', bal: '0.00', fiat: '0.00 AUD'},
-        {currency: 'BNB Binance', icon: 'binance-coin.svg', bal: '300256.36', fiat: '300 256.36 AUD'},
-        {currency: 'OMG Omise Go', icon: 'omise-go.png', bal: '1.210265', fiat: '29 100.36 AUD'},
-        {currency: 'QSP Quantstamp', icon: 'quantstamp-logo.jpg', bal: '0.00', fiat: '0.00 AUD'},
-        {currency: 'DOGE Dogecoin', icon: 'doge.svg', bal: '300256.36', fiat: '300 256.36 AUD'},
-      ]
+      balances
     }
     render() {
       let balances = this.state.balances.map(balance => {
