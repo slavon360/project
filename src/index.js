@@ -5,8 +5,8 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import './index.css';
+import '../public/index.html';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import currenciesReducer from './store/reducers/currencies';
 import depositWithdrawReducer from './store/reducers/depositWithdraw';
 
@@ -27,4 +27,3 @@ const app = (
 )
 
 ReactDOM.render(app, document.getElementById('root'));
-registerServiceWorker();

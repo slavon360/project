@@ -22,7 +22,7 @@ class Balances extends Component {
         return (
                 <Adj key={balance.currency}>
                   <div className={classes.CurrencyTitle}>
-                    <img src={require(`../../assets/images/coins/${balance.icon}`)} alt={balance.currency} /><span>{balance.currency}</span>
+                    <img src={require(`../../../assets/images/coins/${balance.icon}`)} alt={balance.currency} /><span>{balance.currency}</span>
                   </div>
                   <div className={classes.BalanceValue}>{balance.bal}</div>
                   <div className={classes.FiatValue}>{balance.fiat}</div>
