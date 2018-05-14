@@ -12,12 +12,8 @@ class Layout extends React.PureComponent {
         </main>
         <Footer />
       </Fragment>
-    )
+    );
   }
 }
-
-Layout.propTypes = {
-  children: React.PropTypes.any,
-};
 
 export default Layout;

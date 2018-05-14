@@ -1,0 +1,6 @@
+**/*{.,-}min.js
+**/build/*
+**/coverage/*
+**/webpack/*
+**/node_modules/*
+/src/components/**
