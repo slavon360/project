@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import BuySellComponent from '../../components/BuySellComponent';
 import ChartComponent from '../../components/ChartComponent';
 import Transactions from '../../components/Transactions';
-import * as actionTypes from '../../store/actions/actionTypes';
-import * as actions from '../../store/actions';
+import * as actionTypes from '../../actions/actionTypes';
+import * as actions from '../../actions';
 import Adj from '../../hoc/Adj/AdjComponent';
 import classes from './BuySell.css';
 

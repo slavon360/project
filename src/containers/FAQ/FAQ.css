@@ -7,8 +7,41 @@
   font-size: 36px;
   font-weight: 700;
   color: #922c88;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 .FaqWrp .FaqContainer{
   display: inline-block;
+}
+.FaqWrp .FaqHead{
+  margin-bottom: 20px;
+  text-align: right;
+}
+.FaqHead .HaveQuestion,
+.FaqHead .Submit{
+  display: inline-block;
+}
+.FaqHead .HaveQuestion{
+  transform: translateY(-14px);
+  font-size: 14px;
+  font-weight: 700;
+  color: #41424e;
+  margin-right: 39px;
+}
+.FaqHead .Submit{
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  box-sizing: border-box;
+  padding-top: 8px;
+  border-radius: 20px;
+  background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+  overflow: hidden;
+  position: relative;
+}
+.FaqHead .Submit > a{
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
 }

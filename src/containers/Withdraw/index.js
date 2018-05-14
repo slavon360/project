@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Transactions from '../../components/Transactions';
 import DepositWithdraw from '../../components/DepositWithdrawComponent';
-import * as actionTypes from '../../store/actions/actionTypes';
-import * as actions from '../../store/actions';
+import * as actionTypes from '../../actions/actionTypes';
+import * as actions from '../../actions';
 import classes from './Withdraw.css';
 
 class Withdraw extends Component{
