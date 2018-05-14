@@ -12,25 +12,21 @@ import Verification from './containers/Verification';
 import './App.css';
 
 class App extends Component {
-
   render() {
-    let routes = (
-        <Switch>
-          <Route path='/buy-sell' component={BuySell} />
-          <Route path='/balances' component={Balances} />
-          <Route path='/deposit' component={Deposit} />
-          <Route path='/withdraw' component={Withdraw} />
-          <Route path='/send-request' component={SendRequest} />
-          <Route path='/help' component={Faq} />
-          <Route path='/profile' component={Profile} />
-          <Route path='/verification' component={Verification} />
-          <Redirect to='/buy-sell' />
-        </Switch>
-    )
     return (
       <div className="App">
         <Layout>
-          {routes}
+          <Switch>
+            <Route path="/buy-sell" component={BuySell} />
+            <Route path="/balances" component={Balances} />
+            <Route path="/deposit" component={Deposit} />
+            <Route path="/withdraw" component={Withdraw} />
+            <Route path="/send-request" component={SendRequest} />
+            <Route path="/help" component={Faq} />
+            <Route path="/profile" component={Profile} />
+            <Route path="/verification" component={Verification} />
+            <Redirect to="/buy-sell" />
+          </Switch>
         </Layout>
       </div>
     );
