@@ -4,6 +4,7 @@ import { propertiesExtractor } from '../../shared/utility';
 import BankAccount from '../../components/BankAccount';
 import SideBarNav from '../../components/SideBarNav';
 import Checked from '../../components/UI/Icons/Checked';
+import exclamationImg from '../../../assets/images/icons/exclamation.png';
 import classes from './Verification.css';
 
 class Verification extends Component {
@@ -18,7 +19,9 @@ class Verification extends Component {
     const necessaryKeys = 'User details,Address,Bank';
     navBtns = propertiesExtractor(this.state.userData, necessaryKeys, [], true);
     const updNavBtns = navBtns.map((nav, index) => {
-      nav.checked && this.setState({ selectedSection: nav });
+      if (nav.checked) {
+        this.setState({ selectedSection: nav });
+      }
       const borderTextColor = nav.status === 'Verified' ? '#6bcc00' : '#c6c6c6';
       const content = (
         <div className={classes.NavBtn}>
@@ -45,16 +48,19 @@ class Verification extends Component {
           </div>
         </div>
       );
-      nav.content = content;
-      return nav;
+      const updNav = { ...nav };
+      updNav.content = content;
+      return updNav;
     });
     this.setState({ navBtns: updNavBtns });
   }
 
   render() {
     let content;
-    let selectedSectionTitle = this.state.selectedSection.title;
-    selectedSectionTitle === 'Bank' && (content = <BankAccount bankAccount={this.state.selectedSection} />);
+    const selectedSectionTitle = this.state.selectedSection.title;
+    if (selectedSectionTitle === 'Bank') {
+      content = <BankAccount bankAccount={this.state.selectedSection} />;
+    }
     return (
       <div className={classes.VerificationWrp}>
         <div className={classes.NavbarSection}>
@@ -62,7 +68,7 @@ class Verification extends Component {
           <SideBarNav navClass="VerificationNavBtn" items={this.state.navBtns} />
           <div className={classes.Note}>
             <div className={classes.Head}>
-              <img src={require('../../../assets/images/icons/exclamation.png')} />
+              <img alt="exclamation" src={exclamationImg} />
               <div className={classes.NoteTitle}>Important!</div>
             </div>
             <div className={classes.Text}>

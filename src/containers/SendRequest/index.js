@@ -67,13 +67,9 @@ class SendRequest extends Component {
     },
   };
 
-  changeValue = () => {
-    console.log('changeValue');
-  }
+  changeValue = () => { }
 
-  fileSelectedHandler = () => {
-    console.log('select file');
-  }
+  fileSelectedHandler = () => { }
 
   render() {
     let requestFormArr = objectIntoArray(this.state.requestForm);

@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import classes from './SideBarNav.css';
+let cx = classNames.bind(classes);
 
 const sideBarNav = props => {
     let navigations;
     props.items && (navigations = props.items.map((nav) => {
-          let navClasses = nav.checked ? [classes[props.navClass], classes.Active] :
-              [classes[props.navClass], classes.Inactive];
           return <div
                     onClick={() => {props.checkItem(nav)}}
                     key={nav.title}
-                    className={navClasses.join(' ')}>
+                    className={cx(props.navClass, { 'Active': nav.checked , 'Inactive': !nav.checked })}>
                     {nav.content}
                   </div>
         }))

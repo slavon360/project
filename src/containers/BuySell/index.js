@@ -69,46 +69,72 @@ class BuySell extends Component {
 
   hideShowPeriodDropdown = (title) => {
     const updChartConfig = { ...this.state.chartConfig };
-    updChartConfig.periods.forEach((period) => {
-      period.checked && (period.checked = false);
-      period.drpItems && period.title !== title && (period.showDpDwn = false);
-      period.drpItems && period.title === title && (period.showDpDwn = !period.showDpDwn);
-    })
-    this.setState(updChartConfig);
+    updChartConfig.periods = updChartConfig.periods.map((period) => {
+      const updPeriod = { ...period };
+      if (period.checked) {
+        updPeriod.checked = false;
+      }
+      if (period.drpItems && period.title !== title) {
+        updPeriod.showDpDwn = false;
+      }
+      if (period.drpItems && period.title === title) {
+        updPeriod.showDpDwn = !period.showDpDwn;
+      }
+      return updPeriod;
+    });
+    this.setState({ chartConfig: updChartConfig });
   }
   hidePeriodDropdown = (title) => {
     const updChartConfig = { ...this.state.chartConfig };
-    updChartConfig.periods.forEach((period) => {
-      period.drpItems && period.title === title && (period.showDpDwn = false);
+    updChartConfig.periods = updChartConfig.periods.map((period) => {
+      const updPeriod = { ...period };
+      if (period.drpItems && period.title === title) {
+        updPeriod.showDpDwn = false;
+      }
+      return updPeriod;
     });
-    this.setState(updChartConfig);
+    this.setState({ chartConfig: updChartConfig });
   }
 
   setPeriodBtn = (selectedPeriod) => {
     const updChartConfig = { ...this.state.chartConfig };
-    updChartConfig.periods.forEach((period) => {
+    updChartConfig.periods = updChartConfig.periods.map((period) => {
+      const updPeriod = { ...period };
       if (period.value === selectedPeriod.value && period.type === selectedPeriod.type) {
-        period.checked = true;
+        updPeriod.checked = true;
       } else {
-        !period.drpItems && (period.checked = false);
-        period.drpItems && period.drpItems.forEach(p => p.checked = false);
+        if (!period.drpItems) {
+          updPeriod.checked = false;
+        }
+        if (period.drpItems) {
+          updPeriod.drpItems = period.drpItems.map((p) => {
+            const upd = { ...p };
+            upd.checked = false;
+            return upd;
+          });
+        }
       }
+      return updPeriod;
     });
     this.setState({ chartConfig: updChartConfig });
   }
 
   setPeriodDpDwn = (selectedPeriod) => {
     const updChartConfig = { ...this.state.chartConfig };
-    updChartConfig.periods.forEach((period) => {
-      if (period.drpItems) {
-        period.drpItems.forEach((p) => {
+    updChartConfig.periods = updChartConfig.periods.map((period) => {
+      const updPeriod = { ...period };
+      if (updPeriod.drpItems) {
+        updPeriod.drpItems = updPeriod.drpItems.map((p) => {
+          const upd = { ...p };
           if (p.value === selectedPeriod.value && p.type === selectedPeriod.type) {
-            p.checked = true;
+            upd.checked = true;
           } else {
-            p.checked = false;
+            upd.checked = false;
           }
-        })
+          return upd;
+        });
       }
+      return updPeriod;
     });
     this.setState({ chartConfig: updChartConfig });
   }

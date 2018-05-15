@@ -83,8 +83,9 @@ class Withdraw extends Component {
   showMore = (transaction) => {
     let updTransactions = [...this.state.transactions];
     updTransactions = updTransactions.map((trans) => {
-      trans.checked = (trans.currency === transaction.currency && !trans.checked);
-      return trans;
+      const updTrans = { ...trans };
+      updTrans.checked = (trans.currency === transaction.currency && !trans.checked);
+      return updTrans;
     });
     this.setState({ transactions: updTransactions });
   }
