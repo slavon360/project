@@ -28,3 +28,18 @@
 .UserStageWrp .RightSide .Status{
   font-size: 14px;
 }
+
+@media screen and (max-width: 414px) {
+  .UserStageWrp .Number{
+    margin: 10px 10px 0 0;
+    line-height: 1.65;
+    width: 20px;
+    height: 20px;
+  }
+  .UserStageWrp .RightSide .Title{
+    font-size: 14px;
+  }
+  .UserStageWrp .RightSide .Status{
+    font-size: 12px;
+  }
+}

@@ -25,18 +25,29 @@ class Profile extends Component {
   }
 
   viewAll = () => {
-    !this.state.viewAll
-      ? this.setState({ balancesToShow: [...this.state.balances], viewAll: true })
-      : this.setState({ balancesToShow: this.state.balances.slice(0, 3), viewAll: false });
+    if (!this.state.viewAll) {
+      this.setState({ balancesToShow: [...this.state.balances], viewAll: true });
+    } else {
+      this.setState({ balancesToShow: this.state.balances.slice(0, 3), viewAll: false });
+    }
   }
 
   render() {
     const stages = this.state.stages.map((stage, index) => {
       const updStage = { ...stage };
-      stage.status === 'Verified' && (updStage.color = '#6bcc00') && (updStage.borderColor = '#6bcc00')
-      && (updStage.icon = <Checked styles={{ width: '8px', height: '7px', fill: '#6bcc00', marginLeft: '8px' }}/>);
-      stage.status === 'Is being verified' && (updStage.color = '#627eea') && (updStage.borderColor = '#c6c6c6');
-      stage.status === 'Not verified' && (updStage.color = '#83878c') && (updStage.borderColor = '#c6c6c6');
+      if (stage.status === 'Verified') {
+        updStage.color = '#6bcc00';
+        updStage.borderColor = '#6bcc00';
+        updStage.icon = <Checked styles={{ width: '8px', height: '7px', fill: '#6bcc00', marginLeft: '8px' }} />;
+      }
+      if (stage.status === 'Is being verified') {
+        updStage.color = '#627eea';
+        updStage.borderColor = '#c6c6c6';
+      }
+      if (stage.status === 'Not verified') {
+        updStage.color = '#83878c';
+        updStage.borderColor = '#c6c6c6';
+      }
       return (
         <UserStage
           key={index}
@@ -46,7 +57,6 @@ class Profile extends Component {
       );
     });
 
-    console.log(this.state);
     return (
       <div className={classes.ProfileWrp}>
         <div className={classes.Head}>

@@ -4,7 +4,6 @@ import axios from '../requests/axios-coin-prices';
 
 const setCoinsPrices = (coins) => {
   const updatedCoins = objectIntoArray(coins, null, addObjectName);
-  console.log(updatedCoins);
   return {
     coins: updatedCoins,
     type: actionTypes.FETCH_COINS,

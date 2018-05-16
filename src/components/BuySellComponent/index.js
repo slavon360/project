@@ -1,21 +1,18 @@
 import React from 'react';
+import classNames from 'classnames';
 import Button from '../UI/Button';
 import Input from '../UI/Input';
 import * as actionTypes from '../../actions/actionTypes';
 import classes from './BuySellComponent.css';
 
 const buySellComponent = (props) => {
-  let buyTabClasses = ['BuyTab'], sellTabClasses = ['SellTab'];
-  props.buy ? (buyTabClasses = ['BuyTab', 'BuyTabActive']) : (sellTabClasses = ['SellTab', 'SellTabActive']);
-
   const currenciesBtns = props.coins.map((coin) => {
-    let btnCoinClasses = coin.checked ? ['BtnCoin', 'BtnCoinChecked'] : ['BtnCoin'];
     return (
       <div key={coin.name} className={classes.CoinWrp}>
         <Button
           clicked={() => { props.setCurrency(coin.name); }}
           elementConfig={{ type: 'button' }}
-          btnClasses={btnCoinClasses}
+          btnClasses={classNames('BtnCoin', {'Checked': coin.checked, 'Unchecked': !coin.checked}).split(' ')}
         >
           <img alt={coin.name} src={require(`../../../assets/images/icons/${coin.name}.png`)}/>
           <span>{coin.name}</span>
@@ -27,20 +24,17 @@ const buySellComponent = (props) => {
     );
   });
 
-  const firstInpClasses = props.switched ? ['AmountWrp', 'AmountWrpRight'] : ['AmountWrp', 'AmountWrpLeft'];
-  const secondInpClasses = props.switched ? ['AmountWrp', 'AmountWrpLeft'] : ['AmountWrp', 'AmountWrpRight'];
-
   return (
     <div className={classes.BuySellComponentWrp}>
       <div className={classes.BuySellTabsWrp}>
         <Button
-          btnClasses={buyTabClasses}
+          btnClasses={classNames('BuyTab', {'BuyTabActive': props.buy}).split(' ')}
           clicked={() => { props.buySellSwitcher(actionTypes.BUY); }}
         >
           BUY
         </Button>
         <Button
-          btnClasses={sellTabClasses}
+          btnClasses={classNames('SellTab', {'SellTabActive': !props.buy}).split(' ')}
           clicked={() => { props.buySellSwitcher(actionTypes.SELL); }}
         >
           SELL
@@ -61,7 +55,7 @@ const buySellComponent = (props) => {
         </div>
         <div className={classes.InputsWrp}>
           <Input
-            wrpClasses={firstInpClasses}
+            wrpClasses={classNames('AmountWrp', {'AmountWrpRight': props.switched, 'AmountWrpLeft': !props.switched}).split(' ')}
             labelClasses={['AmountLabel']}
             inputClasses={['InputBuySell']}
             elementConfig={{ type: 'text', placeholder: '0.00', label: 'USD' }}
@@ -74,7 +68,7 @@ const buySellComponent = (props) => {
             <img alt="switch" src={require(`../../../assets/images/icons/switch.png`)} />
           </Button>
           <Input
-            wrpClasses={secondInpClasses}
+            wrpClasses={classNames('AmountWrp', {'AmountWrpRight': !props.switched, 'AmountWrpLeft': props.switched}).split(' ')}
             labelClasses={['AmountLabel']}
             inputClasses={['InputBuySell']}
             elementConfig={{ type: 'text', placeholder: '0.00', label: props.selectedCrypt.name }}

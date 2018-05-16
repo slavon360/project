@@ -11,21 +11,24 @@ class Faq extends Component {
     sections: null,
   };
 
-  componentDidMount() {
-    let sections = faq.sections.map((sect) => {
-      sect.content = sect.title;
-      return sect;
-    });
-    this.setState({ selectedSection: faq.selectedSection, sections: faq.sections });
+  componentWillMount() {
+    const sections = faq.sections.map(sect => ({
+      ...sect,
+      content: sect.title,
+    }));
+    this.setState({ selectedSection: faq.selectedSection, sections });
   }
 
   selectSection = (section) => {
     let updSections = [...this.state.sections];
     let updSelectedSection;
     updSections = updSections.map((sect) => {
-      sect.checked = sect.title === section.title;
-      sect.checked && (updSelectedSection = { ...sect });
-      return sect;
+      const updSect = { ...sect };
+      updSect.checked = sect.title === section.title;
+      if (updSect.checked) {
+        updSelectedSection = { ...sect };
+      }
+      return updSect;
     });
 
     this.setState({ selectedSection: updSelectedSection, sections: updSections });
@@ -35,8 +38,9 @@ class Faq extends Component {
     let updQuestions = [...this.state.selectedSection.questions];
     const updSelectedSection = { ...this.state.selectedSection };
     updQuestions = updQuestions.map((question) => {
-      question.checked = question.questionTitle === qst.questionTitle && !question.checked;
-      return question;
+      const updQuestion = { ...question };
+      updQuestion.checked = question.questionTitle === qst.questionTitle && !question.checked;
+      return updQuestion;
     });
     updSelectedSection.questions = updQuestions;
     this.setState({ selectedSection: updSelectedSection });

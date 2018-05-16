@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { userData } from '../../../dumpData.json';
 import { propertiesExtractor } from '../../shared/utility';
 import BankAccount from '../../components/BankAccount';
+import Address from '../../components/Address';
 import SideBarNav from '../../components/SideBarNav';
 import Checked from '../../components/UI/Icons/Checked';
+import exclamationImg from '../../../assets/images/icons/exclamation.png';
 import classes from './Verification.css';
 
 class Verification extends Component {
@@ -12,13 +14,28 @@ class Verification extends Component {
     navBtns: null,
     selectedSection: null,
   }
-
+  switchSection = (sect) => {
+    let updNavBtns = [...this.state.navBtns];
+    updNavBtns = updNavBtns.map((nav) => {
+      const updNav = { ...nav };
+      if (nav.title === sect.title) {
+        updNav.checked = true;
+        this.setState({ selectedSection: updNav });
+      } else {
+        updNav.checked = false;
+      }
+      return updNav;
+    });
+    this.setState({ navBtns: updNavBtns });
+  }
   componentWillMount() {
     let navBtns = [];
     const necessaryKeys = 'User details,Address,Bank';
     navBtns = propertiesExtractor(this.state.userData, necessaryKeys, [], true);
     const updNavBtns = navBtns.map((nav, index) => {
-      nav.checked && this.setState({ selectedSection: nav });
+      if (nav.checked) {
+        this.setState({ selectedSection: nav });
+      }
       const borderTextColor = nav.status === 'Verified' ? '#6bcc00' : '#c6c6c6';
       const content = (
         <div className={classes.NavBtn}>
@@ -45,24 +62,26 @@ class Verification extends Component {
           </div>
         </div>
       );
-      nav.content = content;
-      return nav;
+      const updNav = { ...nav };
+      updNav.content = content;
+      return updNav;
     });
     this.setState({ navBtns: updNavBtns });
   }
 
   render() {
-    let content;
-    let selectedSectionTitle = this.state.selectedSection.title;
-    selectedSectionTitle === 'Bank' && (content = <BankAccount bankAccount={this.state.selectedSection} />);
     return (
       <div className={classes.VerificationWrp}>
         <div className={classes.NavbarSection}>
           <h2 className={classes.Title}>Verification</h2>
-          <SideBarNav navClass="VerificationNavBtn" items={this.state.navBtns} />
+          <SideBarNav
+            navClass="VerificationNavBtn"
+            items={this.state.navBtns}
+            checkItem={this.switchSection}
+          />
           <div className={classes.Note}>
             <div className={classes.Head}>
-              <img src={require('../../../assets/images/icons/exclamation.png')} />
+              <img alt="exclamation" src={exclamationImg} />
               <div className={classes.NoteTitle}>Important!</div>
             </div>
             <div className={classes.Text}>
@@ -76,7 +95,14 @@ class Verification extends Component {
           </div>
         </div>
         <div className={classes.Content}>
-          {content}
+          {
+            this.state.selectedSection.title === 'Bank' &&
+              <BankAccount bankAccount={this.state.selectedSection} />
+          }
+          {
+            (this.state.selectedSection.title === 'Address' || this.state.selectedSection.title === 'User details') &&
+              <Address data={this.state.selectedSection} />
+          }
         </div>
       </div>
     );

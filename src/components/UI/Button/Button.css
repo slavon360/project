@@ -36,10 +36,10 @@
 .BtnCoin span{
   padding-left: 10px;
 }
-.BtnCoin:hover, .BtnCoinChecked{
+.BtnCoin:hover, .BtnCoin.Checked{
   border-color: #922c88;
 }
-.BtnCoinChecked > div{
+.BtnCoin.Checked > div{
   display: block;
 }
 .SwitchBtn{
@@ -182,5 +182,5 @@
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  
+
 }
