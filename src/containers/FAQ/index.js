@@ -12,11 +12,10 @@ class Faq extends Component {
   };
 
   componentWillMount() {
-    const sections = faq.sections.map((sect) => {
-      const updSect = { ...sect };
-      updSect.content = sect.title;
-      return updSect;
-    });
+    const sections = faq.sections.map(sect => ({
+      ...sect,
+      content: sect.title,
+    }));
     this.setState({ selectedSection: faq.selectedSection, sections });
   }
 

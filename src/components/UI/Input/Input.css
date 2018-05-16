@@ -143,3 +143,9 @@
 .BankAccountNickname input{
   margin-bottom: 39px !important;
 }
+.CountryInput .SecondLabel{
+  float: right;
+  font-size: 14px;
+  color: #9e9fa3;
+  transform: translateY(2px);
+}

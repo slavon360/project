@@ -83,3 +83,58 @@
   width: 24px;
   height: 24px;
 }
+
+@media screen and (max-width: 414px) {
+  .ProfileWrp{
+    padding: 30px 20px 40px 20px;
+  }
+  .Head{
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  .Head .UserStatus{
+    margin: 0;
+  }
+  .ProfileWrp .Stages{
+    padding-top: 30px;
+  }
+  .ProfileWrp .Stages > div{
+    margin-right: 23px;
+  }
+  .ProfileWrp .Stages > div:nth-child(2){
+    margin-right: 16px;
+  }
+  .ProfileWrp .Stages > div:last-child{
+    margin-right: 0;
+  }
+  .ProfileWrp .Stages > div::after{
+    display: none;
+  }
+  .BalancesWrp{
+    width: 100%;
+    padding: 21px 20px 35px 20px;
+    margin-bottom: 30px;
+  }
+  .BalancesWrp table thead th:last-child{
+    font-size: 16px;
+    padding-bottom: 20px !important;
+  }
+  .BalancesWrp table tbody{
+    padding-top: 19px;
+  }
+  .BalancesWrp table tbody td{
+    font-size: 14px;
+  }
+  .BalancesWrp table tbody td:first-child{
+    width: 36px;
+  }
+  .BalancesWrp table tbody td:nth-child(2){
+    width: 84px;
+  }
+  .BalancesWrp table tbody td:nth-child(3){
+    width: 118px;
+  }
+  .Balances_InteractiveBlocks_Wrp{
+    flex-direction: column;
+  }
+}

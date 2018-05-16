@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 import Input from '../../components/UI/Input';
 import Button from '../../components/UI/Button';
 import UploadIcon from '../../components/UI/Icons/Upload';
@@ -75,7 +76,7 @@ class SendRequest extends Component {
     let requestFormArr = objectIntoArray(this.state.requestForm);
     requestFormArr = requestFormArr.map((itemForm, index) => {
       let content = null;
-      const inputWrpClasses = itemForm.elementConfig.type === 'file' ? ['FileInputRequestWrp'] : ['InputRequestWrp'];
+      const filetype = itemForm.elementConfig.type;
       const optionalLabels = itemForm.optionalLabels ? itemForm.optionalLabels : null;
       content = (
         <Input
@@ -83,7 +84,9 @@ class SendRequest extends Component {
           optionalLabels={optionalLabels}
           changeValue={itemForm.eventHandler}
           elementType={itemForm.elementType}
-          wrpClasses={inputWrpClasses}
+          wrpClasses={
+            classNames({ FileInputRequestWrp: filetype === 'file', InputRequestWrp: filetype !== 'file' }).split(' ')
+          }
           elementConfig={itemForm.elementConfig}
         />
       );
