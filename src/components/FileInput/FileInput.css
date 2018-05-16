@@ -1,4 +1,4 @@
-.FileInputRequestWrp{
+.FileInputRequestWrp, .PhotoAddress{
   border: 1px solid #f3ecf3;
   height: 200px;
   padding-top: 54px;
@@ -8,7 +8,7 @@
   text-align: center;
   cursor: pointer;
 }
-.FileInputRequestWrp input{
+.FileInputRequestWrp input, .PhotoAddress input{
   display: block;
   position: absolute;
   top: 0;
@@ -18,26 +18,26 @@
   z-index: 1;
   opacity: 0;
 }
-.FileInputRequestWrp .Label{
+.FileInputRequestWrp .Label, .PhotoAddress .Label{
   position: absolute;
   top: -33px;
   left: 0;
   font-size: 14px;
   color: #9e9fa3;
 }
-.FileInputRequestWrp .Icon{
+.FileInputRequestWrp .Icon, .PhotoAddress .Icon{
   display: inline-block;
 }
-.FileInputRequestWrp .Sentence{
+.FileInputRequestWrp .Sentence, .PhotoAddress .Sentence{
   color: #9e9fa3;
   font-size: 14px;
   margin-top: 7px;
 }
-.FileInputRequestWrp .Sentence > span:first-child{
+.FileInputRequestWrp .Sentence > span:first-child, .PhotoAddress .Sentence > span:first-child{
   color: #922c88;
   position: relative;
 }
-.FileInputRequestWrp .Sentence > span:first-child::before{
+.FileInputRequestWrp .Sentence > span:first-child::before, .PhotoAddress .Sentence > span:first-child::before{
   content: '';
   position: absolute;
   background-color: #922c88;

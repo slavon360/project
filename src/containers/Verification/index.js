@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { userData } from '../../../dumpData.json';
 import { propertiesExtractor } from '../../shared/utility';
 import BankAccount from '../../components/BankAccount';
+import Address from '../../components/Address';
 import SideBarNav from '../../components/SideBarNav';
 import Checked from '../../components/UI/Icons/Checked';
 import exclamationImg from '../../../assets/images/icons/exclamation.png';
@@ -13,7 +14,20 @@ class Verification extends Component {
     navBtns: null,
     selectedSection: null,
   }
-
+  switchSection = (sect) => {
+    let updNavBtns = [...this.state.navBtns];
+    updNavBtns = updNavBtns.map((nav) => {
+      const updNav = { ...nav };
+      if (nav.title === sect.title) {
+        updNav.checked = true;
+        this.setState({ selectedSection: updNav });
+      } else {
+        updNav.checked = false;
+      }
+      return updNav;
+    });
+    this.setState({ navBtns: updNavBtns });
+  }
   componentWillMount() {
     let navBtns = [];
     const necessaryKeys = 'User details,Address,Bank';
@@ -56,16 +70,15 @@ class Verification extends Component {
   }
 
   render() {
-    let content;
-    const selectedSectionTitle = this.state.selectedSection.title;
-    if (selectedSectionTitle === 'Bank') {
-      content = <BankAccount bankAccount={this.state.selectedSection} />;
-    }
     return (
       <div className={classes.VerificationWrp}>
         <div className={classes.NavbarSection}>
           <h2 className={classes.Title}>Verification</h2>
-          <SideBarNav navClass="VerificationNavBtn" items={this.state.navBtns} />
+          <SideBarNav
+            navClass="VerificationNavBtn"
+            items={this.state.navBtns}
+            checkItem={this.switchSection}
+          />
           <div className={classes.Note}>
             <div className={classes.Head}>
               <img alt="exclamation" src={exclamationImg} />
@@ -82,7 +95,14 @@ class Verification extends Component {
           </div>
         </div>
         <div className={classes.Content}>
-          {content}
+          {
+            this.state.selectedSection.title === 'Bank' &&
+              <BankAccount bankAccount={this.state.selectedSection} />
+          }
+          {
+            (this.state.selectedSection.title === 'Address' || this.state.selectedSection.title === 'User details') &&
+              <Address data={this.state.selectedSection} />
+          }
         </div>
       </div>
     );

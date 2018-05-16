@@ -2,10 +2,10 @@ import React from 'react';
 import Dropdown from '../UI/Dropdown';
 import Angle from '../UI/Icons/NextAngle';
 import InputsBlock from '../InputsBlock';
+import classNames from 'classnames';
 import classes from './DepositWithdrawComponent.css';
 
 const depositWithdraw = (props) => {
-    let currencyContainerClasses = props.data.showDpDwn ? ['CurrencyContainerDpDwn', 'Show'] : ['CurrencyContainerDpDwn', 'Hide'];
     return(
       <div className={classes.DepositWithdrawWrp}>
         <h2 className={classes.Title}>{props.data.title}</h2>
@@ -13,7 +13,9 @@ const depositWithdraw = (props) => {
           <div className={classes.SelectCurrency}>{`Select ${props.data.type} Currency`}</div>
             <Dropdown
               drpWrpClasses={['CurrencyDropdownWrp']}
-              drpContainerClasses={currencyContainerClasses}
+              drpContainerClasses={
+                classNames('CurrencyContainerDpDwn', {'Show': props.data.showDpDwn, 'Hide': !props.data.showDpDwn}).split(' ')
+              }
               dropdownButtonClasses={['DropdownButtonCurrency']}
               dropdownButtons={props.data.currencies}
               hideShowDropdown={props.hideShowCurrencyDropdown}

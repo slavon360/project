@@ -61,3 +61,35 @@
   outline: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 414px) {
+  .LoginPassword .Header, .TwoFactorAuthentication .Header{
+    font-size: 16px;
+  }
+  .InteractiveBlockWrp{
+    padding: 20px 20px 31px 20px;
+    width: 100%;
+  }
+  .TwoFactorAuthentication .Header, .LoginPassword .Header{
+    padding-bottom: 20px;
+    margin-bottom: 21px;
+  }
+  .TwoFactorAuthentication .Row:not(:last-child){
+    margin-bottom: 19px;
+  }
+  .TwoFactorAuthentication .Cell, .LoginPassword .Cell{
+    font-size: 14px;
+  }
+  .TwoFactorAuthentication .Cell:first-child, .LoginPassword .Cell:first-child{
+    margin-right: 11px;
+  }
+  .TwoFactorAuthentication .Cell:nth-child(2), .LoginPassword .Cell:nth-child(2){
+    width: 159px;
+  }
+  .TwoFactorAuthentication .Cell:nth-child(3) > button, .LoginPassword .Cell:nth-child(3) > button{
+    width: 120px;
+  }
+  .TwoFactorAuthentication .Cell .Text:nth-child(2), .LoginPassword .Cell .Text:nth-child(2){
+    font-size: 12px;
+  }
+}
