@@ -127,3 +127,10 @@
   transform: translateY(-4px);
   padding-left: 27px;
 }
+
+@media screen and (min-width: 1366px) and (max-width: 1500px){
+  .UserDropdownWrp{
+    margin-right: 18px;
+  }
+
+}

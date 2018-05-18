@@ -66,3 +66,36 @@
 .FiatValue{
   width: 16.13%;
 }
+
+@media screen and (max-width: 414px) {
+  .BalancesWrp{
+    padding: 30px 20px 40px;
+  }
+  .BalancesHead{
+    margin-bottom: 15px;
+  }
+  .BalancesHead h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: #582871;
+  }
+  .LimitsWrp{
+    color: #41424e;
+  }
+  .LimitsWrp .Limit{
+    padding-right: 0;
+  }
+  .LimitsWrp span{
+    display: block;
+    font-size: 14px;
+    text-align: right;
+  }
+  .Balances{
+    padding: 20px 20px 31px;
+  }
+  .Balances .Head{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+}

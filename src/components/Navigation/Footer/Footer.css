@@ -52,3 +52,38 @@
 .TradingVolume .Digits{
   color: #fff;
 }
+@media screen and (max-width: 1366px){
+  .Footer{
+    padding: 21px 40px 27px 40px;
+  }
+}
+@media screen and (max-width: 414px){
+  .Footer{
+    padding: 15px 20px 18px 20px;
+  }
+  .Footer .Top .LeftSide .Logo, .Footer .Top .LeftSide > span:not(:last-child){
+    display: none;
+  }
+  .NavItem{
+    padding-right: 0;
+  }
+  .Word{
+    padding-right: 31px;
+  }
+  .SocialIconTelegram{
+    padding-right: 39px;
+  }
+  .SocialIconFacebook{
+    padding-right: 35px;
+  }
+  .TradingVolume{
+    font-size: 12px;
+  }
+  .Bottom{
+    display: block;
+  }
+  .TradingVolume > span:nth-child(2){
+    padding-left: 0;
+    float: right;
+  }
+}

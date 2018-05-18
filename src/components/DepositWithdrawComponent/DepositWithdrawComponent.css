@@ -6,6 +6,7 @@
   background-color: #fff;
   vertical-align: top;
   border-radius: 0 8px 8px 8px;
+  box-shadow: 0 4px 18px 0 #dedede;
 }
 .DepositWithdrawWrp .Title{
   font-size: 24px;
@@ -51,4 +52,26 @@
 .SelectedCurrency .Angle{
   float: right;
   transform: translateY(2px);
+}
+
+@media screen and (max-width: 414px) {
+  .DepositWithdrawWrp{
+    padding: 40px 20px 20px;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .DepositWithdrawWrp .Title{
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .DropDwnWrp .SelectCurrency, .DropDwnWrp .Balance{
+    font-size: 12px;
+  }
+  .DropDwnWrp .Balance{
+    padding-right: 0;
+  }
+  .DropDwnWrp{
+    margin-bottom: 32px;
+  }
 }

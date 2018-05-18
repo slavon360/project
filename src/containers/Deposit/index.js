@@ -15,26 +15,22 @@ class Deposit extends Component {
   componentWillMount() {
     this.props.depositWithdrawSwitch(actionTypes.DEPOSIT);
     this.props.buildInteractiveView();
-    // this.setState({ depositData: this.props.depositData });
   }
 
   showMore = (transaction) => {
     let updTransactions = [...this.state.transactions];
-    updTransactions = updTransactions.map((trans) => {
-      const updTrans = { ...trans };
-      updTrans.checked = (trans.currency === transaction.currency && !trans.checked);
-      return updTrans;
-    });
+    updTransactions = updTransactions.map(trans => ({
+      ...trans,
+      checked: trans.currency === transaction.currency && !trans.checked,
+    }));
     this.setState({ transactions: updTransactions });
   }
 
   hideShowCurrencyDropdown = () => {
-    /*
     const updDepositData = { ...this.state.depositData };
-    updDepositData.showDpDwn = updDepositData.showDpDwn;
+    updDepositData.showDpDwn = !updDepositData.showDpDwn;
+    global.console.log(updDepositData);
     this.setState({ depositData: updDepositData });
-    */
-    this.props.hideShowCurrencyDropdown();
   }
 
   hideCurrencyDropdown = () => {

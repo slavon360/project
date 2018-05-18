@@ -19,14 +19,23 @@ class Withdraw extends Component {
 
   showMore = (transaction) => {
     let updTransactions = [...this.state.transactions];
-    updTransactions = updTransactions.map((trans) => {
-      const updTrans = { ...trans };
-      updTrans.checked = (trans.currency === transaction.currency && !trans.checked);
-      return updTrans;
-    });
+    updTransactions = updTransactions.map(trans => ({
+      ...trans,
+      checked: trans.currency === transaction.currency && !trans.checked,
+    }));
     this.setState({ transactions: updTransactions });
   }
-
+  hideShowCurrencyDropdown = () => {
+    const updWithdrawData = { ...this.state.withdrawData };
+    updWithdrawData.showDpDwn = !updWithdrawData.showDpDwn;
+    global.console.log(updWithdrawData);
+    this.setState({ withdrawData: updWithdrawData });
+  }
+  hideCurrencyDropdown = () => {
+    const updWithdrawData = { ...this.state.withdrawData };
+    updWithdrawData.showDpDwn = false;
+    this.setState({ withdrawData: updWithdrawData });
+  }
   selectCurrency = () => {
 
   }

@@ -17,3 +17,9 @@
 .active{
   color: #922c88 !important;
 }
+
+@media screen and (min-width: 1366px) and (max-width: 1500px) {
+  .NavigationItem{
+    margin-right: 3vw;
+  }
+}

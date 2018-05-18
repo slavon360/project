@@ -27,7 +27,7 @@ const hideCurrencyDropdown = (state) => {
 };
 
 const hideShowCurrencyDropdown = (state) => {
-  const updShowDpDwn = { showDpDwn: (state.currencyData.showDpDwn) };
+  const updShowDpDwn = { showDpDwn: !state.currencyData.showDpDwn };
   const updCurrencyData = updateObject(state.currencyData, updShowDpDwn);
   const updatedState = { currencyData: updCurrencyData };
   return updateObject(state, updatedState);

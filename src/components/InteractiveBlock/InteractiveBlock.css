@@ -62,7 +62,32 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 1366px) and (max-width: 1500px){
+  .TwoFactorAuthentication, .LoginPassword{
+    width: 598px;
+  }
+  .TwoFactorAuthentication{
+    padding: 43px 59px 38px 65px;
+  }
+  .TwoFactorAuthentication .Cell:nth-child(2){
+    width: 185px;
+  }
+  .TwoFactorAuthentication .Cell:last-child{
+    transform: translateY(3px);
+  }
+  .TwoFactorAuthentication .Row:not(:last-child){
+    margin-bottom: 23px;
+  }
+  .LoginPassword{
+    padding: 44px 60px 49px 61px;
+  }
+  .LoginPassword .Header{
+    padding-bottom: 43px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 414px){
   .LoginPassword .Header, .TwoFactorAuthentication .Header{
     font-size: 16px;
   }

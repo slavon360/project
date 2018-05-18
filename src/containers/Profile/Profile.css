@@ -19,6 +19,9 @@
   margin-right: 129px;
   position: relative;
 }
+.ProfileWrp .Stages > div:last-child{
+  margin-right: 0;
+}
 .ProfileWrp .Stages > div::after{
   content: '';
   position: absolute;
@@ -82,6 +85,30 @@
 .BalancesWrp table tbody td img{
   width: 24px;
   height: 24px;
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1500px){
+  .ProfileWrp{
+    padding: 60px 40px 80px 40px;
+  }
+  .Head{
+    padding-left: 119px;
+    margin-bottom: 63px;
+  }
+  .BalancesWrp{
+    width: 648px;
+    padding: 43px 58px 65px 60px;
+  }
+  .BalancesWrp table thead th:last-child{
+    padding-bottom: 44px;
+    margin-bottom: 42px;
+  }
+  .BalancesWrp table tbody td:nth-child(2){
+    width: 227px;
+  }
+  .BalancesWrp table tbody td:nth-child(3){
+    width: 139px;
+  }
 }
 
 @media screen and (max-width: 414px) {
