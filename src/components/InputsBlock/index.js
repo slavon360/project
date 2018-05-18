@@ -18,7 +18,6 @@ const inputsBlock = (props) => {
             third: `Transaction Fee: ${props.data.transactionFee} ${selectedCurrency.shortcut}`,
             fourth: `You will get: 0.9 ${selectedCurrency.shortcut}`
           })
-          console.log(optionalLabels)
           let updElemConfig = {...item.elementConfig};
               updElemConfig.label && (updElemConfig.label = updElemConfig.label(selectedCurrency.shortcut));
               updElemConfig.placeholder && (updElemConfig.placeholder = updElemConfig.placeholder(selectedCurrency.balance));

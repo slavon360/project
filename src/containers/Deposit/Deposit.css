@@ -56,3 +56,35 @@
 .TableWrp table tr td:nth-last-child(2){
   font-size: 14px;
 }
+
+@media screen and (max-width: 414px) {
+  .DepositWrp{
+    padding: 30px 20px;
+    flex-direction: column;
+  }
+  .TableWrp{
+    display: block;
+    width: 100%;
+    padding: 30px 20px 24px;
+  }
+  .TableWrp table thead th:last-child{
+    font-size: 12px;
+    padding-bottom: 24px !important;
+  }
+  .TableWrp table tbody{
+    padding-top: 21px;
+    font-size: 14px;
+  }
+  .TableWrp table tbody td:first-child{
+    width: 85px;
+  }
+  .TableWrp table tbody td:nth-child(2){
+    width: 54px;
+  }
+  .TableWrp table tbody td:nth-child(3){
+    width: 95px;
+  }
+  .TableWrp table tbody td:nth-child(4){
+    width: 80px;
+  }
+}

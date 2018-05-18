@@ -51,3 +51,9 @@
   font-size: 14px;
   color: #41424e;
 }
+
+@media screen and (max-width: 1366px){
+  .FaqContentWrp{
+    width: 886px;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { transactions } from '../../../dumpData.json';
+import { transactions, currencyData } from '../../../dumpData.json';
 import Transactions from '../../components/Transactions';
 import DepositWithdraw from '../../components/DepositWithdrawComponent';
 import * as actionTypes from '../../actions/actionTypes';
@@ -10,6 +10,7 @@ import classes from './Withdraw.css';
 class Withdraw extends Component {
   state = {
     transactions,
+    withdrawData: currencyData,
   }
 
   componentDidMount() {
@@ -19,14 +20,23 @@ class Withdraw extends Component {
 
   showMore = (transaction) => {
     let updTransactions = [...this.state.transactions];
-    updTransactions = updTransactions.map((trans) => {
-      const updTrans = { ...trans };
-      updTrans.checked = (trans.currency === transaction.currency && !trans.checked);
-      return updTrans;
-    });
+    updTransactions = updTransactions.map(trans => ({
+      ...trans,
+      checked: trans.currency === transaction.currency && !trans.checked,
+    }));
     this.setState({ transactions: updTransactions });
   }
-
+  hideShowCurrencyDropdown = () => {
+    const updWithdrawData = { ...this.state.withdrawData };
+    updWithdrawData.showDpDwn = !updWithdrawData.showDpDwn;
+    global.console.log(updWithdrawData);
+    this.setState({ withdrawData: updWithdrawData });
+  }
+  hideCurrencyDropdown = () => {
+    const updWithdrawData = { ...this.state.withdrawData };
+    updWithdrawData.showDpDwn = false;
+    this.setState({ withdrawData: updWithdrawData });
+  }
   selectCurrency = () => {
 
   }

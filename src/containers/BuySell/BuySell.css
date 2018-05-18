@@ -18,6 +18,12 @@
   background-color: #fff;
   border-radius: 8px;
 }
+.TableWrp tbody{
+  padding-top: 0;
+}
+.TableWrp tbody tr:first-child td{
+  padding-top: 29px;
+}
 @media screen and (min-width: 1920px) {
   .BuySellWrp{
     padding: 57px 159px 79px 159px;

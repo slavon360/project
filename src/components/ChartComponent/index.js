@@ -9,8 +9,8 @@ const chartComponent = props => {
         let dropdownButtonClasses = period.showDpDwn ? ['DropdownButtonPeriod', 'DropdownButtonPeriodChecked'] : ['DropdownButtonPeriod'];
         let btnClasses = period.checked ? ['BtnPeriod', 'BtnPeriodChecked'] : ['BtnPeriod'];
         let containerClasses = period.showDpDwn ? ['DropdownPeriodContainer', 'Show'] : ['DropdownPeriodContainer', 'Hide'];
-        if (period.drpItems) {
-          return <Dropdown
+        return period.drpItems ? (
+                  <Dropdown
                     key={period.title}
                     setValue={props.setPeriodDpDwn}
                     hideShowDropdown={props.hideShowPeriodDropdown}
@@ -26,15 +26,14 @@ const chartComponent = props => {
                     >
                     {period.title}
                   </Dropdown>
-        } else {
-        return <Button
+            ) : (
+              <Button
                   key={period.title}
                   btnClasses={classNames('BtnPeriod', {'BtnPeriodChecked': period.checked}).split(' ')}
                   clicked={() => {props.setPeriodBtn(period)}}
                   >
                   {period.title}
-                </Button>;
-        }
+              </Button>);
     })
     return(
       <div className={classes.ChartComponentWrp}>

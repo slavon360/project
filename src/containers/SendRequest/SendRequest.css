@@ -19,3 +19,17 @@
   width: 840px;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 414px) {
+  .SendRequestWrp{
+    padding: 30px 20px;
+  }
+  .SendRequestWrp .Title{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .RequestContainer{
+    width: 100%;
+    padding: 40px 20px 31px;
+    margin-bottom: 0;
+  }
+}

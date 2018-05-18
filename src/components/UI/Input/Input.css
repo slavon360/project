@@ -149,3 +149,18 @@
   color: #9e9fa3;
   transform: translateY(2px);
 }
+@media screen and (max-width: 414px) {
+  .InputRequestWrp input{
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  .InputRequestWrp input:hover, .InputRequestWrp input:focus{
+    margin-bottom: 27px;
+  }
+  .InputRequestWrp label{
+    font-size: 12px;
+  }
+  .DepositAddress input{
+    font-size: 12px;
+  }
+}
