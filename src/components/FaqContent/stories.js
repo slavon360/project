@@ -4,26 +4,26 @@ import { action } from '@storybook/addon-actions';
 
 import FaqContent from './';
 
-let question = {
+const question = {
   checked: false,
   questionTitle: 'Some question',
   answer: 'some answer'
-}
+};
 
-let qstUnchecked = [
+const qstUnchecked = [
   {...question},
   {...question, questionTitle: 'What`s your age?', answer: '27'},
   {...question, questionTitle: 'question 2', answer: 'answer'},
-]
+];
 
-let qstChecked = [
+const qstChecked = [
   {...question},
   {...question, questionTitle: 'What`s your age?', answer: '27', checked: true},
   {...question, questionTitle: 'question 2', answer: 'answer'},
-]
+];
 
-let showAnswer = action('showAnswer');
-let questionClass = 'FAQQuestionWrp';
+const showAnswer = action('showAnswer');
+const questionClass = 'FAQQuestionWrp';
 storiesOf('FAQ', module)
   .add('unchecked',() => (<FaqContent questions={qstUnchecked} showAnswer={showAnswer} questionClass={questionClass} />))
-  .add('checked',() => (<FaqContent questions={qstChecked} showAnswer={showAnswer} questionClass={questionClass} />))
+  .add('checked',() => (<FaqContent questions={qstChecked} showAnswer={showAnswer} questionClass={questionClass} />));
