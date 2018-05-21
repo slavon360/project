@@ -12,6 +12,13 @@
 .DesktopOnly{
   display: inline-block;
 }
+
+@media screen and (min-width: 1501px) and (max-width: 1590px){
+  .Logo{
+    margin-right: 70px;
+  }
+}
+
 @media screen and (min-width: 1366px) and (max-width: 1500px){
   .Toolbar{
     padding-left: 40px;

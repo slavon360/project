@@ -86,14 +86,54 @@
   width: 24px;
   height: 24px;
 }
+@media screen and (min-width: 1601px) and (max-width: 1800px){
+  .ProfileWrp{
+    padding: 60px 80px 80px 80px;
+  }
+  .BalancesWrp{
+    width: 745px;
+  }
+  .BalancesWrp table tbody td:nth-child(2){
+    width: 221px;
+  }
+  .BalancesWrp table tbody td:nth-child(3){
+    width: 178px;
+  }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1600px){
+  .ProfileWrp{
+    padding: 60px 80px 80px 80px;
+  }
+  .BalancesWrp{
+    width: 690px;
+    padding-left: 60px;
+    padding-right: 58px;
+  }
+  .BalancesWrp table tbody td:nth-child(2){
+    width: 150px;
+  }
+  .BalancesWrp table tbody td:nth-child(3){
+    width: 105px;
+  }
+  .BalancesWrp table tbody td:nth-child(4){
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1615px){
+  .Head{
+    padding-left: 119px;
+    margin-bottom: 63px;
+  }
+  .BalancesWrp{
+
+  }
+}
 
 @media screen and (min-width: 1366px) and (max-width: 1500px){
   .ProfileWrp{
     padding: 60px 40px 80px 40px;
-  }
-  .Head{
-    padding-left: 119px;
-    margin-bottom: 63px;
   }
   .BalancesWrp{
     width: 648px;

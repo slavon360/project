@@ -54,7 +54,13 @@
   transform: translateY(2px);
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1366px){
+  .DepositWithdrawWrp{
+    width: 680px;
+  }
+}
+
+@media screen and (max-width: 414px){
   .DepositWithdrawWrp{
     padding: 40px 20px 20px;
     width: 100%;

@@ -31,3 +31,9 @@
 .BankAccountWrp .InputsContent input::-webkit-input-placeholder{
   color: #9e9fa3;
 }
+
+@media screen and (max-width: 1366px){
+  .BankAccountWrp{
+    padding-left: 100px;
+  }
+}

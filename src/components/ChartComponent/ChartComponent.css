@@ -3,3 +3,9 @@
   vertical-align: top;
   margin-left: 57px;
 }
+
+@media screen and (max-width: 1366px){
+  .ChartComponentWrp{
+    margin-left: 38px;
+  }
+}

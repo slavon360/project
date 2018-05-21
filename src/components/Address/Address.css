@@ -32,3 +32,10 @@
   font-size: 14px;
   color: #9e9fa3;
 }
+
+@media screen and (max-width: 1366px){
+  .AddressWrp{
+    padding-left: 100px;
+    width: 846px;
+  }
+}

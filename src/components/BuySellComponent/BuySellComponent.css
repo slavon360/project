@@ -71,3 +71,18 @@
   text-align: center;
   margin: 40px 0 30px;
 }
+
+@media screen and (max-width: 1366px){
+  .BuySellComponentWrp{
+    width: 580px;
+  }
+  .BuySellForm{
+    padding: 51px 71px 65px;
+  }
+  .BuyBtnWrp{
+    margin: 45px 0 0;
+  }
+  .CurrentPriceWrp{
+    margin-top: 46px;
+  }
+}

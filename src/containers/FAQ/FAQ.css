@@ -46,9 +46,13 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1366px) and (max-width: 1400px){
   .FaqWrp{
     padding: 61px 40px 80px 40px;
+  }
+  .FaqWrp .FaqContainer{
+    display: block;
+    overflow: hidden;
   }
 }
 

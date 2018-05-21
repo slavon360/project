@@ -182,5 +182,17 @@
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-
+}
+.AddressVerification{
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 700;
+  border-radius: 20px;
+  background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+  overflow: hidden;
 }

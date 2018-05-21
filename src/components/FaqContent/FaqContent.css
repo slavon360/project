@@ -52,8 +52,9 @@
   color: #41424e;
 }
 
-@media screen and (max-width: 1366px){
+@media screen and (min-width: 1366px) and (max-width: 1400px){
   .FaqContentWrp{
-    width: 886px;
+    width: 870px;
+    float: right;
   }
 }

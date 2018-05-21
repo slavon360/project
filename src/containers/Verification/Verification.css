@@ -66,3 +66,42 @@
   line-height: 24px;
   color: #41424e;
 }
+
+@media screen and (max-width: 1900px){
+  .Content{
+    width: 846px;
+  }
+}
+
+@media screen and (max-width: 1800px){
+  .VerificationWrp{
+    padding: 60px 185px;
+  }
+}
+
+@media screen and (max-width: 1650px){
+  .VerificationWrp{
+    padding: 60px 135px;
+  }
+}
+
+@media screen and (max-width: 1550px){
+  .VerificationWrp{
+    padding: 60px 100px;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .VerificationWrp{
+    padding: 60px;
+  }
+}
+
+@media screen and (max-width: 1366px){
+  .VerificationWrp{
+    padding: 60px 40px;
+  }
+  .Note .Head img{
+    margin-top: 44px;
+  }
+}

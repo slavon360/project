@@ -2,11 +2,6 @@
   display: inline-block;
   float: right;
 }
-@media screen and (max-width: 1023px) {
-  .HeaderToolsWrp{
-    display: none;
-  }
-}
 .Help{
   display: inline-block;
   margin-right: 19px;
@@ -47,11 +42,18 @@
   padding-right: 7px;
 }
 
-@media screen and (min-width: 1366px) and (max-width: 1500px){
+.HeaderToolsWrp > div{
+  transform: translateY(2px);
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1590px){
   .Help{
     margin-right: 22px;
   }
-  .HeaderToolsWrp > div{
-    transform: translateY(2px);
+}
+
+@media screen and (max-width: 1023px) {
+  .HeaderToolsWrp{
+    display: none;
   }
 }

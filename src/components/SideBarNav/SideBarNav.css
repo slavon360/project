@@ -39,3 +39,10 @@
 .VerificationNavBtn:hover, .VerificationNavBtn.Active{
   border-color: #d092c9;
 }
+
+@media screen and (min-width: 1366px) and (max-width: 1400px){
+  .SideBarNavWrp{
+    float: left;
+    margin-right: 0;
+  }
+}
