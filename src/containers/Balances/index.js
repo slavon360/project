@@ -56,20 +56,22 @@ class Balances extends Component {
     ));
     return (
       <div className={classes.BalancesWrp}>
-        <div className={classes.BalancesHead}>
-          <h2>Balances</h2>
-          <div className={classes.LimitsWrp}>
-            <span className={classes.Limit}>24h Withdrawal Limit: <strong>100</strong> BTC</span>
-            <span className={classes.InUse}>In Use: <strong>0</strong> BTC</span>
+        <div className={classes.BalancesContainer}>
+          <div className={classes.BalancesHead}>
+            <h2>Balances</h2>
+            <div className={classes.LimitsWrp}>
+              <span className={classes.Limit}>24h Withdrawal Limit:<strong>100</strong> BTC</span>
+              <span className={classes.InUse}>In Use: <strong>0</strong> BTC</span>
+            </div>
           </div>
-        </div>
-        <div className={classes.Balances}>
-          <div className={classes.Head}>
-            <div className={classes.Currency}>Currency</div>
-            <div className={classes.Balance}>Balance</div>
-            <div className={classes.Type}>Aud</div>
+          <div className={classes.Balances}>
+            <div className={classes.Head}>
+              <div className={classes.Currency}>Currency</div>
+              <div className={classes.Balance}>Balance</div>
+              <div className={classes.Type}>Aud</div>
+            </div>
+            {balancesContent}
           </div>
-          {balancesContent}
         </div>
       </div>
     );

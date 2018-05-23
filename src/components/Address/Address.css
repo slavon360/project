@@ -2,7 +2,6 @@
   padding: 76px 340px 77px 140px;
   background-color: #fff;
   border-radius: 8px;
-  width: 960px;
   box-sizing: border-box;
 }
 .AddressWrp .Title{
@@ -36,6 +35,12 @@
 @media screen and (max-width: 1366px){
   .AddressWrp{
     padding-left: 100px;
-    width: 846px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .AddressWrp{
+    width: 660px;
+    padding: 70px 78px 83px 80px;
   }
 }

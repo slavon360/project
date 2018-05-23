@@ -126,9 +126,6 @@
     padding-left: 119px;
     margin-bottom: 63px;
   }
-  .BalancesWrp{
-
-  }
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1500px){
@@ -142,6 +139,54 @@
   .BalancesWrp table thead th:last-child{
     padding-bottom: 44px;
     margin-bottom: 42px;
+  }
+  .BalancesWrp table tbody td:nth-child(2){
+    width: 227px;
+  }
+  .BalancesWrp table tbody td:nth-child(3){
+    width: 139px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .ProfileWrp{
+    padding: 40px 32px 60px 32px;
+  }
+  .Head{
+    padding-left: 0;
+    margin-bottom: 52px;
+  }
+  .Head .UserStatus{
+    margin-right: 70px;
+  }
+  .ProfileWrp .Stages > div:first-child{
+    margin-right: 99px;
+  }
+  .ProfileWrp .Stages > div:first-child::after{
+    left: 155px;
+    top: 19px;
+  }
+  .ProfileWrp .Stages > div:nth-child(2){
+    margin-right: 90px;
+  }
+  .ProfileWrp .Stages > div:nth-child(2)::after{
+    left: 165px;
+    top: 19px;
+  }
+  .Balances_InteractiveBlocks_Wrp{
+    flex-direction: column;
+  }
+  .BalancesWrp{
+    width: 648px;
+    align-self: center;
+    padding: 43px 58px 65px 60px;
+    margin-bottom: 40px;
+  }
+  .BalancesWrp table thead th:last-child{
+    padding-bottom: 44px;
+  }
+  .BalancesWrp table tbody{
+    padding-top: 42px;
   }
   .BalancesWrp table tbody td:nth-child(2){
     width: 227px;

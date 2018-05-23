@@ -2,6 +2,7 @@
   padding: 76px 179px 77px 139px;
   background-color: #fff;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 .BankAccountWrp .Title{
   font-weight: 700;
@@ -35,5 +36,12 @@
 @media screen and (max-width: 1366px){
   .BankAccountWrp{
     padding-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .BankAccountWrp{
+    width: 660px;
+    padding: 70px 78px 83px 80px;
   }
 }

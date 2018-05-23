@@ -14,3 +14,9 @@
   height: 8px;
   border-radius: 50%;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .BalanceIndicatorWrp{
+    margin-right: 10px;
+  }
+}

@@ -57,6 +57,20 @@
     padding: 21px 40px 27px 40px;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .Footer{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .Logo{
+    margin-right: 79px;
+  }
+  .NavItem{
+    padding-right: 29px;
+  }
+}
+
 @media screen and (max-width: 414px){
   .Footer{
     padding: 15px 20px 18px 20px;

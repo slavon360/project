@@ -46,3 +46,12 @@
     margin-right: 0;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .SideBarNavWrp{
+    width: 300px;
+  }
+  .VerificationNavBtn{
+    width: 280px;
+  }
+}

@@ -105,6 +105,20 @@
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .TwoFactorAuthentication, .LoginPassword{
+    padding: 43px 60px 38px 65px;
+    margin:0 auto 39px;
+    width: 648px;
+  }
+  .LoginPassword{
+    margin-bottom: 0;
+  }
+  .TwoFactorAuthentication .Cell:nth-child(2){
+    width: 185px;
+  }
+}
+
 @media screen and (max-width: 414px){
   .LoginPassword .Header, .TwoFactorAuthentication .Header{
     font-size: 16px;

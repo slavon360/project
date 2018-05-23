@@ -36,3 +36,21 @@
     padding: 50px 40px 80px;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1230px){
+  .BuySellWrp{
+    padding: 40px 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .History{
+    margin-top: 40px;
+  }
+  .TableWrp{
+    max-width: 580px;
+  }
+  .TransactionsWrp{
+    align-self: center;
+  }
+}

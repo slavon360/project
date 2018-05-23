@@ -29,7 +29,7 @@
   height: 8px;
   float: right;
   transform-origin: 5px 10px;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateX(4px);
 }
 .SelectedLanguage .Arrow{
   transform-origin: -4px 20px;
@@ -49,6 +49,11 @@
 @media screen and (min-width: 1366px) and (max-width: 1590px){
   .Help{
     margin-right: 22px;
+  }
+}
+@media screen and (max-width: 1365px){
+  .Help{
+    display: none;
   }
 }
 

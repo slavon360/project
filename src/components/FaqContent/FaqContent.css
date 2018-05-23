@@ -58,3 +58,10 @@
     float: right;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .FaqContentWrp{
+    width: 640px;
+    padding: 51px 72px 68px 40px;
+  }
+}

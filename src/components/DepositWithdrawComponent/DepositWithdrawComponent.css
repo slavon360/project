@@ -54,9 +54,22 @@
   transform: translateY(2px);
 }
 
+@media screen and (max-width: 1650px){
+  .DepositWithdrawWrp{
+    width: 680px;
+  }
+}
+
 @media screen and (max-width: 1366px){
   .DepositWithdrawWrp{
     width: 680px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .DepositWithdrawWrp{
+    align-self: center;
+    margin-bottom: 40px;
   }
 }
 

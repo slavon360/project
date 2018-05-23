@@ -132,5 +132,10 @@
   .UserDropdownWrp{
     margin-right: 18px;
   }
+}
 
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .UserDropdownWrp{
+    margin-right: 10px;
+  }
 }

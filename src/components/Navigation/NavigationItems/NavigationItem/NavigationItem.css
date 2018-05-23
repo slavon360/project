@@ -26,8 +26,14 @@
   }
 }
 
-@media screen and (min-width: 1366px) and (max-width: 1500px) {
+@media screen and (min-width: 1366px) and (max-width: 1500px){
   .NavigationItem{
     margin-right: 3vw;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .NavigationItem{
+    margin-right: 2vw;
   }
 }

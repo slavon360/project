@@ -69,7 +69,7 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1650px){
   .InputsBlockWrp{
     padding-right: 60px;
     padding-left: 60px;

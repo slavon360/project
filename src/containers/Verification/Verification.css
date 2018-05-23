@@ -105,3 +105,22 @@
     margin-top: 44px;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .VerificationWrp{
+    padding: 40px 32px 60px 32px;
+  }
+  .NavbarSection .Title{
+    margin-bottom: 23px;
+  }
+  .Note{
+    margin-top: 0;
+    width: 280px;
+  }
+  .Note .Text{
+    margin-top: 18px;
+  }
+  .NavbarSection > div:nth-child(2){
+    margin-right: 0;
+  }
+}

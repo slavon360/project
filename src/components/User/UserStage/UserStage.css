@@ -29,6 +29,10 @@
   font-size: 14px;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+
+}
+
 @media screen and (max-width: 414px) {
   .UserStageWrp .Number{
     margin: 10px 10px 0 0;
