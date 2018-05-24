@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { setCurrentClasses } from '../../shared/utility';
 import classes from './FileInput.css';
 
@@ -24,3 +25,13 @@ class FileInput extends Component{
 }
 
 export default FileInput;
+
+FileInput.propTypes = {
+  elementConfig: PropTypes.shape({
+    label: PropTypes.string,
+    icon: PropTypes.element,
+    clickableSentence: PropTypes.string,
+    sentence: PropTypes.string,
+  }),
+  wrpClasses: PropTypes.array
+}

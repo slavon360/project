@@ -10,7 +10,7 @@ export const propertiesExtractor = (obj, keys, arr, setTitle) => {
   for (let key in obj) {
     if (keys.indexOf(key) >= 0){
       updatedObj[key] = obj[key];
-      setTitle && (updatedObj[key].title = key);
+      setTitle && (updatedObj[key] instanceof Object ? updatedObj[key].title = key : updatedObj.title = key);
       arr && arr.push(updatedObj[key]);
     }
   };
@@ -44,3 +44,21 @@ export const setCurrentClasses = (classesArr, currentClasses, classes) => {
   });
   return updClasses;
 };
+
+export const numberIntoArray = (number, title) => {
+  let arr = [];
+  while (number > 0) {
+    !title ? arr.push(number--) : arr.push({ title: number-- });
+  }
+  return arr;
+}
+
+export const getYearsInterval = (number, title) => {
+  let arr = [];
+  let currentYear = new Date().getFullYear();
+  const endpoint = currentYear - number;
+  while (currentYear > endpoint) {
+    !title ? arr.push(currentYear--) : arr.push({ title: currentYear-- });
+  }
+  return arr;
+}

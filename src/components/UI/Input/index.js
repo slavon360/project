@@ -50,7 +50,9 @@ const input = props => {
     fourthLabel = props.optionalLabels && props.optionalLabels.fourth ? props.optionalLabels.fourth : null;
       return (
           <div className={wrpClasses ? wrpClasses.join(' ') : null}>
-            <label className={labelClasses ? labelClasses.join(' ') : null}>{props.elementConfig.label}</label>
+            <label htmlFor={props.elementConfig.id || null} className={labelClasses ? labelClasses.join(' ') : null}>
+              {props.elementConfig.label}
+            </label>
             <div className={classes.SecondLabel}>{secondLabel}</div>
             {inputElement}
             <div className={classes.ThirdLabel}>{thirdLabel}</div>

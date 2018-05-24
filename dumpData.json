@@ -1,4 +1,42 @@
 {
+  "dateData": {
+    "January": {
+                  "days": 31
+                },
+    "February": {
+                  "days": 28
+                },
+    "March": {
+                "days": 31
+              },
+    "April": {
+                "days": 30
+              },
+    "May": {
+              "days": 31
+            },
+    "June": {
+              "days": 30
+            },
+    "July": {
+              "days": 31
+            },
+    "August": {
+                "days": 31
+              },
+    "September": {
+                    "days": 30
+                  },
+    "October": {
+                  "days": 31
+                },
+    "November": {
+                  "days": 30
+                },
+    "December": {
+                  "days": 31
+                }
+  },
   "transactions": [
     {
       "status": "Status",
@@ -69,6 +107,21 @@
     "progress": 30,
     "User details": {
       "status": "Verified",
+      "gender": {
+        "male": "false",
+        "female": "false"
+      },
+      "birth": {
+        "month": "July",
+        "day": "",
+        "year": ""
+      },
+      "nationality": "",
+      "sertificateType": {
+        "idCart": false,
+        "passport": false,
+        "driveLicense": false
+      },
       "checked": false
     },
     "Address": {

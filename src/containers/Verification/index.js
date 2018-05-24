@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { userData } from '../../../dumpData.json';
-import { propertiesExtractor } from '../../shared/utility';
+import { userData, dateData } from '../../../dumpData.json';
+import { propertiesExtractor, numberIntoArray, getYearsInterval } from '../../shared/utility';
 import BankAccount from '../../components/BankAccount';
 import Address from '../../components/Address';
+import UserDetails from '../../components/UserDetails';
 import SideBarNav from '../../components/SideBarNav';
 import Checked from '../../components/UI/Icons/Checked';
 import exclamationImg from '../../../assets/images/icons/exclamation.png';
@@ -11,6 +12,7 @@ import classes from './Verification.css';
 class Verification extends Component {
   state = {
     userData,
+    dateData,
     navBtns: null,
     selectedSection: null,
   }
@@ -29,7 +31,16 @@ class Verification extends Component {
     this.setState({ navBtns: updNavBtns });
   }
   componentWillMount() {
+    const date = this.state.dateData;
+    const birth = this.state.userData['User details'].birth;
     let navBtns = [];
+    const months = Object.keys(date).map(key => ({
+      title: key,
+      checked: false,
+    }));
+    const days = birth.month ? numberIntoArray(date[birth.month].days, true) : null;
+    const years = getYearsInterval(110, true);
+    global.console.log(months, days, years);
     const necessaryKeys = 'User details,Address,Bank';
     navBtns = propertiesExtractor(this.state.userData, necessaryKeys, [], true);
     const updNavBtns = navBtns.map((nav, index) => {
@@ -66,7 +77,7 @@ class Verification extends Component {
       updNav.content = content;
       return updNav;
     });
-    this.setState({ navBtns: updNavBtns });
+    this.setState({ navBtns: updNavBtns, months, days, years });
   }
 
   render() {
@@ -95,13 +106,19 @@ class Verification extends Component {
           </div>
         </div>
         <div className={classes.Content}>
-          {
-            this.state.selectedSection.title === 'Bank' &&
-              <BankAccount bankAccount={this.state.selectedSection} />
+          { this.state.selectedSection.title === 'Bank' &&
+            <BankAccount bankAccount={this.state.selectedSection} />
           }
-          {
-            (this.state.selectedSection.title === 'Address' || this.state.selectedSection.title === 'User details') &&
-              <Address data={this.state.selectedSection} />
+          { this.state.selectedSection.title === 'Address' &&
+            <Address data={this.state.selectedSection} />
+          }
+          { this.state.selectedSection.title === 'User details' &&
+            <UserDetails
+              months={this.state.months}
+              days={this.state.days}
+              years={this.state.years}
+              userDetails={this.state.selectedSection}
+            />
           }
         </div>
       </div>

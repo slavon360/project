@@ -1,0 +1,113 @@
+.UserDetailsWrp{
+  padding: 76px 340px 77px 140px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.UserDetailsWrp .Title{
+  font-weight: 700;
+  color: #922c88;
+  font-size: 24px;
+  margin: 0 0 83px;
+}
+.InputsContent{
+  text-align: center;
+}
+.InputsContent > div{
+  text-align: left;
+}
+.InputsContent > div:first-child input{
+  margin-bottom: 28px;
+}
+.InputsContent > div:first-child input:hover,
+.InputsContent > div:first-child input:focus{
+  margin-bottom: 27px;
+}
+.InputsContent > div:nth-child(2) input{
+  margin-bottom: 50px;
+}
+.InputsContent > div:nth-child(2) input:hover,
+.InputsContent > div:nth-child(2) input:focus{
+  margin-bottom: 49px;
+}
+.InputsContent > div:nth-child(9) input{
+  margin-bottom: 70px;
+}
+.InputsContent > div:nth-child(9) input:hover,
+.InputsContent > div:nth-child(9) input:focus{
+  margin-bottom: 69px;
+}
+.InputsContent .NationalityWrp{
+  margin-top: 51px;
+}
+.InputsContent .NationalityWrp input{
+  margin-bottom: 49px;
+}
+.InputsContent .NationalityWrp input:hover,
+.InputsContent .NationalityWrp input:focus{
+  margin-bottom: 48px;
+}
+.InputsContent input{
+  width: 100%;
+  border: none;
+  padding-bottom: 17px;
+  outline: none;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.InputsContent input[type="text"]:hover,
+.InputsContent input[type="text"]:focus{
+  border-bottom: 2px solid #d092c9;
+}
+.InputsContent label{
+  font-size: 14px;
+  color: #9e9fa3;
+}
+.InputsContent .GenderWrp, .InputsContent .SertificateWrp{
+  text-align: left;
+}
+.InputsContent .GenderWrp > div:first-child label{
+  margin-right: 100px;
+}
+.InputsContent .SertificateWrp > div:nth-child(2) label{
+  margin-right: 84px;
+}
+.InputsContent .SertificateWrp > div:nth-child(3) label{
+  margin-right: 72px;
+}
+.InputsContent .SertificateWrp > div:nth-child(4){
+  position: absolute;
+  width: 170px;
+}
+.GenderTitle, .BirthDateTitle, .SertificateTitle{
+  font-size: 14px;
+  color: #9e9fa3;
+  text-align: left;
+}
+.GenderTitle{
+  margin: 0 0 16px;
+}
+.BirthDateTitle{
+  margin: 50px 0 19px;
+}
+.SertificateWrp{
+  margin-bottom: 51px;
+}
+.SertificateTitle{
+  margin: 0 0 13px;
+}
+
+@media screen and (max-width: 1366px){
+  .UserDetailsWrp{
+    padding-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .UserDetailsWrp{
+    width: 660px;
+    padding: 70px 78px 83px 80px;
+  }
+}

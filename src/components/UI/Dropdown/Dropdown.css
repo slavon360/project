@@ -127,7 +127,58 @@
   transform: translateY(-4px);
   padding-left: 27px;
 }
-
+.BirthMonthDrpDwnWrp, .BirthDayDrpDwnWrp, .BirthYearDrpDwnWrp{
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+.BirthMonthDrpDwnWrp{
+  width: 182px;
+  margin-right: 7px;
+}
+.BirthDayDrpDwnWrp{
+  width: 113px;
+  margin-right: 6px;
+}
+.BirthYearDrpDwnWrp{
+  width: 173px;
+}
+.BirthDrpDwnContainer{
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 18px 0 #e1e1e1;
+  max-height: 383px;
+  padding-top: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.BirthDrpDwnContainer::-webkit-scrollbar{
+  width: 10px;
+}
+.BirthDrpDwnContainer::-webkit-scrollbar-button{
+  width: 5px;
+  height: 25px;
+}
+.BirthDrpDwnContainer::-webkit-scrollbar-thumb{
+  background-color: #d192c7;
+  border-radius: 4px 8px 8px 4px;
+  border-right: 5px solid #fff;
+}
+.BirthDrpDwnContainer > button{
+  height: 43px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-left: 23px;
+  color: #41424e;
+}
+.BirthDrpDwnContainer > button:hover{
+  background-color: #f1dded;
+}
 @media screen and (min-width: 1366px) and (max-width: 1500px){
   .UserDropdownWrp{
     margin-right: 18px;
