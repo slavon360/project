@@ -55,10 +55,7 @@ const rules = [{
 }, {
   test: /\.json$/,
   include: dir.locales,
-  loader: 'file-loader',
-  options: {
-    name: `locales/[name].[ext]`,
-  }
+  loader: 'raw-loader',
 }, {
   test: /\.html$/,
   loader: 'file-loader',

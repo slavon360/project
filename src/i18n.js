@@ -1,23 +1,16 @@
 import i18next from 'i18next';
 
-// to copy all locale files in the build folder
-// const locales = require.context('../locales', true, /.json$/);
-// locales.keys().forEach(filename => locales(filename));
+import en from '../locales/en.json';
+import es from '../locales/es.json';
+import ua from '../locales/ua.json';
 
 export default i18next.init({
   lng: 'en',
   fallbackLng: false,
   resources: {
-    en: {
-      translation: {
-        logo: 'BithelaEN',
-      },
-    },
-    es: {
-      translation: {
-        logo: 'BithelaES',
-      },
-    },
+    en: JSON.parse(en),
+    es: JSON.parse(es),
+    ua: JSON.parse(ua),
   },
   debug: false,
   interpolation: {
@@ -28,5 +21,6 @@ export default i18next.init({
   if (error) {
     global.console.error('Error while locale was loading.', error);
   }
+  global.console.log({ en, es, ua });
   global.console.error('Locales successfully initialized');
 });
