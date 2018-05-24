@@ -17,10 +17,8 @@ export default i18next.init({
     escapeValue: false,
   },
 }, (error) => {
-  // debugger; // eslint-disable-line
   if (error) {
     global.console.error('Error while locale was loading.', error);
   }
-  global.console.log({ en, es, ua });
-  global.console.error('Locales successfully initialized');
+  global.console.log('Locales successfully initialized');
 });
