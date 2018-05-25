@@ -98,16 +98,28 @@
 .SertificateTitle{
   margin: 0 0 13px;
 }
+.Arrow{
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  float: right;
+  transform-origin: 5px 10px;
+  transform: rotate(-90deg) translateX(4px);
+}
 
-@media screen and (max-width: 1366px){
+
+@media screen and (min-width: 1366px) and (max-width: 1900px){
   .UserDetailsWrp{
-    padding-left: 100px;
+    padding: 76px 265px 77px 100px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1365px){
   .UserDetailsWrp{
     width: 660px;
-    padding: 70px 78px 83px 80px;
+    padding: 70px 100px 83px 80px;
   }
 }

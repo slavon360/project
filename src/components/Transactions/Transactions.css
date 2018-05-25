@@ -138,3 +138,15 @@
   color: #922c88;
   cursor: pointer;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .Table thead{
+    padding-right: 55px;
+  }
+  .Table tbody td:nth-child(4){
+    padding-left: 14px;
+  }
+  .Table tbody td:nth-child(3){
+    transform: translateX(10px);
+  }
+}

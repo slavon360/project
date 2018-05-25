@@ -179,9 +179,25 @@
 .BirthDrpDwnContainer > button:hover{
   background-color: #f1dded;
 }
+
+
 @media screen and (min-width: 1366px) and (max-width: 1500px){
   .UserDropdownWrp{
     margin-right: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1900px){
+  .BirthMonthDrpDwnWrp{
+    margin-right: 10px;
+    width: 180px;
+  }
+  .BirthDayDrpDwnWrp{
+    margin-right: 9px;
+    width: 110px;
+  }
+  .BirthYearDrpDwnWrp{
+    width: 170px;
   }
 }
 

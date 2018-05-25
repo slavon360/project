@@ -6,6 +6,7 @@ import FileInput from '../FileInput';
 import Dropdown from '../UI/Dropdown';
 import Checked from '../UI/Icons/Checked';
 import UploadIcon from '../UI/Icons/Upload';
+import Arrow from '../UI/Arrow';
 import ListPicker from '../UI/ListPicker';
 import classes from './UserDetails.css';
 
@@ -51,7 +52,7 @@ const userDetails = props => {
                     drpContainerClasses={['BirthDrpDwnContainer']}
                     dropdownButtons={props.months}
                     >
-                    {userDetails.birth.month}
+                    {userDetails.birth.month}<span className={classes.Arrow}><Arrow /></span>
                   </Dropdown>
                   <Dropdown
                     elementConfig={{type: 'button'}}
@@ -60,7 +61,7 @@ const userDetails = props => {
                     drpContainerClasses={['BirthDrpDwnContainer']}
                     dropdownButtons={props.days}
                     >
-                    {userDetails.birth.day}
+                    {userDetails.birth.day}<span className={classes.Arrow}><Arrow /></span>
                   </Dropdown>
                   <Dropdown
                     elementConfig={{type: 'button'}}
@@ -69,7 +70,7 @@ const userDetails = props => {
                     drpContainerClasses={['BirthDrpDwnContainer']}
                     dropdownButtons={props.years}
                     >
-                    {userDetails.birth.year}
+                    {userDetails.birth.year}<span className={classes.Arrow}><Arrow /></span>
                   </Dropdown>
                 </div>
                 <div className={classes.NationalityWrp}>

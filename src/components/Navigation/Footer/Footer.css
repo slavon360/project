@@ -71,6 +71,15 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .Footer .Top .LeftSide .Logo, .Footer .Top .LeftSide > span:not(:last-child){
+    display: none;
+  }
+  .Footer .Word{
+    padding-right: 41px;
+  }
+}
+
 @media screen and (max-width: 414px){
   .Footer{
     padding: 15px 20px 18px 20px;
