@@ -249,7 +249,7 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 767px){
   .ProfileWrp{
     padding: 30px 20px 40px 20px;
   }
@@ -287,19 +287,55 @@
   .BalancesWrp table tbody{
     padding-top: 19px;
   }
-  .BalancesWrp table tbody td{
+  .BalancesWrp table tbody td:not(:first-child){
     font-size: 14px;
+    transform: translateY(3px);
   }
   .BalancesWrp table tbody td:first-child{
     width: 36px;
   }
+  .BalancesWrp table tbody td:last-child span:last-child{
+    font-size: 12px;
+    font-weight: 700;
+  }
   .BalancesWrp table tbody td:nth-child(2){
     width: 84px;
+  }
+  .BalancesWrp table tbody td:nth-child(2) span:nth-child(2){
+    display: none;
   }
   .BalancesWrp table tbody td:nth-child(3){
     width: 118px;
   }
   .Balances_InteractiveBlocks_Wrp{
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .ProfileWrp{
+    padding: 20px 20px 30px;
+  }
+  .ProfileWrp .Stages > div:first-child{
+    margin-right: 16px;
+  }
+  .ProfileWrp .Stages > div:nth-child(2){
+    margin-right: 14px;
+  }
+  .ProfileWrp .Stages{
+    padding-top: 21px;
+  }
+  .Head{
+    margin-bottom: 21px;
+  }
+  .BalancesWrp{
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+  }
+  .BalancesWrp table tbody td:nth-child(2){
+    width: 57px;
+  }
+  .BalancesWrp table tbody td:nth-child(3){
+    width: 91px;
   }
 }

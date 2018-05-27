@@ -151,3 +151,52 @@
     width: 474px;
   }
 }
+
+@media screen and (min-width: 414px) and (max-width: 767px){
+  .VerificationWrp{
+    padding: 30px 20px;
+    flex-direction: column;
+  }
+  .NavbarSection{
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .NavbarSection .Title{
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
+  .NavbarSection > div:nth-child(2){
+    display: flex;
+    margin: 0;
+  }
+  .NavBtn > div:first-child{
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    line-height: 1.7;
+  }
+  .NavBtn > div:nth-child(2) > div:first-child{
+    font-size: 14px;
+  }
+  .NavBtn > div:nth-child(2) > div:nth-child(2){
+    font-size: 10px;
+  }
+  .NavBtn > div:nth-child(2) > div:nth-child(2) svg{
+    margin-left: 28px;
+  }
+  .Content{
+    width: 100%;
+  }
+  .Note{
+    margin-top: 20px;
+  }
+  .Note .Head img{
+    margin: 0 10px 0 0;
+    width: 34px 34px;
+  }
+  .Note .Text{
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}

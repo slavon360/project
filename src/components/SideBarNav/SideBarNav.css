@@ -65,3 +65,12 @@
     padding-left: 30px;
   }
 }
+
+@media screen and (min-width: 414px) and (max-width: 767px){
+  .VerificationNavBtn{
+    width: 120px;
+    margin: 0 7px 0 0;
+    padding: 12px 0 0 10px;
+    height: 60px;
+  }
+}

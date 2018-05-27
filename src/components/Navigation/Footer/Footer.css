@@ -105,8 +105,26 @@
   .Bottom{
     display: block;
   }
+  .TradingVolume > span:first-child{
+    padding-left: 52px;
+  }
   .TradingVolume > span:nth-child(2){
     padding-left: 0;
     float: right;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .Footer .Word{
+    padding-right: 21px;
+  }
+  .Footer .SocialIconTelegram{
+    padding-right: 34px;
+  }
+  .Footer .SocialIconFacebook{
+    padding-right: 30px;
+  }
+  .Footer .TradingVolume > span:first-child{
+    padding-left: 12px;
   }
 }

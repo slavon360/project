@@ -162,7 +162,7 @@
       "icon": "Bitcoin.svg",
       "bal": "1.2102",
       "fiat": {
-                "number": "29 100.36",
+                "number": "2910.36",
                 "title": "AUD"
               }
     },
@@ -184,9 +184,9 @@
                     "long": "Australian Dollar"
                     },
       "icon": "Bitcoin.svg",
-      "bal": "300256.36",
+      "bal": "3002.36",
       "fiat": {
-                "number": "300 256.36",
+                "number": "3002.36",
                 "title": "AUD"
               }
     },
@@ -198,7 +198,7 @@
       "icon": "Ripple-logo.png",
       "bal": "23.236547",
       "fiat": {
-                "number": "300 256.36",
+                "number": "3005.36",
                 "title": "AUD"
               }
     },
@@ -210,7 +210,7 @@
       "icon": "AION.jpg",
       "bal": "0.00",
       "fiat": {
-                "number": "300 256.36",
+                "number": "3005.36",
                 "title": "AUD"
               }
     },
@@ -222,7 +222,7 @@
       "icon": "binance-coin.svg",
       "bal": "300256.36",
       "fiat": {
-                "number": "300 256.36",
+                "number": "3005.36",
                 "title": "AUD"
               }
     },
@@ -234,7 +234,7 @@
       "icon": "omise-go.png",
       "bal": "1.210265",
       "fiat": {
-                "number": "300 256.36",
+                "number": "3006.36",
                 "title": "AUD"
               }
     },
@@ -246,7 +246,7 @@
       "icon": "quantstamp-logo.jpg",
       "bal": "0.00",
       "fiat": {
-                "number": "300 256.36",
+                "number": "3005.36",
                 "title": "AUD"
               }
     },
@@ -258,7 +258,7 @@
       "icon": "doge.svg",
       "bal": "300256.36",
       "fiat": {
-                "number": "300 256.36",
+                "number": "3006.36",
                 "title": "AUD"
               }
     }

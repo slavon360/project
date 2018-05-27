@@ -33,7 +33,7 @@
 
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 360px) and (max-width: 767px){
   .UserStageWrp .Number{
     margin: 10px 10px 0 0;
     line-height: 1.65;
@@ -45,5 +45,14 @@
   }
   .UserStageWrp .RightSide .Status{
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 413px){
+  .UserStageWrp .Number{
+    margin-right: 4px;
+  }
+  .UserStageWrp .RightSide .Status{
+    font-size: 10px;
   }
 }

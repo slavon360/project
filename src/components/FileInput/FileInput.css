@@ -59,6 +59,26 @@
   }
 }
 
+@media screen and (min-width: 414px) and (max-width: 767px){
+  .PhotoAddress, .SertificatePhoto{
+    padding-top: 21px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .SertificatePhoto .Label{
+    font-size: 12px;
+  }
+  .FileInputRequestWrp .Sentence, .PhotoAddress .Sentence, .SertificatePhoto .Sentence{
+    font-size: 12px;
+  }
+  .PhotoAddress .Sentence, .SertificatePhoto .Sentence{
+    margin-top: -5px;
+  }
+  .SertificatePhoto .Sentence span:last-child, .PhotoAddress .Sentence span:last-child{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .FileInputRequestWrp{
     padding-top: 28px;

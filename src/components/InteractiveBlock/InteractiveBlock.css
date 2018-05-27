@@ -135,7 +135,7 @@
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 767px){
   .LoginPassword .Header, .TwoFactorAuthentication .Header{
     font-size: 16px;
   }
@@ -164,5 +164,28 @@
   }
   .TwoFactorAuthentication .Cell .Text:nth-child(2), .LoginPassword .Cell .Text:nth-child(2){
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .InteractiveBlockWrp .TwoFactorAuthentication{
+    margin-bottom: 20px;
+  }
+  .LoginPassword{
+    padding-bottom: 28px;
+  }
+  .TwoFactorAuthentication .Cell .Text,
+  .LoginPassword .Cell .Text{
+    font-size: 12px;
+  }
+  .LoginPassword .Cell:nth-child(2){
+    width: 86px;
+  }
+  .TwoFactorAuthentication .Cell:nth-child(2){
+    width: 139px;
+  }
+  .TwoFactorAuthentication .Cell:nth-child(3) > button,
+  .LoginPassword .Cell:nth-child(3) > button{
+    width: 100px;
   }
 }

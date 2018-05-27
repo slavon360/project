@@ -218,12 +218,22 @@
   color: #9e9fa3;
 }
 
-@media screen and (min-width: 414px) and (max-width: 767px){
+@media screen and (max-width: 767px){
   .InputBuySell{
     font-size: 14px;
   }
   .AmountLabel{
     font-size: 12px;
+  }
+  .NationalityWrp .SecondLabel{
+    font-size: 12px;
+  }
+  .SertificateRadioWrp label{
+    padding-left: 34px;
+    font-size: 14px !important;
+  }
+  .GenderRadioWrp label{
+    font-size: 14px !important;
   }
 }
 

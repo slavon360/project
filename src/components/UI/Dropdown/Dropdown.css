@@ -229,4 +229,14 @@
   .DropdownPeriodWrp{
     margin: 0;
   }
+  .BirthMonthDrpDwnWrp{
+    width: 120px;
+    margin-right: 10px;
+  }
+  .BirthDayDrpDwnWrp{
+    width: 90px;
+  }
+  .BirthYearDrpDwnWrp{
+    width: 104px;
+  }
 }

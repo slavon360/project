@@ -16,7 +16,7 @@ const transactions = (props) => {
       let values = props.propNames.reduce((result, current, i) => {
                     let val;
                     if (trans[current] instanceof Object) {
-                      val = Object.values(trans[current]).map((item, i) => <span key={i}>{item}</span>);
+                      val = Object.values(trans[current]).map((item, i) => <span key={i}>{item} </span>);
                     } else {
                       val = trans[current];
                     }

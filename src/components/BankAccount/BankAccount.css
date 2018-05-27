@@ -51,3 +51,23 @@
     padding: 40px 30px 33px;
   }
 }
+
+@media screen and (min-width: 414px) and (max-width: 767px){
+  .BankAccountWrp{
+    padding: 30px 20px 34px 20px;
+  }
+  .BankAccountWrp .Title{
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .BankAccountWrp .InputsContent{
+    padding: 30px 0 0 0;
+  }
+  .BankAccountWrp .InputsContent label{
+    font-size: 12px;
+  }
+  .BankAccountWrp .InputsContent input{
+    padding-bottom: 2px;
+    margin-bottom: 30px;
+  }
+}
