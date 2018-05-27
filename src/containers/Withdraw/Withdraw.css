@@ -133,6 +133,16 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .WithdrawWrp{
+    padding: 30px 44px 40px;
+    flex-direction: column;
+  }
+  .TableWrp{
+    align-self: center;
+  }
+}
+
 @media screen and (max-width: 414px){
   .WithdrawWrp{
     padding: 30px 20px;

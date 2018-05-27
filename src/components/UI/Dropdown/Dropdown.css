@@ -206,3 +206,27 @@
     margin-right: 10px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .BirthMonthDrpDwnWrp{
+    width: 180px;
+    margin-right: 10px;
+  }
+  .BirthDayDrpDwnWrp{
+    width: 110px;
+    margin-right: 10px;
+  }
+  .BirthYearDrpDwnWrp{
+    width: 104px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .UserDropdownWrp{
+    display: none;
+  }
+  .DropdownPeriodWrp{
+    margin: 0;
+  }
+}

@@ -23,6 +23,9 @@
   width: 1240px;
   display: inline-block;
 }
+.BalanceRow{
+  overflow: hidden;
+}
 .Balances{
   box-shadow: 0 4px 18px 0 #dedede;
   height: 620px;
@@ -43,10 +46,17 @@
   border-bottom: 1px solid #e8e8e8;
   color: #922c88;
 }
+.BalanceCurrencyWrp{
+  display: inline-block;
+  font-size: 14px;
+}
+.FiatWrp{
+  display: none;
+}
 .Balances .Head .Currency,
 .Balances .Head .Balance,
 .Balances .Head .Type,
-.CurrencyTitle, .BalanceValue,
+.CurrencyTitle, .BalanceValueWrp,
 .FiatValue{
   display: inline-block;
 }
@@ -59,11 +69,28 @@
 .Balances .Head .Currency, .CurrencyTitle{
   width: 32.4%;
 }
-.Balances .Head .Balance, .BalanceValue{
+.Balances .Head .Balance, .BalanceValueWrp{
   width: 18.35%;
 }
 .FiatValue{
   width: 18.4%;
+}
+.DepositWithdrawBtnsWrp{
+  display: inline-block;
+  float: right;
+
+}
+.DepositIconWrp svg{
+  transform: translateY(2px);
+  width: 17px;
+  height: 17px;
+  fill: #582871;
+}
+.WithdrawIconWrp svg{
+  width: 20px;
+  height: 16px;
+  transform: translateY(3px);
+  fill: #922c88;
 }
 
 @media screen and (max-width: 1366px){
@@ -86,7 +113,7 @@
   .Balances .Head .Currency, .CurrencyTitle{
     width: 29.5%;
   }
-  .Balances .Head .Balance, .BalanceValue{
+  .Balances .Head .Balance, .BalanceValueWrp{
     width: 15%;
   }
   .FiatValue{
@@ -94,7 +121,43 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1023px){
+  .DepositBtnText, .WithdrawBtnText{
+    display: none;
+  }
+  .BalancesWrp{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .WithdrawIconWrp, .DepositIconWrp{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .BalancesWrp{
+    padding: 30px 32px 40px;
+  }
+  .BalancesContainer{
+    width: 704px;
+  }
+  .Balances{
+    padding: 36px 30px 63px;
+  }
+  .Balances .Head .Currency, .CurrencyTitle{
+    width: 260px;
+  }
+  .Balances .Head .Balance, .BalanceValueWrp{
+    width: 132px;
+  }
+  .FiatValue{
+    width: 132px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px){
   .BalancesWrp{
     padding: 30px 20px 40px;
   }
@@ -105,6 +168,9 @@
     font-size: 18px;
     font-weight: 700;
     color: #582871;
+  }
+  .Balances .Head .Type, .FiatValue{
+    display: none;
   }
   .LimitsWrp{
     color: #41424e;
@@ -117,12 +183,47 @@
     font-size: 14px;
     text-align: right;
   }
+  .BalancesContainer{
+    width: 100%;
+  }
   .Balances{
     padding: 20px 20px 31px;
+    height: auto;
   }
   .Balances .Head{
     padding-bottom: 20px;
     margin-bottom: 20px;
     font-size: 12px;
+  }
+  .Balances .Head .Currency, .CurrencyTitle{
+    width: 32.6%;
+  }
+  .Balances .Head .Balance, .BalanceValueWrp{
+    width: 37.7%;
+  }
+  .CurrencyTitle img{
+    margin-right: 13px;
+  }
+  .BalanceCurrencyWrp .ShortCurrencyTitle{
+    font-weight: 700;
+  }
+  .BalanceCurrencyWrp .LongCurrencyTitle{
+    display: none;
+  }
+  .BalanceValueWrp{
+    position: relative;
+  }
+  .FiatWrp{
+    display: block;
+    color: #41424e;
+    position: absolute;
+    top: 15px;
+  }
+  .FiatWrp .FiatNumber{
+    font-size: 10px;
+  }
+  .FiatWrp .FiatTitle{
+    font-size: 8px;
+    font-weight: 700;
   }
 }

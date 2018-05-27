@@ -55,3 +55,13 @@
     width: 280px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .FAQNavBtn{
+    width: 260px;
+  }
+  .VerificationNavBtn{
+    width: 220px;
+    padding-left: 30px;
+  }
+}

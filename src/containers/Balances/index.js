@@ -1,5 +1,7 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { balances } from '../../../dumpData.json';
+import WithdrawIcon from '../../components/UI/Icons/Withdraw';
+import DepositIcon from '../../components/UI/Icons/Deposit';
 import Button from '../../components/UI/Button';
 import classes from './Balances.css';
 
@@ -40,19 +42,39 @@ class Balances extends Component {
   }
   render() {
     const balancesContent = this.state.balances.map(balance => (
-      <Fragment key={balance.currency}>
+      <div className={classes.BalanceRow} key={balance.currency.long}>
         <div className={classes.CurrencyTitle}>
           <img
             src={this.getImage(balance.icon)}
-            alt={balance.currency}
+            alt={balance.currency.long}
           />
-          <span>{balance.currency}</span>
+          <div className={classes.BalanceCurrencyWrp}>
+            <span className={classes.ShortCurrencyTitle}>{balance.currency.short} </span>
+            <span className={classes.LongCurrencyTitle}>{balance.currency.long}</span>
+          </div>
         </div>
-        <div className={classes.BalanceValue}>{balance.bal}</div>
-        <div className={classes.FiatValue}>{balance.fiat}</div>
-        <Button btnClasses={['DepositBtn']}>Deposit</Button>
-        <Button btnClasses={['WithdrawBtn']}>Withdraw</Button>
-      </Fragment>
+        <div className={classes.BalanceValueWrp}>
+          <div className={classes.BalanceValue}>{balance.bal}</div>
+          <div className={classes.FiatWrp}>
+            <span className={classes.FiatNumber}>{balance.fiat.number} </span>
+            <span className={classes.FiatTitle}>{balance.fiat.title}</span>
+          </div>
+        </div>
+        <div className={classes.FiatValue}>
+          <span className={classes.FiatNumber}>{balance.fiat.number} </span>
+          <span className={classes.FiatTitle}>{balance.fiat.title}</span>
+        </div>
+        <div className={classes.DepositWithdrawBtnsWrp}>
+          <Button btnClasses={['DepositBtn']}>
+            <span className={classes.DepositBtnText}>Deposit</span>
+            <span className={classes.DepositIconWrp}><DepositIcon /></span>
+          </Button>
+          <Button btnClasses={['WithdrawBtn']}>
+            <span className={classes.WithdrawBtnText}>Withdraw</span>
+            <span className={classes.WithdrawIconWrp}><WithdrawIcon /></span>
+          </Button>
+        </div>
+      </div>
     ));
     return (
       <div className={classes.BalancesWrp}>

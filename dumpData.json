@@ -154,15 +154,114 @@
     ]
   },
   "balances": [
-    {"currency": "BTC Bitcoin", "icon": "Bitcoin.svg", "bal": "1.2102", "fiat": "29 100.36 AUD"},
-    {"currency": "ETH Ethereum", "icon": "ethereum.png", "bal": "0.00", "fiat": "0.00 AUD"},
-    {"currency": "AUD Australian Dollar", "icon": "Bitcoin.svg", "bal": "300256.36", "fiat": "300 256.36 AUD"},
-    {"currency": "XRP Ripple", "icon": "Ripple-logo.png", "bal": "23.236547", "fiat": "455 365.00 AUD"},
-    {"currency": "AION Aion", "icon": "AION.jpg", "bal": "0.00", "fiat": "0.00 AUD"},
-    {"currency": "BNB Binance", "icon": "binance-coin.svg", "bal": "300256.36", "fiat": "300 256.36 AUD"},
-    {"currency": "OMG Omise Go", "icon": "omise-go.png", "bal": "1.210265", "fiat": "29 100.36 AUD"},
-    {"currency": "QSP Quantstamp", "icon": "quantstamp-logo.jpg", "bal": "0.00", "fiat": "0.00 AUD"},
-    {"currency": "DOGE Dogecoin", "icon": "doge.svg", "bal": "300256.36", "fiat": "300 256.36 AUD"}
+    {
+      "currency": {
+                    "short": "BTC",
+                    "long": "Bitcoin"
+                    },
+      "icon": "Bitcoin.svg",
+      "bal": "1.2102",
+      "fiat": {
+                "number": "29 100.36",
+                "title": "AUD"
+              }
+    },
+    {
+      "currency": {
+                    "short": "ETH",
+                    "long": "Ethereum"
+                    },
+      "icon": "ethereum.png",
+      "bal": "0.00",
+      "fiat": {
+                "number": "0.00",
+                "title": "AUD"
+              }
+    },
+    {
+      "currency": {
+                    "short": "AUD",
+                    "long": "Australian Dollar"
+                    },
+      "icon": "Bitcoin.svg",
+      "bal": "300256.36",
+      "fiat": {
+                "number": "300 256.36",
+                "title": "AUD"
+              }
+    },
+    {
+      "currency": {
+                    "short": "XRP",
+                    "long": "Ripple"
+                  },
+      "icon": "Ripple-logo.png",
+      "bal": "23.236547",
+      "fiat": {
+                "number": "300 256.36",
+                "title": "AUD"
+              }
+    },
+    {
+      "currency": {
+                    "short": "AION",
+                    "long": "Aion"
+                  },
+      "icon": "AION.jpg",
+      "bal": "0.00",
+      "fiat": {
+                "number": "300 256.36",
+                "title": "AUD"
+              }
+    },
+    {
+      "currency": {
+                    "short": "BNB",
+                    "long": "Binance"
+                  },
+      "icon": "binance-coin.svg",
+      "bal": "300256.36",
+      "fiat": {
+                "number": "300 256.36",
+                "title": "AUD"
+              }
+    },
+    {
+      "currency": {
+                    "short": "OMG",
+                    "long": "Omise Go"
+                  },
+      "icon": "omise-go.png",
+      "bal": "1.210265",
+      "fiat": {
+                "number": "300 256.36",
+                "title": "AUD"
+              }
+    },
+    {
+      "currency": {
+                    "short": "QSP",
+                    "long": "Quantstamp"
+                  },
+      "icon": "quantstamp-logo.jpg",
+      "bal": "0.00",
+      "fiat": {
+                "number": "300 256.36",
+                "title": "AUD"
+              }
+    },
+    {
+      "currency": {
+                    "short": "DOGE",
+                    "long": "Dogecoin"
+                  },
+      "icon": "doge.svg",
+      "bal": "300256.36",
+      "fiat": {
+                "number": "300 256.36",
+                "title": "AUD"
+              }
+    }
   ],
 "currencyData": {
      "deposit": true,
@@ -312,7 +411,7 @@
                        },
                        {
                          "checked": false,
-                         "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
+                         "questionTitle": "Wrong Tag/Memo/PaymentID",
                          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
                        },
                        {
@@ -349,7 +448,7 @@
        },
        {
          "checked": false,
-         "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
+         "questionTitle": "Wrong Tag/Memo/PaymentID",
          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
@@ -385,7 +484,7 @@
        },
        {
          "checked": false,
-         "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
+         "questionTitle": "Wrong Tag/Memo/PaymentID",
          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
@@ -421,7 +520,7 @@
        },
        {
          "checked": false,
-         "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
+         "questionTitle": "Wrong Tag/Memo/PaymentID",
          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
@@ -457,7 +556,7 @@
        },
        {
          "checked": false,
-         "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
+         "questionTitle": "Wrong Tag/Memo/PaymentID",
          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
@@ -478,7 +577,7 @@
        },
        {
          "checked": false,
-         "questionTitle": "Deposit Forgot or Wrong Tag/Memo/PaymentID",
+         "questionTitle": "Wrong Tag/Memo/PaymentID",
          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {
@@ -493,7 +592,7 @@
        },
        {
          "checked": false,
-         "questionTitle": "Deposit Forgot or Wrong Tag/PaymentID",
+         "questionTitle": "Wrong Tag/PaymentID",
          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit."
        },
        {

@@ -123,3 +123,15 @@
     padding: 70px 100px 83px 80px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .UserDetailsWrp{
+    padding: 40px 30px 33px;
+  }
+  .InputsContent .SertificateWrp > div:nth-child(2) label{
+    margin-right: 34px;
+  }
+  .InputsContent .SertificateWrp > div:nth-child(3) label{
+    margin-right: 22px;
+  }
+}

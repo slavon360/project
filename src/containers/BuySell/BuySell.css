@@ -68,3 +68,65 @@
     align-self: center;
   }
 }
+
+@media screen and (min-width: 414px) and (max-width: 767px){
+  .BuySellWrp{
+    padding: 30px 20px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .History{
+    font-size: 16px;
+  }
+  .TableWrp{
+    max-width: 100%;
+    padding: 16px 20px 28px 20px;
+  }
+  .TableWrp table thead th{
+    font-size: 12px;
+    padding-bottom: 14px !important;
+  }
+  .TableWrp table thead th{
+    text-align: left;
+  }
+  .TableWrp table thead{
+    padding: 0;
+  }
+  .TableWrp table thead th:first-child{
+    width: 34.7%;
+  }
+  .TableWrp table thead th:nth-child(2){
+    width: 25.2%;
+  }
+  .TableWrp table thead th:nth-child(3){
+    width: 26.8%;
+    padding: 0;
+  }
+  .TableWrp table thead th:nth-child(4){
+    width: auto;
+    text-align: left;
+  }
+  .TableWrp table tbody tr:first-child td{
+    padding-top: 22px;
+  }
+  .TableWrp table tbody td:first-child{
+    width: 35.1%;
+    font-size: 12px;
+  }
+  .TableWrp table tbody td:nth-child(2){
+    padding-left: 0;
+    width: 25.7%;
+  }
+  .TableWrp table tbody td:nth-child(3){
+    width: 27.2%;
+  }
+  .TableWrp table tbody td:first-child span:nth-child(3){
+    display: inline-block;
+    font-size: 12px;
+  }
+  .TableWrp table tbody td:first-child span:nth-child(4){
+    font-size: 10px;
+    display: block;
+    margin-left: 16px;
+  }
+}

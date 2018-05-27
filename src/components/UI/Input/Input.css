@@ -218,6 +218,15 @@
   color: #9e9fa3;
 }
 
+@media screen and (min-width: 414px) and (max-width: 767px){
+  .InputBuySell{
+    font-size: 14px;
+  }
+  .AmountLabel{
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .InputRequestWrp input{
     font-size: 12px;

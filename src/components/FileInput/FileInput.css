@@ -50,6 +50,15 @@
 .SertificatePhoto{
   text-align: center !important;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .FileInputRequestWrp{
+    height: 160px;
+    padding-top: 44px;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .FileInputRequestWrp{
     padding-top: 28px;

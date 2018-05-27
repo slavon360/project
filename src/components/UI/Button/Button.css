@@ -228,3 +228,46 @@
 .BirthYearDrpDwnButton:hover::before{
   opacity: 1;
 }
+
+@media screen and (max-width: 1023px){
+  .DepositBtn, .WithdrawBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .WithdrawBtn:hover{
+    background-color: #922c88;
+  }
+  .WithdrawBtn:hover svg, .DepositBtn:hover svg{
+    fill: #fff;
+  }
+  .DepositBtn:hover{
+    background-color: #582871;
+  }
+  .DepositBtn{
+    margin-right: 19px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px){
+  .DepositBtn{
+    margin-left: 0;
+  }
+  .BuyTab, .SellTab{
+    font-size: 16px;
+    padding: 19px 0 20px;
+  }
+  .BtnCoin{
+    font-size: 14px;
+  }
+  .DropdownButtonPeriod, .BtnPeriod{
+    width: 80px;
+    height: 24px;
+    padding: 0;
+    margin-right: 18px;
+  }
+  .BtnPeriod:last-child{
+    margin-right: 0;
+  }
+}
