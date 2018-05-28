@@ -240,3 +240,15 @@
     width: 104px;
   }
 }
+
+@media screen and (max-width: 414px){
+  .BirthMonthDrpDwnWrp{
+    width: 110px;
+  }
+  .BirthDayDrpDwnWrp{
+    width: 70px;
+  }
+  .BirthYearDrpDwnWrp{
+    width: 80px;
+  }
+}

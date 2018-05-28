@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: 414px) and (max-width: 767px){
+@media screen and (max-width: 767px){
   .AddressWrp{
     padding: 30px 20px 34px 20px;
   }

@@ -143,7 +143,7 @@
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 767px){
   .WithdrawWrp{
     padding: 30px 20px;
     flex-direction: column;
@@ -168,9 +168,41 @@
     width: 54px;
   }
   .TableWrp table tbody td:nth-child(3){
-    width: 95px;
+    width: 88px;
   }
   .TableWrp table tbody td:nth-child(4){
     width: 80px;
+  }
+  .TableWrp table tbody td:last-child{
+    transform: translate(-16px, 0);
+  }
+}
+
+@media screen and (max-width: 413px){
+  .WithdrawWrp{
+    padding: 40px 20px;
+  }
+  .TableWrp{
+    padding: 30px 20px;
+    height: auto;
+  }
+  .TableWrp table tbody td, .TableWrp table tbody td:nth-last-child(2){
+    font-size: 12px;
+  }
+  .TableWrp table tbody td:first-child{
+    width: 68px;
+    font-size: 12px;
+  }
+  .TableWrp table tbody td:nth-child(2){
+    width: 42px;
+  }
+  .TableWrp table tbody td:nth-child(3){
+    width: 76px;
+  }
+  .TableWrp table tbody td:nth-child(4){
+    width: 66px;
+  }
+  .TableWrp table tbody td:last-child{
+    transform: translate(-15px, 4px);
   }
 }

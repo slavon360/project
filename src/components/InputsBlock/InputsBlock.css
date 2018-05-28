@@ -80,7 +80,7 @@
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 767px){
   .InputsBlockWrp{
     width: 100%;
     padding: 31px 20px 32px;
@@ -93,6 +93,22 @@
     text-align: right;
   }
   .CopyDepositAddressWrp > button{
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .InputsBlockWrp{
+    padding: 30px 20px 26px;
+  }
+  .CopyDepositAddressWrp{
+    text-align: center;
+  }
+  .SubmitWithdrawAmountWrp{
+    text-align: center;
+    padding-top: 41px;
+  }
+  .SubmitWithdrawAmountWrp > button{
     width: 140px;
   }
 }

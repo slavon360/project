@@ -82,8 +82,10 @@ class Balances extends Component {
           <div className={classes.BalancesHead}>
             <h2>Balances</h2>
             <div className={classes.LimitsWrp}>
-              <span className={classes.Limit}>24h Withdrawal Limit:<strong>100</strong> BTC</span>
-              <span className={classes.InUse}>In Use: <strong>0</strong> BTC</span>
+              <div className={classes.Limit}>24h Withdrawal Limit: <span>100</span>
+                <span> BTC</span>
+              </div>
+              <div className={classes.InUse}>In Use: <span>0</span> <span>BTC</span></div>
             </div>
           </div>
           <div className={classes.Balances}>

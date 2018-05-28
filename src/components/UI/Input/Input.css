@@ -252,3 +252,13 @@
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 413px){
+  .WithdrawAmount .SecondLabel{
+    font-size: 13px;
+  }
+  .SertificateRadioWrp label{
+    padding-left: 29px;
+    font-size: 12px !important;
+  }
+}
