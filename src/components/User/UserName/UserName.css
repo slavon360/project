@@ -1,0 +1,13 @@
+.Icon{
+  display: inline-block;
+  margin-right: 14px;
+}
+.Icon svg{
+  width: 24px;
+  height: 24px;
+}
+.UserName{
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+}

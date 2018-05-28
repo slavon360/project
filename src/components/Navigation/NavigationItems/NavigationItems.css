@@ -4,9 +4,47 @@
   margin: 0;
   padding: 0;
 }
+.BalanceIndicator, .UserName{
+  display: none;
+}
+.Icon{
+  display: none;
+}
+.BitcoinIcon svg, .WalletIcon svg, .DepositIcon svg, .WithdrawIcon svg{
+  fill: #fff;
+}
+.BitcoinIcon, .WalletIcon, .DepositIcon, .WithdrawIcon{
+  position: absolute;
+  left: 32px;
+  top: 5px;
+}
+.BitcoinIcon{
+  width: 20px;
+  height: 20px;
+}
+.WalletIcon, .DepositIcon{
+  width: 20px;
+  height: 17px;
+}
+.WithdrawIcon{
+  width: 20px;
+  height: 13px;
+}
 
 @media screen and (max-width: 1023px){
   .NavigationItems{
+    display: block;
+  }
+  .Icon{
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .BitcoinIcon, .WalletIcon, .DepositIcon, .WithdrawIcon{
+    left: 40px;
+  }
+  .BalanceIndicator, .UserName{
     display: block;
   }
 }
