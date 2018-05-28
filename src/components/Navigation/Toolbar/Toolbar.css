@@ -43,6 +43,9 @@
   .DesktopOnly{
     display: none;
   }
+  .Toolbar > div:first-child{
+    margin-right: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){

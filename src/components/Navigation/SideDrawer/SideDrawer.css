@@ -1,0 +1,15 @@
+.SideDrawerWrp{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  width: 248px;
+  height: 100%;
+  background-image: linear-gradient(to top, #e02a82 0%, #54236e 100%);
+}
+
+@media screen and (max-width: 1023px){
+  .SideDrawerWrp{
+    padding-top: 37px;
+  }
+}
