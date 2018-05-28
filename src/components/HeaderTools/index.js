@@ -73,10 +73,12 @@ class HeaderTools extends Component {
           fiatVal = this.state.balance.fiat.value, fiatType = this.state.balance.fiat.type;
       return(
         <div className={classes.HeaderToolsWrp}>
-          <BalanceIndicator>
-            <span>{cryptVal}</span><span style={{fontWeight: '700'}}> {cryptType} </span> /
-            <span> {fiatVal}</span><span style={{fontWeight: '700'}}> {fiatType}</span>
-          </BalanceIndicator>
+          <div className={classes.BalanceIndicator}>
+            <BalanceIndicator>
+              <span>{cryptVal}</span><span style={{fontWeight: '700'}}> {cryptType} </span> /
+              <span> {fiatVal}</span><span style={{fontWeight: '700'}}> {fiatType}</span>
+            </BalanceIndicator>
+          </div>
           <Dropdown
             drpWrpClasses={['UserDropdownWrp']}
             drpContainerClasses={userContainerClasses}

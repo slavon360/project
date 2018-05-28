@@ -7,7 +7,9 @@ import HeaderTools from '../../HeaderTools';
 
 const toolbar = (props) => (
     <header className={classes.Toolbar}>
-        <DrawerToggle />
+        <DrawerToggle
+          clicked={props.drawerToggleClicked}
+        />
         <div className={classes.Logo}>
           <Logo />
         </div>

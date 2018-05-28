@@ -86,7 +86,7 @@
     top: 40%;
     left: 30px;
   }
-  .NavigationItem:nth-child(4){
+  .NavigationItem:nth-child(6){
     margin-bottom: 15vh;
   }
 }
@@ -98,7 +98,7 @@
   .NavigationItem.TabletOnly::before, .NavigationItem.PhoneAndTablet::before{
     left: 46px;
   }
-  .NavigationItem:nth-child(4){
+  .NavigationItem:nth-child(6){
     margin-bottom: 50px;
   }
 }

@@ -16,7 +16,7 @@ const navigationItems = (props) => (
         <UserName userName="John Bravo"/>
       </div>
       <div className={classes.BalanceIndicator}>
-        <BalanceIndicator >2.156 BTC / 31 025.35 AUD</BalanceIndicator>
+        <BalanceIndicator >2.156 <span>BTC</span> / 31 025.35 <span>AUD</span></BalanceIndicator>
       </div>
       <NavigationItem link="/buy-sell">
         <div className={cx(classes.Icon, classes.BitcoinIcon)}>

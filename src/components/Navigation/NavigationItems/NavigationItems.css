@@ -45,6 +45,25 @@
     left: 40px;
   }
   .BalanceIndicator, .UserName{
+    font-weight: 700;
+    color: #fff;
+    padding-left: 40px;
+  }
+  .BalanceIndicator{
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  .BalanceIndicator > div::before{
+    display: none;
+  }
+  .BalanceIndicator span{
+    font-size: 10px;
+  }
+  .UserName{
+    font-size: 14px;
+    margin-bottom: 21px;
+  }
+  .BalanceIndicator, .UserName{
     display: block;
   }
 }
