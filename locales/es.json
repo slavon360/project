@@ -1,5 +1,13 @@
 {
   "translation": {
-    "logo": "BithelaES"
+    "logo": "BithelaES",
+    "footer": {
+      "about": "Conózcanos",
+      "contact": "Contacto",
+      "helpSupport": "AYUDA / APOYO",
+      "terms": "Términos y Condiciones",
+      "social": "SOCIAL",
+      "tradingVolume": "Volumen de Comercio"
+    }
   }
 }

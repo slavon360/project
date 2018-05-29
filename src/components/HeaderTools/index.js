@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import cx from 'classnames';
 import BalanceIndicator from './BalanceIndicator';
 import Dropdown from '../UI/Dropdown';
 import Arrow from '../UI/Arrow';
@@ -14,7 +15,6 @@ class HeaderTools extends Component {
     },
     user: {
       title: 'John Bravo',
-      showDpDwn: false,
       drpItems: [
         {
           title: <NavLink to="/profile">profile</NavLink>,
@@ -30,6 +30,7 @@ class HeaderTools extends Component {
         }
       ]
     },
+    userDropdownOpen: false,
     langDropdownOpen: false,
     langItems: [
       {title: 'Eng', value: 'en', checked: false, icon: require(`../../../assets/images/icons/languages/Eng.png`)},
@@ -42,19 +43,11 @@ class HeaderTools extends Component {
   }
 
   hideShowUserDropdown = () => {
-    let updUser = {...this.state.user};
-    updUser.showDpDwn = updUser.showDpDwn ? false : true;
-    this.setState({user: updUser});
+    this.setState({ userDropdownOpen: !this.state.userDropdownOpen });
   }
 
   toggleLangDropdown = () => {
     this.setState({ langDropdownOpen: !this.state.langDropdownOpen });
-  }
-
-  hideUserDropdown = () => {
-    let updUser = {...this.state.user};
-    updUser.showDpDwn = false;
-    this.setState({user: updUser});
   }
 
   selectLanguage = (val) => {
@@ -67,8 +60,6 @@ class HeaderTools extends Component {
   }
 
   render() {
-    let userContainerClasses = this.state.user.showDpDwn ? ['DropdownUserContainer', 'Show'] : ['DropdownUserContainer', 'Hide'];
-    let langContainerClasses = this.state.langDropdownOpen ? ['DropdownLangContainer', 'Show'] : ['DropdownLangContainer', 'Hide'];
     let cryptVal = this.state.balance.cryptocurrency.value, cryptType = this.state.balance.cryptocurrency.type,
         fiatVal = this.state.balance.fiat.value, fiatType = this.state.balance.fiat.type;
     return(
@@ -79,11 +70,13 @@ class HeaderTools extends Component {
         </BalanceIndicator>
         <Dropdown
           drpWrpClasses={['UserDropdownWrp']}
-          drpContainerClasses={userContainerClasses}
+          drpContainerClasses={
+            cx('DropdownUserContainer', { 'Show': this.state.userDropdownOpen, 'Hide': !this.state.userDropdownOpen }).split(' ')
+          }
           dropdownButtonClasses={['DropdownButtonUser']}
           dropdownButtons={this.state.user.drpItems}
           hideShowDropdown={this.hideShowUserDropdown}
-          hideDropdown={this.hideUserDropdown}
+          hideDropdown={this.hideShowUserDropdown}
           setValue={this.userParameter}>
           {this.state.user.title}<span className={classes.Arrow}><Arrow/></span>
         </Dropdown>
@@ -95,7 +88,9 @@ class HeaderTools extends Component {
         </div>
         <Dropdown
           drpWrpClasses={['LangDropdownWrp']}
-          drpContainerClasses={langContainerClasses}
+          drpContainerClasses={
+            cx('DropdownLangContainer', { 'Show': this.state.langDropdownOpen, 'Hide': !this.state.langDropdownOpen }).split(' ')
+          }
           dropdownButtonClasses={['DropdownButtonLang']}
           dropdownButtons={this.state.langItems}
           hideShowDropdown={this.toggleLangDropdown}

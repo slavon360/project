@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { translate } from 'react-i18next';
 import Logo from '../../Logo';
 import Telegram from '../../UI/Icons/Telegram';
 import Facebook from '../../UI/Icons/Facebook';
@@ -13,17 +14,21 @@ const footer = (props) => (
           <div className={classes.Logo}>
             <Logo />
           </div>
-          <span className={classes.NavItem}><NavLink to="/about" exact={true} activeClassName={classes.active}>About Us</NavLink></span>
-          <span className={classes.NavItem}><NavLink to="/contact" exact={true} activeClassName={classes.active}>Contact Us</NavLink></span>
-          <span className={[classes.NavItem, classes.NavItemHelp].join(' ')}>
-            <NavLink to="/help" exact={true} activeClassName={classes.active}>HELP / Support</NavLink>
+          <span className={classes.NavItem}>
+            <NavLink to="/about" exact={true} activeClassName={classes.active}>{props.t('footer.about')}</NavLink>
           </span>
           <span className={classes.NavItem}>
-            <NavLink to="/terms" exact={true} activeClassName={classes.active}>Terms and Conditions</NavLink>
+            <NavLink to="/contact" exact={true} activeClassName={classes.active}>{props.t('footer.contact')}</NavLink>
+          </span>
+          <span className={[classes.NavItem, classes.NavItemHelp].join(' ')}>
+            <NavLink to="/help" exact={true} activeClassName={classes.active}>{props.t('footer.helpSupport')}</NavLink>
+          </span>
+          <span className={classes.NavItem}>
+            <NavLink to="/terms" exact={true} activeClassName={classes.active}>{props.t('footer.terms')}</NavLink>
           </span>
         </div>
         <div className={classes.RightSide}>
-          <span className={classes.Word}>Social</span>
+          <span className={classes.Word}>{props.t('footer.social')}</span>
           <span className={classes.SocialIconTelegram}>
             <NavLink to="" exact={true} activeClassName={classes.active}>
               <Telegram styles={{fill: '#fff', width: '12px', height: '10px'}} />
@@ -43,11 +48,11 @@ const footer = (props) => (
       </div>
       <div className={classes.Bottom}>
         <div className={classes.TradingVolume}>
-          Tranding Volume: <span>BTC / USD <span className={classes.Digits}>2654.35</span></span>
+          {props.t('footer.tradingVolume')} <span>BTC / USD <span className={classes.Digits}>2654.35</span></span>
           <span>ETH / USD <span className={classes.Digits}>658.47</span></span>
         </div>
       </div>
     </footer>
 );
 
-export default footer;
+export default translate()(footer);
