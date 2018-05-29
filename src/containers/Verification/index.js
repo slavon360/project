@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { userData, dateData } from '../../../dumpData.json';
-import { propertiesExtractor, numberIntoArray, getYearsInterval } from '../../shared/utility';
+import { propertiesExtractor } from '../../shared/utility';
 import BankAccount from '../../components/BankAccount';
 import Address from '../../components/Address';
 import UserDetails from '../../components/UserDetails';
@@ -38,8 +38,12 @@ class Verification extends Component {
       title: key,
       checked: false,
     }));
-    const days = birth.month ? numberIntoArray(date[birth.month].days, true) : null;
-    const years = getYearsInterval(110, true);
+    const days = birth.month && Array.from(new Array(date[birth.month].days))
+      .reduce((acc, item, index, items) => [...acc, { title: items.length - index }], []);
+    const currentYear = new Date().getFullYear();
+    const maxAge = 120;
+    const years = Array.from(new Array(maxAge))
+      .reduce((acc, item, index) => [...acc, { title: currentYear - index }], []);
     global.console.log(months, days, years);
     const necessaryKeys = 'User details,Address,Bank';
     navBtns = propertiesExtractor(this.state.userData, necessaryKeys, [], true);

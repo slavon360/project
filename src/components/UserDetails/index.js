@@ -11,7 +11,7 @@ import ListPicker from '../UI/ListPicker';
 import classes from './UserDetails.css';
 
 const userDetails = props => {
-    let userDetails = props.userDetails;
+    const userDetails = props.userDetails;
     let fileInputConfig = {
                             label: 'Upload sertificate photos',
                             icon: (
