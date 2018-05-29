@@ -19,7 +19,7 @@ const sideDrawer = props => (
             innerStyles={{fill: '#fff'}}
           />
         </div>
-        <nav>
+        <nav onClick={props.closeSideDrawer} >
           <NavigationItems />
         </nav>
       </div>
