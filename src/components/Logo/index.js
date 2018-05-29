@@ -1,10 +1,11 @@
 import React from 'react';
 import classes from './Logo.css';
+import { translate } from 'react-i18next';
 
 const logo = (props) => (
     <div className={classes.Logo}>
-      Bithela
+      {props.t('logo')}
     </div>
 );
 
-export default logo;
+export default translate()(logo);
