@@ -1,0 +1,189 @@
+.UserDetailsWrp{
+  padding: 76px 340px 77px 140px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.UserDetailsWrp .Title{
+  font-weight: 700;
+  color: #922c88;
+  font-size: 24px;
+  margin: 0 0 83px;
+}
+.InputsContent{
+  text-align: center;
+}
+.InputsContent > div{
+  text-align: left;
+}
+.InputsContent > div:first-child input{
+  margin-bottom: 28px;
+}
+.InputsContent > div:first-child input:hover,
+.InputsContent > div:first-child input:focus{
+  margin-bottom: 27px;
+}
+.InputsContent > div:nth-child(2) input{
+  margin-bottom: 50px;
+}
+.InputsContent > div:nth-child(2) input:hover,
+.InputsContent > div:nth-child(2) input:focus{
+  margin-bottom: 49px;
+}
+.InputsContent > div:nth-child(9) input{
+  margin-bottom: 70px;
+}
+.InputsContent > div:nth-child(9) input:hover,
+.InputsContent > div:nth-child(9) input:focus{
+  margin-bottom: 69px;
+}
+.InputsContent .NationalityWrp{
+  margin-top: 51px;
+}
+.InputsContent .NationalityWrp input{
+  margin-bottom: 49px;
+}
+.InputsContent .NationalityWrp input:hover,
+.InputsContent .NationalityWrp input:focus{
+  margin-bottom: 48px;
+}
+.InputsContent input{
+  width: 100%;
+  border: none;
+  padding-bottom: 17px;
+  outline: none;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.InputsContent input[type="text"]:hover,
+.InputsContent input[type="text"]:focus{
+  border-bottom: 2px solid #d092c9;
+}
+.InputsContent label{
+  font-size: 14px;
+  color: #9e9fa3;
+}
+.InputsContent .GenderWrp, .InputsContent .SertificateWrp{
+  text-align: left;
+}
+.InputsContent .GenderWrp > div:first-child label{
+  margin-right: 100px;
+}
+.InputsContent .SertificateWrp > div:nth-child(2) label{
+  margin-right: 84px;
+}
+.InputsContent .SertificateWrp > div:nth-child(3) label{
+  margin-right: 72px;
+}
+.InputsContent .SertificateWrp > div:nth-child(4){
+  position: absolute;
+  width: 170px;
+}
+.GenderTitle, .BirthDateTitle, .SertificateTitle{
+  font-size: 14px;
+  color: #9e9fa3;
+  text-align: left;
+}
+.GenderTitle{
+  margin: 0 0 16px;
+}
+.BirthDateTitle{
+  margin: 50px 0 19px;
+}
+.SertificateWrp{
+  margin-bottom: 51px;
+}
+.SertificateTitle{
+  margin: 0 0 13px;
+}
+.Arrow{
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  float: right;
+  transform-origin: 5px 10px;
+  transform: rotate(-90deg) translateX(4px);
+}
+
+
+@media screen and (min-width: 1366px) and (max-width: 1900px){
+  .UserDetailsWrp{
+    padding: 76px 265px 77px 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .UserDetailsWrp{
+    width: 660px;
+    padding: 70px 100px 83px 80px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .UserDetailsWrp{
+    padding: 40px 30px 33px;
+  }
+  .InputsContent .SertificateWrp > div:nth-child(2) label{
+    margin-right: 34px;
+  }
+  .InputsContent .SertificateWrp > div:nth-child(3) label{
+    margin-right: 22px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .UserDetailsWrp{
+    padding: 30px 20px 34px 20px;
+  }
+  .UserDetailsWrp .Title{
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .InputsContent label{
+    font-size: 12px;
+  }
+  .InputsContent input{
+    padding-bottom: 2px;
+  }
+  .InputsContent .NationalityWrp{
+    margin-top: 31px;
+  }
+  .InputsContent .NationalityWrp input, .InputsContent > div:nth-child(2) input{
+    margin-bottom: 30px;
+  }
+  .GenderTitle, .BirthDateTitle, .SertificateTitle{
+    font-size: 12px;
+  }
+  .GenderTitle{
+    margin-bottom: 15px;
+  }
+  .BirthDateTitle{
+    margin: 30px 0 14px;
+  }
+  .InputsContent .SertificateWrp > div:nth-child(2) label{
+    margin-right: 24px;
+  }
+  .InputsContent .SertificateWrp > div:nth-child(3) label{
+    margin-right: 15px;
+  }
+  .InputsContent .SertificateWrp{
+    margin-bottom: 30px;
+  }
+  .InputsContent > div:nth-child(9) input{
+    margin-bottom: 60px;
+  }
+  .Arrow{
+    top: 13px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .InputsContent .SertificateWrp > div:nth-child(4){
+    width: 130px;
+  }
+}

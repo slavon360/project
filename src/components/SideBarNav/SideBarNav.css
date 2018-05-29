@@ -55,3 +55,33 @@
     width: 280px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .FAQNavBtn{
+    width: 260px;
+  }
+  .VerificationNavBtn{
+    width: 220px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .VerificationNavBtn{
+    width: 120px;
+    margin: 0 7px 0 0;
+    padding: 12px 0 0 10px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .VerificationNavBtn{
+    width: 100px;
+    height: 50px;
+    padding: 9px 0 0 2px;
+  }
+  .SideBarNavWrp{
+    width: auto;
+  }
+}

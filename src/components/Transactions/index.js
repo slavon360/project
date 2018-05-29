@@ -14,6 +14,12 @@ const transactions = (props) => {
                                         return result
       }, []) : null
       let values = props.propNames.reduce((result, current, i) => {
+                    let val;
+                    if (trans[current] instanceof Object) {
+                      val = Object.values(trans[current]).map((item, i) => <span key={i}>{item} </span>);
+                    } else {
+                      val = trans[current];
+                    }
                     result.push(<td key={current}>
                                   {i === 0 && current !== 'icon' ?
                                                 <Fragment>
@@ -21,7 +27,7 @@ const transactions = (props) => {
                                                   <div className={classes.MoreInfoWrp}>{moreInfo}</div>
                                                 </Fragment>
                                                : null}
-                                  {current !== 'icon' ? trans[current] :
+                                  {current !== 'icon' ? val :
                                     <img src={require(`../../../assets/images/coins/${trans[current]}`)} />}
                                 </td>);
                     return result;

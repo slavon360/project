@@ -73,7 +73,14 @@
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .DepositWithdrawWrp{
+    margin-bottom: 30px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 767px){
   .DepositWithdrawWrp{
     padding: 40px 20px 20px;
     width: 100%;
@@ -92,5 +99,24 @@
   }
   .DropDwnWrp{
     margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .DepositWithdrawWrp{
+    padding: 20px 20px 30px;
+  }
+  .Title{
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .DropDwnWrp .SelectCurrency{
+    margin-bottom: 10px;
+  }
+  .SelectedTitle{
+    font-size: 14px;
+  }
+  .DropDwnWrp .Balance{
+    margin-top: 10px;
   }
 }

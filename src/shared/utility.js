@@ -10,7 +10,7 @@ export const propertiesExtractor = (obj, keys, arr, setTitle) => {
   for (let key in obj) {
     if (keys.indexOf(key) >= 0){
       updatedObj[key] = obj[key];
-      setTitle && (updatedObj[key].title = key);
+      setTitle && (updatedObj[key] instanceof Object ? updatedObj[key].title = key : updatedObj.title = key);
       arr && arr.push(updatedObj[key]);
     }
   };

@@ -93,3 +93,61 @@
     margin-bottom: 48px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .BuySellComponentWrp{
+    width: 580px;
+    align-self: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .BuySellComponentWrp{
+    width: 374px;
+    align-self: center;
+    margin-bottom: 30px;
+  }
+  .BuySellForm{
+    padding: 30px 20px 55px;
+  }
+  .Specify{
+    margin: 0 0 32px;
+  }
+  .Specify, .Amount, .Price{
+    font-size: 12px;
+  }
+  .CurrentPriceWrp{
+    margin-top: 37px;
+  }
+  .InputsWrp{
+    margin-top: 30px;
+  }
+  .BuyBtnWrp{
+    margin-top: 37px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .BuySellComponentWrp{
+    width: 320px;
+  }
+  .BuySellForm{
+    padding: 20px 20px 28px;
+  }
+  .CurrentPriceWrp{
+    margin-top: 20px;
+  }
+  .CurrentPriceWrp .Amount, .CurrentPriceWrp .Price{
+    font-size: 12px;
+  }
+  .InputsWrp{
+    margin-bottom: 9px;
+  }
+  .TransactionFee{
+    font-size: 10px;
+  }
+  .BuyBtnWrp{
+    margin-top: 30px;
+  }
+}

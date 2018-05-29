@@ -65,6 +65,26 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .FaqWrp{
+    padding: 40px 32px 65px;
+  }
+  .FaqWrp .Title{
+    margin-bottom: 15px;
+  }
+  .FaqHead .HaveQuestion{
+    margin-right: 14px;
+  }
+  .FaqWrp .FaqContainer > div:nth-child(2){
+    float: left;
+    width: auto;
+    margin-right: 10px;
+  }
+  .FaqWrp .FaqContainer > div:nth-child(3){
+    float: right;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .FaqWrp{
     padding: 30px 20px 40px;

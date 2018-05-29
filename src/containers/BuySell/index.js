@@ -13,15 +13,78 @@ class BuySell extends Component {
     switched: false,
     headData: [{ title: 'Date' }, { title: 'Price' }, { title: 'Quantity' }, { title: 'Amount' }],
     transactions: [
-      { date: '01 Dec 2017  12:27 am', price: '36550', quantity: '0.116', amount: '4239.8' },
-      { date: '01 Dec 2017  12:27 am', price: '36550', quantity: '1.16', amount: '4239.8' },
-      { date: '01 Dec 2017  12:27 am', price: '36550', quantity: '0.116', amount: '4239.8' },
-      { date: '01 Dec 2017  12:27 am', price: '36550', quantity: '0.116', amount: '4239.8' },
-      { date: '01 Dec 2017  12:27 am', price: '36550', quantity: '0.116', amount: '4239.8' },
-      { date: '01 Dec 2017  12:27 am', price: '36550', quantity: '0.116', amount: '4239.8' },
-      { date: '01 Dec 2017  12:27 am', price: '36550', quantity: '0.816', amount: '4239.8' },
-      { date: '01 Dec 2017  12:27 am', price: '36550', quantity: '0.116', amount: '4239.8' },
-      { date: '01 Dec 2017  12:27 am', price: '36550', quantity: '36', amount: '4239.8' },
+      {
+        date: {
+          dayMonthYear: '01 Dec 2017',
+          hourMinutes: '12:27 am',
+        },
+        price: '36550',
+        quantity: '0.116',
+        amount: '4239.8',
+      },
+      {
+        date: {
+          dayMonthYear: '01 Dec 2017',
+          hourMinutes: '12:27 am',
+        },
+        price: '36550',
+        quantity: '0.116',
+        amount: '4239.8',
+      },
+      {
+        date: {
+          dayMonthYear: '01 Dec 2017',
+          hourMinutes: '12:27 am',
+        },
+        price: '36550',
+        quantity: '0.116',
+        amount: '4239.8',
+      },
+      {
+        date: {
+          dayMonthYear: '01 Dec 2017',
+          hourMinutes: '12:27 am',
+        },
+        price: '36550',
+        quantity: '0.116',
+        amount: '4239.8',
+      },
+      {
+        date: {
+          dayMonthYear: '01 Dec 2017',
+          hourMinutes: '12:27 am',
+        },
+        price: '36550',
+        quantity: '0.116',
+        amount: '4239.8',
+      },
+      {
+        date: {
+          dayMonthYear: '01 Dec 2017',
+          hourMinutes: '12:27 am',
+        },
+        price: '36550',
+        quantity: '0.116',
+        amount: '4239.8',
+      },
+      {
+        date: {
+          dayMonthYear: '01 Dec 2017',
+          hourMinutes: '12:27 am',
+        },
+        price: '36550',
+        quantity: '0.116',
+        amount: '4239.8',
+      },
+      {
+        date: {
+          dayMonthYear: '01 Dec 2017',
+          hourMinutes: '12:27 am',
+        },
+        price: '36550',
+        quantity: '0.116',
+        amount: '4239.8',
+      },
     ],
     chartConfig: {
       selectedPeriod: null,

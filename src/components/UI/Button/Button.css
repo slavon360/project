@@ -174,7 +174,7 @@
   border: 2px solid #d192c7;
   transform: translate(-1px, -1px);
 }
-.BankVerification{
+.BankVerification, .UserDetailsVerification{
   width: 240px;
   height: 48px;
   border-radius: 24px;
@@ -195,4 +195,108 @@
   border-radius: 20px;
   background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
   overflow: hidden;
+}
+.BirthMonthDrpDwnButton, .BirthDayDrpDwnButton, .BirthYearDrpDwnButton{
+  height: 43px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  padding-left: 21px;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+.BirthMonthDrpDwnButton::before,
+.BirthDayDrpDwnButton::before,
+.BirthYearDrpDwnButton::before{
+  content: '';
+  position: absolute;
+  width: calc(100% - 1px);;
+  top: -1px;
+  left: -1px;
+  height: calc(100% - 1px);
+  border: 2px solid #d092c9;
+  opacity: 0;
+  border-radius: 20px;
+}
+.BirthMonthDrpDwnButton:hover::before,
+.BirthDayDrpDwnButton:hover::before,
+.BirthYearDrpDwnButton:hover::before{
+  opacity: 1;
+}
+
+@media screen and (max-width: 1023px){
+  .DepositBtn, .WithdrawBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .WithdrawBtn:hover{
+    background-color: #922c88;
+  }
+  .WithdrawBtn:hover svg, .DepositBtn:hover svg{
+    fill: #fff;
+  }
+  .DepositBtn:hover{
+    background-color: #582871;
+  }
+  .DepositBtn{
+    margin-right: 19px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .DepositBtn{
+    margin-left: 0;
+  }
+  .BuyTab, .SellTab{
+    font-size: 16px;
+    padding: 19px 0 20px;
+  }
+  .BtnCoin{
+    font-size: 14px;
+  }
+  .DropdownButtonPeriod, .BtnPeriod{
+    width: 80px;
+    height: 24px;
+    padding: 0;
+    margin-right: 18px;
+  }
+  .BtnPeriod:last-child{
+    margin-right: 0;
+  }
+  .BirthMonthDrpDwnButton, .BirthDayDrpDwnButton, .BirthYearDrpDwnButton{
+    height: 40px;
+    font-size: 12px;
+    padding-left: 19px;
+  }
+  .UserDetailsVerification{
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .BuyTab, .SellTab{
+    font-size: 16px;
+    padding: 16px 0 19px;
+  }
+  .BtnCoin{
+    font-size: 14px;
+  }
+  .BuyBtn{
+    width: 140px;
+    height: 40px;
+    padding: 0;
+  }
+  .DropdownButtonPeriod, .BtnPeriod{
+    width: 70px;
+    height: 24px;
+    padding: 0;
+    margin-right: 13px;
+  }
 }

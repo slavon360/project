@@ -71,7 +71,16 @@
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .Footer .Top .LeftSide .Logo, .Footer .Top .LeftSide > span:not(:last-child){
+    display: none;
+  }
+  .Footer .Word{
+    padding-right: 41px;
+  }
+}
+
+@media screen and (max-width: 767px){
   .Footer{
     padding: 15px 20px 18px 20px;
   }
@@ -96,8 +105,26 @@
   .Bottom{
     display: block;
   }
+  .TradingVolume > span:first-child{
+    padding-left: 52px;
+  }
   .TradingVolume > span:nth-child(2){
     padding-left: 0;
     float: right;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .Footer .Word{
+    padding-right: 21px;
+  }
+  .Footer .SocialIconTelegram{
+    padding-right: 34px;
+  }
+  .Footer .SocialIconFacebook{
+    padding-right: 30px;
+  }
+  .Footer .TradingVolume > span:first-child{
+    padding-left: 12px;
   }
 }

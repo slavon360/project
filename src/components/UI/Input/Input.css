@@ -149,6 +149,94 @@
   color: #9e9fa3;
   transform: translateY(2px);
 }
+.GenderRadioWrp, .SertificateRadioWrp{
+  display: inline-block;
+  position: relative;
+}
+.GenderRadioWrp label, .SertificateRadioWrp label{
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #41424e !important;
+  padding-left: 44px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+.GenderRadioWrp input, .SertificateRadioWrp input{
+  display: none;
+}
+.GenderRadioWrp label:hover ~ .SecondLabel,
+.GenderRadioWrp input:checked, .SertificateRadioWrp label:hover ~ .SecondLabel,
+.SertificateRadioWrp input:checked{
+  border-color: transparent;
+}
+.GenderRadioWrp label:hover ~ .ThirdLabel,
+.GenderRadioWrp input:checked ~ .ThirdLabel, .SertificateRadioWrp label:hover ~ .ThirdLabel,
+.SertificateRadioWrp input:checked ~ .ThirdLabel{
+  opacity: 1;
+}
+.GenderRadioWrp .SecondLabel,
+.GenderRadioWrp .ThirdLabel, .SertificateRadioWrp .SecondLabel,
+.SertificateRadioWrp .ThirdLabel{
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+.GenderRadioWrp .ThirdLabel, .SertificateRadioWrp .ThirdLabel{
+  left: -1px;
+  top: -1px;
+  border: 2px solid #d092c9;
+  opacity: 0;
+}
+.GenderRadioWrp .ThirdLabel svg, .SertificateRadioWrp .ThirdLabel svg{
+  transform: translate(5px, -1px);
+}
+.GenderRadioWrp .SecondLabel, .SertificateRadioWrp .SecondLabel{
+  border: 1px solid #e8e8e8;
+  z-index: 2;
+}
+.GenderRadioWrp .SecondLabel:hover, .SertificateRadioWrp .SecondLabel:hover{
+  border-color: transparent;
+}
+.GenderRadioWrp .SecondLabel:hover ~ .ThirdLabel, .SertificateRadioWrp .SecondLabel:hover ~ .ThirdLabel{
+  opacity: 1;
+}
+.NationalityWrp{
+  overflow: hidden;
+}
+.NationalityWrp label{
+  float: left;
+}
+.NationalityWrp .SecondLabel{
+  font-size: 14px;
+  opacity: .5;
+  float: right;
+  color: #9e9fa3;
+}
+
+@media screen and (max-width: 767px){
+  .InputBuySell{
+    font-size: 14px;
+  }
+  .AmountLabel{
+    font-size: 12px;
+  }
+  .NationalityWrp .SecondLabel{
+    font-size: 12px;
+  }
+  .SertificateRadioWrp label{
+    padding-left: 34px;
+    font-size: 14px !important;
+  }
+  .GenderRadioWrp label{
+    font-size: 14px !important;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .InputRequestWrp input{
     font-size: 12px;
@@ -162,5 +250,15 @@
   }
   .DepositAddress input{
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .WithdrawAmount .SecondLabel{
+    font-size: 13px;
+  }
+  .SertificateRadioWrp label{
+    padding-left: 29px;
+    font-size: 12px !important;
   }
 }

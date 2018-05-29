@@ -1,4 +1,4 @@
-.FileInputRequestWrp, .PhotoAddress{
+.FileInputRequestWrp, .PhotoAddress, .SertificatePhoto{
   border: 1px solid #f3ecf3;
   height: 200px;
   padding-top: 54px;
@@ -8,7 +8,7 @@
   text-align: center;
   cursor: pointer;
 }
-.FileInputRequestWrp input, .PhotoAddress input{
+.FileInputRequestWrp input, .PhotoAddress input, .SertificatePhoto input{
   display: block;
   position: absolute;
   top: 0;
@@ -18,26 +18,28 @@
   z-index: 1;
   opacity: 0;
 }
-.FileInputRequestWrp .Label, .PhotoAddress .Label{
+.FileInputRequestWrp .Label, .PhotoAddress .Label, .SertificatePhoto .Label{
   position: absolute;
   top: -33px;
   left: 0;
   font-size: 14px;
   color: #9e9fa3;
 }
-.FileInputRequestWrp .Icon, .PhotoAddress .Icon{
+.FileInputRequestWrp .Icon, .PhotoAddress .Icon, .SertificatePhoto .Icon{
   display: inline-block;
 }
-.FileInputRequestWrp .Sentence, .PhotoAddress .Sentence{
+.FileInputRequestWrp .Sentence, .PhotoAddress .Sentence, .SertificatePhoto .Sentence{
   color: #9e9fa3;
   font-size: 14px;
   margin-top: 7px;
 }
-.FileInputRequestWrp .Sentence > span:first-child, .PhotoAddress .Sentence > span:first-child{
+.FileInputRequestWrp .Sentence > span:first-child,
+.PhotoAddress .Sentence > span:first-child, .SertificatePhoto .Sentence > span:first-child{
   color: #922c88;
   position: relative;
 }
-.FileInputRequestWrp .Sentence > span:first-child::before, .PhotoAddress .Sentence > span:first-child::before{
+.FileInputRequestWrp .Sentence > span:first-child::before,
+.PhotoAddress .Sentence > span:first-child::before, .SertificatePhoto .Sentence > span:first-child::before{
   content: '';
   position: absolute;
   background-color: #922c88;
@@ -45,6 +47,38 @@
   height: 1px;
   bottom: 0;
 }
+.SertificatePhoto{
+  text-align: center !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .FileInputRequestWrp{
+    height: 160px;
+    padding-top: 44px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px){
+  .PhotoAddress, .SertificatePhoto{
+    padding-top: 21px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .SertificatePhoto .Label{
+    font-size: 12px;
+  }
+  .FileInputRequestWrp .Sentence, .PhotoAddress .Sentence, .SertificatePhoto .Sentence{
+    font-size: 12px;
+  }
+  .PhotoAddress .Sentence, .SertificatePhoto .Sentence{
+    margin-top: -5px;
+  }
+  .SertificatePhoto .Sentence span:last-child, .PhotoAddress .Sentence span:last-child{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .FileInputRequestWrp{
     padding-top: 28px;

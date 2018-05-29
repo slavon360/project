@@ -196,7 +196,60 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .ProfileWrp{
+    padding: 30px 60px 40px;
+  }
+  .Head{
+    text-align: center;
+    padding: 0;
+    margin-bottom: 33px;
+  }
+  .Head .UserStatus{
+    display: inline-block;
+    margin: 0
+  }
+  .Head .Stages{
+    display: inline-block;
+    padding-top: 25px;
+  }
+  .Balances_InteractiveBlocks_Wrp{
+    flex-direction: column;
+  }
+  .Balances_InteractiveBlocks_Wrp .BalancesWrp,
+  .Balances_InteractiveBlocks_Wrp .InteractiveBlocksWrp{
+    width: 648px;
+    align-self: center;
+  }
+  .ProfileWrp .Stages > div:first-child{
+    margin-right: 99px;
+  }
+  .ProfileWrp .Stages > div:nth-child(2){
+    margin-right: 90px;
+  }
+  .ProfileWrp .Stages > div:first-child::after{
+    left: 158px;
+  }
+  .ProfileWrp .Stages > div:nth-child(2)::after{
+    left: 162px;
+  }
+  .Balances_InteractiveBlocks_Wrp .BalancesWrp{
+    padding: 43px 58px 65px 60px;
+    margin-bottom: 30px;
+  }
+  .Balances_InteractiveBlocks_Wrp .BalancesWrp table thead th:last-child{
+    padding-bottom: 44px !important;
+    margin-bottom: 42px !important;
+  }
+  .Balances_InteractiveBlocks_Wrp .BalancesWrp table tbody td:nth-child(2){
+    width: 227px;
+  }
+  .Balances_InteractiveBlocks_Wrp .BalancesWrp table tbody td:nth-child(3){
+    width: 139px;
+  }
+}
+
+@media screen and (max-width: 767px){
   .ProfileWrp{
     padding: 30px 20px 40px 20px;
   }
@@ -234,19 +287,55 @@
   .BalancesWrp table tbody{
     padding-top: 19px;
   }
-  .BalancesWrp table tbody td{
+  .BalancesWrp table tbody td:not(:first-child){
     font-size: 14px;
+    transform: translateY(3px);
   }
   .BalancesWrp table tbody td:first-child{
     width: 36px;
   }
+  .BalancesWrp table tbody td:last-child span:last-child{
+    font-size: 12px;
+    font-weight: 700;
+  }
   .BalancesWrp table tbody td:nth-child(2){
     width: 84px;
+  }
+  .BalancesWrp table tbody td:nth-child(2) span:nth-child(2){
+    display: none;
   }
   .BalancesWrp table tbody td:nth-child(3){
     width: 118px;
   }
   .Balances_InteractiveBlocks_Wrp{
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .ProfileWrp{
+    padding: 20px 20px 30px;
+  }
+  .ProfileWrp .Stages > div:first-child{
+    margin-right: 16px;
+  }
+  .ProfileWrp .Stages > div:nth-child(2){
+    margin-right: 14px;
+  }
+  .ProfileWrp .Stages{
+    padding-top: 21px;
+  }
+  .Head{
+    margin-bottom: 21px;
+  }
+  .BalancesWrp{
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+  }
+  .BalancesWrp table tbody td:nth-child(2){
+    width: 57px;
+  }
+  .BalancesWrp table tbody td:nth-child(3){
+    width: 91px;
   }
 }

@@ -9,8 +9,15 @@
     margin-left: 38px;
   }
 }
+
 @media screen and (min-width: 1024px) and (max-width: 1230px){
   .ChartComponentWrp{
     align-self: center;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .ChartComponentWrp{
+    margin: 0;
   }
 }
