@@ -4,16 +4,16 @@ import classes from './Toolbar.css';
 import NavigationItems from '../NavigationItems';
 import HeaderTools from '../../HeaderTools';
 
-const toolbar = (props) => (
-    <header className={classes.Toolbar}>
-        <div className={classes.Logo}>
-          <Logo />
-        </div>
-        <nav className={classes.DesktopOnly}>
-          <NavigationItems />
-        </nav>
-        <HeaderTools />
-    </header>
+const toolbar = () => (
+  <header className={classes.Toolbar}>
+    <div className={classes.Logo}>
+      <Logo />
+    </div>
+    <nav className={classes.DesktopOnly}>
+      <NavigationItems />
+    </nav>
+    <HeaderTools />
+  </header>
 );
 
 export default toolbar;

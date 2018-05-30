@@ -67,6 +67,11 @@ class Faq extends Component {
             navClass="FAQNavBtn"
             items={this.state.sections}
             checkItem={this.selectSection}
+            mobileContent={<FaqContent
+              questionClass="FAQQuestionWrp"
+              questions={questions}
+              showAnswer={this.showAnswer}
+            />}
           />
           <FaqContent
             questionClass="FAQQuestionWrp"

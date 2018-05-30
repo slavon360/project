@@ -4,37 +4,38 @@ import Button from '../UI/Button';
 import Input from '../UI/Input';
 import * as actionTypes from '../../actions/actionTypes';
 import classes from './BuySellComponent.css';
+import checkedIcon from '../../../assets/images/icons/checked.png';
+import switchIcon from '../../../assets/images/icons/switch.png';
 
 const buySellComponent = (props) => {
-  const currenciesBtns = props.coins.map((coin) => {
-    return (
-      <div key={coin.name} className={classes.CoinWrp}>
-        <Button
-          clicked={() => { props.setCurrency(coin.name); }}
-          elementConfig={{ type: 'button' }}
-          btnClasses={classNames('BtnCoin', {'Checked': coin.checked, 'Unchecked': !coin.checked}).split(' ')}
-        >
-          <img alt={coin.name} src={require(`../../../assets/images/icons/${coin.name}.png`)}/>
-          <span>{coin.name}</span>
-          <div className={classes.Checked}>
-            <img alt="checked" src={require('../../../assets/images/icons/checked.png')} />
-          </div>
-        </Button>
-      </div>
-    );
-  });
+  const currenciesBtns = props.coins.map(coin => (
+    <div key={coin.name} className={classes.CoinWrp}>
+      <Button
+        clicked={() => { props.setCurrency(coin.name); }}
+        elementConfig={{ type: 'button' }}
+        btnClasses={classNames('BtnCoin', { Checked: coin.checked, Unchecked: !coin.checked }).split(' ')}
+      >
+        <img alt={coin.name} src={require(`../../../assets/images/icons/${coin.name}.png`)}/>
+        <span>{coin.name}</span>
+        <div className={classes.Checked}>
+          <img alt="checked" src={checkedIcon} />
+        </div>
+      </Button>
+    </div>
+  ),
+  );
 
   return (
     <div className={classes.BuySellComponentWrp}>
       <div className={classes.BuySellTabsWrp}>
         <Button
-          btnClasses={classNames('BuyTab', {'BuyTabActive': props.buy}).split(' ')}
+          btnClasses={classNames('BuyTab', { BuyTabActive: props.buy }).split(' ')}
           clicked={() => { props.buySellSwitcher(actionTypes.BUY); }}
         >
           BUY
         </Button>
         <Button
-          btnClasses={classNames('SellTab', {'SellTabActive': !props.buy}).split(' ')}
+          btnClasses={classNames('SellTab', { SellTabActive: !props.buy }).split(' ')}
           clicked={() => { props.buySellSwitcher(actionTypes.SELL); }}
         >
           SELL
@@ -55,7 +56,7 @@ const buySellComponent = (props) => {
         </div>
         <div className={classes.InputsWrp}>
           <Input
-            wrpClasses={classNames('AmountWrp', {'AmountWrpRight': props.switched, 'AmountWrpLeft': !props.switched}).split(' ')}
+            wrpClasses={classNames('AmountWrp', { AmountWrpRight: props.switched, AmountWrpLeft: !props.switched }).split(' ')}
             labelClasses={['AmountLabel']}
             inputClasses={['InputBuySell']}
             elementConfig={{ type: 'text', placeholder: '0.00', label: 'USD' }}
@@ -65,10 +66,10 @@ const buySellComponent = (props) => {
             clicked={props.currenciesPlaceSwitcher}
             elementConfig={{ type: 'button' }}
           >
-            <img alt="switch" src={require(`../../../assets/images/icons/switch.png`)} />
+            <img alt="switch" src={switchIcon} />
           </Button>
           <Input
-            wrpClasses={classNames('AmountWrp', {'AmountWrpRight': !props.switched, 'AmountWrpLeft': props.switched}).split(' ')}
+            wrpClasses={classNames('AmountWrp', { AmountWrpRight: !props.switched, AmountWrpLeft: props.switched }).split(' ')}
             labelClasses={['AmountLabel']}
             inputClasses={['InputBuySell']}
             elementConfig={{ type: 'text', placeholder: '0.00', label: props.selectedCrypt.name }}
@@ -79,7 +80,7 @@ const buySellComponent = (props) => {
         </div>
         <div className={classes.BuyBtnWrp}>
           <Button
-            elementConfig={{ type: 'submit', 'before-content': (props.buy ? 'Buy ' : 'Sell ') + props.selectedCrypt.name}}
+            elementConfig={{ type: 'submit', 'before-content': (props.buy ? 'Buy ' : 'Sell ') + props.selectedCrypt.name }}
             btnClasses={['BuyBtn']}
           >
             {`${props.buy ? 'Buy' : 'Sell'} ${props.selectedCrypt.name}`}
@@ -88,6 +89,6 @@ const buySellComponent = (props) => {
       </form>
     </div>
   );
-}
+};
 
 export default buySellComponent;

@@ -37,6 +37,7 @@
   transform: rotate(90deg);
 }
 .FAQQuestionWrp .Title{
+  outline: none;
   font-size: 16px;
   color: #41424e;
   font-weight: 700;
@@ -70,5 +71,25 @@
   .FaqContentWrp{
     width: 434px;
     padding: 40px 37px 171px 29px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .FaqContentWrp{
+    display: none;
+  }
+  .FAQQuestionWrp .Icon{
+    margin-right: 9px;
+  }
+  .FAQQuestionWrp .Title{
+    font-size: 14px;
+  }
+  .FAQQuestionWrp .Answer{
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 7px;
+  }
+  .FAQQuestionWrp.Active{
+    height: 131px;
   }
 }

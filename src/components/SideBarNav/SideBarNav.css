@@ -5,6 +5,7 @@
   vertical-align: top;
 }
 .FAQNavBtn{
+  outline: none;
   height: 80px;
   padding: 30px 0 34px 39px;
   font-size: 16px;
@@ -15,6 +16,7 @@
   box-sizing: border-box;
   text-align: left;
   cursor: pointer;
+  position: relative;
 }
 .FAQNavBtn.Active, .FAQNavBtn.Inactive:hover{
   color: #fefeff;
@@ -39,7 +41,13 @@
 .VerificationNavBtn:hover, .VerificationNavBtn.Active{
   border-color: #d092c9;
 }
-
+.MobileContent{
+  transition: all .6s;
+  height: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 @media screen and (min-width: 1366px) and (max-width: 1400px){
   .SideBarNavWrp{
     float: left;
@@ -72,6 +80,42 @@
     margin: 0 7px 0 0;
     padding: 12px 0 0 10px;
     height: 60px;
+  }
+  .FAQNavBtn{
+    margin-bottom: 5px;
+    height: 60px;
+    font-size: 14px;
+    padding-top: 22px;
+    padding-left: 19px;
+    position: relative;
+  }
+  .FAQNavBtn::before{
+    content: '';
+    width: 12px;
+    height: 17px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(90deg);
+  }
+  .FAQNavBtn.Active::before{
+    background: url('../../../assets/images/icons/next.svg') no-repeat;
+  }
+  .FAQNavBtn.Inactive::before{
+    background: url('../../../assets/images/icons/next-inactive.svg') no-repeat;
+  }
+  .FAQNavBtn.Active + .MobileContent{
+    height: 410px;
+  }
+  .FAQNavBtn.Active + .MobileContent > div{
+
+  }
+  .MobileContent, .MobileContent > div{
+    display: block;
+    width: 100%;
+  }
+  .MobileContent > div{
+    padding: 22px 28px 35px 20px;
   }
 }
 
