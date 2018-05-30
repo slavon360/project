@@ -43,3 +43,9 @@
   transform: translateY(-2px);
   border-radius: 3px;
 }
+
+@media screen and (max-width: 359px){
+  .Mail{
+    margin-bottom: 18px;
+  }
+}

@@ -33,7 +33,7 @@
 
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px){
+@media screen and (max-width: 767px){
   .UserStageWrp .Number{
     margin: 10px 10px 0 0;
     line-height: 1.65;
@@ -48,11 +48,25 @@
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 413px){
+@media screen and (max-width: 413px){
   .UserStageWrp .Number{
     margin-right: 4px;
   }
   .UserStageWrp .RightSide .Status{
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .UserStageWrp .RightSide .Title{
+    font-size: 12px;
+  }
+  .UserStageWrp .RightSide .Status{
+    font-size: 8px;
+    padding-top: 2px;
+    font-weight: 700;
+  }
+  .UserStageWrp .RightSide{
+    padding-top: 4px;
   }
 }

@@ -92,8 +92,8 @@
   .CopyDepositAddressWrp{
     text-align: right;
   }
-  .CopyDepositAddressWrp > button{
-    width: 140px;
+  .CopyDepositAddressWrp > button, .SubmitWithdrawAmountWrp > button{
+    width: 150px;
   }
 }
 
@@ -108,7 +108,17 @@
     text-align: center;
     padding-top: 41px;
   }
-  .SubmitWithdrawAmountWrp > button{
+  .SubmitWithdrawAmountWrp > button, .CopyDepositAddressWrp > button{
     width: 140px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .RightSide .WarningInfo{
+    margin-bottom: 14px;
+  }
+  .InputsBlockHead{
+    margin-bottom: 20px;
   }
 }

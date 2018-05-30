@@ -252,3 +252,32 @@
     width: 32.8%;
   }
 }
+
+@media screen and (max-width: 359px){
+  .BalancesWrp{
+    padding: 30px 20px;
+  }
+  .BalancesHead h2{
+    font-size: 14px;
+  }
+  .CurrencyTitle img{
+    width: 20px;
+    height: 20px;
+    margin-right: 11px;
+  }
+  .BalanceCurrencyWrp{
+    font-size: 12px;
+  }
+  .Balances .Head .Currency, .CurrencyTitle{
+    width: 30.4%;
+  }
+  .Balances .Head .Balance, .BalanceValueWrp{
+    width: 32.1%;
+  }
+  .BalanceValueWrp > div:first-child{
+    font-size: 12px;
+  }
+  .BalanceValueWrp .FiatWrp{
+    font-size: 10px;
+  }
+}

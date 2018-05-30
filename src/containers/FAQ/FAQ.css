@@ -108,12 +108,35 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 414px) {
+
+@media screen and (max-width: 413px) {
   .FaqWrp{
-    padding: 30px 20px 40px;
+    padding: 40px 20px 40px;
   }
   .FaqWrp .Title{
     font-size: 30px;
     margin-bottom: 18px;
+  }
+  .FaqHead{
+    display: flex;
+    justify-content: space-between;
+  }
+  .FaqHead .HaveQuestion{
+    align-self: flex-end;
+  }
+  .FaqHead .Submit{
+    width: 140px;
+  }
+  .FaqHead .Submit > a{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .FaqWrp{
+    padding: 29px 0 27px;
+  }
+  .FaqHead{
+    padding: 0 20px;
   }
 }

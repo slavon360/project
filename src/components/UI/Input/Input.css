@@ -262,3 +262,9 @@
     font-size: 12px !important;
   }
 }
+
+@media screen and (max-width: 359px){
+  .DepositAddress label{
+    margin-bottom: 10px;
+  }
+}

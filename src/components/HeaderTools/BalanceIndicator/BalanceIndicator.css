@@ -20,3 +20,9 @@
     margin-right: 10px;
   }
 }
+
+@media screen and (max-width: 767px){
+  .BalanceIndicatorWrp{
+    display: none;
+  }
+}

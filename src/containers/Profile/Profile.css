@@ -339,3 +339,32 @@
     width: 91px;
   }
 }
+
+@media screen and (max-width: 359px){
+  .Head{
+    margin-bottom: 20px;
+  }
+  .BalancesWrp{
+    padding: 20px 20px 25px;
+  }
+  .BalancesWrp table thead th:last-child{
+    font-size: 14px;
+  }
+  .BalancesWrp table tbody td img{
+    width: 20px;
+    height: 20px;
+  }
+  .BalancesWrp table tbody td:not(:first-child){
+    font-size: 12px;
+    transform: translateY(1px);
+  }
+  .BalancesWrp table tbody td:last-child span:last-child{
+    font-size: 10px;
+  }
+  .BalancesWrp table tbody td:nth-child(2){
+    width: 47px;
+  }
+  .BalancesWrp table tbody td:nth-child(3){
+    width: 75px;
+  }
+}

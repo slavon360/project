@@ -93,3 +93,9 @@
     height: 131px;
   }
 }
+
+@media screen and (max-width: 413px){
+  .FAQQuestionWrp.Active{
+    height: 155px;
+  }
+}

@@ -206,3 +206,11 @@
     transform: translate(-15px, 4px);
   }
 }
+
+@media screen and (max-width: 359px){
+  .TableWrp{
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

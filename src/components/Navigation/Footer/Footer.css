@@ -114,7 +114,7 @@
   }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 413px){
   .Footer .Word{
     padding-right: 21px;
   }
@@ -126,5 +126,20 @@
   }
   .Footer .TradingVolume > span:first-child{
     padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .Footer{
+    font-size: 12px;
+  }
+  .Footer .TradingVolume{
+    font-size: 10px;
+  }
+  .Footer .Word{
+    padding-right: 18px;
+  }
+  .Footer .TradingVolume > span:first-child{
+    padding-left: 18px;
   }
 }
