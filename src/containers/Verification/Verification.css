@@ -206,3 +206,18 @@
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 359px){
+  .VerificationWrp{
+    padding: 38px 21px 32px;
+  }
+  .Note .Head .NoteTitle{
+    font-size: 14px;
+  }
+  .Note .Text{
+    line-height: 18px;
+  }
+  .NavbarSection > div:nth-child(2) > div:nth-child(3) .NavBtn > div:first-child{
+    margin-right: 10px;
+  }
+}

@@ -109,11 +109,11 @@
 }
 .InputRequestWrp input:hover,
 .InputRequestWrp input:focus{
-  border-bottom: 4px solid #d092c9 !important;
-  margin-bottom: 45px;
+  border-bottom: 2px solid #d092c9 !important;
+  margin-bottom: 47px;
 }
 .InputRequestWrp textarea:hover, .InputRequestWrp textarea:focus{
-  border-bottom: 4px solid #d092c9 !important;
+  border-bottom: 2px solid #d092c9 !important;
 }
 .InputRequestWrp input, .InputRequestWrp textarea{
   width: 100%;
@@ -236,14 +236,18 @@
     font-size: 14px !important;
   }
 }
-
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 519px){
+  .InputRequestWrp textarea::-webkit-input-placeholder{
+    padding-top: 45px;
+  }
+}
+@media screen and (max-width: 414px){
   .InputRequestWrp input{
     font-size: 12px;
     margin-bottom: 30px;
   }
   .InputRequestWrp input:hover, .InputRequestWrp input:focus{
-    margin-bottom: 27px;
+    margin-bottom: 29px;
   }
   .InputRequestWrp label{
     font-size: 12px;
@@ -266,5 +270,11 @@
 @media screen and (max-width: 359px){
   .DepositAddress label{
     margin-bottom: 10px;
+  }
+  .AmountLabel{
+    transform: translateY(3px);
+  }
+  .NationalityWrp .SecondLabel{
+    font-size: 10px;
   }
 }

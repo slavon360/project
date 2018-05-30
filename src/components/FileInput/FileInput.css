@@ -59,7 +59,7 @@
   }
 }
 
-@media screen and (min-width: 414px) and (max-width: 767px){
+@media screen and (max-width: 767px){
   .PhotoAddress, .SertificatePhoto{
     padding-top: 21px;
     height: 100px;
@@ -91,5 +91,19 @@
   }
   .FileInputRequestWrp .Sentence > span:nth-child(2){
     display: none;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .FileInputRequestWrp, .PhotoAddress, .SertificatePhoto{
+    padding-top: 9px;
+    margin-bottom: 20px;
+  }
+  .PhotoAddress, .SertificatePhoto, .FileInputRequestWrp, .FileInputRequestWrp input{
+    height: 80px;
+  }
+  .FileInputRequestWrp .Sentence, .PhotoAddress .Sentence, .SertificatePhoto .Sentence{
+    font-size: 12px;
+    margin-top: -5px;
   }
 }

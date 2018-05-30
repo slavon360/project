@@ -180,10 +180,33 @@
   .Arrow{
     top: 13px;
   }
+  .InputsContent > div:nth-child(2) input:hover,
+  .InputsContent > div:nth-child(2) input:focus,
+  .InputsContent .NationalityWrp input:hover,
+  .InputsContent .NationalityWrp input:focus{
+    margin-bottom: 29px;
+  }
+  .InputsContent > div:nth-child(9) input:hover,
+  .InputsContent > div:nth-child(9) input:focus{
+    margin-bottom: 59px;
+  }
 }
 
 @media screen and (max-width: 414px){
   .InputsContent .SertificateWrp > div:nth-child(4){
     width: 130px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .UserDetailsWrp{
+    padding: 0;
+    background-color: transparent;
+  }
+  .InputsContent input{
+    background-color: transparent;
+  }
+  .InputsContent .SertificateWrp > div:nth-child(4){
+    width: 105px;
   }
 }

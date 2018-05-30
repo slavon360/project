@@ -70,3 +70,13 @@
     margin-bottom: 50px;
   }
 }
+
+@media screen and (max-width: 359px){
+  .AddressWrp{
+    padding: 0;
+    background-color: transparent;
+  }
+  .InputsContent input{
+    background-color: transparent;
+  }
+}

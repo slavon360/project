@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 767px) {
   .SendRequestWrp{
     padding: 30px 20px;
   }
@@ -52,5 +52,18 @@
 @media screen and (max-width: 413px){
   .SendRequestWrp{
     padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .SendRequestWrp{
+    padding: 37px 20px 41px;
+  }
+  .SendRequestWrp .Title{
+    font-size: 18px;
+    margin-bottom: 23px;
+  }
+  .RequestContainer{
+    padding: 30px 20px 21px;
   }
 }

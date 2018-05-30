@@ -305,4 +305,17 @@
   .DepositBtn{
     margin-right: 10px;
   }
+  .BuyTab, .SellTab{
+    font-size: 14px;
+  }
+  .BtnCoin img{
+    width: 24px;
+    height: 24px;
+  }
+  .BtnCoin span{
+    padding-left: 6px;
+  }
+  .DropdownButtonPeriod, .BtnPeriod{
+    width: 60px;
+  }
 }

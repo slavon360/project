@@ -151,3 +151,17 @@
     margin-top: 30px;
   }
 }
+
+@media screen and (max-width: 359px){
+  .BuySellComponentWrp{
+    width: 280px;
+  }
+  .Checked{
+    width: 24px;
+    height: 24px;
+    padding: 1px 3px 10px;
+  }
+  .Checked img{
+    transform: scale(.6);
+  }
+}
