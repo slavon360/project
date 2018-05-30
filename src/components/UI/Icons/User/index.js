@@ -2,9 +2,6 @@ import React from 'react';
 
 const userIcon = (props) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    version="1.1"
-    id="UserIcon"
     x="0px"
     y="0px"
     viewBox="0 0 287.7 377.1"

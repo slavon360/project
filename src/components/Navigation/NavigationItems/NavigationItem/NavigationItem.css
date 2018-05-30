@@ -5,6 +5,7 @@
   display: inline-block;
   list-style: none;
   margin-right: 63px;
+  position: relative;
 }
 .NavigationItem:hover{
   color: #922c88;
@@ -16,7 +17,9 @@
 .active{
   color: #922c88 !important;
 }
-
+.NavigationItem.PhoneAndTablet, .NavigationItem.TabletOnly{
+  display: none;
+}
 @media screen and (min-width: 1501px) and (max-width: 1590px){
   .NavigationItem{
     margin-right: 50px
@@ -35,5 +38,67 @@
 @media screen and (min-width: 1024px) and (max-width: 1365px){
   .NavigationItem{
     margin-right: 2vw;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .NavigationItem{
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: 700;
+    height: 51px;
+    padding-left: 70px;
+  }
+  .NavigationItem > a{
+    display: block;
+    height: 100%;
+    line-height: 3.5;
+  }
+  .NavigationItem .active{
+    color: #fff !important;
+  }
+  .NavigationItem:hover{
+    background-color: #6e2572;
+    box-shadow: 0 0 20px 0 #555;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .NavigationItem{
+    padding-left: 78px;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-height: 650px){
+  .NavigationItem.TabletOnly{
+    display: block;
+  }
+  .NavigationItem.TabletOnly::before, .NavigationItem.PhoneAndTablet::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 40%;
+    left: 30px;
+  }
+  .NavigationItem:nth-child(6){
+    margin-bottom: 15vh;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-height: 700px){
+  .NavigationItem.PhoneAndTablet{
+    display: block;
+  }
+  .NavigationItem.TabletOnly::before, .NavigationItem.PhoneAndTablet::before{
+    left: 46px;
+  }
+  .NavigationItem:nth-child(6){
+    margin-bottom: 50px;
   }
 }

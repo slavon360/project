@@ -43,6 +43,9 @@
   .DesktopOnly{
     display: none;
   }
+  .Toolbar > div:first-child{
+    margin-right: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -55,5 +58,11 @@
 @media screen and (max-width: 767px){
   .Toolbar{
     padding: 10px 20px 18px 20px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .Logo{
+    margin-right: 15px;
   }
 }

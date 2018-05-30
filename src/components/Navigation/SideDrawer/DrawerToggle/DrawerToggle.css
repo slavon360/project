@@ -1,0 +1,18 @@
+.DrawerToggle{
+  display: inline-block;
+  width: 16px;
+}
+.DrawerToggle > div{
+  width: 100%;
+  height: 2px;
+  background-color: #922c88;
+}
+.DrawerToggle > div:not(:last-child){
+  margin-bottom: 3px;
+}
+
+@media screen and (min-width: 1024px){
+  .DrawerToggle{
+    display: none;
+  }
+}

@@ -51,6 +51,10 @@
   transform: translateY(2px);
 }
 
+.BalanceIndicator{
+  display: inline-block;
+}
+
 @media screen and (min-width: 1366px) and (max-width: 1590px){
   .Help{
     margin-right: 22px;
@@ -63,5 +67,7 @@
 }
 
 @media screen and (max-width: 767px) {
-
+  .BalanceIndicator{
+    display: none;
+  }
 }
