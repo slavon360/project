@@ -47,6 +47,10 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: none;
+}
+.MobileContent > div{
+  width: 100%;
 }
 @media screen and (min-width: 1366px) and (max-width: 1400px){
   .SideBarNavWrp{
@@ -103,6 +107,9 @@
   }
   .FAQNavBtn.Inactive::before{
     background: url('../../../assets/images/icons/next-inactive.svg') no-repeat;
+  }
+  .MobileContent{
+    display: block;
   }
   .FAQNavBtn.Active + .MobileContent{
     height: 410px;
