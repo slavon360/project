@@ -114,10 +114,41 @@ class BuySell extends Component {
         { title: 'week', type: 'day', value: '7', checked: false },
       ],
     },
+    currency: {
+      fsym: 'ETH',
+      tsym: 'AUD',
+      fsymTitle: 'Ethereum',
+    },
   }
 
   componentDidMount() {
+    this.setSelectedPeriod();
     this.props.onFetchCoins();
+  }
+
+  whichPeriodTime = (selectedPeriodTitle) => {
+    switch (selectedPeriodTitle) {
+      case 'day':
+        return this.props.onFetchHourlyData(24, 1, this.state.currency);
+      case 'week':
+        return this.props.onFetchWeekData(7, 1, this.state.currency);
+      default: return this.props.onFetchHourlyData(24, 1, this.state.currency);
+    }
+  }
+
+  setSelectedPeriod = () => {
+    const selectedPeriod = this.state.chartConfig.periods.find((period) => {
+      if (!period.drpItems) {
+        return period.checked;
+      }
+      return period.drpItems.find(drp => drp.checked);
+    });
+    const updChartConfig = { ...this.state.chartConfig };
+    updChartConfig.selectedPeriod = selectedPeriod;
+    this.setState({ chartConfig: updChartConfig }, () => {
+      const title = this.state.chartConfig.selectedPeriod.title;
+      this.whichPeriodTime(title);
+    });
   }
 
   buySellSwitcher = (value) => {
@@ -147,6 +178,7 @@ class BuySell extends Component {
     });
     this.setState({ chartConfig: updChartConfig });
   }
+
   hidePeriodDropdown = (title) => {
     const updChartConfig = { ...this.state.chartConfig };
     updChartConfig.periods = updChartConfig.periods.map((period) => {
@@ -165,21 +197,24 @@ class BuySell extends Component {
       const updPeriod = { ...period };
       if (period.value === selectedPeriod.value && period.type === selectedPeriod.type) {
         updPeriod.checked = true;
+        updChartConfig.selectedPeriod = updPeriod;
       } else {
         if (!period.drpItems) {
           updPeriod.checked = false;
         }
         if (period.drpItems) {
-          updPeriod.drpItems = period.drpItems.map((p) => {
-            const upd = { ...p };
-            upd.checked = false;
-            return upd;
-          });
+          updPeriod.drpItems = period.drpItems.map(p => ({
+            ...p,
+            checked: false,
+          }));
         }
       }
       return updPeriod;
     });
-    this.setState({ chartConfig: updChartConfig });
+    this.setState({ chartConfig: updChartConfig }, () => {
+      const title = this.state.chartConfig.selectedPeriod.title;
+      this.whichPeriodTime(title);
+    });
   }
 
   setPeriodDpDwn = (selectedPeriod) => {
@@ -201,6 +236,7 @@ class BuySell extends Component {
     });
     this.setState({ chartConfig: updChartConfig });
   }
+
   render() {
     let content = this.props.error ? 'Cannot load data' : 'loading...';
     if (this.props.coins) {
@@ -216,7 +252,9 @@ class BuySell extends Component {
             currenciesPlaceSwitcher={this.currenciesPlaceSwitcher}
           />
           <ChartComponent
+            chartData={this.props.chartData}
             chartConfig={this.state.chartConfig}
+            currency={this.state.currency}
             hideShowPeriodDropdown={this.hideShowPeriodDropdown}
             hidePeriodDropdown={this.hidePeriodDropdown}
             setPeriodBtn={this.setPeriodBtn}
@@ -244,12 +282,19 @@ class BuySell extends Component {
   }
 }
 const mapStateToProps = state => ({
+  chartData: state.chart.chartData,
   coins: state.currencies.coins,
   error: state.currencies.error,
   selectedCrypt: state.currencies.selectedCrypt,
 });
 
 const mapDispatchToProps = dispatch => ({
+  onFetchHourlyData: (limit, aggregate, currency) => {
+    dispatch(actions.fetchHourlyData(limit, aggregate, currency));
+  },
+  onFetchWeekData: (limit, aggregate, currency) => {
+    dispatch(actions.fetchWeekData(limit, aggregate, currency));
+  },
   onFetchCoins: () => dispatch(actions.fetchCoinsPrices()),
   onSetCurrency: currencyName => dispatch(actions.setCurrency(currencyName)),
 });

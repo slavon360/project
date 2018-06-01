@@ -31,13 +31,13 @@
   }
 }
 
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1919px){
   .BuySellWrp{
     padding: 50px 40px 80px;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1230px){
+@media screen and (max-width: 1365px){
   .BuySellWrp{
     padding: 40px 0 60px;
     display: flex;
@@ -45,7 +45,7 @@
     justify-content: center;
   }
   .History{
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .TableWrp{
     max-width: 580px;
@@ -74,6 +74,9 @@
     padding: 30px 20px 40px;
     display: flex;
     flex-direction: column;
+  }
+  .TransactionsWrp{
+    margin-top: 90px;
   }
   .History{
     font-size: 16px;
@@ -140,6 +143,9 @@
   }
   .TableWrp table tbody td{
     font-size: 12px;
+  }
+  .TransactionsWrp{
+    margin-top: 120px;
   }
 }
 

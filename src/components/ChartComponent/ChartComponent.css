@@ -1,17 +1,38 @@
 .ChartComponentWrp{
   display: inline-block;
   vertical-align: top;
-  margin-left: 57px;
+  float: right;
+}
+.ChartPeriodWrp{
+  margin-bottom: 10px;
+}
+.ChartContent{
+  width: 940px;
+  height: 560px;
+}
+.ChartContent > div{
+  background-color: #fff;
+}
+.Header{
+  margin-bottom: 39px;
+}
+.Header > div{
+  display: inline-block;
 }
 
-@media screen and (max-width: 1366px){
-  .ChartComponentWrp{
-    margin-left: 38px;
+@media screen and (max-width: 1919px){
+  .ChartContent{
+    width: 668px;
+    height: 400px;
+  }
+  .Header{
+    margin-bottom: 21px;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1230px){
+@media screen and (max-width: 1365px){
   .ChartComponentWrp{
+    float: none;
     align-self: center;
   }
 }
@@ -19,5 +40,26 @@
 @media screen and (max-width: 767px){
   .ChartComponentWrp{
     margin: 0;
+  }
+  .ChartContent{
+    width: 374px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .ChartContent{
+    width: 320px;
+    height: 280px;
+  }
+  .Header{
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .ChartContent{
+    width: 280px;
+    height: 260px;
   }
 }

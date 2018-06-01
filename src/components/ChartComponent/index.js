@@ -1,7 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 import Dropdown from '../UI/Dropdown';
+import ChartHeader from '../ChartHeader';
 import Button from '../UI/Button';
+import Chart from '../Chart';
 import classes from './ChartComponent.css';
 
 const chartComponent = (props) => {
@@ -32,7 +34,13 @@ const chartComponent = (props) => {
     </Button>)));
   return (
     <div className={classes.ChartComponentWrp}>
+      <div className={classes.Header}>
+        <ChartHeader currency={props.currency} />
+      </div>
       <div className={classes.ChartPeriodWrp}>{periods}</div>
+      <div className={classes.ChartContent}>
+        {props.chartData ? <Chart data={props.chartData}/> : 'loading...'}
+      </div>
     </div>
   );
 };

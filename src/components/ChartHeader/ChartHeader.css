@@ -1,0 +1,174 @@
+.CurrenciesShort{
+  margin-right: 81px;
+}
+.CurrenciesShort .Top{
+  color: #922c88;
+  font-weight: 700;
+}
+.CurrenciesShort .Top span:first-child{
+  font-size: 18px;
+}
+.CurrenciesShort .Top span:nth-child(2){
+  font-size: 12px;
+}
+.CurrenciesShort .Bottom{
+  color: #41424e;
+  font-size: 16px;
+  font-weight: 700;
+}
+.LastPrice, .High{
+  margin-right: 74px;
+}
+.Change{
+  margin-right: 73px;
+}
+.LastPrice .Top, .Change .Top, .High .Top, .Low .Top{
+  font-size: 12px;
+  color: #83878c;
+}
+.LastPrice .Bottom, .Change .Bottom, .High .Bottom, .Low .Bottom{
+  font-size: 14px;
+}
+.LastPrice .Bottom span:first-child{
+  color: #77d021;
+  padding-right: 19px;
+}
+.Change .Bottom span:first-child{
+  padding-right: 18px;
+}
+.Change .Bottom span:first-child, .Change .Bottom span:nth-child(2){
+  color: #e54f64;
+}
+.LastPrice .Bottom span:nth-child(2), .High .Bottom, .Low .Bottom{
+  color: #41424e;
+}
+.LastPrice{
+  margin-right: 74px;
+}
+
+@media screen and (max-width:1919px){
+  .CurrenciesShort{
+    margin-right: 82px;
+    transform: translateY(-20px);
+  }
+  .CurrenciesShort .Top{
+    font-size: 18px;
+  }
+  .CurrenciesShort .Top span:first-child{
+    font-size: 24px;
+  }
+  .CurrenciesShort .Top span:nth-child(2){
+    font-size: 18px;
+  }
+  .LastPrice .Bottom span:nth-child(2), .Change .Bottom span:nth-child(2){
+    display: block;
+  }
+  .LastPrice, .Change, .High, .Low{
+    padding-top: 15px;
+  }
+  .LastPrice{
+    margin-right: 64px;
+  }
+  .Change{
+    margin-right: 56px;
+  }
+  .High{
+    margin-right: 65px;
+  }
+  .High, .Low{
+    vertical-align: top;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .CurrenciesShort .Top span:first-child{
+    font-size: 18px;
+  }
+  .CurrenciesShort .Top span:nth-child(2){
+    font-size: 16px;
+  }
+  .CurrenciesShort .Bottom{
+    font-size: 14px;
+  }
+  .CurrenciesShort{
+    transform: translateY(-10px);
+    margin-right: 34px;
+  }
+  .LastPrice .Top, .Change .Top, .High .Top, .Low .Top{
+    font-size: 10px;
+  }
+  .LastPrice, .Change, .High, .Low{
+    padding-top: 0;
+  }
+  .LastPrice .Bottom, .Change .Bottom, .High .Bottom, .Low .Bottom{
+    font-size: 12px;
+  }
+  .LastPrice .Bottom span:first-child, .Change .Bottom span:first-child{
+    padding-right: 0;
+  }
+  .LastPrice .Bottom span:nth-child(2), .Change .Bottom span:nth-child(2){
+    font-size: 10px;
+  }
+  .LastPrice{
+    margin-right: 22px;
+  }
+  .Change{
+    margin-right: 17px;
+  }
+  .High{
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .CurrenciesShort{
+    margin-right: 27px;
+    transform: translateY(-5px);
+  }
+  .CurrenciesShort .Top span:first-child{
+    font-size: 16px;
+  }
+  .CurrenciesShort .Top span:nth-child(2){
+    font-size: 14px;
+  }
+  .CurrenciesShort .Bottom{
+    font-size: 12px;
+  }
+  .LastPrice{
+    margin-right: 18px;
+  }
+  .Change{
+    margin-right: 19px;
+  }
+  .High{
+    margin-right: 17px;
+  }
+  .LastPrice .Top, .Change .Top, .High .Top, .Low .Top{
+    font-size: 8px;
+  }
+  .LastPrice .Bottom, .Change .Bottom, .High .Bottom, .Low .Bottom{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .CurrenciesShort{
+    margin-right: 11px;
+    transform: translateY(-5px);
+  }
+  .CurrenciesShort .Top span:first-child{
+    font-size: 14px;
+  }
+  .CurrenciesShort .Top span:nth-child(2){
+    font-size: 12px;
+  }
+  .LastPrice{
+    margin-right: 13px;
+  }
+  .Change{
+    margin-right: 14px;
+  }
+  .High{
+    margin-right: 12px;
+  }
+}

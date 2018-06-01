@@ -81,10 +81,10 @@
 .DropdownButtonPeriod, .BtnPeriod{
   text-transform: capitalize;
   text-align: center;
-  padding: 8px 0 7px;
   font-size: 12px;
   background-color: #fff;
-  width: 123px;
+  height: 24px;
+  width: 120px;
   border-radius: 25px;
 }
 .BtnPeriod{

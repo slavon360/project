@@ -72,7 +72,7 @@
   margin: 40px 0 30px;
 }
 
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1919px){
   .BuySellComponentWrp{
     width: 580px;
   }
@@ -87,7 +87,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1230px){
+@media screen and (max-width: 1365px){
   .BuySellComponentWrp{
     align-self: center;
     margin-bottom: 48px;

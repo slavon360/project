@@ -10,3 +10,7 @@ export {
   changeInputsValue,
   copyAddress,
 } from './depositWithdraw';
+export {
+  fetchHourlyData,
+  fetchWeekData,
+} from './chart';
