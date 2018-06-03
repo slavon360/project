@@ -129,9 +129,9 @@ class BuySell extends Component {
   whichPeriodTime = (selectedPeriodTitle) => {
     switch (selectedPeriodTitle) {
       case 'day':
-        return this.props.onFetchHourlyData(24, 1, this.state.currency);
+        return this.props.onFetchHourlyData(220, 1, this.state.currency);
       case 'week':
-        return this.props.onFetchWeekData(7, 1, this.state.currency);
+        return this.props.onFetchWeekData(850, 1, this.state.currency);
       default: return this.props.onFetchHourlyData(24, 1, this.state.currency);
     }
   }
