@@ -39,7 +39,7 @@ const chartComponent = (props) => {
       </div>
       <div className={classes.ChartPeriodWrp}>{periods}</div>
       <div className={classes.ChartContent}>
-        {props.chartData ? <Chart data={props.chartData}/> : 'loading...'}
+        {props.chartData ? <Chart data={props.chartData} /> : 'loading...'}
       </div>
     </div>
   );

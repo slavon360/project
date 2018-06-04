@@ -5,7 +5,7 @@ import axios from '../requests/axios-chart';
 const addVolumeAndDateObj = (data) => {
   const updated = data.map(item => ({
     ...item,
-    volume: item.volumefrom,
+    volume: item.volumefrom || item.volume,
     date: new Date(item.time),
   }));
   return updated;
