@@ -7,22 +7,22 @@ import SideBarNav from './';
 const nav = { title: 'First title', checked: false, content: <div>First title content</div> };
 
 const navigationItemChecked = [
-  {...nav},
-  {...nav, content: <div>Second Title content</div>, title: 'Second title'},
-  {...nav, content: <div>Third Title content</div>, title: 'Third title', checked: true },
+  { ...nav },
+  { ...nav, content: <div>Second Title content</div>, title: 'Second title' },
+  { ...nav, content: <div>Third Title content</div>, title: 'Third title', checked: true },
 ];
 
 const navigationItemsUnchecked = [
-  {...nav},
-  {...nav, content: <div>Second Title content</div>, title: 'Second title'},
-  {...nav, content: <div>Third Title content</div>, title: 'Third title'},
+  { ...nav },
+  { ...nav, content: <div>Second Title content</div>, title: 'Second title' },
+  { ...nav, content: <div>Third Title content</div>, title: 'Third title' },
 ];
 
 const events = {
-  checkItem: action('checkItem')
+  checkItem: action('checkItem'),
 };
 const classes = {
-  navClass: 'FAQNavBtn'
+  navClass: 'FAQNavBtn',
 };
 
 storiesOf('SideBarNav', module)

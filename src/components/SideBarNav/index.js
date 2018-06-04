@@ -6,7 +6,7 @@ import classes from './SideBarNav.css';
 const cx = classNames.bind(classes);
 
 const sideBarNav = props => (<div className={classes.SideBarNavWrp}>
-    {props.items.map(nav => (<Fragment key={nav.title}>
+  {props.items.map(nav => (<Fragment key={nav.title}>
     <div
       role="button"
       tabIndex={0}
@@ -15,17 +15,20 @@ const sideBarNav = props => (<div className={classes.SideBarNavWrp}>
     >
       {nav.content}
     </div>
-      {props.mobileContent && <div className={classes.MobileContent}>
-        {props.mobileContent}</div>}
-    </Fragment>
-    ))}
-  </div>
+    {props.mobileContent && <div className={classes.MobileContent}>
+      {props.mobileContent}</div>}
+  </Fragment>
+  ))}
+</div>
 );
 
 export default sideBarNav;
 
 sideBarNav.propTypes = {
   navClass: PropTypes.string,
-  items: PropTypes.arrayOf(PropTypes.obj).isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape({
+    checked: PropTypes.bool,
+    title: PropTypes.string,
+  })).isRequired,
   checkItem: PropTypes.func,
 };

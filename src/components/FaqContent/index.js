@@ -29,7 +29,10 @@ faqContent.propTypes = {
   questionClass: PropTypes.string,
   questions: PropTypes.arrayOf(PropTypes.shape({
     checked: PropTypes.bool,
-    questionTitle: PropTypes.string,
+    questionTitle: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]),
     answer: PropTypes.string,
   })).isRequired,
   showAnswer: PropTypes.func,

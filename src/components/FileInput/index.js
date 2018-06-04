@@ -39,5 +39,5 @@ FileInput.propTypes = {
     clickableSentence: PropTypes.string,
     sentence: PropTypes.string,
   }),
-  wrpClasses: PropTypes.array
-}
+  wrpClasses: PropTypes.arrayOf(PropTypes.string),
+};

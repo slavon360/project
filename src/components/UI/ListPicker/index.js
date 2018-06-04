@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './ListPicker.css';
 
-const listPicker = props => (
-    <div className={classes.ListPickerWrp}></div>
-)
+const listPicker = () => (
+  <div className={classes.ListPickerWrp} />
+);
 
 export default listPicker;

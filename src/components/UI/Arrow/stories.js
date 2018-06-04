@@ -1,6 +1,6 @@
 import React from 'react';
-import Arrow from './';
 import { storiesOf } from '@storybook/react';
+import Arrow from './';
 
 storiesOf('UI Toolkit', module)
   .add('Arrow', () => (

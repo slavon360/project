@@ -41,5 +41,9 @@ export default interactiveBlock;
 interactiveBlock.propTypes = {
   wrpClass: PropTypes.string,
   header: PropTypes.string,
-  rows: PropTypes.arrayOf(PropTypes.obj).isRequired,
+  rows: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.shape({
+    type: PropTypes.string,
+    text: PropTypes.string,
+    icon: PropTypes.string,
+  }))).isRequired,
 };
