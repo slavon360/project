@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from './';
 import { storiesOf } from '@storybook/react';
+import Logo from './';
 
 storiesOf('UI Toolkit', module)
   .add('Logo', () => (

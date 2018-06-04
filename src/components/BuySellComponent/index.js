@@ -7,6 +7,19 @@ import classes from './BuySellComponent.css';
 import checkedIcon from '../../../assets/images/icons/checked.png';
 import switchIcon from '../../../assets/images/icons/switch.png';
 
+import bitcoin from '../../../assets/images/icons/BTC.png';
+import ethereum from '../../../assets/images/icons/ETH.png';
+
+const getImage = (icon) => {
+  switch (icon) {
+    case 'BTC':
+      return bitcoin;
+    case 'ETH':
+      return ethereum;
+    default: return bitcoin;
+  }
+};
+
 const buySellComponent = (props) => {
   const currenciesBtns = props.coins.map(coin => (
     <div key={coin.name} className={classes.CoinWrp}>
@@ -15,7 +28,7 @@ const buySellComponent = (props) => {
         elementConfig={{ type: 'button' }}
         btnClasses={classNames('BtnCoin', { Checked: coin.checked, Unchecked: !coin.checked }).split(' ')}
       >
-        <img alt={coin.name} src={require(`../../../assets/images/icons/${coin.name}.png`)}/>
+        <img alt={coin.name} src={getImage(coin.name)} />
         <span>{coin.name}</span>
         <div className={classes.Checked}>
           <img alt="checked" src={checkedIcon} />

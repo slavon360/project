@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './';
 import { storiesOf } from '@storybook/react';
+import Button from './';
 
 storiesOf('UI Toolkit', module)
   .add('Button', () => (

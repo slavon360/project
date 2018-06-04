@@ -30,6 +30,7 @@ class Verification extends Component {
     });
     this.setState({ navBtns: updNavBtns });
   }
+  hideShowDate = () => {}
   componentWillMount() {
     const date = this.state.dateData;
     const birth = this.state.userData['User details'].birth;
@@ -122,6 +123,7 @@ class Verification extends Component {
               days={this.state.days}
               years={this.state.years}
               userDetails={this.state.selectedSection}
+              hideShowDate={this.hideShowDate}
             />
           }
         </div>

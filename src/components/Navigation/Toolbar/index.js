@@ -5,19 +5,19 @@ import DrawerToggle from '../SideDrawer/DrawerToggle';
 import NavigationItems from '../NavigationItems';
 import HeaderTools from '../../HeaderTools';
 
-const toolbar = (props) => (
-    <header className={classes.Toolbar}>
-        <DrawerToggle
-          clicked={props.drawerToggleClicked}
-        />
-        <div className={classes.Logo}>
-          <Logo />
-        </div>
-        <nav className={classes.DesktopOnly}>
-          <NavigationItems />
-        </nav>
-        <HeaderTools />
-    </header>
+const toolbar = props => (
+  <header className={classes.Toolbar}>
+    <DrawerToggle
+      clicked={props.drawerToggleClicked}
+    />
+    <div className={classes.Logo}>
+      <Logo />
+    </div>
+    <nav className={classes.DesktopOnly}>
+      <NavigationItems />
+    </nav>
+    <HeaderTools />
+  </header>
 );
 
 export default toolbar;

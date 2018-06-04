@@ -59,7 +59,9 @@
   color: #41424e;
   width: 100%;
 }
-.DropdownUserContainer a{
+.DropdownUserContainer a, .DropdownUserContainer > button > span{
+  vertical-align: middle;
+  line-height: 3;
   display: block;
   color: inherit;
   text-decoration: none;
