@@ -74,6 +74,7 @@ input.propTypes = {
   labelClasses: PropTypes.arrayOf(PropTypes.string),
   wrpClasses: PropTypes.arrayOf(PropTypes.string),
   inputClasses: PropTypes.arrayOf(PropTypes.string),
+  elementType: PropTypes.string,
 };
 
 export default input;

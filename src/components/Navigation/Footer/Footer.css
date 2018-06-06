@@ -3,6 +3,7 @@
   padding: 21px 160px 27px 160px;
   font-size: 14px;
   color: #7b7495;
+  display: none;
 }
 .Bottom, .Top{
   display: flex;

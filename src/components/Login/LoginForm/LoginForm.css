@@ -1,0 +1,79 @@
+.LoginFormWrp{
+  width: 100%;
+  padding: 24.4vh 0 0 3.7vw;
+  box-sizing: border-box;
+}
+.LoginFormWrp > div:first-child > input{
+  margin-bottom: 70px;
+}
+.LoginFormWrp > div:first-child > input:hover, .LoginFormWrp > div:first-child > input:focus{
+  margin-bottom: 69px;
+}
+.LoginFormWrp > div:nth-child(2) > input{
+  margin-bottom: 60px;
+}
+.LoginFormWrp > div:nth-child(2) > input:hover, .LoginFormWrp > div:nth-child(2) > input:focus{
+  margin-bottom: 59px;
+}
+.LoginFormWrp .Footer{
+  display: flex;
+  justify-content: space-between;
+}
+.LoginFormWrp .Footer .Tip{
+  font-size: 12px;
+  color: #9e9fa3;
+}
+.LoginFormWrp .Footer .Tip a{
+  text-decoration: none;
+}
+.LoginFormWrp .Footer .Tip .Forgot a{
+  color: #9e9fa3;
+}
+.LoginFormWrp .Footer .Tip .Forgot a:hover{
+  color: #922c88;
+}
+.LoginFormWrp .Footer .Tip .NotOnBithela a{
+  display: inline-block;
+  color: #922c88;
+  position: relative;
+}
+.LoginFormWrp .Footer .Tip .NotOnBithela a::after{
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 1px;
+  background-color: #922c88;
+  width: 100%;
+  opacity: 0;
+}
+.LoginFormWrp .Footer .Tip .NotOnBithela a:hover:after{
+  opacity: 1;
+}
+
+@media screen and (max-width: 1919px){
+  .LoginFormWrp{
+    padding: 27.1vh 0 0 2.2vw
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .LoginFormWrp{
+    width: 336px;
+    display: inline-block;
+    text-align: left;
+    padding: 14vh 0 0 0;
+  }
+}
+
+@media screen and (max-height: 1140px){
+  .LoginFormWrp{
+    padding-top: 5vh;
+  }
+}
+
+@media screen and (max-height: 875px){
+  .LoginFormWrp{
+    padding-top: 2vh;
+  }
+}

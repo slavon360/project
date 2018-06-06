@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import Layout from './hoc/Layout';
+import Login from './containers/Login';
 import BuySell from './containers/BuySell';
 import Balances from './containers/Balances';
 import Deposit from './containers/Deposit';
@@ -17,6 +18,7 @@ class App extends Component {
       <div className="App">
         <Layout>
           <Switch>
+            <Route path="/login" component={Login} />
             <Route path="/buy-sell" component={BuySell} />
             <Route path="/balances" component={Balances} />
             <Route path="/deposit" component={Deposit} />

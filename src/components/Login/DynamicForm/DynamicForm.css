@@ -1,0 +1,67 @@
+.DynamicFormWrp{
+  background-color: #fff;
+  display: inline-block;
+  padding: 90px 150px 87px 60px;
+  box-sizing: border-box;
+  width: 39.6%;
+  position: relative;
+  height: 100%;
+}
+.Title{
+  font-size: 24px;
+  color: #392c70;
+  font-weight: 700;
+  font-style: italic;
+}
+.Footer{
+  position: absolute;
+  bottom: 87px;
+  margin: 0 auto;
+  font-size: 12px;
+  width: 215px;
+  left: 0;
+  right: 0;
+  color: #9e9fa3;
+}
+
+@media screen and (max-width: 1919px){
+  .DynamicFormWrp{
+    width: 39.2%;
+    padding: 7.8vh 5.1vw 0 2.85vw;
+  }
+  .Footer{
+    bottom: 57px;
+  }
+}
+
+@media screen and (max-width: 1365px){
+  .DynamicFormWrp{
+    width: 44.82%;
+    padding-left: 3.13vw;
+    padding-right: 6.05vw;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .DynamicFormWrp{
+    display: block;
+    width: 100%;
+    height: 52%;
+    padding: 4.1vh;
+    padding-left: 6.75vw;
+    padding-right: 6.75vw;
+    text-align: center;
+  }
+  .Title{
+    text-align: left;
+  }
+  .Footer{
+    bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .DynamicFormWrp{
+    height: 61.4%;
+  }
+}

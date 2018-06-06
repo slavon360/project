@@ -61,7 +61,7 @@
   overflow: hidden;
   position: relative;
 }
-.BuyBtn::before, .SubmitRequestBtn::before{
+.BuyBtn::before, .SubmitRequestBtn::before, .LoginButton::before{
   content: attr(before-content);
   display: block;
   box-sizing: border-box;
@@ -75,7 +75,10 @@
   opacity: 0;
   background: linear-gradient(90deg, #e12b82, #53236d);
 }
-.BuyBtn:hover::before, .SubmitRequestBtn:hover::before{
+.LoginButton::before{
+  padding-top: 11px;
+}
+.BuyBtn:hover::before, .SubmitRequestBtn:hover::before, .LoginButton:hover::before{
   opacity: 1;
 }
 .DropdownButtonPeriod, .BtnPeriod{
@@ -227,6 +230,17 @@
 .BirthDayDrpDwnButton:hover::before,
 .BirthYearDrpDwnButton:hover::before{
   opacity: 1;
+}
+.LoginButton{
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
+  border-radius: 20px;
+  width: 160px;
+  height: 40px;
 }
 
 @media screen and (max-width: 1023px){

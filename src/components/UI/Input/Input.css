@@ -217,6 +217,22 @@
   float: right;
   color: #9e9fa3;
 }
+.LoginInputWrp > input{
+  font-size: 16px;
+  color: #922c88;
+  border: none;
+  width: 100%;
+  outline: none;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.LoginInputWrp > input:hover, .LoginInputWrp > input:focus{
+  border-bottom: 2px solid #d092c9;
+}
+.LoginInputWrp > input::-webkit-input-placeholder{
+  color: #9e9fa3;
+  font-size: 14px;
+}
 
 @media screen and (max-width: 767px){
   .InputBuySell{
