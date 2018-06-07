@@ -281,6 +281,9 @@
     padding-left: 29px;
     font-size: 12px !important;
   }
+  .LoginInputWrp > input::-webkit-input-placeholder{
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 359px){

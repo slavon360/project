@@ -3,7 +3,20 @@
   height: 100vh;
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 823px) and (max-height: 411px){
   .LoginWrp{
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 812px) and (max-height: 375px){
+  .LoginWrp{
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 736px) and (max-height: 414px){
+  .LoginWrp{
+    height: auto;
   }
 }

@@ -6,7 +6,9 @@ const dynamicForm = () => (
   <div className={classes.DynamicFormWrp} >
     <div className={classes.Title}>Bithela</div>
     <LoginForm />
-    <div className={classes.Footer}>© 2018 Bithela.com All Rights Reserved</div>
+    <div className={classes.Footer}>
+      © {new Date().getFullYear()} Bithela.com All Rights Reserved
+    </div>
   </div>
 );
 

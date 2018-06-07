@@ -63,6 +63,39 @@
   }
 }
 
+@media screen and (max-width: 823px) and (max-height: 411px){
+  .LoginBackgroundWrp{
+    height: auto;
+    padding: 14.1vh 0 5vh 6.9vw;
+  }
+  .Head{
+    font-size: 42px;
+  }
+  .Text{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 812px) and (max-height: 375px){
+  .LoginBackgroundWrp{
+    padding: 12vh 0 5vh 6.9vw;
+    height: auto;
+  }
+  .Head{
+    font-size: 40px;
+  }
+  .Text{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 736px) and (max-height: 414px){
+  .LoginBackgroundWrp{
+    height: auto;
+    padding: 12vh 0 5vh 6.9vw;
+  }
+}
+
 @media screen and (max-width: 767px){
   .LoginBackgroundWrp{
     height: 38.6%;
@@ -72,5 +105,28 @@
   }
   .Text{
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .LoginBackgroundWrp{
+    height: 37.5%;
+    padding: 10vh 0 0 5.5vw;
+  }
+  .Head{
+    font-size: 30px;
+  }
+  .Text{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .LoginBackgroundWrp{
+    height: 38.75%;
+    padding: 7.5vh 0 0 5.9vw;
+  }
+  .Head{
+    margin-bottom: 2px;
   }
 }

@@ -66,14 +66,61 @@
   }
 }
 
-@media screen and (max-height: 1140px){
+@media screen and (max-height: 1140px) and (max-width: 1023px){
   .LoginFormWrp{
     padding-top: 5vh;
   }
 }
 
-@media screen and (max-height: 875px){
+@media screen and (max-height: 875px) and (max-width: 1023px){
   .LoginFormWrp{
     padding-top: 2vh;
+  }
+}
+
+@media screen and (max-width: 823px) and (max-height: 411px){
+  .LoginFormWrp{
+    padding-top: 6vh;
+  }
+}
+
+@media screen and (max-width: 812px) and (max-height: 375px){
+  .LoginFormWrp{
+    padding-top: 6vh;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .LoginFormWrp{
+    padding-top: 13.8vh;
+    width: 100%;
+  }
+  .LoginFormWrp > div:first-child > input{
+    margin-bottom: 31px;
+  }
+  .LoginFormWrp > div:first-child > input:hover, .LoginFormWrp > div:first-child > input:focus{
+    margin-bottom: 30px;
+  }
+  .LoginFormWrp > div:nth-child(2) > input{
+    margin-bottom: 40px;
+  }
+  .LoginFormWrp > div:nth-child(2) > input:hover, .LoginFormWrp > div:nth-child(2) > input:focus{
+    margin-bottom: 39px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .LoginFormWrp{
+    padding-top: 8vh;
+  }
+  .LoginFormWrp input{
+    font-size: 14px;
+  }
+  .LoginFormWrp .Footer .Tip{
+    font-size: 10px;
+  }
+  .Footer .Tip .Forgot{
+    margin-top: 2px;
+    margin-bottom: 9px;
   }
 }
