@@ -1,0 +1,67 @@
+.WelcomeWrp{
+  width: 900px;
+  box-sizing: border-box;
+  padding: 0 140px 92px;
+  margin-top: 89px;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+}
+.WelcomeWrp h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color: #922c88;
+  padding-bottom: 40px;
+  margin: 0 0 30px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.Notice{
+  color: #41424e;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 55px;
+}
+.IconWrp, .Text{
+  display: inline-block;
+}
+.Text{
+  width: 545px;
+  font-size: 16px;
+  color: #41424e;
+}
+.IconWrp{
+  margin-right: 30px;
+  width: 32px;
+  text-align: center;
+}
+.IconWrp svg{
+  width: 25px;
+  height: 33px;
+  fill: #922c88;
+}
+.ListWrp{
+  margin-bottom: 115px;
+  text-align: left;
+}
+.ListItem{
+  position: relative;
+  margin-bottom: 21px;
+}
+.ListItem:first-child .IconWrp svg{
+  width: 25px;
+  height: 33px;
+}
+.ListItem:nth-child(2) .IconWrp svg{
+  width: 32px;
+  height: 32px;
+}
+.ListItem:nth-child(3) .IconWrp svg{
+  width: 32px;
+  height: 30px;
+}
+.ListItem:nth-child(3) .Text{
+  position: absolute;
+  left: 62px;
+  top: 12px;
+}

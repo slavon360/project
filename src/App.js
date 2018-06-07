@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 // import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import Layout from './hoc/Layout';
-import Login from './containers/Login';
+import Modal from './components/UI/Modal';
+// import Welcome from './components/Modals/Welcome';
+// import EnableSMSAuthenticator from './components/Modals/EnableSMSAuthenticator';
+import DisableSMSAuthenticator from './components/Modals/DisableSMSAuthenticator';
+// import Login from './containers/Login';
 /*
 import BuySell from './containers/BuySell';
 import Balances from './containers/Balances';
@@ -19,7 +23,7 @@ class App extends Component {
     return (
       <div className="App">
         <Layout>
-          <Login />
+          <Modal modalContent={<DisableSMSAuthenticator />} />
         </Layout>
       </div>
     );
