@@ -1,0 +1,23 @@
+.DisableGoogleAuthWrp{
+  text-align: center;
+  width: 602px;
+  margin-top: 60px;
+  padding-bottom: 104px;
+}
+.DisableForm{
+  width: 313px;
+  display: inline-block;
+}
+.DisableGoogleAuthWrp h2{
+  font-size: 24px;
+  font-weight: 700;
+  color: #922c88;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+.LoginPassword, .GoogleAuthCode{
+  font-size: 14px;
+  color: #9e9fa3;
+  margin-bottom: 15px;
+  text-align: left;
+}

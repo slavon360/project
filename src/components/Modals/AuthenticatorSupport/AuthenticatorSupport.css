@@ -1,0 +1,72 @@
+.AuthSupportWrp{
+  width: 902px;
+  padding: 0 128px 77px 137px;
+  margin-top: 85px;
+  box-sizing: border-box;
+}
+.AuthSupportWrp h2{
+  font-size: 24px;
+  font-weight: 700;
+  color: #922c88;
+  margin-bottom: 56px;
+}
+.DisableForm .SecretCodeText{
+  font-size: 16px;
+  color: #41424e;
+  margin-bottom: 19px;
+}
+.DisableForm .SecretCodeText span{
+  font-weight: 700;
+}
+.Top{
+  margin-bottom: 55px;
+}
+.Top .Tip{
+  display: inline-block;
+  width: 292px;
+  margin-left: 28px;
+  font-size: 14px;
+  color: #41424e;
+}
+.Top .Tip span{
+  font-weight: 700;
+}
+.QrBlock{
+  margin-bottom: 6px;
+}
+.QrBlock img{
+  margin-right: 27px;
+}
+.Steps{
+  display: inline-block;
+  width: 405px;
+}
+.Steps .Item{
+  margin-bottom: 15px;
+}
+.Steps .Item .Number{
+  font-size: 18px;
+  color: #41424e;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 12px;
+  vertical-align: top;
+}
+.Steps .Item .Text{
+  vertical-align: top;
+  color: #41424e;
+  font-size: 16px;
+  display: inline-block;
+  width: 365px;
+}
+.Once{
+  font-size: 16px;
+  font-weight: 700;
+  color: #41424e;
+  margin-bottom: 47px;
+}
+.Enter{
+  font-size: 14px;
+  color: #41424e;
+  margin-bottom: 16px;
+}

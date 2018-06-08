@@ -39,7 +39,7 @@
   position: relative;
   overflow: hidden;
 }
-.SendSMSAuth::before, .ConfirmDisableSMSAuth::before{
+.SendSMSAuth::before{
   content: attr(before-content);
   display: block;
   box-sizing: border-box;
@@ -53,10 +53,7 @@
   opacity: 0;
   background: linear-gradient(90deg, #e12b82, #53236d);
 }
-.ConfirmDisableSMSAuth::before{
-  padding-top: 11px;
-}
-.SendSMSAuth:hover::before, .ConfirmDisableSMSAuth:hover::before{
+.SendSMSAuth:hover::before{
   opacity: 1;
 }
 .PhoneNumberAuthentDropdownButton{
