@@ -376,7 +376,24 @@
   font-size: 14px;
 }
 
+@media screen and (max-width: 1850px){
+  .SecretCodeAuthSupportBottom > input{
+    width: 328px;
+  }
+}
+
 @media screen and (max-width: 767px){
+  .SecretCodeAuthSupportBottom{
+    margin-right: 11px;
+  }
+  .SecretCodeAuthSupportBottom > input{
+    width: 183px;
+    height: 43px;
+  }
+  .SecretCodeAuthSupportTop > input{
+    width: 182px;
+    height: 43px;
+  }
   .InputBuySell{
     font-size: 14px;
   }
@@ -416,6 +433,24 @@
 }
 
 @media screen and (max-width: 413px){
+  .PhoneNumberAuthent{
+    width: 152px;
+  }
+  .DisableSMSAuthCode{
+    margin-bottom: 27px;
+  }
+  .LoginPasswordAuthent{
+    margin-bottom: 19px;
+  }
+  .SecretCodeAuthSupportTop > input{
+    width: 153px;
+  }
+  .SecretCodeAuthSupportBottom{
+    margin-right: 7px;
+  }
+  .SecretCodeAuthSupportBottom > input{
+    width: 173px;
+  }
   .WithdrawAmount .SecondLabel{
     font-size: 13px;
   }

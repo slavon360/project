@@ -44,6 +44,18 @@ const authSupport = () => (
                need this code to link Coinremit to a new authenticator app install once again</div>
           </div>
         </div>
+        <div className={classes.StepsResponsive}>
+          <div className={classes.Item}>
+            <div className={classes.Number}>3</div>
+            <div className={classes.Text}>Please write down or print a copy of the 16-digit
+               secret code and put it in a safe place </div>
+          </div>
+          <div className={classes.Item}>
+            <div className={classes.Number}>4</div>
+            <div className={classes.Text}>If your phone gets lost, stolen or erased, you will need
+               this code to link Coinremit to a new authenticator app install once again</div>
+          </div>
+        </div>
       </div>
       <div className={classes.Once}>Once an autheticator app will is enabled,
          all other 2FA methods will not be accepted

@@ -11,7 +11,12 @@ const smsAuth = () => (
       <Input wrpClasses={['LoginPasswordAuthent']} elementConfig={{ type: 'password' }} elementType="input" />
       <div className={classes.CodeTitle}>SMS Authentification code</div>
       <Input wrpClasses={['DisableSMSAuthCode']} elementConfig={{ type: 'text' }} elementType="input" />
-      <Button btnClasses={['ConfirmDisableSMSAuth']} elementConfig={{ 'before-content': 'Confirm' }}>Confirm</Button>
+      <Button
+        btnClasses={['ConfirmDisableSMSAuth', 'ConfirmDisableGoogleAuth']}
+        elementConfig={{ 'before-content': 'Confirm' }}
+      >
+      Confirm
+      </Button>
     </form>
   </div>
 );

@@ -19,7 +19,12 @@ const disableGoogleAuth = () => (
         elementConfig={{ type: 'text' }}
         elementType="input"
       />
-      <Button btnClasses={['ConfirmDisableSMSAuth']} elementConfig={{ 'before-content': 'Confirm' }}>Confirm</Button>
+      <Button
+        btnClasses={['ConfirmDisableSMSAuth', 'ConfirmDisableGoogleAuth']}
+        elementConfig={{ 'before-content': 'Confirm' }}
+      >
+      Confirm
+      </Button>
     </form>
   </div>
 );
