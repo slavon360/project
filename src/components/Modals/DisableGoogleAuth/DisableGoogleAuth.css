@@ -71,3 +71,14 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 359px){
+  .DisableGoogleAuthWrp{
+    width: 282px;
+    padding-bottom: 37px;
+    margin-top: 45px;
+  }
+  .DisableGoogleAuthWrp h2{
+    font-size: 14px;
+  }
+}

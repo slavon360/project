@@ -167,3 +167,27 @@
     margin-bottom: 102px;
   }
 }
+
+@media screen and (max-width: 359px){
+  .WelcomeWrp{
+    width: 280px;
+    padding: 0 20px 41px;
+    margin-top: 45px;
+  }
+  .WelcomeWrp h1{
+    font-size: 18px;
+  }
+  .Notice{
+    margin-bottom: 13px;
+  }
+  .ListItem .Text{
+    width: 198px;
+  }
+  .IconWrp{
+    margin-right: 6px;
+  }
+  .ListItem:nth-child(3) .Text{
+    left: 38px;
+    width: 195px;
+  }
+}

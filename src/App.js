@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 // import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import Layout from './hoc/Layout';
 import Modal from './components/UI/Modal';
-// import Welcome from './components/Modals/Welcome';
+import Welcome from './components/Modals/Welcome';
 // import EnableSMSAuthenticator from './components/Modals/EnableSMSAuthenticator';
 // import DisableSMSAuthenticator from './components/Modals/DisableSMSAuthenticator';
 // import DisableGoogleAuth from './components/Modals/DisableGoogleAuth';
 // import AuthenticatorSupport from './components/Modals/AuthenticatorSupport';
-import ChangePassword from './components/Modals/ChangePassword';
+// import ChangePassword from './components/Modals/ChangePassword';
 // import Login from './containers/Login';
 /*
 import BuySell from './containers/BuySell';
@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <div className="App">
         <Layout>
-          <Modal modalContent={<ChangePassword />} />
+          <Modal modalContent={<Welcome />} />
         </Layout>
       </div>
     );

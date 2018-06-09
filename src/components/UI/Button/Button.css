@@ -445,6 +445,9 @@
 }
 
 @media screen and (max-width: 359px){
+  .SendSMSAuth{
+    margin-bottom: 40px;
+  }
   .DepositBtn{
     margin-right: 10px;
   }

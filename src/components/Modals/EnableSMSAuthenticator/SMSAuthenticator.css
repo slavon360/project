@@ -87,3 +87,15 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 359px){
+  .SMSAuthWrp{
+    width: 282px;
+    padding-bottom: 37px;
+    margin-top: 45px;
+  }
+  .SMSAuthWrp h2{
+    text-align: left;
+    font-size: 14px;
+  }
+}

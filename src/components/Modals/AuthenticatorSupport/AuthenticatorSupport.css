@@ -4,6 +4,13 @@
   margin-top: 85px;
   box-sizing: border-box;
 }
+.AuthSupportWrp::-webkit-scrollbar{
+  width: 6px;
+}
+.AuthSupportWrp::-webkit-scrollbar-thumb{
+  background-color: #d192c7;
+  border-radius: 5px;
+}
 .StepsResponsive{
   display: none;
 }
@@ -88,13 +95,6 @@
     overflow: scroll;
     margin-top: 35px;
     height: 500px;
-  }
-  .AuthSupportWrp::-webkit-scrollbar{
-    width: 6px;
-  }
-  .AuthSupportWrp::-webkit-scrollbar-thumb{
-    background-color: #d192c7;
-    border-radius: 5px;
   }
   .AuthSupportWrp h2{
     margin-bottom: 55px;
@@ -232,5 +232,43 @@
   }
   .Once{
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .AuthSupportWrp{
+    width: 282px;
+    padding-bottom: 31px;
+    overflow: auto;
+  }
+  .AuthSupportWrp h2{
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 14px;
+  }
+  .Top .Tip{
+    width: 99px;
+    font-size: 8px;
+    transform: translateY(0);
+  }
+  .Steps{
+    width: 123px;
+  }
+  .Steps .Item .Text, .StepsResponsive .Item .Text{
+    width: 110px;
+    font-size: 10px;
+  }
+  .StepsResponsive .Item .Text{
+    width: 90%;
+  }
+  .Steps .Item:nth-child(2){
+    margin-bottom: 6px;
+  }
+  .Steps .Item .Number, .StepsResponsive .Item .Number{
+    font-size: 12px;
+  }
+  .Once{
+    font-size: 12px;
+    margin-bottom: 20px;
   }
 }

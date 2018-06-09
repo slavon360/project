@@ -464,6 +464,13 @@
 }
 
 @media screen and (max-width: 359px){
+  .PhoneNumberAuthent{
+    width: 112px;
+  }
+  .SecretCodeAuthSupportTop > input,
+  .SecretCodeAuthSupportBottom > input{
+    width: 132px;
+  }
   .DepositAddress label{
     margin-bottom: 10px;
   }
@@ -472,5 +479,8 @@
   }
   .NationalityWrp .SecondLabel{
     font-size: 10px;
+  }
+  .Top .Tip{
+    width: 99px;
   }
 }
