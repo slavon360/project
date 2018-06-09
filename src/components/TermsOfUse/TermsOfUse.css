@@ -1,0 +1,114 @@
+.TermsOfUseWrp{
+  background-color: #fff;
+  padding: 34px 160px 29px;
+}
+.Head{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.Logo{
+  font-size: 24px;
+  color: #922c88;
+  font-style: italic;
+  font-weight: 700;
+}
+.Content{
+  padding: 0 200px;
+}
+.Content h2{
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 48px;
+  font-weight: 700;
+  color: #922c88;
+}
+.Content .Paragraphs{
+  font-size: 16px;
+  line-height: 24px;
+  color: #41424e;
+}
+.Footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 85px;
+}
+.Footer .Rights{
+  font-size: 14px;
+  color: #83878c;
+  align-self: center;
+}
+
+@media screen and (max-width: 1919px){
+  .TermsOfUseWrp{
+    padding: 25px 40px ;
+  }
+  .Content{
+    padding: 0 45px;
+  }
+}
+
+@media screen and (max-width: 1365px){
+  .TermsOfUseWrp{
+    padding: 25px 33px;
+  }
+  .Head{
+    margin-bottom: 40px;
+  }
+  .Content h2{
+    margin-bottom: 39px;
+  }
+  .Footer{
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .Content{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .TermsOfUseWrp{
+    padding: 23px 20px;
+  }
+  .Head{
+    margin-bottom: 30px;
+  }
+  .Content h2{
+    margin-bottom: 29px;
+    font-size: 18px;
+  }
+  .Paragraphs p{
+    font-size: 14px;
+  }
+  .Footer{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .Footer .Logo{
+    display: none;
+  }
+  .Footer .Rights{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .Paragraphs p{
+    font-size: 12px;
+  }
+  .Footer{
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 359px){
+  .Content h2{
+    margin-bottom: 20px;
+  }
+  .Head{
+    margin-bottom: 20px;
+  }
+}

@@ -6,6 +6,15 @@
   background-color: transparent;
   padding: 0;
 }
+.BackToPrevious{
+  width: 160px;
+  height: 40px;
+  background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+}
 .ConfirmSMSAuth, .ConfirmDisableSMSAuth{
   width: 202px;
   height: 42px;
@@ -365,6 +374,9 @@
 }
 
 @media screen and (max-width: 767px){
+  .BackToPrevious{
+    width: 140px;
+  }
   .ConfirmDisableSMSAuth{
     width: 143px;
     height: 43px;
@@ -408,6 +420,9 @@
 }
 
 @media screen and (max-width: 413px){
+  .BackToPrevious{
+    width: 100px;
+  }
   .ConfirmDisableSMSAuth{
     width: 103px;
   }
