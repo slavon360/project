@@ -1,0 +1,46 @@
+.Header{
+  display: flex;
+  padding: 51px 161px 0 159px;
+  justify-content: space-between;
+  margin-bottom: 155px;
+}
+.Logo{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+}
+.RightSide{
+  font-size: 14px;
+}
+.RightSide > div{
+  display: inline-block;
+  transform: translateY(10px);
+}
+.Proportions{
+  margin-right: 132px;
+  position: relative;
+  color: #fff;
+}
+.Proportions::before{
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -16px;
+  background-color: #ce41a1;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.Proportions .Currencies{
+  color: #ce41a1;
+  padding-right: 10px;
+}
+.SignUp{
+  margin-right: 78px;
+}
+.SignUp > a, .SignIn > a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}

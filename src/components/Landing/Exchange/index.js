@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classes from './Exchange.css';
 import WithdrawImg from '../../../../assets/images/backgrounds/withdraw.jpg';
 import TrustImg from '../../../../assets/images/backgrounds/trust_security.jpg';
@@ -18,10 +19,11 @@ const getImage = (title) => {
 const exchange = props => (
   <div className={classes.ExchangeWrp}>
     <div className={classes.Steps}>
+      <h2><span>Bithela</span> Exchange</h2>
       {props.checkedTab.steps.map((step, index) => (
         <div className={classes.Step} key={index}>
           <div className={classes.Title}>{step.title}</div>
-          <div className={classes.Description}>{step.Description}</div>
+          <div className={classes.Description}>{step.description}</div>
         </div>
       ))}
     </div>
@@ -32,3 +34,13 @@ const exchange = props => (
 );
 
 export default exchange;
+
+exchange.propTypes = {
+  checkedTab: PropTypes.shape({
+    title: PropTypes.string,
+    steps: PropTypes.arrayOf(PropTypes.shape({
+      title: PropTypes.string,
+      description: PropTypes.string,
+    })),
+  }),
+};

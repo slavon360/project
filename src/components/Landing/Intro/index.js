@@ -1,15 +1,15 @@
 import React from 'react';
-import NavLink from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import classes from './Intro.css';
 
 const header = () => (
   <div className={classes.IntroWrp}>
     <h1>
-      <span>{'Africa\'s easiest way to'}</span>
-      <span>
+      <span className={classes.Top}>{'Africa\'s easiest way to'}</span>
+      <span className={classes.Bottom}>
         <span className={classes.Emphasis}>trade</span>,
-        <span className={classes.Emphasis}>buy</span> and
-        <span className={classes.Emphasis}>sell</span> crypto-currencies
+        <span className={classes.Emphasis}> buy</span> and
+        <span className={classes.Emphasis}> sell</span> crypto-currencies
       </span>
     </h1>
     <div className={classes.Advertise}>

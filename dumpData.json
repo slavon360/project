@@ -1,4 +1,83 @@
 {
+  "landingData": {
+    "checkedTab": {
+      "title": "Trade Bitcoin and Ethereum easily",
+      "icon": "bitcoin",
+      "steps": [
+        {
+          "title": "Deposit and Withdraw",
+          "description": "Deposit and withdraw to and from your Bithela wallet, mobile money wallet, and bank account at a low to zero cost"
+        },
+        {
+          "title": "Trade Conveniently",
+          "description": "Buy, sell, and manage your digital assets instantly, anytime and accessible anywhere at your convenience"
+        },
+        {
+          "title": "Transact Securely",
+          "description": "We go to lengths to secure your digital assets by using the latest known security measures and best practices currently available"
+        }
+      ]
+    },
+    "tabs": [
+      {
+        "title": "Trade Bitcoin and Ethereum easily",
+        "description": "Join the growing world of digital currencies using our platform",
+        "icon": "bitcoin",
+        "steps": [
+          {
+            "title": "Deposit and Withdraw",
+            "description": "Deposit and withdraw to and from your Bithela wallet, mobile money wallet, and bank account at a low to zero cost"
+          },
+          {
+            "title": "Trade Conveniently",
+            "description": "Buy, sell, and manage your digital assets instantly, anytime and accessible anywhere at your convenience"
+          },
+          {
+            "title": "Transact Securely",
+            "description": "We go to lengths to secure your digital assets by using the latest known security measures and best practices currently available"
+          }
+        ]
+      },
+      {
+        "title": "Trust and Security",
+        "description": "Avoid perennial inflation by buying into deflationary currencies",
+        "icon": "padlock",
+        "steps": [
+          {
+            "title": "Lorem ipsum dolor",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          },
+          {
+            "title": "Trade Conveniently",
+            "description": "Buy, sell, and manage your digital assets instantly, anytime and accessible anywhere at your convenience"
+          },
+          {
+            "title": "Transact Securely",
+            "description": "We go to lengths to secure your digital assets by using the latest known security measures and best practices currently available"
+          }
+        ]
+      },
+      {
+        "title": "Buy and Sell in Seconds",
+        "description": "Use our fast responsive platform that  helps you manage the market",
+        "icon": "timer",
+        "steps": [
+          {
+            "title": "Deposit and Withdraw",
+            "description": "Deposit and withdraw to and from your Bithela wallet, mobile money wallet, and bank account at a low to zero cost"
+          },
+          {
+            "title": "Sed ut perspiciatis",
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae"
+          },
+          {
+            "title": "Transact Securely",
+            "description": "We go to lengths to secure your digital assets by using the latest known security measures and best practices currently available"
+          }
+        ]
+      }
+    ]
+  },
   "dateData": {
     "January": {
                   "days": 31

@@ -1,0 +1,37 @@
+.ExchangeWrp{
+  padding: 0 162px 0 159px;
+  display: flex;
+  justify-content: space-between;
+}
+.Steps{
+  width: 574px;
+}
+.Steps h2{
+  font-size: 36px;
+  font-weight: 700;
+  color: #41424e;
+  margin-bottom: 120px;
+}
+.Steps h2 span{
+  color: #932c88;
+}
+.Step{
+  margin-bottom: 98px;
+}
+.Title{
+  font-size: 16px;
+  font-weight: 700;
+  color: #41424e;
+}
+.Description{
+  color: #83878c;
+  font-size: 16px;
+}
+.InteractiveView{
+  width: 812px;
+  height: 560px;
+  box-shadow: 0 0 68px 0 #000;
+}
+.InteractiveView img{
+  width: 100%;
+}

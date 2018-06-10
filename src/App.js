@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 // import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import Layout from './hoc/Layout';
-import Login from './containers/Login';
+// import Login from './containers/Login';
+import Landing from './containers/Landing';
 /*
 import BuySell from './containers/BuySell';
 import Balances from './containers/Balances';
@@ -19,7 +20,7 @@ class App extends Component {
     return (
       <div className="App">
         <Layout>
-          <Login />
+          <Landing />
         </Layout>
       </div>
     );

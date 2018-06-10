@@ -1,0 +1,61 @@
+.FooterWrp{
+  padding: 0 160px;
+}
+.Footer{
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  padding: 21px 0 29px;
+  display: flex;
+  justify-content: space-between;
+}
+.LeftSide{
+  font-size: 14px;
+  color: #7e62a4;
+}
+.LeftSide > div{
+  display: inline-block;
+}
+.LeftSide .Terms{
+  margin-right: 65px;
+}
+.LeftSide .Social{
+  font-weight: 700;
+  margin-right: 51px;
+}
+.LeftSide .Telegram{
+  margin-right: 44px;
+}
+.LeftSide .Telegram svg{
+  width: 12px;
+  height: 10px;
+}
+.LeftSide .Facebook{
+  margin-right: 40px;
+}
+.LeftSide .Facebook svg{
+  width: 6px;
+  height: 12px;
+}
+.LeftSide .Twitter svg{
+  width: 12px;
+  height: 10px;
+}
+.MiddleSide{
+  color: #7e62a4;
+  font-size: 12px;
+}
+.RightSide{
+  font-size: 14px;
+  color: #7e62a4;
+}
+.RightSide > div{
+  display: inline-block;
+}
+.RightSide .TrandingVolume{
+  margin-right: 39px;
+}
+.RightSide .ProportionBtc{
+  margin-right: 30px;
+}
+.RightSide .ProportionBtc .Value, .RightSide .ProportionEth .Value{
+  color: #fff;
+}

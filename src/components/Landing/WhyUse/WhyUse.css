@@ -1,0 +1,46 @@
+.WhyUseWrp{
+  text-align: center;
+  margin-bottom: 193px;
+}
+.WhyUseWrp h2{
+  font-size: 36px;
+  margin: 0 0 100px;
+  color: #41424e;
+  font-weight: 700;
+}
+.TabsWrp, .Tab{
+  display: inline-block;
+}
+.Tab:first-child{
+  margin-right: 134px;
+}
+.Tab:nth-child(2){
+  margin-right: 153px;
+}
+.Tab .Icon{
+  display: inline-block;
+  margin-bottom: 24px;
+  position: relative;
+}
+.Tab:first-child .Icon{
+  width: 42px;
+  height: 42px;
+}
+.Tab:nth-child(2) .Icon{
+  width: 27px;
+  height: 42px;
+}
+.Tab:nth-child(3) .Icon{
+  width: 36px;
+  height: 40px;
+}
+.Tab .Title{
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #41424e;
+}
+.Tab .Description{
+  color: #83878c;
+  font-size: 16px;
+}

@@ -1,0 +1,29 @@
+.IntroWrp{
+  padding-left: 360px;
+  margin-bottom: 679px;
+}
+.IntroWrp h1{
+  margin: 0 0 52px;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 300;
+}
+.IntroWrp h1 .Top{
+  display: block;
+}
+.IntroWrp h1 .Bottom .Emphasis{
+  color: #e33a8c;
+}
+.Advertise{
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 67px;
+}
+.CreateAccount{
+  width: 320px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #241a55;
+  font-size: 18px;
+}
