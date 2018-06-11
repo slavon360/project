@@ -1,8 +1,35 @@
 .LandingWrp{
   display: block;
-  background-color: #ddd;
+  background-color: #fff;
+  background-repeat: no-repeat;
 }
 .Footer{
-  padding-top: 525px;
+  padding-top: 464px;
   text-align: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1920px){
+  .LandingWrp{
+    background-position: 91% -58%;
+  }
+  .Footer{
+    background-position: 50% -22%;
+  }
+}
+
+@media screen and (min-width: 1921px){
+  .LandingWrp{
+    background-position: 91% -58%;
+  }
+  .Footer{
+    background-position: 50% -22%;
+    background-size: 127% 110%;
+  }
+}
+@media screen and (min-width: 2240px){
+  .LandingWrp{
+    background-size: 124% 61%;
+    background-position: 81% -58%;
+  }
 }

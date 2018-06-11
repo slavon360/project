@@ -1,13 +1,13 @@
 .BuildPortfolioWrp{
-  width: 866px;
+  width: 915px;
   display: inline-block;
   margin-bottom: 251px;
 }
 .BuildPortfolioWrp h2{
   font-size: 60px;
-  margin: 0 0 34px;
+  margin: 0 0 26px;
   color: #fff;
-  font-style: Light;
+  font-weight: 100;
 }
 .Advantages{
   font-size: 24px;
@@ -18,6 +18,7 @@
   color: #e33a8c;
 }
 .CreateAccount{
+  display: inline-block;
   width: 320px;
   height: 60px;
   border-radius: 30px;
@@ -25,7 +26,15 @@
   color: #fff;
   font-size: 18px;
   font-weight: 700;
+  transition: background-image .5s;
 }
 .CreateAccount > a{
   display: block;
+  height: 100%;
+  line-height: 3.3;
+  text-decoration: none;
+  color: inherit;
+}
+.CreateAccount:hover{
+  background-image: linear-gradient(-110deg, #932c88 0%, #e33a8c 100%);
 }

@@ -9,7 +9,7 @@ const exchange = () => (
       With no hidden fees, transparent trading and a commitment to regulatory compliance,
  we are the <span>ideal platform for</span> building <span>your</span> digital portfolio
     </div>
-    <div className={classes.CreateAccount}>
+    <div className={classes.CreateAccount} before-text="Create account">
       <NavLink to="/sign-up" exact activeClassName={classes.active}>Create account</NavLink>
     </div>
   </div>

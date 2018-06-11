@@ -17,27 +17,39 @@
 .LeftSide .Terms{
   margin-right: 65px;
 }
+.LeftSide .Terms > a{
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
 .LeftSide .Social{
   font-weight: 700;
+  text-transform: uppercase;
   margin-right: 51px;
+}
+.LeftSide .Telegram > a, .LeftSide .Facebook > a, .LeftSide .Twitter > a{
+  display: block;
+  height: 100%;
 }
 .LeftSide .Telegram{
   margin-right: 44px;
 }
 .LeftSide .Telegram svg{
-  width: 12px;
-  height: 10px;
+  width: 14px;
+  height: 12px;
+  fill: #fff;
 }
 .LeftSide .Facebook{
   margin-right: 40px;
 }
 .LeftSide .Facebook svg{
-  width: 6px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
 }
 .LeftSide .Twitter svg{
-  width: 12px;
-  height: 10px;
+  width: 15px;
+  height: 13px;
 }
 .MiddleSide{
   color: #7e62a4;
@@ -58,4 +70,5 @@
 }
 .RightSide .ProportionBtc .Value, .RightSide .ProportionEth .Value{
   color: #fff;
+  padding-left: 8px;
 }

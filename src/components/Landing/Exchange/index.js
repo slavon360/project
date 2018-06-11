@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './Exchange.css';
-import WithdrawImg from '../../../../assets/images/backgrounds/withdraw.jpg';
+import WithdrawImg from '../../../../assets/images/backgrounds/withdraw.png';
 import TrustImg from '../../../../assets/images/backgrounds/trust_security.jpg';
 import BuySellImg from '../../../../assets/images/backgrounds/buy_sell.jpg';
 

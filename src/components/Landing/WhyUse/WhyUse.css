@@ -1,26 +1,51 @@
 .WhyUseWrp{
   text-align: center;
-  margin-bottom: 193px;
+  margin: -170px 0 193px;
 }
 .WhyUseWrp h2{
   font-size: 36px;
-  margin: 0 0 100px;
+  margin: 0 0 139px;
   color: #41424e;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .TabsWrp, .Tab{
   display: inline-block;
 }
 .Tab:first-child{
   margin-right: 134px;
+  width: 304px;
 }
 .Tab:nth-child(2){
   margin-right: 153px;
+  width: 248px;
+}
+.Tab:nth-child(3){
+  width: 248px;
 }
 .Tab .Icon{
   display: inline-block;
   margin-bottom: 24px;
   position: relative;
+}
+.Tab .Icon::before{
+  content: '';
+  position: absolute;
+  transform: rotate(9deg);
+  width: 83px;
+  top: -41px;
+  left: -29px;
+  height: 154px;
+  background-color: #ce41a1;
+  opacity: .05;
+  border-radius: 55px;
+}
+.Tab:first-child .Icon::before{
+  left: -22px;
+}
+.Tab:last-child .Icon::before{
+  left: -24px;
+  transform: translateY(-3px) rotate(9deg);
 }
 .Tab:first-child .Icon{
   width: 42px;
@@ -37,8 +62,9 @@
 .Tab .Title{
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #41424e;
+  text-transform: uppercase;
 }
 .Tab .Description{
   color: #83878c;

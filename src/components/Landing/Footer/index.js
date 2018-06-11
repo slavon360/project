@@ -14,12 +14,12 @@ const footer = props => (
           <NavLink to="/terms" exact activeClassName={classes.active}>Terms and Conditions</NavLink>
         </div>
         <div className={classes.Social}>Social</div>
-        <div className={classes.Telegram}><TelegramIcon /></div>
-        <div className={classes.Facebook}><FacebookIcon /></div>
-        <div className={classes.Twitter}><TwitterIcon /></div>
+        <div className={classes.Telegram}><NavLink to="/" exact activeClassName={classes.active}><TelegramIcon /></NavLink></div>
+        <div className={classes.Facebook}><NavLink to="/" exact activeClassName={classes.active}><FacebookIcon /></NavLink></div>
+        <div className={classes.Twitter}><NavLink to="/" exact activeClassName={classes.active}><TwitterIcon /></NavLink></div>
       </div>
       <div className={classes.MiddleSide}>
-        © new Date().getFullYear() Bithela.com All Rights Reserved
+        © {new Date().getFullYear()} Bithela.com All Rights Reserved
       </div>
       <div className={classes.RightSide}>
         <div className={classes.TrandingVolume}>Tranding Volume:</div>

@@ -3,13 +3,14 @@
   margin-bottom: 679px;
 }
 .IntroWrp h1{
-  margin: 0 0 52px;
+  margin: 0 0 45px;
   font-size: 60px;
   color: #fff;
   font-weight: 300;
 }
 .IntroWrp h1 .Top{
   display: block;
+  margin-bottom: -10px;
 }
 .IntroWrp h1 .Bottom .Emphasis{
   color: #e33a8c;
@@ -26,4 +27,16 @@
   background-color: #fff;
   color: #241a55;
   font-size: 18px;
+}
+.CreateAccount > a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  line-height: 3.3;
+  font-weight: 700;
+  text-align: center;
+}
+.CreateAccount:hover{
+  background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
+  color: #fff;
 }
