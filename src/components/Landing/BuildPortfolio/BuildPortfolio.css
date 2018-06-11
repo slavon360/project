@@ -84,3 +84,42 @@
     font-size: 14px;
   }
 }
+@media screen and (max-width: 767px){
+  .BuildPortfolioWrp{
+    margin-bottom: 38px;
+    width: 320px;
+  }
+  .BuildPortfolioWrp h2{
+    font-size: 24px;
+    margin-bottom: 21px;
+  }
+  .Advantages{
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .BuildPortfolioWrp{
+    width: 290px;
+    margin-bottom: 34px;
+  }
+  .BuildPortfolioWrp h2{
+    margin-bottom: 10px;
+  }
+  .Advantages{
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  .CreateAccount{
+    width: 140px;
+    height: 34px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .BuildPortfolioWrp{
+    margin-bottom: 24px;
+  }
+}

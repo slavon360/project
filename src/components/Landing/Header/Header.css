@@ -84,3 +84,35 @@
     margin-right: 28px;
   }
 }
+
+@media screen and (max-width: 767px){
+  .Header{
+    padding: 27px 30px 0 23px;
+    margin-bottom: 65px;
+  }
+  .Logo{
+    font-size: 18px;
+  }
+  .RightSide{
+    transform: translateY(-5px);
+  }
+  .RightSide .Proportions{
+    display: none;
+  }
+  .SignUp{
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .Header{
+    padding-left: 20px;
+    margin-bottom: 55px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .Header{
+    padding-top: 17px;
+  }
+}

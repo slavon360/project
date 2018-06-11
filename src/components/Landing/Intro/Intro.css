@@ -72,6 +72,9 @@
 }
 
 @media screen and (max-width: 1023px){
+  .IntroWrp{
+    margin-bottom: 285px;
+  }
   .IntroWrp h1{
     font-size: 36px;
     margin-bottom: 24px;
@@ -86,5 +89,55 @@
   }
   .CreateAccount > a{
     line-height: 2.5;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .IntroWrp{
+    padding-left: 23px;
+    margin-bottom: 203px;
+  }
+  .IntroWrp h1{
+    font-size: 24px;
+  }
+  .IntroWrp h1 .Top{
+    margin-bottom: 0;
+  }
+  .Advertise{
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  .CreateAccount{
+    font-size: 14px;
+  }
+  .CreateAccount > a{
+    height: 100%;
+    line-height: 2.9;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .IntroWrp{
+    padding-left: 20px;
+    margin-bottom: 185px;
+  }
+  .IntroWrp h1{
+    font-size: 18px;
+    margin-bottom: 23px;
+  }
+  .Advertise{
+    font-size: 10px;
+    margin-bottom: 21px;
+  }
+  .CreateAccount{
+    width: 140px;
+    height: 34px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .IntroWrp{
+    margin-bottom: 178px;
   }
 }

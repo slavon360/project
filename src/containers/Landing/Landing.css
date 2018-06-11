@@ -49,7 +49,7 @@
 @media screen and (max-width: 1365px){
   .LandingWrp{
     background-size: 133% 37%;
-    background-position: 92% -22%;
+    background-position: 92% -18%;
   }
   .Footer{
     background-size: 132% 107%;
@@ -58,9 +58,44 @@
 }
 
 @media screen and (max-width: 1023px){
+  .LandingWrp{
+    background-size: 133% 37%;
+  }
   .Footer{
     padding-top: 204px;
     background-size: 132% 107%;
     background-position: 50% -100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .LandingWrp{
+    background-size: 168% 32%;
+    background-position: 54% -15%;
+  }
+  .Footer{
+    padding-top: 135px;
+    background-size: 178% 107%;
+    background-position: 55% -100%;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .LandingWrp{
+    background-size: 188% 32%;
+    background-position: 60% -15%;
+  }
+  .Footer{
+    background-size: 148% 107%;
+    background-position: 55% -100%;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .Footer{
+    background-size: 238% 107%;
+    background-position: 55% -80%;
+    margin-top: 60px;
+    padding-top: 95px;
   }
 }

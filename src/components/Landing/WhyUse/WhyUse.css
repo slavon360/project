@@ -90,6 +90,7 @@
 @media screen and (max-width: 1023px){
   .WhyUseWrp{
     margin-top: -120px;
+    margin-bottom: 105px;
   }
   .WhyUseWrp h2{
     font-size: 24px;
@@ -98,6 +99,9 @@
   .Tab .Title{
     font-size: 14px;
     margin-bottom: 28px;
+  }
+  .Tab .Icon{
+    margin-bottom: 18px;
   }
   .Tab .Description{
     font-size: 14px;
@@ -130,5 +134,139 @@
   .Tab:last-child svg{
     width: 33px;
     height: 36px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .WhyUseWrp{
+    margin-top: 0;
+    margin-bottom: 135px;
+  }
+  .WhyUseWrp h2{
+    text-align: left;
+    margin-left: 60px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .TabsWrp{
+    margin-top: 45px;
+  }
+  .Tab .Title, .Tab .Description{
+    font-size: 12px;
+  }
+  .Tab .Icon{
+    margin-bottom: 11px;
+  }
+  .Tab .Icon::before{
+    height: 140px;
+    top: -31px;
+    width: 79px;
+  }
+  .Tab .Title{
+    margin-bottom: 16px;
+  }
+  .Tab:first-child svg{
+    width: 30px;
+    height: 30px;
+  }
+  .Tab:nth-child(2) .Icon{
+    margin-bottom: 14px;
+  }
+  .Tab:nth-child(2) .Title{
+    padding: 0 18px;
+  }
+  .Tab:first-child, .Tab:nth-child(2){
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 740px){
+  .WhyUseWrp{
+    margin-bottom: 75px;
+  }
+}
+
+@media screen and (max-width: 498px){
+  .WhyUseWrp{
+    margin-bottom: 135px;
+  }
+  .TabsWrp{
+    margin-top: 0;
+  }
+  .Tab:first-child{
+    transform: translateX(135px);
+    margin-right: 100px;
+  }
+  .Tab:nth-child(2){
+    margin-right: 90px;
+    transform: translate(40px, -65px);
+  }
+  .Tab:last-child{
+    transform: translate(-40px, 70px);
+  }
+}
+
+@media screen and (max-width: 413px){
+  .TabsWrp{
+    padding: 45px 0 25px;
+  }
+  .Tab:first-child{
+    transform: none;
+    margin-right: 18px;
+    width: 115px;
+  }
+  .Tab:nth-child(2){
+    transform: none;
+    width: 115px;
+    margin-right: 18px;
+  }
+  .Tab:last-child{
+    transform: none;
+    width: 115px;
+  }
+}
+
+@media screen and (max-width: 389px){
+  .WhyUseWrp{
+    margin-bottom: 2px;
+  }
+  .WhyUseWrp h2{
+    margin-left: 23px;
+  }
+  .TabsWrp{
+    padding: 0;
+  }
+  .Tab:first-child{
+    width: 159px;
+    transform: translateX(125px);
+    margin-right: 48px;
+  }
+  .Tab:nth-child(2){
+    width: 152px;
+    transform: translate(-38px, -65px);
+    margin-right: 90px;
+  }
+  .Tab:last-child{
+    width: 148px;
+    transform: translate(75px, -78px);
+  }
+}
+
+@media screen and (max-width: 359px){
+  .WhyUseWrp{
+    margin-bottom: -40px;
+  }
+  .WhyUseWrp h2{
+    margin-left: 59px;
+    width: 81px;
+  }
+  .Tab:first-child{
+    transform: translate(112px, -35px);
+  }
+  .Tab:nth-child(2){
+    transform: translate(-18px, -100px);
+  }
+  .Tab:last-child{
+    transform: translate(65px, -112px);
   }
 }

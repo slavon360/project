@@ -32,6 +32,11 @@ const footer = props => (
           <span className={classes.Value}>{props.proportions.proportionEthValue}</span>
         </div>
       </div>
+      <div className={classes.SocialIconsPhone}>
+        <div className={classes.Telegram}><NavLink to="/" exact activeClassName={classes.active}><TelegramIcon /></NavLink></div>
+        <div className={classes.Facebook}><NavLink to="/" exact activeClassName={classes.active}><FacebookIcon /></NavLink></div>
+        <div className={classes.Twitter}><NavLink to="/" exact activeClassName={classes.active}><TwitterIcon /></NavLink></div>
+      </div>
     </div>
   </div>
 );

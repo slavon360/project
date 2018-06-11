@@ -7,6 +7,9 @@
   display: flex;
   justify-content: space-between;
 }
+.SocialIconsPhone{
+  display: none;
+}
 .LeftSide{
   font-size: 14px;
   color: #7e62a4;
@@ -28,14 +31,19 @@
   text-transform: uppercase;
   margin-right: 51px;
 }
-.LeftSide .Telegram > a, .LeftSide .Facebook > a, .LeftSide .Twitter > a{
+.SocialIconsPhone > div{
+  display: inline-block;
+}
+.LeftSide .Telegram > a, .LeftSide .Facebook > a, .LeftSide .Twitter > a,
+.SocialIconsPhone .Telegram > a, .SocialIconsPhone .Facebook > a, .SocialIconsPhone .Twitter > a{
   display: block;
   height: 100%;
 }
 .LeftSide .Telegram{
   margin-right: 44px;
 }
-.LeftSide .Telegram svg{
+.LeftSide .Telegram svg,
+.SocialIconsPhone .Telegram svg{
   width: 14px;
   height: 12px;
   fill: #fff;
@@ -43,11 +51,13 @@
 .LeftSide .Facebook{
   margin-right: 40px;
 }
-.LeftSide .Facebook svg{
+.LeftSide .Facebook svg,
+.SocialIconsPhone .Facebook svg{
   width: 13px;
   height: 13px;
 }
-.LeftSide .Twitter svg{
+.LeftSide .Twitter svg,
+.SocialIconsPhone .Twitter svg{
   width: 15px;
   height: 13px;
 }
@@ -115,5 +125,63 @@
   }
   .LeftSide .Facebook{
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .FooterWrp{
+    padding: 0 20px;
+  }
+  .Footer{
+    padding: 17px 0 8px;
+  }
+  .LeftSide .Terms{
+    margin-right: -5px;
+  }
+  .RightSide{
+    display: none;
+  }
+  .MiddleSide{
+    width: 88px;
+    transform: translateY(-7px);
+  }
+  .LeftSide .Telegram, .LeftSide .Facebook, .LeftSide .Twitter{
+    display: none;
+  }
+  .SocialIconsPhone{
+    display: block;
+  }
+  .SocialIconsPhone .Telegram{
+    margin-right: 34px;
+  }
+  .SocialIconsPhone .Facebook{
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .Footer{
+    padding-bottom: 15px;
+  }
+  .LeftSide{
+    font-size: 10px;
+  }
+  .MiddleSide{
+    font-size: 8px;
+    width: 80px;
+    transform: translateY(-4px);
+  }
+}
+
+@media screen and (max-width: 359px){
+  .FooterWrp{
+    padding: 0;
+  }
+  .Footer{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .SocialIconsPhone .Telegram, .SocialIconsPhone .Facebook{
+    margin-right: 20px;
   }
 }

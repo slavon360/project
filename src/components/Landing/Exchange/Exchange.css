@@ -58,7 +58,7 @@
 .InteractiveView{
   width: 812px;
   height: 560px;
-  box-shadow: 0 0 68px 0 #bbb;
+  box-shadow: 0 0 68px 0 #ececec;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
@@ -83,6 +83,7 @@
 @media screen and (max-width: 1365px){
   .ExchangeWrp{
     padding: 0 31px;
+    margin-bottom: -240px;
   }
   .Steps{
     width: 379px;
@@ -105,6 +106,7 @@
     display: block;
     padding: 0 29px;
     text-align: center;
+    margin-bottom: 0;
   }
   .Title::before{
     width: 60px;
@@ -117,7 +119,8 @@
   }
   .Steps h2{
     font-size: 24px;
-    margin-bottom: 91px;
+    margin-bottom: 85px;
+    text-align: left;
   }
   .Step{
     display: inline-block;
@@ -140,5 +143,89 @@
     width: 493px;
     height: 340px;
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .ExchangeWrp{
+    padding: 0 21px;
+    margin-bottom: -270px;
+  }
+  .Steps h2{
+    font-size: 18px;
+    margin-bottom: 73px;
+  }
+  .Steps .Step{
+    margin: 0 0 0 20px;
+    width: auto;
+    display: block;
+  }
+  .Steps .Step:nth-child(2){
+    margin-bottom: 336px;
+  }
+  .Steps .Step:nth-child(3){
+    margin-bottom: 62px;
+  }
+  .Title::before{
+    width: 40px;
+    height: 40px;
+    left: -19px;
+    bottom: 14px;
+  }
+  .Title::after{
+    top: -19px;
+  }
+  .Title, .Description{
+    font-size: 12px;
+  }
+  .InteractiveView{
+    margin-top: 0;
+    width: 374px;
+    height: 259px;
+    transform: translateY(-460px);
+  }
+}
+
+@media screen and (max-width: 738px){
+  .InteractiveView{
+    transform: translateY(-480px);
+  }
+}
+
+@media screen and (max-width: 614px){
+  .InteractiveView{
+    transform: translateY(-490px);
+  }
+}
+
+@media screen and (max-width: 413px){
+  .InteractiveView{
+    width: 320px;
+    height: 222px;
+    transform: translateY(-478px);
+
+  }
+  .Steps h2{
+    margin-bottom: 58px;
+  }
+  .Steps .Step:nth-child(2){
+    margin-bottom: 300px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .InteractiveView{
+    width: 280px;
+    height: 194px;
+    transform: translateY(-452px);
+  }
+  .Steps h2{
+    margin-bottom: 55px;
+  }
+  .Steps .Step:nth-child(2){
+    margin-bottom: 270px;
+  }
+  .Steps .Step:nth-child(3){
+    margin-bottom: 50px;
   }
 }
