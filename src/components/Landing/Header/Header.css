@@ -44,3 +44,43 @@
   text-decoration: none;
   color: #fff;
 }
+.SignUp > a:hover, .SignIn > a:hover{
+  color: #ce41a1;
+}
+
+@media screen and (max-width: 1900px){
+  .Header{
+    margin-bottom: 115px;
+    padding-left: 59px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1365px){
+  .Header{
+    padding: 31px 122px 0 32px;
+    margin-bottom: 80px;
+  }
+  .Proportions{
+    margin-right: 82px;
+  }
+  .SignUp{
+    margin-right: 38px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .RightSide{
+    font-size: 12px;
+  }
+  .Header{
+    padding-left: 30px;
+    padding-right: 100px;
+  }
+  .Proportions{
+    margin-right: 62px;
+  }
+  .SignUp{
+    margin-right: 28px;
+  }
+}

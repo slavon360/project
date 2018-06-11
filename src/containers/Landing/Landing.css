@@ -9,12 +9,10 @@
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1920px){
+@media screen and (min-width: 2240px){
   .LandingWrp{
-    background-position: 91% -58%;
-  }
-  .Footer{
-    background-position: 50% -22%;
+    background-size: 124% 61%;
+    background-position: 81% -58%;
   }
 }
 
@@ -27,9 +25,42 @@
     background-size: 127% 110%;
   }
 }
-@media screen and (min-width: 2240px){
+
+@media screen and (max-width: 1920px){
   .LandingWrp{
-    background-size: 124% 61%;
-    background-position: 81% -58%;
+    background-position: 91% -58%;
+  }
+  .Footer{
+    background-position: 50% -22%;
+  }
+}
+
+@media screen and (max-width: 1900px){
+  .LandingWrp{
+    background-size: 137% 50%;
+    background-position: 87% -38%;
+  }
+  .Footer{
+    background-position: 50% 15vw;
+    background-size: 124%;
+  }
+}
+
+@media screen and (max-width: 1365px){
+  .LandingWrp{
+    background-size: 133% 37%;
+    background-position: 92% -22%;
+  }
+  .Footer{
+    background-size: 132% 107%;
+    background-position: 50% -298%;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .Footer{
+    padding-top: 204px;
+    background-size: 132% 107%;
+    background-position: 50% -100%;
   }
 }

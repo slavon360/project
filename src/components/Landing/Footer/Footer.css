@@ -72,3 +72,48 @@
   color: #fff;
   padding-left: 8px;
 }
+
+@media screen and (max-width: 1900px){
+  .FooterWrp{
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 1365px){
+  .FooterWrp{
+    padding: 0 32px;
+  }
+  .LeftSide, .RightSide{
+    font-size: 12px;
+  }
+  .LeftSide .Terms{
+    margin-right: 34px;
+  }
+  .LeftSide .Social{
+    margin-right: 28px;
+  }
+  .RightSide .TrandingVolume{
+    margin-right: 31px;
+  }
+  .RightSide .ProportionBtc{
+    margin-right: 26px;
+  }
+  .MiddleSide{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .FooterWrp{
+    padding: 0 30px;
+  }
+  .LeftSide .Social, .RightSide .TrandingVolume{
+    display: none;
+  }
+  .LeftSide .Telegram{
+    margin-right: 34px;
+  }
+  .LeftSide .Facebook{
+    margin-right: 30px;
+  }
+}

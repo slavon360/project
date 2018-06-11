@@ -70,3 +70,65 @@
   color: #83878c;
   font-size: 16px;
 }
+
+@media screen and (max-width: 1365px){
+  .WhyUseWrp{
+    margin-bottom: 143px;
+  }
+  .WhyUseWrp h2{
+    font-size: 30px;
+    margin-bottom: 119px;
+  }
+  .Tab:first-child{
+    margin-right: 54px;
+  }
+  .Tab:nth-child(2){
+    margin-right: 73px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .WhyUseWrp{
+    margin-top: -120px;
+  }
+  .WhyUseWrp h2{
+    font-size: 24px;
+    margin-bottom: 85px;
+  }
+  .Tab .Title{
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .Tab .Description{
+    font-size: 14px;
+  }
+  .Tab:first-child{
+    width: 159px;
+    margin-right: 84px;
+  }
+  .Tab:first-child svg{
+    width: 36px;
+    height: 36px;
+  }
+  .Tab:nth-child(2){
+    width: 152px;
+    margin-right: 90px;
+  }
+  .Tab:nth-child(2) svg{
+    width: 23px;
+    height: 36px;
+  }
+  .Tab:nth-child(2) .Title{
+    padding: 0 15px;
+  }
+  .Tab:last-child{
+    width: 148px;
+  }
+  .Tab:last-child .Icon{
+    top: -2px;
+  }
+  .Tab:last-child svg{
+    width: 33px;
+    height: 36px;
+  }
+}

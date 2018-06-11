@@ -40,3 +40,51 @@
   background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
   color: #fff;
 }
+
+@media screen and (max-width: 1900px){
+  .IntroWrp{
+    padding-left: 160px;
+    margin-bottom: 620px;
+  }
+  .IntroWrp h1{
+    font-size: 48px;
+    margin-bottom: 35px;
+  }
+  .Advertise{
+    font-size: 18px;
+    margin-bottom: 49px;
+  }
+  .CreateAccount{
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .CreateAccount > a{
+    line-height: 3;
+  }
+}
+
+@media screen and (max-width: 1365px){
+  .IntroWrp{
+    padding-left: 60px;
+    margin-bottom: 365px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .IntroWrp h1{
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  .Advertise{
+    font-size: 16px;
+    margin-bottom: 39px;
+  }
+  .CreateAccount{
+    width: 160px;
+    height: 40px;
+  }
+  .CreateAccount > a{
+    line-height: 2.5;
+  }
+}

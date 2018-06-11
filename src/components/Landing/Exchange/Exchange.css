@@ -66,3 +66,79 @@
   transform: scale(1.16);
   width: 100%;
 }
+
+@media screen and (max-width: 1900px){
+  .ExchangeWrp{
+    padding: 0 60px;
+  }
+  .InteractiveView{
+    margin-top: 116px;
+    width: 637px;
+    height: 439px;
+  }
+  .Steps{
+    width: 483px;
+  }
+}
+@media screen and (max-width: 1365px){
+  .ExchangeWrp{
+    padding: 0 31px;
+  }
+  .Steps{
+    width: 379px;
+  }
+  .Steps h2{
+    margin-bottom: 112px;
+    font-size: 30px;
+  }
+  .Title, .Description{
+    font-size: 14px;
+  }
+  .InteractiveView{
+    width: 493px;
+    height: 340px;
+    margin-top: 160px;
+  }
+}
+@media screen and (max-width: 1023px){
+  .ExchangeWrp{
+    display: block;
+    padding: 0 29px;
+    text-align: center;
+  }
+  .Title::before{
+    width: 60px;
+    height: 60px;
+    left: -28px;
+    bottom: 4px;
+  }
+  .Steps{
+    width: 100%;
+  }
+  .Steps h2{
+    font-size: 24px;
+    margin-bottom: 91px;
+  }
+  .Step{
+    display: inline-block;
+    text-align: left;
+  }
+  .Step:nth-child(2){
+    width: 180px;
+    margin: 0 71px 0 31px;
+  }
+  .Step:nth-child(3){
+    width: 165px;
+    margin: 0 84px 0 0;
+  }
+  .Step:nth-child(4){
+    width: 175px;
+    margin: 0;
+  }
+  .InteractiveView{
+    margin-top: 47px;
+    width: 493px;
+    height: 340px;
+    display: inline-block;
+  }
+}
