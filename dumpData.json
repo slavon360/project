@@ -3,17 +3,25 @@
     "checkedTab": {
       "title": "Trade Bitcoin and Ethereum easily",
       "icon": "bitcoin",
+      "checkedStep": "Deposit and Withdraw",
+      "className": "Trade-Bitcoin",
       "steps": [
         {
+          "checked": true,
           "title": "Deposit and Withdraw",
+          "className": "Trade-Bitcoin",
           "description": "Deposit and withdraw to and from your Bithela wallet, mobile money wallet, and bank account at a low to zero cost"
         },
         {
+          "checked": false,
           "title": "Trade Conveniently",
+          "className": "Buy-and-Sell",
           "description": "Buy, sell, and manage your digital assets instantly, anytime and accessible anywhere at your convenience"
         },
         {
+          "checked": false,
           "title": "Transact Securely",
+          "className": "Trust-and-Security",
           "description": "We go to lengths to secure your digital assets by using the latest known security measures and best practices currently available"
         }
       ]
@@ -22,19 +30,22 @@
       {
         "title": "Trade Bitcoin and Ethereum easily",
         "description": "Join the growing world of digital currencies using our platform",
-        "checked": true,
+        "checked": false,
         "className": "Trade-Bitcoin",
         "icon": "bitcoin",
         "steps": [
           {
+            "checked": false,
             "title": "Deposit and Withdraw",
             "description": "Deposit and withdraw to and from your Bithela wallet, mobile money wallet, and bank account at a low to zero cost"
           },
           {
+            "checked": false,
             "title": "Trade Conveniently",
             "description": "Buy, sell, and manage your digital assets instantly, anytime and accessible anywhere at your convenience"
           },
           {
+            "checked": false,
             "title": "Transact Securely",
             "description": "We go to lengths to secure your digital assets by using the latest known security measures and best practices currently available"
           }
@@ -48,14 +59,17 @@
         "icon": "padlock",
         "steps": [
           {
+            "checked": false,
             "title": "Lorem ipsum dolor",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
           },
           {
+            "checked": false,
             "title": "Trade Conveniently",
             "description": "Buy, sell, and manage your digital assets instantly, anytime and accessible anywhere at your convenience"
           },
           {
+            "checked": false,
             "title": "Transact Securely",
             "description": "We go to lengths to secure your digital assets by using the latest known security measures and best practices currently available"
           }
@@ -69,14 +83,17 @@
         "icon": "timer",
         "steps": [
           {
+            "checked": false,
             "title": "Deposit and Withdraw",
             "description": "Deposit and withdraw to and from your Bithela wallet, mobile money wallet, and bank account at a low to zero cost"
           },
           {
+            "checked": false,
             "title": "Sed ut perspiciatis",
             "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae"
           },
           {
+            "checked": false,
             "title": "Transact Securely",
             "description": "We go to lengths to secure your digital assets by using the latest known security measures and best practices currently available"
           }

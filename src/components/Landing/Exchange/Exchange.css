@@ -19,8 +19,10 @@
 .Step{
   margin: 0 0 90px 40px;
   cursor: pointer;
+  outline: none;
+  border: none;
 }
-.Step:hover .Title::before{
+.Step:hover .Title::before, .Step.Active .Title::before{
   background-color: #e1d4f2;
 }
 .Step:nth-child(3){

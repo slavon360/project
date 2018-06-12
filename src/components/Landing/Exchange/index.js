@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import classes from './Exchange.css';
-import WithdrawImg from '../../../../assets/images/backgrounds/withdraw.png';
+import WithdrawImg from '../../../../assets/images/backgrounds/withdraw.jpg';
 import TrustImg from '../../../../assets/images/backgrounds/trust_security.jpg';
 import BuySellImg from '../../../../assets/images/backgrounds/buy_sell.jpg';
 
@@ -10,12 +10,12 @@ const cx = classNames.bind(classes);
 
 const getImage = (title) => {
   switch (title) {
-    case 'Trade Bitcoin and Ethereum easily':
+    case 'Deposit and Withdraw':
       return WithdrawImg;
-    case 'Trust and Security':
-      return TrustImg;
-    case 'Buy and Sell in Seconds':
+    case 'Trade Conveniently':
       return BuySellImg;
+    case 'Transact Securely':
+      return TrustImg;
     default: return WithdrawImg;
   }
 };
@@ -24,14 +24,20 @@ const exchange = props => (
     <div className={classes.Steps}>
       <h2><span>Bithela</span> Exchange</h2>
       {props.checkedTab.steps.map((step, index) => (
-        <div className={classes.Step} key={index}>
+        <div
+          role="button"
+          tabIndex={0}
+          className={cx(classes.Step, { Active: step.checked, Inactive: !step.checked })}
+          onClick={() => props.changeImage(step)}
+          key={index}
+        >
           <div className={classes.Title}>{step.title}</div>
           <div className={classes.Description}>{step.description}</div>
         </div>
       ))}
     </div>
     <div className={cx(classes.InteractiveView, classes[props.checkedTab.className])}>
-      <img src={getImage(props.checkedTab.title)} alt={props.checkedTab.title} />
+      <img src={getImage(props.checkedTab.checkedStep)} alt={props.checkedTab.checkedStep} />
     </div>
   </div>
 );

@@ -25,11 +25,8 @@ const whyUse = props => (
     <div className={classes.TabsWrp}>
       {props.tabs.map((tab, index) => (
         <div
-          role="button"
-          tabIndex={0}
           className={cx(classes.Tab, { Active: tab.checked, Inactive: !tab.checked })}
           key={index}
-          onClick={() => props.changeImage(tab)}
         >
           <div className={classes.Icon}>
             {getIcon(tab.icon)}

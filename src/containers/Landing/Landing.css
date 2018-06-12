@@ -8,9 +8,21 @@
   text-align: center;
   background-repeat: no-repeat;
 }
-
+.TopBackgroundSVG{
+  display: none;
+  position: absolute;
+  height: 1994px;
+  top: -400px;
+  left: 0;
+  right: 0;
+}
 @media screen and (min-width: 2240px){
+  .TopBackgroundSVG{
+    display: block;
+    width: 100vw;
+  }
   .LandingWrp{
+
     background-size: 124% 61%;
     background-position: 81% -58%;
   }
