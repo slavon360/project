@@ -22,6 +22,8 @@
       {
         "title": "Trade Bitcoin and Ethereum easily",
         "description": "Join the growing world of digital currencies using our platform",
+        "checked": true,
+        "className": "Trade-Bitcoin",
         "icon": "bitcoin",
         "steps": [
           {
@@ -41,11 +43,13 @@
       {
         "title": "Trust and Security",
         "description": "Avoid perennial inflation by buying into deflationary currencies",
+        "checked": false,
+        "className": "Trust-and-Security",
         "icon": "padlock",
         "steps": [
           {
             "title": "Lorem ipsum dolor",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
           },
           {
             "title": "Trade Conveniently",
@@ -60,6 +64,8 @@
       {
         "title": "Buy and Sell in Seconds",
         "description": "Use our fast responsive platform that  helps you manage the market",
+        "className": "Buy-and-Sell",
+        "checked": false,
         "icon": "timer",
         "steps": [
           {

@@ -11,6 +11,7 @@
 }
 .TabsWrp, .Tab{
   display: inline-block;
+  outline: none;
 }
 .Tab:first-child{
   margin-right: 134px;
@@ -27,9 +28,11 @@
   display: inline-block;
   margin-bottom: 24px;
   position: relative;
+  cursor: pointer;
 }
 .Tab .Icon::before{
   content: '';
+  transition: opacity .35s;
   position: absolute;
   transform: rotate(9deg);
   width: 83px;
@@ -39,6 +42,9 @@
   background-color: #ce41a1;
   opacity: .05;
   border-radius: 55px;
+}
+.Tab .Icon:hover::before, .Tab.Active .Icon::before{
+  opacity: .15;
 }
 .Tab:first-child .Icon::before{
   left: -22px;

@@ -13,14 +13,35 @@ import classes from './Landing.css';
 class Landing extends Component {
   state = {
     landingData,
+    checkedTab: null,
+    tabs: null,
+  }
+  componentWillMount() {
+    if (landingData && landingData.checkedTab) {
+      this.setState({ checkedTab: landingData.checkedTab });
+    }
+    if (landingData && landingData.tabs) {
+      this.setState({ tabs: landingData.tabs });
+    }
+  }
+  onChangeImage = (tab) => {
+    let updTabs = this.state.tabs.slice();
+    updTabs = updTabs.map(t => ({
+      ...t,
+      checked: tab.title === t.title,
+    }));
+    this.setState({ tabs: updTabs, checkedTab: tab });
   }
   render() {
     return (
       <div className={classes.LandingWrp} style={{ backgroundImage: `url(${LandingTopBackground})` }}>
         <Header proportions={{ currencies: 'BTC / ETC', value: '223.649' }} />
         <Intro />
-        <WhyUse tabs={landingData.tabs} />
-        <Exchange checkedTab={landingData.checkedTab} />
+        <WhyUse
+          tabs={this.state.tabs}
+          changeImage={this.onChangeImage}
+        />
+        <Exchange checkedTab={this.state.checkedTab} />
         <div className={classes.Footer} style={{ backgroundImage: `url(${LandingBottomBackground})` }}>
           <BuildPortfolio />
           <Footer

@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
 import classes from './Exchange.css';
 import WithdrawImg from '../../../../assets/images/backgrounds/withdraw.png';
 import TrustImg from '../../../../assets/images/backgrounds/trust_security.jpg';
 import BuySellImg from '../../../../assets/images/backgrounds/buy_sell.jpg';
+
+const cx = classNames.bind(classes);
 
 const getImage = (title) => {
   switch (title) {
@@ -27,7 +30,7 @@ const exchange = props => (
         </div>
       ))}
     </div>
-    <div className={classes.InteractiveView}>
+    <div className={cx(classes.InteractiveView, classes[props.checkedTab.className])}>
       <img src={getImage(props.checkedTab.title)} alt={props.checkedTab.title} />
     </div>
   </div>
