@@ -28,6 +28,7 @@
   text-decoration: none;
 }
 .LeftSide .Social{
+  font-family: SegoeUI-Bold;
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 51px;
@@ -63,6 +64,7 @@
   height: 13px;
 }
 .MiddleSide{
+  font-family: SegoeUI-Light;
   color: #7e62a4;
   font-size: 12px;
 }

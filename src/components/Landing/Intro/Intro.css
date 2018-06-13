@@ -5,6 +5,7 @@
 }
 .IntroWrp h1{
   margin: 0 0 45px;
+  font-family: SegoeUI-Light;
   font-size: 60px;
   color: #fff;
   font-weight: 300;
@@ -18,6 +19,7 @@
 }
 .Advertise{
   color: #fff;
+  font-family: SegoeUI-Light;
   font-size: 24px;
   margin-bottom: 67px;
 }
@@ -27,6 +29,7 @@
   border-radius: 30px;
   background-color: #fff;
   color: #241a55;
+  font-family: SegoeUI-Bold;
   font-size: 18px;
 }
 .CreateAccount > a{
