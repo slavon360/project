@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { translate } from 'react-i18next';
 import { userData, dateData } from '../../../dumpData.json';
 import { propertiesExtractor } from '../../shared/utility';
 import BankAccount from '../../components/BankAccount';
@@ -11,11 +12,38 @@ import classes from './Verification.css';
 
 class Verification extends Component {
   state = {
+    currentLang: null,
     userData,
     dateData,
     navBtns: null,
     selectedSection: null,
   }
+
+  componentWillMount() {
+    const date = this.state.dateData;
+    const birth = this.state.userData['User details'].birth;
+    const months = Object.keys(date).map(key => ({
+      title: key,
+      checked: false,
+    }));
+    const days = birth.month && Array.from(new Array(date[birth.month].days))
+      .reduce((acc, item, index, items) => [...acc, { title: items.length - index }], []);
+    const currentYear = new Date().getFullYear();
+    const maxAge = 120;
+    const years = Array.from(new Array(maxAge))
+      .reduce((acc, item, index) => [...acc, { title: currentYear - index }], []);
+    this.updateNavButtons();
+    this.setState({ months, days, years });
+  }
+
+  componentDidUpdate() {
+    global.console.log(this.props.i18n, this.state);
+    if (this.props.i18n.language !== this.state.currentLang) {
+      this.updateNavButtons();
+      global.console.log(this.props);
+    }
+  }
+
   switchSection = (sect) => {
     let updNavBtns = [...this.state.navBtns];
     updNavBtns = updNavBtns.map((nav) => {
@@ -30,29 +58,18 @@ class Verification extends Component {
     });
     this.setState({ navBtns: updNavBtns });
   }
+
   hideShowDate = () => {}
-  componentWillMount() {
-    const date = this.state.dateData;
-    const birth = this.state.userData['User details'].birth;
+
+  updateNavButtons = () => {
     let navBtns = [];
-    const months = Object.keys(date).map(key => ({
-      title: key,
-      checked: false,
-    }));
-    const days = birth.month && Array.from(new Array(date[birth.month].days))
-      .reduce((acc, item, index, items) => [...acc, { title: items.length - index }], []);
-    const currentYear = new Date().getFullYear();
-    const maxAge = 120;
-    const years = Array.from(new Array(maxAge))
-      .reduce((acc, item, index) => [...acc, { title: currentYear - index }], []);
-    global.console.log(months, days, years);
     const necessaryKeys = 'User details,Address,Bank';
     navBtns = propertiesExtractor(this.state.userData, necessaryKeys, [], true);
     const updNavBtns = navBtns.map((nav, index) => {
       if (nav.checked) {
         this.setState({ selectedSection: nav });
       }
-      const borderTextColor = nav.status === 'Verified' ? '#6bcc00' : '#c6c6c6';
+      const borderTextColor = nav.verified ? '#6bcc00' : '#c6c6c6';
       const content = (
         <div className={classes.NavBtn}>
           <div style={{ color: borderTextColor, borderColor: borderTextColor }}>
@@ -60,20 +77,20 @@ class Verification extends Component {
           </div>
           <div>
             <div>{nav.title}</div>
-            {nav.status === 'Verified' ?
+            {nav.verified ?
               <div style={{ color: '#6bcc00' }}>
-                {nav.status}
+                {this.props.t('status.verified')}
                 <Checked
                   styles={{ width: '8px', height: '7px', fill: '#6bcc00', marginLeft: '8px' }}
                 />
               </div>
               : null
             }
-            {nav.status === 'Is being verified' &&
-              <div style={{ color: '#627eea' }}>{nav.status}</div>
+            {nav.isBeingVerified &&
+              <div style={{ color: '#627eea' }}>{this.props.t('status.isBeingVerified')}</div>
             }
-            {nav.status === 'Not verified' &&
-              <div style={{ color: '#e76071' }}>{nav.status}</div>
+            {nav.notVerified &&
+              <div style={{ color: '#e76071' }}>{this.props.t('status.notVerified')}</div>
             }
           </div>
         </div>
@@ -82,7 +99,7 @@ class Verification extends Component {
       updNav.content = content;
       return updNav;
     });
-    this.setState({ navBtns: updNavBtns, months, days, years });
+    this.setState({ navBtns: updNavBtns, currentLang: this.props.i18n.language });
   }
 
   render() {
@@ -133,4 +150,4 @@ class Verification extends Component {
 }
 
 
-export default Verification;
+export default translate()(Verification);

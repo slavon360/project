@@ -8,6 +8,11 @@
       "terms": "Умови Використання",
       "social": "SOCIAL",
       "tradingVolume": "Обсяг торгів"
+    },
+    "status": {
+      "verified": "Перевірено",
+      "isBeingVerified": "В процесі перевірки",
+      "notVerified":"Не перевірено"
     }
   }
 }
