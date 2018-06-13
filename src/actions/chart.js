@@ -2,22 +2,17 @@ import * as actionTypes from './actionTypes';
 import { chartDay } from '../../dumpData.json';
 import axios from '../requests/axios-chart';
 
-const addVolumeAndDateObj = (data) => {
-  const updated = data.map(item => ({
-    ...item,
-    volume: item.volumefrom || item.volume,
-    date: new Date(item.time),
-  }));
-  return updated;
-};
+const addVolumeAndDateObj = data => (data.map(item => ({
+  ...item,
+  volume: item.volumefrom || item.volume,
+  date: new Date(item.time),
+}))
+);
 
-const setHourlyData = (data) => {
-  global.console.log(data);
-  return {
-    hourlyData: addVolumeAndDateObj(data),
-    type: actionTypes.SET_HOURLY_DATA,
-  };
-};
+const setHourlyData = data => ({
+  hourlyData: addVolumeAndDateObj(data),
+  type: actionTypes.SET_HOURLY_DATA,
+});
 
 const setWeekData = data => ({
   weekData: addVolumeAndDateObj(data),
