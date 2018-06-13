@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 // import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import Layout from './hoc/Layout';
-import Modal from './components/UI/Modal';
-// import TermsOfUse from './components/TermsOfUse';
+// import Modal from './components/UI/Modal';
+import TermsOfUse from './components/TermsOfUse';
 
 // import Welcome from './components/Modals/Welcome';
 
@@ -14,7 +14,7 @@ import Modal from './components/UI/Modal';
 
 // import AuthenticatorSupport from './components/Modals/AuthenticatorSupport';
 
-import ChangePassword from './components/Modals/ChangePassword';
+// import ChangePassword from './components/Modals/ChangePassword';
 /*
 import Login from './containers/Login';
 
@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <div className="App">
         <Layout>
-          <Modal modalContent={<ChangePassword />} />
+          <TermsOfUse />
         </Layout>
       </div>
     );
