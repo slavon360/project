@@ -3,6 +3,18 @@
     font-family: 'SegoeUI';
     src: local('SegoeUI'), url(../fonts/segoeui.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'SegoeUI-Light';
+    src: local('SegoeUI'), url(../fonts/segoeuil.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'SegoeUI-Bold';
+    src: local('SegoeUI'), url(../fonts/segoeuib.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'SegoeUI-Bold-Italic';
+    src: local('SegoeUI'), url(../fonts/seguisbi.ttf) format('truetype');
+}
 body {
   margin: 0;
   padding: 0;
