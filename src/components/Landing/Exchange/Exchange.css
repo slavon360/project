@@ -1,4 +1,5 @@
 .ExchangeWrp{
+  position: relative;
   padding: 0 162px 0 159px;
   display: flex;
   justify-content: space-between;

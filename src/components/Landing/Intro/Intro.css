@@ -1,6 +1,7 @@
 .IntroWrp{
   padding-left: 360px;
   margin-bottom: 679px;
+  position: relative;
 }
 .IntroWrp h1{
   margin: 0 0 45px;

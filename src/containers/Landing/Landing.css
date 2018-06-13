@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
 }
 .Footer{
+  position: relative;
   padding-top: 464px;
   text-align: center;
   background-repeat: no-repeat;
@@ -11,31 +12,6 @@
 .TopBackgroundSVG{
   display: none;
   position: absolute;
-  height: 1994px;
-  top: -400px;
-  left: 0;
-  right: 0;
-}
-@media screen and (min-width: 2240px){
-  .TopBackgroundSVG{
-    display: block;
-    width: 100vw;
-  }
-  .LandingWrp{
-
-    background-size: 124% 61%;
-    background-position: 81% -58%;
-  }
-}
-
-@media screen and (min-width: 1921px){
-  .LandingWrp{
-    background-position: 91% -58%;
-  }
-  .Footer{
-    background-position: 50% -22%;
-    background-size: 127% 110%;
-  }
 }
 
 @media screen and (max-width: 1920px){
@@ -109,5 +85,36 @@
     background-position: 55% -80%;
     margin-top: 60px;
     padding-top: 95px;
+  }
+}
+
+@media screen and (min-width: 1921px){
+  .LandingWrp{
+    background-position: 91% -58%;
+  }
+  .Footer{
+    background-position: 50% -22%;
+    background-size: 127% 110%;
+  }
+}
+
+@media screen and (min-width: 2240px){
+  .TopBackgroundSVG{
+    display: block;
+    width: 110%;
+    left: -14vw;
+    top: -48vw;
+    transform: rotate(4deg);
+  }
+  .LandingWrp{
+    background-image: none !important;
+    background-size: 124% 61%;
+    background-position: 81% -58%;
+  }
+}
+
+@media screen and (min-width: 3000px){
+  .TopBackgroundSVG{
+    transform: rotate(5deg);
   }
 }

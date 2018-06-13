@@ -1,4 +1,5 @@
 .Header{
+  position: relative;
   display: flex;
   padding: 51px 161px 0 159px;
   justify-content: space-between;
