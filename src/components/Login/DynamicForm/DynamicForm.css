@@ -9,12 +9,14 @@
 }
 .Title{
   font-size: 24px;
+  font-family: SegoeUI-Bold-Italic;
   color: #392c70;
   font-weight: 700;
   font-style: italic;
 }
 .Footer{
   position: absolute;
+  font-family: SegoeUI-Light;
   bottom: 87px;
   margin: 0 auto;
   font-size: 12px;
