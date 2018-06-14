@@ -4,6 +4,17 @@
 .Hide{
   display: none;
 }
+.PhoneNumberAuthentDropdownWrp{
+  width: 122px;
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 14px;
+  position: relative;
+}
+.PhoneNumberAuthentContainer{
+  position: absolute;
+  display: none;
+}
 .DropdownPeriodWrp{
   display: inline-block;
   margin-right: 10px;

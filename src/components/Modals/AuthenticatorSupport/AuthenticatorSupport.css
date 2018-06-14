@@ -1,0 +1,274 @@
+.AuthSupportWrp{
+  width: 902px;
+  padding: 0 128px 77px 137px;
+  margin-top: 85px;
+  box-sizing: border-box;
+}
+.AuthSupportWrp::-webkit-scrollbar{
+  width: 6px;
+}
+.AuthSupportWrp::-webkit-scrollbar-thumb{
+  background-color: #d192c7;
+  border-radius: 5px;
+}
+.StepsResponsive{
+  display: none;
+}
+.AuthSupportWrp h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: #922c88;
+  margin-bottom: 56px;
+}
+.DisableForm .SecretCodeText{
+  font-size: 16px;
+  color: #41424e;
+  margin-bottom: 19px;
+}
+.DisableForm .SecretCodeText span{
+  font-weight: 700;
+}
+.Top{
+  margin-bottom: 55px;
+}
+.Top .Tip{
+  display: inline-block;
+  width: 292px;
+  margin-left: 28px;
+  font-size: 14px;
+  color: #41424e;
+}
+.Top .Tip span{
+  font-weight: 700;
+}
+.QrBlock{
+  margin-bottom: 6px;
+}
+.QrBlock img{
+  margin-right: 27px;
+}
+.Steps{
+  display: inline-block;
+  width: 405px;
+}
+.Steps .Item{
+  margin-bottom: 15px;
+}
+.StepsResponsive .Item{
+  margin-bottom: 15px;
+}
+.Steps .Item .Number, .StepsResponsive .Item .Number{
+  font-size: 18px;
+  color: #41424e;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 12px;
+  vertical-align: top;
+}
+.Steps .Item .Text, .StepsResponsive .Item .Text{
+  vertical-align: top;
+  color: #41424e;
+  font-size: 16px;
+  display: inline-block;
+  width: 365px;
+}
+.Once{
+  font-size: 16px;
+  font-weight: 700;
+  color: #41424e;
+  margin-bottom: 47px;
+}
+.Enter{
+  font-size: 14px;
+  color: #41424e;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1850px){
+  .AuthSupportWrp{
+    width: 702px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    overflow: scroll;
+    margin-top: 35px;
+    height: 500px;
+  }
+  .AuthSupportWrp h2{
+    margin-bottom: 55px;
+  }
+  .Top .Tip{
+    width: 233px;
+  }
+  .Top{
+    margin-bottom: 53px;
+  }
+  .Steps{
+    width: 345px;
+  }
+  .Steps .Item .Text{
+    width: 323px;
+  }
+  .Once{
+    margin-bottom: 46px;
+  }
+  .Enter{
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .AuthSupportWrp{
+    padding-bottom: 78px;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .AuthSupportWrp{
+    width: 377px;
+    margin-top: 40px;
+    padding: 0 20px 44px;
+    line-height: 1.3;
+  }
+  .AuthSupportWrp h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .SecretCodeText{
+    font-size: 14px;
+  }
+  .Top{
+    margin-bottom: 29px;
+  }
+  .Top .Tip{
+    width: 142px;
+    font-size: 10px;
+    margin-left: 9px;
+    transform: translateY(6px);
+  }
+  .QrBlock img{
+    width: 123px;
+    height: 123px;
+    margin-right: 17px;
+    float: left;
+  }
+  .Steps{
+    width: 187px;
+  }
+  .Steps .Item:nth-child(3),
+  .Steps .Item:nth-child(4){
+    display: none;
+  }
+  .Steps .Item .Number, .StepsResponsive .Item .Number{
+    font-size: 16px;
+    margin-right: 6px;
+  }
+  .Steps .Item .Text{
+    font-size: 14px;
+    width: 170px;
+  }
+  .StepsResponsive{
+    display: block;
+  }
+  .StepsResponsive .Item .Number, .StepsResponsive .Item .Text{
+    display: inline-block;
+  }
+  .StepsResponsive .Item .Text{
+    font-size: 14px;
+    width: 298px;
+  }
+  .Once{
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .Enter{
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .AuthSupportWrp{
+    margin-top: 45px;
+    width: 323px;
+    padding-bottom: 32px;
+  }
+  .AuthSupportWrp h2{
+    font-size: 16px;
+  }
+  .DisableForm .SecretCodeText{
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .Top{
+    margin-bottom: 20px;
+  }
+  .Top .Tip{
+    width: 121px;
+    transform: translateY(-4px);
+  }
+  .QrBlock img{
+    width: 113px;
+    height: 113px;
+    margin-right: 6px;
+  }
+  .Steps{
+    width: 154px;
+  }
+  .Steps .Item .Number, .StepsResponsive .Item .Number{
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .Steps .Item .Text, .StepsResponsive .Item .Text{
+    font-size: 12px;
+    width: 140px;
+  }
+  .StepsResponsive .Item .Text{
+    width: 256px;
+  }
+  .Once{
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .AuthSupportWrp{
+    width: 282px;
+    padding-bottom: 31px;
+    overflow: auto;
+  }
+  .AuthSupportWrp h2{
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 14px;
+  }
+  .Top .Tip{
+    width: 99px;
+    font-size: 8px;
+    transform: translateY(0);
+  }
+  .Steps{
+    width: 123px;
+  }
+  .Steps .Item .Text, .StepsResponsive .Item .Text{
+    width: 110px;
+    font-size: 10px;
+  }
+  .StepsResponsive .Item .Text{
+    width: 90%;
+  }
+  .Steps .Item:nth-child(2){
+    margin-bottom: 6px;
+  }
+  .Steps .Item .Number, .StepsResponsive .Item .Number{
+    font-size: 12px;
+  }
+  .Once{
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}

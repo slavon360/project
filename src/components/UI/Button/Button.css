@@ -6,6 +6,110 @@
   background-color: transparent;
   padding: 0;
 }
+.BackToPrevious{
+  width: 160px;
+  height: 40px;
+  background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+  color: #fff;
+  font-family: SegoeUI-Bold;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+.ConfirmSMSAuth, .ConfirmDisableSMSAuth{
+  width: 202px;
+  height: 42px;
+  color: #922c88;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 18px 0 #dedede;
+  position: relative;
+  overflow: hidden;
+}
+.ConfirmDisableSMSAuth{
+  color: #fff;
+  box-shadow: none;
+  background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
+}
+.ConfirmSMSAuth:hover{
+  color: #fff;
+  background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
+}
+.SendSMSAuth{
+  width: 202px;
+  height: 42px;
+  background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.SendSMSAuth::before{
+  content: attr(before-content);
+  display: block;
+  box-sizing: border-box;
+  padding-top: 12px;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  opacity: 0;
+  background: linear-gradient(90deg, #e12b82, #53236d);
+}
+.SendSMSAuth:hover::before{
+  opacity: 1;
+}
+.PhoneNumberAuthentDropdownButton{
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  height: 42px;
+  box-sizing: border-box;
+}
+.CloseModalButton svg{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  fill: #a7aaad;
+}
+.WelcomeButton{
+  width: 240px;
+  height: 48px;
+  border-radius: 24px;
+  background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.WelcomeButton::before{
+  content: attr(before-content);
+  display: block;
+  box-sizing: border-box;
+  padding-top: 15px;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  opacity: 0;
+  background: linear-gradient(90deg, #e12b82, #53236d);
+}
+.WelcomeButton:hover::before{
+  opacity: 1;
+}
 .BuyTab, .SellTab{
   width: 50%;
   border-radius: 8px 8px 0 0;
@@ -245,6 +349,12 @@
   height: 40px;
 }
 
+@media screen and (max-width: 1850px){
+  .ConfirmDisableSMSAuth{
+    width: 242px;
+  }
+}
+
 @media screen and (max-width: 1023px){
   .DepositBtn, .WithdrawBtn{
     width: 40px;
@@ -267,6 +377,19 @@
 }
 
 @media screen and (max-width: 767px){
+  .BackToPrevious{
+    width: 140px;
+  }
+  .ConfirmDisableSMSAuth{
+    width: 143px;
+    height: 43px;
+  }
+  .WelcomeButton{
+    width: 150px;
+  }
+  .CloseModalButton{
+    display: none;
+  }
   .LoginButton{
     width: 140px;
   }
@@ -300,6 +423,25 @@
 }
 
 @media screen and (max-width: 413px){
+  .BackToPrevious{
+    width: 100px;
+  }
+  .ConfirmDisableSMSAuth{
+    width: 103px;
+  }
+  .ConfirmDisableGoogleAuth{
+    width: 143px;
+  }
+  .CloseModalButton{
+    display: block;
+  }
+  .CloseModalButton svg{
+    top: 20px;
+    right: 20px;
+  }
+  .WelcomeButton{
+    width: 140px;
+  }
   .BuyTab, .SellTab{
     font-size: 16px;
     padding: 16px 0 19px;
@@ -321,6 +463,9 @@
 }
 
 @media screen and (max-width: 359px){
+  .SendSMSAuth{
+    margin-bottom: 40px;
+  }
   .DepositBtn{
     margin-right: 10px;
   }

@@ -1,0 +1,23 @@
+.Modal{
+  background-color: #fff;
+  border-radius: 8px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.Modal::-webkit-scrollbar{
+  width: 6px;
+}
+.Modal::-webkit-scrollbar-thumb{
+  background-color: #d192c7;
+  border-radius: 5px;
+}
+
+@media screen and (max-height: 680px) and (max-width: 850px){
+  .Modal{
+    max-height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}

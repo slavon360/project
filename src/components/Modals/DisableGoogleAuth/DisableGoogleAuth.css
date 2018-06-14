@@ -1,0 +1,84 @@
+.DisableGoogleAuthWrp{
+  text-align: center;
+  width: 602px;
+  margin-top: 60px;
+  padding-bottom: 104px;
+}
+.DisableForm{
+  width: 313px;
+  display: inline-block;
+}
+.DisableGoogleAuthWrp h2{
+  font-size: 24px;
+  font-weight: 700;
+  color: #922c88;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+.LoginPassword, .GoogleAuthCode{
+  font-size: 14px;
+  color: #9e9fa3;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1850px){
+  .DisableGoogleAuthWrp{
+    margin-top: 50px;
+  }
+  .LoginPassword, .GoogleAuthCode{
+    margin-bottom: 14px;
+  }
+  .DisableForm{
+    width: 312px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .DisableGoogleAuthWrp{
+    margin-top: 35px;
+    padding-bottom: 84px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .DisableGoogleAuthWrp{
+    width: 377px;
+    padding-bottom: 64px;
+  }
+  .DisableGoogleAuthWrp h2{
+    font-size: 18px;
+    margin-bottom: 49px;
+  }
+  .LoginPassword, .GoogleAuthCode{
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .DisableGoogleAuthWrp{
+    width: 323px;
+    margin-top: 45px;
+    padding: 0 20px 47px;
+    box-sizing: border-box;
+  }
+  .DisableGoogleAuthWrp h2{
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .DisableForm{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .DisableGoogleAuthWrp{
+    width: 282px;
+    padding-bottom: 37px;
+    margin-top: 45px;
+  }
+  .DisableGoogleAuthWrp h2{
+    font-size: 14px;
+  }
+}

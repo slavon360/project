@@ -2,6 +2,148 @@
   outline: none;
   border: none;
 }
+.SecretCodeAuthSupportBottom{
+  display: inline-block;
+  margin-right: 6px;
+}
+.SecretCodeAuthSupportBottom > input{
+  height: 50px;
+  width: 382px;
+  font-size: 18px;
+  border-radius: 24px;
+  border: 1px solid #e8e8e8;
+  outline: none;
+  padding-left: 64px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.SecretCodeAuthSupportTop{
+  vertical-align: top;
+  display: inline-block;
+}
+.SecretCodeAuthSupportTop > input{
+  width: 302px;
+  height: 52px;
+  color: #922c88;
+  font-size: 18px;
+  padding-left: 64px;
+  border: 1px solid #922c88;
+  border-radius: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+}
+.CurrentPassword, .NewPassword, .ConfirmNewPassword, .AuthentCode{
+  width: 100%;
+}
+.CurrentPassword > input, .NewPassword > input, .ConfirmNewPassword > input, .AuthentCode > input{
+  width: 100%;
+  padding-bottom: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e8e8e8;
+  letter-spacing: 4px;
+  font-size: 28px;
+  color: #d092c9;
+  cursor: pointer;
+}
+.AuthentCode > input{
+  font-size: 14px;
+  color: #9e9fa3;
+  letter-spacing: 0;
+  margin: 100px 0 137px;
+}
+.CurrentPassword > input:hover, .CurrentPassword > input:focus,
+.NewPassword > input:hover, .NewPassword > input:focus,
+.ConfirmNewPassword > input:hover, .ConfirmNewPassword > input:focus,
+.AuthentCode > input:hover, .AuthentCode > input:focus{
+  border-bottom: 2px solid #d092c9;
+}
+.CurrentPassword > input:hover, .CurrentPassword > input:focus{
+  margin-bottom: 47px;
+}
+.NewPassword > input:hover, .NewPassword > input:focus{
+  margin-bottom: 58px;
+}
+.ConfirmNewPassword > input:hover, .ConfirmNewPassword > input:focus{
+  margin-bottom: 46px;
+}
+.AuthentCode > input:hover, .AuthentCode > input:focus{
+  margin-bottom: 136px;
+}
+.CurrentPassword > input::-webkit-input-placeholder,
+.NewPassword > input::-webkit-input-placeholder,
+.ConfirmNewPassword > input::-webkit-input-placeholder,
+.AuthentCode > input::-webkit-input-placeholder{
+  color: #9e9fa3;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+.CurrentPassword > input{
+  margin-bottom: 48px;
+}
+.NewPassword > input{
+  margin-bottom: 59px;
+}
+.ConfirmNewPassword > input{
+  margin-bottom: 47px;
+}
+.SMSAuthCode, .LoginPasswordAuthent, .DisableSMSAuthCode{
+  width: 100%;
+  height: 42px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.LoginPasswordAuthent > input:hover,
+.LoginPasswordAuthent > input:focus,
+.DisableSMSAuthCode > input:hover,
+.DisableSMSAuthCode > input:focus{
+  border: 2px solid #d092c9;
+}
+.LoginPasswordAuthent{
+  margin-bottom: 50px;
+}
+.SMSAuthCode > input, .LoginPasswordAuthent > input, .DisableSMSAuthCode > input{
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #41424e;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  background-color: #fff;
+  padding-left: 28px;
+}
+.LoginPasswordAuthent > input, .DisableSMSAuthCode > input{
+  padding-left: 24px;
+  cursor: pointer;
+}
+.LoginPasswordAuthent > input{
+  letter-spacing: 4px;
+  font-size: 28px;
+  color: #d092c9;
+}
+.PhoneNumberAuthent{
+  display: inline-block;
+  width: 182px;
+  height: 42px;
+  vertical-align: top;
+}
+.PhoneNumberAuthent > input{
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #41424e;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  background-color: #fff;
+  padding-left: 28px;
+}
 .InputBuySell{
   border-bottom: 2px solid #d192c7;
   padding-bottom: 5px;
@@ -234,7 +376,24 @@
   font-size: 14px;
 }
 
+@media screen and (max-width: 1850px){
+  .SecretCodeAuthSupportBottom > input{
+    width: 328px;
+  }
+}
+
 @media screen and (max-width: 767px){
+  .SecretCodeAuthSupportBottom{
+    margin-right: 11px;
+  }
+  .SecretCodeAuthSupportBottom > input{
+    width: 183px;
+    height: 43px;
+  }
+  .SecretCodeAuthSupportTop > input{
+    width: 182px;
+    height: 43px;
+  }
   .InputBuySell{
     font-size: 14px;
   }
@@ -274,6 +433,24 @@
 }
 
 @media screen and (max-width: 413px){
+  .PhoneNumberAuthent{
+    width: 152px;
+  }
+  .DisableSMSAuthCode{
+    margin-bottom: 27px;
+  }
+  .LoginPasswordAuthent{
+    margin-bottom: 19px;
+  }
+  .SecretCodeAuthSupportTop > input{
+    width: 153px;
+  }
+  .SecretCodeAuthSupportBottom{
+    margin-right: 7px;
+  }
+  .SecretCodeAuthSupportBottom > input{
+    width: 173px;
+  }
   .WithdrawAmount .SecondLabel{
     font-size: 13px;
   }
@@ -287,6 +464,13 @@
 }
 
 @media screen and (max-width: 359px){
+  .PhoneNumberAuthent{
+    width: 112px;
+  }
+  .SecretCodeAuthSupportTop > input,
+  .SecretCodeAuthSupportBottom > input{
+    width: 132px;
+  }
   .DepositAddress label{
     margin-bottom: 10px;
   }
@@ -295,5 +479,8 @@
   }
   .NationalityWrp .SecondLabel{
     font-size: 10px;
+  }
+  .Top .Tip{
+    width: 99px;
   }
 }

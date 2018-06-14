@@ -1,0 +1,193 @@
+.WelcomeWrp{
+  width: 900px;
+  box-sizing: border-box;
+  padding: 0 140px 92px;
+  margin-top: 89px;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+}
+.WelcomeWrp h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color: #922c88;
+  padding-bottom: 40px;
+  margin: 0 0 30px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.Notice{
+  color: #41424e;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 55px;
+}
+.IconWrp, .Text{
+  display: inline-block;
+}
+.Text{
+  width: 545px;
+  font-size: 16px;
+  color: #41424e;
+}
+.IconWrp{
+  margin-right: 30px;
+  width: 32px;
+  text-align: center;
+}
+.IconWrp svg{
+  width: 25px;
+  height: 33px;
+  fill: #922c88;
+}
+.ListWrp{
+  margin-bottom: 115px;
+  text-align: left;
+}
+.ListItem{
+  position: relative;
+  margin-bottom: 21px;
+}
+.ListItem:first-child .IconWrp svg{
+  width: 25px;
+  height: 33px;
+}
+.ListItem:nth-child(2) .IconWrp svg{
+  width: 32px;
+  height: 32px;
+}
+.ListItem:nth-child(3) .IconWrp svg{
+  width: 32px;
+  height: 30px;
+}
+.ListItem:nth-child(3) .Text{
+  position: absolute;
+  left: 62px;
+  top: 12px;
+}
+
+@media screen and (max-width: 1850px){
+  .WelcomeWrp{
+    width: 700px;
+    padding: 0 60px 92px;
+    margin-top: 50px;
+    background-size: cover;
+  }
+  .ListWrp{
+    margin-bottom: 100px;
+  }
+  .Text{
+    width: 490px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .WelcomeWrp{
+    margin-top: 45px;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .WelcomeWrp{
+    margin-top: 20px;
+    padding: 0 20px 56px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% 50%;
+  }
+  .WelcomeWrp h1{
+    padding-bottom: 20px;
+    margin-bottom: 19px;
+  }
+  .Notice{
+    font-size: 14px;
+    margin-bottom: 21px;
+  }
+  .ListWrp{
+    margin-bottom: 135px;
+  }
+  .ListItem .Text{
+    font-size: 14px;
+    width: 238px;
+  }
+  .ListItem:first-child .Text{
+    transform: translateY(18px);
+  }
+}
+
+@media screen and (max-width: 413px){
+  .WelcomeWrp{
+    margin-top: 45px;
+    padding-bottom: 51px;
+    width: 320px;
+  }
+  .WelcomeWrp h1{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .Notice{
+    font-size: 12px;
+    margin-bottom: 17px;
+  }
+  .ListItem:first-child .IconWrp svg{
+    width: 18px;
+    height: 24px;
+  }
+  .ListItem:nth-child(2) .IconWrp svg{
+    width: 24px;
+    height: 24px;
+  }
+  .ListItem:nth-child(3) .IconWrp svg{
+    width: 24px;
+    height: 23px;
+  }
+  .ListItem:nth-child(3) .Text{
+    width: 220px;
+    left: 45px;
+    top: 10px;
+  }
+  .ListItem:first-child .Text{
+    transform: translateY(16px);
+  }
+  .IconWrp{
+    margin-right: 15px;
+  }
+  .ListItem .Text{
+    font-size: 12px;
+    width: 231px;
+  }
+  .ListItem{
+    margin-bottom: 18px;
+  }
+  .ListWrp{
+    margin-bottom: 102px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .WelcomeWrp{
+    width: 280px;
+    padding: 0 20px 41px;
+    margin-top: 45px;
+  }
+  .WelcomeWrp h1{
+    font-size: 18px;
+  }
+  .Notice{
+    margin-bottom: 13px;
+  }
+  .ListItem .Text{
+    width: 198px;
+  }
+  .IconWrp{
+    margin-right: 6px;
+  }
+  .ListItem:nth-child(3) .Text{
+    left: 38px;
+    width: 195px;
+  }
+}
