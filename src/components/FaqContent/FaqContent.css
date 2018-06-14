@@ -37,6 +37,7 @@
   transform: rotate(90deg);
 }
 .FAQQuestionWrp .Title{
+  font-family: SegoeUI-Bold;
   outline: none;
   font-size: 16px;
   color: #41424e;

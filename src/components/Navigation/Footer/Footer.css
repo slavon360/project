@@ -3,7 +3,6 @@
   padding: 21px 160px 27px 160px;
   font-size: 14px;
   color: #7b7495;
-  display: none;
 }
 .Bottom, .Top{
   display: flex;
@@ -32,6 +31,7 @@
   text-decoration: none;
 }
 .NavItemHelp, .Word{
+  font-family: SegoeUI-Bold;
   text-transform: uppercase;
   font-weight: 700;
 }

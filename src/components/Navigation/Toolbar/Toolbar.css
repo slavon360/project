@@ -2,9 +2,9 @@
   position: relative;
   z-index: 10;
   padding: 24px 159px 35px 160px;
-  display: none;
 }
 .Logo{
+  font-family: SegoeUI-Bold-Italic;
   display: inline-block;
   margin-right: 120px;
   color: #922c88;
