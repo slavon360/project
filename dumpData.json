@@ -107,7 +107,9 @@
     "mail": "johnbravo@mail.com",
     "progress": 30,
     "User details": {
-      "status": "Verified",
+      "verified": true,
+      "isBeingVerified": false,
+      "notVerified": false,
       "gender": {
         "male": "false",
         "female": "false"
@@ -126,11 +128,15 @@
       "checked": false
     },
     "Address": {
-      "status": "Is being verified",
+      "verified": false,
+      "isBeingVerified": true,
+      "notVerified": false,
       "checked": false
     },
     "Bank": {
-      "status": "Not verified",
+      "verified": false,
+      "isBeingVerified": false,
+      "notVerified": true,
       "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac ex auctor nunc aliquet venenatis eu facilisis ipsum. Phasellus non lobortis massa, in tempor nunc. Cras sed orci id quam viverra euismod vitae et ligula. Nulla suscipit auctor mi non venenatis. Phasellus odio tortor, luctus vel diam ac, iaculis dignissim velit.",
       "checked": true
     },

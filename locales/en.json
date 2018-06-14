@@ -8,6 +8,11 @@
       "terms": "Terms and Conditions",
       "social": "SOCIAL",
       "tradingVolume": "Trading Volume"
+    },
+    "status": {
+      "verified": "Verified",
+      "isBeingVerified": "Is Being Verified",
+      "notVerified":"Not verified"
     }
   }
 }
