@@ -296,6 +296,7 @@
   position: relative;
 }
 .GenderRadioWrp label, .SertificateRadioWrp label{
+  font-family: SegoeUI-Bold;
   font-size: 16px !important;
   font-weight: 700 !important;
   color: #41424e !important;
@@ -399,6 +400,7 @@
   }
   .AmountLabel{
     font-size: 12px;
+    font-family: SegoeUI-Bold;
   }
   .NationalityWrp .SecondLabel{
     font-size: 12px;

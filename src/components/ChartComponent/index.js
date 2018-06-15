@@ -3,10 +3,13 @@ import classNames from 'classnames';
 import Dropdown from '../UI/Dropdown';
 import ChartHeader from '../ChartHeader';
 import Button from '../UI/Button';
+import Angle from '../UI/Icons/NextAngle';
 import Chart from '../Chart';
 import classes from './ChartComponent.css';
 
 const chartComponent = (props) => {
+  const selectedPeriod = props.chartConfig.selectedPeriod;
+  global.console.log(selectedPeriod);
   const periods = props.chartConfig.periods.map(period => (period.drpItems ? (
     <Dropdown
       key={period.title}
@@ -17,12 +20,13 @@ const chartComponent = (props) => {
       drpContainerClasses={
         classNames('DropdownPeriodContainer', { Show: period.showDpDwn, Hide: !period.showDpDwn }).split(' ')
       }
-      dropdownButtonClasses={classNames('DropdownButtonPeriod', { DropdownButtonPeriodChecked: period.showDpDwn }).split(' ')}
+      dropdownButtonClasses={classNames('DropdownButtonPeriod', { DropdownButtonPeriodChecked: period.showDpDwn || period.title === selectedPeriod.type }).split(' ')}
       dropdownTitle={period.title}
       dropdownButtons={period.drpItems}
       activeBtn="BtnPeriodChecked"
     >
-      {period.title}
+      <div>{period.title}</div>
+      <div><Angle /></div>
     </Dropdown>
   ) : (
     <Button

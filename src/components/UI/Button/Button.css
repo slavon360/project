@@ -155,6 +155,7 @@
   width: 100%;
 }
 .BuyBtn, .SubmitRequestBtn{
+  font-family: SegoeUI-Bold;
   background: linear-gradient(90deg, #53236d, #e12b82);
   width: 240px;
   padding: 15px 0;
@@ -186,7 +187,19 @@
 .BuyBtn:hover::before, .SubmitRequestBtn:hover::before, .LoginButton:hover::before{
   opacity: 1;
 }
+.DropdownButtonPeriod > div{
+  display: inline-block;
+}
+.DropdownButtonPeriod > div:first-child{
+  margin-right: 7px;
+}
+.DropdownButtonPeriod > div:nth-child(2){
+  width: 8px;
+  transform: rotate(90deg) translate(7px, -8px);
+  height: 5px;
+}
 .DropdownButtonPeriod, .BtnPeriod{
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.09);
   text-transform: capitalize;
   text-align: center;
   font-size: 12px;
@@ -202,6 +215,9 @@
 .BtnPeriod:hover, .DropdownButtonPeriodChecked, .BtnPeriodChecked{
   background-color: #402d71;
   color: #fff;
+}
+.DropdownButtonPeriodChecked, .DropdownButtonPeriod:hover{
+  fill: #fff;
 }
 .DropdownButtonUser{
   font-family: SegoeUI-Bold;
@@ -284,6 +300,7 @@
   transform: translate(-1px, -1px);
 }
 .BankVerification, .UserDetailsVerification{
+  font-family: SegoeUI-Bold;
   width: 240px;
   height: 48px;
   border-radius: 24px;
@@ -293,10 +310,11 @@
   font-weight: 700;
 }
 .AddressVerification{
+  font-family: SegoeUI-Bold;
   cursor: pointer;
   text-align: center;
   width: 200px;
-  height: 40px;
+  height: 48px;
   color: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -306,6 +324,7 @@
   overflow: hidden;
 }
 .BirthMonthDrpDwnButton, .BirthDayDrpDwnButton, .BirthYearDrpDwnButton{
+  font-family: SegoeUI-Bold;
   height: 43px;
   width: 100%;
   position: relative;
@@ -398,6 +417,7 @@
     margin-left: 0;
   }
   .BuyTab, .SellTab{
+    font-family: SegoeUI-Bold;
     font-size: 16px;
     padding: 19px 0 20px;
   }
@@ -451,6 +471,7 @@
     font-size: 14px;
   }
   .BuyBtn{
+    font-family: SegoeUI-Bold;
     width: 140px;
     height: 40px;
     padding: 0;

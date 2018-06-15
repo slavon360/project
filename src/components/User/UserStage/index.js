@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 import classes from './UserStage.css';
 
 const userStage = (props) => {
@@ -18,7 +19,12 @@ const userStage = (props) => {
           className={classes.Status}
           style={{ color: props.stage.color }}
         >
-          {props.stage.status}
+          {props.stage.verified &&
+           props.t('status.verified')}
+          {props.stage.isBeingVerified &&
+            props.t('status.isBeingVerified')}
+          {props.stage.notVerified &&
+             props.t('status.notVerified')}
           {icon}
         </div>
       </div>
@@ -26,7 +32,7 @@ const userStage = (props) => {
   );
 };
 
-export default userStage;
+export default translate()(userStage);
 
 userStage.propTypes = {
   stage: PropTypes.shape({

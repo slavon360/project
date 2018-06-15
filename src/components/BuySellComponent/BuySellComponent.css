@@ -5,7 +5,7 @@
   position: relative;
 }
 .BuySellForm{
-  box-shadow: -4px 20px 30px #ccc;
+  box-shadow: -4px 20px 30px rgba(87, 7, 79, 0.12);
   transform: translateY(-5px);
   border-radius: 8px;
   background-color: #fff;
@@ -54,6 +54,7 @@
   text-align: center;
 }
 .CurrentPriceWrp .Amount{
+  font-family: SegoeUI-Bold;
   float: left;
   font-weight: 700;
   font-size: 14px;

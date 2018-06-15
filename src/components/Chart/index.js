@@ -47,7 +47,6 @@ class MainChart extends Component {
     }
 
     render() {
-      global.console.log(this.props.data);
       const { data: initialData, width, ratio } = this.props;
       const xScaleProvider = discontinuousTimeScaleProvider.inputDateAccessor(
         d => d.date,

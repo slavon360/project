@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 .UserDetailsWrp .Title{
+  text-transform: uppercase;
+  font-family: SegoeUI-Bold;
   font-weight: 700;
   color: #922c88;
   font-size: 24px;

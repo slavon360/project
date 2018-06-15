@@ -1,20 +1,25 @@
 .CurrenciesShort{
   margin-right: 81px;
+  transform: translateY(4px);
 }
 .CurrenciesShort .Top{
+  font-family: SegoeUI-Bold;
   color: #922c88;
   font-weight: 700;
 }
 .CurrenciesShort .Top span:first-child{
-  font-size: 18px;
+  font-size: 24px;
 }
 .CurrenciesShort .Top span:nth-child(2){
-  font-size: 12px;
+  font-size: 18px;
 }
 .CurrenciesShort .Bottom{
+  font-family: SegoeUI-Bold;
   color: #41424e;
   font-size: 16px;
   font-weight: 700;
+  transform: translateY(-4px);
+
 }
 .LastPrice, .High{
   margin-right: 74px;
@@ -49,7 +54,7 @@
 @media screen and (max-width:1919px){
   .CurrenciesShort{
     margin-right: 82px;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   .CurrenciesShort .Top{
     font-size: 18px;
@@ -60,11 +65,15 @@
   .CurrenciesShort .Top span:nth-child(2){
     font-size: 18px;
   }
+  .CurrenciesShort .Bottom{
+    transform: translateY(-6px);
+  }
   .LastPrice .Bottom span:nth-child(2), .Change .Bottom span:nth-child(2){
     display: block;
   }
   .LastPrice, .Change, .High, .Low{
-    padding-top: 15px;
+    padding-top: 7px;
+    line-height: 1.25;
   }
   .LastPrice{
     margin-right: 64px;
@@ -91,7 +100,7 @@
     font-size: 14px;
   }
   .CurrenciesShort{
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     margin-right: 34px;
   }
   .LastPrice .Top, .Change .Top, .High .Top, .Low .Top{
@@ -123,7 +132,7 @@
 @media screen and (max-width: 413px){
   .CurrenciesShort{
     margin-right: 27px;
-    transform: translateY(-5px);
+    transform: translateY(-9px);
   }
   .CurrenciesShort .Top span:first-child{
     font-size: 16px;
@@ -132,7 +141,11 @@
     font-size: 14px;
   }
   .CurrenciesShort .Bottom{
+    transform: translateY(-2px);
     font-size: 12px;
+  }
+  .LastPrice, .Change, .High, .Low{
+    line-height: 1.4;
   }
   .LastPrice{
     margin-right: 18px;

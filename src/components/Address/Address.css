@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 .AddressWrp .Title{
+  font-family: SegoeUI-Bold;
+  text-transform: uppercase;
   font-weight: 700;
   color: #922c88;
   font-size: 24px;

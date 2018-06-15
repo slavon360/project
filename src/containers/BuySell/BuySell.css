@@ -3,6 +3,7 @@
   padding: 57px 0 79px 159px;
 }
 .History{
+  font-family: SegoeUI-Bold;
   font-size: 18px;
   font-weight: 700;
   color: #582871;
@@ -11,6 +12,7 @@
   text-transform: uppercase;
 }
 .TableWrp{
+  box-shadow: 0 4px 18px rgba(48, 8, 69, 0.07);
   max-width: 600px;
   max-height: 262px;
   box-sizing: border-box;
@@ -22,7 +24,7 @@
   padding-top: 0;
 }
 .TableWrp tbody tr:first-child td{
-  padding-top: 29px;
+  padding-top: 23px;
 }
 
 @media screen and (min-width: 1920px){
@@ -84,7 +86,7 @@
   }
   .TableWrp{
     max-width: 100%;
-    padding: 16px 20px 28px 20px;
+    padding: 10px 20px 28px 20px;
   }
   .TableWrp table thead th{
     font-size: 12px;
@@ -111,7 +113,7 @@
     text-align: left;
   }
   .TableWrp table tbody tr:first-child td{
-    padding-top: 22px;
+    padding-top: 12px;
   }
   .TableWrp table tbody td:first-child{
     width: 35.1%;
@@ -145,6 +147,19 @@
   .TableWrp table tbody td{
     font-size: 12px;
   }
+  .TableWrp table tbody td:nth-child(2){
+    padding-left: 0;
+    width: 25.9%;
+  }
+  .TableWrp table tbody td:nth-child(3){
+    padding-left: 0;
+    width: 27.5%;
+  }
+  .TableWrp table tbody td:first-child span:nth-child(4){
+    font-size: 10px;
+    display: block;
+    margin-left: 10px;
+  }
   .TransactionsWrp{
     margin-top: 40px;
   }
@@ -163,6 +178,12 @@
   }
   .TableWrp{
     padding: 15px 20px 22px;
+  }
+  .TableWrp table thead th:first-child{
+    width: 37.7%;
+  }
+  .TableWrp table thead th:nth-child(2){
+    width: 19.2%;
   }
   .TableWrp table tbody td:first-child{
     width: 39%;

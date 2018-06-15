@@ -35,16 +35,16 @@ class Profile extends Component {
   render() {
     const stages = this.state.stages.map((stage, index) => {
       const updStage = { ...stage };
-      if (stage.status === 'Verified') {
+      if (stage.verified) {
         updStage.color = '#6bcc00';
         updStage.borderColor = '#6bcc00';
         updStage.icon = <Checked styles={{ width: '8px', height: '7px', fill: '#6bcc00', marginLeft: '8px' }} />;
       }
-      if (stage.status === 'Is being verified') {
+      if (stage.isBeingVerified) {
         updStage.color = '#627eea';
         updStage.borderColor = '#c6c6c6';
       }
-      if (stage.status === 'Not verified') {
+      if (stage.notVerified) {
         updStage.color = '#83878c';
         updStage.borderColor = '#c6c6c6';
       }

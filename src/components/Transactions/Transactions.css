@@ -1,5 +1,6 @@
 
 .Table thead th{
+  font-family: SegoeUI-Bold;
   padding-bottom: 34px !important;
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 29px;
@@ -13,17 +14,19 @@
   width: 155px;
 }
 .Table thead th:nth-child(2){
-  width: 130px;
+  box-sizing: border-box;
+  padding-right: 12px;
+  width: 125px;
 }
 .Table thead th:nth-child(3){
-  padding: 0 29px 0 0;
+  text-align: left;
 }
 .Table thead th:last-child{
   text-align: right;
 }
 .Table thead{
   box-sizing: border-box;
-  padding-right: 80px;
+  padding-right: 77px;
 }
 .Table thead, tbody tr {
     display:table;
@@ -47,7 +50,7 @@
   border-radius: 5px;
 }
 .Table tbody tr{
-  padding: 4px 0;
+  padding: 2px 0;
 }
 .Table tbody td{
   box-sizing: border-box;
@@ -59,10 +62,11 @@
   width: 155px;
 }
 .Table tbody td:nth-child(2){
-  padding-left: 48px;
+  padding-left: 40px;
+  width: 129px;
 }
 .Table tbody td:nth-child(3){
-  width: 93px;
+  width: 100px;
 }
 .Table tbody td:nth-child(4){
   padding-right: 44px;
@@ -134,9 +138,15 @@
   margin-top: 16px;
 }
 .ViewAllBtn span{
+  outline: none;
   font-size: 16px;
   color: #922c88;
   cursor: pointer;
+}
+@media screen and (max-width: 1365px) {
+  .Table thead{
+    padding-right: 58px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -149,9 +159,21 @@
   .Table tbody td:nth-child(3){
     transform: translateX(10px);
   }
+  .Table tbody td:nth-child(2){
+    width: 117px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .Table tbody td:not(:first-child){
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 413px){
+  .Table tbody td:not(:first-child){
+    font-size: 12px;
+  }
   .ViewAllBtn{
     margin-top: 0;
   }

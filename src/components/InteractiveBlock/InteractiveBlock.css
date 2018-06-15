@@ -10,6 +10,7 @@
   margin-bottom: 30px;
 }
 .LoginPassword .Header, .TwoFactorAuthentication .Header{
+  font-family: SegoeUI-Bold;
   font-size: 18px;
   color: #922c88;
   text-transform: uppercase;
@@ -43,6 +44,7 @@
   height: 24px;
 }
 .TwoFactorAuthentication .Cell .Text:first-child, .LoginPassword .Cell .Text:first-child{
+  font-family: SegoeUI-Bold;
   font-weight: 700;
   color: #41424e;
 }
@@ -50,6 +52,7 @@
   color: #83878c;
 }
 .TwoFactorAuthentication .Cell button, .LoginPassword .Cell button{
+  font-family: SegoeUI-Bold;
   width: 160px;
   height: 40px;
   color: #fff;

@@ -226,6 +226,7 @@ class BuySell extends Component {
           const upd = { ...p };
           if (p.value === selectedPeriod.value && p.type === selectedPeriod.type) {
             upd.checked = true;
+            updChartConfig.selectedPeriod = upd;
           } else {
             upd.checked = false;
           }
@@ -238,6 +239,7 @@ class BuySell extends Component {
   }
 
   render() {
+    global.console.log(this.state);
     let content = this.props.error ? 'Cannot load data' : 'loading...';
     if (this.props.coins) {
       content = (

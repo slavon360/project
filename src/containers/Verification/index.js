@@ -39,7 +39,7 @@ class Verification extends Component {
   componentDidUpdate() {
     global.console.log(this.props.i18n, this.state);
     if (this.props.i18n.language !== this.state.currentLang) {
-      this.updateNavButtons();
+      this.updateNavButtons(true);
       global.console.log(this.props);
     }
   }
@@ -61,10 +61,14 @@ class Verification extends Component {
 
   hideShowDate = () => {}
 
-  updateNavButtons = () => {
+  updateNavButtons = (onUpdate) => {
     let navBtns = [];
-    const necessaryKeys = 'User details,Address,Bank';
-    navBtns = propertiesExtractor(this.state.userData, necessaryKeys, [], true);
+    if (onUpdate) {
+      navBtns = this.state.navBtns;
+    } else {
+      const necessaryKeys = 'User details,Address,Bank';
+      navBtns = propertiesExtractor(this.state.userData, necessaryKeys, [], true);
+    }
     const updNavBtns = navBtns.map((nav, index) => {
       if (nav.checked) {
         this.setState({ selectedSection: nav });

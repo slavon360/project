@@ -21,6 +21,7 @@
   height: 32px;
 }
 .UserStageWrp .RightSide .Title{
+  font-family: SegoeUI-Bold;
   font-size: 16px;
   color: #41424e;
   font-weight: 700;

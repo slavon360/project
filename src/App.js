@@ -18,14 +18,16 @@ import Layout from './hoc/Layout';
 
 // import Login from './containers/Login';
 
-// import BuySell from './containers/BuySell';
-// import Balances from './containers/Balances';
-// import Deposit from './containers/Deposit';
-// import Withdraw from './containers/Withdraw';
-// import SendRequest from './containers/SendRequest';
-// import Faq from './containers/FAQ';
-// import Profile from './containers/Profile';
+import BuySell from './containers/BuySell';
+/*
+import Balances from './containers/Balances';
+import Deposit from './containers/Deposit';
+import Withdraw from './containers/Withdraw';
+import SendRequest from './containers/SendRequest';
+import Faq from './containers/FAQ';
+import Profile from './containers/Profile';
 import Verification from './containers/Verification';
+*/
 import './App.css';
 
 class App extends Component {
@@ -33,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <Layout>
-          <Verification />
+          <BuySell />
         </Layout>
       </div>
     );
