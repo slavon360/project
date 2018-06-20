@@ -64,6 +64,15 @@
   outline: none;
   cursor: pointer;
 }
+.TwoFactorAuthentication .Cell button.Checked{
+  background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+}
+.TwoFactorAuthentication .Cell button.Unchecked{
+  background-image: none;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.09);
+  color: #922c88;
+}
 
 @media screen and (min-width: 1801px) and (max-width: 1900px){
   .TwoFactorAuthentication, .LoginPassword{

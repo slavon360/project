@@ -144,12 +144,12 @@
       [
         {"type": "icon", "icon": "smartphone"},
         {"type": "text", "text": "SMS Authentification|Used for withdrawals and security modifications"},
-        {"type": "button", "text": "Enable"}
+        {"type": "button", "textEnabled": "Enable", "textDisabled": "Disable", "checked": true}
       ],
       [
         {"type": "icon", "icon": "search"},
         {"type": "text", "text": "Google Authentification|Used for withdrawals and security modifications"},
-        {"type": "button", "text": "Disable"}
+        {"type": "button", "textEnabled": "Enable", "textDisabled": "Disable", "checked": false}
       ]
     ],
     "loginPassword": [

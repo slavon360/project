@@ -8,6 +8,7 @@ export {
   hideCurrencyDropdown,
   buildInteractiveView,
   changeInputsValue,
+  setValueToMax,
   copyAddress,
 } from './depositWithdraw';
 export {

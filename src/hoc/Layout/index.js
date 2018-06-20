@@ -16,6 +16,7 @@ class Layout extends React.PureComponent {
       this.setState(prevState => ({ showSideDrawer: !prevState.showSideDrawer }));
     }
     render() {
+      global.console.log(this.props);
       return (
         <Fragment>
           <Toolbar

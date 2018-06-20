@@ -132,6 +132,7 @@
   vertical-align: top;
 }
 .PhoneNumberAuthent > input{
+  font-family: SegoeUI-Bold;
   outline: none;
   font-size: 14px;
   font-weight: 700;
@@ -177,6 +178,17 @@
 }
 .WithdrawAmount{
   margin-top: 32px;
+  position: relative;
+}
+.WithdrawAmount .OptionalButton{
+  cursor: pointer;
+  font-size: 14px;
+  color: #41424e;
+  font-weight: 400;
+  position: absolute;
+  top: 54px;
+  right: 19px;
+  background-color: transparent;
 }
 .WithdrawAmount .SecondLabel,
 .WithdrawAmount .ThirdLabel,
@@ -210,6 +222,7 @@
   text-align: right;
 }
 .DepositAddress input, .WithdrawAddress input, .WithdrawAmount input{
+  font-family: SegoeUI-Bold;
   width: 100%;
   height: 48px;
   background-color: #fff;
@@ -225,6 +238,7 @@
   border-color: #d192c7;
 }
 .DepositAddress label, .WithdrawAddress label, .WithdrawAmount label{
+  font-family: SegoeUI-Bold;
   display: block;
   font-size: 14px;
   color: #41424e;
@@ -313,9 +327,13 @@
 .SertificateRadioWrp input:checked{
   border-color: transparent;
 }
-.GenderRadioWrp label:hover ~ .ThirdLabel,
-.GenderRadioWrp input:checked ~ .ThirdLabel, .SertificateRadioWrp label:hover ~ .ThirdLabel,
-.SertificateRadioWrp input:checked ~ .ThirdLabel{
+.GenderRadioWrp label:hover ~ .ThirdLabel, .GenderRadioWrp input:checked ~ .ThirdLabel,
+.SertificateRadioWrp label:hover ~ .ThirdLabel, .SertificateRadioWrp input:checked ~ .ThirdLabel{
+  border-color: #d092c9;
+}
+.GenderRadioWrp label:hover ~ .ThirdLabel svg,
+.GenderRadioWrp input:checked ~ .ThirdLabel svg, .SertificateRadioWrp label:hover ~ .ThirdLabel svg,
+.SertificateRadioWrp input:checked ~ .ThirdLabel svg{
   opacity: 1;
 }
 .GenderRadioWrp .SecondLabel,
@@ -332,11 +350,11 @@
 .GenderRadioWrp .ThirdLabel, .SertificateRadioWrp .ThirdLabel{
   left: -1px;
   top: -1px;
-  border: 2px solid #d092c9;
-  opacity: 0;
+  border: 2px solid #e8e8e8;
 }
 .GenderRadioWrp .ThirdLabel svg, .SertificateRadioWrp .ThirdLabel svg{
   transform: translate(5px, -1px);
+  opacity: 0;
 }
 .GenderRadioWrp .SecondLabel, .SertificateRadioWrp .SecondLabel{
   border: 1px solid #e8e8e8;
@@ -375,6 +393,10 @@
 .LoginInputWrp > input::-webkit-input-placeholder{
   color: #9e9fa3;
   font-size: 14px;
+}
+.OptionalButton{
+  outline: none;
+  border: none;
 }
 
 @media screen and (max-width: 1850px){

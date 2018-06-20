@@ -24,12 +24,14 @@
   width: calc(100% - 60px);
 }
 .RightSide .Title, .RightSide .LimitInfo{
+  font-family: SegoeUI-Bold;
   font-weight: 700
 }
 .RightSide .Title, .RightSide .WarningInfo{
   margin-bottom: 21px;
 }
 .CopyDepositAddressWrp, .SubmitWithdrawAmountWrp{
+  font-family: SegoeUI-Bold;
   width: 100%;
   text-align: right;
   padding-top: 12px;

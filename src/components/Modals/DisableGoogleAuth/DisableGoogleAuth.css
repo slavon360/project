@@ -9,6 +9,7 @@
   display: inline-block;
 }
 .DisableGoogleAuthWrp h2{
+  font-family: SegoeUI-Bold;
   font-size: 24px;
   font-weight: 700;
   color: #922c88;

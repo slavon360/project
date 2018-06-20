@@ -185,6 +185,8 @@ const reducer = (state = initialState, action) => {
       return buildInteractiveView(state);
     case actionTypes.CHANGE_INPUTS_VALUE:
       return changeInputsValue(state, action);
+    case actionTypes.SET_VALUE_TO_MAX:
+      return changeInputsValue(state, action);
     case actionTypes.COPY_ADDRESS:
       return copyAddress(state);
     default: return state;

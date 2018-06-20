@@ -3,6 +3,7 @@
   padding: 60px 160px 60px 160px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .WithdrawWrp tbody tr{
   cursor: pointer;
@@ -12,7 +13,6 @@
   box-shadow: 0 4px 18px 0 #dedede;
   border-radius: 6px;
   width: 760px;
-  height: 480px;
   padding: 35px 61px 38px 59px;
   background-color: #fff;
   box-sizing: border-box;
@@ -22,7 +22,6 @@
 }
 .TableWrp table tbody{
   height: auto;
-  max-height: 340px;
 }
 .TableWrp table thead{
   padding-right: 0;
@@ -57,6 +56,12 @@
   font-size: 14px;
 }
 
+@media screen and (min-width: 1920px){
+  .TableWrp table tbody tr{
+    margin-bottom: 5px;
+  }
+}
+
 @media screen and (max-width: 1890px){
   .WithdrawWrp{
     padding: 60px 0;
@@ -71,11 +76,7 @@
   }
   .TableWrp{
     width: 566px;
-    height: 490px;
     padding-bottom: 26px;
-  }
-  .TableWrp table tbody{
-    max-height: 350px;
   }
   .TableWrp tbody td:first-child{
     width: 120px;
@@ -100,11 +101,7 @@
   }
   .TableWrp{
     width: 566px;
-    height: 490px;
     padding-bottom: 26px;
-  }
-  .TableWrp table tbody{
-    max-height: 350px;
   }
   .TableWrp tbody td:first-child{
     width: 120px;

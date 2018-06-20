@@ -215,6 +215,10 @@
   .VerificationWrp{
     padding: 38px 21px 32px;
   }
+  .Content{
+    width: 100%;
+    box-shadow: none;
+  }
   .Note .Head .NoteTitle{
     font-size: 14px;
   }
@@ -223,5 +227,15 @@
   }
   .NavbarSection > div:nth-child(2) > div:nth-child(3) .NavBtn > div:first-child{
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-height: 888px){
+  html, body, body > div, body > div > div{
+    height: 100%;
+  }
+  main{
+    background-color: #f8f8f8;
+    min-height: 85%;
   }
 }

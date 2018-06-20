@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cx from 'classnames';
 import classes from './InteractiveBlock.css';
 import smartphoneIcon from '../../../assets/images/icons/smartphone.svg';
 import lockedIcon from '../../../assets/images/icons/locked.svg';
@@ -26,7 +27,13 @@ const interactiveBlock = props => (
             )) : null;
             return (<div key={i} className={classes.Cell}>
               {cell.type === 'icon' ? <img src={getImage(cell.icon)} alt={cell.icon} /> : null}
-              {cell.type === 'button' ? <button>{cell.text}</button> : null}
+              {cell.type === 'button' ? <button
+                onClick={() => props.switch(index, i)}
+                className={cx({
+                  [classes.Checked]: cell.checked,
+                  [classes.Unchecked]: !cell.checked,
+                })}
+              >{cell.checked ? cell.textEnabled : cell.textDisabled || cell.text}</button> : null}
               {texts}
             </div>);
           })}

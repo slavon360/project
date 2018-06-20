@@ -6,9 +6,10 @@
   background-color: #fff;
   vertical-align: top;
   border-radius: 0 8px 8px 8px;
-  box-shadow: 0 4px 18px 0 #dedede;
+  box-shadow: 0 4px 18px 0 rgba(48, 8, 69, 0.07);
 }
 .DepositWithdrawWrp .Title{
+  font-family: SegoeUI-Bold;
   font-size: 24px;
   font-weight: 700;
   color: #922c88;

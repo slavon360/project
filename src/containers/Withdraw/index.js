@@ -48,6 +48,7 @@ class Withdraw extends Component {
           hideCurrencyDropdown={this.props.hideCurrencyDropdown}
           selectCurrency={this.selectCurrency}
           changeInputsValue={this.props.changeInputsValue}
+          setValueToMax={this.props.setValueToMax}
         />
         <div className={classes.TableWrp}>
           <Transactions
@@ -73,6 +74,7 @@ const mapDispatchToProps = dispatch => ({
   hideCurrencyDropdown: () => dispatch(actions.hideCurrencyDropdown()),
   buildInteractiveView: () => dispatch(actions.buildInteractiveView()),
   changeInputsValue: (event, key) => dispatch(actions.changeInputsValue(event, key)),
+  setValueToMax: (value, key) => dispatch(actions.setValueToMax(value, key)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Withdraw);

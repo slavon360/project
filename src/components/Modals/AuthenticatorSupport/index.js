@@ -69,7 +69,7 @@ const authSupport = () => (
           elementConfig={{ type: 'text' }}
           elementType="input"
         />
-        <Button btnClasses={['ConfirmDisableSMSAuth']} elementConfig={{ 'before-content': 'Confirm' }}>Confirm</Button>
+        <Button btnClasses={['ConfirmDisableSMSAuth', 'ConfirmGoogleAuth']} elementConfig={{ 'before-content': 'Confirm' }}>Confirm</Button>
       </div>
     </form>
   </div>

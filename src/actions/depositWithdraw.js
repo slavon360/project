@@ -17,6 +17,12 @@ export const buildInteractiveView = () => ({
   type: actionTypes.BUILD_INTERACTIVE_VIEW,
 });
 
+export const setValueToMax = (value, key) => ({
+  type: actionTypes.SET_VALUE_TO_MAX,
+  value,
+  key,
+});
+
 export const changeInputsValue = (event, key) => ({
   type: actionTypes.CHANGE_INPUTS_VALUE,
   value: event.target.value,

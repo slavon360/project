@@ -31,7 +31,14 @@ class Profile extends Component {
       this.setState({ balancesToShow: this.state.balances.slice(0, 3), viewAll: false });
     }
   }
-
+  updateTwoFactorAuth = (index, innerIndex) => {
+    const updatedAuth = this.state.userData.twoFactorAuthentication.slice();
+    updatedAuth[index][innerIndex].checked = !updatedAuth[index][2].checked;
+    const updUserData = { ...this.state.userData };
+    updUserData.twoFactorAuthentication = updatedAuth;
+    this.setState({ userData: updUserData });
+  }
+  changeLoginPassword = () => { };
   render() {
     const stages = this.state.stages.map((stage, index) => {
       const updStage = { ...stage };
@@ -82,11 +89,13 @@ class Profile extends Component {
               header="Two-factor Authentication"
               rows={this.state.userData.twoFactorAuthentication}
               wrpClass="TwoFactorAuthentication"
+              switch={this.updateTwoFactorAuth}
             />
             <InteractiveBlock
               header="Login Password"
               rows={this.state.userData.loginPassword}
               wrpClass="LoginPassword"
+              switch={this.changeLoginPassword}
             />
           </div>
         </div>

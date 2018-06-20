@@ -20,7 +20,7 @@ const chartComponent = (props) => {
       drpContainerClasses={
         classNames('DropdownPeriodContainer', { Show: period.showDpDwn, Hide: !period.showDpDwn }).split(' ')
       }
-      dropdownButtonClasses={classNames('DropdownButtonPeriod', { DropdownButtonPeriodChecked: period.showDpDwn || period.title === selectedPeriod.type }).split(' ')}
+      dropdownButtonClasses={classNames('DropdownButtonPeriod', { DropdownButtonPeriodChecked: period.showDpDwn || (selectedPeriod && period.title === selectedPeriod.type) }).split(' ')}
       dropdownTitle={period.title}
       dropdownButtons={period.drpItems}
       activeBtn="BtnPeriodChecked"

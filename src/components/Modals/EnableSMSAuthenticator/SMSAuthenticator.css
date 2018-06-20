@@ -6,6 +6,7 @@
 }
 .SMSAuthWrp h2{
   text-transform: uppercase;
+  font-family: SegoeUI-Bold;
   font-size: 24px;
   color: #922c88;
   font-weight: 700;

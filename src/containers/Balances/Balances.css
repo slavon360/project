@@ -6,15 +6,22 @@
 .BalancesHead{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   width: 100%;
 }
 .BalancesHead h2{
+  font-family: SegoeUI-Bold;
   font-size: 24px;
   font-weight: 700;
   color: #582871;
   text-transform: uppercase;
   margin: 0;
+}
+.LimitsWrp{
+  align-self: flex-end;
+}
+.LimitsWrp .Limit, .LimitsWrp .InUse{
+  display: inline-block;
 }
 .LimitsWrp .Limit{
   padding-right: 60px;
@@ -22,6 +29,7 @@
 .LimitsWrp .Limit span:first-child,
 .LimitsWrp .InUse span:first-child{
   font-weight: 700;
+  font-family: SegoeUI-Bold;
 }
 .BalancesContainer{
   width: 1240px;
@@ -31,7 +39,7 @@
   overflow: hidden;
 }
 .Balances{
-  box-shadow: 0 4px 18px 0 #dedede;
+  box-shadow: 0 4px 18px 0 rgba(48, 8, 69, 0.07);
   height: 620px;
   width: 100%;
   background-color: #fff;
@@ -59,10 +67,20 @@
 }
 .Balances .Head .Currency,
 .Balances .Head .Balance,
+.Balances .Head .Type{
+  font-family: SegoeUI-Bold;
+}
+.Balances .Head .Currency,
+.Balances .Head .Balance,
 .Balances .Head .Type,
 .CurrencyTitle, .BalanceValueWrp,
 .FiatValue{
   display: inline-block;
+}
+.CurrencyTitle .BalanceCurrencyWrp{
+  font-weight: 700;
+  font-family: SegoeUI-Bold;
+  font-size: 16px;
 }
 .CurrencyTitle img{
   width: 24px;
@@ -95,6 +113,11 @@
   height: 16px;
   transform: translateY(3px);
   fill: #922c88;
+}
+.FiatValue .FiatTitle{
+  font-size: 12px;
+  font-weight: 700;
+  font-family: SegoeUI-Bold;
 }
 
 @media screen and (max-width: 1366px){
@@ -187,6 +210,9 @@
     font-size: 14px;
     text-align: right;
   }
+  .LimitsWrp .Limit, .LimitsWrp .InUse{
+    display: block;
+  }
   .BalancesContainer{
     width: 100%;
   }
@@ -227,6 +253,7 @@
     font-size: 10px;
   }
   .FiatWrp .FiatTitle{
+    font-family: SegoeUI-Bold;
     font-size: 8px;
     font-weight: 700;
   }
@@ -265,7 +292,7 @@
     height: 20px;
     margin-right: 11px;
   }
-  .BalanceCurrencyWrp{
+  .CurrencyTitle .BalanceCurrencyWrp{
     font-size: 12px;
   }
   .Balances .Head .Currency, .CurrencyTitle{
@@ -279,5 +306,15 @@
   }
   .BalanceValueWrp .FiatWrp{
     font-size: 10px;
+  }
+}
+
+@media screen and (min-height: 888px){
+  .BalancesWrp{
+    min-height: 100%;
+  }
+  main{
+    background-color: #f8f8f8;
+    min-height: 100%;
   }
 }

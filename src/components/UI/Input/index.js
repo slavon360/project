@@ -52,11 +52,16 @@ const input = (props) => {
     setCurrentClasses(props.labelClasses, labelClasses, classes) : null;
   wrpClasses = props.wrpClasses ? setCurrentClasses(props.wrpClasses, wrpClasses, classes) : null;
   const secondLabel = props.optionalLabels && props.optionalLabels.second ?
-    props.optionalLabels.second : null;
+    <div className={classes.SecondLabel}>{props.optionalLabels.second}</div> : null;
   const thirdLabel = props.optionalLabels && props.optionalLabels.third ?
-    props.optionalLabels.third : null;
+    <div className={classes.ThirdLabel}>{props.optionalLabels.third}</div> : null;
   const fourthLabel = props.optionalLabels && props.optionalLabels.fourth ?
-    props.optionalLabels.fourth : null;
+    <div className={classes.FourthLabel}>{props.optionalLabels.fourth}</div> : null;
+  const optionalBtn = props.optionalBtn ?
+    (<button
+      className={classes.OptionalButton}
+      onClick={props.optionalBtn.action}
+    >{props.optionalBtn.value}</button>) : null;
   return (
     <div className={wrpClasses ? wrpClasses.join(' ') : null}>
       <label
@@ -65,10 +70,11 @@ const input = (props) => {
       >
         {props.elementConfig.label}
       </label>
-      <div className={classes.SecondLabel}>{secondLabel}</div>
+      {secondLabel}
       {inputElement}
-      <div className={classes.ThirdLabel}>{thirdLabel}</div>
-      <div className={classes.FourthLabel}>{fourthLabel}</div>
+      {thirdLabel}
+      {fourthLabel}
+      {optionalBtn}
     </div>
   );
 };
@@ -78,6 +84,13 @@ input.propTypes = {
   wrpClasses: PropTypes.arrayOf(PropTypes.string),
   inputClasses: PropTypes.arrayOf(PropTypes.string),
   elementType: PropTypes.string,
+  optionalBtn: PropTypes.shape({
+    action: PropTypes.func.isRequired,
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]),
+  }),
 };
 
 export default input;

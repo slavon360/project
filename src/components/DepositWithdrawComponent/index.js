@@ -33,6 +33,7 @@ const depositWithdraw = props => (
     </div>
     <InputsBlock
       data={props.data}
+      setValueToMax={props.setValueToMax}
       changeInputsValue={props.changeInputsValue}
       copyAddress={props.copyAddress}
     />

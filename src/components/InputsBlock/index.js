@@ -14,13 +14,18 @@ const inputsBlock = (props) => {
     interactiveContent = interactiveView.map((item) => {
       let content;
       let optionalLabels;
+      let optionalBtn;
       if (item.elementType === 'input') {
         if (!props.data.deposit && item.currentKey === 'amount') {
-          (optionalLabels = {
+          optionalLabels = {
             second: '24h withdraw limit: 0 / 500 USD',
             third: `Transaction Fee: ${props.data.transactionFee} ${selectedCurrency.shortcut}`,
             fourth: `You will get: 0.9 ${selectedCurrency.shortcut}`,
-          });
+          };
+          optionalBtn = {
+            value: 'Max',
+            action: () => props.setValueToMax(selectedCurrency.balance, item.currentKey),
+          };
         }
         const updElemConfig = { ...item.elementConfig };
         if (updElemConfig.label) {
@@ -31,6 +36,7 @@ const inputsBlock = (props) => {
         }
         content = (<Input
           key={item.id}
+          optionalBtn={optionalBtn}
           optionalLabels={optionalLabels}
           wrpClasses={item.classes}
           elementConfig={updElemConfig}
