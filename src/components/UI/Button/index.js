@@ -20,6 +20,10 @@ const button = (props) => {
 };
 
 button.propTypes = {
+  elementConfig: PropTypes.shape({
+    type: PropTypes.string,
+    'before-content': PropTypes.string,
+  }),
   clicked: PropTypes.func,
   btnClasses: PropTypes.arrayOf(PropTypes.string),
 };

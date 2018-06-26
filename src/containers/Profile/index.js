@@ -81,6 +81,7 @@ class Profile extends Component {
               propNames={['icon', 'currency', 'bal', 'fiat']}
               bodyData={this.state.balancesToShow}
               viewAll={this.viewAll}
+              viewAllText="View all Balances"
               expanded={this.state.viewAll}
             />
           </div>

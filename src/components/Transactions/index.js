@@ -90,13 +90,13 @@ const transactions = (props) => {
           {bodyData}
         </tbody>
       </table>
-      {props.viewAll ? <div className={classes.ViewAllBtn}>
+      {props.viewAllText ? <div className={classes.ViewAllBtn}>
         <span
           role="button"
           tabIndex={0}
           onClick={props.viewAll}
         >
-          {!props.expanded ? `View all ${props.headData[0].title}` : 'Hide'}
+          {!props.expanded ? props.viewAllText : 'Hide'}
         </span>
       </div> : null}
     </Fragment>

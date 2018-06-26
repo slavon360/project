@@ -13,3 +13,9 @@
   vertical-align: top;
   line-height: 1.8;
 }
+.UserName a{
+  color: inherit;
+  position: relative;
+  top: -5px;
+  text-decoration: none;
+}

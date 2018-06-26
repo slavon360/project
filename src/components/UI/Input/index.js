@@ -59,6 +59,7 @@ const input = (props) => {
     <div className={classes.FourthLabel}>{props.optionalLabels.fourth}</div> : null;
   const optionalBtn = props.optionalBtn ?
     (<button
+      {...props.optionalBtn.elementConfig}
       className={classes.OptionalButton}
       onClick={props.optionalBtn.action}
     >{props.optionalBtn.value}</button>) : null;

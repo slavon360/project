@@ -12,7 +12,7 @@ import NavigationItem from './NavigationItem';
 const navigationItems = () => (
   <ul className={classes.NavigationItems}>
     <div className={classes.UserName}>
-      <UserName userName="John Bravo" />
+      <UserName link="/profile" userName="John Bravo" />
     </div>
     <div className={classes.BalanceIndicator}>
       <BalanceIndicator >2.156 <span>BTC</span> / 31 025.35 <span>AUD</span></BalanceIndicator>

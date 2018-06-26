@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import classNames from 'classnames/bind';
 import { connect } from 'react-redux';
 import BuySellComponent from '../../components/BuySellComponent';
 import ChartComponent from '../../components/ChartComponent';
@@ -6,6 +7,8 @@ import Transactions from '../../components/Transactions';
 import * as actionTypes from '../../actions/actionTypes';
 import * as actions from '../../actions';
 import classes from './BuySell.css';
+
+const cx = classNames.bind(classes);
 
 class BuySell extends Component {
   state = {
@@ -119,11 +122,25 @@ class BuySell extends Component {
       tsym: 'AUD',
       fsymTitle: 'Ethereum',
     },
+    mobileView: null,
+    expandedTransactions: false,
   }
 
+  updateDimensions = () => {
+    if (window.innerWidth < 768 && !this.state.mobileView) this.setState({ mobileView: true });
+    if (window.innerWidth >= 768 && this.state.mobileView) this.setState({ mobileView: false });
+  }
+
+  componentWillMount = () => {
+    this.updateDimensions();
+  }
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateDimensions);
+  }
   componentDidMount() {
     this.setSelectedPeriod();
     this.props.onFetchCoins();
+    window.addEventListener('resize', this.updateDimensions);
   }
 
   whichPeriodTime = (selectedPeriodTitle) => {
@@ -237,6 +254,10 @@ class BuySell extends Component {
     });
     this.setState({ chartConfig: updChartConfig });
   }
+  viewAll = () => {
+    global.console.log(this.state);
+    this.setState(prevState => ({ expandedTransactions: !prevState.expandedTransactions }));
+  }
 
   render() {
     global.console.log(this.state);
@@ -264,11 +285,18 @@ class BuySell extends Component {
           />
           <div className={classes.TransactionsWrp}>
             <h3 className={classes.History}>History</h3>
-            <div className={classes.TableWrp}>
+            <div
+              className={
+                cx(classes.TableWrp, { TableWrpExpanded: this.state.expandedTransactions })
+              }
+            >
               <Transactions
                 propNames={['date', 'price', 'quantity', 'amount']}
                 headData={this.state.headData}
                 bodyData={this.state.transactions}
+                viewAll={this.viewAll}
+                viewAllText={this.state.mobileView ? 'See more' : null}
+                expanded={this.state.expandedTransactions}
               />
             </div>
           </div>

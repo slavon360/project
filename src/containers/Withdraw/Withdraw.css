@@ -90,9 +90,6 @@
   .TableWrp tbody td:nth-child(4){
     width: 77px;
   }
-  .TableWrp tbody td:last-child svg{
-    transform: rotate(90deg) translate(-5px, -15px);
-  }
 }
 
 @media screen and (max-width: 1366px){
@@ -114,9 +111,6 @@
   }
   .TableWrp tbody td:nth-child(4){
     width: 77px;
-  }
-  .TableWrp tbody td:last-child svg{
-    transform: rotate(90deg) translate(-5px, -15px);
   }
 }
 
@@ -147,7 +141,8 @@
   }
   .TableWrp{
     display: block;
-    width: 100%;
+    width: 374px;
+    align-self: center;
     padding: 30px 20px 24px;
   }
   .TableWrp table thead th:last-child{
@@ -181,6 +176,7 @@
   }
   .TableWrp{
     padding: 30px 20px;
+    width: 100%;
     height: auto;
   }
   .TableWrp table tbody td, .TableWrp table tbody td:nth-last-child(2){

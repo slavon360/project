@@ -23,6 +23,7 @@ const inputsBlock = (props) => {
             fourth: `You will get: 0.9 ${selectedCurrency.shortcut}`,
           };
           optionalBtn = {
+            elementConfig: { type: 'button' },
             value: 'Max',
             action: () => props.setValueToMax(selectedCurrency.balance, item.currentKey),
           };
@@ -57,7 +58,7 @@ const inputsBlock = (props) => {
     });
   }
   return (
-    <div className={classes.InputsBlockWrp}>
+    <form className={classes.InputsBlockWrp}>
       <div className={classes.InputsBlockHead}>
         <div className={classes.LeftSide}>
           <img src={exclamationIcon} alt="exclamation" />
@@ -69,7 +70,7 @@ const inputsBlock = (props) => {
         </div>
       </div>
       {interactiveContent}
-    </div>
+    </form>
   );
 };
 

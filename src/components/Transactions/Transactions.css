@@ -143,7 +143,22 @@
   color: #922c88;
   cursor: pointer;
 }
+@media screen and (max-width: 1650px) {
+  .AngleIcon.Up svg{
+    transform: rotate(270deg) translate(5px, 15px);
+  }
+  .AngleIcon.Down svg{
+    transform: rotate(90deg) translate(-5px, -15px);;
+  }
+}
+
 @media screen and (max-width: 1365px) {
+  .AngleIcon.Up svg{
+    transform: rotate(270deg) translate(5px, 15px);
+  }
+  .AngleIcon.Down svg{
+    transform: rotate(90deg) translate(-5px, -15px);;
+  }
   .Table thead{
     padding-right: 58px;
   }
