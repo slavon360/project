@@ -1,5 +1,5 @@
 .CurrenciesShort{
-  margin-right: 81px;
+  margin-right: 79px;
   transform: translateY(4px);
 }
 .CurrenciesShort .Top{
@@ -25,7 +25,7 @@
   margin-right: 74px;
 }
 .Change{
-  margin-right: 73px;
+  margin-right: 67px;
 }
 .LastPrice .Top, .Change .Top, .High .Top, .Low .Top{
   font-size: 12px;
@@ -49,6 +49,12 @@
 }
 .LastPrice{
   margin-right: 74px;
+}
+
+@media screen and (min-width: 1900px){
+  .CurrenciesShort .Top span:nth-child(2){
+    padding-left: 5px;
+  }
 }
 
 @media screen and (max-width:1919px){

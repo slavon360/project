@@ -16,7 +16,7 @@
   max-width: 600px;
   max-height: 262px;
   box-sizing: border-box;
-  padding: 24px 5px 18px 59px;
+  padding: 24px 5px 9px 53px;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -30,12 +30,12 @@
   padding-top: 0;
 }
 .TableWrp tbody tr:first-child td{
-  padding-top: 23px;
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 1920px){
   .BuySellWrp{
-    padding: 57px 159px 79px 159px;
+    padding: 57px 148px 60px 159px;
   }
   .TransactionsWrp .TableWrp table thead{
     padding-right: 69px;

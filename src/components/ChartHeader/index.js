@@ -13,24 +13,24 @@ const chartHeader = props => (
     <div className={classes.LastPrice}>
       <div className={classes.Top}>Last Price</div>
       <div className={classes.Bottom}>
-        <span>0.07878</span>
+        <span>0.078707</span>
         <span>$ 837.45</span>
       </div>
     </div>
     <div className={classes.Change}>
       <div className={classes.Top}>24h Change</div>
       <div className={classes.Bottom}>
-        <span>-0.000387</span>
+        <span>-0.000384</span>
         <span>-0.49%</span>
       </div>
     </div>
     <div className={classes.High}>
       <div className={classes.Top}>24h High</div>
-      <div className={classes.Bottom}>0.08400</div>
+      <div className={classes.Bottom}>0.081500</div>
     </div>
     <div className={classes.Low}>
       <div className={classes.Top}>24h Low</div>
-      <div className={classes.Bottom}>0.077220</div>
+      <div className={classes.Bottom}>0.077200</div>
     </div>
   </Fragment>
 );

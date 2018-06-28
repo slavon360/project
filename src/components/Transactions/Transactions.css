@@ -62,11 +62,11 @@
   width: 155px;
 }
 .Table tbody td:nth-child(2){
-  padding-left: 40px;
-  width: 129px;
+  padding-left: 45px;
+  width: 142px;
 }
 .Table tbody td:nth-child(3){
-  width: 100px;
+  width: 98px;
 }
 .Table tbody td:nth-child(4){
   padding-right: 44px;
@@ -142,6 +142,17 @@
   font-size: 16px;
   color: #922c88;
   cursor: pointer;
+}
+@media screen and (min-width: 1900px){
+  .Table tbody{
+    height: 167px;
+  }
+  .Table tbody tr{
+    padding: 1px 0;
+  }
+  .Round{
+    transform: translateX(1px);
+  }
 }
 @media screen and (max-width: 1650px) {
   .AngleIcon.Up svg{

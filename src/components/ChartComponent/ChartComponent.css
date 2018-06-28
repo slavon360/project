@@ -23,9 +23,12 @@
   display: inline-block;
 }
 
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1900px){
   .ChartComponentWrp{
     margin-top: -10px;
+  }
+  .Header{
+    margin-bottom: 34px;
   }
 }
 

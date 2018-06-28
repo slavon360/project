@@ -384,6 +384,9 @@
 }
 
 @media screen and (min-width: 1900px){
+  .BtnPeriod:nth-child(3){
+    margin-right: 8px;
+  }
   .SwitchBtn{
     width: 20px;
     height: 25px;

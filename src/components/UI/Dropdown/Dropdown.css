@@ -194,6 +194,17 @@
   background-color: #f1dded;
 }
 
+@media screen and (min-width: 1900px){
+  .DropdownPeriodWrp:nth-child(2){
+    margin-right: 6px;
+  }
+  .DropdownPeriodWrp:nth-child(2) > button > div:first-child{
+    margin-right: 13px;
+  }
+  .DropdownPeriodWrp:nth-child(2) > button > div:nth-child(2){
+    transform: rotate(90deg) translate(7px, -1px);
+  }
+}
 
 @media screen and (min-width: 1366px) and (max-width: 1500px){
   .UserDropdownWrp{
