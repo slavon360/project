@@ -5,7 +5,7 @@ import Input from '../UI/Input';
 import * as actionTypes from '../../actions/actionTypes';
 import classes from './BuySellComponent.css';
 import checkedIcon from '../../../assets/images/icons/checked.png';
-import switchIcon from '../../../assets/images/icons/switch.png';
+import switchIcon from '../../../assets/images/icons/switch.svg';
 
 import bitcoin from '../../../assets/images/icons/BTC.png';
 import ethereum from '../../../assets/images/icons/ETH.png';
@@ -56,7 +56,7 @@ const buySellComponent = (props) => {
       </div>
       <form className={classes.BuySellForm}>
         <p className={classes.Specify}>
-          {`Specify the currency that you want to ${props.buy ? 'buy' : 'sell'}`}
+          {`Specify the currencies that you want to ${props.buy ? 'buy' : 'sell'}`}
         </p>
         <div className={classes.CurrenciesWrp}>
           {currenciesBtns}

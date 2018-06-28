@@ -2,11 +2,14 @@
   display: inline-block;
 }
 .UserIconWrp{
-  margin-right: 30px;
+  margin-right: 28px;
   background-color: #fff;
   border-radius: 50%;
   padding: 15px 10px 0;
   overflow: hidden;
+}
+.UserIconWrp svg{
+  transform: scale(1.19);
 }
 .RightSection{
   width: 180px;
@@ -17,7 +20,10 @@
   font-size: 16px;
   color: #41424e;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
+}
+.ProgressWrp{
+  transform: translate(-2px, 2px);
 }
 .ProgressWrp .UpperSection{
   overflow: hidden;
@@ -33,7 +39,7 @@
   color: #83878c;
 }
 .ProgressWrp .BackLine{
-  margin-top: 8px;
+  margin-top: 6px;
   width: 100%;
   height: 2px;
   background-color: #f0f0f0;

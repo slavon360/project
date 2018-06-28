@@ -1,7 +1,7 @@
 
 .Table thead th{
   font-family: SegoeUI-Bold;
-  padding-bottom: 34px !important;
+  padding-bottom: 30px !important;
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 29px;
   font-size: 14px;
@@ -37,7 +37,7 @@
   display: block;
   height: 150px;
   overflow: auto;
-  padding-top: 29px;
+  padding-top: 39px;
 }
 .Table tbody::-webkit-scrollbar {
     width: 6px;
@@ -135,7 +135,7 @@
 }
 .ViewAllBtn{
   text-align: center;
-  margin-top: 16px;
+  margin-top: 23px;
 }
 .ViewAllBtn span{
   outline: none;

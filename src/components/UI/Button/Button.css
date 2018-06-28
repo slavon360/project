@@ -121,7 +121,7 @@
 .BuyTab, .SellTab{
   width: 50%;
   border-radius: 8px 8px 0 0;
-  padding:  38px 0 32px;
+  padding:  30px 4px 32px 0;
   background-color: #f3ecf3;
   color: #922c88;
   font-weight: 700;
@@ -132,7 +132,8 @@
 }
 .BtnCoin{
   width: 100%;
-  padding: 2px 0 8px;
+  height: 40px;
+  padding: 0 0 8px;
   background-color: transparent;
   border-radius: 25px;
   color: #555;
@@ -142,7 +143,7 @@
   position: relative;
 }
 .BtnCoin > img{
-  height: 25px;
+  height: 24px;
   transform: translateY(5px);
 }
 .BtnCoin span{
@@ -150,6 +151,7 @@
 }
 .BtnCoin:hover, .BtnCoin.Checked{
   border-color: #922c88;
+  box-shadow: 0 4px 13px rgba(180, 27, 165, 0.2);
 }
 .BtnCoin.Checked > div{
   display: block;
@@ -379,6 +381,17 @@
   border-radius: 20px;
   width: 160px;
   height: 40px;
+}
+
+@media screen and (min-width: 1900px){
+  .SwitchBtn{
+    width: 20px;
+    height: 25px;
+    margin: 0 10px;
+  }
+  .SwitchBtn > img{
+    transform: translate(2px, 7px);
+  }
 }
 
 @media screen and (max-width: 1850px){

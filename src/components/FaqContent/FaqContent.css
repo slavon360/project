@@ -6,7 +6,7 @@
   padding: 81px 126px 93px 47px;
   box-sizing: border-box;
   text-align: left;
-  box-shadow: 0 4px 10px 0 #e1e1e1;
+  box-shadow: 0 4px 18px 0 rgba(48, 8, 69, 0.07);
 }
 .FAQQuestionWrp{
   margin-bottom: 44px;
@@ -31,7 +31,7 @@
   height: 15px;
 }
 .FAQQuestionWrp.Inactive .Icon > div{
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateY(3px);
 }
 .FAQQuestionWrp.Active .Icon > div{
   transform: rotate(90deg);

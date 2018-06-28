@@ -9,14 +9,27 @@ class Faq extends Component {
   state = {
     selectedSection: null,
     sections: null,
+    mobileView: null,
   };
 
-  componentWillMount() {
+  updateDimensions = () => {
+    if (window.innerWidth < 768 && !this.state.mobileView) this.setState({ mobileView: true });
+    if (window.innerWidth >= 768 && this.state.mobileView) this.setState({ mobileView: false });
+  }
+
+  componentWillMount = () => {
+    this.updateDimensions();
     const sections = faq.sections.map(sect => ({
       ...sect,
       content: sect.title,
     }));
     this.setState({ selectedSection: faq.selectedSection, sections });
+  }
+  componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions);
+  }
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateDimensions);
   }
 
   selectSection = (section) => {
@@ -24,30 +37,33 @@ class Faq extends Component {
     let updSelectedSection;
     updSections = updSections.map((sect) => {
       const updSect = { ...sect };
-      updSect.checked = sect.title === section.title;
-      if (updSect.checked) {
+      if (!this.state.mobileView) {
+        updSect.checked = sect.title === section.title;
+      }
+      if (this.state.mobileView) {
+        updSect.checked = (sect.title === section.title && !sect.checked);
+      }
+      if (sect.title === section.title) {
         updSelectedSection = { ...sect };
       }
       return updSect;
     });
-
     this.setState({ selectedSection: updSelectedSection, sections: updSections });
   }
 
   showAnswer = (qst) => {
     let updQuestions = [...this.state.selectedSection.questions];
     const updSelectedSection = { ...this.state.selectedSection };
-    updQuestions = updQuestions.map((question) => {
-      const updQuestion = { ...question };
-      updQuestion.checked = question.questionTitle === qst.questionTitle && !question.checked;
-      return updQuestion;
-    });
+    updQuestions = updQuestions.map(question => ({
+      ...question,
+      checked: question.questionTitle === qst.questionTitle && !question.checked,
+    }));
     updSelectedSection.questions = updQuestions;
     this.setState({ selectedSection: updSelectedSection });
   }
 
   render() {
-    const questions = this.state.selectedSection ? this.state.selectedSection.questions : null;
+    const questions = this.state.selectedSection ? this.state.selectedSection.questions : [];
     return (
       <div className={classes.FaqWrp}>
         <h2 className={classes.Title}>FAQ</h2>

@@ -167,9 +167,9 @@
                     "long": "Bitcoin"
                     },
       "icon": "Bitcoin.svg",
-      "bal": "1.2102",
+      "bal": "1.210265",
       "fiat": {
-                "number": "2910.36",
+                "number": "29 100.36",
                 "title": "AUD"
               }
     },
@@ -191,9 +191,9 @@
                     "long": "Australian Dollar"
                     },
       "icon": "Bitcoin.svg",
-      "bal": "3002.36",
+      "bal": "300 256.36",
       "fiat": {
-                "number": "3002.36",
+                "number": "300 256.36",
                 "title": "AUD"
               }
     },

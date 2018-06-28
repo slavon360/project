@@ -1,10 +1,10 @@
 .ProfileWrp{
   background-color: #f8f8f8;
-  padding: 60px 160px 96px 160px;
+  padding: 60px 148px 96px 160px;
 }
 .Head{
   padding-left: 230px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 .Head .UserStatus{
   margin-right: 139px;
@@ -13,11 +13,17 @@
 .ProfileWrp .Stages{
   display: inline-block;
   vertical-align: top;
-  padding-top: 14px;
+  padding-top: 16px;
 }
 .ProfileWrp .Stages > div{
   margin-right: 129px;
   position: relative;
+}
+.ProfileWrp .Stages > div:first-child{
+  margin-right: 124px;
+}
+.ProfileWrp .Stages > div:nth-child(2){
+  margin-right: 115px;
 }
 .ProfileWrp .Stages > div:last-child{
   margin-right: 0;
@@ -39,12 +45,15 @@
 }
 .BalancesWrp{
   width: 780px;
-  padding: 43px 80px 65px 80px;
+  padding: 31px 80px 62px 72px;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 4px 18px 0 #dedede;
   box-sizing: border-box;
   align-self: flex-start;
+}
+.BalancesWrp > div:last-child span{
+  padding-left: 4px;
 }
 .BalancesWrp table{
   width: 100%;
@@ -56,7 +65,7 @@
   font-family: SegoeUI-Bold;
   font-size: 18px;
   font-weight: 700;
-  padding-bottom: 42px !important;
+  padding-bottom: 39px !important;
   margin-bottom: 41px;
   text-align: left;
 }
@@ -80,7 +89,7 @@
 .BalancesWrp table tbody td:nth-child(2){
   font-family: SegoeUI-Bold;
   padding-left: 0;
-  width: 261px;
+  width: 256px;
   font-weight: 700;
 }
 .BalancesWrp table tbody td:nth-child(3){
@@ -92,6 +101,7 @@
 .BalancesWrp table tbody td img{
   width: 24px;
   height: 24px;
+  transform: translate(2px, -2px);
 }
 @media screen and (min-width: 1601px) and (max-width: 1800px){
   .ProfileWrp{
@@ -167,14 +177,14 @@
     margin-right: 70px;
   }
   .ProfileWrp .Stages > div:first-child{
-    margin-right: 99px;
+    margin-right: 99px !important;
   }
   .ProfileWrp .Stages > div:first-child::after{
     left: 155px;
     top: 19px;
   }
   .ProfileWrp .Stages > div:nth-child(2){
-    margin-right: 90px;
+    margin-right: 90px !important;
   }
   .ProfileWrp .Stages > div:nth-child(2)::after{
     left: 165px;
@@ -229,10 +239,10 @@
     align-self: center;
   }
   .ProfileWrp .Stages > div:first-child{
-    margin-right: 99px;
+    margin-right: 99px !important;
   }
   .ProfileWrp .Stages > div:nth-child(2){
-    margin-right: 90px;
+    margin-right: 90px !important;
   }
   .ProfileWrp .Stages > div:first-child::after{
     left: 158px;
@@ -271,13 +281,13 @@
     padding-top: 30px;
   }
   .ProfileWrp .Stages > div{
-    margin-right: 23px;
+    margin-right: 23px !important;
   }
   .ProfileWrp .Stages > div:nth-child(2){
-    margin-right: 16px;
+    margin-right: 16px !important;
   }
   .ProfileWrp .Stages > div:last-child{
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .ProfileWrp .Stages > div::after{
     display: none;
@@ -327,10 +337,10 @@
     padding: 20px 20px 30px;
   }
   .ProfileWrp .Stages > div:first-child{
-    margin-right: 16px;
+    margin-right: 16px !important;
   }
   .ProfileWrp .Stages > div:nth-child(2){
-    margin-right: 14px;
+    margin-right: 14px !important;
   }
   .ProfileWrp .Stages{
     padding-top: 21px;

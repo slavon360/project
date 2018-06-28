@@ -18,6 +18,7 @@
   display: inline-block;
 }
 .UserStageWrp .RightSide{
+  text-align: left;
   height: 32px;
 }
 .UserStageWrp .RightSide .Title{
@@ -30,6 +31,20 @@
   font-size: 14px;
 }
 
+@media screen and (min-width: 1900px){
+  .UserStageWrp:first-child .Number{
+    transform: translateX(-2px);
+  }
+  .UserStageWrp:first-child .RightSide{
+    transform: translate(-5px, -3px);
+  }
+  .UserStageWrp:nth-child(2) .RightSide{
+    transform: translate(-1px, -3px);
+  }
+  .UserStageWrp:nth-child(3) .RightSide{
+    transform: translate(-3px, -3px);
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1365px){
 
 }

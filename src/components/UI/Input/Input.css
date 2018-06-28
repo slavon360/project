@@ -159,7 +159,7 @@
   display: inline-block;
 }
 .AmountWrpLeft, .AmountWrpRight{
-  width: calc(100% - 50% - 45px);
+  width: calc(100% - 50% - 40px);
   position: relative;
 }
 .AmountWrpLeft{
@@ -171,7 +171,7 @@
 .AmountLabel{
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 7px;
   color: #333;
   font-size: 14px;
   font-weight: 700;

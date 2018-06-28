@@ -10,7 +10,7 @@
   border-radius: 8px;
   background-color: #fff;
   border: 1px solid transparent;
-  padding: 20px 81px 25px;
+  padding: 32px 81px 33px 77px;
 }
 .CurrenciesWrp{
   margin: 25px 0 10px;
@@ -39,8 +39,8 @@
   box-sizing: border-box;
   background: linear-gradient(105deg, #d52882, #632572);
   position: absolute;
-  right: 0;
-  bottom: 80%;
+  right: -3%;
+  bottom: 68%;
   display: none;
 }
 .Checked img{
@@ -48,9 +48,12 @@
 }
 .CurrentPriceWrp, .InputsWrp{
   overflow: hidden;
-  margin: 35px 0 20px;
+}
+.CurrentPriceWrp{
+  margin: 41px 0 20px;
 }
 .InputsWrp{
+  margin: 30px 0 14px;
   text-align: center;
 }
 .CurrentPriceWrp .Amount{
@@ -70,9 +73,16 @@
 }
 .BuyBtnWrp{
   text-align: center;
-  margin: 40px 0 30px;
+  margin: 43px 0 30px;
 }
-
+@media screen and (min-width: 1900px){
+  .BuySellComponentWrp{
+    width: 600px;
+  }
+  .TransactionFee{
+    transform: translateX(3px);
+  }
+}
 @media screen and (max-width: 1919px){
   .BuySellComponentWrp{
     width: 580px;
