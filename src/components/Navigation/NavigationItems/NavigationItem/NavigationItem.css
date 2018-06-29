@@ -20,6 +20,13 @@
 .NavigationItem.PhoneAndTablet, .NavigationItem.TabletOnly{
   display: none;
 }
+
+@media screen and (min-width: 1900px){
+  .NavigationItem{
+    margin-right: 62px;
+  }
+}
+
 @media screen and (min-width: 1501px) and (max-width: 1590px){
   .NavigationItem{
     margin-right: 50px

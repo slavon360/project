@@ -1,5 +1,5 @@
 .BalancesWrp{
-  padding: 51px 0 146px 0;
+  padding: 39px 0 146px 0;
   text-align: center;
   background-color: #f8f8f8;
 }
@@ -8,6 +8,7 @@
   justify-content: space-between;
   margin-bottom: 32px;
   width: 100%;
+  box-sizing: border-box;
 }
 .BalancesHead h2{
   font-family: SegoeUI-Bold;
@@ -35,8 +36,14 @@
   width: 1240px;
   display: inline-block;
 }
-.BalanceRow{
+.BalanceRow::after{
+  clear: both;
+  display: block;
+  height: 0;
   overflow: hidden;
+  visibility: hidden;
+  content: ".";
+  font-size: 0;
 }
 .Balances{
   box-shadow: 0 4px 18px 0 rgba(48, 8, 69, 0.07);
@@ -44,14 +51,14 @@
   width: 100%;
   background-color: #fff;
   border-radius: 6px;
-  padding: 36px 74px 65px 80px;
+  padding: 30px 74px 65px 84px;
   box-sizing: border-box;
   display: inline-block;
   text-align: left;
 }
 .Balances .Head{
-  padding-bottom: 34px;
-  margin-bottom: 42px;
+  padding-bottom: 30px;
+  margin-bottom: 37px;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -92,7 +99,7 @@
   width: 32.4%;
 }
 .Balances .Head .Balance, .BalanceValueWrp{
-  width: 18.35%;
+  width: 18.5%;
 }
 .FiatValue{
   width: 18.4%;
@@ -100,7 +107,6 @@
 .DepositWithdrawBtnsWrp{
   display: inline-block;
   float: right;
-
 }
 .DepositIconWrp svg{
   transform: translateY(2px);
@@ -120,6 +126,25 @@
   font-family: SegoeUI-Bold;
 }
 
+@media screen and (min-width: 1900px){
+  .BalancesHead{
+    padding: 0 0 0 4px;
+  }
+  .DepositWithdrawBtnsWrp{
+    transform: translateY(-2px);
+  }
+  .LimitsWrp .Limit{
+    padding-right: 58px;
+  }
+  .LimitsWrp .InUse{
+    margin-right: -7px;
+  }
+}
+@media screen and (min-width: 1300px){
+  .DepositWithdrawBtnsWrp{
+    margin-top: -28px;
+  }
+}
 @media screen and (max-width: 1366px){
   .BalancesWrp{
     padding: 50px 63px 80px 63px;

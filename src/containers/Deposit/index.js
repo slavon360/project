@@ -21,7 +21,7 @@ class Deposit extends Component {
     let updTransactions = [...this.state.transactions];
     updTransactions = updTransactions.map(trans => ({
       ...trans,
-      checked: trans.currency === transaction.currency && !trans.checked,
+      checked: trans.id === transaction.id && !trans.checked,
     }));
     this.setState({ transactions: updTransactions });
   }

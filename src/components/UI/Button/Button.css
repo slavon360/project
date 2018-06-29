@@ -395,6 +395,12 @@
   .SwitchBtn > img{
     transform: translate(2px, 7px);
   }
+  .DepositBtn{
+    margin-right: 13px;
+  }
+  .WithdrawBtn{
+    transform: translate(4px, 0);
+  }
 }
 
 @media screen and (max-width: 1850px){

@@ -1,6 +1,6 @@
 .DepositWrp{
   background-color: #f8f8f8;
-  padding: 60px 160px 60px 160px;
+  padding: 60px 147px 60px 160px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -13,7 +13,7 @@
   box-shadow: 0 4px 18px 0 #dedede;
   border-radius: 6px;
   width: 760px;
-  padding: 35px 61px 38px 59px;
+  padding: 23px 61px 18px 55px;
   background-color: #fff;
   box-sizing: border-box;
 }
@@ -33,7 +33,7 @@
   background-color: #f1dded;
 }
 .TableWrp tbody td:first-child{
-  width: 138px;
+  width: 135px;
   padding: 0;
 }
 .TableWrp tbody td:nth-child(2){
@@ -41,12 +41,12 @@
   padding: 0;
 }
 .TableWrp tbody td:nth-child(3){
-  width: 200px;
+  width: 197px;
   padding: 0;
 }
 .TableWrp tbody td:nth-child(4){
   padding: 0;
-  width: 183px;
+  width: 197px;
 }
 .TableWrp table tbody td,
 .TableWrp table tbody td:first-child{
@@ -58,7 +58,13 @@
 
 @media screen and (min-width: 1920px){
   .TableWrp table tbody tr{
-    margin-bottom: 5px;
+    margin-bottom: 11px;
+  }
+}
+
+@media screen and (min-width: 1900px){
+  .TableWrp table tbody{
+    padding-top: 18px;
   }
 }
 

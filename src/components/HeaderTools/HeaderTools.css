@@ -56,6 +56,13 @@
   display: inline-block;
 }
 
+@media screen and (min-width: 1900px){
+  .Help{
+    transform: translateX(15px) !important;
+    margin-right: 19px !important;
+  }
+}
+
 @media screen and (min-width: 1366px) and (max-width: 1590px){
   .Help{
     margin-right: 22px;

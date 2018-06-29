@@ -14,6 +14,14 @@
   display: inline-block;
 }
 
+@media screen and (min-width: 1900px){
+  .Toolbar{
+    padding: 24px 0 31px;
+    width: 1585px;
+    align-self: center;
+  }
+}
+
 @media screen and (min-width: 1501px) and (max-width: 1590px){
   .Logo{
     margin-right: 70px;

@@ -158,10 +158,10 @@
     margin-bottom: 42px;
   }
   .BalancesWrp table tbody td:nth-child(2){
-    width: 227px;
+    width: 217px;
   }
   .BalancesWrp table tbody td:nth-child(3){
-    width: 139px;
+    width: 137px;
   }
 }
 
@@ -206,10 +206,10 @@
     padding-top: 42px;
   }
   .BalancesWrp table tbody td:nth-child(2){
-    width: 227px;
+    width: 212px;
   }
   .BalancesWrp table tbody td:nth-child(3){
-    width: 139px;
+    width: 135px;
   }
 }
 
@@ -259,10 +259,10 @@
     margin-bottom: 42px !important;
   }
   .Balances_InteractiveBlocks_Wrp .BalancesWrp table tbody td:nth-child(2){
-    width: 227px;
+    width: 205px;
   }
   .Balances_InteractiveBlocks_Wrp .BalancesWrp table tbody td:nth-child(3){
-    width: 139px;
+    width: 130px;
   }
 }
 
@@ -312,13 +312,13 @@
     width: 36px;
   }
   .BalancesWrp table tbody td:nth-child(2){
-    width: 84px;
+    width: 72px;
   }
   .BalancesWrp table tbody td:nth-child(2) span:nth-child(2){
     display: none;
   }
   .BalancesWrp table tbody td:nth-child(3){
-    width: 118px;
+    width: 114px;
   }
   .Balances_InteractiveBlocks_Wrp{
     flex-direction: column;
@@ -353,10 +353,10 @@
     margin-bottom: 20px;
   }
   .BalancesWrp table tbody td:nth-child(2){
-    width: 57px;
+    width: 46px;
   }
   .BalancesWrp table tbody td:nth-child(3){
-    width: 91px;
+    width: 85px;
   }
 }
 

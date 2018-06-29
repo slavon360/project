@@ -18,6 +18,12 @@
   font-family: SegoeUI-Bold;
 }
 
+@media screen and (min-width: 1900px){
+  .BalanceIndicatorWrp{
+    margin-right: 35px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1365px){
   .BalanceIndicatorWrp{
     margin-right: 10px;
