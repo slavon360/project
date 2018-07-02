@@ -259,14 +259,14 @@
 .InputRequestWrp input{
   height: 19px;
   border-bottom: 1px solid #f3ecf3 !important;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 44px;
 }
 .InputRequestWrp input:hover,
 .InputRequestWrp input:focus{
   border-bottom: 2px solid #d092c9 !important;
-  margin-bottom: 47px;
+  margin-bottom: 43px;
 }
 .InputRequestWrp textarea:hover, .InputRequestWrp textarea:focus{
   border-bottom: 2px solid #d092c9 !important;
@@ -280,21 +280,22 @@
 }
 .InputRequestWrp textarea{
   height: 96px;
-  margin-bottom: 69px;
+  margin-bottom: 61px;
   padding: 7px 0 0;
   box-sizing: border-box;
   border-bottom: 1px solid #f3ecf3 !important;
   resize: none;
 }
-.InputRequestWrp textarea::-webkit-input-placeholder{
-  color: #41424e;
-  padding-top: 68px;
-  font-size: 11px;
-  font-family: SegoeUI;
-}
 .InputRequestWrp input::-webkit-input-placeholder,
 .InputRequestWrp label{
   color: #9e9fa3;
+  font-size: 14px;
+}
+.InputRequestWrp textarea::-webkit-input-placeholder{
+  color: #41424e;
+  padding-top: 55px;
+  font-size: 11px;
+  font-family: SegoeUI;
 }
 .BankAccountNickname input{
   margin-bottom: 39px !important;
@@ -397,6 +398,18 @@
 .OptionalButton{
   outline: none;
   border: none;
+}
+
+@media screen and (min-width: 1900px){
+  .WithdrawAddress{
+    margin-top: -17px;
+  }
+  .WithdrawAmount{
+    margin-top: 25px;
+  }
+  .WithdrawAmount .ThirdLabel, .WithdrawAmount .FourthLabel{
+    margin-top: 8px;
+  }
 }
 
 @media screen and (max-width: 1850px){

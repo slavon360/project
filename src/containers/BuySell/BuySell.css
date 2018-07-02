@@ -33,9 +33,12 @@
   padding-top: 20px;
 }
 
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1900px){
   .BuySellWrp{
-    padding: 57px 148px 60px 159px;
+    padding-left: 11px;
+    padding-right: 0;
+    padding-bottom: 61px;
+    width: 1598px;
   }
   .TransactionsWrp .TableWrp table thead{
     padding-right: 69px;

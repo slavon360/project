@@ -1,5 +1,5 @@
 .AddressWrp{
-  padding: 76px 340px 77px 140px;
+  padding: 66px 340px 77px 140px;
   background-color: #fff;
   border-radius: 8px;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
   font-weight: 700;
   color: #922c88;
   font-size: 24px;
-  margin: 0 0 75px;
+  margin: 0 0 70px;
 }
 .InputsContent{
   text-align: center;
@@ -18,16 +18,20 @@
 .InputsContent > div{
   text-align: left;
 }
+.InputsContent > div:nth-child(4) input{
+  margin-bottom: 62px;
+}
 .InputsContent > div:nth-child(5){
   text-align: center;
 }
 .InputsContent input{
   width: 100%;
   border: none;
-  padding-bottom: 19px;
+  padding-bottom: 0;
   outline: none;
   border-bottom: 1px solid #e8e8e8;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
+  transform: translateY(-5px);
 }
 .InputsContent label{
   font-size: 14px;

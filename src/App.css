@@ -1,17 +1,23 @@
 
-@media screen and (min-width: 1900px){
-  .App{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 @media screen and (min-height: 888px){
   .App, #root, body, html{
     height: 100%;
   }
   body > div{
     height: 100%;
+  }
+}
+
+@media screen and (min-width: 1900px){
+  .App{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .App main{
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
   }
 }

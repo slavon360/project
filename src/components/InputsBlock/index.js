@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Input from '../UI/Input';
 import Button from '../UI/Button';
 import { setCurrentClasses } from '../../shared/utility';
@@ -65,8 +65,17 @@ const inputsBlock = (props) => {
         </div>
         <div className={classes.RightSide}>
           <div className={classes.Title}>Important!</div>
-          <div className={classes.WarningInfo}>{props.data.warningInfo.replace('*{currency}', shortcut)}</div>
-          <div className={classes.LimitInfo}>{props.data.limitInfo}</div>
+          <div className={classes.WarningInfo}>
+            {
+              props.data.deposit ?
+                props.data.warningInfo.deposit.replace('*{currency}', shortcut) :
+                <Fragment>
+                  <div>{props.data.warningInfo.withdraw.min.replace('*{currency}', shortcut)}</div>
+                  <div>{props.data.warningInfo.withdraw.note}</div>
+                </Fragment>
+            }
+          </div>
+          <div className={classes.LimitInfo}>{props.data.deposit ? props.data.limitInfo : `Withdraw ${props.data.limitInfo}`}</div>
         </div>
       </div>
       {interactiveContent}

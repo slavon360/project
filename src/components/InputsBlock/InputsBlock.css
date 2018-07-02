@@ -34,6 +34,9 @@
 .RightSide .WarningInfo{
   margin-bottom: 13px;
 }
+.RightSide .WarningInfo > div:first-child{
+  margin-bottom: -3px;
+}
 .CopyDepositAddressWrp, .SubmitWithdrawAmountWrp{
   font-family: SegoeUI-Bold;
   width: 100%;

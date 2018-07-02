@@ -66,6 +66,12 @@
   .TableWrp table tbody{
     padding-top: 18px;
   }
+  .DepositWrp{
+    padding-right: 0;
+    padding-left: 13px;
+    width: 1598px;
+    align-self: center;
+  }
 }
 
 @media screen and (max-width: 1890px){

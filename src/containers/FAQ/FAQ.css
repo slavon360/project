@@ -1,6 +1,6 @@
 .FaqWrp{
   background-color: #f8f8f8;
-  padding: 61px 0 80px;
+  padding: 46px 0 80px 9px;
   text-align: center;
 }
 .FaqWrp .Title{
@@ -8,14 +8,14 @@
   font-size: 36px;
   font-weight: 700;
   color: #922c88;
-  margin: 0 0 30px;
+  margin: 0 0 23px;
 }
 .FaqWrp .FaqContainer{
   display: inline-block;
 }
 .FaqWrp .FaqHead{
   font-family: SegoeUI-Bold;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   text-align: right;
 }
 .FaqHead .HaveQuestion,

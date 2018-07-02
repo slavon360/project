@@ -3,13 +3,13 @@
   border-radius: 8px;
   background-color: #fff;
   display: inline-block;
-  padding: 81px 126px 93px 47px;
+  padding: 77px 124px 93px 45px;
   box-sizing: border-box;
   text-align: left;
   box-shadow: 0 4px 18px 0 rgba(48, 8, 69, 0.07);
 }
 .FAQQuestionWrp{
-  margin-bottom: 44px;
+  margin-bottom: 29px;
   overflow: hidden;
   transition: height .4s;
 }
@@ -48,7 +48,7 @@
   color: #922c88;
 }
 .FAQQuestionWrp .Answer{
-  margin-top: 23px;
+  margin-top: 18px;
   margin-left: 54px;
   font-size: 14px;
   color: #41424e;

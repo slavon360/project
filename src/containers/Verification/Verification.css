@@ -1,5 +1,5 @@
 .VerificationWrp{
-  padding: 59px 259px 57px 258px;
+  padding: 59px 259px 61px 258px;
   background-color: #f8f8f8;
   display: flex;
   justify-content: space-between;
@@ -69,6 +69,29 @@
   font-weight: 400;
   line-height: 24px;
   color: #41424e;
+}
+
+@media screen and (min-width: 1900px){
+  .VerificationWrp{
+    box-sizing: border-box;
+    padding-right: 12px;
+    padding-left: 25px;
+    width: 1440px;
+    align-self: center;
+  }
+  .NavbarSection .Title{
+    margin-bottom: 47px;
+    transform: translateY(-11px);
+  }
+  .NavBtn > div:first-child{
+    margin-top: 7px;
+  }
+  .Note{
+    margin-top: 36px;
+  }
+  .Note .Text{
+    margin-top: 7px;
+  }
 }
 
 @media screen and (max-width: 1900px){

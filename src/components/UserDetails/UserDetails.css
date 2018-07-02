@@ -19,40 +19,44 @@
   text-align: left;
 }
 .InputsContent > div:first-child input{
-  margin-bottom: 28px;
+  transform: translateY(-5px);
+  margin-bottom: 38px;
 }
 .InputsContent > div:first-child input:hover,
 .InputsContent > div:first-child input:focus{
-  margin-bottom: 27px;
+  margin-bottom: 37px;
 }
 .InputsContent > div:nth-child(2) input{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  transform: translateY(-5px);
 }
 .InputsContent > div:nth-child(2) input:hover,
 .InputsContent > div:nth-child(2) input:focus{
-  margin-bottom: 49px;
+  margin-bottom: 39px;
 }
 .InputsContent > div:nth-child(9) input{
-  margin-bottom: 70px;
+  margin-bottom: 62px;
+  transform: translateY(-5px);
 }
 .InputsContent > div:nth-child(9) input:hover,
 .InputsContent > div:nth-child(9) input:focus{
-  margin-bottom: 69px;
+  margin-bottom: 61px;
 }
 .InputsContent .NationalityWrp{
-  margin-top: 51px;
+  margin-top: 41px;
 }
 .InputsContent .NationalityWrp input{
-  margin-bottom: 49px;
+  transform: translateY(-5px);
+  margin-bottom: 39px;
 }
 .InputsContent .NationalityWrp input:hover,
 .InputsContent .NationalityWrp input:focus{
-  margin-bottom: 48px;
+  margin-bottom: 38px;
 }
 .InputsContent input{
   width: 100%;
   border: none;
-  padding-bottom: 17px;
+  padding-bottom: 0;
   outline: none;
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 50px;
@@ -89,13 +93,13 @@
   text-align: left;
 }
 .GenderTitle{
-  margin: 0 0 16px;
+  margin: 0 0 13px;
 }
 .BirthDateTitle{
-  margin: 50px 0 19px;
+  margin: 47px 0 14px;
 }
 .SertificateWrp{
-  margin-bottom: 51px;
+  margin-bottom: 46px;
 }
 .SertificateTitle{
   margin: 0 0 13px;
@@ -112,6 +116,14 @@
   transform: rotate(-90deg) translateX(4px);
 }
 
+@media screen and (min-width: 1900px){
+  .UserDetailsWrp{
+    padding-top: 66px;
+  }
+  .UserDetailsWrp .Title{
+    margin-bottom: 70px;
+  }
+}
 
 @media screen and (min-width: 1366px) and (max-width: 1900px){
   .UserDetailsWrp{

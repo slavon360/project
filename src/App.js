@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import Layout from './hoc/Layout';
 // import Modal from './components/UI/Modal';
-// import TermsOfUse from './components/TermsOfUse';
 
 // import Welcome from './components/Modals/Welcome';
 
@@ -17,6 +16,7 @@ import Layout from './hoc/Layout';
 // import ChangePassword from './components/Modals/ChangePassword';
 
 // import Login from './containers/Login';
+import TermsOfUse from './components/TermsOfUse';
 import BuySell from './containers/BuySell';
 import Balances from './containers/Balances';
 import Deposit from './containers/Deposit';
@@ -41,6 +41,7 @@ class App extends Component {
             <Route path="/help" component={Faq} />
             <Route path="/profile" component={Profile} />
             <Route path="/verification" component={Verification} />
+            <Route path="/terms" component={TermsOfUse} />
             <Redirect to="/buy-sell" />
           </Switch>
         </Layout>

@@ -1,9 +1,9 @@
 .TermsOfUseWrp{
   background-color: #fff;
-  padding: 34px 160px 29px;
+  padding: 25px 147px 29px 162px;
 }
 .Head{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -15,14 +15,14 @@
   font-weight: 700;
 }
 .Content{
-  padding: 0 200px;
+  padding: 0 198px;
 }
 .Content h2{
   font-family: SegoeUI-Bold;
   text-transform: uppercase;
   font-size: 24px;
   text-align: center;
-  margin: 0 0 48px;
+  margin: 0 0 36px;
   font-weight: 700;
   color: #922c88;
 }
@@ -30,6 +30,9 @@
   font-size: 16px;
   line-height: 24px;
   color: #41424e;
+}
+.Content .Paragraphs p{
+  margin-bottom: 25px;
 }
 .Footer{
   display: flex;

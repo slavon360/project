@@ -1,6 +1,6 @@
 .Footer{
   background-color: #2b2837;
-  padding: 21px 160px 27px 160px;
+  padding: 10px 145px 27px 160px;
   font-size: 14px;
   color: #7b7495;
 }
@@ -13,18 +13,18 @@
 }
 .Top{
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   border-bottom: 1px solid #3c3b3b;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 .Logo{
   font-size: 24px;
   color: #fff;
-  margin-right: 119px;
+  margin-right: 121px;
   display: inline-block;
 }
 .NavItem{
-  padding-right: 50px;
+  padding-right: 49px;
 }
 .NavItem > a{
   color: inherit;
@@ -39,20 +39,60 @@
   padding-right: 51px;
 }
 .SocialIconTelegram{
-  padding-right: 44px;
+  padding-right: 41px;
 }
 .SocialIconFacebook{
   padding-right: 40px;
 }
 .TradingVolume > span:first-child{
-  padding-left: 39px;
+  padding-left: 38px;
 }
 .TradingVolume > span:nth-child(2){
-  padding-left: 30px;
+  padding-left: 35px;
 }
 .TradingVolume .Digits{
   color: #fff;
 }
+
+@media screen and (min-width: 1900px){
+  .Footer{
+    align-self: center;
+    padding-top: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 1585px;
+    background-color: transparent;
+  }
+  .Footer::before{
+    content: '';
+    height: 121px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #2b2837;
+    left: 0;
+    z-index: -1;
+  }
+  .Footer .Word{
+    padding-right: 52px;
+  }
+  .SocialIconTelegram{
+    padding-right: 41px;
+  }
+  .SocialIconFacebook{
+    padding-right: 24px;
+  }
+  .SocialIconTwitter{
+    display: inline-block;
+    transform: translateX(13px);
+  }
+  .TradingVolume > span:nth-child(2){
+    display: inline-block;
+    transform: translateX(14px);
+    padding-left: 20px;
+  }
+}
+
 @media screen and (max-width: 1366px){
   .Footer{
     padding: 21px 40px 27px 40px;

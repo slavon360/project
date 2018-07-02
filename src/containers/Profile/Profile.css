@@ -103,6 +103,15 @@
   height: 24px;
   transform: translate(2px, -2px);
 }
+
+@media screen and (min-width: 1900px){
+  .ProfileWrp{
+    padding-left: 12px;
+    padding-right: 0;
+    width: 1598px;
+  }
+}
+
 @media screen and (min-width: 1601px) and (max-width: 1800px){
   .ProfileWrp{
     padding: 60px 80px 80px 80px;
