@@ -149,3 +149,9 @@
     min-height: 85%;
   }
 }
+
+@media screen and (min-height: 900px){
+  .FaqWrp{
+    height: 80vh;
+  }
+}

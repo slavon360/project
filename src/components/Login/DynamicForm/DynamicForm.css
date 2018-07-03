@@ -1,7 +1,7 @@
 .DynamicFormWrp{
   background-color: #fff;
   display: inline-block;
-  padding: 90px 150px 87px 60px;
+  padding: 82px 142px 87px 63px;
   box-sizing: border-box;
   width: 39.6%;
   position: relative;
@@ -24,6 +24,16 @@
   left: 0;
   right: 0;
   color: #9e9fa3;
+}
+
+@media screen and (min-width: 1921px){
+  .Title{
+    font-size: 2.5vw;
+  }
+  .Footer{
+    font-size: 1vw;
+    width: 18vw;
+  }
 }
 
 @media screen and (max-width: 1919px){

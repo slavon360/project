@@ -1,16 +1,17 @@
 .LoginFormWrp{
   width: 100%;
-  padding: 24.4vh 0 0 3.7vw;
+  padding: 29.35vh 0 0 3.5vw;
   box-sizing: border-box;
 }
 .LoginFormWrp > div:first-child > input{
-  margin-bottom: 70px;
+  margin-bottom: 63px;
 }
 .LoginFormWrp > div:first-child > input:hover, .LoginFormWrp > div:first-child > input:focus{
-  margin-bottom: 69px;
+  margin-bottom: 62px;
 }
 .LoginFormWrp > div:nth-child(2) > input{
   margin-bottom: 60px;
+  padding-bottom: 14px;
 }
 .LoginFormWrp > div:nth-child(2) > input:hover, .LoginFormWrp > div:nth-child(2) > input:focus{
   margin-bottom: 59px;
@@ -32,6 +33,9 @@
 .LoginFormWrp .Footer .Tip .Forgot a:hover{
   color: #922c88;
 }
+.LoginFormWrp .Footer .Tip .NotOnBithela{
+  transform: translateY(4px);
+}
 .LoginFormWrp .Footer .Tip .NotOnBithela a{
   display: inline-block;
   color: #922c88;
@@ -49,6 +53,38 @@
 }
 .LoginFormWrp .Footer .Tip .NotOnBithela a:hover:after{
   opacity: 1;
+}
+.LoginBtnInnerWrp{
+  display: none;
+}
+
+@media screen and (min-width: 1921px){
+  .LoginFormWrp > div input{
+    font-size: 1.85vw
+  }
+  .LoginFormWrp > div input::-webkit-input-placeholder{
+    font-size: 1.4vw;
+  }
+  .LoginFormWrp .Footer .Tip{
+    font-size: 1vw;
+  }
+  .LoginBtnInnerWrp{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: middle;
+    text-align: center;
+    background: linear-gradient(90deg, #e12b82, #53236d);
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  .LoginBtnInnerWrp .LoginBtnInner{
+    align-self: center;
+  }
 }
 
 @media screen and (max-width: 1919px){

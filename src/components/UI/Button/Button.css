@@ -382,6 +382,30 @@
   width: 160px;
   height: 40px;
 }
+.LoginButton:hover > div{
+  opacity: 1;
+}
+
+@media screen and (min-width: 1921px){
+  .LoginButton{
+    width: 220px;
+    height: 54px;
+    border-radius: 35px;
+    align-self: center;
+    font-size: 0.85vw;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .LoginButton::before{
+    display: none;
+  }
+}
+@media screen and (min-width: 2600px){
+  .LoginButton{
+    width: 300px;
+    height: 64px;
+  }
+}
 
 @media screen and (min-width: 1900px){
   .BtnPeriod:nth-child(3){

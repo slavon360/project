@@ -21,6 +21,7 @@
   position: relative;
 }
 .DropdownPeriodContainer{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .09);
   position: absolute;
   z-index: 20;
   width: 100%;

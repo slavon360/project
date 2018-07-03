@@ -23,7 +23,12 @@ const loginForm = () => (
       <Button
         btnClasses={['LoginButton']}
         elementConfig={{ 'before-content': 'Login' }}
-      >Login</Button>
+      >
+      Login
+        <div className={classes.LoginBtnInnerWrp}>
+          <span className={classes.LoginBtnInner}>Login</span>
+        </div>
+      </Button>
     </div>
   </form>
 );

@@ -65,9 +65,9 @@
   }
   .Footer::before{
     content: '';
-    height: 121px;
+    height: 100vh;
     position: absolute;
-    bottom: 0;
+    bottom: -20vh;
     width: 100%;
     background-color: #2b2837;
     left: 0;

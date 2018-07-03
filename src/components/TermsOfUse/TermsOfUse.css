@@ -117,3 +117,9 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (min-height: 952px) and (min-width: 2200px){
+  .TermsOfUseWrp{
+    height: 85vh;
+  }
+}

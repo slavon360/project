@@ -4,7 +4,7 @@
   vertical-align: top;
   background-size: cover;
   color: #fff;
-  padding: 32.65vh 0 0 8.3vw;
+  padding: 33.45vh 0 0 7.95vw;
   box-sizing: border-box;
   background-clip: border-box;
   width: 60.4%;
@@ -14,7 +14,7 @@
   font-family: SegoeUI-Light;
   font-size: 72px;
   font-weight: 300;
-  margin: 0 0 18px 0;
+  margin: 0 0 11px 0;
 }
 .Head .Title{
   font-family: SegoeUI-Bold;
@@ -23,6 +23,15 @@
 .Text{
   font-family: SegoeUI-Light;
   font-size: 30px;
+}
+
+@media screen and (min-width: 1921px){
+  .Head{
+    font-size: 4vw;
+  }
+  .Text{
+    font-size: 1.8vw;
+  }
 }
 
 @media screen and (max-width: 1919px){

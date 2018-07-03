@@ -397,3 +397,9 @@
     width: 75px;
   }
 }
+
+@media screen and (min-height: 1080px) and (min-width: 2200px){
+  .ProfileWrp{
+    height: 85vh;
+  }
+}

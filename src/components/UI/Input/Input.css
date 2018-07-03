@@ -385,7 +385,7 @@
   border: none;
   width: 100%;
   outline: none;
-  padding-bottom: 19px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #e8e8e8;
 }
 .LoginInputWrp > input:hover, .LoginInputWrp > input:focus{

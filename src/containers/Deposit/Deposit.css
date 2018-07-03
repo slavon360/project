@@ -70,7 +70,6 @@
     padding-right: 0;
     padding-left: 13px;
     width: 1598px;
-    align-self: center;
   }
 }
 
@@ -217,5 +216,11 @@
     padding: 0;
     background-color: transparent;
     box-shadow: none;
+  }
+}
+
+@media screen and (min-height: 1082px) and (min-width: 2200px){
+  .DepositWrp{
+    height: 85vh;
   }
 }

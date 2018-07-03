@@ -336,10 +336,16 @@
 
 @media screen and (min-height: 888px){
   .BalancesWrp{
-    min-height: 100%;
+    min-height: 80vh;
   }
   main{
     background-color: #f8f8f8;
     min-height: 100%;
+  }
+}
+
+@media screen and (min-height: 1082px) and (min-width: 2200px){
+  .BalancesWrp{
+    height: 85vh;
   }
 }

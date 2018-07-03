@@ -17,6 +17,7 @@
 }
 .Content{
   width: 963px;
+  background-color: #fff;
   box-shadow: 0 4px 18px rgba(48, 8, 69, 0.07);
 }
 .NavBtn{
@@ -77,7 +78,7 @@
     padding-right: 12px;
     padding-left: 25px;
     width: 1440px;
-    align-self: center;
+    /*align-self: center; */
   }
   .NavbarSection .Title{
     margin-bottom: 47px;
@@ -255,10 +256,14 @@
 
 @media screen and (min-height: 888px){
   html, body, body > div, body > div > div{
-    height: 100%;
   }
   main{
     background-color: #f8f8f8;
-    min-height: 85%;
+  }
+}
+
+@media screen and (min-height: 1080px) and (min-width: 2200px){
+  .VerificationWrp{
+    height: 85vh;
   }
 }

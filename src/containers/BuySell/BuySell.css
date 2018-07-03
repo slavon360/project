@@ -235,3 +235,9 @@
     margin-left: 10px;
   }
 }
+
+@media screen and (min-height: 1152px) and (min-width: 2200px){
+  .BuySellWrp{
+    height: 85vh;
+  }
+}

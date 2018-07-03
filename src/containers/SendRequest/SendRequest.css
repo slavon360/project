@@ -72,6 +72,16 @@
 @media screen and (min-height: 888px){
   main{
     background-color: #f8f8f8;
-    min-height: 85%;
+  }
+}
+@media screen and (min-height: 888px) and (max-width: 1365px){
+  .SendRequestWrp{
+    height: 82vh;
+  }
+}
+
+@media screen and (min-height: 1152px) and (min-width: 2200px){
+  .SendRequestWrp{
+    height: 85vh;
   }
 }
