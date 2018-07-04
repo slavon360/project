@@ -45,6 +45,28 @@
   color: #fff;
 }
 
+@media screen and (min-width: 1900px){
+  .IntroWrp{
+    padding-left: 358px;
+    margin-bottom: 715px;
+  }
+  .IntroWrp h1{
+    margin-bottom: 38px;
+  }
+  .IntroWrp h1 .Bottom{
+    display: block;
+    transform: translateY(-5px);
+  }
+}
+
+@media screen and (min-width: 2270px){
+  .IntroWrp{
+    width: 1450px;
+    padding: 0;
+    align-self: center;
+  }
+}
+
 @media screen and (max-width: 1900px){
   .IntroWrp{
     padding-left: 160px;

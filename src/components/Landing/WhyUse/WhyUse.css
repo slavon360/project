@@ -80,6 +80,39 @@
   font-size: 16px;
 }
 
+@media screen and (min-width: 1900px){
+  .WhyUseWrp{
+    margin-bottom: 190px;
+    overflow: hidden;
+  }
+  .WhyUseWrp h2{
+    transform: translateX(8px);
+    margin-bottom: 129px;
+  }
+  .Tab .Icon{
+    margin-bottom: 18px;
+  }
+  .Tab .Title{
+    margin-bottom: 11px;
+    transform: translateX(-11px);
+  }
+  .Tab:nth-child(2) .Icon, .Tab:nth-child(3) .Icon{
+    transform: translate(-12px, 0);
+  }
+  .Tab:nth-child(2) .Title{
+    transform: translateX(-21px);
+  }
+  .Tab:nth-child(2) .Description{
+    transform: translateX(-11px);
+  }
+  .Tab:nth-child(3) .Title{
+    transform: translateX(-22px);
+  }
+  .Tab:nth-child(3) .Description{
+    transform: translateX(-12px);
+  }
+}
+
 @media screen and (max-width: 1365px){
   .WhyUseWrp{
     margin-bottom: 143px;

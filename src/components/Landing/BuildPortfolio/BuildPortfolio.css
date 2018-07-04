@@ -1,6 +1,6 @@
 .BuildPortfolioWrp{
   position: relative;
-  width: 915px;
+  width: 895px;
   display: inline-block;
   margin-bottom: 251px;
 }
@@ -41,6 +41,22 @@
 }
 .CreateAccount:hover{
   background-image: linear-gradient(-110deg, #932c88 0%, #e33a8c 100%);
+}
+
+@media screen and (min-width: 1900px){
+  .BuildPortfolioWrp{
+    align-self: center;
+  }
+  .BuildPortfolioWrp h2, .BuildPortfolioWrp .Advantages{
+    margin-bottom: 24px;
+    transform: translateX(7px);
+  }
+  .BuildPortfolioWrp .Advantages{
+    margin-bottom: 37px;
+  }
+  .CreateAccount{
+    transform: translateX(6px);
+  }
 }
 
 @media screen and (max-width: 1900px){

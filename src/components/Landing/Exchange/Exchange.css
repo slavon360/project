@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 .Steps{
-  width: 574px;
+  width: 577px;
 }
 .Steps h2{
   font-family: SegoeUI-Bold;
@@ -19,7 +19,7 @@
   color: #932c88;
 }
 .Step{
-  margin: 0 0 90px 40px;
+  margin: 0 0 90px 41px;
   cursor: pointer;
   outline: none;
   border: none;
@@ -60,7 +60,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  left: -40px;
+  left: -39px;
   bottom: -6px;
   z-index: -1;
 }
@@ -69,7 +69,8 @@
   font-size: 16px;
 }
 .InteractiveView{
-  width: 812px;
+  width: 804px;
+  transform: translateX(16px);
   height: 560px;
   box-shadow: 0 0 68px 0 #ececec;
   border-radius: 10px 10px 0 0;
@@ -93,6 +94,27 @@
   animation-name: Trade-Bitcoin;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+@media screen and (min-width: 1900px){
+  .ExchangeWrp{
+    padding: 0;
+    width: 1591px;
+    align-self: center;
+  }
+  .Steps h2{
+    margin-bottom: 105px;
+  }
+  .Step:nth-child(2){
+    margin-bottom: 87px;
+  }
+  .Step .Title::after{
+    top: -14px;
+    left: 2px;
+  }
+  .Step:nth-child(4) .Title{
+    margin-bottom: 12px;
+  }
 }
 
 @media screen and (max-width: 1900px){

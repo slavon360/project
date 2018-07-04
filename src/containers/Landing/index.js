@@ -7,8 +7,8 @@ import WhyUse from '../../components/Landing/WhyUse';
 import Exchange from '../../components/Landing/Exchange';
 import BuildPortfolio from '../../components/Landing/BuildPortfolio';
 import LandingTopSvg from '../../../assets/images/backgrounds/landing-top.svg';
-import LandingTopBackground from '../../../assets/images/backgrounds/landing_top-background.png';
-import LandingBottomBackground from '../../../assets/images/backgrounds/landing_bottom-background.png';
+// import LandingTopBackground from '../../../assets/images/backgrounds/landing_top-background.png';
+import LandingBottomBackground from '../../../assets/images/backgrounds/landing-bottom.svg';
 import classes from './Landing.css';
 
 class Landing extends Component {
@@ -39,7 +39,7 @@ class Landing extends Component {
   }
   render() {
     return (
-      <div className={classes.LandingWrp} style={{ backgroundImage: `url(${LandingTopBackground})` }}>
+      <div className={classes.LandingWrp}>
         <img className={classes.TopBackgroundSVG} src={LandingTopSvg} alt="top background" />
         <Header proportions={{ currencies: 'BTC / ETC', value: '223.649' }} />
         <Intro />
@@ -48,7 +48,7 @@ class Landing extends Component {
           checkedTab={this.state.checkedTab}
           changeImage={this.onChangeImage}
         />
-        <div className={classes.Footer} style={{ backgroundImage: `url(${LandingBottomBackground})` }}>
+        <div className={classes.Footer}>
           <BuildPortfolio />
           <Footer
             proportions={{
@@ -59,6 +59,7 @@ class Landing extends Component {
             }}
           />
         </div>
+        <img className={classes.BottomBackgroundSVG} src={LandingBottomBackground} alt="bottom background" />
       </div>);
   }
 }

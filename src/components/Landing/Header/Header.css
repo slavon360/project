@@ -17,7 +17,7 @@
 }
 .RightSide > div{
   display: inline-block;
-  transform: translateY(10px);
+  transform: translateY(11px);
 }
 .Proportions{
   margin-right: 132px;
@@ -48,6 +48,20 @@
 }
 .SignUp > a:hover, .SignIn > a:hover{
   color: #ce41a1;
+}
+
+@media screen and (min-width: 1900px){
+  .Header{
+    width: 1600px;
+    padding-left: 17px;
+    padding-right: 0;
+    padding-top: 43px;
+    align-self: center;
+    margin-bottom: 131px;
+  }
+  .SignIn{
+    transform: translate(-1px, 11px);
+  }
 }
 
 @media screen and (max-width: 1900px){
