@@ -70,21 +70,36 @@
   }
 }
 
-@media screen and (max-width: 1890px){
+@media screen and (max-width: 1899px){
   .WithdrawWrp{
-    padding: 60px 0;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(2){
+    margin-bottom: -5px;
+  }
+  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(3){
+    width: 355px;
+  }
+  .TableWrp{
+    padding-bottom: 3px;
+  }
+  .TableWrp table tbody{
+    padding-top: 19px;
+  }
+  .TableWrp table tbody tr{
+    padding: 0;
+  }
+  .TableWrp table tbody tr td > div svg{
+    transform: rotate(90deg) translate(-3px, -28px) !important;
   }
 }
 
 @media screen and (max-width: 1650px){
   .WithdrawWrp{
-    justify-content: space-around;
     padding: 50px 0 80px;
   }
   .TableWrp{
     width: 566px;
-    padding-bottom: 26px;
   }
   .TableWrp tbody td:first-child{
     width: 120px;
@@ -102,11 +117,10 @@
 
 @media screen and (max-width: 1366px){
   .WithdrawWrp{
-    padding: 50px 40px 80px 40px;
+    padding: 61px 40px 60px 40px;
   }
   .TableWrp{
     width: 566px;
-    padding-bottom: 26px;
   }
   .TableWrp tbody td:first-child{
     width: 120px;

@@ -34,7 +34,8 @@
     padding-right: 40px;
   }
   .Logo{
-    margin-right: 79px;
+    margin-right: 83px;
+    transform: translate(2px, 2px);
   }
 }
 
@@ -42,9 +43,10 @@
   .Toolbar{
     padding-left: 32px;
     padding-right: 32px;
+    padding-top: 25px;
   }
   .Logo{
-    margin-right: 79px;
+    margin-right: 83px;
   }
 }
 

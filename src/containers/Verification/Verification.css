@@ -105,6 +105,15 @@
   .VerificationWrp{
     padding: 60px 185px;
   }
+  .NavbarSection .Title{
+    margin-bottom: 58px;
+  }
+  .NavBtn > div:first-child{
+    margin: 8px 18px 0 0;
+  }
+  .Note .Text{
+    margin-top: 7px;
+  }
 }
 
 @media screen and (max-width: 1650px){
@@ -127,10 +136,10 @@
 
 @media screen and (max-width: 1366px){
   .VerificationWrp{
-    padding: 60px 40px;
+    padding: 49px 40px 60px;
   }
   .Note .Head img{
-    margin-top: 44px;
+    margin-top: 36px;
   }
 }
 

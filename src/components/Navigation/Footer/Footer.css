@@ -93,9 +93,31 @@
   }
 }
 
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1899px){
   .Footer{
-    padding: 21px 40px 27px 40px;
+    padding: 13px 40px 27px 40px;
+  }
+  .Logo{
+    margin-right: 83px;
+  }
+  .NavItem{
+    display: inline-block;
+    transform: translateY(-4px);
+    padding-right: 44px;
+  }
+  .Word{
+    padding-right: 51px;
+  }
+  .SocialIconTelegram{
+    padding-right: 39px;
+  }
+  .SocialIconFacebook{
+    transform: translateX(2px);
+    display: inline-block;
+  }
+  .TradingVolume span:nth-child(2){
+    display: inline-block;
+    transform: translateX(-2px);
   }
 }
 

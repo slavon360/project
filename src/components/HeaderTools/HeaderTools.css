@@ -66,6 +66,7 @@
 @media screen and (min-width: 1366px) and (max-width: 1590px){
   .Help{
     margin-right: 22px;
+    transform: translate(4px, 2px) !important;
   }
 }
 @media screen and (max-width: 1365px){

@@ -98,6 +98,28 @@
   }
 }
 
+@media screen and (max-width: 1899px){
+  .BuySellForm{
+    padding: 31px 69px 63px;
+  }
+  .Checked{
+    height: 25px;
+    width: 26px;
+    padding: 0px 8px 5px;
+    right: -2%;
+    bottom: 70%;
+  }
+  .CurrentPriceWrp{
+    margin-top: 41px;
+  }
+  .TransactionFee{
+    transform: translateX(2px);
+  }
+  .BuyBtnWrp{
+    margin-top: 42px;
+  }
+}
+
 @media screen and (max-width: 1365px){
   .BuySellComponentWrp{
     align-self: center;

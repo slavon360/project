@@ -55,6 +55,15 @@
   transform: translateY(2px);
 }
 
+@media screen and (max-width: 1899px){
+  .DepositWithdrawWrp{
+    padding: 65px 80px 72px 79px;
+  }
+  .DropDwnWrp .SelectCurrency{
+    margin-bottom: 16px;
+  }
+}
+
 @media screen and (max-width: 1650px){
   .DepositWithdrawWrp{
     width: 680px;

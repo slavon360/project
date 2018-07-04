@@ -56,7 +56,7 @@
 
 @media screen and (min-width: 1366px) and (max-width: 1400px){
   .FaqContentWrp{
-    width: 870px;
+    width: 887px;
     float: right;
   }
 }
@@ -64,7 +64,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1365px){
   .FaqContentWrp{
     width: 640px;
-    padding: 51px 72px 68px 40px;
+    padding: 47px 72px 68px 37px;
   }
 }
 

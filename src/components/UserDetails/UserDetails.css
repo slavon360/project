@@ -125,6 +125,12 @@
   }
 }
 
+@media screen and (max-width: 1899px){
+  .UserDetailsWrp .Title{
+    margin-bottom: 71px;
+  }
+}
+
 @media screen and (min-width: 1366px) and (max-width: 1900px){
   .UserDetailsWrp{
     padding: 76px 265px 77px 100px;

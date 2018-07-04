@@ -412,6 +412,18 @@
   }
 }
 
+@media screen and (max-width: 1899px){
+  .WithdrawAmount{
+    margin-top: 25px;
+  }
+  .WithdrawAmount .OptionalButton{
+    right: 12px;
+  }
+  .WithdrawAmount .ThirdLabel, .WithdrawAmount .FourthLabel{
+    margin-top: 8px;
+  }
+}
+
 @media screen and (max-width: 1850px){
   .SecretCodeAuthSupportBottom > input{
     width: 328px;

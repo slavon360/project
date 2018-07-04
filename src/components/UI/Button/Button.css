@@ -427,6 +427,33 @@
   }
 }
 
+@media screen and (max-width: 1899px){
+  .BuyTab{
+    padding: 29px 0px 32px 8px;
+  }
+  .SellTab{
+    padding: 29px 0px 32px 26px;
+  }
+  .DropdownButtonPeriod > div:first-child{
+    margin-right: 12px;
+  }
+  .DropdownButtonPeriod > div:nth-child(2){
+    transform: rotate(90deg) translate(7px, -2px);
+  }
+  .BtnPeriod{
+    margin-right: 4px;
+  }
+  .BtnPeriod:nth-child(3){
+    transform: translateX(-4px);
+  }
+  .DepositBtn{
+    transform: translateY(-2px);
+  }
+  .WithdrawBtn{
+    transform: translateY(-4px);
+  }
+}
+
 @media screen and (max-width: 1850px){
   .ConfirmDisableSMSAuth{
     width: 242px;

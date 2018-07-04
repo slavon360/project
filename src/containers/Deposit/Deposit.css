@@ -73,21 +73,31 @@
   }
 }
 
-@media screen and (max-width: 1890px){
+@media screen and (max-width: 1899px){
   .DepositWrp{
     padding: 60px 0;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .TableWrp{
+    padding-bottom: 16px;
+  }
+  .TableWrp table tbody{
+    padding-top: 19px;
+  }
+  .TableWrp table tbody tr{
+    padding: 0;
+  }
+  .TableWrp table tbody tr td > div svg{
+    transform: rotate(90deg) translate(-3px, -28px) !important;
   }
 }
 
 @media screen and (max-width: 1650px){
   .DepositWrp{
-    justify-content: space-around;
     padding: 50px 0 80px;
   }
   .TableWrp{
     width: 566px;
-    padding-bottom: 26px;
   }
   .TableWrp tbody td:first-child{
     width: 120px;
@@ -109,7 +119,6 @@
   }
   .TableWrp{
     width: 566px;
-    padding-bottom: 26px;
   }
   .TableWrp tbody td:first-child{
     width: 120px;

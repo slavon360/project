@@ -42,6 +42,12 @@
   }
 }
 
+@media screen and (max-width: 1899px){
+  .Header{
+    margin-bottom: 18px;
+  }
+}
+
 @media screen and (max-width: 1365px){
   .ChartComponentWrp{
     float: none;

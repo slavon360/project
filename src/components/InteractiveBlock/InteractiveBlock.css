@@ -120,7 +120,7 @@
     width: 598px;
   }
   .TwoFactorAuthentication{
-    padding: 43px 59px 38px 65px;
+    padding: 35px 66px 38px 64px;
   }
   .TwoFactorAuthentication .Cell:nth-child(2){
     width: 185px;
@@ -129,14 +129,23 @@
     transform: translateY(3px);
   }
   .TwoFactorAuthentication .Row:not(:last-child){
-    margin-bottom: 38px;
+    margin-bottom: 17px;
+  }
+  .TwoFactorAuthentication .Row:last-child .Cell:first-child{
+    transform: translateX(-4px);
   }
   .LoginPassword{
-    padding: 44px 60px 49px 61px;
+    padding: 36px 60px 52px 61px;
   }
   .LoginPassword .Header{
-    padding-bottom: 43px;
-    margin-bottom: 50px;
+    padding-bottom: 39px;
+    margin-bottom: 45px;
+  }
+  .LoginPassword .Row .Cell:first-child{
+    transform: translateX(-4px);
+  }
+  .LoginPassword .Row .Cell:last-child{
+    transform: translate(-5px, 5px);
   }
 }
 
@@ -148,9 +157,37 @@
   }
   .LoginPassword{
     margin-bottom: 0;
+    padding: 36px 60px 52px 59px;
+  }
+  .LoginPassword .Row .Cell:first-child{
+    transform: translateX(-4px);
+  }
+  .LoginPassword .Row .Cell:last-child{
+    transform: translate(-2px, 5px);
+  }
+  .TwoFactorAuthentication{
+    padding: 36px 60px 38px 65px;
+  }
+  .TwoFactorAuthentication .Header{
+    transform: translateX(-2px);
+  }
+  .TwoFactorAuthentication .Cell:first-child{
+    margin: 5px 14px 0 0;
   }
   .TwoFactorAuthentication .Cell:nth-child(2){
-    width: 185px;
+    width: 179px;
+  }
+  .TwoFactorAuthentication .Cell:last-child{
+    transform: translate(-2px, 4px);
+  }
+  .TwoFactorAuthentication .Row:not(:last-child){
+    margin-bottom: 16px;
+  }
+  .TwoFactorAuthentication .Row:last-child .Cell:nth-child(2){
+    width: 184px;
+  }
+  .TwoFactorAuthentication .Row:last-child .Cell:first-child{
+    transform: translateX(-7px);
   }
 }
 

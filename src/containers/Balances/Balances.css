@@ -145,10 +145,22 @@
     margin-top: -28px;
   }
 }
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1899px){
   .BalancesWrp{
-    padding: 50px 63px 80px 63px;
+    padding: 39px 63px 80px 63px;
     text-align: left;
+  }
+  .LimitsWrp{
+    transform: translateX(4px);
+  }
+  .Balances{
+    padding: 30px 74px 65px 80px;
+  }
+  .Balances .Head .Currency, .CurrencyTitle{
+    width: 32.3%;
+  }
+  .Balances .Head .Balance{
+    width: 18.4%;
   }
 }
 

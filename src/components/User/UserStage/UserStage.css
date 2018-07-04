@@ -45,8 +45,19 @@
     transform: translate(-3px, -3px);
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1365px){
-
+@media screen and (max-width: 1365px){
+  .UserStageWrp .Number{
+    transform: translateY(2px);
+  }
+  .UserStageWrp:first-child .Number{
+    transform: translate(-2px, 2px);
+  }
+  .UserStageWrp:first-child .RightSide{
+    transform: translate(-4px, -2px);
+  }
+  .UserStageWrp:nth-child(2) .RightSide, .UserStageWrp:nth-child(3) .RightSide{
+    transform: translate(-2px, -2px);
+  }
 }
 
 @media screen and (max-width: 767px){

@@ -51,6 +51,28 @@
   }
 }
 
+@media screen and (max-width: 1899px){
+  .TableWrp{
+    max-width: 580px;
+    height: 259px;
+  }
+  .TableWrp table thead{
+    padding-right: 49px;
+  }
+  .TableWrp table thead tr th:first-child{
+    width: 159px;
+  }
+  .TableWrp table thead tr th:nth-child(2){
+    width: 135px;
+  }
+  .TableWrp table tbody{
+    height: 165px;
+  }
+  .TableWrp table tbody tr{
+    padding: 1px 0;
+  }
+}
+
 @media screen and (max-width: 1365px){
   .BuySellWrp{
     padding: 40px 0 60px;

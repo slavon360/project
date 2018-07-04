@@ -50,20 +50,30 @@
 
 @media screen and (min-width: 1366px) and (max-width: 1400px){
   .FaqWrp{
-    padding: 61px 40px 80px 40px;
+    padding: 47px 40px 80px 40px;
   }
   .FaqWrp .FaqContainer{
     display: block;
     overflow: hidden;
   }
+  .FaqWrp .Title{
+    transform: translateX(-2px);
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1365px){
   .FaqWrp{
-    padding: 40px 32px 60px;
+    padding: 25px 32px 60px;
   }
   .FaqWrp .Title{
-    margin-bottom: 25px;
+    transform: translateX(-2px);
+    margin-bottom: 22px;
+  }
+  .FaqWrp .FaqHead{
+    margin-bottom: 17px;
+  }
+  .FaqHead .Submit{
+    transform: translateY(1px);
   }
 }
 

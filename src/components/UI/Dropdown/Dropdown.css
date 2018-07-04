@@ -214,6 +214,15 @@
   }
 }
 
+@media screen and (max-width: 1899px){
+  .UserDropdownWrp{
+    transform: translate(6px, 2px) !important;
+  }
+  .LangDropdownWrp{
+    transform: translate(1px, 2px) !important;
+  }
+}
+
 @media screen and (min-width: 1366px) and (max-width: 1500px){
   .UserDropdownWrp{
     margin-right: 18px;
@@ -221,6 +230,12 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1900px){
+  .UserDropdownWrp{
+    transform: translate(4px, 2px) !important;
+  }
+  .LangDropdownWrp{
+    transform: translate(3px, 2px) !important;
+  }
   .BirthMonthDrpDwnWrp{
     margin-right: 10px;
     width: 180px;

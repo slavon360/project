@@ -150,7 +150,7 @@
 @media screen and (min-width: 1366px) and (max-width: 1615px){
   .Head{
     padding-left: 119px;
-    margin-bottom: 63px;
+    margin-bottom: 56px;
   }
 }
 
@@ -160,40 +160,46 @@
   }
   .BalancesWrp{
     width: 648px;
-    padding: 43px 58px 65px 60px;
+    padding: 30px 58px 65px 54px;
   }
   .BalancesWrp table thead th:last-child{
     padding-bottom: 44px;
     margin-bottom: 42px;
   }
+  .BalancesWrp table tbody td:first-child{
+    width: 50px;
+  }
   .BalancesWrp table tbody td:nth-child(2){
-    width: 217px;
+    width: 225px;
   }
   .BalancesWrp table tbody td:nth-child(3){
     width: 137px;
+  }
+  .BalancesWrp > div:last-child span{
+    padding-left: 23px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1365px){
   .ProfileWrp{
-    padding: 40px 32px 60px 32px;
+    padding: 39px 32px 60px 35px;
   }
   .Head{
     padding-left: 0;
-    margin-bottom: 52px;
+    margin-bottom: 35px;
   }
   .Head .UserStatus{
     margin-right: 70px;
   }
   .ProfileWrp .Stages > div:first-child{
-    margin-right: 99px !important;
+    margin-right: 94px !important;
   }
   .ProfileWrp .Stages > div:first-child::after{
     left: 155px;
     top: 19px;
   }
   .ProfileWrp .Stages > div:nth-child(2){
-    margin-right: 90px !important;
+    margin-right: 85px !important;
   }
   .ProfileWrp .Stages > div:nth-child(2)::after{
     left: 165px;
@@ -205,20 +211,23 @@
   .BalancesWrp{
     width: 648px;
     align-self: center;
-    padding: 43px 58px 65px 60px;
+    padding: 31px 58px 63px 52px;
     margin-bottom: 40px;
   }
   .BalancesWrp table thead th:last-child{
     padding-bottom: 44px;
   }
   .BalancesWrp table tbody{
-    padding-top: 42px;
+    padding-top: 40px;
   }
   .BalancesWrp table tbody td:nth-child(2){
-    width: 212px;
+    width: 223px;
   }
   .BalancesWrp table tbody td:nth-child(3){
-    width: 135px;
+    width: 139px;
+  }
+  .BalancesWrp > div:last-child span{
+    padding-left: 23px;
   }
 }
 
