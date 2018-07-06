@@ -81,7 +81,7 @@
     justify-content: center;
   }
   .History{
-    margin-top: 30px;
+    margin-top: 34px;
   }
   .TableWrp{
     max-width: 580px;
@@ -100,8 +100,18 @@
   .TableWrp{
     width: 580px;
   }
+  .TableWrp table thead tr th:first-child{
+    width: 154px;
+  }
+  .TableWrp table thead tr th:nth-child(2){
+    width: 139px;
+  }
   .TransactionsWrp{
     align-self: center;
+  }
+  .History{
+    margin-top: 23px;
+    margin-bottom: 18px;
   }
 }
 

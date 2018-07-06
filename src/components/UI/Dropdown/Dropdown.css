@@ -256,6 +256,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
+  .UserDropdownWrp{
+    transform: translate(9px, 2px) !important;
+  }
+  .LangDropdownWrp{
+    transform: translate(3px, 2px) !important;
+  }
   .BirthMonthDrpDwnWrp{
     width: 180px;
     margin-right: 10px;
@@ -271,6 +277,9 @@
 }
 
 @media screen and (max-width: 767px){
+  .LangDropdownWrp{
+    transform: translate(3px, 2px) !important;
+  }
   .UserDropdownWrp{
     display: none;
   }

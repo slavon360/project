@@ -54,8 +54,14 @@
   .DesktopOnly{
     display: none;
   }
+  .Toolbar{
+    padding-top: 25px;
+  }
   .Toolbar > div:first-child{
-    margin-right: 32px;
+    margin-right: 33px;
+  }
+  .Logo{
+    transform: translateY(3px);
   }
 }
 

@@ -118,12 +118,16 @@
   .BuyBtnWrp{
     margin-top: 42px;
   }
+  .InputsWrp{
+    margin-bottom: 0;
+    padding-bottom: 14px;
+  }
 }
 
 @media screen and (max-width: 1365px){
   .BuySellComponentWrp{
     align-self: center;
-    margin-bottom: 48px;
+    margin-bottom: 30px;
   }
 }
 
@@ -131,7 +135,7 @@
   .BuySellComponentWrp{
     width: 580px;
     align-self: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -142,7 +146,7 @@
     margin-bottom: 30px;
   }
   .BuySellForm{
-    padding: 30px 20px 55px;
+    padding: 25px 18px 55px;
   }
   .Specify{
     margin: 0 0 32px;

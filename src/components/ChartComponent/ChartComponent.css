@@ -53,6 +53,9 @@
     float: none;
     align-self: center;
   }
+  .Header{
+    margin-bottom: 19px;
+  }
 }
 
 @media screen and (max-width: 767px){

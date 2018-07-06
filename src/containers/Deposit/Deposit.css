@@ -141,6 +141,7 @@
   }
   .TableWrp{
     align-self: center;
+    padding-bottom: 5px;
   }
 }
 
@@ -151,6 +152,7 @@
   }
   .TableWrp{
     align-self: center;
+    padding-bottom: 3px;
   }
 }
 

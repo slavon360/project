@@ -81,12 +81,18 @@
     align-self: center;
     margin-bottom: 40px;
   }
+  .DropDwnWrp .SelectCurrency{
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
   .DepositWithdrawWrp{
     margin-bottom: 30px;
     align-self: center;
+  }
+  .DropDwnWrp .SelectCurrency{
+    margin-bottom: 15px;
   }
 }
 

@@ -42,7 +42,7 @@ class App extends Component {
             <Route path="/profile" component={Profile} />
             <Route path="/verification" component={Verification} />
             <Route path="/terms" component={TermsOfUse} />
-            <Route path="/login" component={Login} />
+            <Route path="/terms" component={Login} />
             <Redirect to="/buy-sell" />
           </Switch>
         </Layout>

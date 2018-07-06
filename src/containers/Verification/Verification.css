@@ -145,17 +145,20 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1365px){
   .VerificationWrp{
-    padding: 40px 32px 60px 32px;
+    padding: 26px 32px 60px 32px;
   }
   .NavbarSection .Title{
-    margin-bottom: 23px;
+    margin-bottom: 18px;
+  }
+  .NavBtn > div:first-child{
+    margin: 7px 18px 0 0;
   }
   .Note{
     margin-top: 0;
     width: 280px;
   }
   .Note .Text{
-    margin-top: 18px;
+    margin-top: 7px;
   }
   .NavbarSection > div:nth-child(2){
     margin-right: 0;
@@ -164,10 +167,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
   .VerificationWrp{
-    padding: 40px 32px 50px 32px;
+    padding: 18px 32px 50px 32px;
   }
   .NavbarSection .Title{
-    margin-bottom: 23px;
+    margin-bottom: 17px;
   }
   .NavbarSection > div:nth-child(2){
     width: auto;
@@ -176,7 +179,7 @@
     width: 220px;
   }
   .Note{
-    margin-top: 44px;
+    margin-top: 36px;
   }
   .Note .Head img{
     margin-top: 0;
@@ -185,6 +188,7 @@
     margin-top: 10px;
   }
   .Content{
+    margin-top: 10px;
     width: 474px;
   }
 }

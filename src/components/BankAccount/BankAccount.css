@@ -52,13 +52,13 @@
 @media screen and (min-width: 1024px) and (max-width: 1365px){
   .BankAccountWrp{
     width: 660px;
-    padding: 70px 78px 83px 80px;
+    padding: 72px 78px 83px 80px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
   .BankAccountWrp{
-    padding: 40px 30px 33px;
+    padding: 29px 30px 33px;
   }
 }
 

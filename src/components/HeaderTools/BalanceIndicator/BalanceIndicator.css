@@ -45,6 +45,12 @@
   }
 }
 
+@media screen and (max-width: 1023px){
+  .BalanceIndicatorWrp{
+    transform: translate(5px, 1px) !important;
+  }
+}
+
 @media screen and (max-width: 767px){
   .BalanceIndicatorWrp{
     display: none;
