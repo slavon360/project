@@ -300,6 +300,18 @@
 
 @media screen and (max-width: 414px){
   .BirthMonthDrpDwnWrp{
+    width: 120px;
+  }
+  .BirthDayDrpDwnWrp{
+    width: 91px;
+  }
+  .BirthYearDrpDwnWrp{
+    width: 107px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .BirthMonthDrpDwnWrp{
     width: 110px;
   }
   .BirthDayDrpDwnWrp{

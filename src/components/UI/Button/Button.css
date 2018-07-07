@@ -510,6 +510,15 @@
 }
 
 @media screen and (max-width: 767px){
+  .SubmitRequestBtn{
+    width: 182px;
+  }
+  .BuyBtn{
+    width: 150px;
+  }
+  .BtnPeriod:nth-child(3){
+    transform: translateX(-1px);
+  }
   .BackToPrevious{
     width: 140px;
   }
@@ -533,6 +542,9 @@
     font-family: SegoeUI-Bold;
     font-size: 16px;
     padding: 19px 0 25px;
+  }
+  .SwitchBtn > img{
+    transform: translate(-1px, 8px);
   }
   .BtnCoin{
     font-size: 14px;

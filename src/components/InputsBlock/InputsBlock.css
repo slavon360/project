@@ -98,17 +98,30 @@
 @media screen and (max-width: 767px){
   .InputsBlockWrp{
     width: 100%;
-    padding: 31px 20px 32px;
+    padding: 24px 20px 32px;
   }
   .InputsBlockHead{
     font-size: 12px;
-    margin-bottom: 31px;
+    margin-bottom: 27px;
+  }
+  .RightSide .Title{
+    margin-bottom: 12px;
+  }
+  .RightSide .WarningInfo{
+    width: 240px;
+    margin-bottom: 16px;
+  }
+  .RightSide .LimitInfo{
+    transform: translateX(2px);
   }
   .CopyDepositAddressWrp{
     text-align: right;
   }
   .CopyDepositAddressWrp > button, .SubmitWithdrawAmountWrp > button{
     width: 150px;
+  }
+  .CopyDepositAddressWrp > button{
+    padding-left: 11px;
   }
 }
 

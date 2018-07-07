@@ -73,6 +73,8 @@
 @media screen and (max-width: 1899px){
   .WithdrawWrp{
     justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(2){
     margin-bottom: -5px;
@@ -96,7 +98,7 @@
 
 @media screen and (max-width: 1650px){
   .WithdrawWrp{
-    padding: 50px 0 80px;
+    padding: 50px 40px 80px;
   }
   .TableWrp{
     width: 566px;
@@ -161,28 +163,38 @@
     padding: 30px 20px;
     flex-direction: column;
   }
+  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(2){
+    margin-bottom: 16px;
+  }
+  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(3){
+    width: 225px;
+  }
   .TableWrp{
     display: block;
     width: 374px;
     align-self: center;
-    padding: 30px 20px 24px;
+    padding: 20px 20px 24px 15px;
   }
   .TableWrp table thead th:last-child{
     font-size: 12px;
-    padding-bottom: 24px !important;
+    padding-bottom: 22px !important;
   }
   .TableWrp table tbody{
-    padding-top: 21px;
+    padding-top: 12px;
     font-size: 14px;
   }
   .TableWrp table tbody td:first-child{
     width: 85px;
+    font-size: 14px;
+  }
+  .TableWrp table tbody td:first-child > div:first-child{
+    margin-right: 7px;
   }
   .TableWrp table tbody td:nth-child(2){
     width: 54px;
   }
   .TableWrp table tbody td:nth-child(3){
-    width: 88px;
+    width: 93px;
   }
   .TableWrp table tbody td:nth-child(4){
     width: 80px;

@@ -195,7 +195,7 @@
 
 @media screen and (max-width: 767px){
   .VerificationWrp{
-    padding: 30px 20px;
+    padding: 23px 20px 30px;
     flex-direction: column;
   }
   .NavbarSection{
@@ -204,7 +204,7 @@
   }
   .NavbarSection .Title{
     font-size: 18px;
-    margin: 0 0 20px;
+    margin: 0 0 15px;
   }
   .NavbarSection > div:nth-child(2){
     display: flex;
@@ -228,17 +228,24 @@
   }
   .Content{
     width: 100%;
+    border-radius: 8px;
   }
   .Note{
     margin-top: 20px;
   }
   .Note .Head img{
     margin: 0 10px 0 0;
-    width: 34px 34px;
+    width: 34px;
+    height: 34px;
+  }
+  .Note .Head .NoteTitle{
+    transform: translateY(-11px);
+    font-size: 14px;
   }
   .Note .Text{
-    margin-top: 10px;
+    margin-top: 2px;
     font-size: 12px;
+    line-height: 1.5;
   }
 }
 

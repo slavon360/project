@@ -65,7 +65,7 @@
 
 @media screen and (max-width: 767px){
   .PhotoAddress, .SertificatePhoto{
-    padding-top: 21px;
+    padding-top: 15px;
     height: 100px;
     margin-bottom: 20px;
   }
@@ -81,11 +81,18 @@
   .SertificatePhoto .Sentence span:last-child, .PhotoAddress .Sentence span:last-child{
     display: none;
   }
+  .FileInputRequestWrp .Label{
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 414px) {
   .FileInputRequestWrp{
-    padding-top: 28px;
+    padding-top: 16px;
+    margin-bottom: 30px;
+  }
+  .FileInputRequestWrp .Icon{
+    transform: translate(-2px, 5px);
   }
   .FileInputRequestWrp, .FileInputRequestWrp input{
     height: 100px;

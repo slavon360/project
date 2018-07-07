@@ -86,8 +86,20 @@
   .FaqContentWrp{
     display: none;
   }
+  .FAQQuestionWrp{
+    margin-bottom: 10px;
+  }
   .FAQQuestionWrp .Icon{
-    margin-right: 9px;
+    margin-right: 13px;
+    transform: translate(4px, 2px);
+    width: 10px;
+    height: 10px;
+  }
+  .FAQQuestionWrp.Active .Icon{
+    transform: translate(7px, 2px);
+  }
+  .FAQQuestionWrp.Inactive .Icon > div{
+    transform: rotate(-90deg);
   }
   .FAQQuestionWrp .Title{
     font-size: 14px;
@@ -95,10 +107,11 @@
   .FAQQuestionWrp .Answer{
     font-size: 12px;
     margin-left: 25px;
-    margin-top: 7px;
+    margin-top: 2px;
+    line-height: 1.25;
   }
   .FAQQuestionWrp.Active{
-    height: 131px;
+    height: 115px;
   }
 }
 

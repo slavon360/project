@@ -106,11 +106,15 @@
 
 @media screen and (max-width: 767px){
   .FaqWrp{
-    padding: 30px 20px 40px;
+    padding: 19px 20px 34px;
   }
   .FaqWrp .Title{
     font-size: 30px;
-    margin: 0 0 18px;
+    transform: translateX(-2px);
+    margin: 0 0 13px;
+  }
+   .FaqWrp .FaqHead{
+    margin-bottom: 19px;
   }
   .FaqHead .HaveQuestion{
     font-size: 12px;
@@ -118,6 +122,7 @@
   }
   .FaqHead .Submit{
     width: 120px;
+    transform: translateY(3px);
   }
   .FaqHead .Submit > a{
     font-size: 10px;

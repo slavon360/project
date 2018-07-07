@@ -98,17 +98,17 @@
 }
 
 @media screen and (max-width: 767px){
-  .VerificationNavBtn{
+  .SideBarNavWrp .VerificationNavBtn{
     width: 120px;
     margin: 0 7px 0 0;
-    padding: 12px 0 0 10px;
+    padding: 12px 0 0 7px;
     height: 60px;
   }
   .FAQNavBtn{
     margin-bottom: 5px;
     height: 60px;
     font-size: 14px;
-    padding-top: 22px;
+    padding-top: 20px;
     padding-left: 19px;
     position: relative;
   }
@@ -118,7 +118,7 @@
     height: 17px;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 23px;
     transform: rotate(90deg);
   }
   .FAQNavBtn.Active::before{
@@ -140,7 +140,7 @@
     width: 100%;
   }
   .MobileContent > div{
-    padding: 22px 28px 35px 20px;
+    padding: 15px 28px 55px 16px;
   }
 }
 

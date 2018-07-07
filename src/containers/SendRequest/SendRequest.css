@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 767px) {
   .SendRequestWrp{
-    padding: 30px 20px;
+    padding: 21px 20px 30px;
   }
   .SendRequestWrp .Title{
     font-size: 24px;
@@ -45,8 +45,11 @@
   }
   .RequestContainer{
     width: 100%;
-    padding: 40px 20px 31px;
+    padding: 31px 20px 31px;
     margin-bottom: 0;
+  }
+  .RequestContainer input::-webkit-input-placeholder{
+    font-size: 12px;
   }
 }
 

@@ -113,10 +113,11 @@
   }
   .CurrenciesShort .Bottom{
     font-size: 14px;
+    transform: translateY(-3px);
   }
   .CurrenciesShort{
     transform: translateY(-8px);
-    margin-right: 34px;
+    margin-right: 37px;
   }
   .LastPrice .Top, .Change .Top, .High .Top, .Low .Top{
     font-size: 10px;
@@ -131,6 +132,7 @@
     padding-right: 0;
   }
   .LastPrice .Bottom span:nth-child(2), .Change .Bottom span:nth-child(2){
+    transform: translateY(6px);
     font-size: 10px;
   }
   .LastPrice{
@@ -141,6 +143,9 @@
   }
   .High{
     margin-right: 20px;
+  }
+  .High, .Low{
+    transform: translateY(2px);
   }
 }
 

@@ -22,6 +22,7 @@
 }
 .TableWrp.TableWrpExpanded{
   max-height: inherit;
+  height: auto;
 }
 .TableWrp.TableWrpExpanded table tbody{
   height: auto;
@@ -106,6 +107,9 @@
   .TableWrp table thead tr th:nth-child(2){
     width: 139px;
   }
+  .TableWrp table tbody tr td:nth-child(2){
+    width: 129px;
+  }
   .TransactionsWrp{
     align-self: center;
   }
@@ -117,76 +121,79 @@
 
 @media screen and (max-width: 767px){
   .BuySellWrp{
-    padding: 30px 20px 40px;
+    padding: 30px 20px 39px;
     display: flex;
     flex-direction: column;
   }
   .TransactionsWrp{
-    margin-top: 20px;
+    margin-top: 14px;
   }
   .History{
     font-size: 16px;
     margin-top: 0;
   }
   .TableWrp{
-    max-height: 270px;
+    max-height: 280px;
+    height: auto;
     max-width: 100%;
-    padding: 10px 20px 28px 20px;
+    padding: 6px 20px 28px 15px;
   }
   .TableWrp table thead th{
     font-size: 12px;
     padding-bottom: 14px !important;
-  }
-  .TableWrp table thead th{
     text-align: left;
   }
   .TableWrp table thead{
     padding: 0;
   }
-  .TableWrp table thead th:first-child{
-    width: 34.7%;
+  .TableWrp table thead tr th:first-child{
+    width: 33.8%;
   }
-  .TableWrp table thead th:nth-child(2){
-    width: 25.2%;
+  .TableWrp table thead tr th:nth-child(2){
+    width: 24.5%;
   }
-  .TableWrp table thead th:nth-child(3){
-    width: 26.8%;
+  .TableWrp table thead tr th:nth-child(3){
+    width: 25.3%;
     padding: 0;
     padding-bottom: 12px !important;
   }
-  .TableWrp table thead th:nth-child(4){
+  .TableWrp table thead tr th:nth-child(4){
     width: auto;
     text-align: left;
   }
   .TableWrp table tbody{
     overflow: hidden;
-    height: 165px;
+    height: 196px;
+  }
+  .TableWrp table tbody tr{
+    padding: 0;
   }
   .TableWrp table tbody tr:first-child td{
-    padding-top: 12px;
+    padding-top: 10px;
   }
   .TableWrp table tbody td:first-child{
-    width: 35.1%;
+    width: 34.0%;
     font-size: 12px;
   }
   .TableWrp table tbody td:nth-child(2){
     padding-left: 0;
-    width: 25.7%;
+    width: 23.6%;
   }
   .TableWrp table tbody td:nth-child(3){
-    width: 27.2%;
+    width: 26.1%;
   }
-  .TableWrp table tbody td:first-child span:nth-child(3){
+  .TableWrp table tbody tr td:first-child span:nth-child(3){
     display: inline-block;
     font-size: 12px;
   }
-  .TableWrp table tbody td:first-child span:nth-child(4){
+  .TableWrp table tbody tr td:first-child span:nth-child(4){
     font-size: 10px;
     display: block;
     margin-left: 16px;
   }
   .TableWrp > div:last-child{
-    margin-top: 8px;
+    margin-top: 0;
+    transform: translate(4px, -8px);
   }
   .TableWrp > div:last-child > span{
     font-size: 14px;

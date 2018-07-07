@@ -158,11 +158,15 @@
 
 @media screen and (max-width: 767px){
   .UserDetailsWrp{
-    padding: 30px 20px 34px 20px;
+    padding: 22px 20px 34px 19px;
   }
   .UserDetailsWrp .Title{
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
+  }
+  .InputsContent > div:first-child input{
+    transform: translateY(-7px);
+    margin-bottom: 14px;
   }
   .InputsContent label{
     font-size: 12px;
@@ -171,19 +175,22 @@
     padding-bottom: 2px;
   }
   .InputsContent .NationalityWrp{
-    margin-top: 31px;
+    margin-top: 23px;
   }
   .InputsContent .NationalityWrp input, .InputsContent > div:nth-child(2) input{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .GenderTitle, .BirthDateTitle, .SertificateTitle{
     font-size: 12px;
   }
   .GenderTitle{
-    margin-bottom: 15px;
+    margin-bottom: 13px;
+  }
+  .InputsContent .GenderWrp > div:first-child label{
+    margin-right: 104px;
   }
   .BirthDateTitle{
-    margin: 30px 0 14px;
+    margin: 30px 0 10px;
   }
   .InputsContent .SertificateWrp > div:nth-child(2) label{
     margin-right: 24px;
@@ -192,10 +199,10 @@
     margin-right: 15px;
   }
   .InputsContent .SertificateWrp{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .InputsContent > div:nth-child(9) input{
-    margin-bottom: 60px;
+    margin-bottom: 51px;
   }
   .Arrow{
     top: 13px;

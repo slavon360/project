@@ -444,10 +444,15 @@
   }
   .InputBuySell{
     font-size: 14px;
+    padding-bottom: 7px;
   }
   .AmountLabel{
+    bottom: 9px;
     font-size: 12px;
     font-family: SegoeUI-Bold;
+  }
+  .AmountWrpLeft, .AmountWrpRight{
+    width: calc(100% - 50% - 27px);
   }
   .NationalityWrp .SecondLabel{
     font-size: 12px;
@@ -459,16 +464,27 @@
   .GenderRadioWrp label{
     font-size: 14px !important;
   }
+  .DepositAddress label{
+    font-size: 11px;
+  }
+  .InputRequestWrp input{
+    padding-bottom: 13px;
+  }
 }
 @media screen and (max-width: 519px){
+  .InputRequestWrp textarea{
+    height: 62px;
+    margin-bottom: 54px;
+  }
   .InputRequestWrp textarea::-webkit-input-placeholder{
-    padding-top: 45px;
+    padding-top: 18px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 414px){
   .InputRequestWrp input{
     font-size: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
   .InputRequestWrp input:hover, .InputRequestWrp input:focus{
     margin-bottom: 29px;

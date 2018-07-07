@@ -62,6 +62,9 @@
   .ChartComponentWrp{
     margin: 0;
   }
+  .Header{
+    margin-bottom: 24px;
+  }
   .ChartContent{
     width: 374px;
     height: 300px;
