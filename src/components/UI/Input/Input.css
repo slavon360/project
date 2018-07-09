@@ -526,6 +526,9 @@
   .LoginInputWrp > input::-webkit-input-placeholder{
     font-size: 12px;
   }
+  .AmountWrpLeft, .AmountWrpRight{
+    width: calc(100% - 50% - 28px);
+  }
 }
 
 @media screen and (max-width: 359px){

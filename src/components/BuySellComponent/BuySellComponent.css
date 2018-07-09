@@ -187,24 +187,32 @@
 @media screen and (max-width: 413px){
   .BuySellComponentWrp{
     width: 320px;
+    margin-bottom: 35px;
   }
   .BuySellForm{
-    padding: 20px 20px 28px;
+    padding: 15px 19px 28px;
+  }
+  .CoinWrp:nth-child(odd){
+    padding-right: 9px;
   }
   .CurrentPriceWrp{
-    margin-top: 20px;
+    margin-top: 16px;
   }
   .CurrentPriceWrp .Amount, .CurrentPriceWrp .Price{
     font-size: 12px;
   }
+  .CurrentPriceWrp .Price{
+    transform: translateX(-8px);
+  }
   .InputsWrp{
-    margin-bottom: 9px;
+    margin-bottom: 0;
   }
   .TransactionFee{
+    transform: translate(2px, -8px);
     font-size: 10px;
   }
   .BuyBtnWrp{
-    margin-top: 30px;
+    margin-top: 19px;
   }
 }
 

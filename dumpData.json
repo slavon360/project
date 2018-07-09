@@ -44,7 +44,10 @@
       "status": "Status",
       "currency": "ETH",
       "amount": "25.36546974",
-      "date": "01 Dec 2017 12:27 am",
+      "date": {
+        "dayMonthYear": "01 Dec 2017",
+        "hourMinutes": "12:27 am"
+      },
       "address": "mdfnf8644herjb3jdp",
       "xid": "2833739y3844772i20394he3322",
       "checked": false
@@ -54,7 +57,10 @@
       "status": "Status",
       "currency": "BTC",
       "amount": "235.974",
-      "date": "01 Dec 2017 12:27 am",
+      "date": {
+        "dayMonthYear": "01 Dec 2017",
+        "hourMinutes": "12:27 am"
+      },
       "address": "mdfnf8644herjb3jdp",
       "xid": "2833739y3844772i20394he4587",
       "checked": false
@@ -64,7 +70,10 @@
       "status": "Status",
       "currency": "AUD",
       "amount": "1205.00",
-      "date": "01 Dec 2017 12:27 am",
+      "date": {
+        "dayMonthYear": "01 Dec 2017",
+        "hourMinutes": "12:27 am"
+      },
       "address": "mdfnf8644herjb3jdp",
       "xid": "6635d28ca7a425249a7e0acfb3c0ec84fa731ece5067149718a3b962b1fcc3e7",
       "checked": false
@@ -74,7 +83,10 @@
       "status": "Status",
       "currency": "XRP",
       "amount": "25.36546974",
-      "date": "01 Dec 2017 12:27 am",
+      "date": {
+        "dayMonthYear": "01 Dec 2017",
+        "hourMinutes": "12:27 am"
+      },
       "address": "mdfnf8644herjb3jdp",
       "xid": "6635d28ca7a425249a7e0acfb3c0ec84fa731ece5067149718a3b962b1fcc3e7",
       "checked": false
@@ -84,7 +96,10 @@
       "status": "Status",
       "currency": "ETH",
       "amount": "235.974",
-      "date": "01 Dec 2017 12:27 am",
+      "date": {
+        "dayMonthYear": "01 Dec 2017",
+        "hourMinutes": "12:27 am"
+      },
       "address": "mdfnf8644herjb3jdp",
       "xid": "6635d28ca7a425249a7e0acfb3c0ec84fa731ece5067149718a3b962b1fcc3e7",
       "checked": false
@@ -94,7 +109,10 @@
       "status": "Status",
       "currency": "AUD",
       "amount": "1003.50",
-      "date": "01 Dec 2017 12:27 am",
+      "date": {
+        "dayMonthYear": "01 Dec 2017",
+        "hourMinutes": "12:27 am"
+      },
       "address": "mdfnf8644herjb3jdp",
       "xid": "2833739y3844772i20394he3322",
       "checked": false
@@ -104,7 +122,10 @@
       "status": "Status",
       "currency": "ETH",
       "amount": "25.36546974",
-      "date": "01 Dec 2017 12:27 am",
+      "date": {
+        "dayMonthYear": "01 Dec 2017",
+        "hourMinutes": "12:27 am"
+      },
       "address": "mdfnf8644herjb3jdp",
       "xid": "2833739y3844772i20394he3322",
       "checked": false

@@ -182,6 +182,9 @@
   .LastPrice .Bottom, .Change .Bottom, .High .Bottom, .Low .Bottom{
     font-size: 10px;
   }
+  .LastPrice .Bottom span:nth-child(2), .Change .Bottom span:nth-child(2){
+    transform: translate(2px, 0);
+  }
 }
 
 @media screen and (max-width: 359px){

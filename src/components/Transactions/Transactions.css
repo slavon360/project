@@ -154,12 +154,25 @@
     transform: translateX(1px);
   }
 }
+
+@media screen and (max-width: 1899px){
+  .Table .Row td:nth-child(5){
+    transform: translate(-33px, 0);
+  }
+}
+
 @media screen and (max-width: 1650px) {
   .AngleIcon.Up svg{
     transform: rotate(270deg) translate(5px, 15px);
   }
   .AngleIcon.Down svg{
     transform: rotate(90deg) translate(-5px, -15px);;
+  }
+  .Table .Row td:nth-child(5){
+    transform: translate(-25px);
+  }
+  .Table .RowChecked td:nth-child(5) > div svg{
+    transform: rotate(270deg) translate(4px, 28px) !important;
   }
 }
 
@@ -173,6 +186,10 @@
   .Table thead{
     padding-right: 58px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1899px){
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){

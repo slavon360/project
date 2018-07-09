@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import classNames from 'classnames/bind';
 import { transactions } from '../../../dumpData.json';
 import Transactions from '../../components/Transactions';
 import DepositWithdraw from '../../components/DepositWithdrawComponent';
@@ -7,14 +8,30 @@ import * as actionTypes from '../../actions/actionTypes';
 import * as actions from '../../actions';
 import classes from './Withdraw.css';
 
+const cx = classNames.bind(classes);
+
 class Withdraw extends Component {
   state = {
     transactions,
   }
 
+  componentWillMount() {
+    this.updateDimensions();
+  }
+
   componentDidMount() {
     this.props.depositWithdrawSwitch(actionTypes.WITHDRAW);
     this.props.buildInteractiveView();
+    window.addEventListener('resize', this.updateDimensions);
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateDimensions);
+  }
+
+  updateDimensions = () => {
+    if (window.innerWidth < 768 && !this.state.mobileView) this.setState({ mobileView: true });
+    if (window.innerWidth >= 768 && this.state.mobileView) this.setState({ mobileView: false });
   }
 
   showMore = (transaction) => {
@@ -39,6 +56,9 @@ class Withdraw extends Component {
   selectCurrency = () => {
 
   }
+  viewAll = () => {
+    this.setState(prevState => ({ expandedTransactions: !prevState.expandedTransactions }));
+  }
   render() {
     return (
       <div className={classes.WithdrawWrp}>
@@ -50,13 +70,20 @@ class Withdraw extends Component {
           changeInputsValue={this.props.changeInputsValue}
           setValueToMax={this.props.setValueToMax}
         />
-        <div className={classes.TableWrp}>
+        <div
+          className={
+            cx(classes.TableWrp, { TableWrpExpanded: this.state.expandedTransactions })
+          }
+        >
           <Transactions
             propNames={['status', 'currency', 'amount', 'date']}
             moreInfo={['address', 'xid']}
             headData={[{ title: 'History' }]}
             bodyData={this.state.transactions}
             showMore={this.showMore}
+            viewAll={this.viewAll}
+            viewAllText={this.state.mobileView ? 'See more' : null}
+            expanded={this.state.expandedTransactions}
           />
         </div>
       </div>

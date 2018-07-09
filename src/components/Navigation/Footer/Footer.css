@@ -195,16 +195,22 @@
 
 @media screen and (max-width: 413px){
   .Footer .Word{
-    padding-right: 21px;
+    padding-right: 16px;
   }
   .Footer .SocialIconTelegram{
+    transform: translateX(5px);
+    display: inline-block;
     padding-right: 34px;
   }
   .Footer .SocialIconFacebook{
     padding-right: 30px;
   }
   .Footer .TradingVolume > span:first-child{
-    padding-left: 12px;
+    padding-left: 15px;
+  }
+  .Footer .TradingVolume .Digits{
+    display: inline-block;
+    transform: translateX(3px);
   }
 }
 

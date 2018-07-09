@@ -129,20 +129,30 @@
 
 @media screen and (max-width: 413px){
   .DepositWithdrawWrp{
-    padding: 20px 20px 30px;
+    padding: 13px 20px 30px;
   }
-  .Title{
+  .DepositWithdrawWrp .Title{
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 21px;
+  }
+  .DropDwnWrp{
+    margin-bottom: 17px;
   }
   .DropDwnWrp .SelectCurrency{
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    transform: translate(-1px, 2px);
   }
-  .SelectedTitle{
+  .SelectedCurrency{
+    height: 46px;
+  }
+  .SelectedCurrency .SelectedTitle{
+    padding-left: 7px;
+    transform: translateY(-7px);
     font-size: 14px;
   }
   .DropDwnWrp .Balance{
-    margin-top: 10px;
+    margin-top: 6px;
+    transform: translateX(1px);
   }
 }
 

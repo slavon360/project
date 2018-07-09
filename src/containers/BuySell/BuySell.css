@@ -1,5 +1,6 @@
 .BuySellWrp{
   background-color: #f8f8f8;
+  min-height: 800px;
   padding: 57px 0 79px 159px;
 }
 .History{
@@ -202,7 +203,10 @@
 
 @media screen and (max-width: 413px){
   .BuySellWrp{
-    padding: 40px 20px 41px;
+    padding: 40px 20px;
+  }
+  .TableWrp{
+    padding: 6px 18px 28px 14px;
   }
   .TableWrp > div:last-child > span{
     font-size: 12px;
@@ -210,11 +214,20 @@
   .TableWrp table thead th{
     font-size: 10px;
   }
-  .TableWrp table thead th:nth-child(2){
-    width: 21.2%;
+  .TableWrp table thead tr th:first-child{
+    width: 34.1%;
   }
-  .TableWrp table thead th:nth-child(3){
-    width: 22.5%;
+  .TableWrp table thead tr th:nth-child(2){
+    width: 21.5%;
+  }
+  .TableWrp table thead tr th:nth-child(3){
+    width: 25.8%;
+  }
+  .TableWrp table thead tr th, .TableWrp table thead tr th:nth-child(3){
+    padding-bottom: 12px !important;
+  }
+  .TableWrp table tbody tr:first-child td{
+    padding-top: 14px;
   }
   .TableWrp table tbody td{
     font-size: 12px;
@@ -225,15 +238,18 @@
   }
   .TableWrp table tbody td:nth-child(3){
     padding-left: 0;
-    width: 22.5%;
+    width: 26.5%;
   }
   .TableWrp table tbody td:first-child span:nth-child(4){
     font-size: 10px;
     display: block;
     margin-left: 10px;
   }
+  .TableWrp > div:last-child{
+    transform: translate(2px, -6px);
+  }
   .TransactionsWrp{
-    margin-top: 40px;
+    margin-top: 34px;
   }
 }
 

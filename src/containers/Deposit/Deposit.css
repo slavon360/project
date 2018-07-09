@@ -8,6 +8,13 @@
 .DepositWrp tbody tr{
   cursor: pointer;
 }
+.TableWrp.TableWrpExpanded{
+  max-height: inherit;
+  height: auto;
+}
+.TableWrp.TableWrpExpanded table tbody{
+  height: auto;
+}
 .TableWrp{
   display: inline-block;
   box-shadow: 0 4px 18px 0 #dedede;
@@ -165,7 +172,15 @@
     display: block;
     width: 374px;
     align-self: center;
-    padding: 20px 20px 24px 15px;
+    padding: 20px 15px 24px 15px;
+    height: 330px;
+    overflow: hidden;
+  }
+  .TableWrp > div:last-child{
+    margin-top: 9px;
+  }
+  .TableWrp > div:last-child span{
+    font-size: 14px;
   }
   .TableWrp table thead th:last-child{
     font-size: 12px;
@@ -174,6 +189,8 @@
   .TableWrp table tbody{
     padding-top: 12px;
     font-size: 14px;
+    height: 200px;
+    overflow: hidden;
   }
   .TableWrp table tbody td:first-child{
     width: 85px;
@@ -191,8 +208,13 @@
   .TableWrp table tbody td:nth-child(4){
     width: 80px;
   }
+  .TableWrp table tbody td:nth-child(4) > span:nth-child(2){
+    font-size: 12px;
+    display: inline-block;
+    transform: translateY(-5px);
+  }
   .TableWrp table tbody td:last-child{
-    transform: translate(-16px, 0);
+    transform: translate(-25px, 0);
   }
 }
 
