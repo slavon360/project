@@ -41,12 +41,12 @@ const navigationItems = () => (
       </div>
       <span>Withdraw</span>
     </NavigationItem>
-    <NavigationItem link="/profile" optionalClass="PhoneAndTablet" >Profile</NavigationItem>
-    <NavigationItem link="/verification" optionalClass="PhoneAndTablet" >Verification</NavigationItem>
-    <NavigationItem link="/logout" optionalClass="PhoneAndTablet" >Logout</NavigationItem>
-    <NavigationItem link="/help" optionalClass="TabletOnly" >Help</NavigationItem>
-    <NavigationItem link="/about-us" optionalClass="TabletOnly" >About Us</NavigationItem>
-    <NavigationItem link="/contact-us" optionalClass="TabletOnly" >Contact Us</NavigationItem>
+    <NavigationItem link="/profile" optionalClass="PhoneAndTablet" ><span>Profile</span></NavigationItem>
+    <NavigationItem link="/verification" optionalClass="PhoneAndTablet" ><span>Verification</span></NavigationItem>
+    <NavigationItem link="/logout" optionalClass="PhoneAndTablet" ><span>Logout</span></NavigationItem>
+    <NavigationItem link="/help" optionalClass="TabletOnly" ><span>Help</span></NavigationItem>
+    <NavigationItem link="/about-us" optionalClass="TabletOnly" ><span>About Us</span></NavigationItem>
+    <NavigationItem link="/contact-us" optionalClass="TabletOnly" ><span>Contact Us</span></NavigationItem>
   </ul>
 );
 

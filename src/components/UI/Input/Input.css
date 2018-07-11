@@ -498,6 +498,27 @@
 }
 
 @media screen and (max-width: 413px){
+  .GenderRadioWrp .ThirdLabel{
+    left: 0;
+    top: -2px;
+  }
+  .NationalityWrp .SecondLabel{
+    font-size: 10px;
+    transform: translate(1px, 2px);
+  }
+  .InputRequestWrp input:hover, .InputRequestWrp input:focus{
+    margin-bottom: 21px;
+  }
+  .InputRequestWrp textarea{
+    padding-top: 6px;
+  }
+  .DepositAddress label, .WithdrawAddress label{
+    margin-bottom: 11px;
+    font-size: 11px;
+  }
+  .WithdrawAddress input{
+    font-size: 12px;
+  }
   .PhoneNumberAuthent{
     width: 152px;
   }
@@ -516,12 +537,35 @@
   .SecretCodeAuthSupportBottom > input{
     width: 173px;
   }
+  .WithdrawAmount .SecondLabel, .WithdrawAmount label{
+    font-size: 11px;
+  }
+  .WithdrawAmount label{
+    margin-bottom: 11px;
+  }
+  .WithdrawAmount > input::-webkit-input-placeholder, .WithdrawAmount > input{
+    font-size: 12px;
+  }
   .WithdrawAmount .SecondLabel{
-    font-size: 13px;
+    transform: translateY(5px);
+  }
+  .WithdrawAmount .OptionalButton{
+    top: 46px;
+  }
+  .WithdrawAmount .ThirdLabel, .WithdrawAmount .FourthLabel{
+    display: block;
+    float: none;
+  }
+  .WithdrawAmount .ThirdLabel{
+    margin-top: 20px;
   }
   .SertificateRadioWrp label{
     padding-left: 29px;
     font-size: 12px !important;
+  }
+  .SertificateRadioWrp:nth-child(2) label{
+    padding-left: 30px;
+    margin-right: 15px !important;
   }
   .LoginInputWrp > input::-webkit-input-placeholder{
     font-size: 12px;
@@ -532,6 +576,9 @@
 }
 
 @media screen and (max-width: 359px){
+  .WithdrawAmount{
+    margin-top: 20px;
+  }
   .PhoneNumberAuthent{
     width: 112px;
   }
@@ -539,11 +586,14 @@
   .SecretCodeAuthSupportBottom > input{
     width: 132px;
   }
+  .DepositAddress input, .WithdrawAddress input, .WithdrawAmount input{
+    padding-left: 19px;
+  }
   .DepositAddress label{
     margin-bottom: 10px;
   }
   .AmountLabel{
-    transform: translateY(3px);
+    transform: translateY(0);
   }
   .NationalityWrp .SecondLabel{
     font-size: 10px;

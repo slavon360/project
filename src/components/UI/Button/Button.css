@@ -618,6 +618,7 @@
   }
   .BuyTab, .SellTab{
     font-size: 14px;
+    padding: 16px 0 20px;
   }
   .BtnCoin img{
     width: 24px;

@@ -126,4 +126,28 @@
   .UserStageWrp .RightSide{
     padding-top: 4px;
   }
+  .UserStageWrp:first-child .Number{
+    transform: translate(0px, -1px);
+  }
+  .UserStageWrp:first-child .RightSide .Status{
+    padding-top: 3px;
+  }
+  .UserStageWrp:nth-child(2) .Number{
+    transform: translate(0px, -3px);
+  }
+  .UserStageWrp:nth-child(2) .RightSide{
+    transform: translate(-3px, -4px);
+  }
+  .UserStageWrp:nth-child(2) .RightSide .Status{
+    transform: translate(0px, 0px);
+  }
+  .UserStageWrp:nth-child(3) .Number{
+    transform: translate(0px, -2px);
+  }
+  .UserStageWrp:nth-child(3) .RightSide{
+    transform: translate(-3px, -3px);
+  }
+  .UserStageWrp:nth-child(3) .RightSide .Status{
+    transform: translate(1px, 0px);
+  }
 }

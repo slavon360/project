@@ -105,6 +105,16 @@
   }
 }
 
+@media screen and (max-width: 413px){
+  .FileInputRequestWrp, .SertificatePhoto{
+    padding-top: 5px;
+    margin-bottom: 20px;
+  }
+  .FileInputRequestWrp, .FileInputRequestWrp input, .SertificatePhoto, .SertificatePhoto input{
+    height: 80px;
+  }
+}
+
 @media screen and (max-width: 359px){
   .FileInputRequestWrp, .PhotoAddress, .SertificatePhoto{
     padding-top: 9px;

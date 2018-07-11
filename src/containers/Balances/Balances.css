@@ -351,7 +351,13 @@
 
 @media screen and (max-width: 359px){
   .BalancesWrp{
-    padding: 30px 20px;
+    padding: 25px 20px 30px;
+  }
+  .LimitsWrp{
+    transform: translateY(0);
+  }
+  .BalancesHead{
+    margin-bottom: 13px;
   }
   .BalancesHead h2{
     font-size: 14px;
@@ -364,17 +370,28 @@
   .CurrencyTitle .BalanceCurrencyWrp{
     font-size: 12px;
   }
-  .Balances .Head .Currency, .CurrencyTitle{
+  .Balances .Head{
+    font-size: 10px;
+    margin-bottom: 24px;
+  }
+  .Balances .Head .Currency{
+    width: 30.1%;
+  }
+  .CurrencyTitle{
     width: 30.4%;
   }
   .Balances .Head .Balance, .BalanceValueWrp{
     width: 32.1%;
+  }
+  .BalanceValueWrp{
+    left: -1px;
   }
   .BalanceValueWrp > div:first-child{
     font-size: 12px;
   }
   .BalanceValueWrp .FiatWrp{
     font-size: 10px;
+    top: 16px;
   }
 }
 

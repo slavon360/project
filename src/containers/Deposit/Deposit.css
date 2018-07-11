@@ -224,24 +224,36 @@
   }
   .TableWrp{
     width: 100%;
-    padding: 30px 20px;
+    padding: 20px 15px 30px;
     height: auto;
+  }
+  .TableWrp table tbody{
+    padding-top: 14px;
+  }
+  .TableWrp table tbody tr{
+    margin-bottom: 4px;
   }
   .TableWrp table tbody td, .TableWrp table tbody td:nth-last-child(2){
     font-size: 12px;
   }
   .TableWrp table tbody td:first-child{
-    width: 68px;
+    width: 66px;
     font-size: 12px;
   }
+  .TableWrp table tbody td:first-child > div:first-child{
+    margin-right: 5px;
+  }
   .TableWrp table tbody td:nth-child(2){
-    width: 42px;
+    width: 41px;
   }
   .TableWrp table tbody td:nth-child(3){
-    width: 76px;
+    width: 84px;
   }
   .TableWrp table tbody td:nth-child(4){
     width: 66px;
+  }
+  .TableWrp table tbody td:nth-child(4) > span:nth-child(2){
+    transform: translateY(-2px);
   }
   .TableWrp table tbody td:last-child{
     transform: translate(-15px, 4px);
@@ -253,6 +265,18 @@
     padding: 0;
     background-color: transparent;
     box-shadow: none;
+    transform: translate(-3px, 1px);
+    width: 101%;
+  }
+  .TableWrp > div:last-child{
+    transform: translate(-3px, -4px);
+    margin-top: 0;
+  }
+  .TableWrp > div:last-child > span{
+    font-size: 12px;
+  }
+  .DepositWrp{
+    padding: 34px 18px 25px;
   }
 }
 

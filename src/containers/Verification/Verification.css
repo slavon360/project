@@ -250,8 +250,23 @@
 }
 
 @media screen and (max-width: 413px){
+  .NavBtn > div:first-child{
+    width: 14px !important;
+    height: 14px !important;
+    font-size: 9px !important;
+  }
   .NavBtn > div:nth-child(2) > div:first-child{
     font-size: 12px;
+  }
+  .VerificationWrp{
+    padding-top: 33px;
+    padding-bottom: 41px;
+  }
+  .Note{
+    margin-top: 19px;
+  }
+  .NavbarSection{
+    margin-bottom: 11px;
   }
 }
 

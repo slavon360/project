@@ -145,13 +145,35 @@
 }
 
 @media screen and (max-width: 413px){
-  .VerificationNavBtn{
+  .SideBarNavWrp .VerificationNavBtn{
     width: 100px;
-    height: 50px;
+    height: 51px;
     padding: 9px 0 0 2px;
+    margin-right: 10px;
+  }
+  .SideBarNavWrp .VerificationNavBtn:last-child{
+    margin-right: 0;
+  }
+  .SideBarNavWrp .VerificationNavBtn:first-child > div:first-child > div:first-child,
+  .SideBarNavWrp .VerificationNavBtn:nth-child(2) > div:first-child > div:first-child,
+  .SideBarNavWrp .VerificationNavBtn:nth-child(3) > div:first-child > div:first-child{
+    transform: translate(1px, -1px);
+  }
+  .SideBarNavWrp .VerificationNavBtn:nth-child(2) > div:first-child > div:first-child{
+    margin-right: 6px;
+  }
+  .SideBarNavWrp .VerificationNavBtn:nth-child(3) > div:first-child > div:first-child,
+  .SideBarNavWrp .VerificationNavBtn:first-child > div:first-child > div:first-child{
+    margin-right: 5px;
+  }
+  .SideBarNavWrp .VerificationNavBtn:first-child > div > div:last-child svg{
+    margin-left: 23px !important;
   }
   .SideBarNavWrp{
     width: auto;
+  }
+  .MobileContent > div{
+    padding-bottom: 35px;
   }
 }
 

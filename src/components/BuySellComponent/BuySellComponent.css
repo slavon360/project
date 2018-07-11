@@ -219,6 +219,10 @@
 @media screen and (max-width: 359px){
   .BuySellComponentWrp{
     width: 280px;
+    margin-bottom: 20px;
+  }
+  .Specify{
+    transform: translateX(-1px);
   }
   .Checked{
     width: 24px;

@@ -315,9 +315,16 @@
     width: 110px;
   }
   .BirthDayDrpDwnWrp{
+    margin-right: 11px;
     width: 70px;
   }
   .BirthYearDrpDwnWrp{
     width: 80px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .CurrencyDropdownWrp{
+    width: 282px;
   }
 }

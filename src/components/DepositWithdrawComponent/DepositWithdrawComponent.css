@@ -130,6 +130,7 @@
 @media screen and (max-width: 413px){
   .DepositWithdrawWrp{
     padding: 13px 20px 30px;
+    margin-bottom: 40px;
   }
   .DepositWithdrawWrp .Title{
     font-size: 16px;
@@ -162,14 +163,17 @@
     background-color: transparent;
     box-shadow: none;
   }
-  .Title{
+  .DepositWithdrawWrp .Title{
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .SelectedTitle{
     font-size: 14px;
   }
   .DropDwnWrp{
-    margin-bottom: 20px;
+    margin-bottom: 17px;
+  }
+  .DropDwnWrp .Balance{
+    transform: translateX(-2px);
   }
 }

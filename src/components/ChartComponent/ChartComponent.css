@@ -86,4 +86,7 @@
     width: 280px;
     height: 260px;
   }
+  .Header{
+    margin-bottom: 16px;
+  }
 }

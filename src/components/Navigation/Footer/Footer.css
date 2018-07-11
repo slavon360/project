@@ -217,14 +217,24 @@
 @media screen and (max-width: 359px){
   .Footer{
     font-size: 12px;
+    padding: 17px 20px 18px 18px;
   }
   .Footer .TradingVolume{
     font-size: 10px;
   }
+  .Footer .Top{
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+  }
   .Footer .Word{
-    padding-right: 18px;
+    padding-right: 13px;
+    display: inline-block;
+    transform: translateY(-1px);
   }
   .Footer .TradingVolume > span:first-child{
-    padding-left: 18px;
+    padding-left: 22px;
+  }
+  .Footer .Bottom{
+    padding-left: 1px;
   }
 }

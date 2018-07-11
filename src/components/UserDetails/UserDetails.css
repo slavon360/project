@@ -225,6 +225,32 @@
   }
 }
 
+@media screen and (max-width: 413px){
+  .UserDetailsWrp{
+    padding-top: 23px;
+    padding-bottom: 24px;
+  }
+  .BirthDateTitle{
+    margin: 28px 0 12px;
+  }
+  .Arrow{
+    right: 18px;
+  }
+  .InputsContent .SertificateWrp{
+    margin-bottom: 24px;
+  }
+  .InputsContent > div:first-child input:hover, .InputsContent > div:first-child input:focus{
+    margin-bottom: 13px;
+  }
+  .InputsContent > div:nth-child(2) input:hover, .InputsContent > div:nth-child(2) input:focus,
+  .InputsContent .NationalityWrp input:hover, .InputsContent .NationalityWrp input:focus{
+    margin-bottom: 19px;
+  }
+  .InputsContent > div:nth-child(9) input:hover, .InputsContent > div:nth-child(9) input:focus{
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 359px){
   .UserDetailsWrp{
     padding: 0;

@@ -55,7 +55,14 @@
 
 @media screen and (max-width: 413px){
   .SendRequestWrp{
-    padding: 40px 20px;
+    padding: 31px 20px 40px;
+  }
+  .SendRequestWrp .Title{
+    margin-bottom: 19px;
+  }
+  .RequestContainer{
+    padding-top: 23px;
+    padding-bottom: 20px;
   }
 }
 

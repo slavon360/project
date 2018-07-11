@@ -198,6 +198,9 @@
   .CurrenciesShort .Top span:nth-child(2){
     font-size: 12px;
   }
+  .LastPrice, .Change, .High, .Low{
+    transform: translateY(4px);
+  }
   .LastPrice{
     margin-right: 13px;
   }
