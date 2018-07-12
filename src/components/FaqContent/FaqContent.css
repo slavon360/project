@@ -127,3 +127,13 @@
     transform: translate(6px, 2px);
   }
 }
+
+@media screen and (max-width: 359px){
+  .FAQQuestionWrp .Title{
+    transform: translateX(-2px);
+  }
+  .FAQQuestionWrp .Answer{
+    margin-top: 3px;
+    line-height: 1.3;
+  }
+}

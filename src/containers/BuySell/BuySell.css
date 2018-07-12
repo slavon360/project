@@ -258,36 +258,51 @@
     padding: 30px 20px 30px;
   }
   .TransactionsWrp{
-    margin-top: 30px;
+    margin-top: 24px;
   }
   .History{
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .TableWrp{
-    padding: 15px 20px 22px;
+    padding: 6px 14px 19px;
   }
-  .TableWrp table thead th:first-child{
-    width: 36%;
+  .TableWrp table thead tr th:first-child{
+    width: 37.1%;
   }
-  .TableWrp table thead th:nth-child(2){
-    width: 19.2%;
+  .TableWrp table thead tr th:nth-child(2){
+    width: 18.5%;
   }
-  .TableWrp table thead th:nth-child(3){
-    width: 24.5%;
+  .TableWrp table thead tr th:nth-child(3){
+    width: 25%;
   }
-  .TableWrp table tbody td:first-child{
-    width: 37%;
+  .TableWrp table tbody{
+    height: 188px;
   }
-  .TableWrp table tbody td:nth-child(2), .TableWrp table tbody td:nth-child(3){
+  .TableWrp table tbody tr:first-child td{
+    padding-top: 15px;
+  }
+  .TableWrp table tbody tr td:first-child{
+    width: 37.5%;
+  }
+  .TableWrp table tbody tr td:first-child span:nth-child(3){
+    transform: translateX(3px);
+  }
+  .TableWrp table tbody tr td:first-child span:nth-child(4){
+    margin-left: 14px;
+    transform: translateY(-2px);
+  }
+  .TableWrp table tbody tr td:nth-child(2){
     width: 22.1%;
   }
-  .TableWrp table tbody td, .TableWrp table tbody td:first-child span:nth-child(3){
+  .TableWrp table tbody tr td:nth-child(3){
+    width: 21.6%;
+  }
+  .TableWrp table tbody tr td, .TableWrp table tbody tr td:first-child span:nth-child(3){
     font-size: 10px !important;
   }
-  .TableWrp table tbody td:first-child span:last-child{
-    font-size: 12px;
-    margin-left: 10px;
+  .TableWrp > div:last-child{
+    transform: translate(-6px, 1px);
   }
 }
 

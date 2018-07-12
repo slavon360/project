@@ -120,11 +120,22 @@
     padding-top: 9px;
     margin-bottom: 20px;
   }
+  .SertificatePhoto{
+    margin-top: 3px;
+    padding-top: 4px;
+  }
   .PhotoAddress, .SertificatePhoto, .FileInputRequestWrp, .FileInputRequestWrp input{
     height: 80px;
   }
   .FileInputRequestWrp .Sentence, .PhotoAddress .Sentence, .SertificatePhoto .Sentence{
     font-size: 12px;
     margin-top: -5px;
+  }
+  .FileInputRequestWrp .Sentence{
+    margin-top: -4px;
+    transform: translateX(-2px);
+  }
+  .SertificatePhoto .Sentence{
+    padding-left: 4px;
   }
 }

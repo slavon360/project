@@ -48,11 +48,15 @@ class HeaderTools extends Component {
   }
 
   hideShowUserDropdown = () => {
-    this.setState({ userDropdownOpen: !this.state.userDropdownOpen });
+    this.setState(prevState => ({ userDropdownOpen: !prevState.userDropdownOpen }));
   }
 
   toggleLangDropdown = () => {
-    this.setState({ langDropdownOpen: !this.state.langDropdownOpen });
+    this.setState(prevState => ({ langDropdownOpen: !prevState.langDropdownOpen }));
+  }
+
+  hideDropdown = (prop) => {
+    this.setState({ [prop]: false });
   }
 
   selectLanguage = (val) => {
@@ -80,10 +84,11 @@ class HeaderTools extends Component {
           drpContainerClasses={
             cx('DropdownUserContainer', { Show: this.state.userDropdownOpen, Hide: !this.state.userDropdownOpen }).split(' ')
           }
+          dropdownTitle={'userDropdownOpen'}
           dropdownButtonClasses={['DropdownButtonUser']}
           dropdownButtons={this.state.user.drpItems}
           hideShowDropdown={this.hideShowUserDropdown}
-          hideDropdown={this.hideShowUserDropdown}
+          hideDropdown={this.hideDropdown}
           setValue={this.userParameter}
         >
           {this.state.user.title}<span className={classes.Arrow}><Arrow /></span>
@@ -100,10 +105,11 @@ class HeaderTools extends Component {
           drpContainerClasses={
             cx('DropdownLangContainer', { Show: this.state.langDropdownOpen, Hide: !this.state.langDropdownOpen }).split(' ')
           }
+          dropdownTitle={'langDropdownOpen'}
           dropdownButtonClasses={['DropdownButtonLang']}
           dropdownButtons={this.state.langItems}
           hideShowDropdown={this.toggleLangDropdown}
-          hideDropdown={this.toggleLangDropdown}
+          hideDropdown={this.hideDropdown}
           setValue={this.selectLanguage}
         >
           <div className={classes.SelectedLanguage}>

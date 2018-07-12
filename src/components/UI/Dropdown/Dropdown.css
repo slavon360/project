@@ -327,4 +327,10 @@
   .CurrencyDropdownWrp{
     width: 282px;
   }
+  .BirthDayDrpDwnWrp{
+    margin-right: 8px;
+  }
+  .BirthYearDrpDwnWrp{
+    left: 2px;
+  }
 }

@@ -78,8 +78,15 @@ class MainChart extends Component {
           xExtents={xExtents}
         >
           <Chart id={1} yExtents={[d => [d.high, d.low]]}>
-            <XAxis axisAt="bottom" orient="bottom" />
-            <YAxis axisAt="right" orient="right" {...yGrid} />
+            <XAxis
+              axisAt="bottom"
+              orient="bottom"
+              fontSize={14}
+              fontFamily="SegoeUI"
+              stroke="white"
+              tickStroke="#41424e"
+            />
+            <YAxis axisAt="right" orient="right" fontSize={14} fontFamily="SegoeUI" tickStroke="#41424e" {...yGrid} />
             <MouseCoordinateY
               at="right"
               orient="right"
@@ -89,7 +96,7 @@ class MainChart extends Component {
             <MouseCoordinateX
               at="bottom"
               orient="bottom"
-              displayFormat={this.props.day ? timeFormat('%Y-%m-%d %H:%M') : timeFormat('%Y-%m-%d')}
+              displayFormat={timeFormat('%Y-%m-%d %H:%M')}
             />
           </Chart>
           <CrossHairCursor />

@@ -178,9 +178,23 @@
 }
 
 @media screen and (max-width: 359px){
-  .VerificationNavBtn{
+  .SideBarNavWrp .VerificationNavBtn{
     height: 70px;
-    width: 90px;
-    padding: 4px 0 0 10px;
+    width: 96px;
+    margin-right: 5px;
+    padding: 4px 0 0 13px;
+  }
+  .SideBarNavWrp .VerificationNavBtn:first-child > div:first-child > div:first-child,
+  .SideBarNavWrp .VerificationNavBtn:nth-child(2) > div:first-child > div:first-child{
+    transform: translate(-1px, -1px);
+  }
+  .SideBarNavWrp .VerificationNavBtn:nth-child(3) > div:first-child > div:first-child{
+    transform: translate(-2px, -1px);
+  }
+  .SideBarNavWrp .VerificationNavBtn:first-child > div > div:last-child svg{
+    margin-left: 7px !important;
+  }
+  .SideBarNavWrp .VerificationNavBtn:nth-child(3) > div > div:nth-child(2){
+    transform: translate(-2px, 0px);
   }
 }

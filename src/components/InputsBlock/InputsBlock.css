@@ -96,6 +96,9 @@
 }
 
 @media screen and (max-width: 767px){
+  .CopyDepositAddressWrp > button::before{
+    padding-left: 5px;
+  }
   .InputsBlockWrp{
     width: 100%;
     padding: 24px 20px 32px;
@@ -155,17 +158,17 @@
   }
   .SubmitWithdrawAmountWrp{
     text-align: center;
-    padding-top: 41px;
+    padding-top: 22px;
   }
   .CopyDepositAddressWrp{
     padding-top: 10px;
   }
-  .SubmitWithdrawAmountWrp{
-    padding-top: 22px;
-  }
   .SubmitWithdrawAmountWrp > button, .CopyDepositAddressWrp > button{
     width: 140px;
     height: 40px;
+  }
+  .SubmitWithdrawAmountWrp > button::before, .CopyDepositAddressWrp > button::before{
+    padding-top: 12px;
   }
 }
 
@@ -178,6 +181,9 @@
   }
   .CopyDepositAddressWrp > button{
     padding-left: 7px;
+  }
+  .CopyDepositAddressWrp > button::before{
+    padding-left: 1px;
   }
   .LeftSide img{
     transform: translate(1px, -1px);

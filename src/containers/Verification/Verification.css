@@ -272,11 +272,18 @@
 
 @media screen and (max-width: 359px){
   .VerificationWrp{
-    padding: 38px 21px 32px;
+    padding: 31px 21px 32px;
+  }
+  .NavBtn > div:nth-child(2) > div:nth-child(2){
+    transform: translate(1px, -1px);
   }
   .Content{
     width: 100%;
     box-shadow: none;
+    background-color: transparent;
+  }
+  .Note{
+    margin-top: 20px;
   }
   .Note .Head .NoteTitle{
     font-size: 14px;
@@ -284,8 +291,14 @@
   .Note .Text{
     line-height: 18px;
   }
+  .NavbarSection{
+    margin-bottom: 7px;
+  }
   .NavbarSection > div:nth-child(2) > div:nth-child(3) .NavBtn > div:first-child{
     margin-right: 10px;
+  }
+  .NavBtn > div:nth-child(2) > div:first-child{
+    transform: translate(1px, -1px);
   }
 }
 

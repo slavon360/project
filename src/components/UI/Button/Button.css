@@ -629,5 +629,15 @@
   }
   .DropdownButtonPeriod, .BtnPeriod{
     width: 60px;
+    font-size: 10px;
+  }
+  .DropdownButtonPeriod > div:first-child{
+    transform: translate(2px, -1px);
+  }
+  .DropdownButtonPeriod > div:nth-child(2){
+    transform: rotate(90deg) translate(4px, -2px);
+  }
+  .BtnPeriod:nth-child(3){
+    transform: translateX(1px);
   }
 }
