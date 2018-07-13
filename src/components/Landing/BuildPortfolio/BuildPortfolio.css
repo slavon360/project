@@ -2,7 +2,7 @@
   position: relative;
   width: 895px;
   display: inline-block;
-  margin-bottom: 251px;
+  margin-bottom: 246px;
 }
 .BuildPortfolioWrp h2{
   font-family: SegoeUI-Light;
@@ -26,11 +26,37 @@
   width: 320px;
   height: 60px;
   border-radius: 30px;
-  background-image: linear-gradient(-110deg, #e33a8c 0%, #932c88 100%);
   color: #fff;
   font-size: 18px;
   font-weight: 700;
-  transition: background-image .5s;
+  position: relative;
+  overflow: hidden;
+}
+.CreateAccount::before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(-110deg, #e33a8c 0%, #932c88 100%);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity .5s;
+}
+.CreateAccount::after{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(-110deg, #932c88 0%, #e33a8c 100%);
+  opacity: 0;
+  transition: opacity .5s;
+  z-index: 1;
 }
 .CreateAccount > a{
   display: block;
@@ -38,9 +64,17 @@
   line-height: 3.3;
   text-decoration: none;
   color: inherit;
+  position: relative;
+  z-index: 2;
+}
+.CreateAccount:hover::before{
+  opacity: 0;
+}
+.CreateAccount:hover::after{
+  opacity: 1;
 }
 .CreateAccount:hover{
-  background-image: linear-gradient(-110deg, #932c88 0%, #e33a8c 100%);
+  color: #fff;
 }
 
 @media screen and (min-width: 1900px){
@@ -61,7 +95,7 @@
 
 @media screen and (max-width: 1900px){
   .BuildPortfolioWrp{
-    margin-bottom: 159px;
+    margin-bottom: 155px;
     width: 687px;
     text-align: center;
   }
@@ -87,13 +121,13 @@
 
 @media screen and (max-width: 1365px){
   .BuildPortfolioWrp{
-    margin-bottom: 79px;
+    margin-bottom: 75px;
   }
 }
 
 @media screen and (max-width: 1023px){
   .BuildPortfolioWrp{
-    margin-bottom: 48px;
+    margin-bottom: 44px;
   }
   .BuildPortfolioWrp h2{
     font-size: 36px;
@@ -116,7 +150,7 @@
 }
 @media screen and (max-width: 767px){
   .BuildPortfolioWrp{
-    margin-bottom: 38px;
+    margin-bottom: 34px;
     width: 320px;
   }
   .BuildPortfolioWrp h2{

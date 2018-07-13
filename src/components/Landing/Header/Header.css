@@ -157,6 +157,9 @@
   .RightSide .SignUp{
     transform: translate(5px, 10px);
   }
+  .RightSide .SignIn{
+    transform: translate(0px, 9px);
+  }
 }
 
 @media screen and (max-width: 413px){

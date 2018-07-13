@@ -27,21 +27,56 @@
   width: 320px;
   height: 60px;
   border-radius: 30px;
-  background-color: #fff;
   color: #241a55;
   font-family: SegoeUI-Bold;
   font-size: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.CreateAccount::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity .5s;
+}
+.CreateAccount::after{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
+  opacity: 0;
+  transition: opacity .5s;
+  z-index: 1;
 }
 .CreateAccount > a{
+  position: relative;
+  z-index: 1;
   display: block;
   text-decoration: none;
   color: inherit;
   line-height: 3.3;
   font-weight: 700;
   text-align: center;
+  z-index: 2;
+}
+.CreateAccount:hover::before{
+  opacity: 0;
+}
+.CreateAccount:hover::after{
+  opacity: 1;
 }
 .CreateAccount:hover{
-  background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
   color: #fff;
 }
 

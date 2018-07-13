@@ -108,6 +108,11 @@ body, html{
     bottom: -100px;
     transform: scale(1.3);
   }
+  .TopBackgroundSVG{
+    top: -395px;
+    right: -85px;
+    left: auto;
+  }
 }
 
 @media screen and (max-width: 700px){
@@ -120,6 +125,15 @@ body, html{
   .BottomBackgroundSVG{
     bottom: 19px;
     transform: scale(1.45);
+  }
+}
+
+@media screen and (max-width: 474px){
+  .TopBackgroundSVG{
+    top: -197px;
+    right: auto;
+    left: -206px;
+    width: 749px;
   }
 }
 
@@ -144,6 +158,9 @@ body, html{
     top: -784px;
     width: 1990px;
   }
+  .BottomBackgroundSVG{
+    bottom: -243px;
+  }
 }
 
 @media screen and (min-width: 1900px){
@@ -155,6 +172,9 @@ body, html{
     width: 2254px;
     left: -20.1%;
     top: -756px;
+  }
+  .BottomBackgroundSVG{
+    bottom: -128px;
   }
 }
 
@@ -178,5 +198,17 @@ body, html{
 @media screen and (min-width: 2900px){
   .BottomBackgroundSVG{
     bottom: -27vw;
+  }
+}
+
+@media screen and (min-width: 3630px){
+  .BottomBackgroundSVG{
+    bottom: -33vw;
+  }
+}
+
+@media screen and (min-width: 4460px){
+  .BottomBackgroundSVG{
+    bottom: -37vw;
   }
 }
