@@ -63,13 +63,17 @@
   .BuildPortfolioWrp{
     margin-bottom: 159px;
     width: 687px;
+    text-align: center;
   }
   .BuildPortfolioWrp h2{
     font-size: 48px;
+    margin-bottom: 25px;
   }
   .Advantages{
+    width: 657px;
+    display: inline-block;
     font-size: 18px;
-    margin-bottom: 37px;
+    margin-bottom: 34px;
   }
   .CreateAccount{
     width: 240px;
@@ -77,7 +81,7 @@
     font-size: 16px;
   }
   .CreateAccount > a{
-    line-height: 2.9;
+    line-height: 3.1;
   }
 }
 
@@ -93,15 +97,21 @@
   }
   .BuildPortfolioWrp h2{
     font-size: 36px;
+    margin-bottom: 19px;
   }
   .Advantages{
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
+    width: 596px;
+    transform: translateX(1px);
   }
   .CreateAccount{
     width: 160px;
     height: 40px;
     font-size: 14px;
+  }
+  .CreateAccount > a{
+    line-height: 2.8;
   }
 }
 @media screen and (max-width: 767px){
@@ -111,11 +121,14 @@
   }
   .BuildPortfolioWrp h2{
     font-size: 24px;
+    transform: translateX(2px);
     margin-bottom: 21px;
   }
-  .Advantages{
+  .BuildPortfolioWrp .Advantages{
     font-size: 12px;
-    margin-bottom: 18px;
+    width: 315px;
+    transform: translate(1px, -4px);
+    margin-bottom: 14px;
   }
 }
 

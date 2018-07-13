@@ -113,13 +113,61 @@
   }
 }
 
+@media screen and (max-width: 1900px){
+  .WhyUseWrp{
+    margin-bottom: 190px;
+  }
+  .WhyUseWrp h2{
+    margin-bottom: 133px;
+    transform: translate(1px, 0px);
+  }
+  .Tab .Icon{
+    margin-bottom: 15px;
+  }
+  .Tab .Title{
+    margin-bottom: 11px;
+  }
+  .Tab:first-child{
+    transform: translate(-9px, 0px);
+  }
+  .Tab:first-child .Icon, .Tab:nth-child(2) .Icon{
+    top: -3px;
+  }
+  .Tab:nth-child(3) .Icon{
+    top: -3px;
+    left: 1px;
+  }
+  .Tab:first-child .Icon::before{
+    height: 141px;
+  }
+  .Tab:first-child .Title, .Tab:nth-child(3) .Title{
+    transform: translateX(-9px);
+  }
+  .Tab:nth-child(2){
+    transform: translateX(-19px);
+  }
+  .Tab:nth-child(2) .Title{
+    transform: translateX(-10px);
+  }
+  .Tab:nth-child(3){
+    transform: translateX(-21px);
+  }
+  .Tab:nth-child(3) .Description{
+    transform: translateX(1px);
+  }
+  .Tab:nth-child(2) .Icon::before, .Tab:nth-child(3) .Icon::before{
+    height: 139px;
+  }
+}
+
 @media screen and (max-width: 1365px){
   .WhyUseWrp{
-    margin-bottom: 143px;
+    margin-bottom: 142px;
   }
   .WhyUseWrp h2{
     font-size: 30px;
     margin-bottom: 119px;
+    transform: translate(-3px, 5px);
   }
   .Tab:first-child{
     margin-right: 54px;
@@ -132,21 +180,41 @@
 @media screen and (max-width: 1023px){
   .WhyUseWrp{
     margin-top: -120px;
-    margin-bottom: 105px;
+    margin-bottom: 110px;
   }
   .WhyUseWrp h2{
     font-size: 24px;
     margin-bottom: 85px;
+    transform: translate(-1px, 5px);
+  }
+  .TabsWrp{
+    transform: translateY(8px);
   }
   .Tab .Title{
     font-size: 14px;
-    margin-bottom: 28px;
+    margin-bottom: 22px;
   }
   .Tab .Icon{
-    margin-bottom: 18px;
+    margin-bottom: 6px;
   }
   .Tab .Description{
     font-size: 14px;
+  }
+  .Tab:first-child .Title{
+    transform: translateX(0);
+  }
+  .Tab:first-child .Icon{
+    top: -8px;
+    left: 6px;
+  }
+  .Tab:first-child .Description{
+    transform: translateX(6px);
+  }
+  .Tab:first-child .Icon::before, .Tab:nth-child(2) .Icon::before{
+    top: -35px;
+  }
+  .Tab:last-child .Icon::before{
+    top: -33px;
   }
   .Tab:first-child{
     width: 159px;
@@ -160,22 +228,38 @@
     width: 152px;
     margin-right: 90px;
   }
+  .Tab:nth-child(2) .Icon{
+    top: -8px;
+    left: 16px;
+  }
   .Tab:nth-child(2) svg{
     width: 23px;
     height: 36px;
   }
   .Tab:nth-child(2) .Title{
     padding: 0 15px;
+    transform: translateX(12px);
+  }
+  .Tab:nth-child(2) .Description{
+    transform: translateX(17px);
   }
   .Tab:last-child{
     width: 148px;
   }
   .Tab:last-child .Icon{
-    top: -2px;
+    top: -10px;
+    left: 17px;
   }
   .Tab:last-child svg{
     width: 33px;
     height: 36px;
+  }
+  .Tab:last-child .Title{
+    padding-right: 40px;
+    transform: translateX(38px);
+  }
+  .Tab:last-child .Description{
+    transform: translateX(18px);
   }
 }
 
@@ -186,7 +270,7 @@
   }
   .WhyUseWrp h2{
     text-align: left;
-    margin-left: 60px;
+    margin-left: 62px;
     font-size: 18px;
     margin-bottom: 0;
   }
@@ -230,21 +314,66 @@
 
 @media screen and (max-width: 498px){
   .WhyUseWrp{
-    margin-bottom: 135px;
+    margin-bottom: 154px;
   }
   .TabsWrp{
     margin-top: 0;
   }
+  .Tab .Icon, .Tab:nth-child(2) .Icon{
+    margin-bottom: -1px;
+  }
+  .Tab .Title{
+    margin-bottom: 18px;
+  }
   .Tab:first-child{
-    transform: translateX(135px);
+    transform: translateX(144px);
     margin-right: 100px;
+  }
+  .Tab:first-child .Icon{
+    top: -10px;
+  }
+  .Tab:first-child .Icon::before{
+    top: -32px;
+  }
+  .Tab:first-child .Description{
+    transform: translateX(2px);
   }
   .Tab:nth-child(2){
     margin-right: 90px;
-    transform: translate(40px, -65px);
+    transform: translate(30px, -56px);
+  }
+  .Tab:nth-child(2) .Icon{
+    top: -10px;
+    left: 15px;
+  }
+  .Tab:nth-child(2) .Icon::before{
+    top: -31px;
+  }
+  .Tab:nth-child(2) .Icon svg{
+    width: 21px;
+    height: 31px;
+  }
+  .Tab:nth-child(2) .Description{
+    transform: translateX(12px);
   }
   .Tab:last-child{
-    transform: translate(-40px, 70px);
+    transform: translate(-46px, 77px);
+  }
+  .Tab:last-child .Icon{
+    top: -18px;
+    left: 17px;
+  }
+  .Tab:last-child .Icon svg{
+    width: 26px;
+    height: 32px;
+  }
+  .Tab:last-child .Title{
+    margin-bottom: 16px;
+    padding: 0 26px;
+    transform: translate(13px, -4px);
+  }
+  .Tab:last-child .Description{
+    transform: translate(12px, -3px);
   }
 }
 

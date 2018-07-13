@@ -67,6 +67,7 @@
   font-family: SegoeUI-Light;
   color: #7e62a4;
   font-size: 12px;
+  transform: translate(-6px, 2px);
 }
 .RightSide{
   font-size: 14px;
@@ -77,6 +78,7 @@
 }
 .RightSide .TrandingVolume{
   margin-right: 39px;
+  transform: translateX(-4px);
 }
 .RightSide .ProportionBtc{
   margin-right: 30px;
@@ -120,11 +122,37 @@
   .FooterWrp{
     padding: 0 60px;
   }
+  .Footer{
+    padding: 16px 0;
+  }
+  .LeftSide .Social{
+    margin-right: 49px;
+  }
+  .LeftSide .Telegram{
+    margin-right: 39px;
+  }
+  .LeftSide .Facebook{
+    margin-right: 36px;
+    transform: translateY(1px);
+  }
+  .RightSide .TrandingVolume{
+    margin-right: 33px;
+    transform: translateX(-3px);
+  }
+  .RightSide .ProportionBtc{
+    margin-right: 27px;
+  }
+  .RightSide .ProportionEth{
+    transform: translateX(1px);
+  }
 }
 
 @media screen and (max-width: 1365px){
   .FooterWrp{
     padding: 0 32px;
+  }
+  .Footer{
+    padding: 18px 0;
   }
   .LeftSide, .RightSide{
     font-size: 12px;
@@ -135,14 +163,20 @@
   .LeftSide .Social{
     margin-right: 28px;
   }
+  .LeftSide .Facebook, .LeftSide .Twitter{
+    transform: translate(-1px, 1px);
+  }
   .RightSide .TrandingVolume{
     margin-right: 31px;
+    transform: translateX(8px);
   }
   .RightSide .ProportionBtc{
     margin-right: 26px;
+    transform: translateX(5px);
   }
   .MiddleSide{
     font-size: 10px;
+    transform: translate(8px, 2px);
   }
 }
 
@@ -153,11 +187,34 @@
   .LeftSide .Social, .RightSide .TrandingVolume{
     display: none;
   }
+  .LeftSide .Terms{
+    transform: translate(-1px, 0);
+  }
   .LeftSide .Telegram{
+    transform: translate(-1px, 1px);
     margin-right: 34px;
   }
   .LeftSide .Facebook{
     margin-right: 30px;
+    transform: translate(-6px, 1px)
+  }
+  .LeftSide .Facebook svg{
+    width: 12px;
+    height: 12px;
+  }
+  .LeftSide .Twitter{
+    transform: translate(-11px, 1px);
+  }
+  .MiddleSide{
+    transform: translate(-13px, 2px);
+  }
+  .RightSide .ProportionBtc .Value{
+    display: inline-block;
+    transform: translateX(-2px);
+  }
+  .RightSide .ProportionEth .Key{
+    display: inline-block;
+    transform: translateX(1px);
   }
 }
 
@@ -170,13 +227,14 @@
   }
   .LeftSide .Terms{
     margin-right: -5px;
+    transform: translate(-1px, 1px);
   }
   .RightSide{
     display: none;
   }
   .MiddleSide{
     width: 88px;
-    transform: translateY(-7px);
+    transform: translate(-5px, -6px);
   }
   .LeftSide .Telegram, .LeftSide .Facebook, .LeftSide .Twitter{
     display: none;
@@ -186,9 +244,14 @@
   }
   .SocialIconsPhone .Telegram{
     margin-right: 34px;
+    transform: translate(10px, -2px);
   }
   .SocialIconsPhone .Facebook{
+    transform: translate(6px, -2px);
     margin-right: 30px;
+  }
+  .SocialIconsPhone .Twitter{
+    transform: translate(1px, -1px);
   }
 }
 

@@ -42,33 +42,39 @@ body, html{
   .Footer{
     background-position: 50% 15vw;
     background-size: 124%;
+    padding-top: 190px;
   }
   .TopBackgroundSVG{
-    top: -806px;
+    top: -563px;
     left: auto;
-    right: 5px;
+    right: -1px;
+    width: 1621px;
   }
 }
-
 
 @media screen and (max-width: 1365px){
   .Footer{
     background-size: 132% 107%;
     background-position: 50% -298%;
-  }
-  .TopBackgroundSVG{
-    right: -25%;
-    transform: scale(.7);
-    top: -874px;
+    padding-top: 326px;
   }
   .BottomBackgroundSVG{
     bottom: -65px;
   }
 }
 
+@media screen and (max-width: 1155px){
+  .TopBackgroundSVG{
+    width: 1295px;
+    top: -393px;
+    right: 18px;
+    left: auto;
+  }
+}
+
 @media screen and (max-width: 1023px){
   .Footer{
-    padding-top: 204px;
+    padding-top: 177px;
     background-size: 132% 107%;
     background-position: 50% -100%;
   }
@@ -94,7 +100,7 @@ body, html{
 
 @media screen and (max-width: 767px){
   .Footer{
-    padding-top: 135px;
+    padding-top: 136px;
     background-size: 178% 107%;
     background-position: 55% -100%;
   }
@@ -133,10 +139,22 @@ body, html{
   }
 }
 
+@media screen and (min-width: 1570px){
+  .TopBackgroundSVG{
+    top: -784px;
+    width: 1990px;
+  }
+}
+
 @media screen and (min-width: 1900px){
   .LandingWrp, .Footer{
     display: flex;
     flex-direction: column;
+  }
+  .TopBackgroundSVG{
+    width: 2254px;
+    left: -20.1%;
+    top: -756px;
   }
 }
 

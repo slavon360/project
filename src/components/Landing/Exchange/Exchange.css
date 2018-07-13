@@ -3,6 +3,7 @@
   padding: 0 162px 0 159px;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 .Steps{
   width: 577px;
@@ -128,6 +129,32 @@
   }
   .Steps{
     width: 483px;
+    margin-bottom: 87px;
+  }
+  .Steps h2{
+    transform: translateX(-2px);
+    margin-bottom: 105px;
+  }
+  .Step{
+    margin-bottom: 87px;
+  }
+  .Step .Title::before{
+    left: -41px;
+  }
+  .Step .Title::after{
+    top: -15px;
+  }
+  .Step:nth-child(2) .Title{
+    margin-bottom: 11px;
+  }
+  .Step:nth-child(2) .Title::after{
+    top: -14px;
+  }
+  .Step:nth-child(3) .Description{
+    width: 450px;
+  }
+  .Step:nth-child(3){
+    margin-bottom: 97px;
   }
 }
 @media screen and (max-width: 1365px){
@@ -139,16 +166,29 @@
     width: 379px;
   }
   .Steps h2{
-    margin-bottom: 112px;
+    margin-bottom: 108px;
     font-size: 30px;
   }
   .Title, .Description{
     font-size: 14px;
   }
+  .Step{
+    margin-bottom: 83px;
+  }
+  .Step .Title::after, .Step:nth-child(2) .Title::after{
+    top: -16px;
+  }
+  .Step:nth-child(3){
+    margin-bottom: 113px;
+  }
+  .Step:nth-child(3) .Description, .Step:nth-child(4) .Description{
+    width: 350px;
+  }
   .InteractiveView{
     width: 493px;
     height: 340px;
     margin-top: 160px;
+    box-shadow: 0 6px 68px rgba(0,0,0, .1);
   }
 }
 @media screen and (max-width: 1023px){
@@ -166,25 +206,35 @@
   }
   .Steps{
     width: 100%;
+    margin-bottom: -5px;
   }
   .Steps h2{
     font-size: 24px;
-    margin-bottom: 85px;
+    margin-bottom: 81px;
     text-align: left;
+    transform: translateX(-1px);
   }
   .Step{
     display: inline-block;
     text-align: left;
   }
+  .Step .Title::before{
+    left: -29px;
+  }
   .Step:nth-child(2){
     width: 180px;
-    margin: 0 71px 0 31px;
+    margin: 0 71px 0 24px;
   }
   .Step:nth-child(3){
     width: 165px;
     margin: 0 84px 0 0;
+    vertical-align: top;
+  }
+  .Step:nth-child(3) .Description, .Step:nth-child(4) .Description{
+    width: auto;
   }
   .Step:nth-child(4){
+    vertical-align: top;
     width: 175px;
     margin: 0;
   }
@@ -193,6 +243,7 @@
     width: 493px;
     height: 340px;
     display: inline-block;
+    transform: translateX(-2px);
   }
 }
 
@@ -203,18 +254,48 @@
   }
   .Steps h2{
     font-size: 18px;
-    margin-bottom: 73px;
+    margin-bottom: 65px;
   }
   .Steps .Step{
-    margin: 0 0 0 20px;
+    margin: 0 0 0 18px;
     width: auto;
     display: block;
+  }
+  .Steps .Step .Description{
+    line-height: 1.5;
   }
   .Steps .Step:nth-child(2){
     margin-bottom: 336px;
   }
+  .Steps .Step:nth-child(2) .Title, .Steps .Step:nth-child(3) .Title{
+    margin-bottom: 12px;
+  }
+  .Steps .Step:nth-child(2) .Title::before{
+    left: -19px;
+  }
+  .Steps .Step:nth-child(2) .Title::after{
+    top: -19px;
+    left: 1px;
+  }
   .Steps .Step:nth-child(3){
-    margin-bottom: 62px;
+    margin-bottom: 57px;
+  }
+  .Steps .Step:nth-child(3) .Title::before{
+    left: -20px;
+  }
+  .Steps .Step:nth-child(3) .Title::after{
+    top: -19px;
+    left: 1px;
+  }
+  .Steps .Step:nth-child(4) .Description{
+    transform: translate(0, 2px);
+  }
+  .Steps .Step:nth-child(4) .Title::before{
+    left: -19px;
+  }
+  .Steps .Step:nth-child(4) .Title::after{
+    top: -18px;
+    left: 1px;
   }
   .Title::before{
     width: 40px;
@@ -244,7 +325,7 @@
 
 @media screen and (max-width: 614px){
   .InteractiveView{
-    transform: translateY(-490px);
+    transform: translateY(-494px);
   }
 }
 

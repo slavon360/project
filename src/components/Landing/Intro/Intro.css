@@ -57,6 +57,9 @@
     display: block;
     transform: translateY(-5px);
   }
+  .Advertise{
+    transform: translateX(2px);
+  }
 }
 
 @media screen and (min-width: 2270px){
@@ -69,16 +72,20 @@
 
 @media screen and (max-width: 1900px){
   .IntroWrp{
-    padding-left: 160px;
-    margin-bottom: 620px;
+    padding-left: 159px;
+    margin-bottom: 593px;
+  }
+  .IntroWrp .Bottom{
+    display: inline-block;
+    transform: translate(-1px, 1px);
   }
   .IntroWrp h1{
     font-size: 48px;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
   .Advertise{
     font-size: 18px;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
   }
   .CreateAccount{
     width: 240px;
@@ -93,47 +100,64 @@
 @media screen and (max-width: 1365px){
   .IntroWrp{
     padding-left: 60px;
-    margin-bottom: 365px;
+    margin-bottom: 496px;
+  }
+  .IntroWrp h1{
+    margin-bottom: 35px;
+  }
+  .Advertise{
+    transform: translateX(-2px);
   }
 }
 
 @media screen and (max-width: 1023px){
   .IntroWrp{
-    margin-bottom: 285px;
+    margin-bottom: 351px;
   }
   .IntroWrp h1{
     font-size: 36px;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
+  }
+  .IntroWrp .Bottom{
+    transform: translate(0px, 8px);
   }
   .Advertise{
+    transform: translateX(-1px);
     font-size: 16px;
     margin-bottom: 39px;
   }
   .CreateAccount{
+    transform: translateX(2px);
     width: 160px;
     height: 40px;
+    font-size: 14px;
   }
   .CreateAccount > a{
-    line-height: 2.5;
+    line-height: 2.8;
   }
 }
 
 @media screen and (max-width: 767px){
   .IntroWrp{
-    padding-left: 23px;
-    margin-bottom: 203px;
+    padding-left: 20px;
+    margin-bottom: 192px;
   }
   .IntroWrp h1{
     font-size: 24px;
+    margin-bottom: 29px;
   }
   .IntroWrp h1 .Top{
     margin-bottom: 0;
+  }
+  .IntroWrp h1 .Bottom{
+    transform: translate(0px, 4px);
   }
   .Advertise{
     font-size: 12px;
     margin-bottom: 30px;
   }
   .CreateAccount{
+    transform: translateX(0px);
     font-size: 14px;
   }
   .CreateAccount > a{

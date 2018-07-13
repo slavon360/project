@@ -66,22 +66,48 @@
 
 @media screen and (max-width: 1900px){
   .Header{
-    margin-bottom: 115px;
+    margin-bottom: 103px;
+    padding-top: 23px;
     padding-left: 59px;
     padding-right: 60px;
+  }
+  .Proportions::before{
+    top: 8px;
+    left: -19px;
+  }
+  .Proportions .Currencies{
+    padding-right: 10px;
+  }
+  .Proportions .Value{
+    display: inline-block;
+    transform: translateX(1px);
+  }
+  .SignUp{
+    margin-right: 76px;
   }
 }
 
 @media screen and (max-width: 1365px){
   .Header{
-    padding: 31px 122px 0 32px;
-    margin-bottom: 80px;
+    padding: 24px 122px 0 32px;
+    margin-bottom: 62px;
   }
   .Proportions{
     margin-right: 82px;
   }
-  .SignUp{
+  .Proportions::before{
+    width: 5px;
+    height: 5px;
+  }
+  .Proportions .Currencies{
+    padding-right: 7px;
+  }
+  .Proportions .Value{
+    transform: translateX(2px);
+  }
+  .RightSide .SignUp{
     margin-right: 38px;
+    transform: translate(2px, 11px);
   }
 }
 
@@ -90,21 +116,31 @@
     font-size: 12px;
   }
   .Header{
+    padding-top: 23px;
     padding-left: 30px;
     padding-right: 100px;
+    margin-bottom: 77px;
   }
-  .Proportions{
+  .RightSide .Proportions{
+    transform: translate(0px, 10px);
     margin-right: 62px;
   }
-  .SignUp{
+  .RightSide .SignUp{
     margin-right: 28px;
+    transform: translate(2px, 11px);
+  }
+  .RightSide .SignIn{
+    transform: translate(1px, 11px);
+  }
+  .RightSide .SignIn, .RightSide .SignUp{
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 767px){
   .Header{
-    padding: 27px 30px 0 23px;
-    margin-bottom: 65px;
+    padding: 22px 30px 0 23px;
+    margin-bottom: 68px;
   }
   .Logo{
     font-size: 18px;
@@ -115,8 +151,11 @@
   .RightSide .Proportions{
     display: none;
   }
-  .SignUp{
-    margin-right: 24px;
+  .RightSide .SignIn, .RightSide .SignUp{
+    font-size: 12px;
+  }
+  .RightSide .SignUp{
+    transform: translate(5px, 10px);
   }
 }
 
