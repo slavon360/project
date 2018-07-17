@@ -11,10 +11,8 @@
 
 @media screen and (min-width: 1900px){
   .App{
-    position: relative;
     display: flex;
     flex-direction: column;
-    height: auto;
   }
   .App main{
     display: flex;

@@ -267,3 +267,10 @@
     width: 105px;
   }
 }
+
+
+@media screen and (min-height: 1350px){
+  .UserDetailsWrp{
+    margin-bottom: 125px;
+  }
+}

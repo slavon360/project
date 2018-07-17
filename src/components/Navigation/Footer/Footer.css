@@ -56,22 +56,16 @@
 
 @media screen and (min-width: 1900px){
   .Footer{
-    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     padding-top: 12px;
     padding-left: 0;
     padding-right: 0;
-    width: 1585px;
-    background-color: transparent;
   }
-  .Footer::before{
-    content: '';
-    height: 100vh;
-    position: absolute;
-    bottom: -20vh;
-    width: 100%;
-    background-color: #2b2837;
-    left: 0;
-    z-index: -1;
+  .Footer .Top, .Footer .Bottom{
+    width: 1585px;
+    align-self: center;
   }
   .Footer .Word{
     padding-right: 52px;
@@ -236,5 +230,12 @@
   }
   .Footer .Bottom{
     padding-left: 1px;
+  }
+}
+
+@media screen and (min-height: 1192px) and (min-width: 2200px){
+  .Footer{
+    position: absolute;
+    bottom: 0;
   }
 }

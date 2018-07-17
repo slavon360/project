@@ -2,6 +2,7 @@
   position: relative;
   z-index: 10;
   padding: 24px 159px 35px 160px;
+  background-color: #fff;
 }
 .Logo{
   font-family: SegoeUI-Bold-Italic;
@@ -19,6 +20,16 @@
     padding: 24px 0 31px;
     width: 1585px;
     align-self: center;
+  }
+  .Toolbar::after{
+    content: '';
+    position: absolute;
+    left: -50vw;
+    right: -50vw;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #fff;
   }
 }
 

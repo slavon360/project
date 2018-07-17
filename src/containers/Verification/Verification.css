@@ -310,8 +310,26 @@
   }
 }
 
-@media screen and (min-height: 1080px) and (min-width: 2200px){
+@media screen and (min-height: 1024px) and (max-width: 1366px){
+  html{
+    height: 100%;
+  }
+  body{
+    position: relative;
+    margin: 0;
+    padding-bottom: 122px;
+    min-height: 100%;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
   .VerificationWrp{
-    height: 85vh;
+    min-height: 78vh;
+  }
+}
+
+@media screen and (min-height: 1350px){
+  .Content{
+    background-color: transparent;
+    box-shadow: none;
   }
 }

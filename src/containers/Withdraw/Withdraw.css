@@ -290,3 +290,17 @@
     height: 85vh;
   }
 }
+
+@media screen and (min-height: 1192px) and (min-width: 2200px){
+  html{
+    height: 100%;
+  }
+  body{
+    position: relative;
+    margin: 0;
+    padding-bottom: 122px;
+    min-height: 100%;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+}
