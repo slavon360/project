@@ -158,7 +158,7 @@
     transform: translate(5px, 10px);
   }
   .RightSide .SignIn{
-    transform: translate(0px, 9px);
+    transform: translate(0px, 10px);
   }
 }
 
@@ -167,10 +167,13 @@
     padding-left: 20px;
     margin-bottom: 55px;
   }
+  .RightSide .SignUp{
+    transform: translate(5px, 9px);
+  }
 }
 
 @media screen and (max-width: 359px){
   .Header{
-    padding-top: 17px;
+    padding-top: 12px;
   }
 }

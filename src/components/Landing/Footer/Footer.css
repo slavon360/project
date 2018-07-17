@@ -265,7 +265,10 @@
   .MiddleSide{
     font-size: 8px;
     width: 80px;
-    transform: translateY(-4px);
+    transform: translate(5px, -3px);
+  }
+  .LeftSide .Terms{
+    transform: translate(-1px, 3px);
   }
 }
 
@@ -277,7 +280,14 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .MiddleSide{
+    width: 73px;
+    transform: translate(-6px, -3px);
+  }
   .SocialIconsPhone .Telegram, .SocialIconsPhone .Facebook{
     margin-right: 20px;
+  }
+  .SocialIconsPhone .Telegram{
+    transform: translate(7px, -2px);
   }
 }

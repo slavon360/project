@@ -142,14 +142,24 @@ body, html{
     background-size: 148% 107%;
     background-position: 55% -100%;
   }
+  .TopBackgroundSVG{
+    top: -278px;
+    left: -222px;
+  }
+  .BottomBackgroundSVG{
+    transform: scale(1.75);
+  }
 }
 
 @media screen and (max-width: 359px){
   .Footer{
     background-size: 238% 107%;
     background-position: 55% -80%;
-    margin-top: 60px;
+    margin-top: 69px;
     padding-top: 95px;
+  }
+  .BottomBackgroundSVG{
+    bottom: 35px;
   }
 }
 

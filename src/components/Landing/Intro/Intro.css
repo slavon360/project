@@ -204,15 +204,21 @@
 @media screen and (max-width: 413px){
   .IntroWrp{
     padding-left: 20px;
-    margin-bottom: 185px;
+    margin-bottom: 180px;
   }
   .IntroWrp h1{
     font-size: 18px;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
+  }
+  .IntroWrp h1 .Top{
+    transform: translateX(-1px);
+  }
+  .IntroWrp h1 .Bottom{
+    transform: translate(0px, 2px);
   }
   .Advertise{
     font-size: 10px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
   .CreateAccount{
     width: 140px;
@@ -223,6 +229,6 @@
 
 @media screen and (max-width: 359px){
   .IntroWrp{
-    margin-bottom: 178px;
+    margin-bottom: 166px;
   }
 }

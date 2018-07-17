@@ -395,11 +395,14 @@
     transform: none;
     width: 115px;
   }
+  .WhyUseWrp h2{
+    margin-left: 24px;
+  }
 }
 
 @media screen and (max-width: 389px){
   .WhyUseWrp{
-    margin-bottom: 2px;
+    margin-bottom: 41px;
   }
   .WhyUseWrp h2{
     margin-left: 23px;
@@ -407,37 +410,63 @@
   .TabsWrp{
     padding: 0;
   }
+  .TabsWrp .Tab .Title{
+    font-size: 13px;
+    margin-bottom: 17px;
+    transform: translateY(1px);
+  }
   .Tab:first-child{
     width: 159px;
-    transform: translateX(125px);
+    transform: translateX(108px);
     margin-right: 48px;
+  }
+  .Tab:first-child .Icon{
+    top: -9px;
   }
   .Tab:nth-child(2){
     width: 152px;
-    transform: translate(-38px, -65px);
+    transform: translate(-54px, -55px);
     margin-right: 90px;
+  }
+  .Tab:nth-child(2) .Icon{
+    top: -11px;
+    left: 15px;
+  }
+  .Tab:nth-child(2) .Title{
+    transform: translate(12px, 0px);
+    margin-bottom: 16px;
   }
   .Tab:last-child{
     width: 148px;
-    transform: translate(75px, -78px);
+    transform: translate(64px, -43px);
+  }
+  .Tab:last-child .Icon{
+    top: -27px;
+    left: 18px;
+    transform: translateY(-7px);
+  }
+  .Tab:last-child .Title{
+    transform: translate(14px, -20px);
+    margin-bottom: -2px;
   }
 }
 
 @media screen and (max-width: 359px){
   .WhyUseWrp{
-    margin-bottom: -40px;
+    margin-bottom: 13px;
   }
   .WhyUseWrp h2{
-    margin-left: 59px;
+    line-height: 1.3;
+    margin-left: 60px;
     width: 81px;
   }
   .Tab:first-child{
-    transform: translate(112px, -35px);
+    transform: translate(90px, -22px);
   }
   .Tab:nth-child(2){
-    transform: translate(-18px, -100px);
+    transform: translate(-35px, -78px);
   }
   .Tab:last-child{
-    transform: translate(65px, -112px);
+    transform: translate(46px, -65px);
   }
 }
