@@ -205,9 +205,21 @@ body, html{
   }
 }
 
+@media screen and (min-width: 2300px){
+  .TopBackgroundSVG{
+    top: -33vw;
+  }
+}
+
 @media screen and (min-width: 2900px){
   .BottomBackgroundSVG{
     bottom: -27vw;
+  }
+}
+
+@media screen and (min-width: 3000px){
+  .TopBackgroundSVG{
+    top: -28.5vw;
   }
 }
 
@@ -215,10 +227,22 @@ body, html{
   .BottomBackgroundSVG{
     bottom: -33vw;
   }
+  .TopBackgroundSVG{
+    top: -26.5vw;
+  }
+}
+
+@media screen and (min-width: 3900px){
+  .TopBackgroundSVG{
+    top: -24vw;
+  }
 }
 
 @media screen and (min-width: 4460px){
   .BottomBackgroundSVG{
     bottom: -37vw;
+  }
+  .TopBackgroundSVG{
+    top: -18vw;
   }
 }
