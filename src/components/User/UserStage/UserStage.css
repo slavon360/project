@@ -1,5 +1,6 @@
 .UserStageWrp{
   display: inline-block;
+  cursor: pointer;
 }
 .UserStageWrp .Number{
   vertical-align: top;

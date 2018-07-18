@@ -44,6 +44,9 @@
 .SocialIconFacebook{
   padding-right: 40px;
 }
+.SocialIconTelegram > a:hover svg, .SocialIconFacebook > a:hover svg, .SocialIconTwitter > a:hover svg{
+  fill: #bbb !important;
+}
 .TradingVolume > span:first-child{
   padding-left: 38px;
 }
@@ -52,6 +55,9 @@
 }
 .TradingVolume .Digits{
   color: #fff;
+}
+.LeftSide > span a:hover{
+  color: #ddd;
 }
 
 @media screen and (min-width: 1900px){

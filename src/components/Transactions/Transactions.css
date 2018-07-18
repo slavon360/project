@@ -143,6 +143,15 @@
   color: #922c88;
   cursor: pointer;
 }
+.ViewAllBtn a{
+  font-size: 16px;
+  color: #922c88;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+.ViewAllBtn a:hover{
+  border-bottom: 1px solid #922c88;
+}
 @media screen and (min-width: 1900px){
   .Table tbody{
     height: 167px;

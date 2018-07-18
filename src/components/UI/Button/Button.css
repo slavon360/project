@@ -245,7 +245,7 @@
   box-shadow: 0 4px 10px 0 #e1e1e1;
   text-align: left;
 }
-.DropdownButtonUser:hover{
+.DropdownButtonUser:hover, .DropdownButtonLang:hover{
   border-color: #d092c9;
 }
 .DropdownButtonLang{

@@ -30,17 +30,17 @@ const footer = props => (
       <div className={classes.RightSide}>
         <span className={classes.Word}>{props.t('footer.social')}</span>
         <span className={classes.SocialIconTelegram}>
-          <NavLink to="" exact activeClassName={classes.active}>
+          <NavLink to="/telegram" exact activeClassName={classes.active}>
             <Telegram styles={{ fill: '#fff', width: '12px', height: '10px' }} />
           </NavLink>
         </span>
         <span className={classes.SocialIconFacebook}>
-          <NavLink to="" exact activeClassName={classes.active}>
+          <NavLink to="/facebook" exact activeClassName={classes.active}>
             <Facebook styles={{ fill: '#fff', width: '11px', height: '11px' }} />
           </NavLink>
         </span>
         <span className={classes.SocialIconTwitter}>
-          <NavLink to="" exact activeClassName={classes.active}>
+          <NavLink to="/twitter" exact activeClassName={classes.active}>
             <Twitter styles={{ fill: '#fff', width: '12px', height: '10px' }} />
           </NavLink>
         </span>

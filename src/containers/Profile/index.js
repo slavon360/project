@@ -82,6 +82,7 @@ class Profile extends Component {
               bodyData={this.state.balancesToShow}
               viewAll={this.viewAll}
               viewAllText="View all Balances"
+              viewAllLink="/balances"
               expanded={this.state.viewAll}
             />
           </div>

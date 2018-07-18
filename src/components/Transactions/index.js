@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import NextAngle from '../UI/Icons/NextAngle';
 import classes from './Transactions.css';
@@ -90,7 +91,7 @@ const transactions = (props) => {
           {bodyData}
         </tbody>
       </table>
-      {props.viewAllText ? <div className={classes.ViewAllBtn}>
+      {props.viewAllText && !props.viewAllLink ? <div className={classes.ViewAllBtn}>
         <span
           role="button"
           tabIndex={0}
@@ -98,6 +99,12 @@ const transactions = (props) => {
         >
           {!props.expanded ? props.viewAllText : 'Hide'}
         </span>
+      </div> : null}
+      {props.viewAllLink ? <div className={classes.ViewAllBtn}>
+        <NavLink
+          to={props.viewAllLink}
+          exact
+        >{props.viewAllText}</NavLink>
       </div> : null}
     </Fragment>
   );
