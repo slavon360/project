@@ -64,6 +64,9 @@
     transform: translateX(15px) !important;
     margin-right: 19px !important;
   }
+  .Help + div > button span{
+    transform: rotate(-90deg) translate(3px, -3px);
+  }
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1590px){

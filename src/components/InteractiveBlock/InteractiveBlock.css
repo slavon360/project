@@ -27,7 +27,7 @@
   padding-bottom: 39px;
   margin-bottom: 45px;
 }
-.Row .Cell .Unchecked:hover{
+.TwoFactorAuthentication .Row .Cell .Unchecked:hover{
   box-shadow: 0 4px 10px rgba(180, 27, 165, 0.2);
 }
 .TwoFactorAuthentication .Row:not(:last-child){

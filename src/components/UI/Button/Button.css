@@ -133,9 +133,10 @@
 .BtnCoin{
   width: 100%;
   height: 40px;
-  padding: 0 0 8px;
+  padding: 0 0 8px 19px;
   background-color: transparent;
   border-radius: 25px;
+  text-align: left;
   color: #555;
   box-shadow: 0 5px 10px 0 #eee;
   border: 2px solid transparent;
@@ -147,7 +148,7 @@
   transform: translateY(5px);
 }
 .BtnCoin span{
-  padding-left: 10px;
+  padding-left: 6px;
 }
 .BtnCoin:hover, .BtnCoin.Checked{
   border-color: #922c88;
@@ -222,11 +223,14 @@
   margin-right: 10px;
 }
 .DropdownButtonPeriod:hover,
-.BtnPeriod:hover, .DropdownButtonPeriodChecked, .BtnPeriodChecked{
+.BtnPeriod:hover{
+  box-shadow: 0 4px 21px rgba(57, 44, 114, 0.49);
+}
+.DropdownButtonPeriodChecked, .BtnPeriodChecked{
   background-color: #402d71;
   color: #fff;
 }
-.DropdownButtonPeriodChecked, .DropdownButtonPeriod:hover{
+.DropdownButtonPeriodChecked{
   fill: #fff;
 }
 .DropdownButtonUser{
@@ -408,6 +412,10 @@
 }
 
 @media screen and (min-width: 1900px){
+  .DropdownButtonUser{
+    padding-left: 18px;
+    padding-right: 22px;
+  }
   .BtnPeriod:nth-child(3){
     margin-right: 8px;
   }

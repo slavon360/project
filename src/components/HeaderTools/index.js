@@ -76,7 +76,8 @@ class HeaderTools extends Component {
     return (
       <div className={classes.HeaderToolsWrp}>
         <BalanceIndicator>
-          <span>{cryptVal}</span><span style={{ fontWeight: '700' }}> {cryptType} </span> /
+          <span>{cryptVal}</span><span style={{ fontWeight: '700' }}> {cryptType} </span>
+          <span>/</span>
           <span> {fiatVal}</span><span style={{ fontWeight: '700' }}> {fiatType}</span>
         </BalanceIndicator>
         <Dropdown

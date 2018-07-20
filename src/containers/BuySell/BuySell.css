@@ -45,6 +45,10 @@
   .TransactionsWrp .TableWrp table thead{
     padding-right: 69px;
   }
+  .TransactionsWrp .TableWrp table thead tr th:nth-child(2){
+    padding-right: 18px;
+    width: 139px;
+  }
 }
 
 @media screen and (max-width: 1919px){

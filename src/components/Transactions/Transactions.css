@@ -96,7 +96,7 @@
 }
 .Table .RowChecked{
   background-color: #f1dded;
-  height: 120px;
+  height: 108px;
 }
 .MoreInfoWrp{
   position: absolute;
@@ -135,6 +135,7 @@
 }
 .ViewAllBtn{
   text-align: center;
+  position: relative;
   margin-top: 23px;
 }
 .ViewAllBtn span{
@@ -152,6 +153,26 @@
 .ViewAllBtn a:hover{
   border-bottom: 1px solid #922c88;
 }
+.Table .Row::after{
+  content: '';
+  left: 0;
+  display: inline-block;
+  transform: translateY(-8px);
+  position: absolute;
+  width: 760px;
+  background-color: #f1dded;
+  height: 40px;
+  transition: height .5s;
+  opacity: 0;
+}
+.Table .Row:hover::after{
+  opacity: 1;
+}
+.Table .RowChecked::after{
+  opacity: 1;
+  height: 120px;
+}
+
 @media screen and (min-width: 1900px){
   .Table tbody{
     height: 167px;
@@ -167,6 +188,13 @@
 @media screen and (max-width: 1899px){
   .Table .Row td:nth-child(5){
     transform: translate(-33px, 0);
+  }
+  .Table .Row::after{
+    width: 566px;
+    transform: translateY(-3px);
+  }
+  .Table .RowChecked::after{
+    height: 109px;
   }
 }
 

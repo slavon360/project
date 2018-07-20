@@ -14,13 +14,35 @@
   height: 8px;
   border-radius: 50%;
 }
-.BalanceIndicatorWrp > span:nth-child(even){
+.BalanceIndicatorWrp > span:nth-child(5), .BalanceIndicatorWrp > span:nth-child(2){
   font-family: SegoeUI-Bold;
 }
 
 @media screen and (min-width: 1900px){
   .BalanceIndicatorWrp{
     margin-right: 35px;
+  }
+  .BalanceIndicatorWrp > span{
+    display: inline-block;
+  }
+  .BalanceIndicatorWrp::before{
+    left: -33px;
+  }
+  .BalanceIndicatorWrp > span:first-child{
+    transform: translateX(-15px);
+  }
+  .BalanceIndicatorWrp > span:nth-child(2){
+    transform: translateX(-13px);
+  }
+  .BalanceIndicatorWrp > span:nth-child(3){
+    transform: translateX(-11px);
+  }
+  .BalanceIndicatorWrp > span:nth-child(4){
+    transform: translateX(-1px);
+    font-weight: 400;
+  }
+  .BalanceIndicatorWrp > span:nth-child(5){
+    transform: translateX(2px);
   }
 }
 @media screen and (max-width: 1899px){
