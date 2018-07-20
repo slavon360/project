@@ -50,10 +50,14 @@
 }
 .Tab:first-child .Icon::before{
   left: -22px;
+  height: 140px;
+  width: 80px;
 }
 .Tab:last-child .Icon::before{
-  left: -24px;
-  transform: translateY(-3px) rotate(9deg);
+  left: -21px;
+  width: 80px;
+  height: 141px;
+  transform: translateY(-1px) rotate(9deg);
 }
 .Tab:first-child .Icon{
   width: 42px;
@@ -62,6 +66,12 @@
 .Tab:nth-child(2) .Icon{
   width: 27px;
   height: 42px;
+}
+.Tab:nth-child(2) .Icon::before{
+  top: -39px;
+  left: -27px;
+  height: 140px;
+  width: 80px;
 }
 .Tab:nth-child(3) .Icon{
   width: 36px;
@@ -78,11 +88,12 @@
 .Tab .Description{
   color: #83878c;
   font-size: 16px;
+  line-height: 1.2;
 }
 
 @media screen and (min-width: 1900px){
   .WhyUseWrp{
-    margin-bottom: 190px;
+    margin-bottom: 193px;
     overflow: hidden;
   }
   .WhyUseWrp h2{
