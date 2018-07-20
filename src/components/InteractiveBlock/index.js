@@ -33,7 +33,9 @@ const interactiveBlock = props => (
                   [classes.Checked]: cell.checked,
                   [classes.Unchecked]: !cell.checked,
                 })}
-              >{cell.checked ? cell.textEnabled : cell.textDisabled || cell.text}</button> : null}
+              >
+                <span>{cell.checked ? cell.textEnabled : cell.textDisabled || cell.text}</span>
+              </button> : null}
               {texts}
             </div>);
           })}

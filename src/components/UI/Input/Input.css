@@ -332,6 +332,10 @@
 .SertificateRadioWrp label:hover ~ .ThirdLabel, .SertificateRadioWrp input:checked ~ .ThirdLabel{
   border-color: #d092c9;
 }
+.GenderRadioWrp label:hover, .GenderRadioWrp input:checked,
+.SertificateRadioWrp label:hover, .SertificateRadioWrp input:checked{
+  color: #922c88 !important;
+}
 .GenderRadioWrp label:hover ~ .ThirdLabel svg,
 .GenderRadioWrp input:checked ~ .ThirdLabel svg, .SertificateRadioWrp label:hover ~ .ThirdLabel svg,
 .SertificateRadioWrp input:checked ~ .ThirdLabel svg{

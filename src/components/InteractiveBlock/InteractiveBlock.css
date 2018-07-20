@@ -61,6 +61,7 @@
 }
 .TwoFactorAuthentication .Cell button, .LoginPassword .Cell button{
   font-family: SegoeUI-Bold;
+  position: relative;
   width: 160px;
   height: 40px;
   color: #fff;
@@ -71,9 +72,30 @@
   border: none;
   outline: none;
   cursor: pointer;
+  overflow: hidden;
+}
+.TwoFactorAuthentication .Cell button > span, .LoginPassword .Cell button > span{
+  position: relative;
+  z-index: 1;
 }
 .TwoFactorAuthentication .Cell button.Checked{
   background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+}
+.TwoFactorAuthentication .Cell button.Checked::after,
+.LoginPassword .Cell button::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .5s;
+  background-image: linear-gradient(-110deg, #54236e 0%, #e02a82 100%);
+}
+.TwoFactorAuthentication .Cell button.Checked:hover::after,
+.LoginPassword .Cell button:hover::after{
+  opacity: 1;
 }
 .TwoFactorAuthentication .Cell button.Unchecked{
   background-image: none;

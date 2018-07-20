@@ -41,8 +41,10 @@
   background-color: #fff;
 }
 .VerificationNavBtn:hover, .VerificationNavBtn.Active{
-  border-color: #d092c9;
   box-shadow: 0 4px 35px 0 rgba(87, 7, 79, 0.26);
+}
+.VerificationNavBtn.Active{
+  border-color: #d092c9;
 }
 .MobileContent{
   transition: all .6s;
