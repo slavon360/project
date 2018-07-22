@@ -33,14 +33,16 @@ const userDetails = (props) => {
             wrpClasses={['GenderRadioWrp']}
             optionalLabels={{ third: <Checked
               styles={{ width: '12px', height: '10px', fill: '#922c88' }}
-            /> }}
+            />,
+            second: true }}
             elementConfig={{ label: 'Male', type: 'radio', name: 'gender', id: 'male' }}
           />
           <Input
             wrpClasses={['GenderRadioWrp']}
             optionalLabels={{ third: <Checked
               styles={{ width: '12px', height: '10px', fill: '#922c88' }}
-            /> }}
+            />,
+            second: true }}
             elementConfig={{ label: 'Female', type: 'radio', name: 'gender', id: 'female' }}
           />
         </div>
@@ -94,21 +96,24 @@ const userDetails = (props) => {
             wrpClasses={['SertificateRadioWrp']}
             optionalLabels={{ third: <Checked
               styles={{ width: '12px', height: '10px', fill: '#922c88' }}
-            /> }}
+            />,
+            second: true }}
             elementConfig={{ label: 'ID card', type: 'radio', id: 'idCart', name: 'sertificate' }}
           />
           <Input
             wrpClasses={['SertificateRadioWrp']}
             optionalLabels={{ third: <Checked
               styles={{ width: '12px', height: '10px', fill: '#922c88' }}
-            /> }}
+            />,
+            second: true }}
             elementConfig={{ label: 'Passport', type: 'radio', id: 'passport', name: 'sertificate' }}
           />
           <Input
             wrpClasses={['SertificateRadioWrp']}
             optionalLabels={{ third: <Checked
               styles={{ width: '12px', height: '10px', fill: '#922c88' }}
-            /> }}
+            />,
+            second: true }}
             elementConfig={{ label: 'Drive License', type: 'radio', id: 'driveLicense', name: 'sertificate' }}
           />
         </div>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import Input from '../../UI/Input';
 import Button from '../../UI/Button';
-import classes from './LoginForm.css';
+import classes from './SmsAuth.css';
 
 const loginForm = props => (
   <form className={classes.LoginFormWrp} >
@@ -45,11 +45,6 @@ loginForm.propTypes = {
   usersData: PropTypes.shape({
     email: PropTypes.string,
     password: PropTypes.string,
-    repeatPassword: PropTypes.string,
-    terms: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.bool,
-    ]),
   }),
   setUsersData: PropTypes.func,
 };

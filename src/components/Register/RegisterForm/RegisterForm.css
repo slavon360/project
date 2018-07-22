@@ -1,54 +1,62 @@
-.LoginFormWrp{
+.RegisterFormWrp{
   width: 100%;
-  padding: 29.35vh 0 0 3.5vw;
+  padding: 19.5vh 0 0 3.5vw;
   box-sizing: border-box;
 }
-.LoginFormWrp > div:first-child > input{
-  margin-bottom: 45px;
+.RegisterFormWrp > div:first-child > input{
+  margin-bottom: 20px;
 }
-.LoginFormWrp > div:first-child > input:hover, .LoginFormWrp > div:first-child > input:focus{
-  margin-bottom: 44px;
+.RegisterFormWrp > div:first-child > input:hover, .RegisterFormWrp > div:first-child > input:focus{
+  margin-bottom: 19px;
 }
-.LoginFormWrp > div:nth-child(2) > input{
-  margin-bottom: 60px;
+.RegisterFormWrp > div:nth-child(2) > input{
+  margin-bottom: 20px;
   letter-spacing: 4px;
   font-size: 30px;
   color: #d092c9;
 }
-.LoginFormWrp > div:nth-child(2) > input::-webkit-input-placeholder{
+.RegisterFormWrp > div:nth-child(2) > input::-webkit-input-placeholder, .RegisterFormWrp > div:nth-child(3) > input::-webkit-input-placeholder{
   letter-spacing: 0;
-  line-height: 8 !important;
   vertical-align: top;
 }
-.LoginFormWrp > div:nth-child(2) > input:hover, .LoginFormWrp > div:nth-child(2) > input:focus{
-  margin-bottom: 59px;
+.RegisterFormWrp > div:nth-child(2) > input:hover, .RegisterFormWrp > div:nth-child(2) > input:focus{
+  margin-bottom: 19px;
 }
-.LoginFormWrp .Footer{
+.RegisterFormWrp > div:nth-child(3) > input{
+  margin-bottom: 5px;
+  letter-spacing: 4px;
+  font-size: 30px;
+  color: #d092c9;
+}
+.RegisterFormWrp > div:nth-child(3) > input:hover, .RegisterFormWrp > div:nth-child(3) > input:focus{
+  margin-bottom: 4px;
+}
+.RegisterFormWrp .Footer{
   display: flex;
   justify-content: space-between;
 }
-.LoginFormWrp .Footer .Tip{
+.RegisterFormWrp .Footer .Tip{
   font-size: 12px;
   color: #9e9fa3;
 }
-.LoginFormWrp .Footer .Tip a{
+.RegisterFormWrp .Footer .Tip a{
   text-decoration: none;
 }
-.LoginFormWrp .Footer .Tip .Forgot a{
+.RegisterFormWrp .Footer .Tip .Forgot a{
   color: #9e9fa3;
 }
-.LoginFormWrp .Footer .Tip .Forgot a:hover{
+.RegisterFormWrp .Footer .Tip .Forgot a:hover{
   color: #922c88;
 }
-.LoginFormWrp .Footer .Tip .NotOnBithela{
+.RegisterFormWrp .Footer .Tip .NotOnBithela{
   transform: translateY(4px);
 }
-.LoginFormWrp .Footer .Tip .NotOnBithela a{
+.RegisterFormWrp .Footer .Tip .NotOnBithela a{
   display: inline-block;
   color: #922c88;
   position: relative;
 }
-.LoginFormWrp .Footer .Tip .NotOnBithela a::after{
+.RegisterFormWrp .Footer .Tip .NotOnBithela a::after{
   content: '';
   position: absolute;
   bottom: -1px;
@@ -58,7 +66,7 @@
   width: 100%;
   opacity: 0;
 }
-.LoginFormWrp .Footer .Tip .NotOnBithela a:hover:after{
+.RegisterFormWrp .Footer .Tip .NotOnBithela a:hover:after{
   opacity: 1;
 }
 .LoginBtnInnerWrp{
@@ -66,13 +74,13 @@
 }
 
 @media screen and (min-width: 1921px){
-  .LoginFormWrp > div input{
+  .RegisterFormWrp > div input{
     font-size: 1.85vw
   }
-  .LoginFormWrp > div input::-webkit-input-placeholder{
+  .RegisterFormWrp > div input::-webkit-input-placeholder{
     font-size: 1.4vw;
   }
-  .LoginFormWrp .Footer .Tip{
+  .RegisterFormWrp .Footer .Tip{
     font-size: 1vw;
   }
   .LoginBtnInnerWrp{
@@ -95,13 +103,13 @@
 }
 
 @media screen and (max-width: 1919px){
-  .LoginFormWrp{
+  .RegisterFormWrp{
     padding: 27.1vh 0 0 2.2vw
   }
 }
 
 @media screen and (max-width: 1023px){
-  .LoginFormWrp{
+  .RegisterFormWrp{
     width: 336px;
     display: inline-block;
     text-align: left;
@@ -110,56 +118,56 @@
 }
 
 @media screen and (max-height: 1140px) and (max-width: 1023px){
-  .LoginFormWrp{
+  .RegisterFormWrp{
     padding-top: 5vh;
   }
 }
 
 @media screen and (max-height: 875px) and (max-width: 1023px){
-  .LoginFormWrp{
+  .RegisterFormWrp{
     padding-top: 2vh;
   }
 }
 
 @media screen and (max-width: 823px) and (max-height: 411px){
-  .LoginFormWrp{
+  .RegisterFormWrp{
     padding-top: 6vh;
   }
 }
 
 @media screen and (max-width: 812px) and (max-height: 375px){
-  .LoginFormWrp{
+  .RegisterFormWrp{
     padding-top: 6vh;
   }
 }
 
 @media screen and (max-width: 767px){
-  .LoginFormWrp{
+  .RegisterFormWrp{
     padding-top: 13.8vh;
     width: 100%;
   }
-  .LoginFormWrp > div:first-child > input{
+  .RegisterFormWrp > div:first-child > input{
     margin-bottom: 31px;
   }
-  .LoginFormWrp > div:first-child > input:hover, .LoginFormWrp > div:first-child > input:focus{
+  .RegisterFormWrp > div:first-child > input:hover, .RegisterFormWrp > div:first-child > input:focus{
     margin-bottom: 30px;
   }
-  .LoginFormWrp > div:nth-child(2) > input{
+  .RegisterFormWrp > div:nth-child(2) > input{
     margin-bottom: 40px;
   }
-  .LoginFormWrp > div:nth-child(2) > input:hover, .LoginFormWrp > div:nth-child(2) > input:focus{
+  .RegisterFormWrp > div:nth-child(2) > input:hover, .RegisterFormWrp > div:nth-child(2) > input:focus{
     margin-bottom: 39px;
   }
 }
 
 @media screen and (max-width: 413px){
-  .LoginFormWrp{
+  .RegisterFormWrp{
     padding-top: 8vh;
   }
-  .LoginFormWrp input{
+  .RegisterFormWrp input{
     font-size: 14px;
   }
-  .LoginFormWrp .Footer .Tip{
+  .RegisterFormWrp .Footer .Tip{
     font-size: 10px;
   }
   .Footer .Tip .Forgot{

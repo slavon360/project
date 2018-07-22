@@ -82,7 +82,10 @@ const input = (props) => {
 
 input.propTypes = {
   changeValue: PropTypes.func,
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.bool,
+  ]),
   labelClasses: PropTypes.arrayOf(PropTypes.string),
   wrpClasses: PropTypes.arrayOf(PropTypes.string),
   inputClasses: PropTypes.arrayOf(PropTypes.string),

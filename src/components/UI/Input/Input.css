@@ -2,149 +2,6 @@
   outline: none;
   border: none;
 }
-.SecretCodeAuthSupportBottom{
-  display: inline-block;
-  margin-right: 6px;
-}
-.SecretCodeAuthSupportBottom > input{
-  height: 50px;
-  width: 382px;
-  font-size: 18px;
-  border-radius: 24px;
-  border: 1px solid #e8e8e8;
-  outline: none;
-  padding-left: 64px;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-.SecretCodeAuthSupportTop{
-  vertical-align: top;
-  display: inline-block;
-}
-.SecretCodeAuthSupportTop > input{
-  width: 302px;
-  height: 52px;
-  color: #922c88;
-  font-size: 18px;
-  padding-left: 64px;
-  border: 1px solid #922c88;
-  border-radius: 25px;
-  box-sizing: border-box;
-  cursor: pointer;
-  outline: none;
-}
-.CurrentPassword, .NewPassword, .ConfirmNewPassword, .AuthentCode{
-  width: 100%;
-}
-.CurrentPassword > input, .NewPassword > input, .ConfirmNewPassword > input, .AuthentCode > input{
-  width: 100%;
-  padding-bottom: 15px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #e8e8e8;
-  letter-spacing: 4px;
-  font-size: 28px;
-  color: #d092c9;
-  cursor: pointer;
-}
-.AuthentCode > input{
-  font-size: 14px;
-  color: #9e9fa3;
-  letter-spacing: 0;
-  margin: 100px 0 137px;
-}
-.CurrentPassword > input:hover, .CurrentPassword > input:focus,
-.NewPassword > input:hover, .NewPassword > input:focus,
-.ConfirmNewPassword > input:hover, .ConfirmNewPassword > input:focus,
-.AuthentCode > input:hover, .AuthentCode > input:focus{
-  border-bottom: 2px solid #d092c9;
-}
-.CurrentPassword > input:hover, .CurrentPassword > input:focus{
-  margin-bottom: 47px;
-}
-.NewPassword > input:hover, .NewPassword > input:focus{
-  margin-bottom: 58px;
-}
-.ConfirmNewPassword > input:hover, .ConfirmNewPassword > input:focus{
-  margin-bottom: 46px;
-}
-.AuthentCode > input:hover, .AuthentCode > input:focus{
-  margin-bottom: 136px;
-}
-.CurrentPassword > input::-webkit-input-placeholder,
-.NewPassword > input::-webkit-input-placeholder,
-.ConfirmNewPassword > input::-webkit-input-placeholder,
-.AuthentCode > input::-webkit-input-placeholder{
-  color: #9e9fa3;
-  font-size: 14px;
-  letter-spacing: 0;
-}
-.CurrentPassword > input{
-  margin-bottom: 48px;
-}
-.NewPassword > input{
-  margin-bottom: 59px;
-}
-.ConfirmNewPassword > input{
-  margin-bottom: 47px;
-}
-.SMSAuthCode, .LoginPasswordAuthent, .DisableSMSAuthCode{
-  width: 100%;
-  height: 42px;
-  margin-bottom: 8px;
-  position: relative;
-}
-.LoginPasswordAuthent > input:hover,
-.LoginPasswordAuthent > input:focus,
-.DisableSMSAuthCode > input:hover,
-.DisableSMSAuthCode > input:focus{
-  border: 2px solid #d092c9;
-}
-.LoginPasswordAuthent{
-  margin-bottom: 50px;
-}
-.SMSAuthCode > input, .LoginPasswordAuthent > input, .DisableSMSAuthCode > input{
-  outline: none;
-  font-size: 14px;
-  font-weight: 700;
-  color: #41424e;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  border: 1px solid #e8e8e8;
-  border-radius: 20px;
-  background-color: #fff;
-  padding-left: 28px;
-}
-.LoginPasswordAuthent > input, .DisableSMSAuthCode > input{
-  padding-left: 24px;
-  cursor: pointer;
-}
-.LoginPasswordAuthent > input{
-  letter-spacing: 4px;
-  font-size: 28px;
-  color: #d092c9;
-}
-.PhoneNumberAuthent{
-  display: inline-block;
-  width: 182px;
-  height: 42px;
-  vertical-align: top;
-}
-.PhoneNumberAuthent > input{
-  font-family: SegoeUI-Bold;
-  outline: none;
-  font-size: 14px;
-  font-weight: 700;
-  color: #41424e;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  border: 1px solid #e8e8e8;
-  border-radius: 20px;
-  background-color: #fff;
-  padding-left: 28px;
-}
 .InputBuySell{
   border-bottom: 2px solid #d192c7;
   padding-bottom: 5px;
@@ -159,7 +16,7 @@
   display: inline-block;
 }
 .AmountWrpLeft, .AmountWrpRight{
-  width: calc(100% - 50% - 40px);
+  width: calc(100% - 50% - 45px);
   position: relative;
 }
 .AmountWrpLeft{
@@ -171,24 +28,13 @@
 .AmountLabel{
   position: absolute;
   right: 0;
-  bottom: 7px;
+  bottom: 10px;
   color: #333;
   font-size: 14px;
   font-weight: 700;
 }
 .WithdrawAmount{
   margin-top: 32px;
-  position: relative;
-}
-.WithdrawAmount .OptionalButton{
-  cursor: pointer;
-  font-size: 14px;
-  color: #41424e;
-  font-weight: 400;
-  position: absolute;
-  top: 54px;
-  right: 19px;
-  background-color: transparent;
 }
 .WithdrawAmount .SecondLabel,
 .WithdrawAmount .ThirdLabel,
@@ -222,7 +68,6 @@
   text-align: right;
 }
 .DepositAddress input, .WithdrawAddress input, .WithdrawAmount input{
-  font-family: SegoeUI-Bold;
   width: 100%;
   height: 48px;
   background-color: #fff;
@@ -232,13 +77,12 @@
   border: 2px solid transparent;
   outline: none;
   box-sizing: border-box;
-  padding-left: 17px;
+  padding-left: 19px;
 }
 .DepositAddress input:hover, .WithdrawAddress input:hover, .WithdrawAmount input:hover{
   border-color: #d192c7;
 }
 .DepositAddress label, .WithdrawAddress label, .WithdrawAmount label{
-  font-family: SegoeUI-Bold;
   display: block;
   font-size: 14px;
   color: #41424e;
@@ -259,14 +103,14 @@
 .InputRequestWrp input{
   height: 19px;
   border-bottom: 1px solid #f3ecf3 !important;
-  padding-bottom: 14px;
+  padding-bottom: 18px;
   position: relative;
-  margin-bottom: 44px;
+  margin-bottom: 48px;
 }
 .InputRequestWrp input:hover,
 .InputRequestWrp input:focus{
   border-bottom: 2px solid #d092c9 !important;
-  margin-bottom: 43px;
+  margin-bottom: 47px;
 }
 .InputRequestWrp textarea:hover, .InputRequestWrp textarea:focus{
   border-bottom: 2px solid #d092c9 !important;
@@ -280,22 +124,21 @@
 }
 .InputRequestWrp textarea{
   height: 96px;
-  margin-bottom: 61px;
+  margin-bottom: 69px;
   padding: 7px 0 0;
   box-sizing: border-box;
   border-bottom: 1px solid #f3ecf3 !important;
   resize: none;
 }
+.InputRequestWrp textarea::-webkit-input-placeholder{
+  color: #41424e;
+  padding-top: 68px;
+  font-size: 11px;
+  font-family: SegoeUI;
+}
 .InputRequestWrp input::-webkit-input-placeholder,
 .InputRequestWrp label{
   color: #9e9fa3;
-  font-size: 14px;
-}
-.InputRequestWrp textarea::-webkit-input-placeholder{
-  color: #41424e;
-  padding-top: 55px;
-  font-size: 11px;
-  font-family: SegoeUI;
 }
 .BankAccountNickname input{
   margin-bottom: 39px !important;
@@ -311,7 +154,6 @@
   position: relative;
 }
 .GenderRadioWrp label, .SertificateRadioWrp label{
-  font-family: SegoeUI-Bold;
   font-size: 16px !important;
   font-weight: 700 !important;
   color: #41424e !important;
@@ -319,6 +161,9 @@
   position: relative;
   z-index: 3;
   cursor: pointer;
+}
+.GenderRadioWrp label:hover, .SertificateRadioWrp label:hover{
+  color: #922c88 !important;
 }
 .GenderRadioWrp input, .SertificateRadioWrp input{
   display: none;
@@ -328,17 +173,9 @@
 .SertificateRadioWrp input:checked{
   border-color: transparent;
 }
-.GenderRadioWrp label:hover ~ .ThirdLabel, .GenderRadioWrp input:checked ~ .ThirdLabel,
-.SertificateRadioWrp label:hover ~ .ThirdLabel, .SertificateRadioWrp input:checked ~ .ThirdLabel{
-  border-color: #d092c9;
-}
-.GenderRadioWrp label:hover, .GenderRadioWrp input:checked,
-.SertificateRadioWrp label:hover, .SertificateRadioWrp input:checked{
-  color: #922c88 !important;
-}
-.GenderRadioWrp label:hover ~ .ThirdLabel svg,
-.GenderRadioWrp input:checked ~ .ThirdLabel svg, .SertificateRadioWrp label:hover ~ .ThirdLabel svg,
-.SertificateRadioWrp input:checked ~ .ThirdLabel svg{
+.GenderRadioWrp label:hover ~ .ThirdLabel,
+.GenderRadioWrp input:checked ~ .ThirdLabel, .SertificateRadioWrp label:hover ~ .ThirdLabel,
+.SertificateRadioWrp input:checked ~ .ThirdLabel{
   opacity: 1;
 }
 .GenderRadioWrp .SecondLabel,
@@ -355,11 +192,11 @@
 .GenderRadioWrp .ThirdLabel, .SertificateRadioWrp .ThirdLabel{
   left: -1px;
   top: -1px;
-  border: 2px solid #e8e8e8;
+  border: 2px solid #d092c9;
+  opacity: 0;
 }
 .GenderRadioWrp .ThirdLabel svg, .SertificateRadioWrp .ThirdLabel svg{
   transform: translate(5px, -1px);
-  opacity: 0;
 }
 .GenderRadioWrp .SecondLabel, .SertificateRadioWrp .SecondLabel{
   border: 1px solid #e8e8e8;
@@ -383,93 +220,111 @@
   float: right;
   color: #9e9fa3;
 }
-.LoginInputWrp.LoginInputWrpRaised label{
+.LoginInputWrp.LoginInputWrpRaised > label, .RegisterInputWrp.RegisterInputWrpRaised > label{
   opacity: 1;
   transform: translateY(-20%);
-  transition: all .5s;
+  z-index: 0;
 }
-.LoginInputWrp label{
-  font-size: 16px;
-  color: #9e9fa3;
-  font-weight: 100;
+.LoginInputWrp.LoginInputWrpRaised:first-child > label, .RegisterInputWrp.RegisterInputWrpRaised:first-child > label{
+  transform: translateY(-60%);
+}
+.LoginInputWrp:nth-child(2) > input, .RegisterInputWrp:nth-child(2) > input{
+  padding-bottom: 16px;
+}
+.LoginInputWrp.LoginInputWrpRaised:nth-child(2), .RegisterInputWrp.RegisterInputWrpRaised:nth-child(2){
+  margin-top: 13px;
+}
+.RegisterInputWrp.RegisterInputWrpRaised:nth-child(3){
+  margin-top: 16px;
+}
+.LoginInputWrp.LoginInputWrpRaised:nth-child(2) > input, .RegisterInputWrp.RegisterInputWrpRaised:nth-child(2) > input,
+.RegisterInputWrp.RegisterInputWrpRaised:nth-child(3) > input{
+  padding-bottom: 3px;
+}
+.LoginInputWrp > label, .RegisterInputWrp > label{
+  transition: transform .5s;
+  position: relative;
+  z-index: -1;
   display: inline-block;
   opacity: 0;
+  font-size: 16px;
+  font-weight: 100;
+  color: #9e9fa3;
   transform: translateY(70%);
 }
-.LoginInputWrp > input{
+.LoginInputWrp > input, .RegisterInputWrp > input{
+  cursor: pointer;
   font-size: 16px;
   color: #922c88;
   border: none;
   width: 100%;
   outline: none;
-  padding-bottom: 16px;
+  padding-bottom: 19px;
   border-bottom: 1px solid #e8e8e8;
 }
-.LoginInputWrp > input:hover, .LoginInputWrp > input:focus{
+.LoginInputWrp > input:hover, .LoginInputWrp > input:focus, .RegisterInputWrp > input:hover, .RegisterInputWrp > input:focus{
   border-bottom: 2px solid #d092c9;
 }
-.LoginInputWrp > input::-webkit-input-placeholder{
+.LoginInputWrp > input::-webkit-input-placeholder, .RegisterInputWrp > input::-webkit-input-placeholder{
   color: #9e9fa3;
   font-size: 14px;
 }
-.OptionalButton{
-  outline: none;
-  border: none;
+.RegisterTermsOfUse{
+  position: relative;
+  z-index: 1;
 }
-
-@media screen and (min-width: 1900px){
-  .WithdrawAddress{
-    margin-top: -17px;
-  }
-  .WithdrawAmount{
-    margin-top: 25px;
-  }
-  .WithdrawAmount .ThirdLabel, .WithdrawAmount .FourthLabel{
-    margin-top: 8px;
-  }
+.RegisterTermsOfUse > input{
+  display: none;
 }
-
-@media screen and (max-width: 1899px){
-  .WithdrawAmount{
-    margin-top: 25px;
-  }
-  .WithdrawAmount .OptionalButton{
-    right: 12px;
-  }
-  .WithdrawAmount .ThirdLabel, .WithdrawAmount .FourthLabel{
-    margin-top: 8px;
-  }
+.RegisterTermsOfUse > label{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #d092c9;
+  cursor: pointer;
+  background-color: transparent;
 }
-
-@media screen and (max-width: 1850px){
-  .SecretCodeAuthSupportBottom > input{
-    width: 328px;
-  }
+.RegisterTermsOfUse .SecondLabel{
+  display: inline-block;
+  transform: translateY(-75%);
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #41424e;
+}
+.RegisterTermsOfUse .ThirdLabel{
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #932c88;
+  z-index: -1;
+  opacity: 0;
+}
+.RegisterTermsOfUse > input:checked + .ThirdLabel{
+  opacity: 1;
+}
+.RegisterTermsOfUse .ThirdLabel svg{
+  transform: translateY(3px);
+}
+.RegisterTermsOfUse .SecondLabel a{
+  color: #922c88;
+  text-decoration: none;
+}
+.RegisterTermsOfUse .SecondLabel a:hover{
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 767px){
-  .SecretCodeAuthSupportBottom{
-    margin-right: 11px;
-  }
-  .SecretCodeAuthSupportBottom > input{
-    width: 183px;
-    height: 43px;
-  }
-  .SecretCodeAuthSupportTop > input{
-    width: 182px;
-    height: 43px;
-  }
   .InputBuySell{
     font-size: 14px;
-    padding-bottom: 7px;
   }
   .AmountLabel{
-    bottom: 9px;
     font-size: 12px;
-    font-family: SegoeUI-Bold;
-  }
-  .AmountWrpLeft, .AmountWrpRight{
-    width: calc(100% - 50% - 27px);
   }
   .NationalityWrp .SecondLabel{
     font-size: 12px;
@@ -481,27 +336,16 @@
   .GenderRadioWrp label{
     font-size: 14px !important;
   }
-  .DepositAddress label{
-    font-size: 11px;
-  }
-  .InputRequestWrp input{
-    padding-bottom: 13px;
-  }
 }
 @media screen and (max-width: 519px){
-  .InputRequestWrp textarea{
-    height: 62px;
-    margin-bottom: 54px;
-  }
   .InputRequestWrp textarea::-webkit-input-placeholder{
-    padding-top: 18px;
-    font-size: 10px;
+    padding-top: 45px;
   }
 }
 @media screen and (max-width: 414px){
   .InputRequestWrp input{
     font-size: 12px;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
   }
   .InputRequestWrp input:hover, .InputRequestWrp input:focus{
     margin-bottom: 29px;
@@ -515,107 +359,26 @@
 }
 
 @media screen and (max-width: 413px){
-  .GenderRadioWrp .ThirdLabel{
-    left: 0;
-    top: -2px;
-  }
-  .NationalityWrp .SecondLabel{
-    font-size: 10px;
-    transform: translate(1px, 2px);
-  }
-  .InputRequestWrp input:hover, .InputRequestWrp input:focus{
-    margin-bottom: 21px;
-  }
-  .InputRequestWrp textarea{
-    padding-top: 6px;
-  }
-  .DepositAddress label, .WithdrawAddress label{
-    margin-bottom: 11px;
-    font-size: 11px;
-  }
-  .WithdrawAddress input{
-    font-size: 12px;
-  }
-  .PhoneNumberAuthent{
-    width: 152px;
-  }
-  .DisableSMSAuthCode{
-    margin-bottom: 27px;
-  }
-  .LoginPasswordAuthent{
-    margin-bottom: 19px;
-  }
-  .SecretCodeAuthSupportTop > input{
-    width: 153px;
-  }
-  .SecretCodeAuthSupportBottom{
-    margin-right: 7px;
-  }
-  .SecretCodeAuthSupportBottom > input{
-    width: 173px;
-  }
-  .WithdrawAmount .SecondLabel, .WithdrawAmount label{
-    font-size: 11px;
-  }
-  .WithdrawAmount label{
-    margin-bottom: 11px;
-  }
-  .WithdrawAmount > input::-webkit-input-placeholder, .WithdrawAmount > input{
-    font-size: 12px;
-  }
   .WithdrawAmount .SecondLabel{
-    transform: translateY(5px);
-  }
-  .WithdrawAmount .OptionalButton{
-    top: 46px;
-  }
-  .WithdrawAmount .ThirdLabel, .WithdrawAmount .FourthLabel{
-    display: block;
-    float: none;
-  }
-  .WithdrawAmount .ThirdLabel{
-    margin-top: 20px;
+    font-size: 13px;
   }
   .SertificateRadioWrp label{
     padding-left: 29px;
     font-size: 12px !important;
   }
-  .SertificateRadioWrp:nth-child(2) label{
-    padding-left: 30px;
-    margin-right: 15px !important;
-  }
   .LoginInputWrp > input::-webkit-input-placeholder{
     font-size: 12px;
-  }
-  .AmountWrpLeft, .AmountWrpRight{
-    width: calc(100% - 50% - 28px);
   }
 }
 
 @media screen and (max-width: 359px){
-  .WithdrawAmount{
-    margin-top: 20px;
-  }
-  .PhoneNumberAuthent{
-    width: 112px;
-  }
-  .SecretCodeAuthSupportTop > input,
-  .SecretCodeAuthSupportBottom > input{
-    width: 132px;
-  }
-  .DepositAddress input, .WithdrawAddress input, .WithdrawAmount input{
-    padding-left: 19px;
-  }
   .DepositAddress label{
     margin-bottom: 10px;
   }
   .AmountLabel{
-    transform: translateY(0);
+    transform: translateY(3px);
   }
   .NationalityWrp .SecondLabel{
     font-size: 10px;
-  }
-  .Top .Tip{
-    width: 99px;
   }
 }
