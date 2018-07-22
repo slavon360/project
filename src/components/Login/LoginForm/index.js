@@ -1,19 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import cx from 'classnames';
 import Input from '../../UI/Input';
 import Button from '../../UI/Button';
 import classes from './LoginForm.css';
 
-const loginForm = () => (
+const loginForm = props => (
   <form className={classes.LoginFormWrp} >
     <Input
-      wrpClasses={['LoginInputWrp']}
+      changeValue={event => props.setUsersData(event, 'email')}
+      value={props.usersData.email}
+      wrpClasses={cx('LoginInputWrp', { LoginInputWrpRaised: props.usersData.email }).split(' ')}
       elementType={'input'}
-      elementConfig={{ placeholder: 'Email' }}
+      elementConfig={{ placeholder: 'Email', type: 'email', label: 'Email' }}
     />
     <Input
-      wrpClasses={['LoginInputWrp']}
+      changeValue={event => props.setUsersData(event, 'password')}
+      value={props.usersData.password}
+      wrpClasses={cx('LoginInputWrp', { LoginInputWrpRaised: props.usersData.password }).split(' ')}
       elementType={'input'}
-      elementConfig={{ placeholder: 'Password' }}
+      elementConfig={{ placeholder: 'Password', type: 'password', label: 'Password' }}
     />
     <div className={classes.Footer}>
       <div className={classes.Tip}>
@@ -34,3 +40,11 @@ const loginForm = () => (
 );
 
 export default loginForm;
+
+loginForm.propTypes = {
+  usersData: PropTypes.shape({
+    email: PropTypes.string,
+    password: PropTypes.string,
+  }),
+  setUsersData: PropTypes.func,
+};

@@ -3,6 +3,7 @@
   z-index: 10;
   padding: 24px 159px 35px 160px;
   background-color: #fff;
+  display: none;
 }
 .Logo{
   font-family: SegoeUI-Bold-Italic;

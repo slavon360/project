@@ -15,7 +15,7 @@ import Layout from './hoc/Layout';
 
 // import ChangePassword from './components/Modals/ChangePassword';
 
-// import Login from './containers/Login';
+import Login from './containers/Login';
 
 import TermsOfUse from './components/TermsOfUse';
 import BuySell from './containers/BuySell';
@@ -44,6 +44,7 @@ class App extends Component {
             <Route path="/help" component={Faq} />
             <Route path="/profile" component={Profile} />
             <Route path="/verification" component={Verification} />
+            <Route path="/login" component={Login} />
             <Redirect to="/buy-sell" />
           </Switch>
         </Layout>

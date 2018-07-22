@@ -383,6 +383,19 @@
   float: right;
   color: #9e9fa3;
 }
+.LoginInputWrp.LoginInputWrpRaised label{
+  opacity: 1;
+  transform: translateY(-20%);
+  transition: all .5s;
+}
+.LoginInputWrp label{
+  font-size: 16px;
+  color: #9e9fa3;
+  font-weight: 100;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(70%);
+}
 .LoginInputWrp > input{
   font-size: 16px;
   color: #922c88;
