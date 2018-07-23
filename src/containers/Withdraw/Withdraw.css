@@ -16,6 +16,7 @@
   padding: 23px 61px 18px 55px;
   background-color: #fff;
   box-sizing: border-box;
+  position: relative;
 }
 .TableWrp.TableWrpExpanded{
   max-height: inherit;
@@ -38,6 +39,10 @@
 }
 .TableWrp table tbody tr:hover{
   background-color: #f1dded;
+}
+.TableWrp table tbody tr td{
+  position: relative;
+  z-index: 1;
 }
 .TableWrp tbody td:first-child{
   width: 135px;

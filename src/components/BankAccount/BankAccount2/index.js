@@ -1,11 +1,11 @@
 import React from 'react';
 import cx from 'classnames';
 import PropTypes from 'prop-types';
-import Button from '../UI/Button';
-import Input from '../UI/Input';
-import classes from './BankAccount.css';
+import Button from '../../UI/Button';
+import Input from '../../UI/Input';
+import classes from './BankAccount2.css';
 
-const bankAccount = props => (
+const bankAccount2 = props => (
   <div className={classes.BankAccountWrp}>
     <h2 className={classes.Title}>Bank account</h2>
     <div className={classes.Note}>{props.bankAccount.note}</div>
@@ -34,14 +34,23 @@ const bankAccount = props => (
         wrpClasses={cx('BankAccountNickname UserDetailsInputWrp', { UserDetailsInputWrpRaised: props.bankAccount.accountNickname }).split(' ')}
         value={props.bankAccount.accountNickname}
       />
+      <Button btnClasses={['BankVerification', 'BankVerificationFirst']}>
+        Start Verification
+      </Button>
+      <Input
+        changeValue={event => props.setUsersData(event, 'accountNickname2')}
+        elementConfig={{ placeholder: 'Account Nickname', label: 'Account Nickname' }}
+        wrpClasses={cx('BankAccountNickname UserDetailsInputWrp', { UserDetailsInputWrpRaised: props.bankAccount.accountNickname2 }).split(' ')}
+        value={props.bankAccount.accountNickname2}
+      />
       <Button btnClasses={['BankVerification']}>
-        <div><a href="/bithela/verification-bank-2">Start Verification</a></div>
+        <div>Start Verification</div>
       </Button>
     </div>
   </div>
 );
 
-bankAccount.propTypes = {
+bankAccount2.propTypes = {
   bankAccount: PropTypes.shape({
     accountName: PropTypes.string,
     bsb: PropTypes.string,
@@ -50,4 +59,4 @@ bankAccount.propTypes = {
   }),
 };
 
-export default bankAccount;
+export default bankAccount2;

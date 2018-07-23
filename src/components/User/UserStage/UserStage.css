@@ -31,6 +31,24 @@
 .UserStageWrp .RightSide .Status{
   font-size: 14px;
 }
+.UserStageWrp .DashedArea{
+  position: absolute;
+  width: 55px;
+  height: 2px;
+  top: 17px;
+  left: 173px;
+}
+.UserStageWrp .DashedArea > div{
+  display: inline-block;
+  margin-right: 4px;
+  width: 6px;
+  height: 2px;
+  background-color: #e3e3e3;
+  vertical-align: top;
+}
+.UserStageWrp:last-child .DashedArea{
+  display: none;
+}
 
 @media screen and (min-width: 1900px){
   .UserStageWrp:first-child .Number{
@@ -47,6 +65,14 @@
   }
 }
 @media screen and (max-width: 1365px){
+  .UserStageWrp:first-child .DashedArea{
+    left: 155px;
+    top: 19px;
+  }
+  .UserStageWrp:nth-child(2) .DashedArea{
+    left: 165px;
+    top: 19px;
+  }
   .UserStageWrp .Number{
     transform: translateY(2px);
   }
@@ -62,6 +88,12 @@
 }
 
 @media screen and (max-width: 1023px){
+  .UserStageWrp:first-child .DashedArea{
+    left: 158px;
+  }
+  .UserStageWrp:nth-child(2) .DashedArea{
+    left: 162px;
+  }
   .UserStageWrp:first-child{
     margin-right: 84px !important;
   }
@@ -74,6 +106,9 @@
 }
 
 @media screen and (max-width: 767px){
+  .UserStageWrp .DashedArea{
+    display: none;
+  }
   .UserStageWrp .Number{
     margin: 10px 10px 0 0;
     line-height: 1.65;

@@ -321,15 +321,69 @@
   width: 240px;
   height: 48px;
   border-radius: 24px;
-  background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
   color: #fff;
   font-size: 14px;
   font-weight: 700;
+  position: relative;
+  overflow: hidden;
+}
+.BankVerification > div, .UserDetailsVerification > div,
+.AddressVerification > div{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.BankVerification > div > a, .UserDetailsVerification > div > a,
+.AddressVerification > div > a{
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+}
+.BankVerification::before, .UserDetailsVerification::before,
+.AddressVerification::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+  transition: opacity .5s;
+  opacity: 1;
+}
+.BankVerification::after, .UserDetailsVerification::after,
+.AddressVerification::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-110deg, #54236e 0%, #e02a82 100%);
+  transition: opacity .5s;
+  opacity: 0;
+}
+.BankVerification:hover::after, .UserDetailsVerification:hover::after,
+.AddressVerification:hover::after{
+  opacity: 1;
+}
+.BankVerification.BankVerificationFirst::after,
+.BankVerification.BankVerificationFirst::before,
+.AddressVerification.AddressVerification2::after,
+.AddressVerification.AddressVerification2::before{
+  display: none;
+}
+.BankVerification.BankVerificationFirst{
+  background-color: #fff;
+  color: #922c88;
+  box-shadow: 0 4px 10px rgba(180, 27, 165, 0.2);
 }
 .AddressVerification{
   font-family: SegoeUI-Bold;
   cursor: pointer;
   text-align: center;
+  position: relative;
   width: 240px;
   height: 48px;
   color: #fff;
@@ -341,12 +395,17 @@
   background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
   overflow: hidden;
 }
+.AddressVerification.AddressVerification2{
+  background: transparent;
+  color: #922c88;
+  box-shadow: 0 4px 18px rgba(48, 8, 69, 0.07);
+}
 .BirthMonthDrpDwnButton, .BirthDayDrpDwnButton, .BirthYearDrpDwnButton{
   font-family: SegoeUI-Bold;
   height: 43px;
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 5;
   text-align: left;
   padding-left: 21px;
   border: 1px solid #e8e8e8;

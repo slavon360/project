@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { translate } from 'react-i18next';
-import { userData, dateData } from '../../../dumpData.json';
+import { userData, dateData, nationalities } from '../../../dumpData.json';
 import { propertiesExtractor } from '../../shared/utility';
-import BankAccount from '../../components/BankAccount';
-import Address from '../../components/Address';
+// import BankAccount from '../../components/BankAccount';
+import BankAccount2 from '../../components/BankAccount/BankAccount2';
+// import Address from '../../components/Address';
+import Address2 from '../../components/Address/Address2';
 import UserDetails from '../../components/UserDetails';
 import SideBarNav from '../../components/SideBarNav';
 import Checked from '../../components/UI/Icons/Checked';
@@ -12,11 +14,18 @@ import classes from './Verification.css';
 
 class Verification extends Component {
   state = {
+    nationalities,
+    relevantList: [],
     currentLang: null,
     userData,
     dateData,
     navBtns: null,
     selectedSection: null,
+    dropdowns: [
+      { title: 'months', show: false },
+      { title: 'years', show: false },
+      { title: 'days', show: false },
+    ],
   }
 
   componentWillMount() {
@@ -37,11 +46,53 @@ class Verification extends Component {
   }
 
   componentDidUpdate() {
-    global.console.log(this.props.i18n, this.state);
     if (this.props.i18n.language !== this.state.currentLang) {
       this.updateNavButtons(true);
-      global.console.log(this.props);
     }
+  }
+
+  setUsersData = (event, dataKey) => {
+    const updSelectedSection = { ...this.state.selectedSection };
+    updSelectedSection[dataKey] = event.target.value;
+    this.setState({ selectedSection: updSelectedSection });
+  }
+
+  setUsersNationality = (event, dataKey) => {
+    const updSelectedSection = { ...this.state.selectedSection };
+    const value = event.target.value;
+    let updNationalities = [...this.state.nationalities];
+    updNationalities = updNationalities.filter(nationality => nationality.includes(value));
+    updSelectedSection[dataKey] = value;
+    updNationalities = !value.length ? [] : updNationalities;
+    global.console.log(updNationalities);
+    this.setState({ selectedSection: updSelectedSection, relevantList: updNationalities });
+  }
+
+  pickNationality = (value) => {
+    const updSelectedSection = { ...this.state.selectedSection };
+    updSelectedSection.nationality = value;
+    this.setState({ selectedSection: updSelectedSection, relevantList: [] });
+  }
+
+  hideNationalityList = () => {
+    this.setState({ relevantList: [] });
+    global.console.log(this.state);
+  }
+
+  setUsersGender = (dataKey) => {
+    const updSelectedSection = { ...this.state.selectedSection };
+    const keys = Object.keys(updSelectedSection.gender);
+    keys.forEach((key) => { updSelectedSection.gender[key] = false; });
+    updSelectedSection.gender[dataKey] = true;
+    this.setState({ selectedSection: updSelectedSection });
+  }
+
+  setTypeOfSertificate = (dataKey) => {
+    const updSelectedSection = { ...this.state.selectedSection };
+    const keys = Object.keys(updSelectedSection.sertificateType);
+    keys.forEach((key) => { updSelectedSection.sertificateType[key] = false; });
+    updSelectedSection.sertificateType[dataKey] = true;
+    this.setState({ selectedSection: updSelectedSection });
   }
 
   switchSection = (sect) => {
@@ -59,7 +110,35 @@ class Verification extends Component {
     this.setState({ navBtns: updNavBtns });
   }
 
-  hideShowDate = () => {}
+  hideShowDate = (key) => {
+    let updDropdowns = [...this.state.dropdowns];
+    updDropdowns = updDropdowns.map(drp => ({
+      ...drp,
+      show: drp.title === key ? !drp.show : false,
+    }));
+    this.setState({ dropdowns: updDropdowns });
+  }
+
+  hideDate = (key) => {
+    let updDropdowns = [...this.state.dropdowns];
+    updDropdowns = updDropdowns.map(drp => ({
+      ...drp,
+      show: drp.title === key ? false : drp.show,
+    }));
+    this.setState({ dropdowns: updDropdowns });
+  }
+
+  setUsersBirthDate = (date, key) => {
+    const updatedUserData = { ...this.state.selectedSection };
+    const pluralKey = `${key}s`;
+    let dates = [...this.state[pluralKey]];
+    dates = dates.map(d => ({
+      ...d,
+      checked: d.title === date.title,
+    }));
+    updatedUserData.birth[key] = date.title;
+    this.setState({ selectedSection: updatedUserData, [pluralKey]: dates });
+  }
 
   updateNavButtons = (onUpdate) => {
     let navBtns = [];
@@ -107,6 +186,7 @@ class Verification extends Component {
   }
 
   render() {
+    global.console.log(this.state);
     return (
       <div className={classes.VerificationWrp}>
         <div className={classes.NavbarSection}>
@@ -133,18 +213,34 @@ class Verification extends Component {
         </div>
         <div className={classes.Content}>
           { this.state.selectedSection.title === 'Bank' &&
-            <BankAccount bankAccount={this.state.selectedSection} />
+            <BankAccount2
+              bankAccount={this.state.selectedSection}
+              setUsersData={this.setUsersData}
+            />
           }
           { this.state.selectedSection.title === 'Address' &&
-            <Address data={this.state.selectedSection} />
+            <Address2
+              data={this.state.selectedSection}
+              setUsersData={this.setUsersData}
+            />
           }
           { this.state.selectedSection.title === 'User details' &&
             <UserDetails
+              dropdowns={this.state.dropdowns}
               months={this.state.months}
               days={this.state.days}
               years={this.state.years}
               userDetails={this.state.selectedSection}
               hideShowDate={this.hideShowDate}
+              hideDate={this.hideDate}
+              setUsersData={this.setUsersData}
+              setUsersGender={this.setUsersGender}
+              setTypeOfSertificate={this.setTypeOfSertificate}
+              setUsersBirthDate={this.setUsersBirthDate}
+              setUsersNationality={this.setUsersNationality}
+              relevantList={this.state.relevantList}
+              pickNationality={this.pickNationality}
+              hideNationalityList={this.hideNationalityList}
             />
           }
         </div>

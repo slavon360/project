@@ -5,46 +5,41 @@ import Input from '../../UI/Input';
 import Button from '../../UI/Button';
 import classes from './SmsAuth.css';
 
-const loginForm = props => (
-  <form className={classes.LoginFormWrp} >
+const smsAuth = props => (
+  <form className={classes.SmsFormWrp} >
+    <h2>SMS Authentification</h2>
     <Input
-      changeValue={event => props.setUsersData(event, 'email')}
-      value={props.usersData.email}
-      wrpClasses={cx('LoginInputWrp', { LoginInputWrpRaised: props.usersData.email }).split(' ')}
+      changeValue={event => props.setUsersData(event, 'smsCode')}
+      value={props.usersData.smsCode}
+      wrpClasses={cx('SmsInputWrp', { SmsInputWrpRaised: props.usersData.smsCode }).split(' ')}
       elementType={'input'}
-      elementConfig={{ placeholder: 'Email', type: 'email', label: 'Email' }}
-    />
-    <Input
-      changeValue={event => props.setUsersData(event, 'password')}
-      value={props.usersData.password}
-      wrpClasses={cx('LoginInputWrp', { LoginInputWrpRaised: props.usersData.password }).split(' ')}
-      elementType={'input'}
-      elementConfig={{ placeholder: 'Password', type: 'password', label: 'Password' }}
+      elementConfig={{ placeholder: 'Enter your SMS code', type: 'text', label: 'Enter your SMS code' }}
+      optionalLabels={{ second: props.usersData.smsCodeWrong ? 'Wrong code' : null }}
     />
     <div className={classes.Footer}>
       <div className={classes.Tip}>
-        <div className={classes.Forgot}><a href="/forgot-password">Forgot Password?</a></div>
-        <div className={classes.NotOnBithela}>Not on Bithela yet? <a href="/register">Register</a></div>
+        <div className={classes.NotOnBithela}><a href="/register">Resend SMS code</a></div>
       </div>
       <Button
         btnClasses={['LoginButton']}
-        elementConfig={{ 'before-content': 'Login' }}
+        elementConfig={{ 'before-content': 'Submit' }}
       >
-      Login
+      Submit
         <div className={classes.LoginBtnInnerWrp}>
-          <span className={classes.LoginBtnInner}>Login</span>
+          <span className={classes.LoginBtnInner}>Submit</span>
         </div>
       </Button>
     </div>
   </form>
 );
 
-export default loginForm;
+export default smsAuth;
 
-loginForm.propTypes = {
+smsAuth.propTypes = {
   usersData: PropTypes.shape({
     email: PropTypes.string,
     password: PropTypes.string,
+    smsCode: PropTypes.string,
   }),
   setUsersData: PropTypes.func,
 };

@@ -15,6 +15,7 @@ const input = (props) => {
         {...props.elementConfig}
         value={props.value}
         onChange={props.changeValue}
+        onBlur={() => { window.setTimeout(props.blurHandler, 200); }}
       />);
       break;
     case ('textarea'):
@@ -44,6 +45,7 @@ const input = (props) => {
         {...props.elementConfig}
         value={props.value}
         onChange={props.changeValue}
+        onBlur={() => { window.setTimeout(props.blurHandler, 200); }}
       />);
   }
   let labelClasses = [];
@@ -82,6 +84,7 @@ const input = (props) => {
 
 input.propTypes = {
   changeValue: PropTypes.func,
+  blurHandler: PropTypes.func,
   value: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.bool,

@@ -34,6 +34,9 @@
 .TableWrp tbody tr:first-child td{
   padding-top: 20px;
 }
+.TransactionsWrp .TableWrp table tbody tr::after{
+  display: none!important;
+}
 
 @media screen and (min-width: 1900px){
   .BuySellWrp{

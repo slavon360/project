@@ -24,6 +24,9 @@
 .BankAccountWrp .InputsContent > div:not(:last-child){
   text-align: left;
 }
+.BankAccountWrp .InputsContent > div:nth-child(6){
+  margin-top: 40px;
+}
 .BankAccountWrp .InputsContent input{
   border: none;
   outline: none;
@@ -64,7 +67,9 @@
   margin-bottom: 43px;
 }
 .BankAccountWrp .InputsContent > div:nth-child(4) input:hover,
-.BankAccountWrp .InputsContent > div:nth-child(4) input:focus{
+.BankAccountWrp .InputsContent > div:nth-child(4) input:focus,
+.BankAccountWrp .InputsContent > div:nth-child(6) input:hover,
+.BankAccountWrp .InputsContent > div:nth-child(6) input:focus{
   margin-bottom: 38px !important;
 }
 .BankAccountWrp .InputsContent input::-webkit-input-placeholder{

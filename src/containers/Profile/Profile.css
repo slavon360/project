@@ -35,6 +35,7 @@
   top: 17px;
   left: 173px;
   border: 2px dashed #e3e3e3;
+  display: none;
 }
 .ProfileWrp .Stages > div:last-child::after{
   display: none;
@@ -82,6 +83,9 @@
 }
 .BalancesWrp table tbody tr{
   padding: 0 0 16px;
+}
+.BalancesWrp table tbody tr::after{
+  display: none !important;
 }
 .BalancesWrp table tbody td:first-child{
   width: 51px;

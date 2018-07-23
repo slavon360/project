@@ -28,6 +28,13 @@ const userStage = (props) => {
           {icon}
         </div>
       </div>
+      <div className={classes.DashedArea}>
+        <div className={classes.FirstDash} />
+        <div className={classes.SecondDash} />
+        <div className={classes.ThirdDash} />
+        <div className={classes.FourthDash} />
+        <div className={classes.FifthDash} />
+      </div>
     </div>
   );
 };

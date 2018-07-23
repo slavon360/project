@@ -18,6 +18,12 @@
 .InputsContent > div{
   text-align: left;
 }
+.InputsContent > div input{
+  padding-bottom: 17px;
+  font-weight: 700;
+  color: #000;
+  background: transparent;
+}
 .InputsContent > div:first-child input{
   transform: translateY(-5px);
   margin-bottom: 38px;
@@ -43,9 +49,13 @@
   margin-bottom: 61px;
 }
 .InputsContent .NationalityWrp{
+  position: relative;
   margin-top: 41px;
 }
 .InputsContent .NationalityWrp input{
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
   transform: translateY(-5px);
   margin-bottom: 39px;
 }
@@ -67,9 +77,10 @@
 .InputsContent input[type="text"]:focus{
   border-bottom: 2px solid #d092c9;
 }
-.InputsContent label{
+.InputsContent label, .InputsContent input::-webkit-input-placeholder{
   font-size: 14px;
   color: #9e9fa3;
+  font-weight: 100;
 }
 .InputsContent .GenderWrp, .InputsContent .SertificateWrp{
   text-align: left;

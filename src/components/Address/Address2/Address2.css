@@ -19,11 +19,11 @@
   text-align: left;
 }
 .InputsContent > div:nth-child(4) input{
-  margin-bottom: 62px;
+  margin-bottom: 40px;
 }
 .InputsContent > div:nth-child(4) input:hover,
 .InputsContent > div:nth-child(4) input:focus{
-  margin-bottom: 61px;
+  margin-bottom: 39px;
 }
 .InputsContent > div:nth-child(5){
   text-align: center;
@@ -51,6 +51,40 @@
 .InputsContent label{
   font-size: 14px;
   color: #9e9fa3;
+}
+.InputsContent .UploadedImagesWrp{
+  margin-bottom: 40px;
+  text-align: left !important;
+}
+.InputsContent .UploadedImagesWrp .Label{
+  font-size: 14px;
+  color: #9e9fa3;
+  margin-bottom: 15px;
+}
+.InputsContent .UploadedImagesWrp .UploadedImage{
+  display: inline-block;
+  margin-right: 4px;
+  border: 1px solid #f3ecf3;
+  border-radius: 4px;
+  padding: 5px 8px 11px 20px;
+  width: 200px;
+  height: 36px;
+  box-sizing: border-box;
+}
+.InputsContent .UploadedImagesWrp .UploadedImage .UploadedImageTitle{
+  font-size: 14px;
+  color: #41424e;
+  display: inline-block;
+}
+.InputsContent .UploadedImagesWrp .UploadedImage .Icon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  float: right;
+  transform: translateY(3px);
+}
+.InputsContent .UploadedImagesWrp .UploadedImage .Icon svg{
+  fill: #c8c9cb;
 }
 
 @media screen and (max-width: 1366px){

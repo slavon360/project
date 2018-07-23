@@ -208,9 +208,6 @@
 .GenderRadioWrp .SecondLabel:hover ~ .ThirdLabel, .SertificateRadioWrp .SecondLabel:hover ~ .ThirdLabel{
   opacity: 1;
 }
-.NationalityWrp{
-  overflow: hidden;
-}
 .NationalityWrp label{
   float: left;
 }
@@ -220,28 +217,56 @@
   float: right;
   color: #9e9fa3;
 }
-.LoginInputWrp.LoginInputWrpRaised > label, .RegisterInputWrp.RegisterInputWrpRaised > label{
+.GoogleInputWrp, .SmsInputWrp{
+  position: relative;
+}
+.GoogleInputWrp .SecondLabel, .SmsInputWrp .SecondLabel{
+  position: absolute;
+  top: 80px;
+  color: #e54f64;
+  font-size: 14px;
+}
+.SmsInputWrp .SecondLabel{
+  top: 68px;
+}
+.GoogleInputWrp .SecondLabel + input, .SmsInputWrp .SecondLabel + input{
+  border-color: #e54f64;
+}
+.LoginInputWrp.LoginInputWrpRaised > label, .RegisterInputWrp.RegisterInputWrpRaised > label,
+.GoogleInputWrp.GoogleInputWrpRaised > label, .SmsInputWrp.SmsInputWrpRaised > label,
+.UserDetailsInputWrp.UserDetailsInputWrpRaised > label{
   opacity: 1;
   transform: translateY(-20%);
   z-index: 0;
 }
+.UserDetailsInputWrp.UserDetailsInputWrpRaised > label{
+  transform: translateY(-40%);
+}
+.GoogleInputWrp.GoogleInputWrpRaised > label, .SmsInputWrp.SmsInputWrpRaised > label{
+  transform: translateY(20%);
+}
 .LoginInputWrp.LoginInputWrpRaised:first-child > label, .RegisterInputWrp.RegisterInputWrpRaised:first-child > label{
   transform: translateY(-60%);
 }
-.LoginInputWrp:nth-child(2) > input, .RegisterInputWrp:nth-child(2) > input{
+.LoginInputWrp:nth-child(2) > input, .RegisterInputWrp:nth-child(2) > input,{
   padding-bottom: 16px;
 }
-.LoginInputWrp.LoginInputWrpRaised:nth-child(2), .RegisterInputWrp.RegisterInputWrpRaised:nth-child(2){
-  margin-top: 13px;
-}
-.RegisterInputWrp.RegisterInputWrpRaised:nth-child(3){
+.LoginInputWrp.LoginInputWrpRaised:nth-child(2),
+.RegisterInputWrp.RegisterInputWrpRaised:nth-child(3),
+.GoogleInputWrp.GoogleInputWrpRaised:nth-child(2) > input,
+.RegisterInputWrp.RegisterInputWrpRaised:nth-child(2){
   margin-top: 16px;
 }
+.SmsInputWrp.SmsInputWrpRaised:nth-child(2) > input{
+  margin-top: 18px;
+}
 .LoginInputWrp.LoginInputWrpRaised:nth-child(2) > input, .RegisterInputWrp.RegisterInputWrpRaised:nth-child(2) > input,
-.RegisterInputWrp.RegisterInputWrpRaised:nth-child(3) > input{
+.RegisterInputWrp.RegisterInputWrpRaised:nth-child(3) > input, .GoogleInputWrp.GoogleInputWrpRaised:nth-child(2) > input,
+.SmsInputWrp.SmsInputWrpRaised:nth-child(2) > input{
   padding-bottom: 3px;
 }
-.LoginInputWrp > label, .RegisterInputWrp > label{
+.LoginInputWrp > label, .RegisterInputWrp > label, .GoogleInputWrp > label, .SmsInputWrp > label,
+.UserDetailsInputWrp > label{
   transition: transform .5s;
   position: relative;
   z-index: -1;
@@ -252,7 +277,8 @@
   color: #9e9fa3;
   transform: translateY(70%);
 }
-.LoginInputWrp > input, .RegisterInputWrp > input{
+.LoginInputWrp > input, .RegisterInputWrp > input, .GoogleInputWrp > input, .SmsInputWrp > input,
+.UserDetailsInputWrp > input{
   cursor: pointer;
   font-size: 16px;
   color: #922c88;
@@ -262,16 +288,23 @@
   padding-bottom: 19px;
   border-bottom: 1px solid #e8e8e8;
 }
-.LoginInputWrp > input:hover, .LoginInputWrp > input:focus, .RegisterInputWrp > input:hover, .RegisterInputWrp > input:focus{
+.LoginInputWrp > input:hover, .LoginInputWrp > input:focus,
+.RegisterInputWrp > input:hover, .RegisterInputWrp > input:focus,
+.GoogleInputWrp > input:hover, .GoogleInputWrp > input:focus,
+.SmsInputWrp > input:hover, .SmsInputWrp > input:focus,
+.UserDetailsInputWrp > input:hover, .UserDetailsInputWrp > input:focus{
   border-bottom: 2px solid #d092c9;
 }
-.LoginInputWrp > input::-webkit-input-placeholder, .RegisterInputWrp > input::-webkit-input-placeholder{
+.LoginInputWrp > input::-webkit-input-placeholder, .RegisterInputWrp > input::-webkit-input-placeholder,
+.GoogleInputWrp > input::-webkit-input-placeholder, .SmsInputWrp > input::-webkit-input-placeholder{
   color: #9e9fa3;
   font-size: 14px;
 }
 .RegisterTermsOfUse{
   position: relative;
   z-index: 1;
+  margin-top: 62px;
+  margin-bottom: 80px;
 }
 .RegisterTermsOfUse > input{
   display: none;
@@ -281,9 +314,12 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 1px solid #d092c9;
+  border: 1px solid #932c88;
   cursor: pointer;
   background-color: transparent;
+}
+.RegisterTermsOfUse > label:hover ~ .ThirdLabel{
+  opacity: 1;
 }
 .RegisterTermsOfUse .SecondLabel{
   display: inline-block;
@@ -295,10 +331,10 @@
 }
 .RegisterTermsOfUse .ThirdLabel{
   position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 32px;
-  height: 32px;
+  top: -1px;
+  left: -1px;
+  width: 36px;
+  height: 36px;
   text-align: center;
   border-radius: 50%;
   background-color: #932c88;
@@ -309,7 +345,7 @@
   opacity: 1;
 }
 .RegisterTermsOfUse .ThirdLabel svg{
-  transform: translateY(3px);
+  transform: translateY(5px);
 }
 .RegisterTermsOfUse .SecondLabel a{
   color: #922c88;

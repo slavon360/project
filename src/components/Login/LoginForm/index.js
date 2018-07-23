@@ -24,7 +24,7 @@ const loginForm = props => (
     <div className={classes.Footer}>
       <div className={classes.Tip}>
         <div className={classes.Forgot}><a href="/forgot-password">Forgot Password?</a></div>
-        <div className={classes.NotOnBithela}>Not on Bithela yet? <a href="/register">Register</a></div>
+        <div className={classes.NotOnBithela}>Not on Bithela yet? <a href="register">Register</a></div>
       </div>
       <Button
         btnClasses={['LoginButton']}

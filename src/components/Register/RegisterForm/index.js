@@ -6,7 +6,7 @@ import Button from '../../UI/Button';
 import Checked from '../../UI/Icons/Checked';
 import classes from './RegisterForm.css';
 
-const loginForm = props => (
+const registerForm = props => (
   <form className={classes.RegisterFormWrp} >
     <Input
       changeValue={event => props.setUsersData(event, 'email')}
@@ -55,9 +55,9 @@ const loginForm = props => (
   </form>
 );
 
-export default loginForm;
+export default registerForm;
 
-loginForm.propTypes = {
+registerForm.propTypes = {
   usersData: PropTypes.shape({
     email: PropTypes.string,
     password: PropTypes.string,
