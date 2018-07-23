@@ -567,7 +567,7 @@
                      "amount": "",
                      "title": "AUD Australian Dollar",
                      "balance": "300256.36",
-                     "icon": "/assets/Bitcoin.svg",
+                     "icon": "/assets/aud-dollar.png",
                      "checked": false,
                      "shortcut": "AUD"
                    },
