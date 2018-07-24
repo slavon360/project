@@ -35,6 +35,7 @@
 }
 .WithdrawAmount{
   margin-top: 32px;
+  position: relative;
 }
 .WithdrawAmount .SecondLabel,
 .WithdrawAmount .ThirdLabel,
@@ -63,9 +64,20 @@
 }
 .WithdrawAmount input::-webkit-input-placeholder{
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 100;
   color: #c2c0c1;
   text-align: right;
+}
+.OptionalButton{
+  position: absolute;
+  background: no-repeat;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #41424e;
+  right: 14px;
+  transform: translateY(15px);
 }
 .DepositAddress input, .WithdrawAddress input, .WithdrawAmount input{
   width: 100%;
@@ -234,12 +246,12 @@
 }
 .LoginInputWrp.LoginInputWrpRaised > label, .RegisterInputWrp.RegisterInputWrpRaised > label,
 .GoogleInputWrp.GoogleInputWrpRaised > label, .SmsInputWrp.SmsInputWrpRaised > label,
-.UserDetailsInputWrp.UserDetailsInputWrpRaised > label{
+.UserDetailsInputWrp.UserDetailsInputWrpRaised > label, .BankDetailsInputWrp.BankDetailsInputWrpRaised > label{
   opacity: 1;
   transform: translateY(-20%);
   z-index: 0;
 }
-.UserDetailsInputWrp.UserDetailsInputWrpRaised > label{
+.UserDetailsInputWrp.UserDetailsInputWrpRaised > label, .BankDetailsInputWrp.BankDetailsInputWrpRaised > label{
   transform: translateY(-40%);
 }
 .GoogleInputWrp.GoogleInputWrpRaised > label, .SmsInputWrp.SmsInputWrpRaised > label{
@@ -266,7 +278,7 @@
   padding-bottom: 3px;
 }
 .LoginInputWrp > label, .RegisterInputWrp > label, .GoogleInputWrp > label, .SmsInputWrp > label,
-.UserDetailsInputWrp > label{
+.UserDetailsInputWrp > label, .BankDetailsInputWrp > label{
   transition: transform .5s;
   position: relative;
   z-index: -1;
@@ -277,8 +289,12 @@
   color: #9e9fa3;
   transform: translateY(70%);
 }
+.BankDetailsInputWrp > label{
+  font-size: 14px;
+  color: #9e9fa3;
+}
 .LoginInputWrp > input, .RegisterInputWrp > input, .GoogleInputWrp > input, .SmsInputWrp > input,
-.UserDetailsInputWrp > input{
+.UserDetailsInputWrp > input, .BankDetailsInputWrp > input{
   cursor: pointer;
   font-size: 16px;
   color: #922c88;
@@ -292,7 +308,8 @@
 .RegisterInputWrp > input:hover, .RegisterInputWrp > input:focus,
 .GoogleInputWrp > input:hover, .GoogleInputWrp > input:focus,
 .SmsInputWrp > input:hover, .SmsInputWrp > input:focus,
-.UserDetailsInputWrp > input:hover, .UserDetailsInputWrp > input:focus{
+.UserDetailsInputWrp > input:hover, .UserDetailsInputWrp > input:focus,
+.BankDetailsInputWrp > input:hover, .BankDetailsInputWrp > input:focus{
   border-bottom: 2px solid #d092c9;
 }
 .LoginInputWrp > input::-webkit-input-placeholder, .RegisterInputWrp > input::-webkit-input-placeholder,

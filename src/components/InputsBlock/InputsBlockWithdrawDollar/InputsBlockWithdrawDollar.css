@@ -1,0 +1,215 @@
+.InputsBlockWrp{
+  width: 640px;
+  background-color: rgba(228, 188, 222, .23);
+  padding: 43px 57px 32px 61px;
+  box-sizing: border-box;
+}
+.InputsBlockHead{
+  font-size: 14px;
+  color: #41424e;
+  margin-bottom: 45px;
+}
+.LeftSide, .RightSide{
+  display: inline-block;
+}
+.LeftSide{
+  vertical-align: top;
+  transform: translateY(5px);
+}
+.LeftSide img{
+  width: 42px;
+  height: 42px;
+}
+.RightSide{
+  margin-left: 17px;
+  width: calc(100% - 60px);
+}
+.RightSide .Title, .RightSide .LimitInfo{
+  font-family: SegoeUI-Bold;
+  font-weight: 700
+}
+.RightSide .Title{
+  margin-bottom: 15px;
+}
+.RightSide .WarningInfo{
+  margin-bottom: 13px;
+}
+.RightSide .WarningInfo > span{
+  font-weight: 700;
+}
+.RightSide .WarningInfo > div:first-child{
+  margin-bottom: -3px;
+}
+.CopyDepositAddressWrp, .SubmitWithdrawAmountWrp{
+  font-family: SegoeUI-Bold;
+  width: 100%;
+  text-align: right;
+  padding-top: 12px;
+}
+.SubmitWithdrawAmountWrp{
+  padding-top: 61px;
+}
+.CopyDepositAddressWrp > button, .SubmitWithdrawAmountWrp > button{
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+.CopyDepositAddressWrp > button::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .5s;
+  opacity: 0;
+}
+.CopyDepositAddressWrp > button::before, .SubmitWithdrawAmountWrp > button::before{
+    content: '';
+    display: block;
+    background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+.CopyDepositAddressWrp > button::after{
+    background-image: linear-gradient(-110deg, #54236e 0%, #e02a82 100%);
+}
+.CopyDepositAddressWrp > button:hover::after, .SubmitWithdrawAmountWrp > button:hover::after{
+  opacity: 1;
+}
+.CopyDepositAddressWrp > button > a{
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+.InputsBlockWrp input{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1899px){
+  .RightSide .WarningInfo{
+    width: 330px;
+  }
+  .InputsBlockHead{
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (max-width: 1650px){
+  .InputsBlockWrp{
+    padding-right: 60px;
+    padding-left: 60px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .CopyDepositAddressWrp > button::before{
+    padding-left: 5px;
+  }
+  .InputsBlockWrp{
+    width: 100%;
+    padding: 24px 20px 32px;
+  }
+  .InputsBlockHead{
+    font-size: 12px;
+    margin-bottom: 27px;
+  }
+  .RightSide .Title{
+    margin-bottom: 12px;
+  }
+  .RightSide .WarningInfo{
+    width: 240px;
+    margin-bottom: 16px;
+  }
+  .RightSide .LimitInfo{
+    transform: translateX(2px);
+  }
+  .CopyDepositAddressWrp{
+    text-align: right;
+  }
+  .CopyDepositAddressWrp > button, .SubmitWithdrawAmountWrp > button{
+    width: 150px;
+  }
+  .CopyDepositAddressWrp > button{
+    padding-left: 11px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .InputsBlockWrp{
+    padding: 26px 20px 26px;
+  }
+  .LeftSide img{
+    width: 34px;
+    height: 34px;
+  }
+  .RightSide{
+    margin-left: 10px;
+  }
+  .RightSide .WarningInfo{
+    width: 200px;
+    line-height: 1.3;
+    transform: translateY(1px);
+    margin-bottom: 10px;
+  }
+  .RightSide .LimitInfo{
+    width: 200px;
+    transform: translateX(2px);
+    line-height: 1.3;
+  }
+  .InputsBlockHead{
+    margin-bottom: 16px;
+  }
+  .CopyDepositAddressWrp{
+    text-align: center;
+  }
+  .SubmitWithdrawAmountWrp{
+    text-align: center;
+    padding-top: 22px;
+  }
+  .CopyDepositAddressWrp{
+    padding-top: 10px;
+  }
+  .SubmitWithdrawAmountWrp > button, .CopyDepositAddressWrp > button{
+    width: 140px;
+    height: 40px;
+  }
+  .SubmitWithdrawAmountWrp > button::before, .CopyDepositAddressWrp > button::before{
+    padding-top: 12px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .RightSide .WarningInfo{
+    margin-bottom: 11px;
+  }
+  .InputsBlockHead{
+    margin-bottom: 15px;
+  }
+  .CopyDepositAddressWrp > button{
+    padding-left: 7px;
+  }
+  .CopyDepositAddressWrp > button::before{
+    padding-left: 1px;
+  }
+  .LeftSide img{
+    transform: translate(1px, -1px);
+  }
+}

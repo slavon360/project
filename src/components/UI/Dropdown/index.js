@@ -18,7 +18,7 @@ const dropdown = (props) => {
       btnClasses={btnClass}
       clicked={() => { props.setValue(btn); }}
     >
-      {icon}<span>{btn.title}</span>
+      {icon}<span><a href={btn.link ? btn.link : null}>{btn.title}</a></span>
     </Button>);
   });
   return (

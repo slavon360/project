@@ -1,12 +1,19 @@
-.WithdrawWrp{
+.DepositWrp{
   background-color: #f8f8f8;
-  padding: 60px 160px 60px 160px;
+  padding: 60px 147px 60px 160px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.WithdrawWrp tbody tr{
+.DepositWrp tbody tr{
   cursor: pointer;
+}
+.TableWrp.TableWrpExpanded{
+  max-height: inherit;
+  height: auto;
+}
+.TableWrp.TableWrpExpanded table tbody{
+  height: auto;
 }
 .TableWrp{
   display: inline-block;
@@ -17,13 +24,6 @@
   background-color: #fff;
   box-sizing: border-box;
   position: relative;
-}
-.TableWrp.TableWrpExpanded{
-  max-height: inherit;
-  height: auto;
-}
-.TableWrp.TableWrpExpanded table tbody{
-  height: auto;
 }
 .TableWrp table{
   width: 100%;
@@ -36,9 +36,9 @@
 }
 .TableWrp table thead th:last-child{
   text-align: left;
+  transform: translateX(-3px);
 }
 .TableWrp table tbody tr td{
-  position: relative;
   z-index: 1;
 }
 .TableWrp tbody td:first-child{
@@ -65,14 +65,17 @@
   font-size: 14px;
 }
 
-@media screen and (min-width: 1900px){
+@media screen and (min-width: 1920px){
   .TableWrp table tbody tr{
     margin-bottom: 11px;
   }
+}
+
+@media screen and (min-width: 1900px){
   .TableWrp table tbody{
     padding-top: 18px;
   }
-  .WithdrawWrp{
+  .DepositWrp{
     padding-right: 0;
     padding-left: 13px;
     width: 1598px;
@@ -80,19 +83,12 @@
 }
 
 @media screen and (max-width: 1899px){
-  .WithdrawWrp{
+  .DepositWrp{
+    padding: 60px 40px;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(2){
-    margin-bottom: -5px;
-  }
-  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(3){
-    width: 355px;
   }
   .TableWrp{
-    padding-bottom: 3px;
+    padding-bottom: 16px;
   }
   .TableWrp table tbody{
     padding-top: 19px;
@@ -106,8 +102,8 @@
 }
 
 @media screen and (max-width: 1650px){
-  .WithdrawWrp{
-    padding: 50px 40px 80px;
+  .DepositWrp{
+    padding: 50px 40 80px;
   }
   .TableWrp{
     width: 566px;
@@ -127,8 +123,8 @@
 }
 
 @media screen and (max-width: 1366px){
-  .WithdrawWrp{
-    padding: 61px 40px 60px 40px;
+  .DepositWrp{
+    padding: 50px 40px 80px 40px;
   }
   .TableWrp{
     width: 566px;
@@ -148,35 +144,31 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1365px){
-  .WithdrawWrp{
+  .DepositWrp{
     padding: 40px 0 60px;
     flex-direction: column;
   }
   .TableWrp{
     align-self: center;
+    padding-bottom: 5px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-  .WithdrawWrp{
+  .DepositWrp{
     padding: 30px 44px 40px;
     flex-direction: column;
   }
   .TableWrp{
     align-self: center;
+    padding-bottom: 3px;
   }
 }
 
 @media screen and (max-width: 767px){
-  .WithdrawWrp{
+  .DepositWrp{
     padding: 30px 20px;
     flex-direction: column;
-  }
-  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(2){
-    margin-bottom: 16px;
-  }
-  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(3){
-    width: 225px;
   }
   .TableWrp{
     display: block;
@@ -224,21 +216,21 @@
     transform: translateY(-5px);
   }
   .TableWrp table tbody td:last-child{
-    transform: translate(-16px, 0);
+    transform: translate(-25px, 0);
   }
 }
 
 @media screen and (max-width: 413px){
-  .WithdrawWrp{
+  .DepositWrp{
     padding: 40px 20px;
   }
-  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(3){
-    width: 200px;
-  }
   .TableWrp{
-    padding: 20px 15px 30px;
     width: 100%;
+    padding: 20px 15px 30px;
     height: auto;
+  }
+  .TableWrp table tbody{
+    padding-top: 14px;
   }
   .TableWrp table tbody tr{
     margin-bottom: 4px;
@@ -249,6 +241,9 @@
   .TableWrp table tbody td:first-child{
     width: 66px;
     font-size: 12px;
+  }
+  .TableWrp table tbody td:first-child > div:first-child{
+    margin-right: 5px;
   }
   .TableWrp table tbody td:nth-child(2){
     width: 41px;
@@ -282,27 +277,13 @@
   .TableWrp > div:last-child > span{
     font-size: 12px;
   }
-  .WithdrawWrp{
+  .DepositWrp{
     padding: 34px 18px 25px;
   }
 }
 
-@media screen and (min-height: 1192px) and (min-width: 2200px){
-  .WithdrawWrp{
+@media screen and (min-height: 1082px) and (min-width: 2200px){
+  .DepositWrp{
     height: 85vh;
-  }
-}
-
-@media screen and (min-height: 1192px) and (min-width: 2200px){
-  html{
-    height: 100%;
-  }
-  body{
-    position: relative;
-    margin: 0;
-    padding-bottom: 122px;
-    min-height: 100%;
-    box-sizing: border-box;
-    background-color: #f8f8f8;
   }
 }

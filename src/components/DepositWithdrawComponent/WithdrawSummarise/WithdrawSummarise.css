@@ -1,0 +1,152 @@
+.WithdrawSummariseWrp{
+  padding: 65px 80px 72px 77px;
+  display: inline-block;
+  width: 800px;
+  box-sizing: border-box;
+  background-color: #fff;
+  vertical-align: top;
+  border-radius: 0 8px 8px 8px;
+  box-shadow: 0 4px 18px 0 rgba(48, 8, 69, 0.07);
+  color: #41424e;
+}
+.WithdrawSummariseWrp .Head{
+  color: #922c88;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: SegoeUI-Bold;
+  margin-bottom: 52px;
+}
+.WithdrawSummariseWrp .Preface{
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.WithdrawSummariseWrp .Sum{
+  margin-bottom: 30px;
+}
+.WithdrawSummariseWrp .Sum > span:first-child{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: SegoeUI-Bold;
+  color: #922c88;
+  padding-right: 21px;
+}
+.WithdrawSummariseWrp .Sum > span:nth-child(2),
+.WithdrawSummariseWrp .Bank{
+  font-size: 16px;
+  font-family: SegoeUI-Bold;
+  font-weight: 700;
+}
+.WithdrawSummariseWrp .To{
+  margin-bottom: 27px;
+  font-size: 14px;
+}
+.WithdrawSummariseWrp .Bank > div:not(:last-child){
+  margin-bottom: 17px;
+}
+.WithdrawSummariseWrp .Next{
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+.WithdrawSummariseWrp .Next::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .5s;
+  opacity: 0;
+}
+.WithdrawSummariseWrp .Next::before{
+    content: '';
+    display: block;
+    background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+.WithdrawSummariseWrp .Next::after{
+    background-image: linear-gradient(-110deg, #54236e 0%, #e02a82 100%);
+}
+.WithdrawSummariseWrp .Next:hover::after{
+  opacity: 1;
+}
+.WithdrawSummariseWrp .Next > a{
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+@media screen and (max-width: 1899px){
+  .WithdrawSummariseWrp{
+    padding: 65px 80px 72px 79px;
+  }
+}
+
+@media screen and (max-width: 1650px){
+  .WithdrawSummariseWrp{
+    width: 680px;
+  }
+}
+
+@media screen and (max-width: 1366px){
+  .WithdrawSummariseWrp{
+    width: 680px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .WithdrawSummariseWrp{
+    align-self: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .WithdrawSummariseWrp{
+    margin-bottom: 30px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .WithdrawSummariseWrp{
+    padding: 33px 20px 22px;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 50px rgba(87, 7, 79, 0.26);
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .WithdrawSummariseWrp{
+    padding: 13px 20px 30px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .WithdrawSummariseWrp{
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

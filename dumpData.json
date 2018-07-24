@@ -513,6 +513,18 @@
               }
     }
   ],
+"bank": {
+  "selectedBank": {
+    "title": "Bank name",
+    "checked": true
+  },
+  "list": [
+    { "title": "Bank Name 1", "checked": false },
+    { "title": "Bank Name 2", "checked": false },
+    { "title": "Bank Name 3", "checked": false },
+    { "title": "   Add new bank", "checked": false, "link": "/bithela/withdraw-dollar-3" }
+  ]
+},
 "currencyData": {
      "deposit": true,
      "title": "deposit",
@@ -567,7 +579,8 @@
                      "amount": "",
                      "title": "AUD Australian Dollar",
                      "balance": "300256.36",
-                     "icon": "/assets/aud-dollar.png",
+                     "icon": "/assets/Bitcoin.svg",
+                     "link": "/bithela/withdraw-dollar",
                      "checked": false,
                      "shortcut": "AUD"
                    },

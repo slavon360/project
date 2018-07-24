@@ -1,0 +1,95 @@
+.DepositDetailsWrp{
+  padding: 58px 0 0;
+}
+.DepositDetailsWrp .TopInfo{
+  font-size: 14px;
+  color: #41424e;
+  margin-bottom: 41px;
+}
+.DepositDetailsWrp .TopInfo > span{
+  font-family: SegoeUI-Bold;
+  font-size: 700;
+}
+.DepositDetailsWrp .MiddleInfo{
+  display: flex;
+  justify-content: space-between;
+}
+.DepositDetailsWrp .MiddleInfo .LeftSide{
+  color: #922c88;
+  font-family: SegoeUI-Bold;
+  font-size: 18px;
+  font-weight: 700;
+}
+.DepositDetailsWrp .MiddleInfo .RightSide{
+  font-size: 14px;
+  color: #41424e;
+}
+.DepositDetailsWrp .MiddleInfo .RightSide > div:not(:last-child){
+  margin-bottom: 31px;
+}
+.DepositDetailsWrp .MiddleInfo .RightSide > div .Value{
+  font-size: 16px;
+  font-weight: 700;
+  font-family: SegoeUI-Bold;
+}
+.DepositDetailsWrp .Footer{
+  text-align: center;
+}
+.DepositDetailsWrp .Footer .Note{
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: SegoeUI-Bold;
+  color: #41424e;
+  margin-top: 46px;
+  margin-bottom: 38px;
+}
+.DepositDetailsWrp .Footer .Submit{
+  display: inline-block;
+  width: 200px;
+  height: 48px;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+  font-family: SegoeUI-Bold;
+  font-weight: 700;
+  cursor: pointer;
+}
+.DepositDetailsWrp .Footer .Submit::before,
+.DepositDetailsWrp .Footer .Submit::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.DepositDetailsWrp .Footer .Submit::before{
+  opacity: 1;
+  background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+}
+.DepositDetailsWrp .Footer .Submit::after{
+  transition: opacity .5s;
+  opacity: 0;
+  background-image: linear-gradient(-110deg, #54236e 0%, #e02a82 100%);
+}
+.DepositDetailsWrp .Footer .Submit > a{
+  display: block;
+  position: relative;
+  z-index: 2;
+  line-height: 3.4;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+.DepositDetailsWrp .Footer .Submit:hover::after{
+  opacity: 1;
+}
+
+@media screen and (min-width: 700px){
+  .DepositDetailsWrp .MiddleInfo .RightSide{
+    margin-right: 100px;
+  }
+}
