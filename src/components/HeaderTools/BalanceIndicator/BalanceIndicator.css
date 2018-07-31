@@ -54,7 +54,7 @@
   .BalanceIndicatorWrp{
     font-size: 12px;
     margin-right: 13px;
-    transform: translateY(1px) !important;
+    transform: translate(-1px, 3px) !important;
   }
   .BalanceIndicatorWrp::before{
     width: 7px;
@@ -62,8 +62,22 @@
     top: 6px;
     left: -14px;
   }
-  .BalanceIndicatorWrp span:nth-child(even){
-    font-size: 10px;
+  .BalanceIndicatorWrp span:nth-child(2){
+    font-size: 9px;
+  }
+  .BalanceIndicatorWrp span:first-child{
+    font-size: 14px;
+  }
+  .BalanceIndicatorWrp span:nth-child(4){
+    font-size: 14px;
+    transform: translate(5px, 0);
+    display: inline-block;
+  }
+  .BalanceIndicatorWrp span:nth-child(5){
+    transform: translate(7px, -1px);
+    font-size: 9px;
+    font-weight: 700;
+    display: inline-block;
   }
 }
 

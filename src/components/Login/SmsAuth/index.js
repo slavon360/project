@@ -18,16 +18,18 @@ const smsAuth = props => (
     />
     <div className={classes.Footer}>
       <div className={classes.Tip}>
-        <div className={classes.NotOnBithela}><a href="/register">Resend SMS code</a></div>
+        <div className={classes.NotOnBithela}><a href="/bithela/sms-auth">Resend SMS code</a></div>
       </div>
       <Button
         btnClasses={['LoginButton']}
         elementConfig={{ 'before-content': 'Submit' }}
       >
-      Submit
-        <div className={classes.LoginBtnInnerWrp}>
-          <span className={classes.LoginBtnInner}>Submit</span>
-        </div>
+        <a
+          href="/bithela/sms-auth-error"
+          className={classes.LoginBtnInnerWrp}
+        >
+          Submit
+        </a>
       </Button>
     </div>
   </form>

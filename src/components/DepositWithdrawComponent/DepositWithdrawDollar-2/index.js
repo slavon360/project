@@ -23,8 +23,8 @@ const depositWithdraw = props => (
         setValue={props.selectCurrency}
       >
         <div className={classes.SelectedCurrency}>
-          <img src={props.data.selectedCurrency.icon} alt={props.data.selectedCurrency.title} />
-          <span className={classes.SelectedTitle}>{props.data.selectedCurrency.title}</span>
+          <img src="/assets/aud.svg" alt="AUD" />
+          <span className={classes.SelectedTitle}>AUD Australian Dollar</span>
           <span className={classes.Angle}>
             <Angle styles={{ width: '12px', height: '10px', fill: '#922c88', transform: 'rotate(90deg)' }} />
           </span>

@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import NextAngle from '../UI/Icons/NextAngle';
 import classes from './Transactions.css';
 
 import bitcoin from '../../../assets/images/coins/Bitcoin.svg';
+import aud from '../../../assets/images/coins/aud.svg';
 import aion from '../../../assets/images/coins/AION.jpg';
 import binanceCoin from '../../../assets/images/coins/binance-coin.svg';
 import doge from '../../../assets/images/coins/doge.svg';
@@ -17,6 +18,8 @@ const getImage = (icon) => {
   switch (icon) {
     case 'Bitcoin.svg':
       return bitcoin;
+    case 'aud.svg':
+      return aud;
     case 'ethereum.png':
       return ethereum;
     case 'Ripple-logo.png':
@@ -101,10 +104,9 @@ const transactions = (props) => {
         </span>
       </div> : null}
       {props.viewAllLink ? <div className={classes.ViewAllBtn}>
-        <NavLink
-          to={props.viewAllLink}
-          exact
-        >{props.viewAllText}</NavLink>
+        <a
+          href={props.viewAllLink}
+        >{props.viewAllText}</a>
       </div> : null}
     </Fragment>
   );

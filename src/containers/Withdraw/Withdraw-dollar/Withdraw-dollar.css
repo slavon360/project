@@ -66,6 +66,12 @@
 }
 
 @media screen and (min-width: 1900px){
+  .WithdrawWrp form > div:first-child{
+    margin-bottom: 29px;
+  }
+  .WithdrawWrp form > div:nth-child(3){
+    margin-top: 25px;
+  }
   .TableWrp table tbody tr{
     margin-bottom: 11px;
   }
@@ -86,7 +92,7 @@
     padding-right: 40px;
   }
   .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(2){
-    margin-bottom: -5px;
+    margin-bottom: 12px;
   }
   .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(3){
     width: 355px;
@@ -123,6 +129,12 @@
   }
   .TableWrp tbody td:nth-child(4){
     width: 77px;
+  }
+  .TableWrp table tbody{
+    width: 450px;
+  }
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(3px) !important;
   }
 }
 
@@ -188,8 +200,21 @@
   }
   .TableWrp > div:last-child{
     margin-top: 9px;
+    position: relative;
+    height: 45px;
+    background-color: #fff;
+  }
+  .TableWrp > div:last-child::before{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 390px;
+    top: -5px;
+    height: 90px;
+    left: -20px;
   }
   .TableWrp > div:last-child span{
+    position: relative;
     font-size: 14px;
   }
   .TableWrp table thead th:last-child{
@@ -201,6 +226,7 @@
     font-size: 14px;
     height: 200px;
     overflow: hidden;
+    width: 100%;
   }
   .TableWrp table tbody td:first-child{
     width: 85px;
@@ -225,6 +251,9 @@
   }
   .TableWrp table tbody td:last-child{
     transform: translate(-16px, 0);
+  }
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(-29px) !important;
   }
 }
 
@@ -265,6 +294,15 @@
   .TableWrp table tbody td:last-child{
     transform: translate(-15px, 4px);
   }
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(-12px) !important;
+  }
+}
+
+@media screen and (max-width: 374px){
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(-25px) !important;
+  }
 }
 
 @media screen and (max-width: 359px){
@@ -278,6 +316,9 @@
   .TableWrp > div:last-child{
     transform: translate(-3px, -4px);
     margin-top: 0;
+  }
+  .TableWrp > div:last-child::before{
+    background-color: #f8f8f8;
   }
   .TableWrp > div:last-child > span{
     font-size: 12px;

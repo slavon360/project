@@ -4,11 +4,16 @@ import Backdrop from '../Backdrop';
 import CancelIcon from '../Icons/Cancel';
 import Button from '../Button';
 import classes from './Modal.css';
+import { setCurrentClasses } from '../../../shared/utility';
 
-const modal = props => (
-  <Fragment>
-    <Backdrop show />
-    <div className={classes.Modal}>
+const modal = (props) => {
+  let currentClasses = [classes.Modal];
+  currentClasses = props.wrpClasses ?
+    setCurrentClasses(props.wrpClasses, currentClasses, classes) : null;
+  global.console.log(currentClasses);
+  return (<Fragment>
+    <Backdrop show clicked={props.closeModal} />
+    <div className={currentClasses ? currentClasses.join(' ') : null}>
       <Button
         btnClasses={['CloseModalButton']}
         clicked={props.closeModal}
@@ -17,8 +22,8 @@ const modal = props => (
       </Button>
       {props.modalContent}
     </div>
-  </Fragment>
-);
+  </Fragment>);
+};
 
 export default modal;
 

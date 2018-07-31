@@ -34,22 +34,20 @@ const registerForm = props => (
       value={props.usersData.terms}
       wrpClasses={['RegisterTermsOfUse']}
       elementType={'input'}
-      optionalLabels={{ second: <span>I agree to Bithelas <a href="terms">Terms of Use</a></span>,
+      optionalLabels={{ second: <span>{"I agree to Bithela's "}<a href="terms">Terms of Use</a></span>,
         third: <Checked styles={{ width: '12px', height: '10px', fill: '#fff' }} /> }}
       elementConfig={{ type: 'checkbox', id: 'terms' }}
     />
     <div className={classes.Footer}>
       <div className={classes.Tip}>
-        <div className={classes.NotOnBithela}>Already Registered? <a href="login">Login</a></div>
+        <div className={classes.NotOnBithela}>Already Registered? <a href="/bithela/login">Login</a></div>
       </div>
       <Button
+        clicked={props.registerHandler}
         btnClasses={['LoginButton']}
-        elementConfig={{ 'before-content': 'Register' }}
+        elementConfig={{ 'before-content': 'Register', type: 'button' }}
       >
-      Register
-        <div className={classes.LoginBtnInnerWrp}>
-          <span className={classes.LoginBtnInner}>Register</span>
-        </div>
+        <a>Register</a>
       </Button>
     </div>
   </form>
@@ -68,4 +66,5 @@ registerForm.propTypes = {
     ]),
   }),
   setUsersData: PropTypes.func,
+  registerHandler: PropTypes.func,
 };

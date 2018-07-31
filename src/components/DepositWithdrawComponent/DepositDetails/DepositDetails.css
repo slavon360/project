@@ -1,10 +1,10 @@
 .DepositDetailsWrp{
-  padding: 58px 0 0;
+  padding: 50px 0 0;
 }
 .DepositDetailsWrp .TopInfo{
   font-size: 14px;
   color: #41424e;
-  margin-bottom: 41px;
+  margin-bottom: 31px;
 }
 .DepositDetailsWrp .TopInfo > span{
   font-family: SegoeUI-Bold;
@@ -25,12 +25,13 @@
   color: #41424e;
 }
 .DepositDetailsWrp .MiddleInfo .RightSide > div:not(:last-child){
-  margin-bottom: 31px;
+  margin-bottom: 20px;
 }
 .DepositDetailsWrp .MiddleInfo .RightSide > div .Value{
   font-size: 16px;
   font-weight: 700;
   font-family: SegoeUI-Bold;
+  transform: translateY(-2px);
 }
 .DepositDetailsWrp .Footer{
   text-align: center;
@@ -41,10 +42,12 @@
   font-weight: 700;
   font-family: SegoeUI-Bold;
   color: #41424e;
-  margin-top: 46px;
-  margin-bottom: 38px;
+  margin-top: 43px;
+  margin-bottom: 36px;
+  transform: translateX(6px);
 }
 .DepositDetailsWrp .Footer .Submit{
+  transform: translateX(-2px);
   display: inline-block;
   width: 200px;
   height: 48px;
@@ -90,6 +93,7 @@
 
 @media screen and (min-width: 700px){
   .DepositDetailsWrp .MiddleInfo .RightSide{
-    margin-right: 100px;
+    margin-right: 109px;
+    transform: translateY(4px);
   }
 }

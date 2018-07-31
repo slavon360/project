@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 1899px){
   .RightSide .WarningInfo{
-    width: 330px;
+    width: 336px;
   }
   .InputsBlockHead{
     margin-bottom: 26px;
@@ -158,7 +158,7 @@
   }
   .SubmitWithdrawAmountWrp{
     text-align: center;
-    padding-top: 22px;
+    padding-top: 44px;
   }
   .CopyDepositAddressWrp{
     padding-top: 10px;

@@ -21,3 +21,46 @@
     overflow-y: auto;
   }
 }
+
+@media screen and (max-width: 767px){
+  .EnableAuthSupportModal{
+    height: 649px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .ThankModalWrp{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .ThankModalWrp{
+    width: 350px;
+    box-sizing: border-box;
+    height: 380px !important;
+  }
+  .WelcomeModalWrp{
+    height: 487px;
+    overflow: hidden;
+  }
+  .DisableGoogleModalWrp{
+    height: 382px;
+  }
+  .EnableAuthSupportModal{
+    height: 579px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .ThankModalWrp{
+    width: 305px;
+  }
+  .DisableGoogleModalWrp{
+    height: 372px;
+  }
+  .EnableAuthSupportModal{
+    max-height: calc(100vh - 29px);
+  }
+}

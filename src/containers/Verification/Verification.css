@@ -80,6 +80,9 @@
     width: 1440px;
     /*align-self: center; */
   }
+  .VerificationWrp .NavbarSection > div:nth-child(2){
+    transform: translateX(-1px);
+  }
   .NavbarSection .Title{
     margin-bottom: 47px;
     transform: translateY(-11px);

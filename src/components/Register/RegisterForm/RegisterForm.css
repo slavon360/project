@@ -1,16 +1,20 @@
 .RegisterFormWrp{
   width: 100%;
-  padding: 19.5vh 0 0 3.5vw;
+  padding: 16.7vh 0 0 3.5vw;
   box-sizing: border-box;
 }
 .RegisterFormWrp > div:first-child > input{
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 }
-.RegisterFormWrp > div:first-child > input:hover, .RegisterFormWrp > div:first-child > input:focus{
-  margin-bottom: 19px;
+.RegisterFormWrp > div:first-child > input:hover, .RegisterFormWrp > div:first-child > input:focus,
+.RegisterFormWrp > div:nth-child(2) > input:hover, .RegisterFormWrp > div:nth-child(2) > input:focus{
+  margin-bottom: 32px;
+}
+.RegisterFormWrp > div > input::-webkit-input-placeholder, .RegisterFormWrp label{
+  font-size: 13px !important;
 }
 .RegisterFormWrp > div:nth-child(2) > input{
-  margin-bottom: 20px;
+  margin-bottom: 33px;
   letter-spacing: 4px;
   font-size: 30px;
   color: #d092c9;
@@ -18,9 +22,6 @@
 .RegisterFormWrp > div:nth-child(2) > input::-webkit-input-placeholder, .RegisterFormWrp > div:nth-child(3) > input::-webkit-input-placeholder{
   letter-spacing: 0;
   vertical-align: top;
-}
-.RegisterFormWrp > div:nth-child(2) > input:hover, .RegisterFormWrp > div:nth-child(2) > input:focus{
-  margin-bottom: 19px;
 }
 .RegisterFormWrp > div:nth-child(3) > input{
   margin-bottom: 5px;
@@ -34,6 +35,47 @@
 .RegisterFormWrp .Footer{
   display: flex;
   justify-content: space-between;
+}
+.RegisterFormWrp .Footer > button{
+  overflow: hidden;
+  position: relative;
+  top: -7px;
+}
+.RegisterFormWrp .Footer > button::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .5s;
+  opacity: 0;
+}
+.RegisterFormWrp .Footer > button::before{
+    content: '';
+    display: block;
+    background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+.RegisterFormWrp .Footer > button::after{
+    background-image: linear-gradient(-110deg, #54236e 0%, #e02a82 100%);
+}
+.RegisterFormWrp .Footer > button:hover::after{
+  opacity: 1;
+}
+.RegisterFormWrp .Footer > button > a{
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  display: block;
 }
 .RegisterFormWrp .Footer .Tip{
   font-size: 12px;
@@ -104,7 +146,16 @@
 
 @media screen and (max-width: 1919px){
   .RegisterFormWrp{
-    padding: 8vh 0 0 2.2vw
+    padding: 7.4vh 0 0 2.2vw;
+  }
+}
+
+@media screen and (max-width: 1365px){
+  .RegisterFormWrp{
+    padding: 7.4vh 0 0 2.8vw;
+  }
+  .RegisterFormWrp .Footer > button{
+    left: 2px;
   }
 }
 
@@ -113,7 +164,7 @@
     width: 336px;
     display: inline-block;
     text-align: left;
-    padding: 14vh 0 0 0;
+    padding: 4vh 0 0 0;
   }
 }
 
@@ -143,32 +194,44 @@
 
 @media screen and (max-width: 767px){
   .RegisterFormWrp{
-    padding-top: 13.8vh;
+    padding-top: 6px;
     width: 100%;
   }
   .RegisterFormWrp > div:first-child > input{
-    margin-bottom: 31px;
+    margin-bottom: -8px;
   }
   .RegisterFormWrp > div:first-child > input:hover, .RegisterFormWrp > div:first-child > input:focus{
-    margin-bottom: 30px;
+    margin-bottom: -9px;
   }
   .RegisterFormWrp > div:nth-child(2) > input{
-    margin-bottom: 40px;
+    margin-bottom: -7px;
   }
   .RegisterFormWrp > div:nth-child(2) > input:hover, .RegisterFormWrp > div:nth-child(2) > input:focus{
-    margin-bottom: 39px;
+    margin-bottom: -8px;
+  }
+  .RegisterFormWrp .Footer .Tip .NotOnBithela{
+    transform: translateY(5px);
+    font-size: 10px;
+  }
+  .RegisterFormWrp .Footer > button{
+    top: -8px;
+    left: 0;
+    width: 160px;
   }
 }
 
 @media screen and (max-width: 413px){
   .RegisterFormWrp{
-    padding-top: 8vh;
+    padding-top: 7px;
   }
   .RegisterFormWrp input{
     font-size: 14px;
   }
   .RegisterFormWrp .Footer .Tip{
     font-size: 10px;
+  }
+  .RegisterFormWrp .Footer > button{
+    width: 140px;
   }
   .Footer .Tip .Forgot{
     margin-top: 2px;

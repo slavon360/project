@@ -13,17 +13,17 @@ const address = props => (
       <Input
         changeValue={event => props.setUsersData(event, 'address')}
         elementConfig={{ label: 'Address', type: 'text', placeholder: 'Address' }}
-        wrpClasses={cx('UserDetailsInputWrp', { UserDetailsInputWrpRaised: props.data.address }).split(' ')}
+        wrpClasses={cx('AddressInputWrp', { AddressInputWrpRaised: props.data.address }).split(' ')}
         value={props.data.address}
       />
       <Input
         changeValue={event => props.setUsersData(event, 'city')}
-        wrpClasses={cx('UserDetailsInputWrp', { UserDetailsInputWrpRaised: props.data.city }).split(' ')}
+        wrpClasses={cx('AddressInputWrp', { AddressInputWrpRaised: props.data.city }).split(' ')}
         elementConfig={{ label: 'City', placeholder: 'City' }}
       />
       <Input
         changeValue={event => props.setUsersData(event, 'suburb')}
-        wrpClasses={cx('UserDetailsInputWrp', { UserDetailsInputWrpRaised: props.data.suburb }).split(' ')}
+        wrpClasses={cx('AddressInputWrp', { AddressInputWrpRaised: props.data.suburb }).split(' ')}
         elementConfig={{ label: 'Suburb', placeholder: 'Suburb' }}
       />
       <Input
@@ -35,7 +35,7 @@ const address = props => (
       <div className={classes.UploadedImagesWrp}>
         <div className={classes.Label}>Upload photos</div>
         {props.data.photos.map(photo => (
-          <div className={classes.UploadedImage}>
+          <div key={photo.title} className={classes.UploadedImage}>
             <div className={classes.UploadedImageTitle}>{photo.title}</div>
             <div className={classes.Icon}><Landscape /></div>
           </div>

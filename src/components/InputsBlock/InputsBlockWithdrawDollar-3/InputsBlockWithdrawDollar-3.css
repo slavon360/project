@@ -1,7 +1,7 @@
 .InputsBlockWrp{
   width: 640px;
   background-color: rgba(228, 188, 222, .23);
-  padding: 43px 57px 62px 61px;
+  padding: 43px 57px 29px 61px;
   box-sizing: border-box;
 }
 .InputsBlockHead{
@@ -55,8 +55,10 @@
   cursor: pointer;
   outline: none;
   border: none;
-  width: 200px;
-  height: 48px;
+  width: 160px;
+  height: 40px;
+  top: -4px;
+  left: -4px;
   border-radius: 25px;
   box-shadow: 0 4px 13px rgba(180, 27, 165, 0.2);
   background-color: #fff;

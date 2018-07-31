@@ -11,6 +11,8 @@
   color: #922c88;
   font-weight: 700;
   margin: 0 0 57px;
+  position: relative;
+  top: 13px;
 }
 .AuthentificationForm{
   width: 312px;
@@ -21,6 +23,10 @@
   color: #9e9fa3;
   font-size: 14px;
   margin-bottom: 18px;
+}
+.AuthentificationForm .CodeTitle{
+  position: relative;
+  top: -7px;
 }
 .DropdownConent{
   font-size: 14px;

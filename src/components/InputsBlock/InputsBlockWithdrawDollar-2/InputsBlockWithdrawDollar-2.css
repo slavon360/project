@@ -12,10 +12,11 @@
   margin-bottom: 22px;
 }
 .InputsBlockWrp .BankArea .SubmitWrp{
-  padding-top: 40px;
+  padding-top: 37px;
   text-align: center;
 }
 .InputsBlockWrp .BankArea .SubmitWrp .Submit{
+  transform: translateX(-3px);
   display: inline-block;
   overflow: hidden;
   position: relative;
@@ -112,13 +113,15 @@
   font-family: SegoeUI-Bold;
   width: 100%;
   text-align: right;
-  padding-top: 12px;
+  padding-top: 9px;
+  margin-bottom: 15px;
 }
 .SubmitWithdrawAmountWrp{
   padding-top: 61px;
 }
 .CopyDepositAddressWrp > button, .SubmitWithdrawAmountWrp > button{
   overflow: hidden;
+  transform: translateX(-4px);
   position: relative;
   cursor: pointer;
   outline: none;
@@ -159,11 +162,12 @@
   color: #922c88;
   font-size: 16px;
   font-weight: 700;
-  padding-left: 27px;
+  padding-left: 0;
+  transform: translate(-4px, 0);
 }
 .SelectedCurrency .Angle{
   float: right;
-  transform: translateY(2px);
+  transform: translate(-2px, 1px);
 }
 
 @media screen and (max-width: 1899px){
@@ -226,7 +230,7 @@
   }
   .SelectedCurrency .SelectedTitle{
     padding-left: 7px;
-    transform: translateY(-7px);
+    transform: translateY(0);
     font-size: 14px;
   }
   .InputsBlockWrp{

@@ -3,13 +3,14 @@ import cx from 'classnames';
 import Input from '../../UI/Input';
 import Dropdown from '../../UI/Dropdown';
 import Angle from '../../UI/Icons/NextAngle';
+import exclamationIcon from '../../../../assets/images/icons/exclamation.png';
 import classes from './InputsBlockWithdrawDollar-2.css';
 
 const inputsBlockDollar = props => (
   <div className={classes.InputsBlockWrp}>
     <div className={classes.InputsBlockHead}>
       <div className={classes.LeftSide}>
-        <img src="assets/exclamation.png" alt="exclamation" />
+        <img src={exclamationIcon} alt="exclamation" />
       </div>
       <div className={classes.RightSide}>
         <div className={classes.Title}>Important!</div>

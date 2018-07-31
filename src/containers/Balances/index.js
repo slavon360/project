@@ -13,6 +13,7 @@ import ethereum from '../../../assets/images/coins/ethereum.png';
 import omiseGo from '../../../assets/images/coins/omise-go.png';
 import quantstamp from '../../../assets/images/coins/quantstamp-logo.jpg';
 import ripple from '../../../assets/images/coins/Ripple-logo.png';
+import aud from '../../../assets/images/coins/aud.svg';
 
 
 class Balances extends Component {
@@ -37,6 +38,8 @@ class Balances extends Component {
         return quantstamp;
       case 'doge.svg':
         return doge;
+      case 'aud.svg':
+        return aud;
       default: return bitcoin;
     }
   }

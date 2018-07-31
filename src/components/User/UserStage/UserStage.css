@@ -1,6 +1,37 @@
 .UserStageWrp{
   display: inline-block;
   cursor: pointer;
+  position: relative;
+}
+.NoteOnHover{
+  display: none;
+  position: absolute;
+  top: -67px;
+  left: 57%;
+  border-radius: 5px;
+  height: 60px;
+  width: 262px;
+  padding: 16px 28px 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .13);
+  font-size: 14px;
+  color: #41424e;
+  line-height: 16px;
+}
+.NoteOnHover::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  border: 6px solid #fff;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #fff;
+}
+.UserStageWrp:hover .NoteOnHover{
+  display: block;
 }
 .UserStageWrp .Number{
   vertical-align: top;
@@ -64,6 +95,19 @@
     transform: translate(-3px, -3px);
   }
 }
+
+@media screen and (max-width: 1900px){
+  .NoteOnHover{
+    left: -200px;
+  }
+  .NoteOnHover::before{
+    left: auto;
+    right: 0;
+    border-right-color: #fff;
+    border-left-color: transparent;
+  }
+}
+
 @media screen and (max-width: 1365px){
   .UserStageWrp:first-child .DashedArea{
     left: 155px;
@@ -105,6 +149,13 @@
   }
 }
 
+@media screen and (min-width: 414px) and (max-width: 767px){
+  .UserStageWrp:nth-child(2) .RightSide,
+  .UserStageWrp:nth-child(3) .RightSide{
+    transform: translate(-14px, -2px);
+  }
+}
+
 @media screen and (max-width: 767px){
   .UserStageWrp .DashedArea{
     display: none;
@@ -114,6 +165,15 @@
     line-height: 1.65;
     width: 20px;
     height: 20px;
+  }
+  .UserStageWrp:first-child .Number{
+    transform: translate(-1px, -3px);
+  }
+  .UserStageWrp:nth-child(2) .Number{
+    transform: translate(-14px, -4px);
+  }
+  .UserStageWrp:nth-child(3) .Number{
+    transform: translate(-11px, -2px);
   }
   .UserStageWrp .RightSide .Title{
     font-size: 14px;

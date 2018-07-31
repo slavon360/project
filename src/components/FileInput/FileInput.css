@@ -10,7 +10,8 @@
 }
 .FileInputRequestWrp{
   padding-left: 5px;
-  margin-bottom: 41px;
+  padding-top: 52px;
+  margin-bottom: 40px;
 }
 .FileInputRequestWrp input, .PhotoAddress input, .SertificatePhoto input{
   display: block;

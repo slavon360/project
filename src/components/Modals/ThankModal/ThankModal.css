@@ -1,0 +1,89 @@
+.ThankWrp{
+  padding: 127px 140px 100px;
+  text-align: center;
+  position: relative;
+  width: 900px;
+  height: 400px;
+  box-sizing: border-box;
+}
+.ThankWrp h2{
+  transform: translateX(5px);
+  padding-bottom: 33px;
+  text-transform: uppercase;
+  margin: 0 0 26px;
+  color: #922c88;
+  font-weight: 700;
+  font-family: SegoeUI-Bold;
+  font-size: 30px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.ThankWrp .Note{
+  color: #41424e;
+  font-size: 16px;
+  font-family: SegoeUI-Bold;
+  font-weight: 700;
+}
+.ThankWrp .LeftSideBubbles,
+.ThankWrp .RightSideBubbles{
+  position: absolute;
+}
+.ThankWrp .LeftSideBubbles{
+  left: 0;
+  top: 28px;
+}
+.ThankWrp .RightSideBubbles{
+  bottom: -5px;
+  right: 25px;
+}
+
+@media screen and (max-width: 1023px){
+  .ThankWrp{
+    width: 600px;
+    height: 340px;
+    margin-bottom: -209px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .ThankWrp{
+    width: 540px;
+    height: 270px;
+    left: 0 !important;
+    padding-top: 60px;
+  }
+  .ThankWrp .RightSideBubbles{
+    bottom: -133px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .ThankWrp{
+    width: 375px;
+    padding: 84px 45px;
+  }
+  .ThankWrp .LeftSideBubbles{
+    display: none;
+  }
+  .ThankWrp .RightSideBubbles{
+    bottom: -215px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .ThankWrp .RightSideBubbles{
+    bottom: -153px;
+  }
+  .ThankWrp{
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .ThankWrp h2{
+    font-size: 25px;
+  }
+  .ThankWrp .RightSideBubbles{
+    bottom: -163px;
+  }
+}

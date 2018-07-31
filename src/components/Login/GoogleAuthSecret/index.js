@@ -17,16 +17,16 @@ const googleAuthSecret = props => (
     />
     <div className={classes.Footer}>
       <div className={classes.Tip}>
-        <div className={classes.NotOnBithela}><a href="/register">Back</a></div>
+        <div className={classes.NotOnBithela}><a href="/bithela/google-auth">Back</a></div>
       </div>
       <Button
         btnClasses={['LoginButton']}
-        elementConfig={{ 'before-content': 'Send' }}
       >
-      Send
-        <div className={classes.LoginBtnInnerWrp}>
-          <span className={classes.LoginBtnInner}>Send</span>
-        </div>
+        <a
+          className={classes.LoginBtnInnerWrp}
+        >
+          Submit
+        </a>
       </Button>
     </div>
   </form>

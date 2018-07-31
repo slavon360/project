@@ -1,5 +1,5 @@
 .DepositWithdrawWrp{
-  padding: 65px 80px 72px 77px;
+  padding: 65px 80px 61px 77px;
   display: inline-block;
   width: 800px;
   box-sizing: border-box;
@@ -29,7 +29,7 @@
 .DropDwnWrp .Balance{
   margin-top: 6px;
   text-align: right;
-  padding-right: 31px;
+  padding-right: 50px;
 }
 .SelectedCurrency{
   height: 48px;

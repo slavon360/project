@@ -1,0 +1,346 @@
+.WithdrawWrp{
+  background-color: #f8f8f8;
+  padding: 60px 160px 60px 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.WithdrawWrp tbody tr{
+  cursor: pointer;
+}
+.TableWrp{
+  display: inline-block;
+  box-shadow: 0 4px 18px 0 #dedede;
+  border-radius: 6px;
+  width: 760px;
+  padding: 23px 61px 18px 55px;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+.TableWrp.TableWrpExpanded{
+  max-height: inherit;
+  height: auto;
+}
+.TableWrp.TableWrpExpanded table tbody{
+  height: auto;
+}
+.TableWrp table{
+  width: 100%;
+}
+.TableWrp table tbody{
+  height: auto;
+}
+.TableWrp table thead{
+  padding-right: 0;
+}
+.TableWrp table thead th:last-child{
+  text-align: left;
+}
+.TableWrp table tbody tr td{
+  position: relative;
+  z-index: 1;
+}
+.TableWrp tbody td:first-child{
+  width: 135px;
+  padding: 0;
+}
+.TableWrp tbody td:nth-child(2){
+  width: 88px;
+  padding: 0;
+}
+.TableWrp tbody td:nth-child(3){
+  width: 197px;
+  padding: 0;
+}
+.TableWrp tbody td:nth-child(4){
+  padding: 0;
+  width: 197px;
+}
+.TableWrp table tbody td,
+.TableWrp table tbody td:first-child{
+  font-size: 16px;
+}
+.TableWrp table tr td:nth-last-child(2){
+  font-size: 14px;
+}
+
+@media screen and (min-width: 1900px){
+  .TableWrp table tbody tr{
+    margin-bottom: 11px;
+  }
+  .TableWrp table tbody{
+    padding-top: 18px;
+  }
+  .WithdrawWrp{
+    padding-right: 0;
+    padding-left: 13px;
+    width: 1598px;
+  }
+}
+
+@media screen and (max-width: 1899px){
+  .WithdrawWrp{
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(2){
+    margin-bottom: -5px;
+  }
+  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(3){
+    width: 355px;
+  }
+  .TableWrp{
+    padding-bottom: 3px;
+  }
+  .TableWrp table tbody{
+    padding-top: 19px;
+  }
+  .TableWrp table tbody tr{
+    padding: 0;
+  }
+  .TableWrp table tbody tr td > div svg{
+    transform: rotate(90deg) translate(-3px, -28px) !important;
+  }
+}
+
+@media screen and (max-width: 1650px){
+  .WithdrawWrp{
+    padding: 50px 40px 80px;
+  }
+  .TableWrp{
+    width: 566px;
+  }
+  .TableWrp tbody td:first-child{
+    width: 120px;
+  }
+  .TableWrp tbody td:nth-child(2){
+    width: 70px;
+  }
+  .TableWrp tbody td:nth-child(3){
+    width: 129px;
+  }
+  .TableWrp tbody td:nth-child(4){
+    width: 77px;
+  }
+  .TableWrp table tbody{
+    width: 450px;
+  }
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(3px) !important;
+  }
+}
+
+@media screen and (max-width: 1366px){
+  .WithdrawWrp{
+    padding: 61px 40px 60px 40px;
+  }
+  .TableWrp{
+    width: 566px;
+  }
+  .TableWrp tbody td:first-child{
+    width: 120px;
+  }
+  .TableWrp tbody td:nth-child(2){
+    width: 70px;
+  }
+  .TableWrp tbody td:nth-child(3){
+    width: 129px;
+  }
+  .TableWrp tbody td:nth-child(4){
+    width: 77px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .WithdrawWrp{
+    padding: 40px 0 60px;
+    flex-direction: column;
+  }
+  .TableWrp{
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .WithdrawWrp{
+    padding: 30px 44px 40px;
+    flex-direction: column;
+  }
+  .TableWrp{
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .WithdrawWrp{
+    padding: 30px 20px;
+    flex-direction: column;
+  }
+  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(2){
+    margin-bottom: 16px;
+  }
+  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(3){
+    width: 225px;
+  }
+  .TableWrp{
+    display: block;
+    width: 374px;
+    align-self: center;
+    padding: 20px 15px 24px 15px;
+    height: 330px;
+    overflow: hidden;
+  }
+  .TableWrp > div:last-child{
+    margin-top: 9px;
+    position: relative;
+    height: 45px;
+    background-color: #fff;
+  }
+  .TableWrp > div:last-child::before{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 390px;
+    top: -5px;
+    height: 90px;
+    left: -20px;
+  }
+  .TableWrp > div:last-child span{
+    position: relative;
+    font-size: 14px;
+  }
+  .TableWrp table thead th:last-child{
+    font-size: 12px;
+    padding-bottom: 22px !important;
+  }
+  .TableWrp table tbody{
+    padding-top: 12px;
+    font-size: 14px;
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .TableWrp table tbody td:first-child{
+    width: 85px;
+    font-size: 14px;
+  }
+  .TableWrp table tbody td:first-child > div:first-child{
+    margin-right: 7px;
+  }
+  .TableWrp table tbody td:nth-child(2){
+    width: 54px;
+  }
+  .TableWrp table tbody td:nth-child(3){
+    width: 93px;
+  }
+  .TableWrp table tbody td:nth-child(4){
+    width: 80px;
+  }
+  .TableWrp table tbody td:nth-child(4) > span:nth-child(2){
+    font-size: 12px;
+    display: inline-block;
+    transform: translateY(-5px);
+  }
+  .TableWrp table tbody td:last-child{
+    transform: translate(-16px, 0);
+  }
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(-29px) !important;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .WithdrawWrp{
+    padding: 40px 20px;
+  }
+  .WithdrawWrp form > div:first-child > div:nth-child(2) > div:nth-child(3){
+    width: 200px;
+  }
+  .TableWrp{
+    padding: 20px 15px 30px;
+    width: 100%;
+    height: auto;
+  }
+  .TableWrp table tbody tr{
+    margin-bottom: 4px;
+  }
+  .TableWrp table tbody td, .TableWrp table tbody td:nth-last-child(2){
+    font-size: 12px;
+  }
+  .TableWrp table tbody td:first-child{
+    width: 66px;
+    font-size: 12px;
+  }
+  .TableWrp table tbody td:nth-child(2){
+    width: 41px;
+  }
+  .TableWrp table tbody td:nth-child(3){
+    width: 84px;
+  }
+  .TableWrp table tbody td:nth-child(4){
+    width: 66px;
+  }
+  .TableWrp table tbody td:nth-child(4) > span:nth-child(2){
+    transform: translateY(-2px);
+  }
+  .TableWrp table tbody td:last-child{
+    transform: translate(-15px, 4px);
+  }
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(-12px) !important;
+  }
+}
+
+@media screen and (max-width: 374px){
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(-25px) !important;
+  }
+}
+
+@media screen and (max-width: 359px){
+  .TableWrp{
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    transform: translate(-3px, 1px);
+    width: 101%;
+  }
+  .TableWrp > div:last-child{
+    transform: translate(-3px, -4px);
+    margin-top: 0;
+  }
+  .TableWrp > div:last-child::before{
+    background-color: #f8f8f8;
+  }
+  .TableWrp > div:last-child > span{
+    font-size: 12px;
+  }
+  .WithdrawWrp{
+    padding: 34px 18px 25px;
+  }
+}
+
+@media screen and (min-height: 1192px) and (min-width: 2200px){
+  .WithdrawWrp{
+    height: 85vh;
+  }
+}
+
+@media screen and (min-height: 720px) and (min-width: 1370px){
+  .WithdrawWrp{
+    height: 80vh;
+  }
+  html{
+    height: 100%;
+  }
+  body{
+    position: relative;
+    margin: 0;
+    padding-bottom: 122px;
+    min-height: 100%;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+}

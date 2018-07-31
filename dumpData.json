@@ -344,9 +344,9 @@
         "female": false
       },
       "birth": {
-        "month": "July",
-        "day": "23",
-        "year": "1977"
+        "month": "December",
+        "day": "12",
+        "year": "1985"
       },
       "nationality": "",
       "sertificateType": {
@@ -433,7 +433,7 @@
                     "short": "AUD",
                     "long": "Australian Dollar"
                     },
-      "icon": "Bitcoin.svg",
+      "icon": "aud.svg",
       "bal": "300 256.36",
       "fiat": {
                 "number": "300 256.36",
@@ -579,8 +579,8 @@
                      "amount": "",
                      "title": "AUD Australian Dollar",
                      "balance": "300256.36",
-                     "icon": "/assets/Bitcoin.svg",
-                     "link": "/bithela/withdraw-dollar",
+                     "icon": "/assets/aud.svg",
+                     "link": "/bithela/deposit-dollar",
                      "checked": false,
                      "shortcut": "AUD"
                    },

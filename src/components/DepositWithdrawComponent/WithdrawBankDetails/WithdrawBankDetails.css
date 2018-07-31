@@ -1,19 +1,19 @@
 .WithdrawBankDetailsWrp{
-  padding: 58px 60px 0;
+  padding: 53px 60px 0;
 }
 .WithdrawBankDetailsWrp .Head{
   font-size: 14px;
   color: #41424e;
   font-weight: 700;
   font-family: SegoeUI-Bold;
-  margin-bottom: 41px;
+  margin-bottom: 36px;
 }
 .WithdrawBankDetailsWrp input{
   padding-bottom: 12px;
   font-size: 14px;
   color: #000;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .WithdrawBankDetailsWrp input::-webkit-input-placeholder{
   font-weight: 100;
@@ -21,7 +21,7 @@
 }
 .WithdrawBankDetailsWrp input:hover,
 .WithdrawBankDetailsWrp input:focus{
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 }
 .WithdrawBankDetailsWrp .SubmitWrp{
   text-align: center;
@@ -29,6 +29,8 @@
 }
 .WithdrawBankDetailsWrp .SubmitWrp .Submit{
   display: inline-block;
+  left: -3px;
+  top: 2px;
   overflow: hidden;
   position: relative;
   cursor: pointer;

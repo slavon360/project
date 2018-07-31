@@ -7,6 +7,9 @@ const userStage = (props) => {
   const icon = props.stage.icon ? props.stage.icon : null;
   return (
     <div className={classes.UserStageWrp}>
+      {props.stage.notVerified ? <div
+        className={classes.NoteOnHover}
+      >Please, verify bank account to be able to withdraw more than $100</div> : null}
       <div
         className={classes.Number}
         style={{ borderColor: props.stage.borderColor, color: props.stage.borderColor }}

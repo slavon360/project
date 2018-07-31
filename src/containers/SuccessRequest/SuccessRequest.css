@@ -1,0 +1,23 @@
+.SuccessRequestWrp{
+  padding: 160px 0 360px;
+}
+.SuccessRequestWrp h2{
+  text-transform: uppercase;
+  color: #922c88;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: SegoeUI-Bold;
+  margin-bottom: 22px;
+  text-align: center;
+}
+.SuccessRequestWrp .Send{
+  text-align: center;
+  color: #54555f;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: SegoeUI-Bold;
+  margin-bottom: 33px;
+}
+.SuccessRequestWrp .ImgWrp{
+  padding-left: 175px;
+}

@@ -1,5 +1,5 @@
 .WithdrawSummariseWrp{
-  padding: 65px 80px 72px 77px;
+  padding: 65px 80px 66px 75px;
   display: inline-block;
   width: 800px;
   box-sizing: border-box;
@@ -14,14 +14,14 @@
   font-size: 24px;
   font-weight: 700;
   font-family: SegoeUI-Bold;
-  margin-bottom: 52px;
+  margin-bottom: 42px;
 }
 .WithdrawSummariseWrp .Preface{
   font-size: 14px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 .WithdrawSummariseWrp .Sum{
-  margin-bottom: 30px;
+  margin-bottom: 19px;
 }
 .WithdrawSummariseWrp .Sum > span:first-child{
   font-size: 24px;
@@ -37,11 +37,11 @@
   font-weight: 700;
 }
 .WithdrawSummariseWrp .To{
-  margin-bottom: 27px;
+  margin-bottom: 19px;
   font-size: 14px;
 }
 .WithdrawSummariseWrp .Bank > div:not(:last-child){
-  margin-bottom: 17px;
+  margin-bottom: 9px;
 }
 .WithdrawSummariseWrp .Next{
   overflow: hidden;
@@ -49,11 +49,12 @@
   cursor: pointer;
   outline: none;
   border: none;
-  width: 160px;
-  height: 40px;
+  width: 200px;
+  height: 48px;
   border-radius: 25px;
   font-size: 14px;
   font-weight: 700;
+  margin-top: 36px;
   color: #fff;
 }
 .WithdrawSummariseWrp .Next::after{
@@ -89,6 +90,9 @@
   color: inherit;
   text-decoration: none;
   position: relative;
+  height: 100%;
+  text-align: center;
+  line-height: 3.4;
   z-index: 2;
   display: block;
 }

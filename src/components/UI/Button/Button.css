@@ -16,6 +16,9 @@
   font-weight: 700;
   border-radius: 20px;
 }
+.ConfirmDisableSMSAuth{
+  top: 32px;
+}
 .ConfirmSMSAuth, .ConfirmDisableSMSAuth{
   font-family: SegoeUI-Bold;
   width: 202px;
@@ -38,11 +41,15 @@
   box-shadow: none;
   background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
 }
+.ConfirmSMSAuth{
+  top: -12px;
+}
 .ConfirmSMSAuth:hover{
   color: #fff;
   background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
 }
 .SendSMSAuth{
+  top: -2px;
   font-family: SegoeUI-Bold;
   width: 202px;
   height: 42px;
@@ -81,13 +88,19 @@
   height: 42px;
   box-sizing: border-box;
 }
-.CloseModalButton svg{
+.CloseModalButton{
   width: 16px;
   height: 16px;
   position: absolute;
   top: 30px;
   right: 30px;
   fill: #a7aaad;
+  cursor: pointer;
+  z-index: 1;
+}
+.CloseModalButton svg{
+  width: 100%;
+  height: 100%;
 }
 .WelcomeButton{
   font-family: SegoeUI-Bold;
@@ -127,7 +140,13 @@
   font-weight: 700;
   font-size: 18px;
 }
+.BuyTab:hover, .SellTab:hover{
+  background-color: #ebd8e9;
+}
 .BuyTabActive, .SellTabActive{
+  background-color: #fff;
+}
+.BuyTabActive:hover, .SellTabActive:hover{
   background-color: #fff;
 }
 .BtnCoin{
@@ -402,7 +421,7 @@
 }
 .BirthMonthDrpDwnButton, .BirthDayDrpDwnButton, .BirthYearDrpDwnButton{
   font-family: SegoeUI-Bold;
-  height: 43px;
+  height: 42px;
   width: 100%;
   position: relative;
   z-index: 5;
@@ -414,6 +433,10 @@
   font-size: 14px;
   font-weight: 700;
   box-sizing: border-box;
+}
+.BirthMonthDrpDwnButton > span, .BirthDayDrpDwnButton > span, .BirthYearDrpDwnButton > span{
+  right: 22px;
+  top: 13px;
 }
 .BirthMonthDrpDwnButton::before,
 .BirthDayDrpDwnButton::before,
@@ -471,6 +494,9 @@
 }
 
 @media screen and (min-width: 1900px){
+  .WelcomeButton{
+    top: -41px;
+  }
   .DropdownButtonUser{
     padding-left: 18px;
     padding-right: 22px;
@@ -531,6 +557,10 @@
 }
 
 @media screen and (max-width: 1365px){
+  .CloseModalButton{
+    top: 28px;
+    right: 33px;
+  }
   .SwitchBtn > img{
     transform: translate(1px, 6px);
   }
@@ -545,6 +575,10 @@
   }
   .DropdownButtonLang > div > span:last-child{
     transform: rotate(-90deg) translate(4px, -3px);
+  }
+  .LoginButton{
+    left: -1px;
+    width: 163px;
   }
 }
 
@@ -574,9 +608,17 @@
     margin-right: 19px;
     margin-left: 20px;
   }
+  .ConfirmDisableGoogleAuth{
+    width: 200px;
+    height: 40px;
+    top: 38px;
+  }
 }
 
 @media screen and (max-width: 767px){
+  .ConfirmDisableGoogleAuth{
+    top: 21px;
+  }
   .SubmitRequestBtn{
     width: 182px;
   }
@@ -644,9 +686,12 @@
   }
   .ConfirmDisableGoogleAuth{
     width: 143px;
+    top: 30px;
   }
   .CloseModalButton{
     display: block;
+    top: 20px;
+    right: 20px;
   }
   .CloseModalButton svg{
     top: 20px;
@@ -654,6 +699,8 @@
   }
   .WelcomeButton{
     width: 140px;
+    top: -6px;
+    height: 40px;
   }
   .BuyTab, .SellTab{
     font-size: 16px;
@@ -706,5 +753,11 @@
   }
   .BtnPeriod:nth-child(3){
     transform: translateX(1px);
+  }
+  .WelcomeButton{
+    top: -8px;
+  }
+  .ConfirmDisableGoogleAuth{
+    top: 23px;
   }
 }

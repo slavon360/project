@@ -263,12 +263,38 @@
     padding: 20px 20px 31px 20px;
     width: 100%;
   }
+  .TwoFactorAuthentication{
+    padding: 12px 20px 31px 20px;
+  }
+  .LoginPassword{
+    padding: 13px 20px 35px 20px;
+  }
+  .LoginPassword .Row .Cell:first-child{
+    margin-right: 3px;
+  }
+  .LoginPassword .Row .Cell:first-child > img{
+    transform: translate(-3px, -1px);
+  }
   .TwoFactorAuthentication .Header, .LoginPassword .Header{
     padding-bottom: 20px;
-    margin-bottom: 21px;
+  }
+  .LoginPassword .Header{
+    margin-bottom: 13px;
+  }
+  .LoginPassword .Row .Cell:last-child{
+    transform: translate(-1px, 4px);
+  }
+  .TwoFactorAuthentication .Header{
+    margin-bottom: 12px;
   }
   .TwoFactorAuthentication .Row:not(:last-child){
-    margin-bottom: 19px;
+    margin-bottom: 16px;
+  }
+  .TwoFactorAuthentication .Row:first-child .Cell:nth-child(3){
+    transform: translate(-1px, 5px);
+  }
+  .TwoFactorAuthentication .Row:nth-child(2) .Cell:nth-child(3){
+    transform: translate(-1px, 3px);
   }
   .TwoFactorAuthentication .Cell, .LoginPassword .Cell{
     font-size: 14px;
@@ -293,7 +319,7 @@
     padding-top: 13px;
   }
   .LoginPassword{
-    padding: 15px 20px 31px 19px;
+    padding: 17px 20px 31px 19px;
   }
   .TwoFactorAuthentication .Header,
   .LoginPassword .Header{
@@ -301,7 +327,7 @@
     margin-bottom: 19px;
   }
   .LoginPassword .Header{
-    margin-bottom: 16px;
+    margin-bottom: 19px;
   }
   .LoginPassword .Cell img{
     width: 21px;

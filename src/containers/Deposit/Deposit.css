@@ -120,6 +120,12 @@
   .TableWrp tbody td:nth-child(4){
     width: 77px;
   }
+  .TableWrp table tbody{
+    width: 450px;
+  }
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(3px) !important;
+  }
 }
 
 @media screen and (max-width: 1366px){
@@ -167,32 +173,46 @@
 
 @media screen and (max-width: 767px){
   .DepositWrp{
-    padding: 30px 20px;
+    padding: 30px 20px 25px;
     flex-direction: column;
   }
   .TableWrp{
     display: block;
     width: 374px;
     align-self: center;
-    padding: 20px 15px 24px 15px;
+    padding: 18px 15px 24px 18px;
     height: 330px;
     overflow: hidden;
   }
   .TableWrp > div:last-child{
     margin-top: 9px;
+    position: relative;
+    height: 45px;
+    background-color: #fff;
+  }
+  .TableWrp > div:last-child::before{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 390px;
+    top: -5px;
+    height: 75px;
+    left: -20px;
   }
   .TableWrp > div:last-child span{
+    position: relative;
     font-size: 14px;
   }
   .TableWrp table thead th:last-child{
     font-size: 12px;
-    padding-bottom: 22px !important;
+    padding-bottom: 20px !important;
   }
   .TableWrp table tbody{
     padding-top: 12px;
     font-size: 14px;
     height: 200px;
     overflow: hidden;
+    width: 100%;
   }
   .TableWrp table tbody td:first-child{
     width: 85px;
@@ -214,6 +234,9 @@
     font-size: 12px;
     display: inline-block;
     transform: translateY(-5px);
+  }
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(-29px) !important;
   }
   .TableWrp table tbody td:last-child{
     transform: translate(-25px, 0);
@@ -257,8 +280,14 @@
   .TableWrp table tbody td:nth-child(4) > span:nth-child(2){
     transform: translateY(-2px);
   }
-  .TableWrp table tbody td:last-child{
-    transform: translate(-15px, 4px);
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(-12px) !important;
+  }
+}
+
+@media screen and (max-width: 374px){
+  .TableWrp table tbody tr td:nth-child(5){
+    transform: translate(-25px) !important;
   }
 }
 
@@ -273,6 +302,9 @@
   .TableWrp > div:last-child{
     transform: translate(-3px, -4px);
     margin-top: 0;
+  }
+  .TableWrp > div:last-child::before{
+    background-color: #f8f8f8;
   }
   .TableWrp > div:last-child > span{
     font-size: 12px;

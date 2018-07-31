@@ -3,7 +3,9 @@ import LoginBackground from '../../components/Login/LoginBackground';
 import DynamicForm from '../../components/Login/DynamicForm';
 import LoginForm from '../../components/Login/LoginForm';
 // import SmsAuth from '../../components/Login/SmsAuth';
+// import SmsAuthError from '../../components/Login/SmsAuthError';
 // import GoogleAuth from '../../components/Login/GoogleAuth';
+// import GoogleAuthError from '../../components/Login/GoogleAuthError';
 // import GoogleAuthSecret from '../../components/Login/GoogleAuthSecret';
 import classes from './Login.css';
 import backgroundImg from '../../../assets/images/backgrounds/background_login.jpg';
@@ -14,7 +16,7 @@ class Login extends Component {
       email: '',
       password: '',
       smsCode: '',
-      smsCodeWrong: true,
+      smsCodeWrong: false,
       googleAuthCode: '',
       googleAuthCodeWrong: true,
       googleAuthSecretCode: '',

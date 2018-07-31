@@ -58,6 +58,15 @@
   }
 }
 
+@media screen and (max-width: 767px){
+  .RightSection{
+    transform: translate(2px, 2px);
+  }
+  .Mail{
+    transform: translateX(0);
+  }
+}
+
 @media screen and (max-width: 413px){
   .UserIconWrp{
     margin-right: 29px;

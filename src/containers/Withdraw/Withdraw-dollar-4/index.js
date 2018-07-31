@@ -3,16 +3,25 @@ import { connect } from 'react-redux';
 import classNames from 'classnames/bind';
 import { transactions } from '../../../../dumpData.json';
 import Transactions from '../../../components/Transactions';
-import WithdrawDollar from '../../../components/DepositWithdrawComponent/WithdrawDollar';
+import WithdrawSummarise from '../../../components/DepositWithdrawComponent/WithdrawSummarise';
 import * as actionTypes from '../../../actions/actionTypes';
 import * as actions from '../../../actions';
-import classes from './Withdraw-dollar.css';
+import classes from './Withdraw-dollar-4.css';
 
 const cx = classNames.bind(classes);
 
 class Withdraw extends Component {
   state = {
     transactions,
+    sum: {
+      value: 1200,
+      currency: 'AUD Australian Dollar',
+    },
+    bank: {
+      bankName: 'Bank Name',
+      bankCode: 'Bank Code',
+      accountNumber: 'Account Number',
+    },
   }
 
   componentWillMount() {
@@ -62,13 +71,9 @@ class Withdraw extends Component {
   render() {
     return (
       <div className={classes.WithdrawWrp}>
-        <WithdrawDollar
-          data={this.props.withdrawData}
-          hideShowCurrencyDropdown={this.props.hideShowCurrencyDropdown}
-          hideCurrencyDropdown={this.props.hideCurrencyDropdown}
-          selectCurrency={this.selectCurrency}
-          changeInputsValue={this.props.changeInputsValue}
-          setValueToMax={this.props.setValueToMax}
+        <WithdrawSummarise
+          sum={this.state.sum}
+          bank={this.state.bank}
         />
         <div
           className={

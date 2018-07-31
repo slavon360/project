@@ -15,7 +15,7 @@ const disableGoogleAuth = () => (
       />
       <div className={classes.GoogleAuthCode}>Google Authentification code</div>
       <Input
-        wrpClasses={['DisableSMSAuthCode']}
+        wrpClasses={['DisableGoogleAuthCode']}
         elementConfig={{ type: 'text' }}
         elementType="input"
       />

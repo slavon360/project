@@ -10,7 +10,7 @@
   font-weight: 700;
   color: #922c88;
   font-size: 24px;
-  margin: 0 0 70px;
+  margin: 0 0 55px;
 }
 .InputsContent{
   text-align: center;
@@ -31,11 +31,11 @@
 .InputsContent input{
   width: 100%;
   border: none;
-  padding-bottom: 17px;
+  padding-bottom: 14px;
   outline: none;
   border-bottom: 1px solid #e8e8e8;
   background-color: transparent;
-  margin-bottom: 38px;
+  margin-bottom: 23px;
   transform: translateY(-5px);
   color: #000;
   font-weight: 700;
@@ -46,7 +46,7 @@
   font-weight: 100;
 }
 .InputsContent input:hover, .InputsContent input:focus{
-  margin-bottom: 37px;
+  margin-bottom: 22px;
 }
 .InputsContent label{
   font-size: 14px;

@@ -84,6 +84,9 @@
 .CurrencyDropdownWrp.BanksDropdownWrp{
   z-index: 3;
 }
+.CurrencyDropdownWrp.BanksDropdownWrp > button{
+  border-color: #fff;
+}
 .CurrencyContainerDpDwn.BanksContainerDpDwn{
   padding-bottom: 0
 }
@@ -183,17 +186,20 @@
   display: inline-block;
   position: relative;
   vertical-align: top;
+  z-index: 5;
 }
 .BirthMonthDrpDwnWrp{
   width: 182px;
   margin-right: 7px;
 }
 .BirthDayDrpDwnWrp{
-  width: 113px;
+  width: 110px;
+  transform: translate(1px, 1px);
   margin-right: 6px;
 }
 .BirthYearDrpDwnWrp{
-  width: 173px;
+  transform: translate(4px, 1px);
+  width: 170px;
 }
 .BirthYearDrpDwnContainer.Show,
 .BirthDayDrpDwnContainer.Show,
@@ -320,6 +326,9 @@
 }
 
 @media screen and (max-width: 767px){
+  .BanksContainerDpDwn > button{
+    padding: 0 31px 0 13px;
+  }
   .LangDropdownWrp{
     transform: translate(3px, 2px) !important;
   }
@@ -367,6 +376,9 @@
 }
 
 @media screen and (max-width: 359px){
+  .CurrencyDropdownWrp.BanksDropdownWrp > button, .BanksContainerDpDwn{
+    width: 244px;
+  }
   .CurrencyDropdownWrp{
     width: 282px;
   }

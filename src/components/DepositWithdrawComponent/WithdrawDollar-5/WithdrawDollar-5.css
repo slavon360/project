@@ -1,0 +1,192 @@
+.DepositWithdrawWrp{
+  padding: 65px 80px 61px 77px;
+  display: inline-block;
+  width: 800px;
+  box-sizing: border-box;
+  background-color: #fff;
+  vertical-align: top;
+  border-radius: 0 8px 8px 8px;
+  box-shadow: 0 4px 18px 0 rgba(48, 8, 69, 0.07);
+}
+.DepositWithdrawWrp form > div:nth-child(3){
+  padding-top: 9px;
+}
+.DepositWithdrawWrp .Title{
+  font-family: SegoeUI-Bold;
+  font-size: 24px;
+  font-weight: 700;
+  color: #922c88;
+  text-transform: uppercase;
+  margin: 0 0 42px 0;
+}
+.DropDwnWrp{
+  margin-bottom: 41px;
+}
+.DropDwnWrp .SelectCurrency, .DropDwnWrp .Balance{
+  color: #41424e;
+  font-size: 14px;
+}
+.DropDwnWrp .SelectCurrency{
+  margin-bottom: 15px;
+}
+.DropDwnWrp .Balance{
+  margin-top: 6px;
+  text-align: right;
+  padding-right: 49px;
+}
+.SelectedCurrency{
+  height: 48px;
+  box-sizing: border-box;
+  padding: 11px 31px 13px 31px;
+}
+.SelectedCurrency > img{
+  width: 24px;
+  height: 24px;
+}
+.SelectedCurrency .SelectedTitle,
+.SelectedCurrency .Angle{
+  display: inline-block;
+}
+.SelectedCurrency .SelectedTitle{
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 27px;
+  transform: translateY(-5px);
+}
+.SelectedCurrency .Angle{
+  float: right;
+  transform: translateY(2px);
+}
+.DepositWithdrawWrp .FeedBack{
+  text-transform: uppercase;
+  transform: translateX(2px);
+  margin-top: 34px;
+  font-size: 14px;
+  font-family: SegoeUI-Bold;
+  font-weight: 700;
+  color: #41424e;
+  text-align: center;
+}
+
+@media screen and (max-width: 1899px){
+  .DepositWithdrawWrp{
+    padding: 65px 80px 72px 79px;
+  }
+  .DropDwnWrp .SelectCurrency{
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 1650px){
+  .DepositWithdrawWrp{
+    width: 680px;
+  }
+}
+
+@media screen and (max-width: 1366px){
+  .DepositWithdrawWrp{
+    width: 680px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+  .DepositWithdrawWrp{
+    align-self: center;
+    margin-bottom: 40px;
+  }
+  .DropDwnWrp .SelectCurrency{
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .DepositWithdrawWrp{
+    margin-bottom: 30px;
+    align-self: center;
+  }
+  .DropDwnWrp .SelectCurrency{
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .DepositWithdrawWrp{
+    padding: 33px 20px 22px;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 50px rgba(87, 7, 79, 0.26);
+    border-radius: 8px;
+  }
+  .DepositWithdrawWrp .Title{
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .SelectedCurrency .SelectedTitle{
+    font-size: 14px;
+    padding-left: 15px;
+  }
+  .DropDwnWrp .Balance{
+    margin-top: 8px;
+  }
+  .DropDwnWrp .SelectCurrency, .DropDwnWrp .Balance{
+    font-size: 12px;
+  }
+  .DropDwnWrp .Balance{
+    padding-right: 0;
+  }
+  .DropDwnWrp{
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 413px){
+  .DepositWithdrawWrp{
+    padding: 13px 20px 30px;
+    margin-bottom: 40px;
+  }
+  .DepositWithdrawWrp .Title{
+    font-size: 16px;
+    margin-bottom: 21px;
+  }
+  .DropDwnWrp{
+    margin-bottom: 17px;
+  }
+  .DropDwnWrp .SelectCurrency{
+    margin-bottom: 12px;
+    transform: translate(-1px, 2px);
+  }
+  .SelectedCurrency{
+    height: 46px;
+  }
+  .SelectedCurrency .SelectedTitle{
+    padding-left: 7px;
+    transform: translateY(-7px);
+    font-size: 14px;
+  }
+  .DropDwnWrp .Balance{
+    margin-top: 6px;
+    transform: translateX(1px);
+  }
+}
+
+@media screen and (max-width: 359px){
+  .DepositWithdrawWrp{
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .DepositWithdrawWrp .Title{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .SelectedTitle{
+    font-size: 14px;
+  }
+  .DropDwnWrp{
+    margin-bottom: 17px;
+  }
+  .DropDwnWrp .Balance{
+    transform: translateX(-2px);
+  }
+}

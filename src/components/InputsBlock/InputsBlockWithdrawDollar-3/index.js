@@ -1,12 +1,13 @@
 import React from 'react';
 import Input from '../../UI/Input';
+import exclamationImg from '../../../../assets/images/icons/exclamation.png';
 import classes from './InputsBlockWithdrawDollar-3.css';
 
 const inputsBlockDollar = () => (
   <form className={classes.InputsBlockWrp}>
     <div className={classes.InputsBlockHead}>
       <div className={classes.LeftSide}>
-        <img src="assets/exclamation.png" alt="exclamation" />
+        <img src={exclamationImg} alt="exclamation" />
       </div>
       <div className={classes.RightSide}>
         <div className={classes.Title}>Important!</div>
@@ -18,7 +19,7 @@ const inputsBlockDollar = () => (
     </div>
     <Input wrpClasses={['DepositAddress']} elementConfig={{ type: 'text', label: 'Enter the amount you want to withdraw' }} />
     <div className={classes.CopyDepositAddressWrp}>
-      <button before-content="Next" type="button"><a href="/bithela/deposit-dollar-2">Next</a></button>
+      <button before-content="Next" type="button"><a>Next</a></button>
     </div>
   </form>
 );

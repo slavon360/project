@@ -1,6 +1,6 @@
 .AuthSupportWrp{
   width: 902px;
-  padding: 0 128px 77px 137px;
+  padding: 0 128px 8px 137px;
   margin-top: 85px;
   box-sizing: border-box;
 }
@@ -14,6 +14,17 @@
 .StepsResponsive{
   display: none;
 }
+.Footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  top: -69px;
+}
+.Footer > button{
+  top: 0;
+  left: -6px;
+}
 .AuthSupportWrp h2{
   font-family: SegoeUI-Bold;
   text-align: center;
@@ -22,8 +33,16 @@
   font-weight: 700;
   color: #922c88;
   margin-bottom: 56px;
+  position: relative;
+  top: -9px;
+  left: -6px;
+}
+.DisableForm{
+  position: relative;
 }
 .DisableForm .SecretCodeText{
+  position: relative;
+   top: -20px;
   font-size: 16px;
   color: #41424e;
   margin-bottom: 19px;
@@ -32,6 +51,8 @@
   font-weight: 700;
 }
 .Top{
+  position: relative;
+  top: -20px;
   margin-bottom: 55px;
 }
 .Top .Tip{
@@ -46,6 +67,8 @@
 }
 .QrBlock{
   margin-bottom: 6px;
+  position: relative;
+  top: -35px;
 }
 .QrBlock img{
   margin-right: 27px;
@@ -56,6 +79,18 @@
 }
 .Steps .Item{
   margin-bottom: 15px;
+}
+.Steps .Item:nth-child(2){
+  top: -21px;
+  position: relative;
+}
+.Steps .Item:nth-child(3){
+  position: relative;
+  top: -20px;
+}
+.Steps .Item:nth-child(4){
+  position: relative;
+  top: -22px;
 }
 .StepsResponsive .Item{
   margin-bottom: 15px;
@@ -80,11 +115,15 @@
   font-weight: 700;
   color: #41424e;
   margin-bottom: 47px;
+  position: relative;
+  top: -62px;
 }
 .Enter{
   font-size: 14px;
   color: #41424e;
   margin-bottom: 16px;
+  position: relative;
+  top: -69px;
 }
 
 @media screen and (max-width: 1850px){
@@ -126,6 +165,42 @@
     height: auto;
     overflow: visible;
   }
+  .AuthSupportWrp h2{
+    top: 37px;
+    left: 0;
+  }
+  .DisableForm{
+    position: relative;
+    top: 49px;
+  }
+  .Top .Tip{
+    top: -7px;
+    position: relative;
+  }
+  .Steps .Item:nth-child(2), .Steps .Item:nth-child(3){
+    position: relative;
+    top: -2px;
+  }
+  .Steps .Item:nth-child(4){
+    position: relative;
+    top: -1px;
+  }
+  .Once{
+    position: relative;
+    top: -39px;
+  }
+  .Enter{
+    position: relative;
+    top: -46px;
+  }
+  .Footer{
+    position: relative;
+    top: -48px;
+  }
+  .Footer > button{
+    width: 238px;
+    left: -3px;
+  }
 }
 
 @media screen and (max-width: 767px){
@@ -138,12 +213,17 @@
   .AuthSupportWrp h2{
     font-size: 18px;
     margin-bottom: 20px;
+    top: 9px;
   }
-  .SecretCodeText{
+  .DisableForm .SecretCodeText{
     font-size: 14px;
+    top: -41px;
+    left: 2px;
   }
   .Top{
     margin-bottom: 29px;
+    top: -42px;
+    position: relative;
   }
   .Top .Tip{
     width: 142px;
@@ -151,7 +231,12 @@
     margin-left: 9px;
     transform: translateY(6px);
   }
+  .QrBlock{
+    position: relative;
+    top: -53px;
+  }
   .QrBlock img{
+    transform: translate(2px, 6px);
     width: 123px;
     height: 123px;
     margin-right: 17px;
@@ -185,10 +270,21 @@
   .Once{
     font-size: 14px;
     margin-bottom: 40px;
+    position: relative;
+    top: -53px;
   }
   .Enter{
+    position: relative;
+    top: -85px;
     font-size: 12px;
     margin-bottom: 8px;
+  }
+  .Footer{
+    top: -85px;
+    position: relative;
+  }
+  .Footer > button{
+    width: 137px;
   }
 }
 
@@ -200,6 +296,7 @@
   }
   .AuthSupportWrp h2{
     font-size: 16px;
+    top: 5px
   }
   .DisableForm .SecretCodeText{
     font-size: 12px;
@@ -210,7 +307,7 @@
   }
   .Top .Tip{
     width: 121px;
-    transform: translateY(-4px);
+    transform: translateY(10px);
   }
   .QrBlock img{
     width: 113px;
@@ -228,11 +325,43 @@
     font-size: 12px;
     width: 140px;
   }
+  .Steps .Item:first-child{
+    position: relative;
+    top: -4px;
+  }
+  .Steps .Item:nth-child(2){
+    position: relative;
+    top: -8px;
+  }
   .StepsResponsive .Item .Text{
     width: 256px;
   }
+  .StepsResponsive .Item:first-child{
+    position: relative;
+    top: -13px;
+  }
+  .StepsResponsive .Item:nth-child(2){
+    position: relative;
+    top: -15px;
+  }
   .Once{
+    position: relative;
+    top: -68px;
     margin-bottom: 30px;
+  }
+  .Enter{
+    position: relative;
+    top: -74px;
+  }
+  .Footer{
+    top: -72px;
+    position: relative;
+  }
+  .Footer > button{
+    left: 1px;
+  }
+  .DisableForm{
+    top: 39px;
   }
 }
 
@@ -241,16 +370,21 @@
     width: 282px;
     padding-bottom: 31px;
     overflow: auto;
+    padding-left: 19px;
+    padding-right: 19px;
   }
   .AuthSupportWrp h2{
     font-size: 14px;
     text-align: left;
     margin-bottom: 14px;
+    top: -4px;
+    left: 3px;
   }
   .Top .Tip{
+    margin: 0;
     width: 99px;
     font-size: 8px;
-    transform: translateY(0);
+    transform: translate(10px, 3px);
   }
   .Steps{
     width: 123px;
@@ -262,14 +396,44 @@
   .StepsResponsive .Item .Text{
     width: 90%;
   }
+  .Steps .Item:first-child{
+    position: relative;
+    top: 3px;
+    left: -5px;
+  }
   .Steps .Item:nth-child(2){
     margin-bottom: 6px;
+    top: -4px;
+    left: -4px;
   }
   .Steps .Item .Number, .StepsResponsive .Item .Number{
     font-size: 12px;
   }
+  .StepsResponsive .Item:first-child{
+    position: relative;
+    top: -2px;
+    left: 3px;
+  }
+  .StepsResponsive .Item:nth-child(2){
+    position: relative;
+    top: -7px;
+    left: 3px;
+  }
+  .DisableForm .SecretCodeText{
+    top: -45px;
+    left: 2px;
+  }
   .Once{
     font-size: 12px;
     margin-bottom: 20px;
+    top: -60px;
+    position: relative;
+  }
+  .Footer, .Enter{
+    position: relative;
+    top: -55px;
+  }
+  .QrBlock img{
+    width: 109px;
   }
 }

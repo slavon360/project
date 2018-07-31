@@ -1,19 +1,23 @@
 .LoginFormWrp{
   width: 100%;
-  padding: 29.35vh 0 0 3.5vw;
+  padding: 27.2vh 0 0 3.5vw;
   box-sizing: border-box;
 }
+.LoginFormWrp > div > input{
+  padding-bottom: 14px;
+}
 .LoginFormWrp > div:first-child > input{
-  margin-bottom: 45px;
+  margin-bottom: 31px;
 }
 .LoginFormWrp > div:first-child > input:hover, .LoginFormWrp > div:first-child > input:focus{
-  margin-bottom: 44px;
+  margin-bottom: 30px;
 }
 .LoginFormWrp > div:nth-child(2) > input{
   margin-bottom: 60px;
   letter-spacing: 4px;
   font-size: 30px;
   color: #d092c9;
+  padding-bottom: 12px;
 }
 .LoginFormWrp > div:nth-child(2) > input::-webkit-input-placeholder{
   letter-spacing: 0;
@@ -96,7 +100,13 @@
 
 @media screen and (max-width: 1919px){
   .LoginFormWrp{
-    padding: 27.1vh 0 0 2.2vw
+    padding: 22.8vh 0 0 2.2vw
+  }
+}
+
+@media screen and (max-width: 1365px){
+  .LoginFormWrp{
+    padding: 22.8vh 0 0 2.7vw;
   }
 }
 
@@ -105,7 +115,7 @@
     width: 336px;
     display: inline-block;
     text-align: left;
-    padding: 14vh 0 0 0;
+    padding: 11.8vh 0 0 0;
   }
 }
 
@@ -151,10 +161,19 @@
     margin-bottom: 39px;
   }
 }
-
-@media screen and (max-width: 413px){
+@media screen and (max-width: 450px){
   .LoginFormWrp{
-    padding-top: 8vh;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 374px){
+  .LoginFormWrp{
+    padding-top: 0;
+    transform: translateY(-5px);
+  }
+  .LoginFormWrp > div:first-child{
+    margin-bottom: -40px;
+    margin-top: 28px;
   }
   .LoginFormWrp input{
     font-size: 14px;
@@ -164,6 +183,6 @@
   }
   .Footer .Tip .Forgot{
     margin-top: 2px;
-    margin-bottom: 9px;
+    margin-bottom: 2px;
   }
 }

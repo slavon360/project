@@ -1,5 +1,5 @@
 .DepositWithdrawWrp{
-  padding: 65px 80px 72px 77px;
+  padding: 65px 80px 69px 77px;
   display: inline-block;
   width: 800px;
   box-sizing: border-box;
@@ -53,6 +53,12 @@
 .SelectedCurrency .Angle{
   float: right;
   transform: translateY(2px);
+}
+
+@media screen and (min-width: 1900px){
+  .DropDwnWrp .Balance{
+    padding-right: 50px;
+  }
 }
 
 @media screen and (max-width: 1899px){
