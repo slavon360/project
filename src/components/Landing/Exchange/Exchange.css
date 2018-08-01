@@ -71,27 +71,28 @@
 }
 .InteractiveView{
   width: 804px;
-  transform: translateX(16px);
+  transform: translate(11px, -8px) scale(1.14);
   height: 560px;
-  box-shadow: 0 0 68px 0 #ececec;
+  /* box-shadow: 0 0 68px 0 #ececec; */
+  background-size: cover;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
 .InteractiveView img{
-  transform: scale(1.16);
+  transform: scale(0.875) translate(-2px, 49px);
   width: 100%;
 }
-.Buy-and-Sell{
+.Buy-and-Sell > img{
   animation-name: Buy-and-Sell;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-.Trust-and-Security{
+.Trust-and-Security > img{
   animation-name: Trust-and-Security;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-.Trade-Bitcoin{
+.Trade-Bitcoin > img{
   animation-name: Trade-Bitcoin;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -188,7 +189,6 @@
     width: 493px;
     height: 340px;
     margin-top: 160px;
-    box-shadow: 0 6px 68px rgba(0,0,0, .1);
   }
 }
 @media screen and (max-width: 1023px){
@@ -314,6 +314,9 @@
     width: 374px;
     height: 259px;
     transform: translateY(-460px);
+  }
+  .InteractiveView img{
+    transform: scale(0.875) translate(-2px, 28px);
   }
 }
 

@@ -1,7 +1,7 @@
 {
   "landingData": {
     "checkedTab": {
-      "title": "Trade Bitcoin and Ethereum easily",
+      "title": "<span>Trade</span> <span>Bitcoin</span> <span>and</span> <span>Ethereum</span> <span>easily</span>",
       "icon": "bitcoin",
       "checkedStep": "Deposit and Withdraw",
       "className": "Trade-Bitcoin",
@@ -28,7 +28,7 @@
     },
     "tabs": [
       {
-        "title": "Trade Bitcoin and Ethereum easily",
+        "title": "<span>Trade</span> <span>Bitcoin</span> <span>and</span> <span>Ethereum</span> <span>easily</span>",
         "description": "Join the growing world of digital currencies using our platform",
         "checked": false,
         "className": "Trade-Bitcoin",
@@ -52,7 +52,7 @@
         ]
       },
       {
-        "title": "Trust and Security",
+        "title": "<span>Trust</span> <span>and</span> <span>Security</span>",
         "description": "Avoid perennial inflation by buying into deflationary currencies",
         "checked": false,
         "className": "Trust-and-Security",
@@ -76,7 +76,7 @@
         ]
       },
       {
-        "title": "Buy and Sell in Seconds",
+        "title": "<span>Buy</span> <span>and</span> <span>Sell</span> <span>in</span> <span>Seconds</span>",
         "description": "Use our fast responsive platform that  helps you manage the market",
         "className": "Buy-and-Sell",
         "checked": false,

@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import classes from './Exchange.css';
-import WithdrawImg from '../../../../assets/images/backgrounds/withdraw.png';
+import BrowserWindow from '../../../../assets/images/backgrounds/browser-window.jpg';
+import WithdrawImg from '../../../../assets/images/backgrounds/withdraw.jpg';
 import TrustImg from '../../../../assets/images/backgrounds/trust_security.jpg';
 import BuySellImg from '../../../../assets/images/backgrounds/buy_sell.jpg';
 
@@ -36,7 +37,10 @@ const exchange = props => (
         </div>
       ))}
     </div>
-    <div className={cx(classes.InteractiveView, classes[props.checkedTab.className])}>
+    <div
+      className={cx(classes.InteractiveView, classes[props.checkedTab.className])}
+      style={{ backgroundImage: `url(${BrowserWindow})` }}
+    >
       <img src={getImage(props.checkedTab.checkedStep)} alt={props.checkedTab.checkedStep} />
     </div>
   </div>

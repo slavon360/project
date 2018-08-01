@@ -31,7 +31,7 @@ const whyUse = props => (
           <div className={classes.Icon}>
             {getIcon(tab.icon)}
           </div>
-          <div className={classes.Title}>{tab.title}</div>
+          <div className={classes.Title} dangerouslySetInnerHTML={{ __html: tab.title }} />
           <div className={classes.Description}>{tab.description}</div>
         </div>
       ))}

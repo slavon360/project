@@ -85,6 +85,9 @@
   color: #41424e;
   text-transform: uppercase;
 }
+.Tab .Title > span{
+  display: inline-block;
+}
 .Tab .Description{
   color: #83878c;
   font-size: 16px;
@@ -173,7 +176,7 @@
 
 @media screen and (max-width: 1365px){
   .WhyUseWrp{
-    margin-bottom: 142px;
+    margin-bottom: 144px;
   }
   .WhyUseWrp h2{
     font-size: 30px;
@@ -191,7 +194,7 @@
 @media screen and (max-width: 1023px){
   .WhyUseWrp{
     margin-top: -120px;
-    margin-bottom: 110px;
+    margin-bottom: 118px;
   }
   .WhyUseWrp h2{
     font-size: 24px;
@@ -214,15 +217,35 @@
   .Tab:first-child .Title{
     transform: translateX(0);
   }
+  .Tab:first-child .Title > span:first-child{
+    margin-left: 20px;
+    transform: translate(-6px,0);
+  }
+  .Tab:first-child .Title > span:nth-child(2){
+    transform: translate(-6px, 0);
+  }
+  .Tab:first-child .Title > span:nth-child(3),
+  .Tab:first-child .Title > span:nth-child(4),
+  .Tab:first-child .Title > span:nth-child(5){
+    transform: translate(6px, -1px);
+  }
   .Tab:first-child .Icon{
     top: -8px;
     left: 6px;
   }
   .Tab:first-child .Description{
-    transform: translateX(6px);
+    transform: translate(6px, 2px);
   }
   .Tab:first-child .Icon::before, .Tab:nth-child(2) .Icon::before{
     top: -35px;
+  }
+  .Tab:nth-child(2) .Title > span:first-child{
+    margin-left: 45px;
+    transform: translateX(-20px);
+  }
+  .Tab:nth-child(2) .Title > span:nth-child(2),
+  .Tab:nth-child(2) .Title > span:nth-child(3){
+    transform: translate(5px, -3px);
   }
   .Tab:last-child .Icon::before{
     top: -33px;
@@ -252,10 +275,14 @@
     transform: translateX(12px);
   }
   .Tab:nth-child(2) .Description{
-    transform: translateX(17px);
+    transform: translate(17px, 2px);
   }
   .Tab:last-child{
     width: 148px;
+  }
+  .Tab:last-child .Title > span:nth-child(4),
+  .Tab:last-child .Title > span:nth-child(5){
+    transform: translate(2px, -2px);
   }
   .Tab:last-child .Icon{
     top: -10px;
@@ -270,7 +297,7 @@
     transform: translateX(38px);
   }
   .Tab:last-child .Description{
-    transform: translateX(18px);
+    transform: translate(18px, 3px);
   }
 }
 
@@ -325,7 +352,7 @@
 
 @media screen and (max-width: 498px){
   .WhyUseWrp{
-    margin-bottom: 154px;
+    margin-bottom: 164px;
   }
   .TabsWrp{
     margin-top: 0;
@@ -349,12 +376,35 @@
   .Tab:first-child .Description{
     transform: translateX(2px);
   }
+  .Tab:first-child .Title > span:first-child{
+    margin-left: 32px;
+    transform: translateX(-15px);
+  }
+  .Tab:first-child .Title > span:nth-child(2){
+    transform: translateX(-15px);
+  }
+  .Tab:first-child .Title > span:nth-child(3){
+    margin-left: 8px;
+  }
+  .Tab:first-child .Title > span:nth-child(3),
+  .Tab:first-child .Title > span:nth-child(4),
+  .Tab:first-child .Title > span:nth-child(5){
+    transform: translate(-1px, 3px);
+  }
+  .Tab:nth-child(2) .Title > span:first-child{
+    margin-left: 55px;
+    transform: translate(-28px, 5px);
+  }
+  .Tab:nth-child(2) .Title > span:nth-child(2),
+  .Tab:nth-child(2) .Title > span:nth-child(3){
+    transform: translate(0, 7px);
+  }
   .Tab:nth-child(2){
     margin-right: 90px;
     transform: translate(30px, -56px);
   }
   .Tab:nth-child(2) .Icon{
-    top: -10px;
+    top: -6px;
     left: 15px;
   }
   .Tab:nth-child(2) .Icon::before{
@@ -365,13 +415,13 @@
     height: 31px;
   }
   .Tab:nth-child(2) .Description{
-    transform: translateX(12px);
+    transform: translate(12px, 6px);
   }
   .Tab:last-child{
     transform: translate(-46px, 77px);
   }
   .Tab:last-child .Icon{
-    top: -18px;
+    top: -13px;
     left: 17px;
   }
   .Tab:last-child .Icon svg{
@@ -381,10 +431,14 @@
   .Tab:last-child .Title{
     margin-bottom: 16px;
     padding: 0 26px;
-    transform: translate(13px, -4px);
+    transform: translate(13px, 1px);
+  }
+  .Tab:last-child .Title > span:nth-child(4),
+  .Tab:last-child .Title > span:nth-child(5){
+    transform: translateY(1px);
   }
   .Tab:last-child .Description{
-    transform: translate(12px, -3px);
+    transform: translate(12px, 3px);
   }
 }
 
@@ -413,7 +467,7 @@
 
 @media screen and (max-width: 389px){
   .WhyUseWrp{
-    margin-bottom: 41px;
+    margin-bottom: 62px;
   }
   .WhyUseWrp h2{
     margin-left: 23px;
@@ -422,7 +476,7 @@
     padding: 0;
   }
   .TabsWrp .Tab .Title{
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 17px;
     transform: translateY(1px);
   }
@@ -434,37 +488,52 @@
   .Tab:first-child .Icon{
     top: -9px;
   }
+  .Tab:first-child .Description{
+    transform: translate(2px, 3px);
+  }
+  .Tab:first-child .Title > span:first-child{
+    margin-left: 33px
+  }
+  .Tab:first-child .Title > span:nth-child(2){
+    transform: translateX(-15px);
+  }
   .Tab:nth-child(2){
     width: 152px;
     transform: translate(-54px, -55px);
     margin-right: 90px;
   }
   .Tab:nth-child(2) .Icon{
-    top: -11px;
+    top: -4px;
     left: 15px;
   }
   .Tab:nth-child(2) .Title{
-    transform: translate(12px, 0px);
+    transform: translate(12px, 1px);
     margin-bottom: 16px;
+  }
+  .Tab:nth-child(2) .Description{
+    transform: translate(12px, 9px);
   }
   .Tab:last-child{
     width: 148px;
     transform: translate(64px, -43px);
   }
   .Tab:last-child .Icon{
-    top: -27px;
+    top: -13px;
     left: 18px;
     transform: translateY(-7px);
   }
   .Tab:last-child .Title{
-    transform: translate(14px, -20px);
+    transform: translate(14px, -6px);
     margin-bottom: -2px;
+  }
+  .Tab:last-child .Description{
+    transform: translate(12px, 14px);
   }
 }
 
 @media screen and (max-width: 359px){
   .WhyUseWrp{
-    margin-bottom: 13px;
+    margin-bottom: 34px;
   }
   .WhyUseWrp h2{
     line-height: 1.3;
