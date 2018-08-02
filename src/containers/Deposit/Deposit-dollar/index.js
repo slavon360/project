@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import classNames from 'classnames/bind';
 import { transactions } from '../../../../dumpData.json';
 import Transactions from '../../../components/Transactions';
-import DepositWithdrawDollar from '../../../components/DepositWithdrawComponent/DepositWithdrawDollar';
+import DepositWithdraw from '../../../components/DepositWithdrawComponent/DepositWithdrawDollar';
 import * as actionTypes from '../../../actions/actionTypes';
 import * as actions from '../../../actions';
 import classes from './Deposit-dollar.css';
@@ -12,6 +12,7 @@ const cx = classNames.bind(classes);
 
 class Deposit extends Component {
   state = {
+    transactionsItemToggled: false,
     transactions,
     mobileView: null,
     expandedTransactions: false,
@@ -38,11 +39,16 @@ class Deposit extends Component {
 
   showMore = (transaction) => {
     let updTransactions = [...this.state.transactions];
-    updTransactions = updTransactions.map(trans => ({
-      ...trans,
-      checked: trans.id === transaction.id && !trans.checked,
-    }));
-    this.setState({ transactions: updTransactions });
+    let transactionsItemToggled = false;
+    updTransactions = updTransactions.map((trans) => {
+      const checked = trans.id === transaction.id && !trans.checked;
+      transactionsItemToggled = checked ? true : transactionsItemToggled;
+      return {
+        ...trans,
+        checked,
+      };
+    });
+    this.setState({ transactions: updTransactions, transactionsItemToggled });
   }
 
   hideShowCurrencyDropdown = () => {
@@ -62,12 +68,27 @@ class Deposit extends Component {
   }
 
   viewAll = () => {
-    this.setState(prevState => ({ expandedTransactions: !prevState.expandedTransactions }));
+    let updTransactions = [...this.state.transactions];
+    const { expandedTransactions } = this.state;
+    updTransactions = updTransactions.map(trans => ({
+      ...trans,
+      checked: trans.checked && !expandedTransactions,
+    }));
+    this.setState(prevState => ({
+      expandedTransactions: !prevState.expandedTransactions,
+      transactions: updTransactions,
+      transactionsItemToggled: false,
+    }));
   }
   render() {
+    global.console.log(this.state);
+    const {
+      expandedTransactions,
+      mobileView,
+      transactionsItemToggled } = this.state;
     return (
       <div className={classes.DepositWrp}>
-        <DepositWithdrawDollar
+        <DepositWithdraw
           data={this.props.depositData}
           hideShowCurrencyDropdown={this.props.hideShowCurrencyDropdown}
           hideCurrencyDropdown={this.props.hideCurrencyDropdown}
@@ -77,18 +98,24 @@ class Deposit extends Component {
         />
         <div
           className={
-            cx(classes.TableWrp, { TableWrpExpanded: this.state.expandedTransactions })
+            cx(classes.TableWrp, {
+              TableWrpExpanded: expandedTransactions,
+              TableWrpAugmented: mobileView && transactionsItemToggled,
+            })
           }
         >
           <Transactions
+            augmentedTbodyHeight={
+              mobileView && transactionsItemToggled && !expandedTransactions ? 260 : null
+            }
             propNames={['status', 'currency', 'amount', 'date']}
             moreInfo={['address', 'xid']}
             headData={[{ title: 'History' }]}
             bodyData={this.state.transactions}
             showMore={this.showMore}
             viewAll={this.viewAll}
-            viewAllText={this.state.mobileView ? 'See more' : null}
-            expanded={this.state.expandedTransactions}
+            viewAllText={mobileView ? 'See more' : null}
+            expanded={expandedTransactions}
           />
         </div>
       </div>

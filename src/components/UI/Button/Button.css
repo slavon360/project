@@ -88,6 +88,9 @@
   height: 42px;
   box-sizing: border-box;
 }
+.PhoneNumberAuthentDropdownButton:hover{
+  border-color: #d092c9;
+}
 .CloseModalButton{
   width: 16px;
   height: 16px;

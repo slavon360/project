@@ -8,6 +8,9 @@
 .WithdrawWrp tbody tr{
   cursor: pointer;
 }
+.TableWrp.TableWrpAugmented{
+  height: 390px;
+}
 .TableWrp{
   display: inline-block;
   box-shadow: 0 4px 18px 0 #dedede;

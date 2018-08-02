@@ -43,6 +43,20 @@
   color: #41424e;
   font-weight: 700;
   cursor: pointer;
+  position: relative;
+}
+.FAQQuestionWrp .Title::before{
+  content: '';
+  position: absolute;
+  left: -50px;
+  width: 55px;
+  height: 100%;
+  top: 0;
+  cursor: pointer;
+}
+.FAQQuestionWrp:hover svg g path,
+.FAQQuestionWrp.Active svg g path{
+  fill: #922c88 !important;
 }
 .FAQQuestionWrp.Active .Title, .FAQQuestionWrp.Inactive .Title:hover{
   color: #922c88;

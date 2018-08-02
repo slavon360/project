@@ -35,6 +35,7 @@ const inputsBlockDollar = props => (
         dropdownButtons={props.bank.list}
         hideShowDropdown={props.hideShowBanksDropdown}
         hideDropdown={props.hideBanksDropdown}
+        setValue={() => {}}
       >
         <div className={classes.SelectedCurrency}>
           <span className={classes.SelectedTitle}>{props.bank.selectedBank.title}</span>

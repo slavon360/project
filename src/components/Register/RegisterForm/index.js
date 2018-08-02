@@ -34,7 +34,7 @@ const registerForm = props => (
       value={props.usersData.terms}
       wrpClasses={['RegisterTermsOfUse']}
       elementType={'input'}
-      optionalLabels={{ second: <span>{"I agree to Bithela's "}<a href="terms">Terms of Use</a></span>,
+      optionalLabels={{ second: <span>{"I agree to Bithela's "}<a href="/bithela/terms">Terms of Use</a></span>,
         third: <Checked styles={{ width: '12px', height: '10px', fill: '#fff' }} /> }}
       elementConfig={{ type: 'checkbox', id: 'terms' }}
     />

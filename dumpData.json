@@ -387,12 +387,12 @@
       [
         {"type": "icon", "icon": "smartphone"},
         {"type": "text", "text": "SMS Authentification|Used for withdrawals and security modifications"},
-        {"type": "button", "textEnabled": "Enable", "textDisabled": "Disable", "checked": true}
+        {"type": "button", "textEnabled": "Enable", "textDisabled": "Disable", "checked": true, "kind": "SMSAuthenticator"}
       ],
       [
         {"type": "icon", "icon": "search"},
         {"type": "text", "text": "Google Authentification|Used for withdrawals and security modifications"},
-        {"type": "button", "textEnabled": "Enable", "textDisabled": "Disable", "checked": false}
+        {"type": "button", "textEnabled": "Enable", "textDisabled": "Disable", "checked": false, "kind": "GoogleAuthenticator"}
       ]
     ],
     "loginPassword": [
@@ -580,7 +580,7 @@
                      "title": "AUD Australian Dollar",
                      "balance": "300256.36",
                      "icon": "/assets/aud.svg",
-                     "link": "/bithela/deposit-dollar",
+                     "link": "/bithela/withdraw-dollar",
                      "checked": false,
                      "shortcut": "AUD"
                    },

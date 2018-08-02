@@ -15,6 +15,8 @@ import Layout from './hoc/Layout';
 
 // import ChangePassword from './components/Modals/ChangePassword';
 // import ThankModal from './components/Modals/ThankModal';
+// import Login from './containers/Login';
+
 import WithdrawDollar5 from './containers/Withdraw/Withdraw-dollar-5';
 /*
 import Register from './containers/Register';

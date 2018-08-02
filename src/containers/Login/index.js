@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import LoginBackground from '../../components/Login/LoginBackground';
 import DynamicForm from '../../components/Login/DynamicForm';
-import LoginForm from '../../components/Login/LoginForm';
+// import LoginForm from '../../components/Login/LoginForm';
 // import SmsAuth from '../../components/Login/SmsAuth';
 // import SmsAuthError from '../../components/Login/SmsAuthError';
 // import GoogleAuth from '../../components/Login/GoogleAuth';
 // import GoogleAuthError from '../../components/Login/GoogleAuthError';
-// import GoogleAuthSecret from '../../components/Login/GoogleAuthSecret';
+import GoogleAuthSecret from '../../components/Login/GoogleAuthSecret';
 import classes from './Login.css';
 import backgroundImg from '../../../assets/images/backgrounds/background_login.jpg';
 
@@ -42,7 +42,7 @@ class Login extends Component {
         setUsersData={this.setUsersData}
         usersData={this.state.usersData}
       >
-        <LoginForm
+        <GoogleAuthSecret
           usersData={this.state.usersData}
           setUsersData={this.setUsersData}
         />

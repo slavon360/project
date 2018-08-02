@@ -8,6 +8,9 @@
 .DepositWrp tbody tr{
   cursor: pointer;
 }
+.TableWrp.TableWrpAugmented{
+  height: 390px;
+}
 .TableWrp.TableWrpExpanded{
   max-height: inherit;
   height: auto;

@@ -18,6 +18,8 @@
   color: #d092c9;
 }
 .GoogleFormWrp > div:nth-child(2) > input::-webkit-input-placeholder{
+  display: block;
+  transform: translateY(-2px);
   letter-spacing: 0;
 }
 .GoogleFormWrp > div:nth-child(2) > input:hover, .GoogleFormWrp > div:nth-child(2) > input:focus{

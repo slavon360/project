@@ -1,12 +1,13 @@
 import React from 'react';
 import Input from '../../UI/Input';
 import classes from './InputsBlockDollar.css';
+import exclamationIcon from '../../../../assets/images/icons/exclamation.png';
 
 const inputsBlockDollar = () => (
   <form className={classes.InputsBlockWrp}>
     <div className={classes.InputsBlockHead}>
       <div className={classes.LeftSide}>
-        <img src="assets/exclamation.png" alt="exclamation" />
+        <img src={exclamationIcon} alt="exclamation" />
       </div>
       <div className={classes.RightSide}>
         <div className={classes.Title}>Important!</div>

@@ -3,22 +3,45 @@
   border: none;
 }
 .CurrentPassword, .NewPassword, .ConfirmNewPassword, .AuthentCode{
+  text-align: left;
   width: 100%;
 }
 .CurrentPassword > input::-webkit-input-placeholder, .NewPassword > input::-webkit-input-placeholder,
 .ConfirmNewPassword > input::-webkit-input-placeholder, .AuthentCode > input::-webkit-input-placeholder{
   font-size: 14px;
   letter-spacing: 0;
+  color: #9e9fa3;
+}
+.NewPassword > input{
+  margin-bottom: 59px;
+}
+.NewPassword > input:hover, .NewPassword > input:focus{
+  margin-bottom: 58px;
+}
+.ConfirmNewPassword > input{
+  margin-bottom: 47px;
+}
+.ConfirmNewPassword > input:hover, .ConfirmNewPassword > input:focus{
+  margin-bottom: 46px;
+}
+.CurrentPassword > input:hover, .CurrentPassword > input:focus{
+  margin-bottom: 47px;
+}
+.CurrentPassword > input:hover, .CurrentPassword > input:focus,
+.NewPassword > input:hover, .NewPassword > input:focus,
+.ConfirmNewPassword > input:hover, .ConfirmNewPassword > input:focus,
+.AuthentCode > input:hover, .AuthentCode > input:focus {
+    border-bottom: 2px solid #d092c9;
 }
 .CurrentPassword > input, .NewPassword > input,
 .ConfirmNewPassword > input, .AuthentCode > input{
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   border: none;
   outline: none;
   border-bottom: 1px solid #e8e8e8;
   letter-spacing: 4px;
-  font-size: 28px;
+  font-size: 28px !important;
   color: #d092c9;
   cursor: pointer;
 }
@@ -389,7 +412,7 @@
 .GoogleInputWrp .SecondLabel + input, .SmsInputWrp .SecondLabel + input{
   border-color: #e54f64;
 }
-.InputRequestWrp.InputRequestWrpRaised > label,
+.InputRequestWrp.InputRequestWrpRaised > label, .ChangePasswordInputWrp.ChangePasswordInputWrpRaised > label,
 .LoginInputWrp.LoginInputWrpRaised > label, .RegisterInputWrp.RegisterInputWrpRaised > label,
 .GoogleInputWrp.GoogleInputWrpRaised > label, .SmsInputWrp.SmsInputWrpRaised > label,
 .UserDetailsInputWrp.UserDetailsInputWrpRaised > label, .BankDetailsInputWrp.BankDetailsInputWrpRaised > label,
@@ -397,6 +420,9 @@
   opacity: 1;
   transform: translateY(-20%);
   z-index: 0;
+}
+.ChangePasswordInputWrp.ChangePasswordInputWrpRaised > label{
+  transform: translateY(0);
 }
 .UserDetailsInputWrp.UserDetailsInputWrpRaised > label{
   transform: translateY(-40%);
@@ -450,7 +476,7 @@
 }
 .LoginInputWrp > label, .RegisterInputWrp > label, .GoogleInputWrp > label, .SmsInputWrp > label,
 .UserDetailsInputWrp > label, .BankDetailsInputWrp > label, .BankDetails2InputWrp > label, .AddressInputWrp > label,
-.InputRequestWrp > label{
+.InputRequestWrp > label, .ChangePasswordInputWrp > label{
   transition: transform .5s;
   position: relative;
   z-index: -1;
@@ -470,14 +496,14 @@
 }
 .LoginInputWrp > input, .RegisterInputWrp > input, .GoogleInputWrp > input, .SmsInputWrp > input,
 .UserDetailsInputWrp > input, .BankDetailsInputWrp > input, .BankDetails2InputWrp > input, .AddressInputWrp > input,
-.InputRequestWrp > input{
+.InputRequestWrp > input, .ChangePasswordInputWrp > input{
   cursor: pointer;
   font-size: 16px;
   color: #922c88;
   border: none;
   width: 100%;
   outline: none;
-  padding-bottom: 19px;
+  padding-bottom: 12px;
   border-bottom: 1px solid #e8e8e8;
 }
 .GoogleInputWrp > input::-webkit-input-placeholder{

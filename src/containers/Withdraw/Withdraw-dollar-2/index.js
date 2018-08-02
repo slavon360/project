@@ -12,9 +12,12 @@ const cx = classNames.bind(classes);
 
 class Withdraw extends Component {
   state = {
+    transactionsItemToggled: false,
     transactions,
     bank,
     showBanksDpDwn: false,
+    mobileView: null,
+    expandedTransactions: false,
   }
 
   componentWillMount() {
@@ -46,11 +49,16 @@ class Withdraw extends Component {
 
   showMore = (transaction) => {
     let updTransactions = [...this.state.transactions];
-    updTransactions = updTransactions.map(trans => ({
-      ...trans,
-      checked: trans.id === transaction.id && !trans.checked,
-    }));
-    this.setState({ transactions: updTransactions });
+    let transactionsItemToggled = false;
+    updTransactions = updTransactions.map((trans) => {
+      const checked = trans.id === transaction.id && !trans.checked;
+      transactionsItemToggled = checked ? true : transactionsItemToggled;
+      return {
+        ...trans,
+        checked,
+      };
+    });
+    this.setState({ transactions: updTransactions, transactionsItemToggled });
   }
   hideShowCurrencyDropdown = () => {
     const updWithdrawData = { ...this.state.withdrawData };
@@ -67,9 +75,23 @@ class Withdraw extends Component {
 
   }
   viewAll = () => {
-    this.setState(prevState => ({ expandedTransactions: !prevState.expandedTransactions }));
+    let updTransactions = [...this.state.transactions];
+    const { expandedTransactions } = this.state;
+    updTransactions = updTransactions.map(trans => ({
+      ...trans,
+      checked: trans.checked && !expandedTransactions,
+    }));
+    this.setState(prevState => ({
+      expandedTransactions: !prevState.expandedTransactions,
+      transactions: updTransactions,
+      transactionsItemToggled: false,
+    }));
   }
   render() {
+    const {
+      expandedTransactions,
+      mobileView,
+      transactionsItemToggled } = this.state;
     return (
       <div className={classes.WithdrawWrp}>
         <WithdrawDollar2
@@ -86,18 +108,24 @@ class Withdraw extends Component {
         />
         <div
           className={
-            cx(classes.TableWrp, { TableWrpExpanded: this.state.expandedTransactions })
+            cx(classes.TableWrp, {
+              TableWrpExpanded: expandedTransactions,
+              TableWrpAugmented: mobileView && transactionsItemToggled,
+            })
           }
         >
           <Transactions
+            augmentedTbodyHeight={
+              mobileView && transactionsItemToggled && !expandedTransactions ? 260 : null
+            }
             propNames={['status', 'currency', 'amount', 'date']}
             moreInfo={['address', 'xid']}
             headData={[{ title: 'History' }]}
             bodyData={this.state.transactions}
             showMore={this.showMore}
             viewAll={this.viewAll}
-            viewAllText={this.state.mobileView ? 'See more' : null}
-            expanded={this.state.expandedTransactions}
+            viewAllText={mobileView ? 'See more' : null}
+            expanded={expandedTransactions}
           />
         </div>
       </div>

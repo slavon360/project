@@ -18,6 +18,9 @@
   box-sizing: border-box;
   position: relative;
 }
+.TableWrp.TableWrpAugmented{
+  height: 390px;
+}
 .TableWrp.TableWrpExpanded{
   max-height: inherit;
   height: auto;

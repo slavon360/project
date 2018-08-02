@@ -90,7 +90,7 @@ const transactions = (props) => {
             {headData}
           </tr>
         </thead>
-        <tbody>
+        <tbody style={{ height: props.augmentedTbodyHeight ? `${props.augmentedTbodyHeight}px` : null }}>
           {bodyData}
         </tbody>
       </table>

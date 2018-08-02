@@ -14,6 +14,9 @@
   background-color: #d192c7;
   border-radius: 5px;
 }
+.ChangePasswordModal{
+  height: 539px;
+}
 
 @media screen and (max-height: 680px) and (max-width: 850px){
   .Modal{

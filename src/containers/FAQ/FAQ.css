@@ -48,6 +48,13 @@
   text-decoration: none;
 }
 
+@media screen and (min-width: 1920px) and (min-height: 950px){
+  .FaqWrp{
+    padding-bottom: 0;
+    margin-bottom: -35px;
+  }
+}
+
 @media screen and (min-width: 1366px) and (max-width: 1400px){
   .FaqWrp{
     padding: 47px 40px 80px 40px;

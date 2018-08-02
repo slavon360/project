@@ -1,22 +1,28 @@
 import React from 'react';
+import cx from 'classnames';
 import Button from '../../UI/Button';
 import Dropdown from '../../UI/Dropdown';
 import Input from '../../UI/Input';
 import ArrowIcon from '../../UI/Arrow';
 import EngIcon from '../../../../assets/images/icons/languages/Eng.png';
+import EspIcon from '../../../../assets/images/icons/languages/Esp.png';
+import DeuIcon from '../../../../assets/images/icons/languages/Deu.png';
+import UkrIcon from '../../../../assets/images/icons/languages/Ukr.png';
 import classes from './SMSAuthenticator.css';
 
-const smsAuth = () => (
+const smsAuth = props => (
   <div className={classes.SMSAuthWrp}>
     <h2>Enable SMS authenticator</h2>
     <form className={classes.AuthentificationForm}>
       <div className={classes.PhoneText}>Phone number:</div>
       <Dropdown
+        hideShowDropdown={props.hideShowPhoneNumbers}
+        hideDropdown={props.hidePhoneNumbers}
         elementConfig={{ type: 'button' }}
         drpWrpClasses={['PhoneNumberAuthentDropdownWrp']}
         dropdownButtonClasses={['PhoneNumberAuthentDropdownButton']}
-        drpContainerClasses={['PhoneNumberAuthentContainer']}
-        dropdownButtons={[{ v: 1 }, { v: 2 }, { v: 3 }]}
+        drpContainerClasses={cx('PhoneNumberAuthentContainer', { Show: props.showPhoneNumbers, Hide: !props.showPhoneNumbers }).split(' ')}
+        dropdownButtons={[{ title: '+2', icon: EspIcon }, { title: '+3', icon: DeuIcon }, { title: '+4', icon: UkrIcon }]}
       >
         <div className={classes.DropdownConent}>
           <div><img src={EngIcon} alt="eng" /></div>
