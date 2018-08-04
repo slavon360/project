@@ -17,7 +17,7 @@ import Layout from './hoc/Layout';
 // import ThankModal from './components/Modals/ThankModal';
 // import Login from './containers/Login';
 
-import WithdrawDollar5 from './containers/Withdraw/Withdraw-dollar-5';
+import Profile from './containers/Profile';
 /*
 import Register from './containers/Register';
 import Login from './containers/Login';
@@ -48,7 +48,7 @@ class App extends Component {
     return (
       <div className={classes.App}>
         <Layout>
-          <WithdrawDollar5 />
+          <Profile />
         </Layout>
       </div>
     );

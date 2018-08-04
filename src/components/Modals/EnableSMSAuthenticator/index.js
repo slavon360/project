@@ -31,7 +31,7 @@ const smsAuth = props => (
         </div>
       </Dropdown>
       <Input wrpClasses={['PhoneNumberAuthent']} elementConfig={{ type: 'text' }} elementType="input" />
-      <Button btnClasses={['SendSMSAuth']} elementConfig={{ 'before-content': 'Send SMS' }}>Send SMS</Button>
+      <Button btnClasses={['SendSMSAuth']}><a href="/send-sms">Send SMS</a></Button>
       <div className={classes.CodeTitle}>SMS Authentification code</div>
       <Input wrpClasses={['SMSAuthCode']} elementConfig={{ type: 'text' }} elementType="input" />
       <Button btnClasses={['ConfirmSMSAuth']}>Confirm</Button>

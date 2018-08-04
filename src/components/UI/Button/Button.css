@@ -53,7 +53,6 @@
   font-family: SegoeUI-Bold;
   width: 202px;
   height: 42px;
-  background-image: linear-gradient(-110deg, #e33a8c 0%, #54236e 100%);
   font-size: 14px;
   color: #fff;
   font-weight: 700;
@@ -62,23 +61,40 @@
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1px 6px;
 }
-.SendSMSAuth::before{
-  content: attr(before-content);
+.SendSMSAuth::after{
+  content: '';
   display: block;
-  box-sizing: border-box;
-  padding-top: 12px;
   position: absolute;
   top:0;
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all .5s;
+  transition: opacity .5s;
+  background-image: linear-gradient(-110deg, #54236e 0%, #e02a82 100%);
   opacity: 0;
-  background: linear-gradient(90deg, #e12b82, #53236d);
 }
-.SendSMSAuth:hover::before{
-  opacity: 1;
+.SendSMSAuth::before{
+    content: '';
+    display: block;
+    background-image: linear-gradient(-110deg, #e02a82 0%, #54236e 100%);
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+.SendSMSAuth > a{
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  display: block;
 }
 .PhoneNumberAuthentDropdownButton{
   width: 100%;
