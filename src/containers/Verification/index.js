@@ -4,8 +4,8 @@ import { userData, dateData, nationalities } from '../../../dumpData.json';
 import { propertiesExtractor } from '../../shared/utility';
 // import BankAccount from '../../components/BankAccount';
 import BankAccount2 from '../../components/BankAccount/BankAccount2';
-// import Address from '../../components/Address';
-import Address2 from '../../components/Address/Address2';
+import Address from '../../components/Address';
+// import Address2 from '../../components/Address/Address2';
 import UserDetails from '../../components/UserDetails';
 import SideBarNav from '../../components/SideBarNav';
 import Checked from '../../components/UI/Icons/Checked';
@@ -219,7 +219,7 @@ class Verification extends Component {
             />
           }
           { this.state.selectedSection.title === 'Address' &&
-            <Address2
+            <Address
               data={this.state.selectedSection}
               setUsersData={this.setUsersData}
             />

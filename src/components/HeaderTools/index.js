@@ -16,7 +16,7 @@ class HeaderTools extends Component {
   state = {
     balance: {
       cryptocurrency: { value: 2.156, type: 'BTC' },
-      fiat: { value: 31025.35, type: 'AUD' },
+      fiat: { value: '31 025.35', type: 'AUD' },
     },
     user: {
       title: 'John Bravo',

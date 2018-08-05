@@ -98,7 +98,16 @@
 
 @media screen and (max-width: 1900px){
   .NoteOnHover{
-    left: -200px;
+    left: -23px;
+    top: -66px;
+  }
+}
+
+@media screen and (max-width: 1365px){
+  .NoteOnHover{
+    left: -104px;
+    top: -45px;
+    z-index: 1;
   }
   .NoteOnHover::before{
     left: auto;
@@ -106,9 +115,6 @@
     border-right-color: #fff;
     border-left-color: transparent;
   }
-}
-
-@media screen and (max-width: 1365px){
   .UserStageWrp:first-child .DashedArea{
     left: 155px;
     top: 19px;
@@ -132,6 +138,10 @@
 }
 
 @media screen and (max-width: 1023px){
+  .UserStageWrp .NoteOnHover{
+    left: -81px;
+    top: -65px;
+  }
   .UserStageWrp:first-child .DashedArea{
     left: 158px;
   }

@@ -26,28 +26,47 @@
     display: inline-block;
   }
   .BalanceIndicatorWrp::before{
-    left: -33px;
+    left: -30px;
   }
   .BalanceIndicatorWrp > span:first-child{
-    transform: translateX(-15px);
-  }
-  .BalanceIndicatorWrp > span:nth-child(2){
     transform: translateX(-13px);
   }
+  .BalanceIndicatorWrp > span:nth-child(2){
+    transform: translateX(-10px);
+  }
   .BalanceIndicatorWrp > span:nth-child(3){
-    transform: translateX(-11px);
+    transform: translateX(-8px);
   }
   .BalanceIndicatorWrp > span:nth-child(4){
     transform: translateX(-1px);
     font-weight: 400;
   }
   .BalanceIndicatorWrp > span:nth-child(5){
-    transform: translateX(2px);
+    transform: translateX(1px);
   }
 }
 @media screen and (max-width: 1899px){
   .BalanceIndicatorWrp{
     margin-right: 42px;
+  }
+  .BalanceIndicatorWrp::before{
+    left: -14px;
+  }
+  .BalanceIndicatorWrp > span:first-child{
+    transform: translateX(4px);
+    display: inline-block;
+  }
+  .BalanceIndicatorWrp > span:nth-child(2){
+    position: relative;
+    left: 3px;
+  }
+  .BalanceIndicatorWrp > span:nth-child(4){
+    position: relative;
+    left: 4px;
+  }
+  .BalanceIndicatorWrp > span:nth-child(5){
+    position: relative;
+    left: 2px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1365px){
@@ -62,19 +81,27 @@
     top: 6px;
     left: -14px;
   }
-  .BalanceIndicatorWrp span:nth-child(2){
+  .BalanceIndicatorWrp > span:nth-child(2){
     font-size: 9px;
+    left: 0px;
+    top: -1px;
   }
-  .BalanceIndicatorWrp span:first-child{
-    font-size: 14px;
+  .BalanceIndicatorWrp > span:first-child{
+    font-size: 13px;
+    transform: translate(-1px, -1px);
   }
-  .BalanceIndicatorWrp span:nth-child(4){
-    font-size: 14px;
-    transform: translate(5px, 0);
+  .BalanceIndicatorWrp > span:nth-child(3){
+    position: relative;
+    left: 1px;
+    top: -2px;
+  }
+  .BalanceIndicatorWrp > span:nth-child(4){
+    font-size: 13px;
+    transform: translate(2px, -1px);
     display: inline-block;
   }
-  .BalanceIndicatorWrp span:nth-child(5){
-    transform: translate(7px, 0);
+  .BalanceIndicatorWrp > span:nth-child(5){
+    transform: translate(6px, -1px);
     font-size: 9px;
     font-weight: 700;
     display: inline-block;
@@ -83,7 +110,7 @@
 
 @media screen and (max-width: 1023px){
   .BalanceIndicatorWrp{
-    transform: translate(5px, 1px) !important;
+    transform: translate(4px, 2px) !important;
   }
 }
 

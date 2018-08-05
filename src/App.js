@@ -16,7 +16,6 @@ import Layout from './hoc/Layout';
 // import ChangePassword from './components/Modals/ChangePassword';
 // import ThankModal from './components/Modals/ThankModal';
 // import Login from './containers/Login';
-
 import Profile from './containers/Profile';
 /*
 import Register from './containers/Register';

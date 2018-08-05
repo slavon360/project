@@ -116,6 +116,12 @@
   }
 }
 
+@media screen and (max-width: 1900px){
+  .BalancesWrp > div:last-child{
+    transform: translate(12px, 0px);
+  }
+}
+
 @media screen and (min-width: 1601px) and (max-width: 1800px){
   .ProfileWrp{
     padding: 60px 80px 80px 80px;
@@ -357,6 +363,7 @@
   }
   .BalancesWrp > div:last-child{
     margin-top: 11px;
+    transform: translate(0px, 0px);
   }
   .BalancesWrp > div:last-child > a{
     font-size: 13px;
