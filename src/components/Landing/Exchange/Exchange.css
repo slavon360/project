@@ -71,15 +71,15 @@
 }
 .InteractiveView{
   width: 804px;
-  transform: translate(11px, -8px) scale(1.14);
+  transform: translate(11px, 5px) scale(1.01);
   height: 560px;
-  /* box-shadow: 0 0 68px 0 #ececec; */
+  box-shadow: 0 16px 124px 0 #dfdfdf;
   background-size: cover;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
 .InteractiveView img{
-  transform: scale(0.875) translate(-2px, 49px);
+  transform: scale(1) translate(0, 36px);
   width: 100%;
 }
 .Buy-and-Sell > img{
@@ -127,6 +127,9 @@
     margin-top: 116px;
     width: 637px;
     height: 439px;
+  }
+  .InteractiveView img{
+    transform: scale(1) translate(0, 26px);
   }
   .Steps{
     width: 483px;
@@ -189,6 +192,9 @@
     width: 493px;
     height: 340px;
     margin-top: 160px;
+  }
+  .InteractiveView img{
+    transform: scale(1) translate(0, 19px);
   }
 }
 @media screen and (max-width: 1023px){
@@ -316,7 +322,7 @@
     transform: translateY(-460px);
   }
   .InteractiveView img{
-    transform: scale(0.875) translate(-2px, 28px);
+    transform: scale(1) translate(0, 14px);
   }
 }
 
@@ -360,6 +366,9 @@
     width: 280px;
     height: 194px;
     transform: translateY(-452px);
+  }
+  .InteractiveView img{
+    transform: scale(1) translate(0, 12px);
   }
   .Steps h2{
     margin-bottom: 55px;

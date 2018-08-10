@@ -49,12 +49,12 @@
   opacity: .15;
 }
 .Tab:first-child .Icon::before{
-  left: -22px;
+  left: -20px;
   height: 140px;
   width: 80px;
 }
 .Tab:last-child .Icon::before{
-  left: -21px;
+  left: -22px;
   width: 80px;
   height: 141px;
   transform: translateY(-1px) rotate(9deg);
